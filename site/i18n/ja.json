@@ -1,0 +1,308 @@
+{
+  "actions": {
+    "backToApps": "アプリ一覧へ戻る",
+    "copied": "コピー済み",
+    "copy": "コピー",
+    "search": "検索",
+    "viewAll": "すべて表示"
+  },
+  "apps": {
+    "empty": "現在の検索条件に一致するアプリはありません。",
+    "eyebrow": "APPSTORE INDEX",
+    "lead": "カテゴリ、権限、ソース公開度、デバイス機能で CardputerZero アプリを絞り込めます。",
+    "results": "{count} 件",
+    "title": "アプリディレクトリ"
+  },
+  "boolean": {
+    "false": "いいえ",
+    "true": "はい"
+  },
+  "categories": {
+    "AI": "AI",
+    "Developer Tools": "開発者ツール",
+    "Experimental": "実験的",
+    "Games": "ゲーム",
+    "Media": "メディア",
+    "Music": "音楽",
+    "Productivity": "生産性",
+    "Utilities": "ユーティリティ"
+  },
+  "commercial": {
+    "allowed": "商用利用可",
+    "restricted": "商用利用制限あり"
+  },
+  "detail": {
+    "about": "概要",
+    "install": "インストール情報",
+    "installLead": "デバイスの AppStore で共有コードを入力します。インストール前に権限、リスク、checksum を確認してください。",
+    "noRisks": "この mock registry では追加リスクは宣言されていません。",
+    "noSensitivePermissions": "センシティブ権限なし",
+    "permissions": "権限と機能",
+    "risks": "リスク情報",
+    "screenshots": "スクリーンショット"
+  },
+  "fields": {
+    "checksum": "SHA-256",
+    "download": "ダウンロード URL",
+    "license": "ライセンス",
+    "source": "ソース公開度",
+    "status": "レビュー状態",
+    "updated": "更新日",
+    "uuid": "UUID",
+    "version": "バージョン"
+  },
+  "filters": {
+    "any": "すべて",
+    "categories": "カテゴリ",
+    "clear": "クリア",
+    "commercial": "商用利用",
+    "externalHardware": "外部ハードウェア",
+    "hdmi": "HDMI",
+    "open": "フィルタ",
+    "permissions": "権限",
+    "service": "バックグラウンドサービス",
+    "source": "ソース",
+    "title": "フィルタ"
+  },
+  "flags": {
+    "externalHardware": "外部ハードウェア必須",
+    "hdmi": "HDMI 対応",
+    "service": "バックグラウンドサービス"
+  },
+  "home": {
+    "eyebrow": "STATIC REGISTRY / GITHUB PAGES",
+    "featured": "おすすめと最近の更新",
+    "featuredLead": "実際の APPLaunch 素材を使った mock registry です。ページ、フィルタ、共有コードの検証に使えます。",
+    "lead": "静的に公開できる CardputerZero アプリディレクトリです。検索、絞り込み、権限とリスク確認、共有コードでのデバイス検索に対応します。",
+    "subtitle": "AppStore & Registry",
+    "title": "CardputerZero Hub"
+  },
+  "notFound": {
+    "lead": "この UUID または共有コードは現在の mock registry にありません。",
+    "title": "アプリが見つかりません"
+  },
+  "permissions": {
+    "audio_output": "音声出力",
+    "background_service": "バックグラウンドサービス",
+    "camera": "カメラ",
+    "external_hardware": "外部ハードウェア",
+    "filesystem": "ファイルシステム",
+    "gps": "GPS",
+    "keyboard_input": "キーボード入力",
+    "microphone": "マイク",
+    "network": "ネットワーク",
+    "sensors": "センサー"
+  },
+  "policy": {
+    "acceptanceText": "本規約、提出ポリシー、またはメンテナーのレビュー要件に同意できない場合は、アプリを提出しないでください。承認済みのアプリでも後から違反が判明した場合、メンテナーは修正要求、リスク表示、掲載停止、ブロック、監査記録の保持を行えます。規約はプロジェクトの発展に合わせて変更されることがあり、重要な変更はリポジトリで公開記録されます。",
+    "acceptanceTitle": "同意と継続的な遵守",
+    "agreementEyebrow": "USER / DEVELOPER AGREEMENT",
+    "agreementLead": "本規約は CardputerZero AppStore Hub のアプリ、メタデータ、スクリーンショット、バイナリ、および関連する議論の閲覧、ダウンロード、提出、保守、レビューに適用されます。アプリを提出することは、これらの規則を読み同意したことを意味します。",
+    "agreementTitle": "AppStore Hub ユーザー・開発者規約",
+    "device": [
+      "システム、ストレージ、ネットワーク、センサー、外部モジュールに影響するアプリはリスクを宣言する必要があります。",
+      "アプリは APPLaunch から起動でき、明確な終了方法を持つ必要があります。",
+      "高 CPU、ストレージ、バッテリー、ハードウェアリスクは詳細ページで表示する必要があります。"
+    ],
+    "deviceTitle": "デバイス安全性",
+    "eyebrow": "AGREEMENT / POLICY",
+    "fullDoc": "完全なポリシー文書",
+    "lead": "AppStore Hub はユーザー、デバイス、メンテナー、オープンソースコミュニティの信頼を優先します。アプリを提出する前に、本規約、プライバシー要件、デバイス安全要件、拒否ルールを読んで同意する必要があります。",
+    "privacy": [
+      "ユーザーデータの収集、保存、アップロード、共有の有無を宣言する必要があります。",
+      "ネットワーク、アカウント、ファイルシステム、デバイス識別子へのアクセスは目的を説明する必要があります。",
+      "データ収集は最小限にするべきです。"
+    ],
+    "privacyTitle": "プライバシー",
+    "reject": [
+      "マルウェア、認証情報の窃取、無許可の永続化、無許可アクセス。",
+      "高リスクなデバイス動作やユーザーデータ収集の隠蔽。",
+      "違法、権利侵害、詐欺、ヘイト、嫌がらせ、または危害につながる用途。"
+    ],
+    "rejectTitle": "拒否対象",
+    "sections": [
+      {
+        "title": "1. 適用範囲",
+        "items": [
+          "本規約は registry に提出されるアプリメタデータ、ソースコード、バイナリ、アイコン、スクリーンショット、README、Pull Request、Issue、コメントに適用されます。",
+          "Hub は公開ディレクトリおよび registry であり、すべてのアプリに完全なセキュリティ監査を行ったことを意味しません。",
+          "ユーザーはインストール前に権限、プライバシー、リスク、ソース公開度、ダウンロード URL、checksum を確認する必要があります。"
+        ]
+      },
+      {
+        "title": "2. 開発者の責任",
+        "items": [
+          "開発者は追跡可能な GitHub ID で提出し、提出するコード、素材、バイナリを配布する権利を持っている必要があります。",
+          "開発者はユーザーやメンテナーを誤解させない、正確で完全な説明を提供する必要があります。",
+          "ダウンロード URL、release、ソースリポジトリ、license、アプリ動作が変わる場合は、速やかにメタデータを更新する必要があります。"
+        ]
+      },
+      {
+        "title": "3. メタデータの正確性",
+        "items": [
+          "ネットワーク、ファイルシステム、マイク、カメラ、センサー、GPS、外部ハードウェア、バックグラウンドサービス、HDMI は宣言が必要です。",
+          "ソース公開度、license、商用利用制限、バージョン、checksum、依存関係、デバイス互換性も宣言が必要です。",
+          "有料制限、クラウドサービス、アカウント依存、高 CPU、高ストレージ、バッテリー影響、ユーザーデータに影響する動作を隠してはいけません。"
+        ]
+      },
+      {
+        "title": "4. プライバシーとデータ",
+        "items": [
+          "ユーザーデータにアクセス、保存、アップロード、処理するアプリは、データ種別、目的、保存期間、第三者共有を説明する必要があります。",
+          "アプリはデータ最小化を守り、機能に関係のないデータ収集を避けるべきです。",
+          "後続バージョンで動作が変わる場合は、リリース前またはリリース時にプライバシー宣言を更新する必要があります。"
+        ]
+      },
+      {
+        "title": "5. デバイス安全性と体験",
+        "items": [
+          "アプリはデバイス、システムファイル、ユーザーデータ、外部ハードウェアを意図的に損傷してはいけません。",
+          "GUI アプリは CardputerZero の 320 x 170 画面に適合し、APPLaunch から正常に起動・終了できる必要があります。",
+          "実験的、未完成、特殊設定が必要、またはデバイスリスクがあるアプリは明確に表示する必要があります。"
+        ]
+      },
+      {
+        "title": "6. 禁止内容",
+        "items": [
+          "マルウェア、スパイウェア、認証情報の窃取、無許可の永続化、無許可アクセス、レビュー回避は禁止です。",
+          "違法、権利侵害、詐欺、フィッシング、なりすまし、ヘイト、嫌がらせ、追跡、監視、武器化、危害用途は禁止です。",
+          "高リスク動作、商用制限、無許可素材、誤解を招くインストール誘導を隠すことは禁止です。"
+        ]
+      },
+      {
+        "title": "7. レビュー、掲載、掲載停止",
+        "items": [
+          "CI 通過は自動掲載を意味しません。メンテナーは修正、追加宣言、デモ、再現可能なビルド、テストログを要求できます。",
+          "メンテナーはアプリを pending、ci-passed、approved、needs-changes、rejected、deprecated、blocked として扱えます。",
+          "ユーザー、デバイス、法律、プライバシー、コミュニティに明確なリスクがあるアプリは拒否、非表示、掲載停止、ブロックされることがあります。"
+        ]
+      },
+      {
+        "title": "8. 異議申し立てと記録",
+        "items": [
+          "開発者は拒否、掲載停止、blocked の判断に対して Issue または Pull Request で異議申し立てできます。",
+          "異議申し立てにはアプリ UUID、タイトル、変更してほしい判断、修正内容、証拠を含める必要があります。",
+          "メンテナーは可能な範囲で最終判断を記録し、インストール入口を表示しなくても監査記録を保持できます。"
+        ]
+      }
+    ],
+    "submitLink": "提出ページへ",
+    "summaryLead": "以下はユーザーと開発者向けの正式な要約です。実際の運用詳細はリポジトリ文書とメンテナーのレビュー記録に従います。",
+    "summaryTitle": "規約条項",
+    "title": "ユーザー・開発者規約"
+  },
+  "registry": {
+    "approved": "承認済み",
+    "apps": "アプリ数",
+    "eyebrow": "REGISTRY FILES",
+    "files": "静的ファイル",
+    "open": "registry を開く",
+    "pageLead": "Web UI は JSON registry を読み込みます。YAML はメンテナーのレビューとデバイスツール向けに保持します。",
+    "pageTitle": "Registry データソース",
+    "risk": "リスクあり",
+    "schema": "Schema",
+    "status": "REGISTRY STATUS",
+    "title": "静的データを読み込み中",
+    "updated": "生成日"
+  },
+  "review": {
+    "approved": "承認済み",
+    "blocked": "ブロック済み",
+    "ci-passed": "CI 通過",
+    "deprecated": "非推奨",
+    "needs-changes": "修正必要",
+    "pending": "審査待ち",
+    "rejected": "拒否済み"
+  },
+  "risks": {
+    "experimental": "実験的",
+    "high-cpu": "高 CPU",
+    "network-streaming": "ネットワーク配信",
+    "not-validated-on-device": "実機未検証",
+    "uses-microphone": "マイク使用"
+  },
+  "search": {
+    "label": "アプリ検索",
+    "placeholder": "タイトル、作者、カテゴリ、共有コードを検索"
+  },
+  "sort": {
+    "label": "並び替え",
+    "name": "名前",
+    "published": "新着公開",
+    "review": "レビュー状態",
+    "updated": "最近更新"
+  },
+  "source": {
+    "binary-only": "バイナリのみ",
+    "closed-source": "クローズドソース",
+    "mixed": "混在",
+    "open-source": "オープンソース",
+    "source-available": "ソース閲覧可"
+  },
+  "submit": {
+    "agreementEyebrow": "SUBMISSION AGREEMENT",
+    "agreementLead": "アプリを提出する前に、開発者提出ポリシー、プライバシー要件、デバイス安全要件、拒否ルールを読み同意してください。Pull Request を作成することは、メタデータが正確で、権限宣言が完全で、メンテナーのレビューに協力することを確認するものです。",
+    "agreementTitle": "先に規約と掲載条件を読んでください",
+    "ci": [
+      "CI は UUID、共有コード、必須項目、アイコン、スクリーンショット、ダウンロード URL、checksum を検証します。",
+      "ソースが提供されている場合、CI はソース到達性、基本的な静的チェック、依存関係、ビルド、smoke test を実行できます。",
+      "CI 通過は自動掲載を意味しません。メンテナーがポリシー、リスク、体験を確認します。"
+    ],
+    "ciTitle": "自動チェック",
+    "directoryExample": "appstore-hub/\n  apps/\n    123e4567-e89b-12d3-a456-426614174000.yml\n  assets/\n    123e4567-e89b-12d3-a456-426614174000/\n      icon.png\n      screenshots/\n        main.png\n        settings.png",
+    "eyebrow": "PULL REQUEST FLOW",
+    "flowLead": "まず自分の GitHub リポジトリでアプリコードまたは release を公開し、その後 AppStore Hub registry リポジトリへメタデータを提出します。",
+    "flowTitle": "標準提出フロー",
+    "formatLead": "アプリメタデータは YAML を使用します。GitHub Actions が検証し、マージ後に registry.json、registry.yml、軽量インデックスを生成します。",
+    "formatTitle": "メタデータ形式",
+    "lead": "開発者は GitHub Pull Request でアプリメタデータを提出します。メンテナー承認後、GitHub Actions が静的 registry を生成し、GitHub Pages が Hub に公開します。",
+    "metadata": [
+      "各アプリには安定した UUID が必要です。共有コードは通常 UUID の先頭 4 文字で、registry 内で一意である必要があります。",
+      "タイトル、概要、GitHub 作者、バージョン、license、ソース公開度、ダウンロード URL、SHA-256 checksum が必要です。",
+      "権限、プライバシー動作、外部ハードウェア、バックグラウンドサービス、HDMI、商用制限、既知リスクを宣言する必要があります。"
+    ],
+    "metadataExample": "schema_version: 1\nuuid: \"123e4567-e89b-12d3-a456-426614174000\"\ntitle: \"My Cardputer App\"\nsummary: \"One sentence user-facing summary.\"\ndescription: \"Longer description for the detail page.\"\ncategories:\n  - Utilities\ndevice_targets:\n  - CardputerZero\nauthor:\n  github: \"your-github-id\"\nversion: \"1.0.0\"\nlicense: \"MIT\"\nsource:\n  openness: \"open-source\"\n  repository: \"https://github.com/your-github-id/my-cardputer-app\"\ndownload:\n  type: \"github-release\"\n  url: \"https://github.com/your-github-id/my-cardputer-app/releases/download/v1.0.0/app.tar.gz\"\n  sha256: \"...\"\npermissions:\n  network: false\n  microphone: false\n  filesystem: \"app-data-only\"\nprivacy:\n  collects_personal_data: false\n  data_retention: \"none\"\nassets:\n  icon: \"assets/123e4567-e89b-12d3-a456-426614174000/icon.png\"\n  screenshots:\n    - \"assets/123e4567-e89b-12d3-a456-426614174000/screenshots/main.png\"\nreview:\n  status: \"pending\"",
+    "metadataTitle": "メタデータ",
+    "openPolicyDoc": "完全なポリシーを開く",
+    "readAgreement": "規約を読む",
+    "review": [
+      "Pull Request の説明には、アプリの目的、テスト方法、ダウンロード元、CardputerZero 実機検証の有無を書いてください。",
+      "クローズドソース、バイナリのみ、ネットワーク、マイク、ファイルシステム、外部ハードウェア、バックグラウンドサービスはより厳格にレビューされます。",
+      "メンテナーは修正、追加宣言、実験的表示、拒否、掲載停止、ブロックを要求できます。異議申し立ては Issue または Pull Request で記録します。"
+    ],
+    "reviewTitle": "人によるレビュー",
+    "steps": [
+      {
+        "title": "アプリリポジトリを準備",
+        "body": "アプリコードを GitHub にコミットし、README、license、ビルド手順、release 産物を用意します。ダウンロード URL は安定してアクセスできる必要があります。"
+      },
+      {
+        "title": "registry リポジトリを fork",
+        "body": "CardputerZero/appstore-hub リポジトリを自分の GitHub アカウントへ fork し、main から提出用ブランチを作成します。"
+      },
+      {
+        "title": "メタデータと素材を追加",
+        "body": "apps/ に UUID 名の YAML メタデータファイルを追加し、assets/<uuid>/ に icon.png とスクリーンショットを配置します。"
+      },
+      {
+        "title": "metadata を記入",
+        "body": "schema に従って title、summary、author、version、license、source、download、checksum、permissions、privacy、risk を記入します。"
+      },
+      {
+        "title": "Pull Request を作成",
+        "body": "ブランチを fork に push し、AppStore Hub に Pull Request を作成します。アプリ説明、テスト結果、レビューすべきリスクを書いてください。"
+      },
+      {
+        "title": "CI とレビューを待つ",
+        "body": "GitHub Actions が自動チェックを実行します。メンテナーが承認してマージすると、Hub は静的 registry を再生成し GitHub Pages に公開します。"
+      }
+    ],
+    "structureLead": "最初の registry では 1 アプリにつき 1 つの YAML ファイルを使います。表示素材は対応する UUID の assets ディレクトリに置きます。",
+    "structureTitle": "ディレクトリ構造",
+    "title": "アプリを提出"
+  },
+  "wip": {
+    "body": "このページと registry は GitHub Pages 公開検証用の作業中バージョンです。データ、ダウンロード URL、レビュー状態は変更される可能性があります。",
+    "title": "WIP"
+  }
+}

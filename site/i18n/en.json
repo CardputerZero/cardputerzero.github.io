@@ -1,0 +1,308 @@
+{
+  "actions": {
+    "backToApps": "Back to apps",
+    "copied": "Copied",
+    "copy": "Copy",
+    "search": "Search",
+    "viewAll": "View all"
+  },
+  "apps": {
+    "empty": "No apps match the current search and filters.",
+    "eyebrow": "APPSTORE INDEX",
+    "lead": "Filter CardputerZero apps by category, permission, source openness, and device capability.",
+    "results": "{count} results",
+    "title": "App directory"
+  },
+  "boolean": {
+    "false": "No",
+    "true": "Yes"
+  },
+  "categories": {
+    "AI": "AI",
+    "Developer Tools": "Developer Tools",
+    "Experimental": "Experimental",
+    "Games": "Games",
+    "Media": "Media",
+    "Music": "Music",
+    "Productivity": "Productivity",
+    "Utilities": "Utilities"
+  },
+  "commercial": {
+    "allowed": "Commercial use allowed",
+    "restricted": "Commercial use restricted"
+  },
+  "detail": {
+    "about": "About",
+    "install": "Install information",
+    "installLead": "Enter the share code on the device AppStore. Check permissions, risks, and checksum before installing.",
+    "noRisks": "No extra risk flags are declared in this mock registry.",
+    "noSensitivePermissions": "No sensitive permissions",
+    "permissions": "Permissions and capabilities",
+    "risks": "Risk notes",
+    "screenshots": "Screenshots"
+  },
+  "fields": {
+    "checksum": "SHA-256",
+    "download": "Download URL",
+    "license": "License",
+    "source": "Source openness",
+    "status": "Review status",
+    "updated": "Updated",
+    "uuid": "UUID",
+    "version": "Version"
+  },
+  "filters": {
+    "any": "Any",
+    "categories": "Categories",
+    "clear": "Clear",
+    "commercial": "Commercial use",
+    "externalHardware": "External hardware",
+    "hdmi": "HDMI",
+    "open": "Filters",
+    "permissions": "Permissions",
+    "service": "Background service",
+    "source": "Source",
+    "title": "Filters"
+  },
+  "flags": {
+    "externalHardware": "External hardware required",
+    "hdmi": "HDMI supported",
+    "service": "Background service"
+  },
+  "home": {
+    "eyebrow": "STATIC REGISTRY / GITHUB PAGES",
+    "featured": "Featured and recently updated",
+    "featuredLead": "A mock registry built with real APPLaunch assets for validating pages, filters, and share-code flows.",
+    "lead": "A static CardputerZero app directory. Search, filter, review permissions and risks, then use a share code on the device AppStore.",
+    "subtitle": "AppStore & Registry",
+    "title": "CardputerZero Hub"
+  },
+  "notFound": {
+    "lead": "This UUID or share code is not present in the current mock registry.",
+    "title": "App not found"
+  },
+  "permissions": {
+    "audio_output": "Audio output",
+    "background_service": "Background service",
+    "camera": "Camera",
+    "external_hardware": "External hardware",
+    "filesystem": "Filesystem",
+    "gps": "GPS",
+    "keyboard_input": "Keyboard input",
+    "microphone": "Microphone",
+    "network": "Network",
+    "sensors": "Sensors"
+  },
+  "policy": {
+    "acceptanceText": "If you do not agree to this agreement, the submission policy, or maintainer review requirements, do not submit an app. If an accepted app later violates this agreement, maintainers may request changes, flag risk, delist, block, or retain audit records. The agreement may evolve with the project; material changes should be recorded publicly in the repository.",
+    "acceptanceTitle": "Acceptance and ongoing compliance",
+    "agreementEyebrow": "USER / DEVELOPER AGREEMENT",
+    "agreementLead": "This agreement applies to browsing, downloading, submitting, maintaining, or reviewing CardputerZero AppStore Hub apps, metadata, screenshots, binaries, and related discussions. Submitting an app means you have read and agree to these rules.",
+    "agreementTitle": "AppStore Hub User and Developer Agreement",
+    "device": [
+      "Apps touching system settings, storage, network, sensors, or external modules must declare risk.",
+      "Apps must launch from APPLaunch and provide a clear exit path.",
+      "High CPU, storage, battery, or hardware risk must be visible on the detail page."
+    ],
+    "deviceTitle": "Device safety",
+    "eyebrow": "AGREEMENT / POLICY",
+    "fullDoc": "Full policy document",
+    "lead": "AppStore Hub puts user, device, maintainer, and open-source community trust first. Before submitting an app, developers must read and accept this agreement, privacy requirements, device-safety requirements, and rejection rules.",
+    "privacy": [
+      "Apps must declare whether they collect, store, upload, or share user data.",
+      "Network, account, filesystem, and device identifier access must explain purpose.",
+      "Data collection should follow data minimization."
+    ],
+    "privacyTitle": "Privacy",
+    "reject": [
+      "Malware, credential theft, unauthorized persistence, or unauthorized access.",
+      "Hidden high-risk device behavior or undisclosed user-data collection.",
+      "Illegal, infringing, fraudulent, hateful, harassing, or harmful use."
+    ],
+    "rejectTitle": "Rejected content",
+    "sections": [
+      {
+        "title": "1. Scope",
+        "items": [
+          "This agreement covers app metadata, source code, binaries, icons, screenshots, README files, pull requests, issues, and comments submitted to the registry.",
+          "The Hub is a public directory and registry. It does not mean maintainers have performed a complete security audit for every app.",
+          "Before installing, users should review permissions, privacy, risk flags, source openness, download URLs, and checksums."
+        ]
+      },
+      {
+        "title": "2. Developer responsibility",
+        "items": [
+          "Developers must submit with a traceable GitHub identity and have the right to distribute all submitted code, assets, and binaries.",
+          "Developers must provide accurate, complete descriptions that do not mislead users or maintainers.",
+          "If download URLs, releases, source repositories, licenses, or app behavior changes, metadata should be updated promptly."
+        ]
+      },
+      {
+        "title": "3. Metadata truthfulness",
+        "items": [
+          "Network, filesystem, microphone, camera, sensors, GPS, external hardware, background service, and HDMI capabilities must be declared.",
+          "Source openness, license, commercial restrictions, version, checksum, dependencies, and device compatibility must be declared.",
+          "Paid limits, cloud services, account dependencies, high CPU, high storage, battery impact, or behavior that may damage user data must not be hidden."
+        ]
+      },
+      {
+        "title": "4. Privacy and data",
+        "items": [
+          "Apps that access, store, upload, or process user data must explain data type, purpose, retention, and third-party sharing.",
+          "Apps should follow data minimization and avoid collecting data unrelated to the feature.",
+          "If app behavior changes in a later version, the privacy declaration must be updated before or during release."
+        ]
+      },
+      {
+        "title": "5. Device safety and UX",
+        "items": [
+          "Apps must not intentionally damage the device, system files, user data, or external hardware.",
+          "GUI apps should fit the CardputerZero 320 x 170 screen and launch and exit correctly from APPLaunch.",
+          "Experimental, unfinished, special-setup, or device-risk apps must be clearly marked."
+        ]
+      },
+      {
+        "title": "6. Prohibited content",
+        "items": [
+          "Malware, spyware, credential theft, unauthorized persistence, unauthorized access, or review-bypass behavior is prohibited.",
+          "Illegal, infringing, fraudulent, phishing, impersonation, hateful, harassing, stalking, surveillance, weaponized, or harmful use is prohibited.",
+          "Hidden high-risk behavior, hidden commercial restrictions, unauthorized assets, or misleading install prompts are prohibited."
+        ]
+      },
+      {
+        "title": "7. Review, listing, and delisting",
+        "items": [
+          "Passing CI does not mean automatic listing; maintainers may request changes, additional declarations, demos, reproducible builds, or test logs.",
+          "Maintainers may mark apps as pending, ci-passed, approved, needs-changes, rejected, deprecated, or blocked.",
+          "Apps with clear user, device, legal, privacy, or community risk may be rejected, hidden, delisted, or blocked."
+        ]
+      },
+      {
+        "title": "8. Appeals and records",
+        "items": [
+          "Developers may appeal rejection, delisting, or blocked decisions through an issue or pull request.",
+          "Appeals should include app UUID, title, requested decision change, remediation notes, and evidence.",
+          "Maintainers should record final decisions where practical and may retain audit records without continuing to show install entries."
+        ]
+      }
+    ],
+    "submitLink": "Go to submit",
+    "summaryLead": "These terms are the formal summary for users and developers. The full repository document and maintainer review records govern execution details.",
+    "summaryTitle": "Agreement terms",
+    "title": "User and Developer Agreement"
+  },
+  "registry": {
+    "approved": "Approved",
+    "apps": "Apps",
+    "eyebrow": "REGISTRY FILES",
+    "files": "Static files",
+    "open": "Open registry",
+    "pageLead": "The Web UI reads the JSON registry. YAML is kept for maintainer review and device tooling.",
+    "pageTitle": "Registry data source",
+    "risk": "Risk flagged",
+    "schema": "Schema",
+    "status": "REGISTRY STATUS",
+    "title": "Static data loaded live",
+    "updated": "Generated"
+  },
+  "review": {
+    "approved": "Approved",
+    "blocked": "Blocked",
+    "ci-passed": "CI passed",
+    "deprecated": "Deprecated",
+    "needs-changes": "Needs changes",
+    "pending": "Pending",
+    "rejected": "Rejected"
+  },
+  "risks": {
+    "experimental": "Experimental",
+    "high-cpu": "High CPU",
+    "network-streaming": "Network streaming",
+    "not-validated-on-device": "Not validated on device",
+    "uses-microphone": "Uses microphone"
+  },
+  "search": {
+    "label": "Search apps",
+    "placeholder": "Search title, author, category, or share code"
+  },
+  "sort": {
+    "label": "Sort",
+    "name": "Name",
+    "published": "Newest published",
+    "review": "Review status",
+    "updated": "Recently updated"
+  },
+  "source": {
+    "binary-only": "Binary-only",
+    "closed-source": "Closed source",
+    "mixed": "Mixed",
+    "open-source": "Open source",
+    "source-available": "Source available"
+  },
+  "submit": {
+    "agreementEyebrow": "SUBMISSION AGREEMENT",
+    "agreementLead": "Before submitting an app, read and accept the developer submission policy, privacy requirements, device-safety requirements, and rejection rules. Opening a pull request confirms that your metadata is truthful, permissions are complete, and you will cooperate with maintainer review.",
+    "agreementTitle": "Read the agreement and admission rules first",
+    "ci": [
+      "CI validates UUID, share code, required fields, icons, screenshots, download URL, and checksum.",
+      "When source is provided, CI may run source availability checks, basic static checks, dependency checks, builds, and smoke tests.",
+      "Passing CI does not mean automatic listing; maintainers still review policy, risk, and user experience."
+    ],
+    "ciTitle": "Automation",
+    "directoryExample": "appstore-hub/\n  apps/\n    123e4567-e89b-12d3-a456-426614174000.yml\n  assets/\n    123e4567-e89b-12d3-a456-426614174000/\n      icon.png\n      screenshots/\n        main.png\n        settings.png",
+    "eyebrow": "PULL REQUEST FLOW",
+    "flowLead": "Publish your app code or release in your own GitHub repository first, then submit metadata to the AppStore Hub registry repository.",
+    "flowTitle": "Standard submission flow",
+    "formatLead": "App metadata uses YAML. GitHub Actions validates the file and generates registry.json, registry.yml, and the light index after merge.",
+    "formatTitle": "Metadata format",
+    "lead": "Developers submit app metadata through GitHub pull requests. After maintainer approval, GitHub Actions generates a static registry and GitHub Pages publishes it to the Hub.",
+    "metadata": [
+      "Every app needs a stable UUID. The share code defaults to the first four UUID characters and must be unique in the registry.",
+      "Title, summary, GitHub author, version, license, source openness, download URL, and SHA-256 checksum are required.",
+      "Permissions, privacy behavior, external hardware, background service, HDMI, commercial restrictions, and known risks must be declared."
+    ],
+    "metadataExample": "schema_version: 1\nuuid: \"123e4567-e89b-12d3-a456-426614174000\"\ntitle: \"My Cardputer App\"\nsummary: \"One sentence user-facing summary.\"\ndescription: \"Longer description for the detail page.\"\ncategories:\n  - Utilities\ndevice_targets:\n  - CardputerZero\nauthor:\n  github: \"your-github-id\"\nversion: \"1.0.0\"\nlicense: \"MIT\"\nsource:\n  openness: \"open-source\"\n  repository: \"https://github.com/your-github-id/my-cardputer-app\"\ndownload:\n  type: \"github-release\"\n  url: \"https://github.com/your-github-id/my-cardputer-app/releases/download/v1.0.0/app.tar.gz\"\n  sha256: \"...\"\npermissions:\n  network: false\n  microphone: false\n  filesystem: \"app-data-only\"\nprivacy:\n  collects_personal_data: false\n  data_retention: \"none\"\nassets:\n  icon: \"assets/123e4567-e89b-12d3-a456-426614174000/icon.png\"\n  screenshots:\n    - \"assets/123e4567-e89b-12d3-a456-426614174000/screenshots/main.png\"\nreview:\n  status: \"pending\"",
+    "metadataTitle": "Metadata",
+    "openPolicyDoc": "Open full policy",
+    "readAgreement": "Read agreement",
+    "review": [
+      "In the pull request description, explain the app purpose, test method, download source, and whether it has been validated on CardputerZero.",
+      "Closed-source, binary-only, network, microphone, filesystem, external hardware, and background-service apps receive stricter review.",
+      "Maintainers may request changes, extra declarations, experimental labeling, rejection, delisting, or blocking; appeals are recorded in issues or pull requests."
+    ],
+    "reviewTitle": "Human review",
+    "steps": [
+      {
+        "title": "Prepare your app repository",
+        "body": "Commit your app code to GitHub and provide a clear README, license, build instructions, and release artifact. The download URL should be stable."
+      },
+      {
+        "title": "Fork the registry repository",
+        "body": "Fork the CardputerZero/appstore-hub repository to your GitHub account and create a branch from the main branch for your submission."
+      },
+      {
+        "title": "Add app metadata and assets",
+        "body": "Add a YAML metadata file named by UUID under apps/; place icon.png and screenshots under assets/<uuid>/."
+      },
+      {
+        "title": "Fill metadata",
+        "body": "Complete title, summary, author, version, license, source, download, checksum, permissions, privacy, and risk fields according to the schema."
+      },
+      {
+        "title": "Open a pull request",
+        "body": "Push your branch to your fork and open a pull request against AppStore Hub. Describe the app, test results, and any risks maintainers should review."
+      },
+      {
+        "title": "Wait for CI and review",
+        "body": "GitHub Actions runs automatic checks first. After maintainer approval and merge, the Hub regenerates the static registry and publishes it to GitHub Pages."
+      }
+    ],
+    "structureLead": "The first registry version uses one YAML file per app. Display assets live in the matching UUID asset directory.",
+    "structureTitle": "Directory structure",
+    "title": "Submit an app"
+  },
+  "wip": {
+    "body": "This page and registry are a work-in-progress build for GitHub Pages validation. Data, download URLs, and review status may still change.",
+    "title": "WIP"
+  }
+}

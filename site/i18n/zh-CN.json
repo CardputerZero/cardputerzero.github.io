@@ -1,0 +1,308 @@
+{
+  "actions": {
+    "backToApps": "返回应用列表",
+    "copied": "已复制",
+    "copy": "复制",
+    "search": "搜索",
+    "viewAll": "查看全部"
+  },
+  "apps": {
+    "empty": "没有匹配的应用。请调整搜索或筛选条件。",
+    "eyebrow": "APPSTORE INDEX",
+    "lead": "按分类、权限、源码开放程度和设备能力筛选 CardputerZero 应用。",
+    "results": "{count} 个结果",
+    "title": "应用目录"
+  },
+  "boolean": {
+    "false": "否",
+    "true": "是"
+  },
+  "categories": {
+    "AI": "AI",
+    "Developer Tools": "开发者工具",
+    "Experimental": "实验性",
+    "Games": "游戏",
+    "Media": "媒体",
+    "Music": "音乐",
+    "Productivity": "效率",
+    "Utilities": "工具"
+  },
+  "commercial": {
+    "allowed": "允许商用",
+    "restricted": "商用受限"
+  },
+  "detail": {
+    "about": "介绍",
+    "install": "安装信息",
+    "installLead": "真机 AppStore 可输入分享码查找应用。下载前请检查权限、风险和 checksum。",
+    "noRisks": "当前 mock registry 未声明额外风险。",
+    "noSensitivePermissions": "无敏感权限",
+    "permissions": "权限和能力",
+    "risks": "风险提示",
+    "screenshots": "截图"
+  },
+  "fields": {
+    "checksum": "SHA-256",
+    "download": "下载地址",
+    "license": "许可证",
+    "source": "源码开放程度",
+    "status": "审核状态",
+    "updated": "更新时间",
+    "uuid": "UUID",
+    "version": "版本"
+  },
+  "filters": {
+    "any": "不限",
+    "categories": "分类",
+    "clear": "清除",
+    "commercial": "允许商用",
+    "externalHardware": "外部硬件",
+    "hdmi": "HDMI",
+    "open": "筛选",
+    "permissions": "权限",
+    "service": "后台服务",
+    "source": "源码",
+    "title": "筛选"
+  },
+  "flags": {
+    "externalHardware": "需要外部硬件",
+    "hdmi": "支持 HDMI",
+    "service": "后台服务"
+  },
+  "home": {
+    "eyebrow": "STATIC REGISTRY / GITHUB PAGES",
+    "featured": "推荐和最近更新",
+    "featuredLead": "用真实 APPLaunch 素材组成的 mock registry，适合验证页面、筛选和分享码流程。",
+    "lead": "一个可静态发布的 CardputerZero 应用目录。用户可以搜索、筛选、查看权限风险，并用分享码在真机 AppStore 中查找下载。",
+    "subtitle": "AppStore & Registry",
+    "title": "CardputerZero Hub"
+  },
+  "notFound": {
+    "lead": "这个 UUID 或分享码不在当前 mock registry 中。",
+    "title": "未找到应用"
+  },
+  "permissions": {
+    "audio_output": "音频输出",
+    "background_service": "后台服务",
+    "camera": "摄像头",
+    "external_hardware": "外部硬件",
+    "filesystem": "文件系统",
+    "gps": "GPS",
+    "keyboard_input": "键盘输入",
+    "microphone": "麦克风",
+    "network": "网络",
+    "sensors": "传感器"
+  },
+  "policy": {
+    "acceptanceText": "如果你不同意本协议、提交规范或维护者的审核要求，请不要提交应用。已经合并的应用如果后续违反本协议，维护者可以要求修改、标记风险、下架、屏蔽或保留审计记录。协议和规则会随项目发展调整，重大变化应在仓库中公开记录。",
+    "acceptanceTitle": "接受和持续遵守",
+    "agreementEyebrow": "USER / DEVELOPER AGREEMENT",
+    "agreementLead": "本协议适用于浏览、下载、提交、维护或审核 CardputerZero AppStore Hub 中的应用、元信息、截图、二进制文件和相关讨论。提交应用即表示你已经阅读并同意这些规则。",
+    "agreementTitle": "AppStore Hub 用户与开发者协议",
+    "device": [
+      "可能影响系统、存储、网络、传感器或外部模块的应用必须声明风险。",
+      "应用必须能从 APPLaunch 启动，并提供清晰退出方式。",
+      "高 CPU、存储、电量或硬件风险需要在详情页标记。"
+    ],
+    "deviceTitle": "设备安全",
+    "eyebrow": "AGREEMENT / POLICY",
+    "fullDoc": "完整规范文档",
+    "lead": "AppStore Hub 优先保护用户、设备、维护者和开源社区的信任。提交应用前，开发者必须阅读并接受本协议、隐私要求、设备安全要求和拒收规则。",
+    "privacy": [
+      "必须声明是否收集、保存、上传或共享用户数据。",
+      "网络、账号、文件系统和设备唯一标识访问必须说明用途。",
+      "数据收集应遵守最小必要原则。"
+    ],
+    "privacyTitle": "隐私",
+    "reject": [
+      "恶意软件、凭据窃取、未授权持久化或未授权访问。",
+      "隐瞒高风险设备行为或用户数据收集。",
+      "违法、侵权、欺诈、仇恨、骚扰或伤害用途。"
+    ],
+    "rejectTitle": "拒收方向",
+    "sections": [
+      {
+        "title": "1. 适用范围",
+        "items": [
+          "本协议覆盖提交到 registry 的应用元信息、源码、二进制文件、图标、截图、README、PR、Issue 和评论。",
+          "Hub 是公开目录和 registry，不代表维护者对每个应用做完整安全审计。",
+          "用户安装应用前应查看权限、隐私、风险、源码开放程度、下载地址和 checksum。"
+        ]
+      },
+      {
+        "title": "2. 开发者资格和责任",
+        "items": [
+          "开发者必须使用可追溯的 GitHub 身份提交应用，并保证自己有权提交相关代码、素材和二进制文件。",
+          "开发者必须提供准确、完整、不会误导用户或维护者的应用说明。",
+          "下载地址、release、源码仓库、license 或应用行为发生变化时，开发者应及时更新元信息。"
+        ]
+      },
+      {
+        "title": "3. 元信息真实性",
+        "items": [
+          "必须声明网络、文件系统、麦克风、摄像头、传感器、GPS、外部硬件、后台服务和 HDMI 等能力。",
+          "必须声明源码开放程度、license、商业使用限制、版本、checksum、依赖和设备兼容性。",
+          "不得隐藏付费限制、云服务、账号依赖、高 CPU、高存储、电量影响或可能损坏用户数据的行为。"
+        ]
+      },
+      {
+        "title": "4. 隐私和数据",
+        "items": [
+          "访问、保存、上传或处理用户数据的应用必须说明数据类型、用途、保存周期和第三方共享情况。",
+          "应用应遵守最小必要原则，不得收集与功能无关的数据。",
+          "如果应用行为在后续版本中改变，必须在发布前或发布时同步更新隐私声明。"
+        ]
+      },
+      {
+        "title": "5. 设备安全和体验",
+        "items": [
+          "应用不得故意损坏设备、系统文件、用户数据或外部硬件。",
+          "GUI 应用应适配 CardputerZero 的 320 x 170 屏幕，并能从 APPLaunch 正常启动和退出。",
+          "实验性、未完成、需要特殊设置或存在设备风险的应用必须明确标记。"
+        ]
+      },
+      {
+        "title": "6. 禁止内容",
+        "items": [
+          "禁止恶意软件、间谍软件、凭据窃取、未授权持久化、未授权访问或绕过审核策略的应用。",
+          "禁止违法、侵权、欺诈、钓鱼、冒充、仇恨、骚扰、跟踪、监控、武器化或伤害用途。",
+          "禁止隐藏高风险行为、隐藏商业限制、提交无权分发的素材或误导用户安装。"
+        ]
+      },
+      {
+        "title": "7. 审核、上架和下架",
+        "items": [
+          "CI 通过不代表自动上架；维护者可以要求修改、补充声明、人工演示、可复现构建或测试日志。",
+          "维护者可以将应用标记为 pending、ci-passed、approved、needs-changes、rejected、deprecated 或 blocked。",
+          "对用户、设备、法律、隐私或社区造成明显风险的应用可以被拒收、隐藏、下架或屏蔽。"
+        ]
+      },
+      {
+        "title": "8. 申诉和记录",
+        "items": [
+          "开发者可以通过 Issue 或 Pull Request 申诉拒收、下架或 blocked 决定。",
+          "申诉应包含应用 UUID、标题、希望改变的决定、修复说明和相关证据。",
+          "维护者应尽量记录最终决定，必要时保留审计记录而不继续展示可安装入口。"
+        ]
+      }
+    ],
+    "submitLink": "去提交页面",
+    "summaryLead": "以下条款是给用户和开发者看的正式摘要。完整执行规则以仓库文档和维护者 review 记录为准。",
+    "summaryTitle": "协议条款",
+    "title": "用户与开发者协议"
+  },
+  "registry": {
+    "approved": "已批准",
+    "apps": "应用数量",
+    "eyebrow": "REGISTRY FILES",
+    "files": "静态文件",
+    "open": "查看 registry",
+    "pageLead": "Web UI 使用 JSON registry；YAML 文件供维护者 review 和真机工具链对接。",
+    "pageTitle": "Registry 数据源",
+    "risk": "有风险标记",
+    "schema": "Schema",
+    "status": "REGISTRY STATUS",
+    "title": "实时读取静态数据",
+    "updated": "生成时间"
+  },
+  "review": {
+    "approved": "已通过",
+    "blocked": "已屏蔽",
+    "ci-passed": "CI 通过",
+    "deprecated": "不推荐",
+    "needs-changes": "需修改",
+    "pending": "待审核",
+    "rejected": "已拒收"
+  },
+  "risks": {
+    "experimental": "实验性",
+    "high-cpu": "高 CPU",
+    "network-streaming": "网络流媒体",
+    "not-validated-on-device": "真机未验证",
+    "uses-microphone": "使用麦克风"
+  },
+  "search": {
+    "label": "搜索应用",
+    "placeholder": "搜索标题、作者、分类或分享码"
+  },
+  "sort": {
+    "label": "排序",
+    "name": "名称",
+    "published": "最新发布",
+    "review": "审核状态",
+    "updated": "最近更新"
+  },
+  "source": {
+    "binary-only": "仅二进制",
+    "closed-source": "闭源",
+    "mixed": "混合",
+    "open-source": "开源",
+    "source-available": "源码可见"
+  },
+  "submit": {
+    "agreementEyebrow": "SUBMISSION AGREEMENT",
+    "agreementLead": "提交应用前，请先阅读并接受开发者提交规范、隐私要求、设备安全要求和拒收规则。提交 Pull Request 即表示你确认元信息真实、权限声明完整，并愿意配合维护者 review。",
+    "agreementTitle": "提交前请先阅读协议和准入规则",
+    "ci": [
+      "CI 会校验 UUID、分享码、必填字段、图标、截图、下载地址和 checksum。",
+      "如果提供源码，CI 会尝试执行源码可访问性检查、基础静态检查、依赖检查、构建检查和 smoke test。",
+      "CI 通过不等于自动上架；维护者仍会根据政策、风险和体验做人工审核。"
+    ],
+    "ciTitle": "自动检查",
+    "directoryExample": "appstore-hub/\n  apps/\n    123e4567-e89b-12d3-a456-426614174000.yml\n  assets/\n    123e4567-e89b-12d3-a456-426614174000/\n      icon.png\n      screenshots/\n        main.png\n        settings.png",
+    "eyebrow": "PULL REQUEST FLOW",
+    "flowLead": "请先在自己的 GitHub 仓库发布代码或 release，再向 AppStore Hub registry 仓库提交应用元信息。",
+    "flowTitle": "标准提交流程",
+    "formatLead": "应用元信息使用 YAML。字段会被 GitHub Actions 校验，并在合并后生成 registry.json、registry.yml 和轻量索引。",
+    "formatTitle": "metadata 格式",
+    "lead": "开发者通过 GitHub Pull Request 提交应用元信息。维护者审核通过后，GitHub Actions 会生成新的静态 registry，并由 GitHub Pages 发布到 Hub 页面。",
+    "metadata": [
+      "每个应用必须有稳定 UUID。分享码默认取 UUID 前四位，必须在 registry 内唯一。",
+      "必须声明标题、简介、作者 GitHub ID、版本、许可证、源码开放程度、下载地址和 SHA-256 checksum。",
+      "必须完整声明权限、隐私行为、外部硬件、后台服务、HDMI、商业使用限制和已知风险。"
+    ],
+    "metadataExample": "schema_version: 1\nuuid: \"123e4567-e89b-12d3-a456-426614174000\"\ntitle: \"My Cardputer App\"\nsummary: \"One sentence user-facing summary.\"\ndescription: \"Longer description for the detail page.\"\ncategories:\n  - Utilities\ndevice_targets:\n  - CardputerZero\nauthor:\n  github: \"your-github-id\"\nversion: \"1.0.0\"\nlicense: \"MIT\"\nsource:\n  openness: \"open-source\"\n  repository: \"https://github.com/your-github-id/my-cardputer-app\"\ndownload:\n  type: \"github-release\"\n  url: \"https://github.com/your-github-id/my-cardputer-app/releases/download/v1.0.0/app.tar.gz\"\n  sha256: \"...\"\npermissions:\n  network: false\n  microphone: false\n  filesystem: \"app-data-only\"\nprivacy:\n  collects_personal_data: false\n  data_retention: \"none\"\nassets:\n  icon: \"assets/123e4567-e89b-12d3-a456-426614174000/icon.png\"\n  screenshots:\n    - \"assets/123e4567-e89b-12d3-a456-426614174000/screenshots/main.png\"\nreview:\n  status: \"pending\"",
+    "metadataTitle": "元信息",
+    "openPolicyDoc": "打开完整规范",
+    "readAgreement": "阅读协议和规则",
+    "review": [
+      "请在 PR 描述里说明应用用途、测试方式、下载来源和是否已经在 CardputerZero 上验证。",
+      "闭源、binary-only、网络、麦克风、文件系统、外部硬件和后台服务应用会进入更严格审核。",
+      "维护者可能要求修改、补充声明、标记实验性、拒收、下架或 block；申诉通过 Issue 或 PR 记录。"
+    ],
+    "reviewTitle": "人工审核",
+    "steps": [
+      {
+        "title": "准备你的应用仓库",
+        "body": "先把自己的应用代码提交到 GitHub，提供清晰 README、license、构建方式和 release 产物。下载地址应稳定可访问。"
+      },
+      {
+        "title": "Fork registry 仓库",
+        "body": "Fork CardputerZero/appstore-hub 仓库到你的 GitHub 账号，并从主分支创建一个用于提交应用的分支。"
+      },
+      {
+        "title": "新增应用目录和素材",
+        "body": "在 apps/ 下新增一个以 UUID 命名的 YAML 元信息文件；在 assets/<uuid>/ 下放置 icon.png 和截图。"
+      },
+      {
+        "title": "填写 metadata",
+        "body": "按照 schema 填写标题、简介、作者、版本、许可证、源码、下载、checksum、权限、隐私和风险字段。"
+      },
+      {
+        "title": "提交 Pull Request",
+        "body": "把分支推送到你的 fork，并向 AppStore Hub 发起 PR。PR 描述中说明应用用途、测试结果和需要维护者注意的风险。"
+      },
+      {
+        "title": "等待 CI 和审核",
+        "body": "GitHub Actions 会先做自动校验。维护者审核通过并合并后，Hub 会重新生成静态 registry 并发布到 GitHub Pages。"
+      }
+    ],
+    "structureLead": "第一版 registry 以一个 YAML 文件描述一个应用，展示素材单独放在对应 UUID 的 assets 目录下。",
+    "structureTitle": "目录结构",
+    "title": "提交应用"
+  },
+  "wip": {
+    "body": "当前页面和 registry 是用于 GitHub Pages 发布验证的工作中版本，数据、下载地址和审核状态可能仍会调整。",
+    "title": "WIP"
+  }
+}
