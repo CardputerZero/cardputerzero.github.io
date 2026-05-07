@@ -18,7 +18,11 @@ const state = {
   sort: "updated",
   page: 1,
   filtersOpen: false,
-  filterTimer: null
+  filterTimer: null,
+  searchComposing: false,
+  restoreQueryFocus: false,
+  querySelectionStart: null,
+  querySelectionEnd: null
 };
 
 const appRoot = document.querySelector("#app");
@@ -322,11 +326,22 @@ function bindFilterEvents() {
     document.querySelector("#filters").classList.toggle("open", state.filtersOpen);
   });
 
-  document.querySelector("#apps-query").addEventListener("input", (event) => {
+  const queryInput = document.querySelector("#apps-query");
+  queryInput.addEventListener("compositionstart", () => {
+    state.searchComposing = true;
+    clearTimeout(state.filterTimer);
+  });
+  queryInput.addEventListener("compositionend", (event) => {
+    state.searchComposing = false;
     state.query = event.target.value;
     state.page = 1;
-    clearTimeout(state.filterTimer);
-    state.filterTimer = setTimeout(renderAppsPage, 180);
+    scheduleSearchRender(event.target, 0);
+  });
+  queryInput.addEventListener("input", (event) => {
+    state.query = event.target.value;
+    state.page = 1;
+    if (event.isComposing || state.searchComposing) return;
+    scheduleSearchRender(event.target, 220);
   });
 
   document.querySelectorAll("input[name='category']").forEach((input) => {
@@ -381,6 +396,31 @@ function bindFilterEvents() {
       renderAppsPage();
     });
   });
+
+  restoreQueryInputFocus();
+}
+
+function scheduleSearchRender(input, delay) {
+  state.restoreQueryFocus = document.activeElement === input;
+  state.querySelectionStart = input.selectionStart;
+  state.querySelectionEnd = input.selectionEnd;
+  clearTimeout(state.filterTimer);
+  state.filterTimer = setTimeout(renderAppsPage, delay);
+}
+
+function restoreQueryInputFocus() {
+  if (!state.restoreQueryFocus) return;
+  state.restoreQueryFocus = false;
+  const input = document.querySelector("#apps-query");
+  if (!input) return;
+  input.focus({ preventScroll: true });
+  if (state.querySelectionStart != null && state.querySelectionEnd != null) {
+    try {
+      input.setSelectionRange(state.querySelectionStart, state.querySelectionEnd);
+    } catch {
+      // Some input types do not expose selection ranges in every browser.
+    }
+  }
 }
 
 function updateSetFilter(set, value, enabled) {
