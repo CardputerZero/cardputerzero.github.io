@@ -33,10 +33,13 @@
   },
   "detail": {
     "about": "About",
+    "comments": "Comments and feedback",
+    "commentsLead": "Comments are hosted on GitHub Discussions. Each app uses its own discussion thread; sign in with GitHub to comment or react.",
     "install": "Install information",
     "installLead": "Enter the share code on the device AppStore. Check permissions, risks, and checksum before installing.",
     "noRisks": "No extra risk flags are declared in this mock registry.",
     "noSensitivePermissions": "No sensitive permissions",
+    "openDiscussions": "Open GitHub Discussions",
     "permissions": "Permissions and capabilities",
     "risks": "Risk notes",
     "screenshots": "Screenshots"

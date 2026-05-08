@@ -389,6 +389,10 @@ code {
   margin-bottom: 14px;
 }
 
+.section-head.compact {
+  align-items: center;
+}
+
 .section-head p {
   margin: 6px 0 0;
   color: var(--color-text-muted);
@@ -712,6 +716,20 @@ code {
 .markdown-copy {
   color: var(--color-text-muted);
   line-height: 1.7;
+}
+
+.comments-panel {
+  margin-top: 18px;
+}
+
+.comments-panel .section-head p {
+  max-width: 760px;
+  line-height: 1.65;
+}
+
+.giscus,
+.giscus-frame {
+  width: 100%;
 }
 
 .submit-grid {

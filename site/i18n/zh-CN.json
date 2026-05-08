@@ -33,10 +33,13 @@
   },
   "detail": {
     "about": "介绍",
+    "comments": "评论与反馈",
+    "commentsLead": "评论由 GitHub Discussions 托管。每个应用使用独立讨论串，登录 GitHub 后即可留言或添加 reaction。",
     "install": "安装信息",
     "installLead": "真机 AppStore 可输入分享码查找应用。下载前请检查权限、风险和 checksum。",
     "noRisks": "当前 mock registry 未声明额外风险。",
     "noSensitivePermissions": "无敏感权限",
+    "openDiscussions": "打开 GitHub Discussions",
     "permissions": "权限和能力",
     "risks": "风险提示",
     "screenshots": "截图"

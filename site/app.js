@@ -1,6 +1,12 @@
 const REGISTRY_URL = "generated/registry.json";
 const PAGE_SIZE = 6;
 const SUPPORTED_LOCALES = ["zh-CN", "en", "ja"];
+const GISCUS_CONFIG = {
+  repo: "CardputerZero/cardputerzero.github.io",
+  repoId: "R_kgDOSWq5Vw",
+  category: "App Comments",
+  categoryId: "DIC_kwDOSWq5V84C8kA5"
+};
 
 const state = {
   registry: null,
@@ -564,10 +570,62 @@ function renderDetail(id) {
           </div>
         </aside>
       </div>
+      ${renderComments(app)}
     </section>
   `;
 
   bindCopyButtons();
+  mountGiscus(app);
+}
+
+function renderComments(app) {
+  return `
+    <section class="section-panel comments-panel">
+      <div class="section-head compact">
+        <div>
+          <h2>${t("detail.comments")}</h2>
+          <p>${t("detail.commentsLead")}</p>
+        </div>
+        <a class="button secondary" href="https://github.com/${GISCUS_CONFIG.repo}/discussions/categories/app-comments" rel="noopener noreferrer" target="_blank">${t("detail.openDiscussions")}</a>
+      </div>
+      <div class="giscus" id="giscus-${escapeAttr(app.uuid)}"></div>
+    </section>
+  `;
+}
+
+function mountGiscus(app) {
+  const container = document.querySelector(".giscus");
+  if (!container) return;
+  container.textContent = "";
+
+  const script = document.createElement("script");
+  script.src = "https://giscus.app/client.js";
+  script.async = true;
+  script.crossOrigin = "anonymous";
+  script.setAttribute("data-repo", GISCUS_CONFIG.repo);
+  script.setAttribute("data-repo-id", GISCUS_CONFIG.repoId);
+  script.setAttribute("data-category", GISCUS_CONFIG.category);
+  script.setAttribute("data-category-id", GISCUS_CONFIG.categoryId);
+  script.setAttribute("data-mapping", "specific");
+  script.setAttribute("data-term", `cardputerzero-app:${app.uuid}`);
+  script.setAttribute("data-strict", "1");
+  script.setAttribute("data-reactions-enabled", "1");
+  script.setAttribute("data-emit-metadata", "0");
+  script.setAttribute("data-input-position", "top");
+  script.setAttribute("data-theme", giscusThemeUrl());
+  script.setAttribute("data-lang", giscusLang());
+  script.setAttribute("data-loading", "lazy");
+  container.appendChild(script);
+}
+
+function giscusThemeUrl() {
+  return new URL("site/giscus-theme.css", document.baseURI).href;
+}
+
+function giscusLang() {
+  if (state.locale === "ja") return "ja";
+  if (state.locale === "en") return "en";
+  return "zh-CN";
 }
 
 function renderSubmit() {

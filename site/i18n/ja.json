@@ -33,10 +33,13 @@
   },
   "detail": {
     "about": "概要",
+    "comments": "コメントとフィードバック",
+    "commentsLead": "コメントは GitHub Discussions でホストされます。各アプリは個別の discussion を使い、GitHub にログインするとコメントやリアクションを投稿できます。",
     "install": "インストール情報",
     "installLead": "デバイスの AppStore で共有コードを入力します。インストール前に権限、リスク、checksum を確認してください。",
     "noRisks": "この mock registry では追加リスクは宣言されていません。",
     "noSensitivePermissions": "センシティブ権限なし",
+    "openDiscussions": "GitHub Discussions を開く",
     "permissions": "権限と機能",
     "risks": "リスク情報",
     "screenshots": "スクリーンショット"
