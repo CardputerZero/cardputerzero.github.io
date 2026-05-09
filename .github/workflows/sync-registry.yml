@@ -31,7 +31,17 @@ jobs:
       - name: Generate registry JSON
         run: |
           python3 - <<'PYTHON'
-          import json, os, datetime
+          import json, os, datetime, hashlib, uuid
+
+          NAMESPACE_CZ = uuid.UUID('c4d70000-a770-4000-8000-000000000000')
+
+          def make_uuid(pkg_name, sha256_hex):
+              """Generate deterministic UUID from package name + file hash"""
+              seed = f"{pkg_name}:{sha256_hex}"
+              return str(uuid.uuid5(NAMESPACE_CZ, seed))
+
+          def now_iso():
+              return datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime('%Y-%m-%dT%H:%M:%S+08:00')
 
           # Parse Packages index
           packages = {}
@@ -42,7 +52,6 @@ jobs:
                   if line == '':
                       if 'Package' in current:
                           pkg = current['Package']
-                          # Keep latest version per package
                           if pkg not in packages or current.get('Version', '') > packages[pkg].get('Version', ''):
                               packages[pkg] = current
                       current = {}
@@ -65,9 +74,12 @@ jobs:
               with open(meta_path) as f:
                   meta = json.load(f)
 
+              sha256 = pkg_info.get("SHA256", "")
+              app_uuid = meta.get("uuid") or make_uuid(pkg_name, sha256)
+
               app = {
-                  "uuid": meta.get("uuid", ""),
-                  "share_code": meta.get("share_code", ""),
+                  "uuid": app_uuid,
+                  "share_code": meta.get("share_code", pkg_name[:4]),
                   "title": meta.get("title", pkg_name),
                   "summary": meta.get("summary", ""),
                   "description": meta.get("description", ""),
@@ -80,7 +92,7 @@ jobs:
                   "download": {
                       "type": "deb",
                       "url": f"https://cardputerzero.github.io/packages/{pkg_info.get('Filename', '')}",
-                      "sha256": pkg_info.get("SHA256", ""),
+                      "sha256": sha256,
                       "size": int(pkg_info.get("Size", 0))
                   },
                   "depends": pkg_info.get("Depends", ""),
@@ -89,9 +101,10 @@ jobs:
               }
               apps.append(app)
 
+          generated_at = now_iso()
           registry = {
               "schema_version": 2,
-              "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+              "generated_at": generated_at,
               "registry_id": "cardputerzero-appstore",
               "device_targets": ["CardputerZero"],
               "apps": apps
@@ -101,10 +114,9 @@ jobs:
           with open('generated/registry.json', 'w') as f:
               json.dump(registry, f, indent=2, ensure_ascii=False)
 
-          # Also generate a minimal index
           index = {
               "schema_version": 2,
-              "generated_at": registry["generated_at"],
+              "generated_at": generated_at,
               "apps": [
                   {
                       "uuid": a["uuid"],
