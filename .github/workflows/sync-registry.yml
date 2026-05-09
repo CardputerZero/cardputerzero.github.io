@@ -35,9 +35,9 @@ jobs:
 
           NAMESPACE_CZ = uuid.UUID('c4d70000-a770-4000-8000-000000000000')
 
-          def make_uuid(pkg_name):
-              """Generate deterministic UUID from package name (stable across versions)"""
-              return str(uuid.uuid5(NAMESPACE_CZ, pkg_name))
+          def make_uuid(pkg_name, version):
+              """Generate deterministic UUID from package name + version"""
+              return str(uuid.uuid5(NAMESPACE_CZ, f"{pkg_name}:{version}"))
 
           def now_iso():
               return datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime('%Y-%m-%dT%H:%M:%S+08:00')
@@ -74,7 +74,8 @@ jobs:
                   meta = json.load(f)
 
               sha256 = pkg_info.get("SHA256", "")
-              app_uuid = meta.get("uuid") or make_uuid(pkg_name)
+              version = pkg_info.get("Version", "")
+              app_uuid = make_uuid(pkg_name, version)
 
               app = {
                   "uuid": app_uuid,
