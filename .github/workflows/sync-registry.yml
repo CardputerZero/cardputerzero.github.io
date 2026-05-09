@@ -1,0 +1,152 @@
+name: Sync Registry from Packages
+
+on:
+  repository_dispatch:
+    types: [packages-updated]
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch Packages index and meta.json files
+        run: |
+          # Download APT Packages index
+          curl -fsSL "https://cardputerzero.github.io/packages/dists/stable/main/binary-arm64/Packages" -o /tmp/Packages
+
+          # Download all meta.json files by parsing package names from index
+          mkdir -p /tmp/meta
+          grep '^Package: ' /tmp/Packages | awk '{print $2}' | sort -u | while read pkg; do
+            url="https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/${pkg}/meta.json"
+            curl -fsSL "$url" -o "/tmp/meta/${pkg}.json" 2>/dev/null || true
+          done
+
+      - name: Generate registry JSON
+        run: |
+          python3 - <<'PYTHON'
+          import json, os, datetime
+
+          # Parse Packages index
+          packages = {}
+          current = {}
+          with open('/tmp/Packages') as f:
+              for line in f:
+                  line = line.rstrip('\n')
+                  if line == '':
+                      if 'Package' in current:
+                          pkg = current['Package']
+                          # Keep latest version per package
+                          if pkg not in packages or current.get('Version', '') > packages[pkg].get('Version', ''):
+                              packages[pkg] = current
+                      current = {}
+                  elif ': ' in line:
+                      key, val = line.split(': ', 1)
+                      current[key] = val
+              if 'Package' in current:
+                  pkg = current['Package']
+                  if pkg not in packages or current.get('Version', '') > packages[pkg].get('Version', ''):
+                      packages[pkg] = current
+
+          # Build registry
+          apps = []
+          meta_dir = '/tmp/meta'
+          for pkg_name, pkg_info in sorted(packages.items()):
+              meta_path = os.path.join(meta_dir, f'{pkg_name}.json')
+              if not os.path.exists(meta_path):
+                  continue
+
+              with open(meta_path) as f:
+                  meta = json.load(f)
+
+              app = {
+                  "uuid": meta.get("uuid", ""),
+                  "share_code": meta.get("share_code", ""),
+                  "title": meta.get("title", pkg_name),
+                  "summary": meta.get("summary", ""),
+                  "description": meta.get("description", ""),
+                  "locales": meta.get("locales", {}),
+                  "categories": meta.get("categories", []),
+                  "author": meta.get("author", {}),
+                  "version": pkg_info.get("Version", ""),
+                  "license": meta.get("license", ""),
+                  "source_repo": meta.get("source_repo", ""),
+                  "download": {
+                      "type": "deb",
+                      "url": f"https://cardputerzero.github.io/packages/{pkg_info.get('Filename', '')}",
+                      "sha256": pkg_info.get("SHA256", ""),
+                      "size": int(pkg_info.get("Size", 0))
+                  },
+                  "depends": pkg_info.get("Depends", ""),
+                  "permissions": meta.get("permissions", {}),
+                  "icon": meta.get("icon", "")
+              }
+              apps.append(app)
+
+          registry = {
+              "schema_version": 2,
+              "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+              "registry_id": "cardputerzero-appstore",
+              "device_targets": ["CardputerZero"],
+              "apps": apps
+          }
+
+          os.makedirs('generated', exist_ok=True)
+          with open('generated/registry.json', 'w') as f:
+              json.dump(registry, f, indent=2, ensure_ascii=False)
+
+          # Also generate a minimal index
+          index = {
+              "schema_version": 2,
+              "generated_at": registry["generated_at"],
+              "apps": [
+                  {
+                      "uuid": a["uuid"],
+                      "share_code": a["share_code"],
+                      "title": a["title"],
+                      "summary": a["summary"],
+                      "version": a["version"],
+                      "categories": a["categories"],
+                      "icon": a["icon"]
+                  }
+                  for a in apps
+              ]
+          }
+          with open('generated/registry-index.json', 'w') as f:
+              json.dump(index, f, indent=2, ensure_ascii=False)
+
+          print(f"Generated registry with {len(apps)} app(s)")
+          PYTHON
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet generated/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create PR with updated registry
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          BRANCH="auto/sync-registry-$(date +%s)"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add generated/
+          git commit -m "chore: sync registry from packages repository"
+          git push origin "$BRANCH"
+          gh pr create \
+            --title "chore: sync registry from packages" \
+            --body "Auto-generated from CardputerZero/packages update. Review and merge to publish." \
+            --base main \
+            --head "$BRANCH"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
