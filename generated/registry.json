@@ -1,546 +1,92 @@
 {
-  "schema_version": 1,
-  "generated_at": "2026-05-07T01:45:00+08:00",
-  "registry_id": "cardputerzero-appstore-hub-mock",
-  "device_targets": ["CardputerZero"],
-  "notes": "Mock registry for the static GitHub Pages AppStore Hub prototype. Download URLs and checksums are placeholders.",
+  "schema_version": 2,
+  "generated_at": "2026-05-09T09:59:33.534841+00:00",
+  "registry_id": "cardputerzero-appstore",
+  "device_targets": [
+    "CardputerZero"
+  ],
   "apps": [
     {
-      "schema_version": 1,
-      "uuid": "20480000-0000-4000-8000-000000000001",
-      "share_code": "2048",
-      "title": "2048",
-      "summary": "Compact LVGL number puzzle tuned for the 320x170 CardputerZero display.",
-      "description": "2048 is a small, keyboard-first puzzle game packaged for APPLaunch. It is a low-risk local game that works well as a baseline example for icons, categories, source metadata, and simple install flow.",
+      "uuid": "10f1b000-0000-4000-8000-000000000008",
+      "share_code": "lofi",
+      "title": "LoFiBox",
+      "summary": "Chromeless desktop-widget music player",
+      "description": "LoFiBox is a pure C++ Linux music player with a compact chromeless desktop-widget surface, local playback, media-library browsing, and DSP-ready audio pipeline.",
       "locales": {
         "zh-CN": {
-          "title": "2048",
-          "summary": "适配 320x170 CardputerZero 屏幕的 LVGL 数字合成游戏。",
-          "description": "2048 是一个键盘优先的本地小游戏，已经按 APPLaunch 方式打包。它适合作为低风险应用样例，用来验证图标、分类、源码元信息和基础安装流程。"
+          "title": "LoFiBox 音乐播放器",
+          "summary": "无边框桌面小部件音乐播放器"
         },
-        "en": {
-          "title": "2048",
-          "summary": "Compact LVGL number puzzle tuned for the 320x170 CardputerZero display.",
-          "description": "2048 is a small, keyboard-first puzzle game packaged for APPLaunch. It is a low-risk local game that works well as a baseline example for icons, categories, source metadata, and simple install flow."
-        },
-        "ja": {
-          "title": "2048",
-          "summary": "320x170 の CardputerZero 画面に合わせた LVGL 数字パズルです。",
-          "description": "2048 は APPLaunch 向けにパッケージされたキーボード操作中心の小さなローカルゲームです。低リスクなサンプルとして、アイコン、カテゴリ、ソース情報、基本的なインストール導線の検証に使えます。"
+        "zh-TW": {
+          "title": "LoFiBox 音樂播放器",
+          "summary": "無邊框桌面小部件音樂播放器"
         }
       },
-      "categories": ["Games"],
-      "device_targets": ["CardputerZero"],
+      "categories": [
+        "Media",
+        "Music"
+      ],
       "author": {
-        "github": "CardputerZero",
-        "display_name": "CardputerZero Maintainers",
-        "website": "https://github.com/CardputerZero"
+        "github": "vicliu624",
+        "display_name": "vicliu624"
       },
-      "version": "0.1.0",
-      "published_at": "2026-04-26T10:00:00+08:00",
-      "updated_at": "2026-05-05T18:30:00+08:00",
-      "license": "MIT",
-      "source": {
-        "openness": "open-source",
-        "repository": "https://github.com/CardputerZero/2048",
-        "commit": "mock-2048"
-      },
+      "version": "0.2.0-1~lofibox23",
+      "license": "GPL-3.0",
+      "source_repo": "https://github.com/vicliu624/LoFiBox-Zero",
       "download": {
-        "type": "github-release",
-        "url": "https://github.com/CardputerZero/2048/releases/download/v0.1.0/cardputerzero-2048.tar.gz",
-        "sha256": "2048204820482048204820482048204820482048204820482048204820482048"
+        "type": "deb",
+        "url": "https://cardputerzero.github.io/packages/pool/main/lofibox/lofibox_0.2.0-1~lofibox23_arm64.deb",
+        "sha256": "469d14c030d4addb5ff54f6eef7700b1781da3c33047796b1bbd2c8b3fe3177d",
+        "size": 9077082
       },
-      "app": {
-        "service": false,
-        "dependencies": [],
-        "external_hardware": {
-          "required": false,
-          "items": []
-        },
-        "hdmi_output": false,
-        "commercial_use": "allowed",
-        "applaunch": {
-          "desktop_entry": "applications/2048.desktop",
-          "exec": "/usr/share/APPLaunch/bin/M5CardputerZero-2048",
-          "terminal": false,
-          "icon": "share/images/2048.png"
-        }
-      },
+      "depends": "libc6 (>= 2.38), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1), libx11-6, libxkbcommon0 (>= 0.5.0), alsa-utils, ffmpeg, python3, python3-mutagen",
       "permissions": {
-        "camera": false,
-        "microphone": false,
-        "audio_output": false,
-        "sensors": false,
-        "gps": false,
-        "network": false,
-        "filesystem": "none",
-        "keyboard_input": true,
-        "user_data": []
-      },
-      "privacy": {
-        "collects_personal_data": false,
-        "data_retention": "none",
-        "third_party_sharing": false
-      },
-      "assets": {
-        "icon": "assets/20480000/icon.png",
-        "screenshots": []
-      },
-      "risk_flags": [],
-      "review": {
-        "status": "approved",
-        "notes": ["Local game, no network or user-data access declared."]
-      },
-      "featured": true
-    },
-    {
-      "schema_version": 1,
-      "uuid": "ca1c0000-0000-4000-8000-000000000002",
-      "share_code": "ca1c",
-      "title": "Calculator",
-      "summary": "Scientific calculator with LVGL UI, keyboard handling, and focused UI tests.",
-      "description": "Calculator provides basic and scientific operations on the CardputerZero. The mock entry highlights UI screenshots, test artifacts, and a straightforward local utility permission profile.",
-      "locales": {
-        "zh-CN": {
-          "title": "Calculator",
-          "summary": "带 LVGL 界面、键盘输入和 UI 测试的科学计算器。",
-          "description": "Calculator 为 CardputerZero 提供基础和科学计算功能。这个 mock 条目展示了 UI 截图、测试产物和本地工具类应用的权限声明方式。"
-        },
-        "en": {
-          "title": "Calculator",
-          "summary": "Scientific calculator with LVGL UI, keyboard handling, and focused UI tests.",
-          "description": "Calculator provides basic and scientific operations on the CardputerZero. The mock entry highlights UI screenshots, test artifacts, and a straightforward local utility permission profile."
-        },
-        "ja": {
-          "title": "Calculator",
-          "summary": "LVGL UI、キーボード入力、UI テストを備えた関数電卓です。",
-          "description": "Calculator は CardputerZero で基本計算と科学計算を提供します。この mock エントリは UI スクリーンショット、テスト成果物、ローカルユーティリティの権限プロファイルを示します。"
-        }
-      },
-      "categories": ["Utilities", "Productivity"],
-      "device_targets": ["CardputerZero"],
-      "author": {
-        "github": "CardputerZero",
-        "display_name": "CardputerZero Maintainers",
-        "website": "https://github.com/CardputerZero"
-      },
-      "version": "0.2.0",
-      "published_at": "2026-04-28T12:00:00+08:00",
-      "updated_at": "2026-05-06T12:20:00+08:00",
-      "license": "MIT",
-      "source": {
-        "openness": "open-source",
-        "repository": "https://github.com/CardputerZero/Calculator",
-        "commit": "mock-calculator"
-      },
-      "download": {
-        "type": "github-release",
-        "url": "https://github.com/CardputerZero/Calculator/releases/download/v0.2.0/cardputerzero-calculator.tar.gz",
-        "sha256": "ca1cca1cca1cca1cca1cca1cca1cca1cca1cca1cca1cca1cca1cca1cca1cca1c"
-      },
-      "app": {
-        "service": false,
-        "dependencies": [],
-        "external_hardware": {
-          "required": false,
-          "items": []
-        },
-        "hdmi_output": false,
-        "commercial_use": "allowed",
-        "applaunch": {
-          "desktop_entry": "applications/calculator.desktop",
-          "exec": "/usr/share/APPLaunch/bin/M5CardputerZero-Calculator",
-          "terminal": false,
-          "icon": "share/images/calculator.png"
-        }
-      },
-      "permissions": {
-        "camera": false,
-        "microphone": false,
         "audio_output": true,
-        "sensors": false,
-        "gps": false,
-        "network": false,
-        "filesystem": "none",
         "keyboard_input": true,
-        "user_data": []
+        "network": true
       },
-      "privacy": {
-        "collects_personal_data": false,
-        "data_retention": "none",
-        "third_party_sharing": false
-      },
-      "assets": {
-        "icon": "assets/ca1c0000/icon.png",
-        "screenshots": [
-          "assets/ca1c0000/screenshots/main.png",
-          "assets/ca1c0000/screenshots/trig.png"
-        ]
-      },
-      "risk_flags": [],
-      "review": {
-        "status": "ci-passed",
-        "notes": ["Mocked from local test artifacts."]
-      },
-      "featured": true
+      "icon": "lofibox_icon.png"
     },
     {
-      "schema_version": 1,
-      "uuid": "a0d10000-0000-4000-8000-000000000003",
-      "share_code": "a0d1",
-      "title": "AudioSpectrum",
-      "summary": "Microphone-driven spectrum visualizer for audio experiments.",
-      "description": "AudioSpectrum renders live audio input as a compact LVGL visualizer. Because it uses the microphone, the detail page and filters mark the permission clearly for user review.",
+      "uuid": "2000e000-0000-4000-8000-000000000007",
+      "share_code": "nc20",
+      "title": "NC2000",
+      "summary": "WenQuXing NC2000/NC1020 emulator for CardputerZero",
+      "description": "A WenQuXing (文曲星) NC2000 / NC1020 handheld computer emulator tuned for M5CardputerZero's 320x170 LCD.",
       "locales": {
         "zh-CN": {
-          "title": "AudioSpectrum",
-          "summary": "使用麦克风输入的音频频谱可视化工具。",
-          "description": "AudioSpectrum 将实时音频输入渲染为紧凑的 LVGL 频谱画面。由于它使用麦克风，详情页和筛选器会明确突出相关权限。"
+          "title": "NC2000 文曲星模拟器",
+          "summary": "适配 320x170 CardputerZero 屏幕的文曲星 NC2000/NC1020 模拟器"
         },
-        "en": {
-          "title": "AudioSpectrum",
-          "summary": "Microphone-driven spectrum visualizer for audio experiments.",
-          "description": "AudioSpectrum renders live audio input as a compact LVGL visualizer. Because it uses the microphone, the detail page and filters mark the permission clearly for user review."
-        },
-        "ja": {
-          "title": "AudioSpectrum",
-          "summary": "マイク入力を使う音声スペクトラム可視化ツールです。",
-          "description": "AudioSpectrum はリアルタイム音声入力をコンパクトな LVGL ビジュアライザーとして表示します。マイクを使用するため、詳細ページとフィルタで権限を明確に表示します。"
+        "zh-TW": {
+          "title": "NC2000 文曲星模擬器",
+          "summary": "適配 320x170 CardputerZero 螢幕的文曲星 NC2000/NC1020 模擬器"
         }
       },
-      "categories": ["Media", "Music"],
-      "device_targets": ["CardputerZero"],
+      "categories": [
+        "Emulators",
+        "Games"
+      ],
       "author": {
-        "github": "CardputerZero",
-        "display_name": "CardputerZero Maintainers",
-        "website": "https://github.com/CardputerZero"
+        "github": "eggfly",
+        "display_name": "eggfly"
       },
-      "version": "0.1.0",
-      "published_at": "2026-04-30T09:40:00+08:00",
-      "updated_at": "2026-05-05T09:10:00+08:00",
+      "version": "1.0.3",
       "license": "MIT",
-      "source": {
-        "openness": "open-source",
-        "repository": "https://github.com/CardputerZero/AudioSpectrum",
-        "commit": "mock-audio-spectrum"
-      },
+      "source_repo": "https://github.com/eggfly/CardputerZero-NC2000",
       "download": {
-        "type": "github-release",
-        "url": "https://github.com/CardputerZero/AudioSpectrum/releases/download/v0.1.0/cardputerzero-audio-spectrum.tar.gz",
-        "sha256": "a0d1a0d1a0d1a0d1a0d1a0d1a0d1a0d1a0d1a0d1a0d1a0d1a0d1a0d1a0d1a0d1"
+        "type": "deb",
+        "url": "https://cardputerzero.github.io/packages/pool/main/nc2000/nc2000_1.0.3_arm64.deb",
+        "sha256": "6f3e8c3ac385cb9a306f4ab5205f4bc3a0d4ae776c4fbdbe136df243b5f73ed8",
+        "size": 20560444
       },
-      "app": {
-        "service": false,
-        "dependencies": ["tinyalsa"],
-        "external_hardware": {
-          "required": false,
-          "items": []
-        },
-        "hdmi_output": false,
-        "commercial_use": "allowed",
-        "applaunch": {
-          "desktop_entry": "applications/audio-spectrum.desktop",
-          "exec": "/usr/share/APPLaunch/bin/M5CardputerZero-AudioSpectrum",
-          "terminal": false,
-          "icon": "share/images/audio-spectrum.png"
-        }
-      },
+      "depends": "libsdl2-2.0-0",
       "permissions": {
-        "camera": false,
-        "microphone": true,
-        "audio_output": false,
-        "sensors": false,
-        "gps": false,
-        "network": false,
-        "filesystem": "none",
-        "keyboard_input": true,
-        "user_data": []
-      },
-      "privacy": {
-        "collects_personal_data": false,
-        "data_retention": "none",
-        "third_party_sharing": false
-      },
-      "assets": {
-        "icon": "assets/a0d10000/icon.png",
-        "screenshots": []
-      },
-      "risk_flags": ["uses-microphone"],
-      "review": {
-        "status": "pending",
-        "notes": ["Microphone permission requires maintainer review before approval."]
-      },
-      "featured": false
-    },
-    {
-      "schema_version": 1,
-      "uuid": "57e00000-0000-4000-8000-000000000004",
-      "share_code": "57e0",
-      "title": "StreamPlayer",
-      "summary": "Network media player with poster cache and CJK font packaging.",
-      "description": "StreamPlayer is a media-oriented LVGL app with network streams, local poster cache, and packaged CJK fonts. It is a useful sample for network, filesystem, and media permissions.",
-      "locales": {
-        "zh-CN": {
-          "title": "StreamPlayer",
-          "summary": "带海报缓存和 CJK 字体打包的网络媒体播放器。",
-          "description": "StreamPlayer 是一个媒体类 LVGL 应用，支持网络流、本地海报缓存和随包 CJK 字体。它适合展示网络、文件系统和媒体权限的声明方式。"
-        },
-        "en": {
-          "title": "StreamPlayer",
-          "summary": "Network media player with poster cache and CJK font packaging.",
-          "description": "StreamPlayer is a media-oriented LVGL app with network streams, local poster cache, and packaged CJK fonts. It is a useful sample for network, filesystem, and media permissions."
-        },
-        "ja": {
-          "title": "StreamPlayer",
-          "summary": "ポスターキャッシュと CJK フォントを含むネットワークメディアプレイヤーです。",
-          "description": "StreamPlayer はネットワーク配信、ローカルポスターキャッシュ、同梱 CJK フォントを持つメディア向け LVGL アプリです。ネットワーク、ファイルシステム、メディア権限のサンプルとして使えます。"
-        }
-      },
-      "categories": ["Media"],
-      "device_targets": ["CardputerZero"],
-      "author": {
-        "github": "CardputerZero",
-        "display_name": "CardputerZero Maintainers",
-        "website": "https://github.com/CardputerZero"
-      },
-      "version": "0.3.0",
-      "published_at": "2026-05-01T16:00:00+08:00",
-      "updated_at": "2026-05-06T18:00:00+08:00",
-      "license": "MIT",
-      "source": {
-        "openness": "source-available",
-        "repository": "https://github.com/CardputerZero/StreamPlayer",
-        "commit": "mock-stream-player"
-      },
-      "download": {
-        "type": "github-release",
-        "url": "https://github.com/CardputerZero/StreamPlayer/releases/download/v0.3.0/cardputerzero-stream-player.tar.gz",
-        "sha256": "57e057e057e057e057e057e057e057e057e057e057e057e057e057e057e057e0"
-      },
-      "app": {
-        "service": false,
-        "dependencies": ["ffmpeg", "NotoSansSC-Regular.ttf"],
-        "external_hardware": {
-          "required": false,
-          "items": []
-        },
-        "hdmi_output": true,
-        "commercial_use": "restricted",
-        "applaunch": {
-          "desktop_entry": "applications/stream-player.desktop",
-          "exec": "/usr/share/APPLaunch/bin/M5CardputerZero-StreamPlayer",
-          "terminal": false,
-          "icon": "share/images/stream-player.png"
-        }
-      },
-      "permissions": {
-        "camera": false,
-        "microphone": false,
         "audio_output": true,
-        "sensors": false,
-        "gps": false,
-        "network": true,
-        "filesystem": "app-cache",
         "keyboard_input": true,
-        "user_data": ["stream url", "poster cache"]
+        "network": false
       },
-      "privacy": {
-        "collects_personal_data": false,
-        "data_retention": "local-cache",
-        "third_party_sharing": false
-      },
-      "assets": {
-        "icon": "assets/57e00000/icon.png",
-        "screenshots": [
-          "assets/57e00000/screenshots/library.png",
-          "assets/57e00000/screenshots/player.png"
-        ]
-      },
-      "risk_flags": ["network-streaming"],
-      "review": {
-        "status": "needs-changes",
-        "notes": ["Network stream behavior and cache cleanup need clearer policy text."]
-      },
-      "featured": true
-    },
-    {
-      "schema_version": 1,
-      "uuid": "b1ba0000-0000-4000-8000-000000000005",
-      "share_code": "b1ba",
-      "title": "VibApp",
-      "summary": "On-device AI app generation client, currently marked as not ready.",
-      "description": "VibApp is a launcher/client for generating CardputerZero apps from prompts. The current repository notes that direct on-device building is not validated, so this registry entry is intentionally marked deprecated.",
-      "locales": {
-        "zh-CN": {
-          "title": "VibApp",
-          "summary": "设备端 AI 应用生成客户端，目前标记为暂不推荐使用。",
-          "description": "VibApp 是一个通过提示词生成 CardputerZero 应用的启动器/客户端。当前仓库说明设备端直接构建尚未验证，因此这个 registry 条目特意标记为不推荐。"
-        },
-        "en": {
-          "title": "VibApp",
-          "summary": "On-device AI app generation client, currently marked as not ready.",
-          "description": "VibApp is a launcher/client for generating CardputerZero apps from prompts. The current repository notes that direct on-device building is not validated, so this registry entry is intentionally marked deprecated."
-        },
-        "ja": {
-          "title": "VibApp",
-          "summary": "デバイス上の AI アプリ生成クライアントです。現在は非推奨扱いです。",
-          "description": "VibApp はプロンプトから CardputerZero アプリを生成するランチャー/クライアントです。現時点ではデバイス上の直接ビルドが検証されていないため、この registry では非推奨として扱います。"
-        }
-      },
-      "categories": ["AI", "Developer Tools", "Experimental"],
-      "device_targets": ["CardputerZero"],
-      "author": {
-        "github": "CardputerZero",
-        "display_name": "CardputerZero Maintainers",
-        "website": "https://github.com/CardputerZero"
-      },
-      "version": "0.1.0",
-      "published_at": "2026-05-02T11:00:00+08:00",
-      "updated_at": "2026-05-06T20:00:00+08:00",
-      "license": "MIT",
-      "source": {
-        "openness": "open-source",
-        "repository": "https://github.com/CardputerZero/VibApp",
-        "commit": "mock-vibapp"
-      },
-      "download": {
-        "type": "github-release",
-        "url": "https://github.com/CardputerZero/VibApp/releases/download/v0.1.0/cardputerzero-vibapp.tar.gz",
-        "sha256": "b1bab1bab1bab1bab1bab1bab1bab1bab1bab1bab1bab1bab1bab1bab1bab1ba"
-      },
-      "app": {
-        "service": false,
-        "dependencies": ["opencode", "m5stack-cardputer-applauncher skill"],
-        "external_hardware": {
-          "required": false,
-          "items": []
-        },
-        "hdmi_output": false,
-        "commercial_use": "restricted",
-        "applaunch": {
-          "desktop_entry": "applications/vibapp.desktop",
-          "exec": "/usr/share/APPLaunch/bin/M5CardputerZero-VibApp",
-          "terminal": false,
-          "icon": "share/images/vibapp.png"
-        }
-      },
-      "permissions": {
-        "camera": false,
-        "microphone": false,
-        "audio_output": false,
-        "sensors": false,
-        "gps": false,
-        "network": true,
-        "filesystem": "workspace",
-        "keyboard_input": true,
-        "user_data": ["prompt text", "generated source files"]
-      },
-      "privacy": {
-        "collects_personal_data": false,
-        "data_retention": "local-workspace",
-        "third_party_sharing": false
-      },
-      "assets": {
-        "icon": "assets/b1ba0000/icon.png",
-        "screenshots": []
-      },
-      "risk_flags": ["experimental", "not-validated-on-device", "high-cpu"],
-      "review": {
-        "status": "deprecated",
-        "notes": ["Repository README currently says not to use VibApp."]
-      },
-      "featured": false
-    },
-    {
-      "schema_version": 1,
-      "uuid": "9015e000-0000-4000-8000-000000000006",
-      "share_code": "9015",
-      "title": "Pulse",
-      "summary": "Experimental pet adventure prototype with pixel assets and multiple LVGL views.",
-      "description": "Pulse is an experimental game prototype using local pixel assets, map views, inventory screens, and keyboard navigation. The mock registry entry uses local screenshots to validate app detail media layout.",
-      "locales": {
-        "zh-CN": {
-          "title": "Pulse",
-          "summary": "带像素素材和多视图 LVGL 界面的实验性宠物冒险原型。",
-          "description": "Pulse 是一个实验性游戏原型，包含本地像素素材、地图视图、背包界面和键盘导航。这个 mock 条目使用本地截图来验证详情页媒体布局。"
-        },
-        "en": {
-          "title": "Pulse",
-          "summary": "Experimental pet adventure prototype with pixel assets and multiple LVGL views.",
-          "description": "Pulse is an experimental game prototype using local pixel assets, map views, inventory screens, and keyboard navigation. The mock registry entry uses local screenshots to validate app detail media layout."
-        },
-        "ja": {
-          "title": "Pulse",
-          "summary": "ピクセル素材と複数の LVGL ビューを持つ実験的ペット冒険プロトタイプです。",
-          "description": "Pulse はローカルのピクセル素材、マップ表示、バッグ画面、キーボード操作を使う実験的ゲームプロトタイプです。この mock エントリはローカルスクリーンショットで詳細ページのメディア表示を検証します。"
-        }
-      },
-      "categories": ["Games", "Experimental"],
-      "device_targets": ["CardputerZero"],
-      "author": {
-        "github": "CardputerZero",
-        "display_name": "CardputerZero Maintainers",
-        "website": "https://github.com/CardputerZero"
-      },
-      "version": "0.0.8",
-      "published_at": "2026-05-03T17:20:00+08:00",
-      "updated_at": "2026-05-06T22:30:00+08:00",
-      "license": "MIT",
-      "source": {
-        "openness": "open-source",
-        "repository": "https://github.com/CardputerZero/Pulse",
-        "commit": "mock-pulse"
-      },
-      "download": {
-        "type": "github-release",
-        "url": "https://github.com/CardputerZero/Pulse/releases/download/v0.0.8/cardputerzero-pulse.tar.gz",
-        "sha256": "9015e0009015e0009015e0009015e0009015e0009015e0009015e0009015e000"
-      },
-      "app": {
-        "service": false,
-        "dependencies": [],
-        "external_hardware": {
-          "required": false,
-          "items": []
-        },
-        "hdmi_output": false,
-        "commercial_use": "allowed",
-        "applaunch": {
-          "desktop_entry": "applications/pulse.desktop",
-          "exec": "/usr/share/APPLaunch/bin/M5CardputerZero-Pulse",
-          "terminal": false,
-          "icon": "share/images/pulse.png"
-        }
-      },
-      "permissions": {
-        "camera": false,
-        "microphone": false,
-        "audio_output": true,
-        "sensors": false,
-        "gps": false,
-        "network": false,
-        "filesystem": "app-data-only",
-        "keyboard_input": true,
-        "user_data": ["save data"]
-      },
-      "privacy": {
-        "collects_personal_data": false,
-        "data_retention": "local-save",
-        "third_party_sharing": false
-      },
-      "assets": {
-        "icon": "assets/9015e000/icon.png",
-        "screenshots": [
-          "assets/9015e000/screenshots/village.png",
-          "assets/9015e000/screenshots/indoor.png"
-        ]
-      },
-      "risk_flags": ["experimental"],
-      "review": {
-        "status": "pending",
-        "notes": ["Experimental game prototype; needs final packaging and smoke test."]
-      },
-      "featured": true
+      "icon": "nc2000_icon.png"
     }
   ]
 }
