@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-11T12:00:00+08:00",
+  "generated_at": "2026-05-11T14:50:00+08:00",
   "registry_id": "cardputerzero-appstore-hub-mock",
   "device_targets": ["CardputerZero"],
-  "notes": "Mock registry for the static GitHub Pages AppStore Hub prototype. Download URLs and checksums are placeholders.",
+  "notes": "Prototype registry for the static GitHub Pages AppStore Hub. Live deb entries include real URLs and checksums; older mock entries may keep placeholder downloads.",
   "apps": [
     {
       "schema_version": 1,
@@ -539,6 +539,97 @@
       "review": {
         "status": "pending",
         "notes": ["Experimental game prototype; needs final packaging and smoke test."]
+      },
+      "featured": true
+    },
+    {
+      "schema_version": 1,
+      "uuid": "2000e000-0000-4000-8000-000000000007",
+      "share_code": "nc20",
+      "title": "NC2000",
+      "summary": "WenQuXing NC2000/NC1020 emulator for CardputerZero.",
+      "description": "NC2000 brings the WenQuXing NC2000/NC1020 handheld computer experience to CardputerZero. This package uses the framebuffer launcher and a 320x170 layout for quick AppStore install testing.",
+      "locales": {
+        "zh-CN": {
+          "title": "NC2000 文曲星模拟器",
+          "summary": "适配 320x170 CardputerZero 屏幕的文曲星 NC2000/NC1020 模拟器。",
+          "description": "NC2000 将文曲星 NC2000/NC1020 掌上电脑体验带到 CardputerZero。本包使用 framebuffer 启动脚本和 320x170 布局，适合用来测试 AppStore 在线安装流程。"
+        },
+        "en": {
+          "title": "NC2000",
+          "summary": "WenQuXing NC2000/NC1020 emulator for CardputerZero.",
+          "description": "NC2000 brings the WenQuXing NC2000/NC1020 handheld computer experience to CardputerZero. This package uses the framebuffer launcher and a 320x170 layout for quick AppStore install testing."
+        },
+        "ja": {
+          "title": "NC2000 文曲星エミュレーター",
+          "summary": "CardputerZero 向けの WenQuXing NC2000/NC1020 エミュレーターです。",
+          "description": "NC2000 は WenQuXing NC2000/NC1020 の携帯端末体験を CardputerZero に移植します。このパッケージは framebuffer ランチャーと 320x170 レイアウトを使い、AppStore のオンラインインストール検証に使えます。"
+        }
+      },
+      "categories": ["Emulators", "Games"],
+      "device_targets": ["CardputerZero"],
+      "author": {
+        "github": "eggfly",
+        "display_name": "eggfly",
+        "website": "https://github.com/eggfly"
+      },
+      "version": "1.0.3",
+      "published_at": "2026-05-11T14:47:00+08:00",
+      "updated_at": "2026-05-11T14:47:00+08:00",
+      "license": "MIT",
+      "source": {
+        "openness": "open-source",
+        "repository": "https://github.com/eggfly/CardputerZero-NC2000",
+        "commit": "packages-main"
+      },
+      "download": {
+        "type": "deb",
+        "package": "nc2000",
+        "url": "https://github.com/CardputerZero/packages/raw/main/pool/main/nc2000/nc2000_1.0.3_arm64.deb",
+        "md5": "3b70ee689a4bbb4e9523410fb2daea15",
+        "sha256": "6f3e8c3ac385cb9a306f4ab5205f4bc3a0d4ae776c4fbdbe136df243b5f73ed8",
+        "size": "19.6M"
+      },
+      "app": {
+        "service": false,
+        "dependencies": ["libsdl2-2.0-0"],
+        "external_hardware": {
+          "required": false,
+          "items": []
+        },
+        "hdmi_output": false,
+        "commercial_use": "allowed",
+        "applaunch": {
+          "desktop_entry": "applications/nc2000.desktop",
+          "exec": "/usr/share/nc2000/nc2000-launch.sh",
+          "terminal": false,
+          "icon": "share/images/nc2000_icon.png"
+        }
+      },
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "audio_output": true,
+        "sensors": false,
+        "gps": false,
+        "network": false,
+        "filesystem": "app-data-only",
+        "keyboard_input": true,
+        "user_data": ["emulator save data"]
+      },
+      "privacy": {
+        "collects_personal_data": false,
+        "data_retention": "local-save",
+        "third_party_sharing": false
+      },
+      "assets": {
+        "icon": "assets/2000e000/icon.png",
+        "screenshots": []
+      },
+      "risk_flags": ["emulator"],
+      "review": {
+        "status": "ci-passed",
+        "notes": ["Debian package is hosted in CardputerZero/packages and verified by MD5 before device installation."]
       },
       "featured": true
     },
