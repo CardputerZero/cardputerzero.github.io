@@ -601,7 +601,7 @@
         "commercial_use": "allowed",
         "applaunch": {
           "desktop_entry": "applications/lofibox.desktop",
-          "exec": "/usr/lib/lofibox/lofibox",
+          "exec": "/usr/lib/lofibox/lofibox_zero_device",
           "terminal": false,
           "icon": "share/images/lofibox.png"
         }

@@ -131,6 +131,12 @@ apps:
       md5: "6a9798c1208e6d8bf5a9f28914160483"
       sha256: "469d14c030d4addb5ff54f6eef7700b1781da3c33047796b1bbd2c8b3fe3177d"
       size: "8.7M"
+    app:
+      applaunch:
+        desktop_entry: "applications/lofibox.desktop"
+        exec: "/usr/lib/lofibox/lofibox_zero_device"
+        terminal: false
+        icon: "share/images/lofibox.png"
     permissions:
       network: true
       filesystem: "music-library"
