@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-07T01:45:00+08:00",
+  "generated_at": "2026-05-11T12:00:00+08:00",
   "registry_id": "cardputerzero-appstore-hub-mock",
   "device_targets": ["CardputerZero"],
   "notes": "Mock registry for the static GitHub Pages AppStore Hub prototype. Download URLs and checksums are placeholders.",
@@ -539,6 +539,97 @@
       "review": {
         "status": "pending",
         "notes": ["Experimental game prototype; needs final packaging and smoke test."]
+      },
+      "featured": true
+    },
+    {
+      "schema_version": 1,
+      "uuid": "10f1b000-0000-4000-8000-000000000008",
+      "share_code": "lofi",
+      "title": "LoFiBox",
+      "summary": "Chromeless desktop-widget music player with local playback and remote media providers.",
+      "description": "LoFiBox is a pure C++ Linux music player packaged as a Debian package for CardputerZero. It provides a compact desktop-widget surface, local library browsing, metadata and artwork support, remote media provider hooks, and a DSP-ready audio pipeline.",
+      "locales": {
+        "zh-CN": {
+          "title": "LoFiBox 音乐播放器",
+          "summary": "无边框桌面小部件音乐播放器，支持本地播放和远程媒体源。",
+          "description": "LoFiBox 是一个面向 CardputerZero 打包的纯 C++ Linux 音乐播放器。它提供紧凑的桌面小部件界面、本地曲库浏览、元数据和封面支持、远程媒体源扩展，以及面向 DSP 的音频管线。"
+        },
+        "en": {
+          "title": "LoFiBox",
+          "summary": "Chromeless desktop-widget music player with local playback and remote media providers.",
+          "description": "LoFiBox is a pure C++ Linux music player packaged as a Debian package for CardputerZero. It provides a compact desktop-widget surface, local library browsing, metadata and artwork support, remote media provider hooks, and a DSP-ready audio pipeline."
+        },
+        "ja": {
+          "title": "LoFiBox",
+          "summary": "ローカル再生とリモートメディアプロバイダーに対応した枠なし音楽プレイヤーです。",
+          "description": "LoFiBox は CardputerZero 向けに Debian パッケージ化された pure C++ Linux 音楽プレイヤーです。コンパクトなデスクトップウィジェット UI、ローカルライブラリ閲覧、メタデータとアートワーク、リモートメディア拡張、DSP 向けの音声パイプラインを備えています。"
+        }
+      },
+      "categories": ["Media", "Music"],
+      "device_targets": ["CardputerZero"],
+      "author": {
+        "github": "vicliu624",
+        "display_name": "vicliu624",
+        "website": "https://github.com/vicliu624"
+      },
+      "version": "0.2.0-1~lofibox23",
+      "published_at": "2026-05-11T11:54:25+08:00",
+      "updated_at": "2026-05-11T11:54:25+08:00",
+      "license": "GPL-3.0",
+      "source": {
+        "openness": "open-source",
+        "repository": "https://github.com/vicliu624/LoFiBox-Zero",
+        "commit": "packages-main"
+      },
+      "download": {
+        "type": "deb",
+        "package": "lofibox",
+        "url": "https://github.com/CardputerZero/packages/raw/main/pool/main/lofibox/lofibox_0.2.0-1~lofibox23_arm64.deb",
+        "md5": "6a9798c1208e6d8bf5a9f28914160483",
+        "sha256": "469d14c030d4addb5ff54f6eef7700b1781da3c33047796b1bbd2c8b3fe3177d",
+        "size": "8.7M"
+      },
+      "app": {
+        "service": false,
+        "dependencies": ["alsa-utils", "ffmpeg", "python3", "python3-mutagen", "fonts-noto-cjk recommended"],
+        "external_hardware": {
+          "required": false,
+          "items": []
+        },
+        "hdmi_output": false,
+        "commercial_use": "allowed",
+        "applaunch": {
+          "desktop_entry": "applications/lofibox.desktop",
+          "exec": "/usr/lib/lofibox/lofibox",
+          "terminal": false,
+          "icon": "share/images/lofibox.png"
+        }
+      },
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "audio_output": true,
+        "sensors": false,
+        "gps": false,
+        "network": true,
+        "filesystem": "music-library",
+        "keyboard_input": true,
+        "user_data": ["music library metadata", "remote media credentials"]
+      },
+      "privacy": {
+        "collects_personal_data": false,
+        "data_retention": "local-device",
+        "third_party_sharing": false
+      },
+      "assets": {
+        "icon": "assets/10f1b000/icon.png",
+        "screenshots": []
+      },
+      "risk_flags": ["network-access", "filesystem-access"],
+      "review": {
+        "status": "ci-passed",
+        "notes": ["Debian package is hosted in CardputerZero/packages and verified by MD5 before device installation."]
       },
       "featured": true
     }

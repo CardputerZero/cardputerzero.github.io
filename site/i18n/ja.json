@@ -45,7 +45,7 @@
     "screenshots": "スクリーンショット"
   },
   "fields": {
-    "checksum": "SHA-256",
+    "checksum": "MD5",
     "download": "ダウンロード URL",
     "license": "ライセンス",
     "source": "ソース公開度",
@@ -261,10 +261,10 @@
     "lead": "開発者は GitHub Pull Request でアプリメタデータを提出します。メンテナー承認後、GitHub Actions が静的 registry を生成し、GitHub Pages が Hub に公開します。",
     "metadata": [
       "各アプリには安定した UUID が必要です。共有コードは通常 UUID の先頭 4 文字で、registry 内で一意である必要があります。",
-      "タイトル、概要、GitHub 作者、バージョン、license、ソース公開度、ダウンロード URL、SHA-256 checksum が必要です。",
+      "タイトル、概要、GitHub 作者、バージョン、license、ソース公開度、Debian .deb ダウンロード URL、パッケージ名、MD5 checksum が必要です。",
       "権限、プライバシー動作、外部ハードウェア、バックグラウンドサービス、HDMI、商用制限、既知リスクを宣言する必要があります。"
     ],
-    "metadataExample": "schema_version: 1\nuuid: \"123e4567-e89b-12d3-a456-426614174000\"\ntitle: \"My Cardputer App\"\nsummary: \"One sentence user-facing summary.\"\ndescription: \"Longer description for the detail page.\"\ncategories:\n  - Utilities\ndevice_targets:\n  - CardputerZero\nauthor:\n  github: \"your-github-id\"\nversion: \"1.0.0\"\nlicense: \"MIT\"\nsource:\n  openness: \"open-source\"\n  repository: \"https://github.com/your-github-id/my-cardputer-app\"\ndownload:\n  type: \"github-release\"\n  url: \"https://github.com/your-github-id/my-cardputer-app/releases/download/v1.0.0/app.tar.gz\"\n  sha256: \"...\"\npermissions:\n  network: false\n  microphone: false\n  filesystem: \"app-data-only\"\nprivacy:\n  collects_personal_data: false\n  data_retention: \"none\"\nassets:\n  icon: \"assets/123e4567-e89b-12d3-a456-426614174000/icon.png\"\n  screenshots:\n    - \"assets/123e4567-e89b-12d3-a456-426614174000/screenshots/main.png\"\nreview:\n  status: \"pending\"",
+    "metadataExample": "schema_version: 1\nuuid: \"123e4567-e89b-12d3-a456-426614174000\"\ntitle: \"My Cardputer App\"\nsummary: \"One sentence user-facing summary.\"\ndescription: \"Longer description for the detail page.\"\ncategories:\n  - Utilities\ndevice_targets:\n  - CardputerZero\nauthor:\n  github: \"your-github-id\"\nversion: \"1.0.0\"\nlicense: \"MIT\"\nsource:\n  openness: \"open-source\"\n  repository: \"https://github.com/your-github-id/my-cardputer-app\"\ndownload:\n  type: \"deb\"\n  package: \"my-cardputer-app\"\n  url: \"https://github.com/your-github-id/my-cardputer-app/raw/main/dist/my-cardputer-app_1.0.0_arm64.deb\"\n  md5: \"...\"\npermissions:\n  network: false\n  microphone: false\n  filesystem: \"app-data-only\"\nprivacy:\n  collects_personal_data: false\n  data_retention: \"none\"\nassets:\n  icon: \"assets/123e4567-e89b-12d3-a456-426614174000/icon.png\"\n  screenshots:\n    - \"assets/123e4567-e89b-12d3-a456-426614174000/screenshots/main.png\"\nreview:\n  status: \"pending\"",
     "metadataTitle": "メタデータ",
     "openPolicyDoc": "完全なポリシーを開く",
     "readAgreement": "規約を読む",

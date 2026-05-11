@@ -45,7 +45,7 @@
     "screenshots": "Screenshots"
   },
   "fields": {
-    "checksum": "SHA-256",
+    "checksum": "MD5",
     "download": "Download URL",
     "license": "License",
     "source": "Source openness",
@@ -261,10 +261,10 @@
     "lead": "Developers submit app metadata through GitHub pull requests. After maintainer approval, GitHub Actions generates a static registry and GitHub Pages publishes it to the Hub.",
     "metadata": [
       "Every app needs a stable UUID. The share code defaults to the first four UUID characters and must be unique in the registry.",
-      "Title, summary, GitHub author, version, license, source openness, download URL, and SHA-256 checksum are required.",
+      "Title, summary, GitHub author, version, license, source openness, Debian .deb download URL, package name, and MD5 checksum are required.",
       "Permissions, privacy behavior, external hardware, background service, HDMI, commercial restrictions, and known risks must be declared."
     ],
-    "metadataExample": "schema_version: 1\nuuid: \"123e4567-e89b-12d3-a456-426614174000\"\ntitle: \"My Cardputer App\"\nsummary: \"One sentence user-facing summary.\"\ndescription: \"Longer description for the detail page.\"\ncategories:\n  - Utilities\ndevice_targets:\n  - CardputerZero\nauthor:\n  github: \"your-github-id\"\nversion: \"1.0.0\"\nlicense: \"MIT\"\nsource:\n  openness: \"open-source\"\n  repository: \"https://github.com/your-github-id/my-cardputer-app\"\ndownload:\n  type: \"github-release\"\n  url: \"https://github.com/your-github-id/my-cardputer-app/releases/download/v1.0.0/app.tar.gz\"\n  sha256: \"...\"\npermissions:\n  network: false\n  microphone: false\n  filesystem: \"app-data-only\"\nprivacy:\n  collects_personal_data: false\n  data_retention: \"none\"\nassets:\n  icon: \"assets/123e4567-e89b-12d3-a456-426614174000/icon.png\"\n  screenshots:\n    - \"assets/123e4567-e89b-12d3-a456-426614174000/screenshots/main.png\"\nreview:\n  status: \"pending\"",
+    "metadataExample": "schema_version: 1\nuuid: \"123e4567-e89b-12d3-a456-426614174000\"\ntitle: \"My Cardputer App\"\nsummary: \"One sentence user-facing summary.\"\ndescription: \"Longer description for the detail page.\"\ncategories:\n  - Utilities\ndevice_targets:\n  - CardputerZero\nauthor:\n  github: \"your-github-id\"\nversion: \"1.0.0\"\nlicense: \"MIT\"\nsource:\n  openness: \"open-source\"\n  repository: \"https://github.com/your-github-id/my-cardputer-app\"\ndownload:\n  type: \"deb\"\n  package: \"my-cardputer-app\"\n  url: \"https://github.com/your-github-id/my-cardputer-app/raw/main/dist/my-cardputer-app_1.0.0_arm64.deb\"\n  md5: \"...\"\npermissions:\n  network: false\n  microphone: false\n  filesystem: \"app-data-only\"\nprivacy:\n  collects_personal_data: false\n  data_retention: \"none\"\nassets:\n  icon: \"assets/123e4567-e89b-12d3-a456-426614174000/icon.png\"\n  screenshots:\n    - \"assets/123e4567-e89b-12d3-a456-426614174000/screenshots/main.png\"\nreview:\n  status: \"pending\"",
     "metadataTitle": "Metadata",
     "openPolicyDoc": "Open full policy",
     "readAgreement": "Read agreement",

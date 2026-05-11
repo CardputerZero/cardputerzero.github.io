@@ -75,6 +75,7 @@ jobs:
 
               sha256 = pkg_info.get("SHA256", "")
               app_uuid = make_uuid(pkg_name, sha256)
+              filename = pkg_info.get("Filename", "")
 
               app = {
                   "uuid": app_uuid,
@@ -90,7 +91,9 @@ jobs:
                   "source_repo": meta.get("source_repo", ""),
                   "download": {
                       "type": "deb",
-                      "url": f"https://cardputerzero.github.io/packages/{pkg_info.get('Filename', '')}",
+                      "package": pkg_name,
+                      "url": f"https://github.com/CardputerZero/packages/raw/main/{filename}",
+                      "md5": pkg_info.get("MD5sum", ""),
                       "sha256": sha256,
                       "size": int(pkg_info.get("Size", 0))
                   },

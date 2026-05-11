@@ -1,5 +1,5 @@
 schema_version: 1
-generated_at: "2026-05-07T01:45:00+08:00"
+generated_at: "2026-05-11T12:00:00+08:00"
 registry_id: "cardputerzero-appstore-hub-mock"
 device_targets:
   - CardputerZero
@@ -116,3 +116,28 @@ apps:
         - "assets/9015e000/screenshots/indoor.png"
     review:
       status: "pending"
+  - uuid: "10f1b000-0000-4000-8000-000000000008"
+    share_code: "lofi"
+    title: "LoFiBox"
+    categories: ["Media", "Music"]
+    version: "0.2.0-1~lofibox23"
+    source:
+      openness: "open-source"
+      repository: "https://github.com/vicliu624/LoFiBox-Zero"
+    download:
+      type: "deb"
+      package: "lofibox"
+      url: "https://github.com/CardputerZero/packages/raw/main/pool/main/lofibox/lofibox_0.2.0-1~lofibox23_arm64.deb"
+      md5: "6a9798c1208e6d8bf5a9f28914160483"
+      sha256: "469d14c030d4addb5ff54f6eef7700b1781da3c33047796b1bbd2c8b3fe3177d"
+      size: "8.7M"
+    permissions:
+      network: true
+      filesystem: "music-library"
+      audio_output: true
+      keyboard_input: true
+    assets:
+      icon: "assets/10f1b000/icon.png"
+      screenshots: []
+    review:
+      status: "ci-passed"

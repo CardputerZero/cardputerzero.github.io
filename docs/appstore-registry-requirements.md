@@ -231,8 +231,9 @@ Pull Request 阶段应执行：
 - `author.github`：作者 GitHub ID。
 - `icon`：应用图标。
 - `screenshots`：截图，强烈推荐。
-- `download.url`：下载地址或 release artifact 地址。
-- `download.sha256`：下载文件校验值。
+- `download.url`：Debian `.deb` 下载地址或 release artifact 地址。
+- `download.package`：Debian 包名，用于检测已安装状态和卸载。
+- `download.md5`：下载文件 MD5 校验值。
 - `version`：当前版本。
 - `license`：许可证。
 - `source.openness`：源码开放程度。
@@ -271,9 +272,10 @@ source:
   repository: "https://github.com/example/app"
   commit: "..."
 download:
-  type: "github-release"
-  url: "https://github.com/example/app/releases/download/v1.0.0/app.tar.gz"
-  sha256: "..."
+  type: "deb"
+  package: "example-app"
+  url: "https://github.com/example/app/raw/main/dist/example-app_1.0.0_arm64.deb"
+  md5: "..."
 app:
   service: false
   dependencies: []
@@ -410,9 +412,9 @@ CardputerZero 真机 AppStore 应支持：
 - 搜索应用。
 - 输入分享码。
 - 展示标题、图标、简介、分类、权限、审核状态和风险提示。
-- 从 `download.url` 下载应用包。
-- 如果有 `sha256`，安装前校验 checksum。
-- 安装到 APPLaunch 兼容目录结构。
+- 从 `download.url` 下载 `.deb` 应用包到本地缓存。
+- 安装前必须校验 `download.md5` checksum。
+- 通过系统包管理器安装本地 `.deb`，包内应提供 APPLaunch 兼容的 desktop entry 和资源。
 - 对不支持设备、缺依赖、被下架或风险过高的应用展示明确错误。
 
 第一版真机 AppStore 可以很轻，但“输入分享码下载应用”应作为核心流程。

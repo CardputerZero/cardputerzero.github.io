@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-07T01:45:00+08:00",
+  "generated_at": "2026-05-11T12:00:00+08:00",
   "apps": [
     {
       "uuid": "20480000-0000-4000-8000-000000000001",
@@ -61,6 +61,16 @@
       "review_status": "pending",
       "source_openness": "open-source",
       "icon": "assets/9015e000/icon.png"
+    },
+    {
+      "uuid": "10f1b000-0000-4000-8000-000000000008",
+      "share_code": "lofi",
+      "title": "LoFiBox",
+      "summary": "Chromeless desktop-widget music player with local playback and remote media providers.",
+      "categories": ["Media", "Music"],
+      "review_status": "ci-passed",
+      "source_openness": "open-source",
+      "icon": "assets/10f1b000/icon.png"
     }
   ]
 }

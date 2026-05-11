@@ -62,7 +62,7 @@ async function init() {
       loadLocale(state.locale)
     ]);
     state.registry = registry;
-    state.apps = registry.apps;
+    state.apps = registry.apps.map(normalizeApp);
     state.dict = dict;
     document.documentElement.lang = state.locale;
     render();
@@ -77,6 +77,40 @@ async function fetchJson(url) {
     throw new Error(`Unable to load ${url}: ${response.status}`);
   }
   return response.json();
+}
+
+function normalizeApp(app) {
+  const source = app.source || {
+    openness: app.source_openness || "unknown",
+    repository: app.source_repo || ""
+  };
+  const review = app.review || {
+    status: app.review_status || "pending"
+  };
+  const appMeta = app.app || {};
+  return {
+    ...app,
+    categories: app.categories || [],
+    locales: app.locales || {},
+    source,
+    review,
+    download: app.download || {},
+    permissions: app.permissions || {},
+    privacy: app.privacy || {},
+    risk_flags: app.risk_flags || [],
+    assets: app.assets || {
+      icon: app.icon || "",
+      screenshots: app.screenshots || []
+    },
+    app: {
+      service: Boolean(appMeta.service),
+      dependencies: appMeta.dependencies || (app.depends ? [app.depends] : []),
+      external_hardware: appMeta.external_hardware || { required: false, items: [] },
+      hdmi_output: Boolean(appMeta.hdmi_output),
+      commercial_use: appMeta.commercial_use || "allowed",
+      applaunch: appMeta.applaunch || {}
+    }
+  };
 }
 
 async function loadLocale(locale) {
@@ -557,7 +591,7 @@ function renderDetail(id) {
             ${meta(t("fields.updated"), formatDate(app.updated_at))}
             ${meta(t("fields.source"), labelFor("source", app.source.openness))}
             ${meta(t("fields.license"), app.license)}
-            ${meta(t("fields.checksum"), app.download.sha256, true)}
+            ${meta(t("fields.checksum"), checksumText(app), true)}
             ${meta(t("fields.download"), app.download.url, true)}
             ${meta(t("fields.uuid"), app.uuid, true)}
           </div>
@@ -591,6 +625,12 @@ function renderComments(app) {
       <div class="giscus" id="giscus-${escapeAttr(app.uuid)}"></div>
     </section>
   `;
+}
+
+function checksumText(app) {
+  if (app.download?.md5) return `md5:${app.download.md5}`;
+  if (app.download?.sha256) return `sha256:${app.download.sha256}`;
+  return "-";
 }
 
 function mountGiscus(app) {

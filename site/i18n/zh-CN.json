@@ -45,7 +45,7 @@
     "screenshots": "截图"
   },
   "fields": {
-    "checksum": "SHA-256",
+    "checksum": "MD5",
     "download": "下载地址",
     "license": "许可证",
     "source": "源码开放程度",
@@ -261,10 +261,10 @@
     "lead": "开发者通过 GitHub Pull Request 提交应用元信息。维护者审核通过后，GitHub Actions 会生成新的静态 registry，并由 GitHub Pages 发布到 Hub 页面。",
     "metadata": [
       "每个应用必须有稳定 UUID。分享码默认取 UUID 前四位，必须在 registry 内唯一。",
-      "必须声明标题、简介、作者 GitHub ID、版本、许可证、源码开放程度、下载地址和 SHA-256 checksum。",
+      "必须声明标题、简介、作者 GitHub ID、版本、许可证、源码开放程度、Debian .deb 下载地址、包名和 MD5 checksum。",
       "必须完整声明权限、隐私行为、外部硬件、后台服务、HDMI、商业使用限制和已知风险。"
     ],
-    "metadataExample": "schema_version: 1\nuuid: \"123e4567-e89b-12d3-a456-426614174000\"\ntitle: \"My Cardputer App\"\nsummary: \"One sentence user-facing summary.\"\ndescription: \"Longer description for the detail page.\"\ncategories:\n  - Utilities\ndevice_targets:\n  - CardputerZero\nauthor:\n  github: \"your-github-id\"\nversion: \"1.0.0\"\nlicense: \"MIT\"\nsource:\n  openness: \"open-source\"\n  repository: \"https://github.com/your-github-id/my-cardputer-app\"\ndownload:\n  type: \"github-release\"\n  url: \"https://github.com/your-github-id/my-cardputer-app/releases/download/v1.0.0/app.tar.gz\"\n  sha256: \"...\"\npermissions:\n  network: false\n  microphone: false\n  filesystem: \"app-data-only\"\nprivacy:\n  collects_personal_data: false\n  data_retention: \"none\"\nassets:\n  icon: \"assets/123e4567-e89b-12d3-a456-426614174000/icon.png\"\n  screenshots:\n    - \"assets/123e4567-e89b-12d3-a456-426614174000/screenshots/main.png\"\nreview:\n  status: \"pending\"",
+    "metadataExample": "schema_version: 1\nuuid: \"123e4567-e89b-12d3-a456-426614174000\"\ntitle: \"My Cardputer App\"\nsummary: \"One sentence user-facing summary.\"\ndescription: \"Longer description for the detail page.\"\ncategories:\n  - Utilities\ndevice_targets:\n  - CardputerZero\nauthor:\n  github: \"your-github-id\"\nversion: \"1.0.0\"\nlicense: \"MIT\"\nsource:\n  openness: \"open-source\"\n  repository: \"https://github.com/your-github-id/my-cardputer-app\"\ndownload:\n  type: \"deb\"\n  package: \"my-cardputer-app\"\n  url: \"https://github.com/your-github-id/my-cardputer-app/raw/main/dist/my-cardputer-app_1.0.0_arm64.deb\"\n  md5: \"...\"\npermissions:\n  network: false\n  microphone: false\n  filesystem: \"app-data-only\"\nprivacy:\n  collects_personal_data: false\n  data_retention: \"none\"\nassets:\n  icon: \"assets/123e4567-e89b-12d3-a456-426614174000/icon.png\"\n  screenshots:\n    - \"assets/123e4567-e89b-12d3-a456-426614174000/screenshots/main.png\"\nreview:\n  status: \"pending\"",
     "metadataTitle": "元信息",
     "openPolicyDoc": "打开完整规范",
     "readAgreement": "阅读协议和规则",
