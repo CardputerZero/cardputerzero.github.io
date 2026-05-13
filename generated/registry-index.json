@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-13T21:22:59+08:00",
+  "generated_at": "2026-05-13T22:52:26+08:00",
   "apps": [
     {
-      "uuid": "8d640a0b-57d8-50f8-bf06-60ab479daa56",
+      "uuid": "ff2ee91e-c334-5a5d-8b91-725c59c08294",
       "share_code": "cale",
       "title": "Calendar",
       "summary": "Compact Calendar app for local and online ICS schedules.",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "categories": [
         "Productivity",
         "Calendar"
