@@ -103,6 +103,7 @@ async function init() {
     localStorage.setItem("hub.locale", state.locale);
     document.documentElement.lang = state.locale;
     state.dict = await loadLocale(state.locale);
+    updateStaticChrome();
     render();
   });
 
@@ -119,10 +120,23 @@ async function init() {
     state.apps = registry.apps.map(normalizeApp);
     state.dict = dict;
     document.documentElement.lang = state.locale;
+    updateStaticChrome();
     render();
   } catch (error) {
     appRoot.innerHTML = `<div class="error">${escapeHtml(error.message)}</div>`;
   }
+}
+
+function updateStaticChrome() {
+  document.title = t("meta.title");
+  const description = document.querySelector('meta[name="description"]');
+  if (description) description.setAttribute("content", t("meta.description"));
+  document.querySelectorAll("[data-i18n]").forEach((node) => {
+    node.textContent = t(node.dataset.i18n);
+  });
+  document.querySelectorAll("[data-i18n-aria]").forEach((node) => {
+    node.setAttribute("aria-label", t(node.dataset.i18nAria));
+  });
 }
 
 async function fetchJson(url) {

@@ -1,4 +1,22 @@
 {
+  "meta": {
+    "title": "CardputerZero Hub",
+    "description": "GitHub Pages 向けの CardputerZero AppStore registry とレスポンシブなアプリディレクトリです。"
+  },
+  "nav": {
+    "home": "CardputerZero AppStore ホーム",
+    "toggle": "ナビゲーションを開閉",
+    "apps": "アプリ",
+    "tutorial": "チュートリアル",
+    "documents": "ドキュメント",
+    "registry": "レジストリ"
+  },
+  "language": {
+    "label": "言語"
+  },
+  "loading": {
+    "registry": "registry を読み込み中..."
+  },
   "actions": {
     "backToApps": "アプリ一覧へ戻る",
     "copied": "コピー済み",
@@ -314,7 +332,7 @@
     "lead": "ローカル開発、Debian パッケージ、実機検証から、registry メタデータ、CI、メンテナー審査までの流れです。",
     "agreementEyebrow": "READ FIRST",
     "agreementTitle": "先に規約と登録ルールを確認",
-    "agreementLead": "Pull Request を開くことは、メタデータが正確で、権限宣言が完全で、ダウンロードを検証でき、審査に協力することを意味します。詳細は Documents にあります。",
+    "agreementLead": "Pull Request を開くことは、メタデータが正確で、権限宣言が完全で、ダウンロードを検証でき、審査に協力することを意味します。詳細はドキュメントにあります。",
     "readAgreement": "規約を読む",
     "openGuide": "ガイドを開く",
     "skillTitle": "Skill と AI Coding で開発する",
@@ -454,12 +472,12 @@
     ]
   },
   "documents": {
-    "eyebrow": "MARKDOWN DOCS",
-    "title": "Documents",
-    "lead": "CardputerZero Hub の Markdown 文書センターです。ガイド、規約、ポリシー、registry 要件を docs/ から読み込みます。",
+    "eyebrow": "MARKDOWN ドキュメント",
+    "title": "ドキュメント",
+    "lead": "CardputerZero Hub の Markdown ドキュメントセンターです。ガイド、規約、ポリシー、registry 要件を現在の言語に合わせて docs/ から読み込みます。",
     "open": "文書を開く",
     "readMore": "詳細を見る",
-    "back": "Documents に戻る",
+    "back": "ドキュメントへ戻る",
     "loading": "Markdown 文書を読み込み中...",
     "toc": "目次",
     "noToc": "この文書には目次にできる見出しがありません。",

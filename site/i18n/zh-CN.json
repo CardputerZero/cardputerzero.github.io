@@ -1,4 +1,22 @@
 {
+  "meta": {
+    "title": "CardputerZero Hub",
+    "description": "用于 GitHub Pages 的 CardputerZero AppStore registry 和响应式应用目录。"
+  },
+  "nav": {
+    "home": "CardputerZero AppStore 首页",
+    "toggle": "展开或收起导航",
+    "apps": "应用",
+    "tutorial": "教程",
+    "documents": "文档",
+    "registry": "数据源"
+  },
+  "language": {
+    "label": "语言"
+  },
+  "loading": {
+    "registry": "正在加载 registry..."
+  },
   "actions": {
     "backToApps": "返回应用列表",
     "copied": "已复制",
@@ -314,7 +332,7 @@
     "lead": "从本地应用开发、Debian 打包、真机验证，到 registry 元信息提交、CI 校验和维护者审核的完整流程。",
     "agreementEyebrow": "READ FIRST",
     "agreementTitle": "提交前先阅读用户协议和准入规则",
-    "agreementLead": "提交 Pull Request 即表示你确认应用元信息真实、权限声明完整、下载文件可校验，并愿意配合维护者 review。详细条款已迁移到 Documents 文档中心。",
+    "agreementLead": "提交 Pull Request 即表示你确认应用元信息真实、权限声明完整、下载文件可校验，并愿意配合维护者 review。详细条款已迁移到文档中心。",
     "readAgreement": "阅读协议",
     "openGuide": "打开提交指南",
     "skillTitle": "使用 Skill 和 AI Coding 开发",
@@ -454,9 +472,9 @@
     ]
   },
   "documents": {
-    "eyebrow": "MARKDOWN DOCS",
-    "title": "Documents",
-    "lead": "基于 Markdown 的 CardputerZero Hub 文档中心。教程、协议、提交规范和 registry 需求都从 docs/ 目录加载。",
+    "eyebrow": "MARKDOWN 文档",
+    "title": "文档中心",
+    "lead": "基于 Markdown 的 CardputerZero Hub 文档中心。教程、协议、提交规范和 registry 需求会按当前语言从 docs/ 目录加载。",
     "open": "打开文档",
     "readMore": "查看细节",
     "back": "返回文档中心",

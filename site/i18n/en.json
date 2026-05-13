@@ -1,4 +1,22 @@
 {
+  "meta": {
+    "title": "CardputerZero Hub",
+    "description": "A static CardputerZero AppStore registry and responsive app directory for GitHub Pages."
+  },
+  "nav": {
+    "home": "CardputerZero AppStore Home",
+    "toggle": "Toggle navigation",
+    "apps": "Apps",
+    "tutorial": "Tutorial",
+    "documents": "Documents",
+    "registry": "Registry"
+  },
+  "language": {
+    "label": "Language"
+  },
+  "loading": {
+    "registry": "Loading registry..."
+  },
   "actions": {
     "backToApps": "Back to apps",
     "copied": "Copied",
