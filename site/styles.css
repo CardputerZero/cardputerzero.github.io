@@ -778,6 +778,34 @@ code {
   counter-reset: submit-step;
 }
 
+.workflow-map {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.workflow-lane {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+}
+
+.workflow-lane-head {
+  display: flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-card);
+  background: var(--color-accent-soft);
+  color: var(--color-accent-strong);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
 .agreement-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -804,24 +832,31 @@ code {
 }
 
 .flow-step {
+  position: relative;
+  display: grid;
+  gap: 8px;
   min-width: 0;
-  padding: 14px;
+  padding: 14px 14px 14px 54px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-card);
   background: var(--color-surface-raised);
-  counter-increment: submit-step;
 }
 
-.flow-step h3 {
-  display: grid;
-  grid-template-columns: 30px minmax(0, 1fr);
-  gap: 10px;
-  align-items: center;
+.flow-step + .flow-step::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: 28px;
+  width: 1px;
+  height: 12px;
+  background: var(--color-border-strong);
 }
 
-.flow-step h3::before {
-  content: counter(submit-step, decimal-leading-zero);
+.flow-index {
   display: grid;
+  position: absolute;
+  top: 14px;
+  left: 14px;
   place-items: center;
   width: 30px;
   height: 30px;
@@ -832,10 +867,20 @@ code {
   font-size: 12px;
 }
 
+.flow-step h3 {
+  margin: 0;
+}
+
 .flow-step p,
 .submit-band p {
   color: var(--color-text-muted);
   line-height: 1.65;
+}
+
+.flow-step a,
+.document-card a span,
+.markdown-doc a {
+  color: var(--color-accent-strong);
 }
 
 .submit-band {
@@ -878,6 +923,86 @@ code {
   line-height: 1.55;
 }
 
+.documents-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.document-card {
+  min-width: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: rgba(11, 23, 17, 0.92);
+}
+
+.document-card a {
+  display: grid;
+  gap: 10px;
+  min-height: 100%;
+  padding: 18px;
+}
+
+.document-card:hover {
+  border-color: var(--color-border-strong);
+  background: var(--color-surface-hover);
+}
+
+.document-card h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.document-card p {
+  margin: 0;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+.markdown-doc {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 26px;
+}
+
+.markdown-doc h1,
+.markdown-doc h2,
+.markdown-doc h3,
+.markdown-doc h4 {
+  margin: 1.5em 0 0.55em;
+}
+
+.markdown-doc h1:first-child {
+  margin-top: 0;
+}
+
+.markdown-doc p,
+.markdown-doc li,
+.markdown-doc blockquote {
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+.markdown-doc ul,
+.markdown-doc ol {
+  padding-left: 22px;
+}
+
+.markdown-doc li + li {
+  margin-top: 6px;
+}
+
+.markdown-doc blockquote {
+  margin: 16px 0;
+  padding: 12px 14px;
+  border-left: 3px solid var(--color-accent);
+  background: rgba(50, 232, 117, 0.06);
+}
+
+.markdown-doc code {
+  overflow-wrap: anywhere;
+}
+
 .loading {
   display: grid;
   place-items: center;
@@ -915,6 +1040,11 @@ code {
 
   .submit-flow {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .workflow-map,
+  .documents-grid {
+    grid-template-columns: 1fr;
   }
 
   .agreement-grid {
@@ -1043,6 +1173,8 @@ code {
   .app-grid,
   .submit-grid,
   .submit-flow,
+  .workflow-map,
+  .documents-grid,
   .screenshots {
     grid-template-columns: 1fr;
   }
@@ -1074,5 +1206,9 @@ code {
 
   .copy-row {
     grid-template-columns: 1fr;
+  }
+
+  .markdown-doc {
+    padding: 18px;
   }
 }

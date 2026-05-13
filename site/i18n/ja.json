@@ -307,5 +307,122 @@
   "wip": {
     "body": "このページと registry は GitHub Pages 公開検証用の作業中バージョンです。データ、ダウンロード URL、レビュー状態は変更される可能性があります。",
     "title": "WIP"
+  },
+  "tutorial": {
+    "eyebrow": "DEVELOPER TUTORIAL",
+    "title": "開発と提出のチュートリアル",
+    "lead": "ローカル開発、Debian パッケージ、実機検証から、registry メタデータ、CI、メンテナー審査までの流れです。",
+    "agreementEyebrow": "READ FIRST",
+    "agreementTitle": "先に規約と登録ルールを確認",
+    "agreementLead": "Pull Request を開くことは、メタデータが正確で、権限宣言が完全で、ダウンロードを検証でき、審査に協力することを意味します。詳細は Documents にあります。",
+    "readAgreement": "規約を読む",
+    "openGuide": "ガイドを開く",
+    "flowTitle": "開発と審査フロー",
+    "flowLead": "左は開発者の準備フロー、右は registry 自動処理とメンテナー審査です。主要ステップは Markdown 文書にリンクします。",
+    "devLane": "Developer flow",
+    "reviewLane": "Review flow",
+    "devFlow": [
+      {
+        "title": "アプリを開発",
+        "body": "自分の GitHub リポジトリでソース、README、license、ビルド手順、release を管理します。",
+        "doc": "app-submission-guide"
+      },
+      {
+        "title": ".deb を作成",
+        "body": "APPLaunch 互換パスを使い、Raspberry Pi OS にインストールできる Debian パッケージを作ります。",
+        "doc": "app-submission-guide"
+      },
+      {
+        "title": "実機で検証",
+        "body": "CardputerZero でアイコン、起動、終了、権限、外部機器、framebuffer 動作を確認します。",
+        "doc": "appstore-registry-requirements"
+      },
+      {
+        "title": "メタデータ準備",
+        "body": "UUID、共有コード、作者、バージョン、URL、MD5、権限、プライバシー、リスクを記入します。",
+        "doc": "app-submission-guide"
+      },
+      {
+        "title": "PR を提出",
+        "body": "registry リポジトリを fork し、アプリ YAML と assets を追加して Pull Request を開きます。",
+        "doc": "app-submission-guide"
+      }
+    ],
+    "reviewFlow": [
+      {
+        "title": "自動チェック",
+        "body": "GitHub Actions がフィールド、UUID、共有コード、素材、URL、checksum、registry 生成を検証します。",
+        "doc": "appstore-registry-requirements"
+      },
+      {
+        "title": "リスク審査",
+        "body": "メンテナーがソース公開度、敏感権限、サービス、外部機器、プライバシー、デバイス安全性を確認します。",
+        "doc": "developer-submission-policy"
+      },
+      {
+        "title": "修正依頼",
+        "body": "宣言不足や不明なリスクがある場合、メタデータ、パッケージ、テスト結果の更新を求めます。",
+        "doc": "developer-submission-policy"
+      },
+      {
+        "title": "マージと公開",
+        "body": "承認された PR は JSON/YAML registry を再生成し GitHub Pages で公開されます。",
+        "doc": "appstore-registry-requirements"
+      },
+      {
+        "title": "継続メンテ",
+        "body": "URL、バージョン、権限、動作が変わった場合は registry メタデータを更新します。",
+        "doc": "user-agreement"
+      }
+    ],
+    "developmentTitle": "開発者の準備",
+    "developmentLead": "提出前にソース、APPLaunch、Debian パッケージ、MD5、実機検証を準備します。詳細例は提出ガイドにあります。",
+    "reviewTitle": "審査と公開",
+    "reviewLead": "CI は最初のゲートです。メンテナーはリスク、体験、プライバシー、デバイス安全性を確認します。",
+    "metadataTitle": "メタデータ要点",
+    "metadata": [
+      "安定した UUID と一意の共有コードが必要です。",
+      "Debian .deb ダウンロードのみ受け付け、MD5 が必要です。",
+      "権限、プライバシー、外部機器、サービス、HDMI、商用制限、既知リスクを宣言します。"
+    ],
+    "ciTitle": "自動チェック",
+    "ci": [
+      "registry YAML/JSON、UUID、共有コード、必須項目、素材を検証します。",
+      "URL、package 名、checksum、registry-index.json を確認します。",
+      "CI 通過は自動掲載を意味しません。"
+    ],
+    "maintainerTitle": "メンテナー審査",
+    "maintainer": [
+      "閉源、binary-only、ネットワーク、マイク、ファイル、外部機器、サービスは厳しく審査します。",
+      "修正要求、experimental 表示、拒否、削除、block がありえます。",
+      "異議申し立てや重要決定は Issue または Pull Request に記録します。"
+    ]
+  },
+  "documents": {
+    "eyebrow": "MARKDOWN DOCS",
+    "title": "Documents",
+    "lead": "CardputerZero Hub の Markdown 文書センターです。ガイド、規約、ポリシー、registry 要件を docs/ から読み込みます。",
+    "open": "文書を開く",
+    "readMore": "詳細を見る",
+    "back": "Documents に戻る",
+    "loading": "Markdown 文書を読み込み中...",
+    "items": {
+      "submission": {
+        "title": "アプリ提出ガイド",
+        "summary": "アプリリポジトリ、Debian パッケージ、metadata、assets、Pull Request の準備方法。"
+      },
+      "agreement": {
+        "title": "ユーザーと開発者の規約",
+        "summary": "AppStore アプリの閲覧、ダウンロード、提出、保守、審査に関する正式ルール。"
+      },
+      "registry": {
+        "title": "Registry と Web UI 要件",
+        "summary": "静的 registry、GitHub Pages、Web UI、i18n、レスポンシブ、GitHub Actions の要件。"
+      },
+      "policy": {
+        "title": "開発者提出ポリシー",
+        "summary": "登録条件、プライバシー、デバイス安全、拒否基準、審査と異議申し立て。"
+      }
+    }
   }
 }

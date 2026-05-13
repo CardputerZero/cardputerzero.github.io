@@ -307,5 +307,122 @@
   "wip": {
     "body": "This page and registry are a work-in-progress build for GitHub Pages validation. Data, download URLs, and review status may still change.",
     "title": "WIP"
+  },
+  "tutorial": {
+    "eyebrow": "DEVELOPER TUTORIAL",
+    "title": "Development And Submission Tutorial",
+    "lead": "A practical path from local app development, Debian packaging, and device validation to registry metadata, CI checks, and maintainer review.",
+    "agreementEyebrow": "READ FIRST",
+    "agreementTitle": "Read The Agreement And Admission Rules First",
+    "agreementLead": "Opening a pull request confirms that metadata is truthful, permissions are complete, downloads are verifiable, and you will cooperate with maintainer review. Full rules now live in Documents.",
+    "readAgreement": "Read agreement",
+    "openGuide": "Open guide",
+    "flowTitle": "Development And Review Flow",
+    "flowLead": "The left lane is the developer preparation flow. The right lane is registry automation and maintainer review. Each major step links to Markdown documentation.",
+    "devLane": "Developer flow",
+    "reviewLane": "Review flow",
+    "devFlow": [
+      {
+        "title": "Build the app",
+        "body": "Keep source, README, license, build steps, and release history in your own GitHub repository.",
+        "doc": "app-submission-guide"
+      },
+      {
+        "title": "Package .deb",
+        "body": "Use APPLaunch-compatible paths and produce a Debian package installable on Raspberry Pi OS.",
+        "doc": "app-submission-guide"
+      },
+      {
+        "title": "Validate on device",
+        "body": "Check icon, launch, exit, permissions, peripherals, and framebuffer behavior on CardputerZero.",
+        "doc": "appstore-registry-requirements"
+      },
+      {
+        "title": "Prepare metadata",
+        "body": "Fill UUID, share code, author, version, download URL, MD5, permissions, privacy, and risk statements.",
+        "doc": "app-submission-guide"
+      },
+      {
+        "title": "Open a PR",
+        "body": "Fork the registry repository, add app YAML and assets, then open a pull request.",
+        "doc": "app-submission-guide"
+      }
+    ],
+    "reviewFlow": [
+      {
+        "title": "Automated checks",
+        "body": "GitHub Actions validates fields, UUIDs, share codes, assets, download URLs, checksums, and registry generation.",
+        "doc": "appstore-registry-requirements"
+      },
+      {
+        "title": "Risk review",
+        "body": "Maintainers review source availability, sensitive permissions, services, hardware, privacy, and device safety.",
+        "doc": "developer-submission-policy"
+      },
+      {
+        "title": "Change requests",
+        "body": "If declarations are incomplete or risks are unclear, maintainers request metadata, package, or test updates.",
+        "doc": "developer-submission-policy"
+      },
+      {
+        "title": "Merge and publish",
+        "body": "Approved PRs regenerate JSON/YAML registries and publish through GitHub Pages.",
+        "doc": "appstore-registry-requirements"
+      },
+      {
+        "title": "Maintain updates",
+        "body": "Update registry metadata when downloads, versions, permissions, or behavior changes.",
+        "doc": "user-agreement"
+      }
+    ],
+    "developmentTitle": "Developer Preparation",
+    "developmentLead": "Prepare the source repository, APPLaunch entry, Debian package, MD5, and device validation before submitting. Full examples live in the submission guide.",
+    "reviewTitle": "Review And Release",
+    "reviewLead": "CI is only the first gate. Maintainers still review risk, experience, privacy, and device safety. Full rules live in the policy document.",
+    "metadataTitle": "Metadata essentials",
+    "metadata": [
+      "Every app needs a stable UUID and unique share code.",
+      "Only Debian .deb downloads are accepted, with MD5 in registry metadata.",
+      "Declare permissions, privacy, external hardware, services, HDMI, commercial limits, and known risks."
+    ],
+    "ciTitle": "Automation",
+    "ci": [
+      "Validate registry YAML/JSON, UUIDs, share codes, required fields, and assets.",
+      "Check download URL, package name, checksum, and generated registry-index.json.",
+      "Passing CI does not mean automatic listing."
+    ],
+    "maintainerTitle": "Maintainer review",
+    "maintainer": [
+      "Closed-source, binary-only, network, microphone, filesystem, hardware, and service apps receive stricter review.",
+      "Maintainers may request changes, mark experimental, reject, delist, or block.",
+      "Appeals and material decisions should be recorded in Issues or Pull Requests."
+    ]
+  },
+  "documents": {
+    "eyebrow": "MARKDOWN DOCS",
+    "title": "Documents",
+    "lead": "A Markdown-backed documentation center for CardputerZero Hub. Guides, agreements, policies, and registry requirements are loaded from docs/.",
+    "open": "Open document",
+    "readMore": "Read details",
+    "back": "Back to documents",
+    "loading": "Loading Markdown document...",
+    "items": {
+      "submission": {
+        "title": "App Submission Guide",
+        "summary": "Prepare app repositories, Debian packages, metadata, assets, and pull requests."
+      },
+      "agreement": {
+        "title": "User And Developer Agreement",
+        "summary": "Formal rules for browsing, downloading, submitting, maintaining, and reviewing AppStore apps."
+      },
+      "registry": {
+        "title": "Registry And Web UI Requirements",
+        "summary": "Static registry, GitHub Pages, Web UI, i18n, responsive layout, and GitHub Actions requirements."
+      },
+      "policy": {
+        "title": "Developer Submission Policy",
+        "summary": "Admission rules, privacy, device safety, rejection criteria, review execution, and appeals."
+      }
+    }
   }
 }

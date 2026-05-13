@@ -307,5 +307,122 @@
   "wip": {
     "body": "当前页面和 registry 是用于 GitHub Pages 发布验证的工作中版本，数据、下载地址和审核状态可能仍会调整。",
     "title": "WIP"
+  },
+  "tutorial": {
+    "eyebrow": "DEVELOPER TUTORIAL",
+    "title": "开发与提交教程",
+    "lead": "从本地应用开发、Debian 打包、真机验证，到 registry 元信息提交、CI 校验和维护者审核的完整流程。",
+    "agreementEyebrow": "READ FIRST",
+    "agreementTitle": "提交前先阅读用户协议和准入规则",
+    "agreementLead": "提交 Pull Request 即表示你确认应用元信息真实、权限声明完整、下载文件可校验，并愿意配合维护者 review。详细条款已迁移到 Documents 文档中心。",
+    "readAgreement": "阅读协议",
+    "openGuide": "打开提交指南",
+    "flowTitle": "开发和审核流程图",
+    "flowLead": "左侧是开发者准备流程，右侧是 registry 和维护者审核流程。每个关键节点都可以跳转到 Markdown 文档查看细节。",
+    "devLane": "Developer flow",
+    "reviewLane": "Review flow",
+    "devFlow": [
+      {
+        "title": "开发应用",
+        "body": "在自己的 GitHub 仓库维护源码、README、license、构建方式和 release 记录。",
+        "doc": "app-submission-guide"
+      },
+      {
+        "title": "打包 .deb",
+        "body": "使用 CardputerZero/APPLaunch 兼容路径，生成可在树莓派系统安装的 Debian 包。",
+        "doc": "app-submission-guide"
+      },
+      {
+        "title": "真机验证",
+        "body": "在 CardputerZero 上验证图标、启动、退出、权限、外设和 framebuffer 行为。",
+        "doc": "appstore-registry-requirements"
+      },
+      {
+        "title": "准备元信息",
+        "body": "补全 UUID、分享码、作者、版本、下载 URL、MD5、权限、隐私和风险声明。",
+        "doc": "app-submission-guide"
+      },
+      {
+        "title": "提交 PR",
+        "body": "Fork registry 仓库，新增应用 YAML 和 assets，向主仓库提交 Pull Request。",
+        "doc": "app-submission-guide"
+      }
+    ],
+    "reviewFlow": [
+      {
+        "title": "自动校验",
+        "body": "GitHub Actions 校验字段、UUID、分享码、素材、下载地址、checksum 和 registry 生成。",
+        "doc": "appstore-registry-requirements"
+      },
+      {
+        "title": "风险审查",
+        "body": "维护者检查源码开放程度、敏感权限、后台服务、外部硬件、隐私和设备安全。",
+        "doc": "developer-submission-policy"
+      },
+      {
+        "title": "修改反馈",
+        "body": "如果字段不完整或风险未说明，维护者会要求补充声明、修改包或补充测试结果。",
+        "doc": "developer-submission-policy"
+      },
+      {
+        "title": "合并发布",
+        "body": "审核通过后合并 PR，生成 registry JSON/YAML，并通过 GitHub Pages 发布。",
+        "doc": "appstore-registry-requirements"
+      },
+      {
+        "title": "持续维护",
+        "body": "下载地址、版本、权限或行为变化时，开发者需要继续更新 registry 元信息。",
+        "doc": "user-agreement"
+      }
+    ],
+    "developmentTitle": "开发者准备",
+    "developmentLead": "提交前应先完成源码仓库、APPLaunch 启动、Debian 包、MD5 和真机验证。完整字段和示例放在提交指南里。",
+    "reviewTitle": "审核与发布",
+    "reviewLead": "CI 只是第一道门槛，维护者会继续检查风险、体验、隐私和设备安全。完整规则放在准入政策里。",
+    "metadataTitle": "元信息重点",
+    "metadata": [
+      "每个应用必须有稳定 UUID 和唯一分享码。",
+      "以后只接受 Debian .deb 下载，并要求 registry 提供 MD5。",
+      "权限、隐私、外部硬件、后台服务、HDMI、商业限制和已知风险必须明确声明。"
+    ],
+    "ciTitle": "自动检查",
+    "ci": [
+      "校验 registry YAML/JSON、UUID、分享码、必填字段和素材路径。",
+      "检查下载地址、包名、checksum 和生成后的 registry-index.json。",
+      "CI 通过不等于自动上架。"
+    ],
+    "maintainerTitle": "维护者审核",
+    "maintainer": [
+      "闭源、binary-only、网络、麦克风、文件系统、外部硬件和后台服务应用会更严格审核。",
+      "维护者可以要求修改、标记实验性、拒收、下架或 block。",
+      "申诉和重大决定应通过 Issue 或 Pull Request 记录。"
+    ]
+  },
+  "documents": {
+    "eyebrow": "MARKDOWN DOCS",
+    "title": "Documents",
+    "lead": "基于 Markdown 的 CardputerZero Hub 文档中心。教程、协议、提交规范和 registry 需求都从 docs/ 目录加载。",
+    "open": "打开文档",
+    "readMore": "查看细节",
+    "back": "返回文档中心",
+    "loading": "正在加载 Markdown 文档...",
+    "items": {
+      "submission": {
+        "title": "应用提交指南",
+        "summary": "如何准备应用仓库、Debian 包、metadata、assets，并通过 Pull Request 提交。"
+      },
+      "agreement": {
+        "title": "用户与开发者协议",
+        "summary": "浏览、下载、提交、维护和审核 AppStore 应用时需要遵守的正式协议。"
+      },
+      "registry": {
+        "title": "Registry 和 Web UI 需求",
+        "summary": "静态 registry、GitHub Pages、Web UI、i18n、响应式和 GitHub Actions 流程要求。"
+      },
+      "policy": {
+        "title": "开发者提交规范",
+        "summary": "准入要求、隐私、设备安全、拒收方向、审核执行和申诉流程。"
+      }
+    }
   }
 }

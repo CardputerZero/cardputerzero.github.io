@@ -7,6 +7,32 @@ const GISCUS_CONFIG = {
   category: "App Comments",
   categoryId: "DIC_kwDOSWq5V84C8kA5"
 };
+const DOCUMENTS = [
+  {
+    slug: "app-submission-guide",
+    path: "docs/app-submission-guide.md",
+    titleKey: "documents.items.submission.title",
+    summaryKey: "documents.items.submission.summary"
+  },
+  {
+    slug: "user-agreement",
+    path: "docs/user-agreement.md",
+    titleKey: "documents.items.agreement.title",
+    summaryKey: "documents.items.agreement.summary"
+  },
+  {
+    slug: "appstore-registry-requirements",
+    path: "docs/appstore-registry-requirements.md",
+    titleKey: "documents.items.registry.title",
+    summaryKey: "documents.items.registry.summary"
+  },
+  {
+    slug: "developer-submission-policy",
+    path: "docs/developer-submission-policy.md",
+    titleKey: "documents.items.policy.title",
+    summaryKey: "documents.items.policy.summary"
+  }
+];
 
 const state = {
   registry: null,
@@ -28,7 +54,8 @@ const state = {
   searchComposing: false,
   restoreQueryFocus: false,
   querySelectionStart: null,
-  querySelectionEnd: null
+  querySelectionEnd: null,
+  documentCache: new Map()
 };
 
 const appRoot = document.querySelector("#app");
@@ -145,10 +172,15 @@ function render() {
     } else {
       renderNotFound();
     }
-  } else if (route.name === "submit") {
-    renderSubmit();
-  } else if (route.name === "policy") {
-    renderPolicy();
+  } else if (route.name === "tutorial") {
+    renderTutorial();
+  } else if (route.name === "documents") {
+    renderDocuments();
+  } else if (route.name === "document") {
+    renderDocument(route.slug);
+    nav.classList.remove("open");
+    appRoot.focus({ preventScroll: true });
+    return;
   } else if (route.name === "registry") {
     renderRegistry();
   } else if (route.name === "apps") {
@@ -178,15 +210,18 @@ function parseRoute() {
   if (parts[0] === "apps" && parts[1]) return { name: "detail", id: parts[1] };
   if (parts[0] === "apps") return { name: "apps" };
   if (parts[0] === "s" && parts[1]) return { name: "share", code: parts[1] };
-  if (parts[0] === "submit") return { name: "submit" };
-  if (parts[0] === "policy") return { name: "policy" };
+  if (parts[0] === "tutorial" || parts[0] === "submit") return { name: "tutorial" };
+  if (parts[0] === "documents" && parts[1]) return { name: "document", slug: parts[1] };
+  if (parts[0] === "documents") return { name: "documents" };
+  if (parts[0] === "policy") return { name: "document", slug: "user-agreement" };
   if (parts[0] === "registry") return { name: "registry" };
   return { name: "home" };
 }
 
 function updateNav(routeName) {
+  const activeName = routeName === "document" ? "documents" : routeName;
   document.querySelectorAll("[data-nav]").forEach((item) => {
-    item.classList.toggle("active", item.dataset.nav === routeName);
+    item.classList.toggle("active", item.dataset.nav === activeName);
   });
 }
 
@@ -668,65 +703,84 @@ function giscusLang() {
   return "zh-CN";
 }
 
-function renderSubmit() {
+function renderTutorial() {
   appRoot.innerHTML = `
     <section class="route-panel">
       <div class="section-head">
         <div>
-          <p class="eyebrow">${t("submit.eyebrow")}</p>
-          <h1>${t("submit.title")}</h1>
-          <p class="lead">${t("submit.lead")}</p>
+          <p class="eyebrow">${t("tutorial.eyebrow")}</p>
+          <h1>${t("tutorial.title")}</h1>
+          <p class="lead">${t("tutorial.lead")}</p>
         </div>
       </div>
       <section class="notice-panel">
         <div>
-          <p class="eyebrow">${t("submit.agreementEyebrow")}</p>
-          <h2>${t("submit.agreementTitle")}</h2>
-          <p>${t("submit.agreementLead")}</p>
+          <p class="eyebrow">${t("tutorial.agreementEyebrow")}</p>
+          <h2>${t("tutorial.agreementTitle")}</h2>
+          <p>${t("tutorial.agreementLead")}</p>
         </div>
         <div class="notice-actions">
-          <a class="button" href="#/policy">${t("submit.readAgreement")}</a>
-          <a class="button secondary" href="docs/developer-submission-policy.md">${t("submit.openPolicyDoc")}</a>
+          <a class="button" href="#/documents/user-agreement">${t("tutorial.readAgreement")}</a>
+          <a class="button secondary" href="#/documents/app-submission-guide">${t("tutorial.openGuide")}</a>
         </div>
       </section>
       <section class="section-panel">
         <div class="section-head">
           <div>
-            <h2>${t("submit.flowTitle")}</h2>
-            <p>${t("submit.flowLead")}</p>
+            <h2>${t("tutorial.flowTitle")}</h2>
+            <p>${t("tutorial.flowLead")}</p>
           </div>
         </div>
-        <ol class="submit-flow">
-          ${t("submit.steps").map((step) => renderSubmitStep(step)).join("")}
-        </ol>
+        ${renderWorkflowMap()}
       </section>
       <div class="two-column">
         <section class="submit-band">
-          <h2>${t("submit.structureTitle")}</h2>
-          <p>${t("submit.structureLead")}</p>
-          <pre class="code-block">${escapeHtml(t("submit.directoryExample"))}</pre>
+          <h2>${t("tutorial.developmentTitle")}</h2>
+          <p>${t("tutorial.developmentLead")}</p>
+          <a class="button secondary" href="#/documents/app-submission-guide">${t("documents.open")}</a>
         </section>
         <section class="submit-band">
-          <h2>${t("submit.formatTitle")}</h2>
-          <p>${t("submit.formatLead")}</p>
-          <pre class="code-block">${escapeHtml(t("submit.metadataExample"))}</pre>
+          <h2>${t("tutorial.reviewTitle")}</h2>
+          <p>${t("tutorial.reviewLead")}</p>
+          <a class="button secondary" href="#/documents/developer-submission-policy">${t("documents.open")}</a>
         </section>
       </div>
       <div class="submit-grid">
-        ${renderSubmitBand("submit.metadataTitle", "submit.metadata")}
-        ${renderSubmitBand("submit.ciTitle", "submit.ci")}
-        ${renderSubmitBand("submit.reviewTitle", "submit.review")}
+        ${renderSubmitBand("tutorial.metadataTitle", "tutorial.metadata")}
+        ${renderSubmitBand("tutorial.ciTitle", "tutorial.ci")}
+        ${renderSubmitBand("tutorial.maintainerTitle", "tutorial.maintainer")}
       </div>
     </section>
   `;
 }
 
-function renderSubmitStep(step) {
+function renderWorkflowMap() {
   return `
-    <li class="flow-step">
+    <div class="workflow-map" aria-label="${escapeAttr(t("tutorial.flowTitle"))}">
+      <section class="workflow-lane">
+        <div class="workflow-lane-head">
+          <span>${t("tutorial.devLane")}</span>
+        </div>
+        ${t("tutorial.devFlow").map((step, index) => renderFlowNode(step, index)).join("")}
+      </section>
+      <section class="workflow-lane review-lane">
+        <div class="workflow-lane-head">
+          <span>${t("tutorial.reviewLane")}</span>
+        </div>
+        ${t("tutorial.reviewFlow").map((step, index) => renderFlowNode(step, index)).join("")}
+      </section>
+    </div>
+  `;
+}
+
+function renderFlowNode(step, index) {
+  return `
+    <article class="flow-step">
+      <span class="flow-index">${String(index + 1).padStart(2, "0")}</span>
       <h3>${escapeHtml(step.title)}</h3>
       <p>${escapeHtml(step.body)}</p>
-    </li>
+      ${step.doc ? `<a href="#/documents/${escapeAttr(step.doc)}">${t("documents.readMore")}</a>` : ""}
+    </article>
   `;
 }
 
@@ -739,53 +793,177 @@ function renderSubmitBand(titleKey, listKey) {
   `;
 }
 
-function renderPolicy() {
+function renderDocuments() {
   appRoot.innerHTML = `
     <section class="route-panel">
       <div class="section-head">
         <div>
-          <p class="eyebrow">${t("policy.eyebrow")}</p>
-          <h1>${t("policy.title")}</h1>
-          <p class="lead">${t("policy.lead")}</p>
+          <p class="eyebrow">${t("documents.eyebrow")}</p>
+          <h1>${t("documents.title")}</h1>
+          <p class="lead">${t("documents.lead")}</p>
         </div>
       </div>
-      <section class="notice-panel">
-        <div>
-          <p class="eyebrow">${t("policy.agreementEyebrow")}</p>
-          <h2>${t("policy.agreementTitle")}</h2>
-          <p>${t("policy.agreementLead")}</p>
-        </div>
-        <div class="notice-actions">
-          <a class="button" href="#/submit">${t("policy.submitLink")}</a>
-          <a class="button secondary" href="docs/developer-submission-policy.md">${t("policy.fullDoc")}</a>
-        </div>
-      </section>
-      <section class="section-panel">
-        <div class="section-head">
-          <div>
-            <h2>${t("policy.summaryTitle")}</h2>
-            <p>${t("policy.summaryLead")}</p>
-          </div>
-        </div>
-        <div class="agreement-grid">
-          ${t("policy.sections").map((section) => renderAgreementSection(section)).join("")}
-        </div>
-      </section>
-      <section class="section-panel">
-        <h2>${t("policy.acceptanceTitle")}</h2>
-        <p class="markdown-copy">${t("policy.acceptanceText")}</p>
+      <section class="documents-grid">
+        ${DOCUMENTS.map(renderDocumentCard).join("")}
       </section>
     </section>
   `;
 }
 
-function renderAgreementSection(section) {
+function renderDocumentCard(doc) {
   return `
-    <article class="agreement-section">
-      <h3>${escapeHtml(section.title)}</h3>
-      <ul>${section.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+    <article class="document-card">
+      <a href="#/documents/${escapeAttr(doc.slug)}">
+        <p class="eyebrow">${escapeHtml(doc.path)}</p>
+        <h2>${escapeHtml(t(doc.titleKey))}</h2>
+        <p>${escapeHtml(t(doc.summaryKey))}</p>
+        <span>${t("documents.open")}</span>
+      </a>
     </article>
   `;
+}
+
+async function renderDocument(slug) {
+  const doc = DOCUMENTS.find((item) => item.slug === slug);
+  if (!doc) {
+    renderNotFound();
+    appRoot.insertAdjacentHTML("afterbegin", renderWipBanner());
+    return;
+  }
+
+  appRoot.innerHTML = `
+    <section class="route-panel">
+      ${renderWipBanner()}
+      <div class="section-head compact">
+        <div>
+          <p class="eyebrow">${t("documents.eyebrow")}</p>
+          <h1>${escapeHtml(t(doc.titleKey))}</h1>
+          <p class="lead">${escapeHtml(t(doc.summaryKey))}</p>
+        </div>
+        <a class="button secondary" href="#/documents">${t("documents.back")}</a>
+      </div>
+      <section class="section-panel markdown-doc" aria-live="polite">
+        <p>${t("documents.loading")}</p>
+      </section>
+    </section>
+  `;
+
+  try {
+    const markdown = await loadMarkdown(doc.path);
+    const docNode = document.querySelector(".markdown-doc");
+    if (docNode) docNode.innerHTML = renderMarkdown(markdown);
+  } catch (error) {
+    const docNode = document.querySelector(".markdown-doc");
+    if (docNode) docNode.innerHTML = `<div class="error">${escapeHtml(error.message)}</div>`;
+  }
+}
+
+async function loadMarkdown(path) {
+  if (state.documentCache.has(path)) return state.documentCache.get(path);
+  const response = await fetch(path);
+  if (!response.ok) {
+    throw new Error(`Unable to load ${path}: ${response.status}`);
+  }
+  const markdown = await response.text();
+  state.documentCache.set(path, markdown);
+  return markdown;
+}
+
+function renderMarkdown(markdown) {
+  const lines = markdown.replace(/\r\n/g, "\n").split("\n");
+  const html = [];
+  let paragraph = [];
+  let listType = null;
+  let inCode = false;
+  let codeLines = [];
+
+  function flushParagraph() {
+    if (!paragraph.length) return;
+    html.push(`<p>${renderInlineMarkdown(paragraph.join(" "))}</p>`);
+    paragraph = [];
+  }
+
+  function flushList() {
+    if (!listType) return;
+    html.push(`</${listType}>`);
+    listType = null;
+  }
+
+  for (const line of lines) {
+    if (line.startsWith("```")) {
+      if (inCode) {
+        html.push(`<pre class="code-block"><code>${escapeHtml(codeLines.join("\n"))}</code></pre>`);
+        inCode = false;
+        codeLines = [];
+      } else {
+        flushParagraph();
+        flushList();
+        inCode = true;
+      }
+      continue;
+    }
+
+    if (inCode) {
+      codeLines.push(line);
+      continue;
+    }
+
+    if (!line.trim()) {
+      flushParagraph();
+      flushList();
+      continue;
+    }
+
+    const heading = line.match(/^(#{1,4})\s+(.+)$/);
+    if (heading) {
+      flushParagraph();
+      flushList();
+      const level = heading[1].length;
+      html.push(`<h${level}>${renderInlineMarkdown(heading[2])}</h${level}>`);
+      continue;
+    }
+
+    const unordered = line.match(/^\s*[-*]\s+(.+)$/);
+    const ordered = line.match(/^\s*\d+\.\s+(.+)$/);
+    if (unordered || ordered) {
+      flushParagraph();
+      const wanted = unordered ? "ul" : "ol";
+      if (listType !== wanted) {
+        flushList();
+        html.push(`<${wanted}>`);
+        listType = wanted;
+      }
+      html.push(`<li>${renderInlineMarkdown((unordered || ordered)[1])}</li>`);
+      continue;
+    }
+
+    const quote = line.match(/^>\s+(.+)$/);
+    if (quote) {
+      flushParagraph();
+      flushList();
+      html.push(`<blockquote>${renderInlineMarkdown(quote[1])}</blockquote>`);
+      continue;
+    }
+
+    paragraph.push(line.trim());
+  }
+
+  flushParagraph();
+  flushList();
+  if (inCode) html.push(`<pre class="code-block"><code>${escapeHtml(codeLines.join("\n"))}</code></pre>`);
+  return html.join("\n");
+}
+
+function renderInlineMarkdown(text) {
+  return escapeHtml(text)
+    .replace(/`([^`]+)`/g, "<code>$1</code>")
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, href) => {
+      const safeHref = href.startsWith("http") || href.startsWith("#") || href.startsWith("docs/") || href.startsWith("generated/")
+        ? href
+        : "#/documents";
+      return `<a href="${escapeAttr(safeHref)}">${label}</a>`;
+    });
 }
 
 function renderRegistry() {

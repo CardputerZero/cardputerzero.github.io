@@ -15,8 +15,12 @@
 
 ## 文档列表
 
+- [应用提交指南](./app-submission-guide.md)
+- [用户与开发者协议](./user-agreement.md)
 - [AppStore Registry 和 Web UI 需求](./appstore-registry-requirements.md)
 - [开发者提交规范、行为准则和拒收规则](./developer-submission-policy.md)
+
+网站的 `#/documents` 路由会直接读取并渲染这些 Markdown 文件；保留原始 Markdown 是为了让 GitHub review、维护者维护和静态站展示使用同一份文档来源。
 
 ## 设计参考
 
