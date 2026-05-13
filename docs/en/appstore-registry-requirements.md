@@ -72,6 +72,8 @@ The Web UI supports:
 
 Navigation, buttons, filter labels, status text, empty states, tutorial copy, registry labels, and document cards must use i18n dictionaries. Markdown documents may have per-locale files with fallback to `zh-CN`.
 
+Recommended app and admin UI behavior: support i18n in Simplified Chinese, Japanese, and English. The default language should follow the system language automatically. If the project includes a calendar management admin console, users should be able to switch language there, and that manual setting should override the system language.
+
 ## Responsive Design
 
 The site must support phone, tablet, and desktop widths.
