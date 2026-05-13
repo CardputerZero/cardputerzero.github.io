@@ -317,62 +317,117 @@
     "agreementLead": "Pull Request を開くことは、メタデータが正確で、権限宣言が完全で、ダウンロードを検証でき、審査に協力することを意味します。詳細は Documents にあります。",
     "readAgreement": "規約を読む",
     "openGuide": "ガイドを開く",
+    "skillTitle": "Skill と AI Coding で開発する",
+    "skillLead": "cardputer-zero-application skill をチェックリストとして使い、AI に APPLaunch 契約、framebuffer、パッケージ配置、実機検証点を確認させてから実装します。",
     "flowTitle": "開発と審査フロー",
-    "flowLead": "左は開発者の準備フロー、右は registry 自動処理とメンテナー審査です。主要ステップは Markdown 文書にリンクします。",
+    "flowLead": "各ステップをクリックすると検収項目と関連文書を確認できます。内容は cardputer-zero-application skill の APPLaunch、Debian パッケージ、framebuffer、実機検証の経験に基づきます。",
+    "detailTitle": "選択中のステップ",
+    "checksTitle": "検収項目",
+    "openDocument": "関連文書を開く",
     "devLane": "Developer flow",
     "reviewLane": "Review flow",
     "devFlow": [
       {
         "title": "アプリを開発",
         "body": "自分の GitHub リポジトリでソース、README、license、ビルド手順、release を管理します。",
-        "doc": "app-submission-guide"
+        "doc": "skill-ai-coding-guide",
+        "checks": [
+          "最初に skill からタスク一覧とリスクを AI に整理させます。",
+          "対象が 320 x 170 GUI、CLI、バックグラウンドサービスのどれか決めます。",
+          "README に依存関係、入力、終了方法、既知制限を書きます。"
+        ]
       },
       {
         "title": ".deb を作成",
         "body": "APPLaunch 互換パスを使い、Raspberry Pi OS にインストールできる Debian パッケージを作ります。",
-        "doc": "app-submission-guide"
+        "doc": "app-submission-guide",
+        "checks": [
+          "/usr/share/APPLaunch の契約に沿ってファイルを配置します。",
+          ".desktop には少なくとも Name と Exec を入れ、Terminal は基本 false です。",
+          "registry は .deb のみ受け付け、package 名と MD5 が必要です。"
+        ]
       },
       {
         "title": "実機で検証",
         "body": "CardputerZero でアイコン、起動、終了、権限、外部機器、framebuffer 動作を確認します。",
-        "doc": "appstore-registry-requirements"
+        "doc": "appstore-registry-requirements",
+        "checks": [
+          "APPLaunch から起動し、正常に戻れることを確認します。",
+          "/dev/fb0 を固定せず LV_LINUX_FBDEV_DEVICE を尊重します。",
+          "キーボード、短い Esc、長い Home、強制終了経路をテストします。"
+        ]
       },
       {
         "title": "メタデータ準備",
         "body": "UUID、共有コード、作者、バージョン、URL、MD5、権限、プライバシー、リスクを記入します。",
-        "doc": "app-submission-guide"
+        "doc": "app-submission-guide",
+        "checks": [
+          "ネットワーク、ファイル、マイク、外部機器、サービスを宣言します。",
+          "ソース公開度、license、商用利用制限を説明します。",
+          "URL を安定させ、checksum が同じ .deb を指すことを確認します。"
+        ]
       },
       {
         "title": "PR を提出",
         "body": "registry リポジトリを fork し、アプリ YAML と assets を追加して Pull Request を開きます。",
-        "doc": "app-submission-guide"
+        "doc": "app-submission-guide",
+        "checks": [
+          "PR 本文に用途、テスト端末、検証結果を書きます。",
+          "アイコンとスクリーンショットのパスを静的サイトから読めるようにします。",
+          "実験的またはデバイスリスクがある場合は先に明記します。"
+        ]
       }
     ],
     "reviewFlow": [
       {
         "title": "自動チェック",
         "body": "GitHub Actions がフィールド、UUID、共有コード、素材、URL、checksum、registry 生成を検証します。",
-        "doc": "appstore-registry-requirements"
+        "doc": "appstore-registry-requirements",
+        "checks": [
+          "YAML/JSON が解析でき、UUID と共有コードが一意です。",
+          "URL、package 名、MD5 を検証できます。",
+          "registry.json、registry.yml、registry-index.json が生成されます。"
+        ]
       },
       {
         "title": "リスク審査",
         "body": "メンテナーがソース公開度、敏感権限、サービス、外部機器、プライバシー、デバイス安全性を確認します。",
-        "doc": "developer-submission-policy"
+        "doc": "developer-submission-policy",
+        "checks": [
+          "敏感な機能がアプリ目的に合っています。",
+          "閉源または binary-only はより詳しい説明が必要です。",
+          "デバイス、プライバシー、法的リスクをアプリ数より優先します。"
+        ]
       },
       {
         "title": "修正依頼",
         "body": "宣言不足や不明なリスクがある場合、メタデータ、パッケージ、テスト結果の更新を求めます。",
-        "doc": "developer-submission-policy"
+        "doc": "developer-submission-policy",
+        "checks": [
+          "同じ PR で metadata、package、文書を更新します。",
+          "各 review 指摘への対応を説明します。",
+          "必要に応じて実機スクリーンショット、ログ、再現手順を追加します。"
+        ]
       },
       {
         "title": "マージと公開",
         "body": "承認された PR は JSON/YAML registry を再生成し GitHub Pages で公開されます。",
-        "doc": "appstore-registry-requirements"
+        "doc": "appstore-registry-requirements",
+        "checks": [
+          "GitHub Pages から新しい registry を取得できます。",
+          "実機 AppStore を更新するとアプリが表示されます。",
+          "詳細ページ、共有コード、コメント入口が動作します。"
+        ]
       },
       {
         "title": "継続メンテ",
         "body": "URL、バージョン、権限、動作が変わった場合は registry メタデータを更新します。",
-        "doc": "user-agreement"
+        "doc": "user-agreement",
+        "checks": [
+          "動作変更時は権限とプライバシーを先に更新します。",
+          "壊れた URL や間違った checksum はすぐ修正します。",
+          "使えない、または危険なアプリは表示変更、掲載停止、block の対象になります。"
+        ]
       }
     ],
     "developmentTitle": "開発者の準備",
@@ -406,7 +461,14 @@
     "readMore": "詳細を見る",
     "back": "Documents に戻る",
     "loading": "Markdown 文書を読み込み中...",
+    "toc": "目次",
+    "noToc": "この文書には目次にできる見出しがありません。",
+    "source": "ソース：{path}",
     "items": {
+      "skill": {
+        "title": "Skill と AI Coding ガイド",
+        "summary": "cardputer-zero-application skill で AI 開発、パッケージ、実機検証、提出を進める方法。"
+      },
       "submission": {
         "title": "アプリ提出ガイド",
         "summary": "アプリリポジトリ、Debian パッケージ、metadata、assets、Pull Request の準備方法。"

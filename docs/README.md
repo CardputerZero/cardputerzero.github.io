@@ -15,12 +15,20 @@
 
 ## 文档列表
 
-- [应用提交指南](./app-submission-guide.md)
-- [用户与开发者协议](./user-agreement.md)
+- [Skill 与 AI Coding 开发指南](./zh-CN/skill-ai-coding-guide.md)
+- [应用提交指南](./zh-CN/app-submission-guide.md)
+- [用户与开发者协议](./zh-CN/user-agreement.md)
 - [AppStore Registry 和 Web UI 需求](./appstore-registry-requirements.md)
 - [开发者提交规范、行为准则和拒收规则](./developer-submission-policy.md)
 
-网站的 `#/documents` 路由会直接读取并渲染这些 Markdown 文件；保留原始 Markdown 是为了让 GitHub review、维护者维护和静态站展示使用同一份文档来源。
+网站的 `#/documents` 路由会根据当前语言读取对应 Markdown 文件，并从文档标题生成目录。当前支持 `zh-CN`、`en`、`ja` 三套内容；没有独立翻译时应 fallback 到 `zh-CN`。保留原始 Markdown 是为了让 GitHub review、维护者维护和静态站展示使用同一份文档来源。
+
+## 语言目录
+
+- `zh-CN/`：简体中文文档，作为主要源语言。
+- `en/`：英文文档。
+- `ja/`：日语文档。
+- 根目录保留早期文档和中文需求文档，便于维护者 review。
 
 ## 设计参考
 

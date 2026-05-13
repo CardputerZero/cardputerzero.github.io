@@ -778,10 +778,17 @@ code {
   counter-reset: submit-step;
 }
 
+.workflow-board {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: 16px;
+  align-items: start;
+}
+
 .workflow-map {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
+  gap: 14px;
 }
 
 .workflow-lane {
@@ -835,11 +842,15 @@ code {
   position: relative;
   display: grid;
   gap: 8px;
+  width: 100%;
   min-width: 0;
   padding: 14px 14px 14px 54px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-card);
   background: var(--color-surface-raised);
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
 }
 
 .flow-step + .flow-step::before {
@@ -867,20 +878,78 @@ code {
   font-size: 12px;
 }
 
-.flow-step h3 {
-  margin: 0;
+.flow-step:hover,
+.flow-step.active {
+  border-color: var(--color-border-strong);
+  background: rgba(18, 59, 36, 0.64);
 }
 
-.flow-step p,
+.flow-step.active .flow-index {
+  background: var(--color-accent-soft);
+  color: var(--color-accent-strong);
+}
+
+.flow-title {
+  color: var(--color-text);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.flow-body,
 .submit-band p {
   color: var(--color-text-muted);
   line-height: 1.65;
 }
 
-.flow-step a,
 .document-card a span,
 .markdown-doc a {
   color: var(--color-accent-strong);
+}
+
+.flow-detail {
+  position: sticky;
+  top: 18px;
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-card);
+  background:
+    linear-gradient(180deg, rgba(50, 232, 117, 0.08), transparent 42%),
+    var(--color-surface-raised);
+}
+
+.flow-detail h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.flow-detail p {
+  margin: 0;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.flow-checks {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: rgba(2, 4, 3, 0.32);
+}
+
+.flow-checks strong {
+  color: var(--color-text);
+  font-size: 13px;
+}
+
+.flow-checks ul {
+  padding-left: 18px;
+  margin: 0;
+  color: var(--color-text-muted);
+  line-height: 1.65;
 }
 
 .submit-band {
@@ -959,9 +1028,62 @@ code {
   line-height: 1.65;
 }
 
+.document-layout {
+  display: grid;
+  grid-template-columns: minmax(190px, 250px) minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.doc-toc {
+  position: sticky;
+  top: 18px;
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: rgba(11, 23, 17, 0.92);
+}
+
+.doc-toc p {
+  margin: 0;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+}
+
+.toc-list {
+  display: grid;
+  gap: 4px;
+}
+
+.toc-link {
+  display: block;
+  width: 100%;
+  padding: 6px 8px;
+  border: 0;
+  border-radius: var(--radius-control);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: 13px;
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+}
+
+.toc-link:hover {
+  background: var(--color-surface-hover);
+  color: var(--color-accent-strong);
+}
+
+.toc-level-3 {
+  padding-left: 18px;
+  font-size: 12px;
+}
+
 .markdown-doc {
-  max-width: 920px;
-  margin: 0 auto;
+  min-width: 0;
   padding: 26px;
 }
 
@@ -1042,7 +1164,9 @@ code {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .workflow-board,
   .workflow-map,
+  .document-layout,
   .documents-grid {
     grid-template-columns: 1fr;
   }
@@ -1210,5 +1334,10 @@ code {
 
   .markdown-doc {
     padding: 18px;
+  }
+
+  .doc-toc,
+  .flow-detail {
+    position: static;
   }
 }

@@ -9,26 +9,52 @@ const GISCUS_CONFIG = {
 };
 const DOCUMENTS = [
   {
+    slug: "skill-ai-coding-guide",
+    paths: {
+      "zh-CN": "docs/zh-CN/skill-ai-coding-guide.md",
+      en: "docs/en/skill-ai-coding-guide.md",
+      ja: "docs/ja/skill-ai-coding-guide.md"
+    },
+    titleKey: "documents.items.skill.title",
+    summaryKey: "documents.items.skill.summary"
+  },
+  {
     slug: "app-submission-guide",
-    path: "docs/app-submission-guide.md",
+    paths: {
+      "zh-CN": "docs/zh-CN/app-submission-guide.md",
+      en: "docs/app-submission-guide.md",
+      ja: "docs/ja/app-submission-guide.md"
+    },
     titleKey: "documents.items.submission.title",
     summaryKey: "documents.items.submission.summary"
   },
   {
     slug: "user-agreement",
-    path: "docs/user-agreement.md",
+    paths: {
+      "zh-CN": "docs/zh-CN/user-agreement.md",
+      en: "docs/user-agreement.md",
+      ja: "docs/ja/user-agreement.md"
+    },
     titleKey: "documents.items.agreement.title",
     summaryKey: "documents.items.agreement.summary"
   },
   {
     slug: "appstore-registry-requirements",
-    path: "docs/appstore-registry-requirements.md",
+    paths: {
+      "zh-CN": "docs/appstore-registry-requirements.md",
+      en: "docs/en/appstore-registry-requirements.md",
+      ja: "docs/ja/appstore-registry-requirements.md"
+    },
     titleKey: "documents.items.registry.title",
     summaryKey: "documents.items.registry.summary"
   },
   {
     slug: "developer-submission-policy",
-    path: "docs/developer-submission-policy.md",
+    paths: {
+      "zh-CN": "docs/developer-submission-policy.md",
+      en: "docs/en/developer-submission-policy.md",
+      ja: "docs/ja/developer-submission-policy.md"
+    },
     titleKey: "documents.items.policy.title",
     summaryKey: "documents.items.policy.summary"
   }
@@ -55,6 +81,7 @@ const state = {
   restoreQueryFocus: false,
   querySelectionStart: null,
   querySelectionEnd: null,
+  selectedFlowStep: "dev-0",
   documentCache: new Map()
 };
 
@@ -735,14 +762,26 @@ function renderTutorial() {
       </section>
       <div class="two-column">
         <section class="submit-band">
+          <h2>${t("tutorial.skillTitle")}</h2>
+          <p>${t("tutorial.skillLead")}</p>
+          <a class="button secondary" href="#/documents/skill-ai-coding-guide">${t("documents.open")}</a>
+        </section>
+        <section class="submit-band">
           <h2>${t("tutorial.developmentTitle")}</h2>
           <p>${t("tutorial.developmentLead")}</p>
           <a class="button secondary" href="#/documents/app-submission-guide">${t("documents.open")}</a>
         </section>
+      </div>
+      <div class="two-column">
         <section class="submit-band">
           <h2>${t("tutorial.reviewTitle")}</h2>
           <p>${t("tutorial.reviewLead")}</p>
           <a class="button secondary" href="#/documents/developer-submission-policy">${t("documents.open")}</a>
+        </section>
+        <section class="submit-band">
+          <h2>${t("documents.items.agreement.title")}</h2>
+          <p>${t("documents.items.agreement.summary")}</p>
+          <a class="button secondary" href="#/documents/user-agreement">${t("documents.open")}</a>
         </section>
       </div>
       <div class="submit-grid">
@@ -752,36 +791,87 @@ function renderTutorial() {
       </div>
     </section>
   `;
+  bindTutorialFlow();
 }
 
 function renderWorkflowMap() {
+  const steps = getWorkflowSteps();
+  const selected = steps.find((step) => step.key === state.selectedFlowStep) || steps[0];
   return `
-    <div class="workflow-map" aria-label="${escapeAttr(t("tutorial.flowTitle"))}">
-      <section class="workflow-lane">
-        <div class="workflow-lane-head">
-          <span>${t("tutorial.devLane")}</span>
-        </div>
-        ${t("tutorial.devFlow").map((step, index) => renderFlowNode(step, index)).join("")}
-      </section>
-      <section class="workflow-lane review-lane">
-        <div class="workflow-lane-head">
-          <span>${t("tutorial.reviewLane")}</span>
-        </div>
-        ${t("tutorial.reviewFlow").map((step, index) => renderFlowNode(step, index)).join("")}
-      </section>
+    <div class="workflow-board" aria-label="${escapeAttr(t("tutorial.flowTitle"))}">
+      <div class="workflow-map">
+        <section class="workflow-lane">
+          <div class="workflow-lane-head">
+            <span>${t("tutorial.devLane")}</span>
+          </div>
+          ${t("tutorial.devFlow").map((step, index) => renderFlowNode(step, index, "dev", selected.key)).join("")}
+        </section>
+        <section class="workflow-lane review-lane">
+          <div class="workflow-lane-head">
+            <span>${t("tutorial.reviewLane")}</span>
+          </div>
+          ${t("tutorial.reviewFlow").map((step, index) => renderFlowNode(step, index, "review", selected.key)).join("")}
+        </section>
+      </div>
+      <aside class="flow-detail" aria-live="polite">
+        <p class="eyebrow">${escapeHtml(t("tutorial.detailTitle"))}</p>
+        <h3>${escapeHtml(selected.title)}</h3>
+        <p>${escapeHtml(selected.body)}</p>
+        ${selected.checks?.length ? `
+          <div class="flow-checks">
+            <strong>${escapeHtml(t("tutorial.checksTitle"))}</strong>
+            <ul>${selected.checks.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+          </div>
+        ` : ""}
+        ${selected.doc ? `
+          <a class="button secondary" href="#/documents/${escapeAttr(selected.doc)}">${escapeHtml(t("tutorial.openDocument"))}</a>
+        ` : ""}
+      </aside>
     </div>
   `;
 }
 
-function renderFlowNode(step, index) {
+function getWorkflowSteps() {
+  const devSteps = t("tutorial.devFlow").map((step, index) => ({
+    ...step,
+    lane: "dev",
+    key: `dev-${index}`
+  }));
+  const reviewSteps = t("tutorial.reviewFlow").map((step, index) => ({
+    ...step,
+    lane: "review",
+    key: `review-${index}`
+  }));
+  return devSteps.concat(reviewSteps);
+}
+
+function renderFlowNode(step, index, lane, selectedKey) {
+  const key = `${lane}-${index}`;
+  const isActive = key === selectedKey;
   return `
-    <article class="flow-step">
+    <button class="flow-step ${isActive ? "active" : ""}" data-flow-step="${escapeAttr(key)}" type="button" aria-pressed="${isActive}">
       <span class="flow-index">${String(index + 1).padStart(2, "0")}</span>
-      <h3>${escapeHtml(step.title)}</h3>
-      <p>${escapeHtml(step.body)}</p>
-      ${step.doc ? `<a href="#/documents/${escapeAttr(step.doc)}">${t("documents.readMore")}</a>` : ""}
-    </article>
+      <span class="flow-title">${escapeHtml(step.title)}</span>
+      <span class="flow-body">${escapeHtml(step.body)}</span>
+    </button>
   `;
+}
+
+function bindTutorialFlow() {
+  document.querySelectorAll("[data-flow-step]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.selectedFlowStep = button.dataset.flowStep;
+      render();
+    });
+  });
+}
+
+function documentPath(doc) {
+  return doc.paths?.[state.locale] || doc.paths?.["zh-CN"] || doc.paths?.en || doc.path;
+}
+
+function renderDocumentSource(doc) {
+  return t("documents.source", { path: documentPath(doc) });
 }
 
 function renderSubmitBand(titleKey, listKey) {
@@ -814,7 +904,7 @@ function renderDocumentCard(doc) {
   return `
     <article class="document-card">
       <a href="#/documents/${escapeAttr(doc.slug)}">
-        <p class="eyebrow">${escapeHtml(doc.path)}</p>
+        <p class="eyebrow">${escapeHtml(renderDocumentSource(doc))}</p>
         <h2>${escapeHtml(t(doc.titleKey))}</h2>
         <p>${escapeHtml(t(doc.summaryKey))}</p>
         <span>${t("documents.open")}</span>
@@ -842,19 +932,31 @@ async function renderDocument(slug) {
         </div>
         <a class="button secondary" href="#/documents">${t("documents.back")}</a>
       </div>
-      <section class="section-panel markdown-doc" aria-live="polite">
-        <p>${t("documents.loading")}</p>
-      </section>
+      <div class="document-layout">
+        <aside class="doc-toc" aria-label="${escapeAttr(t("documents.toc"))}">
+          <p class="eyebrow">${t("documents.toc")}</p>
+          <p>${t("documents.loading")}</p>
+        </aside>
+        <section class="section-panel markdown-doc" aria-live="polite">
+          <p>${t("documents.loading")}</p>
+        </section>
+      </div>
     </section>
   `;
 
   try {
-    const markdown = await loadMarkdown(doc.path);
+    const markdown = await loadMarkdown(documentPath(doc));
+    const rendered = renderMarkdown(markdown);
     const docNode = document.querySelector(".markdown-doc");
-    if (docNode) docNode.innerHTML = renderMarkdown(markdown);
+    const tocNode = document.querySelector(".doc-toc");
+    if (docNode) docNode.innerHTML = rendered.html;
+    if (tocNode) tocNode.innerHTML = renderToc(rendered.toc);
+    bindDocumentToc();
   } catch (error) {
     const docNode = document.querySelector(".markdown-doc");
     if (docNode) docNode.innerHTML = `<div class="error">${escapeHtml(error.message)}</div>`;
+    const tocNode = document.querySelector(".doc-toc");
+    if (tocNode) tocNode.innerHTML = `<p class="eyebrow">${t("documents.toc")}</p>`;
   }
 }
 
@@ -872,6 +974,8 @@ async function loadMarkdown(path) {
 function renderMarkdown(markdown) {
   const lines = markdown.replace(/\r\n/g, "\n").split("\n");
   const html = [];
+  const toc = [];
+  const headingIds = new Map();
   let paragraph = [];
   let listType = null;
   let inCode = false;
@@ -919,7 +1023,10 @@ function renderMarkdown(markdown) {
       flushParagraph();
       flushList();
       const level = heading[1].length;
-      html.push(`<h${level}>${renderInlineMarkdown(heading[2])}</h${level}>`);
+      const title = heading[2].trim();
+      const id = uniqueHeadingId(title, headingIds);
+      if (level <= 3) toc.push({ id, level, title });
+      html.push(`<h${level} id="${escapeAttr(id)}">${renderInlineMarkdown(title)}</h${level}>`);
       continue;
     }
 
@@ -951,7 +1058,46 @@ function renderMarkdown(markdown) {
   flushParagraph();
   flushList();
   if (inCode) html.push(`<pre class="code-block"><code>${escapeHtml(codeLines.join("\n"))}</code></pre>`);
-  return html.join("\n");
+  return { html: html.join("\n"), toc };
+}
+
+function uniqueHeadingId(title, headingIds) {
+  const base = slugifyHeading(title);
+  const count = headingIds.get(base) || 0;
+  headingIds.set(base, count + 1);
+  return count ? `${base}-${count + 1}` : base;
+}
+
+function slugifyHeading(title) {
+  const normalized = title
+    .toLowerCase()
+    .replace(/[`*_~()[\]{}<>:"'.,!?/\\|+=]+/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  return normalized || "section";
+}
+
+function renderToc(toc) {
+  const links = toc.length
+    ? toc.map((item) => `
+        <button class="toc-link toc-level-${item.level}" data-doc-anchor="${escapeAttr(item.id)}" type="button">${escapeHtml(item.title)}</button>
+      `).join("")
+    : `<p>${escapeHtml(t("documents.noToc"))}</p>`;
+  return `
+    <p class="eyebrow">${t("documents.toc")}</p>
+    <nav class="toc-list">
+      ${links}
+    </nav>
+  `;
+}
+
+function bindDocumentToc() {
+  document.querySelectorAll("[data-doc-anchor]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const target = document.getElementById(button.dataset.docAnchor);
+      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
 }
 
 function renderInlineMarkdown(text) {

@@ -317,62 +317,117 @@
     "agreementLead": "提交 Pull Request 即表示你确认应用元信息真实、权限声明完整、下载文件可校验，并愿意配合维护者 review。详细条款已迁移到 Documents 文档中心。",
     "readAgreement": "阅读协议",
     "openGuide": "打开提交指南",
+    "skillTitle": "使用 Skill 和 AI Coding 开发",
+    "skillLead": "把 cardputer-zero-application skill 当作开发检查表，让 AI 先确认 APPLaunch 约定、framebuffer、打包路径和真机验证点，再开始编码。",
     "flowTitle": "开发和审核流程图",
-    "flowLead": "左侧是开发者准备流程，右侧是 registry 和维护者审核流程。每个关键节点都可以跳转到 Markdown 文档查看细节。",
+    "flowLead": "点击任一步骤查看验收点和对应文档。流程内容来自 cardputer-zero-application skill 的 APPLaunch、Debian 打包、framebuffer 和真机验证经验。",
+    "detailTitle": "当前步骤",
+    "checksTitle": "验收点",
+    "openDocument": "打开对应文档",
     "devLane": "Developer flow",
     "reviewLane": "Review flow",
     "devFlow": [
       {
         "title": "开发应用",
         "body": "在自己的 GitHub 仓库维护源码、README、license、构建方式和 release 记录。",
-        "doc": "app-submission-guide"
+        "doc": "skill-ai-coding-guide",
+        "checks": [
+          "先让 AI 根据 skill 生成任务清单和风险点。",
+          "确认目标是 320 x 170 GUI、CLI 工具还是后台服务。",
+          "README 写清楚依赖、输入、退出方式和已知限制。"
+        ]
       },
       {
         "title": "打包 .deb",
         "body": "使用 CardputerZero/APPLaunch 兼容路径，生成可在树莓派系统安装的 Debian 包。",
-        "doc": "app-submission-guide"
+        "doc": "app-submission-guide",
+        "checks": [
+          "安装到 /usr/share/APPLaunch 约定目录。",
+          ".desktop 至少包含 Name 和 Exec，Terminal 默认 false。",
+          "registry 只接受 .deb，并要求 package 名和 MD5。"
+        ]
       },
       {
         "title": "真机验证",
         "body": "在 CardputerZero 上验证图标、启动、退出、权限、外设和 framebuffer 行为。",
-        "doc": "appstore-registry-requirements"
+        "doc": "appstore-registry-requirements",
+        "checks": [
+          "确认应用能从 APPLaunch 启动并返回。",
+          "尊重 LV_LINUX_FBDEV_DEVICE，不硬编码 /dev/fb0。",
+          "测试键盘、短 Esc、长 Home 或强退路径。"
+        ]
       },
       {
         "title": "准备元信息",
         "body": "补全 UUID、分享码、作者、版本、下载 URL、MD5、权限、隐私和风险声明。",
-        "doc": "app-submission-guide"
+        "doc": "app-submission-guide",
+        "checks": [
+          "声明网络、文件系统、麦克风、外设和后台服务。",
+          "描述源码开放程度、license 和商业使用限制。",
+          "确保下载 URL 稳定，checksum 对应同一个 .deb 文件。"
+        ]
       },
       {
         "title": "提交 PR",
         "body": "Fork registry 仓库，新增应用 YAML 和 assets，向主仓库提交 Pull Request。",
-        "doc": "app-submission-guide"
+        "doc": "app-submission-guide",
+        "checks": [
+          "PR 描述包含应用用途、测试设备和测试结果。",
+          "图标和截图路径能被静态站点读取。",
+          "如果是实验性或设备相关风险，主动标记。"
+        ]
       }
     ],
     "reviewFlow": [
       {
         "title": "自动校验",
         "body": "GitHub Actions 校验字段、UUID、分享码、素材、下载地址、checksum 和 registry 生成。",
-        "doc": "appstore-registry-requirements"
+        "doc": "appstore-registry-requirements",
+        "checks": [
+          "YAML/JSON 能解析，UUID 和分享码唯一。",
+          "下载地址、包名和 MD5 可以验证。",
+          "生成 registry.json、registry.yml 和 registry-index.json。"
+        ]
       },
       {
         "title": "风险审查",
         "body": "维护者检查源码开放程度、敏感权限、后台服务、外部硬件、隐私和设备安全。",
-        "doc": "developer-submission-policy"
+        "doc": "developer-submission-policy",
+        "checks": [
+          "敏感能力必须和应用用途匹配。",
+          "闭源或 binary-only 应用需要更完整说明。",
+          "设备、隐私和法律风险优先于应用数量。"
+        ]
       },
       {
         "title": "修改反馈",
         "body": "如果字段不完整或风险未说明，维护者会要求补充声明、修改包或补充测试结果。",
-        "doc": "developer-submission-policy"
+        "doc": "developer-submission-policy",
+        "checks": [
+          "在同一个 PR 中更新 metadata、包或文档。",
+          "说明每个 review 点如何处理。",
+          "必要时补充真机截图、日志或复现步骤。"
+        ]
       },
       {
         "title": "合并发布",
         "body": "审核通过后合并 PR，生成 registry JSON/YAML，并通过 GitHub Pages 发布。",
-        "doc": "appstore-registry-requirements"
+        "doc": "appstore-registry-requirements",
+        "checks": [
+          "GitHub Pages 能访问新 registry。",
+          "真机 AppStore 刷新后能看到应用。",
+          "详情页、分享码和评论入口正常。"
+        ]
       },
       {
         "title": "持续维护",
         "body": "下载地址、版本、权限或行为变化时，开发者需要继续更新 registry 元信息。",
-        "doc": "user-agreement"
+        "doc": "user-agreement",
+        "checks": [
+          "新版本行为变化要先更新权限和隐私声明。",
+          "失效下载或错误 checksum 需要及时修复。",
+          "不可用或有风险的应用可能被标记、下架或 block。"
+        ]
       }
     ],
     "developmentTitle": "开发者准备",
@@ -406,7 +461,14 @@
     "readMore": "查看细节",
     "back": "返回文档中心",
     "loading": "正在加载 Markdown 文档...",
+    "toc": "目录",
+    "noToc": "这个文档没有可生成目录的标题。",
+    "source": "来源：{path}",
     "items": {
+      "skill": {
+        "title": "Skill 与 AI Coding 开发指南",
+        "summary": "如何用 cardputer-zero-application skill 指导 AI 开发、打包、真机验证和提交。"
+      },
       "submission": {
         "title": "应用提交指南",
         "summary": "如何准备应用仓库、Debian 包、metadata、assets，并通过 Pull Request 提交。"

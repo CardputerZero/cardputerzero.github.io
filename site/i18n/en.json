@@ -317,62 +317,117 @@
     "agreementLead": "Opening a pull request confirms that metadata is truthful, permissions are complete, downloads are verifiable, and you will cooperate with maintainer review. Full rules now live in Documents.",
     "readAgreement": "Read agreement",
     "openGuide": "Open guide",
+    "skillTitle": "Develop With Skill And AI Coding",
+    "skillLead": "Use the cardputer-zero-application skill as the development checklist so AI confirms APPLaunch contracts, framebuffer behavior, package paths, and device validation before coding.",
     "flowTitle": "Development And Review Flow",
-    "flowLead": "The left lane is the developer preparation flow. The right lane is registry automation and maintainer review. Each major step links to Markdown documentation.",
+    "flowLead": "Click any step to see acceptance checks and linked documentation. The flow is based on cardputer-zero-application experience with APPLaunch, Debian packages, framebuffer devices, and real-device validation.",
+    "detailTitle": "Selected step",
+    "checksTitle": "Acceptance checks",
+    "openDocument": "Open linked document",
     "devLane": "Developer flow",
     "reviewLane": "Review flow",
     "devFlow": [
       {
         "title": "Build the app",
         "body": "Keep source, README, license, build steps, and release history in your own GitHub repository.",
-        "doc": "app-submission-guide"
+        "doc": "skill-ai-coding-guide",
+        "checks": [
+          "Ask AI to derive the task checklist and risk points from the skill first.",
+          "Decide whether the target is a 320 x 170 GUI, CLI utility, or background service.",
+          "Document dependencies, input model, exit behavior, and known limits in README."
+        ]
       },
       {
         "title": "Package .deb",
         "body": "Use APPLaunch-compatible paths and produce a Debian package installable on Raspberry Pi OS.",
-        "doc": "app-submission-guide"
+        "doc": "app-submission-guide",
+        "checks": [
+          "Install files under the /usr/share/APPLaunch contract.",
+          ".desktop includes at least Name and Exec; Terminal is false by default.",
+          "Registry accepts only .deb downloads with package name and MD5."
+        ]
       },
       {
         "title": "Validate on device",
         "body": "Check icon, launch, exit, permissions, peripherals, and framebuffer behavior on CardputerZero.",
-        "doc": "appstore-registry-requirements"
+        "doc": "appstore-registry-requirements",
+        "checks": [
+          "Confirm the app launches from APPLaunch and returns cleanly.",
+          "Respect LV_LINUX_FBDEV_DEVICE instead of hard-coding /dev/fb0.",
+          "Test keyboard input, short Esc, long Home, or force-exit behavior."
+        ]
       },
       {
         "title": "Prepare metadata",
         "body": "Fill UUID, share code, author, version, download URL, MD5, permissions, privacy, and risk statements.",
-        "doc": "app-submission-guide"
+        "doc": "app-submission-guide",
+        "checks": [
+          "Declare network, filesystem, microphone, hardware, and service behavior.",
+          "Describe source openness, license, and commercial-use restrictions.",
+          "Keep the download URL stable and make checksum match the exact .deb."
+        ]
       },
       {
         "title": "Open a PR",
         "body": "Fork the registry repository, add app YAML and assets, then open a pull request.",
-        "doc": "app-submission-guide"
+        "doc": "app-submission-guide",
+        "checks": [
+          "PR body includes purpose, test device, and validation result.",
+          "Icon and screenshot paths are readable by the static site.",
+          "Mark experimental or device-risk behavior up front."
+        ]
       }
     ],
     "reviewFlow": [
       {
         "title": "Automated checks",
         "body": "GitHub Actions validates fields, UUIDs, share codes, assets, download URLs, checksums, and registry generation.",
-        "doc": "appstore-registry-requirements"
+        "doc": "appstore-registry-requirements",
+        "checks": [
+          "YAML/JSON parses and UUID plus share code are unique.",
+          "Download URL, package name, and MD5 can be verified.",
+          "registry.json, registry.yml, and registry-index.json are generated."
+        ]
       },
       {
         "title": "Risk review",
         "body": "Maintainers review source availability, sensitive permissions, services, hardware, privacy, and device safety.",
-        "doc": "developer-submission-policy"
+        "doc": "developer-submission-policy",
+        "checks": [
+          "Sensitive capabilities match the app purpose.",
+          "Closed-source or binary-only apps include stronger disclosure.",
+          "Device, privacy, and legal risk take priority over app count."
+        ]
       },
       {
         "title": "Change requests",
         "body": "If declarations are incomplete or risks are unclear, maintainers request metadata, package, or test updates.",
-        "doc": "developer-submission-policy"
+        "doc": "developer-submission-policy",
+        "checks": [
+          "Update metadata, package, or docs in the same PR.",
+          "Explain how each review point was handled.",
+          "Add screenshots, logs, or reproduction steps when needed."
+        ]
       },
       {
         "title": "Merge and publish",
         "body": "Approved PRs regenerate JSON/YAML registries and publish through GitHub Pages.",
-        "doc": "appstore-registry-requirements"
+        "doc": "appstore-registry-requirements",
+        "checks": [
+          "GitHub Pages can serve the new registry.",
+          "Device AppStore sees the app after refresh.",
+          "Detail page, share code, and comments entry work."
+        ]
       },
       {
         "title": "Maintain updates",
         "body": "Update registry metadata when downloads, versions, permissions, or behavior changes.",
-        "doc": "user-agreement"
+        "doc": "user-agreement",
+        "checks": [
+          "Behavior changes update permissions and privacy first.",
+          "Broken downloads or wrong checksums are fixed quickly.",
+          "Unavailable or risky apps may be flagged, delisted, or blocked."
+        ]
       }
     ],
     "developmentTitle": "Developer Preparation",
@@ -406,7 +461,14 @@
     "readMore": "Read details",
     "back": "Back to documents",
     "loading": "Loading Markdown document...",
+    "toc": "Contents",
+    "noToc": "This document has no headings for a table of contents.",
+    "source": "Source: {path}",
     "items": {
+      "skill": {
+        "title": "Skill And AI Coding Guide",
+        "summary": "Use the cardputer-zero-application skill to guide AI development, packaging, device validation, and submission."
+      },
       "submission": {
         "title": "App Submission Guide",
         "summary": "Prepare app repositories, Debian packages, metadata, assets, and pull requests."
