@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-13T21:22:59+08:00",
+  "generated_at": "2026-05-13T22:52:26+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
   ],
   "apps": [
     {
-      "uuid": "8d640a0b-57d8-50f8-bf06-60ab479daa56",
+      "uuid": "ff2ee91e-c334-5a5d-8b91-725c59c08294",
       "share_code": "cale",
       "title": "Calendar",
       "summary": "Compact Calendar app for local and online ICS schedules.",
@@ -18,16 +18,16 @@
         "Calendar"
       ],
       "author": {},
-      "version": "0.1.1",
+      "version": "0.1.2",
       "license": "MIT",
       "source_repo": "https://github.com/CardputerZero/Calendar",
       "download": {
         "type": "deb",
         "package": "calendar",
-        "url": "https://github.com/CardputerZero/packages/raw/main/pool/main/calendar/calendar_0.1.1_arm64.deb",
-        "md5": "e02319872997d49a736b744c83d8f452",
-        "sha256": "eb07815c86f28bd2e45e8e733f509d61b7c22901508f2769c9ec2e982b62bdc5",
-        "size": 7229098
+        "url": "https://github.com/CardputerZero/packages/raw/main/pool/main/calendar/calendar_0.1.2_arm64.deb",
+        "md5": "012ad8d0c881c4c9e3c74f0a680a6f03",
+        "sha256": "20b4a1fe8f4e1ca054ae045a372887f43758a024791e531d9a2c5115d06e633f",
+        "size": 5337480
       },
       "depends": "",
       "permissions": {
