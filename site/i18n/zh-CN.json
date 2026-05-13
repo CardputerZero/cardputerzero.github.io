@@ -348,9 +348,9 @@
       {
         "title": "开发应用",
         "body": "在自己的 GitHub 仓库维护源码、README、license、构建方式和 release 记录。",
-        "doc": "skill-ai-coding-guide",
+        "doc": "application-development-guide",
         "checks": [
-          "先让 AI 根据 skill 生成任务清单和风险点。",
+          "先确定使用语言、应用类型和运行方式。",
           "确认目标是 320 x 170 GUI、CLI 工具还是后台服务。",
           "README 写清楚依赖、输入、退出方式和已知限制。"
         ]
@@ -483,6 +483,10 @@
     "noToc": "这个文档没有可生成目录的标题。",
     "source": "来源：{path}",
     "items": {
+      "development": {
+        "title": "CardputerZero 应用开发入门",
+        "summary": "普通开发路线：语言选择、环境搭建、仓库定位、开发范式和 HelloWorld 示例。"
+      },
       "skill": {
         "title": "Skill 与 AI Coding 开发指南",
         "summary": "如何用 cardputer-zero-application skill 指导 AI 开发、打包、真机验证和提交。"

@@ -15,6 +15,7 @@
 
 ## 文档列表
 
+- [CardputerZero 应用开发入门](./zh-CN/application-development-guide.md)
 - [Skill 与 AI Coding 开发指南](./zh-CN/skill-ai-coding-guide.md)
 - [应用提交指南](./zh-CN/app-submission-guide.md)
 - [用户与开发者协议](./zh-CN/user-agreement.md)

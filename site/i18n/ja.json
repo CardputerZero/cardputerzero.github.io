@@ -348,9 +348,9 @@
       {
         "title": "アプリを開発",
         "body": "自分の GitHub リポジトリでソース、README、license、ビルド手順、release を管理します。",
-        "doc": "skill-ai-coding-guide",
+        "doc": "application-development-guide",
         "checks": [
-          "最初に skill からタスク一覧とリスクを AI に整理させます。",
+          "最初に実装言語、アプリ種別、起動方式を決めます。",
           "対象が 320 x 170 GUI、CLI、バックグラウンドサービスのどれか決めます。",
           "README に依存関係、入力、終了方法、既知制限を書きます。"
         ]
@@ -483,6 +483,10 @@
     "noToc": "この文書には目次にできる見出しがありません。",
     "source": "ソース：{path}",
     "items": {
+      "development": {
+        "title": "CardputerZero アプリ開発入門",
+        "summary": "通常の開発ルート：言語選択、環境構築、リポジトリの役割、開発パターン、HelloWorld。"
+      },
       "skill": {
         "title": "Skill と AI Coding ガイド",
         "summary": "cardputer-zero-application skill で AI 開発、パッケージ、実機検証、提出を進める方法。"

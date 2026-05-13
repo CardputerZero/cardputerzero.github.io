@@ -348,9 +348,9 @@
       {
         "title": "Build the app",
         "body": "Keep source, README, license, build steps, and release history in your own GitHub repository.",
-        "doc": "skill-ai-coding-guide",
+        "doc": "application-development-guide",
         "checks": [
-          "Ask AI to derive the task checklist and risk points from the skill first.",
+          "Choose the implementation language, app type, and launch mode first.",
           "Decide whether the target is a 320 x 170 GUI, CLI utility, or background service.",
           "Document dependencies, input model, exit behavior, and known limits in README."
         ]
@@ -483,6 +483,10 @@
     "noToc": "This document has no headings for a table of contents.",
     "source": "Source: {path}",
     "items": {
+      "development": {
+        "title": "CardputerZero App Development Guide",
+        "summary": "The normal development path: language choice, environment setup, repository roles, development pattern, and HelloWorld."
+      },
       "skill": {
         "title": "Skill And AI Coding Guide",
         "summary": "Use the cardputer-zero-application skill to guide AI development, packaging, device validation, and submission."

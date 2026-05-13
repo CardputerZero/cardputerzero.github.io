@@ -9,6 +9,16 @@ const GISCUS_CONFIG = {
 };
 const DOCUMENTS = [
   {
+    slug: "application-development-guide",
+    paths: {
+      "zh-CN": "docs/zh-CN/application-development-guide.md",
+      en: "docs/en/application-development-guide.md",
+      ja: "docs/ja/application-development-guide.md"
+    },
+    titleKey: "documents.items.development.title",
+    summaryKey: "documents.items.development.summary"
+  },
+  {
     slug: "skill-ai-coding-guide",
     paths: {
       "zh-CN": "docs/zh-CN/skill-ai-coding-guide.md",
@@ -776,14 +786,14 @@ function renderTutorial() {
       </section>
       <div class="two-column">
         <section class="submit-band">
+          <h2>${t("tutorial.developmentTitle")}</h2>
+          <p>${t("tutorial.developmentLead")}</p>
+          <a class="button secondary" href="#/documents/application-development-guide">${t("documents.open")}</a>
+        </section>
+        <section class="submit-band">
           <h2>${t("tutorial.skillTitle")}</h2>
           <p>${t("tutorial.skillLead")}</p>
           <a class="button secondary" href="#/documents/skill-ai-coding-guide">${t("documents.open")}</a>
-        </section>
-        <section class="submit-band">
-          <h2>${t("tutorial.developmentTitle")}</h2>
-          <p>${t("tutorial.developmentLead")}</p>
-          <a class="button secondary" href="#/documents/app-submission-guide">${t("documents.open")}</a>
         </section>
       </div>
       <div class="two-column">
