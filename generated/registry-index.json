@@ -1,86 +1,42 @@
 {
-  "schema_version": 1,
-  "generated_at": "2026-05-11T14:50:00+08:00",
+  "schema_version": 2,
+  "generated_at": "2026-05-13T21:22:59+08:00",
   "apps": [
     {
-      "uuid": "20480000-0000-4000-8000-000000000001",
-      "share_code": "2048",
-      "title": "2048",
-      "summary": "Compact LVGL number puzzle tuned for the 320x170 CardputerZero display.",
-      "categories": ["Games"],
-      "review_status": "approved",
-      "source_openness": "open-source",
-      "icon": "assets/20480000/icon.png"
+      "uuid": "8d640a0b-57d8-50f8-bf06-60ab479daa56",
+      "share_code": "cale",
+      "title": "Calendar",
+      "summary": "Compact Calendar app for local and online ICS schedules.",
+      "version": "0.1.1",
+      "categories": [
+        "Productivity",
+        "Calendar"
+      ],
+      "icon": "share/images/calendar.png"
     },
     {
-      "uuid": "ca1c0000-0000-4000-8000-000000000002",
-      "share_code": "ca1c",
-      "title": "Calculator",
-      "summary": "Scientific calculator with LVGL UI, keyboard handling, and focused UI tests.",
-      "categories": ["Utilities", "Productivity"],
-      "review_status": "ci-passed",
-      "source_openness": "open-source",
-      "icon": "assets/ca1c0000/icon.png"
-    },
-    {
-      "uuid": "a0d10000-0000-4000-8000-000000000003",
-      "share_code": "a0d1",
-      "title": "AudioSpectrum",
-      "summary": "Microphone-driven spectrum visualizer for audio experiments.",
-      "categories": ["Media", "Music"],
-      "review_status": "pending",
-      "source_openness": "open-source",
-      "icon": "assets/a0d10000/icon.png"
-    },
-    {
-      "uuid": "57e00000-0000-4000-8000-000000000004",
-      "share_code": "57e0",
-      "title": "StreamPlayer",
-      "summary": "Network media player with poster cache and CJK font packaging.",
-      "categories": ["Media"],
-      "review_status": "needs-changes",
-      "source_openness": "source-available",
-      "icon": "assets/57e00000/icon.png"
-    },
-    {
-      "uuid": "b1ba0000-0000-4000-8000-000000000005",
-      "share_code": "b1ba",
-      "title": "VibApp",
-      "summary": "On-device AI app generation client, currently marked as not ready.",
-      "categories": ["AI", "Developer Tools", "Experimental"],
-      "review_status": "deprecated",
-      "source_openness": "open-source",
-      "icon": "assets/b1ba0000/icon.png"
-    },
-    {
-      "uuid": "9015e000-0000-4000-8000-000000000006",
-      "share_code": "9015",
-      "title": "Pulse",
-      "summary": "Experimental pet adventure prototype with pixel assets and multiple LVGL views.",
-      "categories": ["Games", "Experimental"],
-      "review_status": "pending",
-      "source_openness": "open-source",
-      "icon": "assets/9015e000/icon.png"
-    },
-    {
-      "uuid": "2000e000-0000-4000-8000-000000000007",
-      "share_code": "nc20",
-      "title": "NC2000",
-      "summary": "WenQuXing NC2000/NC1020 emulator for CardputerZero.",
-      "categories": ["Emulators", "Games"],
-      "review_status": "ci-passed",
-      "source_openness": "open-source",
-      "icon": "assets/2000e000/icon.png"
-    },
-    {
-      "uuid": "10f1b000-0000-4000-8000-000000000008",
+      "uuid": "e7742c16-b3ad-5220-9fdf-19395346cfd6",
       "share_code": "lofi",
       "title": "LoFiBox",
-      "summary": "Chromeless desktop-widget music player with local playback and remote media providers.",
-      "categories": ["Media", "Music"],
-      "review_status": "ci-passed",
-      "source_openness": "open-source",
-      "icon": "assets/10f1b000/icon.png"
+      "summary": "Chromeless desktop-widget music player",
+      "version": "0.2.0-1~lofibox23",
+      "categories": [
+        "Media",
+        "Music"
+      ],
+      "icon": "lofibox_icon.png"
+    },
+    {
+      "uuid": "773cb7f3-6422-557a-b471-30d13bb9716e",
+      "share_code": "nc20",
+      "title": "NC2000",
+      "summary": "WenQuXing NC2000/NC1020 emulator for CardputerZero",
+      "version": "1.0.3",
+      "categories": [
+        "Emulators",
+        "Games"
+      ],
+      "icon": "nc2000_icon.png"
     }
   ]
 }
