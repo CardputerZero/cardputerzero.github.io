@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-14T23:49:22+08:00",
+  "generated_at": "2026-05-15T00:03:31+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -20,17 +20,52 @@
       "share_code": "2048",
       "title": "2048",
       "summary": "Classic 2048 puzzle game tuned for the Cardputer Zero keyboard.",
-      "description": "Classic 2048 puzzle game for Cardputer Zero with keyboard controls and sound effects.",
-      "locales": {},
-      "i18n": {},
+      "description": "Classic 2048 puzzle game for CardputerZero with keyboard controls, smooth tile movement, and sound effects.",
+      "locales": {
+        "en": {
+          "title": "2048",
+          "summary": "Classic 2048 puzzle game tuned for the CardputerZero keyboard.",
+          "description": "Classic 2048 puzzle game for CardputerZero with keyboard controls, smooth tile movement, and sound effects."
+        },
+        "zh-CN": {
+          "title": "2048",
+          "summary": "为 CardputerZero 键盘优化的经典 2048 数字合成游戏。",
+          "description": "面向 CardputerZero 优化的经典 2048 数字合成游戏，支持键盘操作、平滑方块移动和音效反馈。"
+        },
+        "ja": {
+          "title": "2048",
+          "summary": "CardputerZero のキーボード向けに調整した定番 2048 パズルゲームです。",
+          "description": "CardputerZero 向けに調整した定番 2048 パズルゲームです。キーボード操作、滑らかなタイル移動、効果音に対応します。"
+        }
+      },
+      "i18n": {
+        "en": {
+          "title": "2048",
+          "summary": "Classic 2048 puzzle game tuned for the CardputerZero keyboard.",
+          "description": "Classic 2048 puzzle game for CardputerZero with keyboard controls, smooth tile movement, and sound effects."
+        },
+        "zh-CN": {
+          "title": "2048",
+          "summary": "为 CardputerZero 键盘优化的经典 2048 数字合成游戏。",
+          "description": "面向 CardputerZero 优化的经典 2048 数字合成游戏，支持键盘操作、平滑方块移动和音效反馈。"
+        },
+        "ja": {
+          "title": "2048",
+          "summary": "CardputerZero のキーボード向けに調整した定番 2048 パズルゲームです。",
+          "description": "CardputerZero 向けに調整した定番 2048 パズルゲームです。キーボード操作、滑らかなタイル移動、効果音に対応します。"
+        }
+      },
       "categories": [
         "Games",
         "Puzzle"
       ],
-      "author": {},
+      "author": {
+        "github": "CardputerZero",
+        "display_name": "CardputerZero"
+      },
       "version": "0.1.0",
-      "published_at": "2026-05-14T23:49:22+08:00",
-      "updated_at": "2026-05-14T23:49:22+08:00",
+      "published_at": "2026-05-14T23:20:55+08:00",
+      "updated_at": "2026-05-14T23:20:55+08:00",
       "license": "MIT",
       "source_repo": "https://github.com/CardputerZero/2048",
       "download": {
@@ -47,20 +82,20 @@
         "keyboard_input": true
       },
       "assets": {
-        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/2048/share/images/2048.png",
+        "icon": "assets/4ff51d2b/icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/2048/store/screenshots/2048-start-320x170.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/2048/store/screenshots/2048-midgame-320x170.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/2048/store/screenshots/2048-win-320x170.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/2048/store/screenshots/2048-gameover-320x170.png"
+          "assets/4ff51d2b/screenshots/start.png",
+          "assets/4ff51d2b/screenshots/midgame.png",
+          "assets/4ff51d2b/screenshots/win.png",
+          "assets/4ff51d2b/screenshots/gameover.png"
         ]
       },
-      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/2048/share/images/2048.png",
+      "icon": "assets/4ff51d2b/icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/2048/store/screenshots/2048-start-320x170.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/2048/store/screenshots/2048-midgame-320x170.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/2048/store/screenshots/2048-win-320x170.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/2048/store/screenshots/2048-gameover-320x170.png"
+        "assets/4ff51d2b/screenshots/start.png",
+        "assets/4ff51d2b/screenshots/midgame.png",
+        "assets/4ff51d2b/screenshots/win.png",
+        "assets/4ff51d2b/screenshots/gameover.png"
       ]
     },
     {
@@ -68,49 +103,52 @@
       "share_code": "cale",
       "title": "Calendar",
       "summary": "Compact calendar with ICS sync, lunar dates, regional holidays, and almanac.",
-      "description": "Calendar for CardputerZero with local schedules, online ICS subscriptions, lunar details, and multilingual UI.",
+      "description": "Calendar for CardputerZero with local schedules, online ICS subscriptions, lunar details, regional holidays, almanac, weather, and multilingual UI.",
       "locales": {
         "en": {
           "title": "Calendar",
           "summary": "Compact Calendar app for local and online ICS schedules.",
-          "description": "Calendar for CardputerZero with local schedules, online ICS subscriptions, lunar details, and multilingual UI."
+          "description": "Calendar for CardputerZero with local schedules, online ICS subscriptions, lunar details, regional holidays, almanac, weather, and multilingual UI."
         },
         "zh-CN": {
           "title": "日历",
           "summary": "支持本地日程和在线 ICS 订阅的紧凑日历应用。",
-          "description": "为 CardputerZero 优化的日历应用，支持本地日程、在线 ICS 订阅、农历信息和多语言界面。"
+          "description": "为 CardputerZero 优化的日历应用，支持本地日程、在线 ICS 订阅、农历信息、节假日、黄历、天气和多语言界面。"
         },
         "ja": {
           "title": "カレンダー",
           "summary": "ローカル予定とオンライン ICS 購読に対応したコンパクトなカレンダーです。",
-          "description": "CardputerZero 向けのカレンダーです。ローカル予定、オンライン ICS 購読、旧暦情報、多言語 UI に対応します。"
+          "description": "CardputerZero 向けのカレンダーです。ローカル予定、オンライン ICS 購読、旧暦、祝日、暦注、天気、多言語 UI に対応します。"
         }
       },
       "i18n": {
         "en": {
           "title": "Calendar",
           "summary": "Compact Calendar app for local and online ICS schedules.",
-          "description": "Calendar for CardputerZero with local schedules, online ICS subscriptions, lunar details, and multilingual UI."
+          "description": "Calendar for CardputerZero with local schedules, online ICS subscriptions, lunar details, regional holidays, almanac, weather, and multilingual UI."
         },
         "zh-CN": {
           "title": "日历",
           "summary": "支持本地日程和在线 ICS 订阅的紧凑日历应用。",
-          "description": "为 CardputerZero 优化的日历应用，支持本地日程、在线 ICS 订阅、农历信息和多语言界面。"
+          "description": "为 CardputerZero 优化的日历应用，支持本地日程、在线 ICS 订阅、农历信息、节假日、黄历、天气和多语言界面。"
         },
         "ja": {
           "title": "カレンダー",
           "summary": "ローカル予定とオンライン ICS 購読に対応したコンパクトなカレンダーです。",
-          "description": "CardputerZero 向けのカレンダーです。ローカル予定、オンライン ICS 購読、旧暦情報、多言語 UI に対応します。"
+          "description": "CardputerZero 向けのカレンダーです。ローカル予定、オンライン ICS 購読、旧暦、祝日、暦注、天気、多言語 UI に対応します。"
         }
       },
       "categories": [
         "Productivity",
         "Calendar"
       ],
-      "author": {},
+      "author": {
+        "github": "CardputerZero",
+        "display_name": "CardputerZero"
+      },
       "version": "0.1.3",
-      "published_at": "2026-05-14T23:49:22+08:00",
-      "updated_at": "2026-05-14T23:49:22+08:00",
+      "published_at": "2026-05-14T23:16:38+08:00",
+      "updated_at": "2026-05-14T23:16:38+08:00",
       "license": "MIT",
       "source_repo": "https://github.com/CardputerZero/Calendar",
       "download": {
@@ -130,12 +168,18 @@
       "assets": {
         "icon": "assets/ff2ee91e/icon.png",
         "screenshots": [
-          "assets/ff2ee91e/screenshots/calendar-manager.png"
+          "assets/ff2ee91e/screenshots/month.png",
+          "assets/ff2ee91e/screenshots/subscriptions.png",
+          "assets/ff2ee91e/screenshots/source-edit.png",
+          "assets/ff2ee91e/screenshots/manager.png"
         ]
       },
       "icon": "assets/ff2ee91e/icon.png",
       "screenshots": [
-        "assets/ff2ee91e/screenshots/calendar-manager.png"
+        "assets/ff2ee91e/screenshots/month.png",
+        "assets/ff2ee91e/screenshots/subscriptions.png",
+        "assets/ff2ee91e/screenshots/source-edit.png",
+        "assets/ff2ee91e/screenshots/manager.png"
       ]
     },
     {
@@ -167,6 +211,11 @@
         }
       },
       "i18n": {
+        "en": {
+          "title": "LoFiBox",
+          "summary": "Chromeless desktop-widget music player",
+          "description": "LoFiBox is a compact music player for local playback, media-library browsing, metadata, artwork, and extensible remote sources."
+        },
         "zh-CN": {
           "title": "LoFiBox 音乐播放器",
           "summary": "无边框桌面小部件音乐播放器",
@@ -176,11 +225,6 @@
           "title": "LoFiBox 音樂播放器",
           "summary": "無邊框桌面小部件音樂播放器",
           "description": "LoFiBox 是面向本機播放、媒體庫瀏覽、中繼資料、封面和可擴充遠端來源的緊湊音樂播放器。"
-        },
-        "en": {
-          "title": "LoFiBox",
-          "summary": "Chromeless desktop-widget music player",
-          "description": "LoFiBox is a compact music player for local playback, media-library browsing, metadata, artwork, and extensible remote sources."
         },
         "ja": {
           "title": "LoFiBox 音楽プレーヤー",
@@ -197,8 +241,8 @@
         "display_name": "vicliu624"
       },
       "version": "0.2.0-1~lofibox23",
-      "published_at": "2026-05-14T23:49:22+08:00",
-      "updated_at": "2026-05-14T23:49:22+08:00",
+      "published_at": "2026-05-14T23:42:32+08:00",
+      "updated_at": "2026-05-14T23:42:32+08:00",
       "license": "GPL-3.0",
       "source_repo": "https://github.com/vicliu624/LoFiBox-Zero",
       "download": {
@@ -257,6 +301,11 @@
         }
       },
       "i18n": {
+        "en": {
+          "title": "NC2000",
+          "summary": "WenQuXing NC2000/NC1020 emulator for CardputerZero",
+          "description": "A WenQuXing NC2000 / NC1020 handheld computer emulator tuned for CardputerZero's 320x170 LCD."
+        },
         "zh-CN": {
           "title": "NC2000 文曲星模拟器",
           "summary": "适配 320x170 CardputerZero 屏幕的文曲星 NC2000/NC1020 模拟器",
@@ -266,11 +315,6 @@
           "title": "NC2000 文曲星模擬器",
           "summary": "適配 320x170 CardputerZero 螢幕的文曲星 NC2000/NC1020 模擬器",
           "description": "面向 CardputerZero 320x170 LCD 最佳化的文曲星 NC2000 / NC1020 掌上電腦模擬器。"
-        },
-        "en": {
-          "title": "NC2000",
-          "summary": "WenQuXing NC2000/NC1020 emulator for CardputerZero",
-          "description": "A WenQuXing NC2000 / NC1020 handheld computer emulator tuned for CardputerZero's 320x170 LCD."
         },
         "ja": {
           "title": "NC2000 文曲星エミュレーター",
@@ -287,8 +331,8 @@
         "display_name": "eggfly"
       },
       "version": "1.0.3",
-      "published_at": "2026-05-14T23:49:22+08:00",
-      "updated_at": "2026-05-14T23:49:22+08:00",
+      "published_at": "2026-05-14T23:42:32+08:00",
+      "updated_at": "2026-05-14T23:42:32+08:00",
       "license": "MIT",
       "source_repo": "https://github.com/eggfly/CardputerZero-NC2000",
       "download": {
