@@ -1,6 +1,7 @@
 const REGISTRY_URL = "generated/registry.json";
 const PAGE_SIZE = 6;
 const SUPPORTED_LOCALES = ["zh-CN", "en", "ja"];
+const APP_LOADED_AT = new Date();
 const GISCUS_CONFIG = {
   repo: "CardputerZero/cardputerzero.github.io",
   repoId: "R_kgDOSWq5Vw",
@@ -158,6 +159,9 @@ async function fetchJson(url) {
 }
 
 function normalizeApp(app) {
+  const registryGeneratedAt = state.registry?.generated_at || "";
+  const publishedAt = app.published_at || app.updated_at || registryGeneratedAt;
+  const updatedAt = app.updated_at || app.published_at || registryGeneratedAt;
   const source = app.source || {
     openness: app.source_openness || "unknown",
     repository: app.source_repo || ""
@@ -170,6 +174,8 @@ function normalizeApp(app) {
     ...app,
     categories: app.categories || [],
     locales: app.locales || app.i18n || {},
+    published_at: publishedAt,
+    updated_at: updatedAt,
     source,
     review,
     download: app.download || {},
@@ -348,6 +354,10 @@ function renderRegistryPanel() {
         <div class="status-item">
           <span class="status-label">${t("registry.updated")}</span>
           <span class="status-value">${formatDate(registry.generated_at)}</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">${t("registry.loaded")}</span>
+          <span class="status-value">${formatDateTime(APP_LOADED_AT)}</span>
         </div>
         <div class="status-item">
           <span class="status-label">${t("registry.schema")}</span>
@@ -587,10 +597,10 @@ function getFilteredApps() {
 }
 
 function sortApps(a, b) {
-  if (state.sort === "published") return new Date(b.published_at) - new Date(a.published_at);
+  if (state.sort === "published") return dateTimeValue(b.published_at) - dateTimeValue(a.published_at);
   if (state.sort === "name") return localized(a, "title").localeCompare(localized(b, "title"), state.locale);
   if (state.sort === "review") return a.review.status.localeCompare(b.review.status);
-  return new Date(b.updated_at) - new Date(a.updated_at);
+  return dateTimeValue(b.updated_at) - dateTimeValue(a.updated_at);
 }
 
 function renderAppCard(app) {
@@ -1316,7 +1326,28 @@ function getPath(source, path) {
 }
 
 function formatDate(value) {
-  return new Intl.DateTimeFormat(state.locale, { dateStyle: "medium" }).format(new Date(value));
+  const date = parseDate(value);
+  if (!date) return "—";
+  return new Intl.DateTimeFormat(state.locale, { dateStyle: "medium" }).format(date);
+}
+
+function formatDateTime(value) {
+  const date = parseDate(value);
+  if (!date) return "—";
+  return new Intl.DateTimeFormat(state.locale, {
+    dateStyle: "medium",
+    timeStyle: "medium"
+  }).format(date);
+}
+
+function parseDate(value) {
+  if (!value) return null;
+  const date = value instanceof Date ? value : new Date(value);
+  return Number.isNaN(date.getTime()) ? null : date;
+}
+
+function dateTimeValue(value) {
+  return parseDate(value)?.getTime() || 0;
 }
 
 function bindCopyButtons() {

@@ -217,6 +217,7 @@
     "apps": "应用数量",
     "eyebrow": "REGISTRY FILES",
     "files": "静态文件",
+    "loaded": "页面加载",
     "open": "查看 registry",
     "pageLead": "Web UI 使用 JSON registry；YAML 文件供维护者 review 和真机工具链对接。",
     "pageTitle": "Registry 数据源",

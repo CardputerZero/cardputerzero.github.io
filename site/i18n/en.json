@@ -217,6 +217,7 @@
     "apps": "Apps",
     "eyebrow": "REGISTRY FILES",
     "files": "Static files",
+    "loaded": "Page loaded",
     "open": "Open registry",
     "pageLead": "The Web UI reads the JSON registry. YAML is kept for maintainer review and device tooling.",
     "pageTitle": "Registry data source",

@@ -95,7 +95,7 @@ def normalize_assets(pkg_name: str, meta: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def build_app(pkg_name: str, pkg_info: dict[str, str], meta: dict[str, Any]) -> dict[str, Any]:
+def build_app(pkg_name: str, pkg_info: dict[str, str], meta: dict[str, Any], generated_at: str) -> dict[str, Any]:
     sha256 = pkg_info.get("SHA256", "")
     filename = pkg_info.get("Filename", "")
     assets = normalize_assets(pkg_name, meta)
@@ -105,6 +105,8 @@ def build_app(pkg_name: str, pkg_info: dict[str, str], meta: dict[str, Any]) -> 
         locales = i18n
     if not i18n and locales:
         i18n = locales
+    published_at = str(meta.get("published_at") or meta.get("created_at") or generated_at)
+    updated_at = str(meta.get("updated_at") or meta.get("published_at") or meta.get("created_at") or generated_at)
 
     app = {
         "uuid": str(meta.get("uuid") or make_uuid(pkg_name, sha256)),
@@ -117,6 +119,8 @@ def build_app(pkg_name: str, pkg_info: dict[str, str], meta: dict[str, Any]) -> 
         "categories": list_value(meta.get("categories")),
         "author": meta.get("author") if isinstance(meta.get("author"), dict) else {},
         "version": pkg_info.get("Version", ""),
+        "published_at": published_at,
+        "updated_at": updated_at,
         "license": str(meta.get("license") or ""),
         "source_repo": str(meta.get("source_repo") or ""),
         "download": {
@@ -139,6 +143,7 @@ def build_app(pkg_name: str, pkg_info: dict[str, str], meta: dict[str, Any]) -> 
 def build_registry(packages_path: Path, meta_dir: Path, overrides_path: Path) -> dict[str, Any]:
     packages = parse_packages(packages_path)
     overrides = read_json(overrides_path, {})
+    generated_at = now_iso()
     apps = []
     for pkg_name, pkg_info in sorted(packages.items()):
         meta_path = meta_dir / f"{pkg_name}.json"
@@ -150,11 +155,11 @@ def build_registry(packages_path: Path, meta_dir: Path, overrides_path: Path) ->
         override = overrides.get(pkg_name, {}) if isinstance(overrides, dict) else {}
         if isinstance(override, dict):
             meta = deep_merge(meta, override)
-        apps.append(build_app(pkg_name, pkg_info, meta))
+        apps.append(build_app(pkg_name, pkg_info, meta, generated_at))
 
     return {
         "schema_version": 2,
-        "generated_at": now_iso(),
+        "generated_at": generated_at,
         "registry_id": "cardputerzero-appstore",
         "device_targets": ["CardputerZero"],
         "i18n": {

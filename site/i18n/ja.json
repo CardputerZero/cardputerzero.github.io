@@ -217,6 +217,7 @@
     "apps": "アプリ数",
     "eyebrow": "REGISTRY FILES",
     "files": "静的ファイル",
+    "loaded": "ページ読み込み",
     "open": "registry を開く",
     "pageLead": "Web UI は JSON registry を読み込みます。YAML はメンテナーのレビューとデバイスツール向けに保持します。",
     "pageTitle": "Registry データソース",
