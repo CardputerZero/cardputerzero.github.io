@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-15T00:03:31+08:00",
+  "generated_at": "2026-05-15T00:09:50+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -242,7 +242,7 @@
       },
       "version": "0.2.0-1~lofibox23",
       "published_at": "2026-05-14T23:42:32+08:00",
-      "updated_at": "2026-05-14T23:42:32+08:00",
+      "updated_at": "2026-05-15T00:09:15+08:00",
       "license": "GPL-3.0",
       "source_repo": "https://github.com/vicliu624/LoFiBox-Zero",
       "download": {
@@ -262,14 +262,18 @@
       "assets": {
         "icon": "assets/10f1b000/icon.png",
         "screenshots": [
+          "assets/10f1b000/screenshots/main-menu.png",
           "assets/10f1b000/screenshots/library.png",
-          "assets/10f1b000/screenshots/player.png"
+          "assets/10f1b000/screenshots/player.png",
+          "assets/10f1b000/screenshots/lyrics.png"
         ]
       },
       "icon": "assets/10f1b000/icon.png",
       "screenshots": [
+        "assets/10f1b000/screenshots/main-menu.png",
         "assets/10f1b000/screenshots/library.png",
-        "assets/10f1b000/screenshots/player.png"
+        "assets/10f1b000/screenshots/player.png",
+        "assets/10f1b000/screenshots/lyrics.png"
       ]
     },
     {

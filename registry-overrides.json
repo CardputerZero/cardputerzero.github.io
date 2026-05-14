@@ -81,12 +81,14 @@
     "assets": {
       "icon": "assets/10f1b000/icon.png",
       "screenshots": [
+        "assets/10f1b000/screenshots/main-menu.png",
         "assets/10f1b000/screenshots/library.png",
-        "assets/10f1b000/screenshots/player.png"
+        "assets/10f1b000/screenshots/player.png",
+        "assets/10f1b000/screenshots/lyrics.png"
       ]
     },
     "published_at": "2026-05-14T23:42:32+08:00",
-    "updated_at": "2026-05-14T23:42:32+08:00",
+    "updated_at": "2026-05-15T00:09:15+08:00",
     "i18n": {
       "en": {
         "title": "LoFiBox",
