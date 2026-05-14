@@ -1,13 +1,25 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-13T22:52:26+08:00",
+  "generated_at": "2026-05-14T23:39:38+08:00",
   "apps": [
     {
-      "uuid": "ff2ee91e-c334-5a5d-8b91-725c59c08294",
+      "uuid": "4ff51d2b-acfa-5300-b79a-27ef9512e079",
+      "share_code": "2048",
+      "title": "2048",
+      "summary": "Classic 2048 puzzle game tuned for the Cardputer Zero keyboard.",
+      "version": "0.1.0",
+      "categories": [
+        "Games",
+        "Puzzle"
+      ],
+      "icon": "share/images/2048.png"
+    },
+    {
+      "uuid": "e99a062a-7d9f-5a95-8374-7c02bcfbcae4",
       "share_code": "cale",
       "title": "Calendar",
-      "summary": "Compact Calendar app for local and online ICS schedules.",
-      "version": "0.1.2",
+      "summary": "Compact calendar with ICS sync, lunar dates, regional holidays, and almanac.",
+      "version": "0.1.3",
       "categories": [
         "Productivity",
         "Calendar"
