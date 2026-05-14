@@ -274,7 +274,7 @@
     "eyebrow": "PULL REQUEST FLOW",
     "flowLead": "请先在自己的 GitHub 仓库发布代码或 release，再向 AppStore Hub registry 仓库提交应用元信息。",
     "flowTitle": "标准提交流程",
-    "formatLead": "应用元信息使用 YAML。字段会被 GitHub Actions 校验，并在合并后生成 registry.json、registry.yml 和轻量索引。",
+    "formatLead": "应用元信息使用 YAML 或 package meta.json。字段会被 GitHub Actions 校验，并在合并后生成唯一的 registry.json。",
     "formatTitle": "metadata 格式",
     "lead": "开发者通过 GitHub Pull Request 提交应用元信息。维护者审核通过后，GitHub Actions 会生成新的静态 registry，并由 GitHub Pages 发布到 Hub 页面。",
     "metadata": [
@@ -404,7 +404,7 @@
         "checks": [
           "YAML/JSON 能解析，UUID 和分享码唯一。",
           "下载地址、包名和 MD5 可以验证。",
-          "生成 registry.json、registry.yml 和 registry-index.json。"
+          "生成 registry.json，并保留 registry-index.json 作为旧版兼容别名。"
         ]
       },
       {
@@ -460,8 +460,8 @@
     ],
     "ciTitle": "自动检查",
     "ci": [
-      "校验 registry YAML/JSON、UUID、分享码、必填字段和素材路径。",
-      "检查下载地址、包名、checksum 和生成后的 registry-index.json。",
+      "校验 registry 元信息、UUID、分享码、必填字段和素材路径。",
+      "检查下载地址、包名、checksum 和生成后的 registry.json。",
       "CI 通过不等于自动上架。"
     ],
     "maintainerTitle": "维护者审核",

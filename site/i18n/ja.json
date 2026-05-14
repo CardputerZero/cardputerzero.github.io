@@ -274,7 +274,7 @@
     "eyebrow": "PULL REQUEST FLOW",
     "flowLead": "まず自分の GitHub リポジトリでアプリコードまたは release を公開し、その後 AppStore Hub registry リポジトリへメタデータを提出します。",
     "flowTitle": "標準提出フロー",
-    "formatLead": "アプリメタデータは YAML を使用します。GitHub Actions が検証し、マージ後に registry.json、registry.yml、軽量インデックスを生成します。",
+    "formatLead": "アプリメタデータは YAML または package meta.json を使用します。GitHub Actions が検証し、マージ後に正規の registry.json を生成します。",
     "formatTitle": "メタデータ形式",
     "lead": "開発者は GitHub Pull Request でアプリメタデータを提出します。メンテナー承認後、GitHub Actions が静的 registry を生成し、GitHub Pages が Hub に公開します。",
     "metadata": [
@@ -404,7 +404,7 @@
         "checks": [
           "YAML/JSON が解析でき、UUID と共有コードが一意です。",
           "URL、package 名、MD5 を検証できます。",
-          "registry.json、registry.yml、registry-index.json が生成されます。"
+          "registry.json が生成され、registry-index.json は旧互換 alias として保持されます。"
         ]
       },
       {
@@ -460,8 +460,8 @@
     ],
     "ciTitle": "自動チェック",
     "ci": [
-      "registry YAML/JSON、UUID、共有コード、必須項目、素材を検証します。",
-      "URL、package 名、checksum、registry-index.json を確認します。",
+      "registry メタデータ、UUID、共有コード、必須項目、素材を検証します。",
+      "URL、package 名、checksum、registry.json を確認します。",
       "CI 通過は自動掲載を意味しません。"
     ],
     "maintainerTitle": "メンテナー審査",

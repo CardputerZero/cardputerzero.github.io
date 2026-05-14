@@ -30,9 +30,8 @@ Current routes use hash routing such as `#/apps/<uuid>`, `#/documents`, and `#/t
 
 The generated files have different roles:
 
-- `registry.json`: full Web UI registry.
-- `registry.yml`: review-friendly YAML representation.
-- `registry-index.json`: lightweight index for the on-device AppStore.
+- `registry.json`: canonical registry for the Web UI and on-device AppStore.
+- `registry-index.json`: compatibility alias for older AppStore clients.
 
 The device AppStore should tolerate network failure and show a clear error when registries cannot be loaded.
 
@@ -41,7 +40,7 @@ The device AppStore should tolerate network failure and show a clear error when 
 Each app should provide:
 
 - Stable UUID and unique share code.
-- Title, summary, description, categories, and author GitHub ID.
+- Title, summary, description, localized `locales` / `i18n` text, categories, and author GitHub ID.
 - Version, license, source openness, and source repository.
 - Debian package name, `.deb` URL, and MD5 checksum.
 - Permissions, privacy behavior, external hardware, background service, HDMI, commercial use, and risk flags.
@@ -96,6 +95,6 @@ Pull request automation should validate:
 - Download URL and checksum.
 - Source repository URL when provided.
 - Permissions, privacy, and risk declarations.
-- Generated `registry.json`, `registry.yml`, and `registry-index.json`.
+- Generated `registry.json` and the legacy-compatible `registry-index.json` alias.
 
 CI is a first gate, not a full security audit.

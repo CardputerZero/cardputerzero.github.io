@@ -169,7 +169,7 @@ function normalizeApp(app) {
   return {
     ...app,
     categories: app.categories || [],
-    locales: app.locales || {},
+    locales: app.locales || app.i18n || {},
     source,
     review,
     download: app.download || {},
@@ -1154,8 +1154,6 @@ function renderRegistry() {
         </div>
         <div class="badge-row">
           <a class="button secondary" href="generated/registry.json">registry.json</a>
-          <a class="button secondary" href="generated/registry.yml">registry.yml</a>
-          <a class="button secondary" href="generated/registry-index.json">registry-index.json</a>
         </div>
       </section>
       <pre class="registry-preview">${escapeHtml(registryText)}</pre>
@@ -1285,8 +1283,20 @@ function uniqueByUuid(app, index, list) {
 }
 
 function localized(app, field) {
-  const localeData = app.locales?.[state.locale] || app.locales?.["zh-CN"] || app.locales?.en || {};
-  return localeData[field] || app[field] || "";
+  const sources = [app.i18n, app.locales].filter((source) => source && typeof source === "object");
+  const candidates = localeCandidates();
+  for (const source of sources) {
+    for (const locale of candidates) {
+      const value = source?.[locale]?.[field];
+      if (value) return value;
+    }
+  }
+  return app[field] || "";
+}
+
+function localeCandidates() {
+  const base = state.locale.split("-")[0];
+  return [...new Set([state.locale, base, "en", "zh-CN"])];
 }
 
 function labelFor(group, value) {

@@ -1,0 +1,94 @@
+{
+  "calendar": {
+    "uuid": "ff2ee91e-c334-5a5d-8b91-725c59c08294",
+    "share_code": "cale",
+    "description": "Calendar for CardputerZero with local schedules, online ICS subscriptions, lunar details, and multilingual UI.",
+    "locales": {
+      "en": {
+        "title": "Calendar",
+        "summary": "Compact Calendar app for local and online ICS schedules.",
+        "description": "Calendar for CardputerZero with local schedules, online ICS subscriptions, lunar details, and multilingual UI."
+      },
+      "zh-CN": {
+        "title": "日历",
+        "summary": "支持本地日程和在线 ICS 订阅的紧凑日历应用。",
+        "description": "为 CardputerZero 优化的日历应用，支持本地日程、在线 ICS 订阅、农历信息和多语言界面。"
+      },
+      "ja": {
+        "title": "カレンダー",
+        "summary": "ローカル予定とオンライン ICS 購読に対応したコンパクトなカレンダーです。",
+        "description": "CardputerZero 向けのカレンダーです。ローカル予定、オンライン ICS 購読、旧暦情報、多言語 UI に対応します。"
+      }
+    },
+    "assets": {
+      "icon": "assets/ff2ee91e/icon.png",
+      "screenshots": [
+        "assets/ff2ee91e/screenshots/calendar-manager.png"
+      ]
+    }
+  },
+  "lofibox": {
+    "uuid": "10f1b000-0000-4000-8000-000000000008",
+    "description": "LoFiBox is a compact music player for local playback, media-library browsing, metadata, artwork, and extensible remote sources.",
+    "locales": {
+      "en": {
+        "title": "LoFiBox",
+        "summary": "Chromeless desktop-widget music player",
+        "description": "LoFiBox is a compact music player for local playback, media-library browsing, metadata, artwork, and extensible remote sources."
+      },
+      "zh-CN": {
+        "title": "LoFiBox 音乐播放器",
+        "summary": "无边框桌面小部件音乐播放器",
+        "description": "LoFiBox 是面向本地播放、媒体库浏览、元数据、封面和可扩展远程来源的紧凑音乐播放器。"
+      },
+      "zh-TW": {
+        "title": "LoFiBox 音樂播放器",
+        "summary": "無邊框桌面小部件音樂播放器",
+        "description": "LoFiBox 是面向本機播放、媒體庫瀏覽、中繼資料、封面和可擴充遠端來源的緊湊音樂播放器。"
+      },
+      "ja": {
+        "title": "LoFiBox 音楽プレーヤー",
+        "summary": "枠なしデスクトップウィジェット型の音楽プレーヤー",
+        "description": "LoFiBox は、ローカル再生、メディアライブラリ閲覧、メタデータ、アートワーク、拡張可能なリモートソースに対応したコンパクトな音楽プレーヤーです。"
+      }
+    },
+    "assets": {
+      "icon": "assets/10f1b000/icon.png",
+      "screenshots": [
+        "assets/10f1b000/screenshots/library.png",
+        "assets/10f1b000/screenshots/player.png"
+      ]
+    }
+  },
+  "nc2000": {
+    "uuid": "2000e000-0000-4000-8000-000000000007",
+    "locales": {
+      "en": {
+        "title": "NC2000",
+        "summary": "WenQuXing NC2000/NC1020 emulator for CardputerZero",
+        "description": "A WenQuXing NC2000 / NC1020 handheld computer emulator tuned for CardputerZero's 320x170 LCD."
+      },
+      "zh-CN": {
+        "title": "NC2000 文曲星模拟器",
+        "summary": "适配 320x170 CardputerZero 屏幕的文曲星 NC2000/NC1020 模拟器",
+        "description": "面向 CardputerZero 320x170 LCD 优化的文曲星 NC2000 / NC1020 掌上电脑模拟器。"
+      },
+      "zh-TW": {
+        "title": "NC2000 文曲星模擬器",
+        "summary": "適配 320x170 CardputerZero 螢幕的文曲星 NC2000/NC1020 模擬器",
+        "description": "面向 CardputerZero 320x170 LCD 最佳化的文曲星 NC2000 / NC1020 掌上電腦模擬器。"
+      },
+      "ja": {
+        "title": "NC2000 文曲星エミュレーター",
+        "summary": "CardputerZero の 320x170 画面に合わせた WenQuXing NC2000/NC1020 エミュレーター",
+        "description": "CardputerZero の 320x170 LCD 向けに調整した WenQuXing NC2000 / NC1020 携帯コンピューターエミュレーターです。"
+      }
+    },
+    "assets": {
+      "icon": "assets/2000e000/icon.png",
+      "screenshots": [
+        "assets/2000e000/screenshots/main.png"
+      ]
+    }
+  }
+}

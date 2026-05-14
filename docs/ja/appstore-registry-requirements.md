@@ -30,9 +30,8 @@ Hub は GitHub Pages で公開できるアプリカタログです。生成さ�
 
 生成ファイルの役割：
 
-- `registry.json`: Web UI 用の完全 registry。
-- `registry.yml`: レビューしやすい YAML 表現。
-- `registry-index.json`: 実機 AppStore 用の軽量インデックス。
+- `registry.json`: Web UI と実機 AppStore の正規 registry。
+- `registry-index.json`: 旧 AppStore クライアント向けの互換 alias。
 
 実機 AppStore はネットワーク失敗に耐え、registry を読めない場合は明確なエラーを表示するべきです。
 
@@ -41,7 +40,7 @@ Hub は GitHub Pages で公開できるアプリカタログです。生成さ�
 各アプリには以下を含めます。
 
 - 安定した UUID と一意の共有コード。
-- タイトル、概要、説明、カテゴリ、GitHub 作者 ID。
+- タイトル、概要、説明、`locales` / `i18n` の多言語文言、カテゴリ、GitHub 作者 ID。
 - バージョン、license、ソース公開度、ソースリポジトリ。
 - Debian package 名、`.deb` URL、MD5 checksum。
 - 権限、プライバシー、外部機器、バックグラウンドサービス、HDMI、商用利用、リスク。
@@ -96,6 +95,6 @@ Pull Request 自動処理は以下を検証します。
 - URL と checksum。
 - ソースリポジトリ URL。
 - 権限、プライバシー、リスク宣言。
-- `registry.json`、`registry.yml`、`registry-index.json` の生成。
+- `registry.json` と旧互換の `registry-index.json` alias の生成。
 
 CI は最初のゲートであり、完全な安全監査ではありません。

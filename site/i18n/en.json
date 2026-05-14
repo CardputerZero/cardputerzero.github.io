@@ -274,7 +274,7 @@
     "eyebrow": "PULL REQUEST FLOW",
     "flowLead": "Publish your app code or release in your own GitHub repository first, then submit metadata to the AppStore Hub registry repository.",
     "flowTitle": "Standard submission flow",
-    "formatLead": "App metadata uses YAML. GitHub Actions validates the file and generates registry.json, registry.yml, and the light index after merge.",
+    "formatLead": "App metadata uses YAML or package meta.json. GitHub Actions validates metadata and generates the canonical registry.json after merge.",
     "formatTitle": "Metadata format",
     "lead": "Developers submit app metadata through GitHub pull requests. After maintainer approval, GitHub Actions generates a static registry and GitHub Pages publishes it to the Hub.",
     "metadata": [
@@ -404,7 +404,7 @@
         "checks": [
           "YAML/JSON parses and UUID plus share code are unique.",
           "Download URL, package name, and MD5 can be verified.",
-          "registry.json, registry.yml, and registry-index.json are generated."
+          "registry.json is generated, with registry-index.json kept as a legacy-compatible alias."
         ]
       },
       {
@@ -460,8 +460,8 @@
     ],
     "ciTitle": "Automation",
     "ci": [
-      "Validate registry YAML/JSON, UUIDs, share codes, required fields, and assets.",
-      "Check download URL, package name, checksum, and generated registry-index.json.",
+      "Validate registry metadata, UUIDs, share codes, required fields, and assets.",
+      "Check download URL, package name, checksum, and generated registry.json.",
       "Passing CI does not mean automatic listing."
     ],
     "maintainerTitle": "Maintainer review",

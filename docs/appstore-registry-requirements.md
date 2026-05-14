@@ -58,9 +58,7 @@ hub/
       screenshots/
   generated/
     registry.json
-    registry.yml
-    registry.min.json
-    registry-index.json
+    registry-index.json  # legacy compatibility alias
   site/
     ...
   docs/
@@ -104,7 +102,7 @@ hub/
 - 建议应用和管理后台支持 i18n：简体中文、日语、英文。默认跟随系统语言自动切换；如果项目包含日历管理后台，应允许用户在后台切换语言，并用该选择覆盖系统语言。
 - HTML `lang` 属性应跟随当前语言变化。
 - 所有 registry 枚举值在 UI 层显示时必须映射为本地化标签，例如审核状态、分类、权限、源码开放程度和商业使用状态。
-- 搜索至少应覆盖 registry 原始字段；如果未来 metadata 增加本地化标题、简介或描述字段，搜索索引应同时纳入当前语言和 fallback 语言。
+- 搜索至少应覆盖 registry 原始字段、本地化标题、简介和描述，并同时纳入当前语言和 fallback 语言。
 - 文档页、提交页和 Policy 页应支持三语内容；第一版可以先以 `zh-CN` 为源语言，逐步补齐 `en` 和 `ja` 翻译。
 - 日语和英文文本长度不同，按钮、badge、筛选项和卡片布局不得依赖固定中文宽度。
 
@@ -180,10 +178,9 @@ Pull Request 阶段应执行：
 1. 读取所有应用元信息。
 2. 规范化字段和默认值。
 3. 生成 `generated/registry.json`。
-4. 生成 `generated/registry.yml`。
-5. 生成给 Web UI 和真机 AppStore 使用的轻量索引。
-6. 构建 GitHub Pages 静态网站。
-7. 发布网站和 registry。
+4. 生成 `generated/registry-index.json` 兼容别名，供旧版 AppStore 客户端继续读取。
+5. 构建 GitHub Pages 静态网站。
+6. 发布网站和 registry。
 
 ## 安全和质量检查
 
@@ -227,6 +224,7 @@ Pull Request 阶段应执行：
 - `title`：应用标题。
 - `summary`：一句话介绍。
 - `description`：详细介绍。
+- `locales` / `i18n`：按语言覆盖标题、简介和描述，推荐至少包含 `zh-CN`、`en`、`ja`。
 - `categories`：分类，可多选。
 - `device_targets`：设备，当前暂时只有 `CardputerZero`，Web UI 可先隐藏。
 - `author.github`：作者 GitHub ID。
@@ -257,6 +255,19 @@ uuid: "123e4567-e89b-12d3-a456-426614174000"
 title: "Example App"
 summary: "Short one-line description."
 description: "Longer user-facing description."
+locales:
+  zh-CN:
+    title: "示例应用"
+    summary: "一句话中文简介。"
+    description: "面向用户的中文详细介绍。"
+  en:
+    title: "Example App"
+    summary: "Short one-line description."
+    description: "Longer user-facing description."
+  ja:
+    title: "サンプルアプリ"
+    summary: "短い日本語の概要。"
+    description: "ユーザー向けの日本語説明。"
 categories:
   - utility
   - media

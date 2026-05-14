@@ -30,8 +30,7 @@ hub/index.html
 Static data files:
 
 - `generated/registry.json`
-- `generated/registry.yml`
-- `generated/registry-index.json`
+- `generated/registry-index.json` compatibility alias for older AppStore clients
 
 Static UI files:
 

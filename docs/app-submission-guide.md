@@ -67,7 +67,6 @@ cardputerzero.github.io/
         main.png
   generated/
     registry.json
-    registry.yml
     registry-index.json
   docs/
   site/
