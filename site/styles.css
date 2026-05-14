@@ -684,18 +684,20 @@ code {
 }
 
 .screenshots {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   gap: 10px;
 }
 
 .screenshot {
-  aspect-ratio: 320 / 170;
-  width: 100%;
+  width: min(320px, 100%);
+  height: auto;
+  flex: 0 0 auto;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-card);
   background: var(--color-canvas);
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .copy-row {

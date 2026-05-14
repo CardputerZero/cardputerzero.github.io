@@ -107,6 +107,9 @@ def build_app(pkg_name: str, pkg_info: dict[str, str], meta: dict[str, Any], gen
         i18n = locales
     published_at = str(meta.get("published_at") or meta.get("created_at") or generated_at)
     updated_at = str(meta.get("updated_at") or meta.get("published_at") or meta.get("created_at") or generated_at)
+    review = meta.get("review") if isinstance(meta.get("review"), dict) else {}
+    review_status = str(meta.get("review_status") or review.get("status") or "approved")
+    review = {**review, "status": review_status}
 
     app = {
         "uuid": str(meta.get("uuid") or make_uuid(pkg_name, sha256)),
@@ -121,6 +124,7 @@ def build_app(pkg_name: str, pkg_info: dict[str, str], meta: dict[str, Any], gen
         "version": pkg_info.get("Version", ""),
         "published_at": published_at,
         "updated_at": updated_at,
+        "review": review,
         "license": str(meta.get("license") or ""),
         "source_repo": str(meta.get("source_repo") or ""),
         "download": {

@@ -2,6 +2,7 @@ const REGISTRY_URL = "generated/registry.json";
 const PAGE_SIZE = 6;
 const SUPPORTED_LOCALES = ["zh-CN", "en", "ja"];
 const APP_LOADED_AT = new Date();
+const REGISTRY_LOADED_URL = withTimestamp(REGISTRY_URL, APP_LOADED_AT);
 const GISCUS_CONFIG = {
   repo: "CardputerZero/cardputerzero.github.io",
   repoId: "R_kgDOSWq5Vw",
@@ -124,7 +125,7 @@ async function init() {
 
   try {
     const [registry, dict] = await Promise.all([
-      fetchJson(REGISTRY_URL),
+      fetchJson(REGISTRY_LOADED_URL),
       loadLocale(state.locale)
     ]);
     state.registry = registry;
@@ -158,6 +159,23 @@ async function fetchJson(url) {
   return response.json();
 }
 
+function withTimestamp(url, date) {
+  const separator = url.includes("?") ? "&" : "?";
+  return `${url}${separator}t=${formatUrlTimestamp(date)}`;
+}
+
+function formatUrlTimestamp(date) {
+  const pad = (value) => String(value).padStart(2, "0");
+  return [
+    date.getFullYear(),
+    pad(date.getMonth() + 1),
+    pad(date.getDate()),
+    pad(date.getHours()),
+    pad(date.getMinutes()),
+    pad(date.getSeconds())
+  ].join("");
+}
+
 function normalizeApp(app) {
   const registryGeneratedAt = state.registry?.generated_at || "";
   const publishedAt = app.published_at || app.updated_at || registryGeneratedAt;
@@ -167,7 +185,7 @@ function normalizeApp(app) {
     repository: app.source_repo || ""
   };
   const review = app.review || {
-    status: app.review_status || "pending"
+    status: app.review_status || "approved"
   };
   const appMeta = app.app || {};
   return {
