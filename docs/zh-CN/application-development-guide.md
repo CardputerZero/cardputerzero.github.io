@@ -32,6 +32,17 @@ dpkg-deb
 aarch64-linux-gnu-g++
 ```
 
+如果使用 AppBuilder 工作流，建议安装 `czdev`：
+
+```bash
+git clone --recursive git@github.com:m5stack/CardputerZero-AppBuilder.git
+cd CardputerZero-AppBuilder
+cargo build --release -p czdev
+./target/release/czdev doctor
+```
+
+`czdev run` 和 `czdev watch` 可用于桌面模拟器调试；`czdev deploy --host pi@<device-ip> --deb <file.deb>` 可把构建好的 `.deb` 推到真机；发布到 AppStore 前使用 `czdev login` 和 `czdev publish --deb <file.deb>`。
+
 如果在真机上开发 VibAPP 或轻量 LVGL 应用，优先使用 APPLaunch 内置模板：
 
 ```text
@@ -67,7 +78,7 @@ aarch64-linux-gnu-g++
 7. 处理 framebuffer：尊重 `LV_LINUX_FBDEV_DEVICE`，不要硬编码 `/dev/fb0`。
 8. 打包到 `/usr/share/APPLaunch` 约定路径。
 9. 在真机上验证 APPLaunch 图标、启动、退出和卸载。
-10. 再准备 AppStore metadata、MD5、截图和 PR。
+10. 再准备 AppStore metadata、MD5、4 张 320 x 170 截图，并通过 `czdev publish` 提交 package PR。
 
 ## APPLaunch 最小目录
 
@@ -132,6 +143,6 @@ exec /usr/share/APPLaunch/bin/helloworld.bin
 
 完成 HelloWorld 后，再阅读：
 
-- [应用提交指南](#/documents/app-submission-guide)：准备 metadata、assets、MD5 和 PR。
+- [应用提交指南](#/documents/app-submission-guide)：准备 `czdev`、metadata、assets、MD5、prepublish check 和 package PR。
 - [Registry 和 Web UI 需求](#/documents/appstore-registry-requirements)：理解 registry 字段和页面展示规则。
 - [Skill 与 AI Coding 开发指南](#/documents/skill-ai-coding-guide)：把上述开发范式交给 AI 辅助执行。

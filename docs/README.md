@@ -5,13 +5,13 @@
 当前目标：
 
 - AppStore 官网以静态文件方式托管在 GitHub Pages。
-- 开发者通过 Pull Request 提交自己的应用元信息。
-- GitHub Actions 对元信息、资源、源码、构建、模拟器运行和打包流程进行自动检查。
-- 审核通过后生成新的 registry `json/yml` 文件。
+- 开发者优先通过 `czdev publish` 提交 `.deb`、`meta.json`、图标和截图到 `CardputerZero/packages`。
+- GitHub Actions 对 package metadata、资源、APT Packages index 和 registry 生成流程进行自动检查。
+- 审核通过后从 packages 仓库同步生成新的 registry `json` 文件。
 - GitHub Pages 官网读取生成后的 registry，展示可搜索、可筛选、可分页、可分享的 CardputerZero 应用列表。
 - Web UI 支持简体中文、英文、日语三种界面语言。
 - Web UI 支持响应式设计，适配手机、平板和电脑浏览。
-- 真机 AppStore 可以通过 registry 下载应用，也可以输入应用分享码直接查找下载。
+- 真机 AppStore 可以通过 registry 下载 `approved` 的 `.deb` 应用，也可以输入应用分享码直接查找下载。
 
 ## 文档列表
 

@@ -8,12 +8,14 @@ Hub は GitHub Pages で公開できるアプリカタログです。生成さ�
 
 想定フロー：
 
-1. 開発者が metadata と assets を Pull Request で提出する。
-2. GitHub Actions が metadata、URL、アイコン、スクリーンショット、checksum、ポリシー項目を検証する。
-3. メンテナーがリスク、プライバシー、デバイス安全、体験を審査する。
-4. マージ後、Actions が registry を生成する。
-5. GitHub Pages が静的サイトと registry を公開する。
-6. 実機 AppStore が registry を更新し、承認済み `.deb` をインストールする。
+1. 開発者が APPLaunch 互換の ARM64 `.deb` package を作成する。
+2. strict prepublish check を実行し、`czdev publish` で公開する。
+3. `czdev` が `.deb`、`meta.json`、icon、screenshots を含む Pull Request を `CardputerZero/packages` に作成する。
+4. GitHub Actions が package metadata、assets、checksum、APT index 出力を検証する。
+5. メンテナーがリスク、プライバシー、デバイス安全、体験を審査する。
+6. マージ後、packages repository が APT index を再生成する。
+7. この Hub が package metadata を `generated/registry.json` に同期し、GitHub Pages で公開する。
+8. 実機 AppStore が registry を更新し、承認済み `.deb` をインストールする。
 
 ## 静的ホスティング
 
@@ -37,16 +39,18 @@ Hub は GitHub Pages で公開できるアプリカタログです。生成さ�
 
 ## App Metadata
 
-各アプリには以下を含めます。
+各アプリにはソース側の `app-builder.json` store metadata と package 側の `pool/main/<package>/meta.json` が必要です。
+
+必要なアプリ情報：
 
 - 安定した UUID と一意の共有コード。
 - タイトル、概要、説明、`locales` / `i18n` の多言語文言、カテゴリ、GitHub 作者 ID。
 - バージョン、license、ソース公開度、ソースリポジトリ。
-- Debian package 名、`.deb` URL、MD5 checksum。
+- Debian package 名、`.deb` URL、MD5 checksum、package 相対の icon と screenshot パス。
 - 権限、プライバシー、外部機器、バックグラウンドサービス、HDMI、商用利用、リスク。
 - 必要に応じて APPLaunch metadata。
 
-ダウンロードは Debian `.deb` であるべきです。実機はローカルへダウンロードし、MD5 を確認してからインストールします。
+ダウンロードは Debian `.deb` である必要があります。実機はローカルへダウンロードし、MD5 を確認し、`review.status` が `approved` の entry だけをインストールします。
 
 ## APPLaunch 互換性
 
@@ -88,11 +92,11 @@ Web UI は以下をサポートします。
 
 Pull Request 自動処理は以下を検証します。
 
-- YAML/JSON の解析。
+- package `meta.json` と生成 registry の JSON 解析。
 - UUID と共有コードの一意性。
 - 必須 metadata。
-- asset パスと画像ファイル。
-- URL と checksum。
+- package 相対の asset パスと画像ファイル。
+- APT package 名、`.deb` URL、MD5、SHA256。
 - ソースリポジトリ URL。
 - 権限、プライバシー、リスク宣言。
 - `registry.json` と旧互換の `registry-index.json` alias の生成。

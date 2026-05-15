@@ -32,6 +32,17 @@ dpkg-deb
 aarch64-linux-gnu-g++
 ```
 
+For the AppBuilder workflow, install `czdev`:
+
+```bash
+git clone --recursive git@github.com:m5stack/CardputerZero-AppBuilder.git
+cd CardputerZero-AppBuilder
+cargo build --release -p czdev
+./target/release/czdev doctor
+```
+
+Use `czdev run` and `czdev watch` for desktop emulator debugging. Use `czdev deploy --host pi@<device-ip> --deb <file.deb>` to install a built package on a device. Before publishing to AppStore, use `czdev login` and `czdev publish --deb <file.deb>`.
+
 For VibAPP or lightweight LVGL work on the device, prefer the built-in APPLaunch template:
 
 ```text
@@ -67,7 +78,7 @@ Recommended order:
 7. Handle framebuffer: respect `LV_LINUX_FBDEV_DEVICE`; do not hard-code `/dev/fb0`.
 8. Package into the `/usr/share/APPLaunch` layout.
 9. Validate icon, launch, exit, and uninstall on device.
-10. Prepare AppStore metadata, MD5, screenshots, and pull request.
+10. Prepare AppStore metadata, MD5, four 320 x 170 screenshots, and submit the package Pull Request through `czdev publish`.
 
 ## Minimal APPLaunch Layout
 
@@ -132,6 +143,6 @@ exec /usr/share/APPLaunch/bin/helloworld.bin
 
 After HelloWorld, read:
 
-- [App Submission Guide](#/documents/app-submission-guide): metadata, assets, MD5, and pull requests.
+- [App Submission Guide](#/documents/app-submission-guide): `czdev`, metadata, assets, MD5, prepublish checks, and package pull requests.
 - [Registry And Web UI Requirements](#/documents/appstore-registry-requirements): registry fields and display rules.
 - [Skill And AI Coding Guide](#/documents/skill-ai-coding-guide): use AI to apply the development pattern above.

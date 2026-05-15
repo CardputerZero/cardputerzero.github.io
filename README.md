@@ -1,6 +1,6 @@
 # CardputerZero AppStore Hub
 
-This directory contains a static GitHub Pages prototype for the CardputerZero AppStore registry and web UI.
+This directory contains the static GitHub Pages site for the CardputerZero AppStore registry, documentation center, and web UI. The registry is generated from `CardputerZero/packages` package metadata.
 
 ## Local Preview
 
@@ -41,3 +41,9 @@ Static UI files:
 - `site/i18n/ja.json`
 
 Test assets copied from local APPLaunch apps live under `assets/`.
+
+Developer publishing docs cover the current `czdev publish` flow:
+
+- `docs/app-submission-guide.md`
+- `docs/zh-CN/app-submission-guide.md`
+- `docs/ja/app-submission-guide.md`

@@ -8,12 +8,14 @@ The Hub is a GitHub Pages friendly app catalog. It reads generated registry file
 
 The expected workflow is:
 
-1. Developers open pull requests with app metadata and assets.
-2. GitHub Actions validates metadata, download URLs, icons, screenshots, checksums, and policy fields.
-3. Maintainers review risk, privacy, device safety, and user experience.
-4. After merge, Actions generates registry files.
-5. GitHub Pages publishes the static website and registry.
-6. The device AppStore refreshes the registry and installs approved `.deb` packages.
+1. Developers build APPLaunch-compatible ARM64 `.deb` packages.
+2. Developers run strict prepublish checks and publish through `czdev publish`.
+3. `czdev` opens a Pull Request in `CardputerZero/packages` with the `.deb`, `meta.json`, icon, and screenshots.
+4. GitHub Actions validates package metadata, assets, checksums, and APT index output.
+5. Maintainers review risk, privacy, device safety, and user experience.
+6. After merge, the packages repository rebuilds the APT index.
+7. This Hub syncs package metadata into `generated/registry.json` and publishes it through GitHub Pages.
+8. The device AppStore refreshes the registry and installs approved `.deb` packages.
 
 ## Static Hosting
 
@@ -37,16 +39,18 @@ The device AppStore should tolerate network failure and show a clear error when 
 
 ## App Metadata
 
-Each app should provide:
+Each app should provide source-side `app-builder.json` store metadata and package-side `pool/main/<package>/meta.json`.
+
+Required app information:
 
 - Stable UUID and unique share code.
 - Title, summary, description, localized `locales` / `i18n` text, categories, and author GitHub ID.
 - Version, license, source openness, and source repository.
-- Debian package name, `.deb` URL, and MD5 checksum.
+- Debian package name, `.deb` URL, MD5 checksum, and package-relative icon and screenshot paths.
 - Permissions, privacy behavior, external hardware, background service, HDMI, commercial use, and risk flags.
 - APPLaunch metadata when relevant.
 
-Downloads should be Debian `.deb` files. The device should download to local storage, verify MD5, then install.
+Downloads must be Debian `.deb` files. The device downloads to local storage, verifies MD5, and installs only entries whose review status is `approved`.
 
 ## APPLaunch Compatibility
 
@@ -88,11 +92,11 @@ Minimum checks:
 
 Pull request automation should validate:
 
-- YAML/JSON parsing.
+- JSON parsing for package `meta.json` and generated registry files.
 - UUID and share-code uniqueness.
 - Required metadata.
-- Asset paths and image files.
-- Download URL and checksum.
+- Package-relative asset paths and image files.
+- APT package name, `.deb` URL, MD5, and SHA256.
 - Source repository URL when provided.
 - Permissions, privacy, and risk declarations.
 - Generated `registry.json` and the legacy-compatible `registry-index.json` alias.

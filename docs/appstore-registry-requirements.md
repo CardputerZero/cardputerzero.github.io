@@ -2,17 +2,18 @@
 
 ## 目标
 
-建设一个公开的 CardputerZero AppStore 网站。网站以静态文件方式托管在 GitHub Pages，通过读取生成后的 registry `json/yml` 文件，展示一个可以分类筛选、搜索、分页、查看详情和分享的 CardputerZero 应用目录。
+建设一个公开的 CardputerZero AppStore 网站。网站以静态文件方式托管在 GitHub Pages，通过读取生成后的 registry JSON 文件，展示一个可以分类筛选、搜索、分页、查看详情和分享的 CardputerZero 应用目录。
 
 整体工作流：
 
-1. 开发者向指定 GitHub 仓库提交 Pull Request，新增或修改自己的应用元信息。
-2. GitHub Actions 校验元信息、图标、截图、下载地址、权限声明和准入要求。
-3. 如果开发者提供源码，Actions 可进一步执行安全检查、依赖检查、模拟器试运行和打包流程。
-4. 维护者审核通过后合并 PR。
-5. Actions 根据所有应用元信息生成新的 registry `json/yml`。
-6. GitHub Pages 发布静态官网和生成后的 registry。
-7. 真机 AppStore 读取 registry，支持浏览、搜索、输入分享码并下载安装应用。
+1. 开发者构建符合 APPLaunch 约定的 ARM64 `.deb`。
+2. 开发者运行严格 prepublish check，并通过 `czdev publish` 发布。
+3. `czdev` 向 `CardputerZero/packages` 创建包含 `.deb`、`meta.json`、图标和截图的 Pull Request。
+4. GitHub Actions 校验 package metadata、素材、checksum 和 APT index 输出。
+5. 维护者审核风险、隐私、设备安全和用户体验。
+6. 合并后 packages 仓库重建 APT index。
+7. 官网从 package metadata 同步生成 `generated/registry.json`，并通过 GitHub Pages 发布。
+8. 真机 AppStore 读取 registry，支持浏览、搜索、输入分享码，并只安装 approved 的 `.deb` 应用。
 
 ## 产品方向
 
@@ -25,37 +26,20 @@ Web UI 的信息架构参考 GitHub Marketplace 和 Docker Hub：
 - 作者身份以 GitHub ID 为主。
 - 面向普通用户时要清晰易读，面向开发者时要保留 registry 的技术透明度。
 
-## 推荐仓库模型
+## 仓库模型
 
-建议后续建立一个专门的 registry/hub 仓库，例如：
-
-- `CardputerZero/appstore-hub`
-- 或 `CardputerZero/registry`
-
-该仓库负责：
-
-- 接收开发者提交的应用元信息。
-- 保存应用图标、截图等展示资源。
-- 保存 GitHub Actions workflow。
-- 生成 registry `json/yml`。
-- 发布 GitHub Pages 官网。
-
-现有关系建议保持：
+现有仓库职责：
 
 - 独立应用仓库，例如 `CardputerZero/2048`、`CardputerZero/Calculator`，继续保存应用源码和 release。
 - `M5CardputerZero-APPLaunch` 继续作为启动器主仓库，可用 submodule 引用一部分内置应用。
-- AppStore registry 不应依赖 APPLaunch 主仓库作为唯一数据源，registry 应成为公开应用目录的源头。
+- `CardputerZero/packages` 保存已发布 `.deb`、package `meta.json`、图标和截图，并生成 APT index。
+- `CardputerZero/cardputerzero.github.io` 保存官网、文档和从 packages 同步生成的 registry JSON。
+- AppStore registry 不应依赖 APPLaunch 主仓库作为唯一数据源；packages metadata 是公开应用目录的上游数据源。
 
 建议目录结构：
 
 ```text
-hub/
-  apps/
-    <uuid>.yml
-  assets/
-    <uuid>/
-      icon.png
-      screenshots/
+cardputerzero.github.io/
   generated/
     registry.json
     registry-index.json  # legacy compatibility alias
@@ -247,74 +231,61 @@ Pull Request 阶段应执行：
 - `risk_flags`：已知风险。
 - `review`：审核状态。
 
-建议 YAML 示例：
+建议 package `meta.json` 示例：
 
-```yaml
-schema_version: 1
-uuid: "123e4567-e89b-12d3-a456-426614174000"
-title: "Example App"
-summary: "Short one-line description."
-description: "Longer user-facing description."
-locales:
-  zh-CN:
-    title: "示例应用"
-    summary: "一句话中文简介。"
-    description: "面向用户的中文详细介绍。"
-  en:
-    title: "Example App"
-    summary: "Short one-line description."
-    description: "Longer user-facing description."
-  ja:
-    title: "サンプルアプリ"
-    summary: "短い日本語の概要。"
-    description: "ユーザー向けの日本語説明。"
-categories:
-  - utility
-  - media
-device_targets:
-  - CardputerZero
-author:
-  github: "developer-github-id"
-  display_name: "Developer Name"
-  website: "https://example.com"
-version: "1.0.0"
-license: "MIT"
-source:
-  openness: "open-source"
-  repository: "https://github.com/example/app"
-  commit: "..."
-download:
-  type: "deb"
-  package: "example-app"
-  url: "https://github.com/example/app/raw/main/dist/example-app_1.0.0_arm64.deb"
-  md5: "..."
-app:
-  service: false
-  dependencies: []
-  external_hardware:
-    required: false
-    items: []
-  hdmi_output: false
-  commercial_use: "allowed"
-permissions:
-  camera: false
-  microphone: false
-  sensors: false
-  gps: false
-  network: false
-  filesystem: "app-data-only"
-  user_data: []
-privacy:
-  collects_personal_data: false
-  data_retention: "none"
-  third_party_sharing: false
-assets:
-  icon: "assets/123e4567/icon.png"
-  screenshots:
-    - "assets/123e4567/screenshots/main.png"
-review:
-  status: "pending"
-  notes: []
+```json
+{
+  "title": "Example App",
+  "summary": "Short one-line description.",
+  "description": "Longer user-facing description.",
+  "locales": {
+    "zh-CN": {
+      "title": "示例应用",
+      "summary": "一句话中文简介。",
+      "description": "面向用户的中文详细介绍。"
+    },
+    "en": {
+      "title": "Example App",
+      "summary": "Short one-line description.",
+      "description": "Longer user-facing description."
+    },
+    "ja": {
+      "title": "サンプルアプリ",
+      "summary": "短い日本語の概要。",
+      "description": "ユーザー向けの日本語説明。"
+    }
+  },
+  "categories": ["Utilities"],
+  "author": {
+    "github": "developer-github-id",
+    "display_name": "Developer Name"
+  },
+  "license": "MIT",
+  "source_repo": "https://github.com/example/app",
+  "icon": "example-app.png",
+  "screenshots": [
+    "screenshots/main.png",
+    "screenshots/detail.png",
+    "screenshots/settings.png",
+    "screenshots/confirm.png"
+  ],
+  "published_at": "2026-05-14T23:20:55+08:00",
+  "updated_at": "2026-05-14T23:20:55+08:00",
+  "permissions": {
+    "camera": false,
+    "microphone": false,
+    "network": false,
+    "filesystem": "app-data-only"
+  },
+  "privacy": {
+    "collects_personal_data": false,
+    "data_retention": "none",
+    "third_party_sharing": false
+  },
+  "review": {
+    "status": "pending"
+  }
+}
 ```
 
 ## 分类建议

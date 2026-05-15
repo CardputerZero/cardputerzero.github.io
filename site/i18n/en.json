@@ -219,7 +219,7 @@
     "files": "Static files",
     "loaded": "Page loaded",
     "open": "Open registry",
-    "pageLead": "The Web UI reads the JSON registry. YAML is kept for maintainer review and device tooling.",
+    "pageLead": "The Web UI reads the generated JSON registry. Package metadata is reviewed in CardputerZero/packages.",
     "pageTitle": "Registry data source",
     "risk": "Risk flagged",
     "schema": "Schema",
@@ -263,32 +263,32 @@
   },
   "submit": {
     "agreementEyebrow": "SUBMISSION AGREEMENT",
-    "agreementLead": "Before submitting an app, read and accept the developer submission policy, privacy requirements, device-safety requirements, and rejection rules. Opening a pull request confirms that your metadata is truthful, permissions are complete, and you will cooperate with maintainer review.",
+    "agreementLead": "Before publishing an app, read and accept the developer submission policy, privacy requirements, device-safety requirements, and rejection rules. Running czdev publish and opening a package pull request confirms that your metadata is truthful, permissions are complete, and you will cooperate with maintainer review.",
     "agreementTitle": "Read the agreement and admission rules first",
     "ci": [
-      "CI validates UUID, share code, required fields, icons, screenshots, download URL, and checksum.",
-      "When source is provided, CI may run source availability checks, basic static checks, dependency checks, builds, and smoke tests.",
+      "Prepublish checks validate app-builder.json, the .deb control fields, APPLaunch .desktop, icons, screenshots, package name, and MD5.",
+      "Packages CI validates package metadata, Git LFS assets, APT index output, and registry generation inputs.",
       "Passing CI does not mean automatic listing; maintainers still review policy, risk, and user experience."
     ],
     "ciTitle": "Automation",
-    "directoryExample": "appstore-hub/\n  apps/\n    123e4567-e89b-12d3-a456-426614174000.yml\n  assets/\n    123e4567-e89b-12d3-a456-426614174000/\n      icon.png\n      screenshots/\n        main.png\n        settings.png",
-    "eyebrow": "PULL REQUEST FLOW",
-    "flowLead": "Publish your app code or release in your own GitHub repository first, then submit metadata to the AppStore Hub registry repository.",
-    "flowTitle": "Standard submission flow",
-    "formatLead": "App metadata uses YAML or package meta.json. GitHub Actions validates metadata and generates the canonical registry.json after merge.",
+    "directoryExample": "CardputerZero/packages/\n  pool/main/my-app/\n    my-app_1.0.1_arm64.deb\n    meta.json\n    my-app.png\n    screenshots/\n      main.png\n      detail.png\n      settings.png\n      confirm.png",
+    "eyebrow": "CZDEV PUBLISH FLOW",
+    "flowLead": "Publish your source or release in your own GitHub repository first, then use czdev publish to submit the .deb, meta.json, icon, and screenshots to CardputerZero/packages.",
+    "flowTitle": "Standard publish flow",
+    "formatLead": "Source app metadata lives in app-builder.json. The package pull request carries pool/main/<package>/meta.json with image paths relative to that package directory.",
     "formatTitle": "Metadata format",
-    "lead": "Developers submit app metadata through GitHub pull requests. After maintainer approval, GitHub Actions generates a static registry and GitHub Pages publishes it to the Hub.",
+    "lead": "Developers publish installable .deb packages through czdev. After maintainer approval in CardputerZero/packages, the APT index is rebuilt and this Hub syncs generated registry JSON for the website and device AppStore.",
     "metadata": [
-      "Every app needs a stable UUID. The share code defaults to the first four UUID characters and must be unique in the registry.",
-      "Title, summary, GitHub author, version, license, source openness, Debian .deb download URL, package name, and MD5 checksum are required.",
-      "Permissions, privacy behavior, external hardware, background service, HDMI, commercial restrictions, and known risks must be declared."
+      "app-builder.json needs a store section with summary, categories, icon, screenshots, and recommended zh-CN/en/ja locales.",
+      "The .deb must be arm64 and include APPLaunch .desktop, executable, and square PNG icon under /usr/share/APPLaunch.",
+      "Package metadata needs package name, MD5, published_at, updated_at, permissions, privacy behavior, external hardware, services, HDMI, commercial restrictions, and known risks."
     ],
-    "metadataExample": "schema_version: 1\nuuid: \"123e4567-e89b-12d3-a456-426614174000\"\ntitle: \"My Cardputer App\"\nsummary: \"One sentence user-facing summary.\"\ndescription: \"Longer description for the detail page.\"\ncategories:\n  - Utilities\ndevice_targets:\n  - CardputerZero\nauthor:\n  github: \"your-github-id\"\nversion: \"1.0.0\"\nlicense: \"MIT\"\nsource:\n  openness: \"open-source\"\n  repository: \"https://github.com/your-github-id/my-cardputer-app\"\ndownload:\n  type: \"deb\"\n  package: \"my-cardputer-app\"\n  url: \"https://github.com/your-github-id/my-cardputer-app/raw/main/dist/my-cardputer-app_1.0.0_arm64.deb\"\n  md5: \"...\"\npermissions:\n  network: false\n  microphone: false\n  filesystem: \"app-data-only\"\nprivacy:\n  collects_personal_data: false\n  data_retention: \"none\"\nassets:\n  icon: \"assets/123e4567-e89b-12d3-a456-426614174000/icon.png\"\n  screenshots:\n    - \"assets/123e4567-e89b-12d3-a456-426614174000/screenshots/main.png\"\nreview:\n  status: \"pending\"",
+    "metadataExample": "{\n  \"package_name\": \"my-app\",\n  \"app_name\": \"My App\",\n  \"store\": {\n    \"summary\": \"Short user-facing summary.\",\n    \"categories\": [\"Utilities\"],\n    \"icon\": \"share/images/my-app.png\",\n    \"screenshots\": [\n      \"store/screenshots/main.png\",\n      \"store/screenshots/detail.png\",\n      \"store/screenshots/settings.png\",\n      \"store/screenshots/confirm.png\"\n    ],\n    \"locales\": {\n      \"zh-CN\": { \"title\": \"我的应用\", \"summary\": \"简短中文简介。\" },\n      \"en\": { \"title\": \"My App\", \"summary\": \"Short English summary.\" },\n      \"ja\": { \"title\": \"マイアプリ\", \"summary\": \"短い日本語の説明。\" }\n    }\n  }\n}",
     "metadataTitle": "Metadata",
     "openPolicyDoc": "Open full policy",
     "readAgreement": "Read agreement",
     "review": [
-      "In the pull request description, explain the app purpose, test method, download source, and whether it has been validated on CardputerZero.",
+      "In the package pull request description, explain the app purpose, test method, download source, and whether it has been validated on CardputerZero.",
       "Closed-source, binary-only, network, microphone, filesystem, external hardware, and background-service apps receive stricter review.",
       "Maintainers may request changes, extra declarations, experimental labeling, rejection, delisting, or blocking; appeals are recorded in issues or pull requests."
     ],
@@ -296,30 +296,30 @@
     "steps": [
       {
         "title": "Prepare your app repository",
-        "body": "Commit your app code to GitHub and provide a clear README, license, build instructions, and release artifact. The download URL should be stable."
+        "body": "Commit code to GitHub and provide README, license, build instructions, app-builder.json store metadata, icon, and screenshots."
       },
       {
-        "title": "Fork the registry repository",
-        "body": "Fork the CardputerZero/appstore-hub repository to your GitHub account and create a branch from the main branch for your submission."
+        "title": "Build the package",
+        "body": "Build an arm64 .deb that installs APPLaunch files under /usr/share/APPLaunch and contains a square PNG icon."
       },
       {
-        "title": "Add app metadata and assets",
-        "body": "Add a YAML metadata file named by UUID under apps/; place icon.png and screenshots under assets/<uuid>/."
+        "title": "Run prepublish check",
+        "body": "Run the strict prepublish check against app-builder.json, source assets, .deb control fields, .desktop, icon, package name, and MD5."
       },
       {
-        "title": "Fill metadata",
-        "body": "Complete title, summary, author, version, license, source, download, checksum, permissions, privacy, and risk fields according to the schema."
+        "title": "Publish with czdev",
+        "body": "Run czdev login once, optionally check czdev bump, then run czdev publish --deb <file.deb>."
       },
       {
-        "title": "Open a pull request",
-        "body": "Push your branch to your fork and open a pull request against AppStore Hub. Describe the app, test results, and any risks maintainers should review."
+        "title": "Review the package PR",
+        "body": "czdev opens a pull request against CardputerZero/packages. Describe device tests, privacy, permissions, and risks."
       },
       {
-        "title": "Wait for CI and review",
-        "body": "GitHub Actions runs automatic checks first. After maintainer approval and merge, the Hub regenerates the static registry and publishes it to GitHub Pages."
+        "title": "Wait for release sync",
+        "body": "After maintainer approval and merge, the packages repo rebuilds the APT index and this Hub syncs generated registry JSON."
       }
     ],
-    "structureLead": "The first registry version uses one YAML file per app. Display assets live in the matching UUID asset directory.",
+    "structureLead": "The submitted package directory stores meta.json, the .deb, icon, and four screenshots. The Hub registry is generated from package metadata.",
     "structureTitle": "Directory structure",
     "title": "Submit an app"
   },
@@ -330,16 +330,16 @@
   "tutorial": {
     "eyebrow": "DEVELOPER TUTORIAL",
     "title": "Development And Submission Tutorial",
-    "lead": "A practical path from local app development, Debian packaging, and device validation to registry metadata, CI checks, and maintainer review.",
+    "lead": "A practical path from local app development, Debian packaging, and device validation to prepublish checks, czdev publishing, and maintainer review.",
     "agreementEyebrow": "READ FIRST",
     "agreementTitle": "Read The Agreement And Admission Rules First",
-    "agreementLead": "Opening a pull request confirms that metadata is truthful, permissions are complete, downloads are verifiable, and you will cooperate with maintainer review. Full rules now live in Documents.",
+    "agreementLead": "Running czdev publish and opening a package pull request confirms that metadata is truthful, permissions are complete, downloads are verifiable, and you will cooperate with maintainer review. Full rules now live in Documents.",
     "readAgreement": "Read agreement",
     "openGuide": "Open guide",
     "skillTitle": "Develop With Skill And AI Coding",
-    "skillLead": "Use the cardputer-zero-application skill as the development checklist so AI confirms APPLaunch contracts, framebuffer behavior, package paths, and device validation before coding.",
+    "skillLead": "Use cardputer-zero-application for app quality and cardputer-app-publish for the czdev publish checklist, so AI confirms APPLaunch contracts, assets, package metadata, and device validation before release.",
     "flowTitle": "Development And Review Flow",
-    "flowLead": "Click any step to see acceptance checks and linked documentation. The flow is based on cardputer-zero-application experience with APPLaunch, Debian packages, framebuffer devices, and real-device validation.",
+    "flowLead": "Click any step to see acceptance checks and linked documentation. The flow combines cardputer-zero-application APPLaunch validation with cardputer-app-publish czdev release checks.",
     "detailTitle": "Selected step",
     "checksTitle": "Acceptance checks",
     "openDocument": "Open linked document",
@@ -353,7 +353,7 @@
         "checks": [
           "Choose the implementation language, app type, and launch mode first.",
           "Decide whether the target is a 320 x 170 GUI, CLI utility, or background service.",
-          "Document dependencies, input model, exit behavior, and known limits in README."
+          "Document dependencies, input model, exit behavior, known limits, and store metadata in README or app-builder.json."
         ]
       },
       {
@@ -363,7 +363,7 @@
         "checks": [
           "Install files under the /usr/share/APPLaunch contract.",
           ".desktop includes at least Name and Exec; Terminal is false by default.",
-          "Registry accepts only .deb downloads with package name and MD5."
+          "Package must be arm64 and include package name, MD5, APPLaunch .desktop, and icon."
         ]
       },
       {
@@ -377,22 +377,22 @@
         ]
       },
       {
-        "title": "Prepare metadata",
-        "body": "Fill UUID, share code, author, version, download URL, MD5, permissions, privacy, and risk statements.",
+        "title": "Prepare publish metadata",
+        "body": "Fill app-builder.json store metadata, locales, icon, four 320 x 170 screenshots, timestamps, permissions, privacy, and risk statements.",
         "doc": "app-submission-guide",
         "checks": [
           "Declare network, filesystem, microphone, hardware, and service behavior.",
           "Describe source openness, license, and commercial-use restrictions.",
-          "Keep the download URL stable and make checksum match the exact .deb."
+          "Use ISO 8601 timestamps with seconds and explicit timezone."
         ]
       },
       {
-        "title": "Open a PR",
-        "body": "Fork the registry repository, add app YAML and assets, then open a pull request.",
+        "title": "Publish with czdev",
+        "body": "Run the strict prepublish check, then use czdev login / bump / publish to create the package pull request.",
         "doc": "app-submission-guide",
         "checks": [
-          "PR body includes purpose, test device, and validation result.",
-          "Icon and screenshot paths are readable by the static site.",
+          "Prepublish check passes with no ERROR.",
+          "Package PR body includes purpose, test device, and validation result.",
           "Mark experimental or device-risk behavior up front."
         ]
       }
@@ -400,11 +400,11 @@
     "reviewFlow": [
       {
         "title": "Automated checks",
-        "body": "GitHub Actions validates fields, UUIDs, share codes, assets, download URLs, checksums, and registry generation.",
+        "body": "GitHub Actions validates package metadata, assets, APT Packages output, checksums, and registry generation.",
         "doc": "appstore-registry-requirements",
         "checks": [
-          "YAML/JSON parses and UUID plus share code are unique.",
-          "Download URL, package name, and MD5 can be verified.",
+          "meta.json parses and image paths are package-relative.",
+          "Package name, MD5, SHA256, and APT index entries can be verified.",
           "registry.json is generated, with registry-index.json kept as a legacy-compatible alias."
         ]
       },
@@ -430,17 +430,17 @@
       },
       {
         "title": "Merge and publish",
-        "body": "Approved PRs regenerate JSON/YAML registries and publish through GitHub Pages.",
+        "body": "Approved package PRs rebuild the APT index; Hub sync then regenerates registry JSON and publishes through GitHub Pages.",
         "doc": "appstore-registry-requirements",
         "checks": [
-          "GitHub Pages can serve the new registry.",
-          "Device AppStore sees the app after refresh.",
+          "GitHub Pages can serve the synced registry.",
+          "Device AppStore sees the approved app after refresh.",
           "Detail page, share code, and comments entry work."
         ]
       },
       {
         "title": "Maintain updates",
-        "body": "Update registry metadata when downloads, versions, permissions, or behavior changes.",
+        "body": "Publish a new package or metadata update when versions, screenshots, permissions, or behavior changes.",
         "doc": "user-agreement",
         "checks": [
           "Behavior changes update permissions and privacy first.",
@@ -450,19 +450,19 @@
       }
     ],
     "developmentTitle": "Developer Preparation",
-    "developmentLead": "Prepare the source repository, APPLaunch entry, Debian package, MD5, and device validation before submitting. Full examples live in the submission guide.",
+    "developmentLead": "Prepare the source repository, APPLaunch entry, Debian package, store assets, MD5, and device validation before publishing. Full examples live in the submission guide.",
     "reviewTitle": "Review And Release",
     "reviewLead": "CI is only the first gate. Maintainers still review risk, experience, privacy, and device safety. Full rules live in the policy document.",
     "metadataTitle": "Metadata essentials",
     "metadata": [
-      "Every app needs a stable UUID and unique share code.",
-      "Only Debian .deb downloads are accepted, with MD5 in registry metadata.",
+      "app-builder.json should provide store metadata and zh-CN/en/ja localized text.",
+      "Only Debian .deb packages are accepted, with MD5 and package metadata in the packages repository.",
       "Declare permissions, privacy, external hardware, services, HDMI, commercial limits, and known risks."
     ],
     "ciTitle": "Automation",
     "ci": [
-      "Validate registry metadata, UUIDs, share codes, required fields, and assets.",
-      "Check download URL, package name, checksum, and generated registry.json.",
+      "Validate app-builder.json, package metadata, required fields, and assets.",
+      "Check package name, checksum, APT index, and generated registry.json.",
       "Passing CI does not mean automatic listing."
     ],
     "maintainerTitle": "Maintainer review",
@@ -494,7 +494,7 @@
       },
       "submission": {
         "title": "App Submission Guide",
-        "summary": "Prepare app repositories, Debian packages, metadata, assets, and pull requests."
+        "summary": "Prepare czdev, Debian packages, app-builder metadata, assets, prepublish checks, and package pull requests."
       },
       "agreement": {
         "title": "User And Developer Agreement",

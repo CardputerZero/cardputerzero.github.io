@@ -7,7 +7,7 @@
 - CardputerZero アプリを新規作成または移植する。
 - APPLaunch の起動、アイコン、`.desktop`、終了、キーボード問題を修正する。
 - AArch64 Debian `.deb` を作成する。
-- AppStore registry のメタデータを準備する。
+- AppStore metadata、store assets、`czdev publish` 用の資料を準備する。
 - 実機で `/usr/share/APPLaunch`、`LV_LINUX_FBDEV_DEVICE`、インストール、起動、アンインストールを検証する。
 
 ## 推奨プロンプト
@@ -34,7 +34,7 @@ cardputer-zero-application skill を使用してください。
 7. ローカルでビルドし `.deb` を生成する。
 8. 実機へコピーしてインストールする。
 9. 起動、終了、再起動、ログ確認を行う。
-10. registry メタデータ、MD5、Pull Request 説明を準備する。
+10. prepublish check を実行し、metadata、MD5、スクリーンショット、`czdev publish` 用の説明を準備する。
 
 ## デバイス制約
 
@@ -81,8 +81,9 @@ cardputer-zero-application skill を使い、このアプリが APPLaunch から
 ### AppStore 提出
 
 ```text
-cardputer-zero-application skill を使い、このアプリの AppStore metadata 草案を作ってください。
-UUID、共有コード、作者、バージョン、.deb URL、package、MD5、権限、プライバシー、リスク、実機検証を含めてください。
+cardputer-zero-application と cardputer-app-publish skill を使い、このアプリの AppStore 公開準備をしてください。
+app-builder.json の store セクション、アイコン、4 枚の 320x170 スクリーンショット、.deb control、APPLaunch .desktop、package 名、MD5、実機検証を確認してください。
+strict prepublish check が通ったら、czdev login / bump / publish コマンドを提示してください。
 ```
 
 ## 実機検収チェックリスト
@@ -104,6 +105,8 @@ UUID、共有コード、作者、バージョン、.deb URL、package、MD5、�
 - 変更ファイル。
 - `.deb` のビルド方法。
 - MD5 の計算方法。
+- prepublish check が通ったか。
+- 実行すべき `czdev publish --deb <file.deb>` コマンド。
 - 実機で確認した項目。
 - 人が確認すべき metadata フィールド。
 

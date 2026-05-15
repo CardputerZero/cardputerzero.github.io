@@ -219,7 +219,7 @@
     "files": "静的ファイル",
     "loaded": "ページ読み込み",
     "open": "registry を開く",
-    "pageLead": "Web UI は JSON registry を読み込みます。YAML はメンテナーのレビューとデバイスツール向けに保持します。",
+    "pageLead": "Web UI は生成された JSON registry を読み込みます。package metadata は CardputerZero/packages でレビューされます。",
     "pageTitle": "Registry データソース",
     "risk": "リスクあり",
     "schema": "Schema",
@@ -263,32 +263,32 @@
   },
   "submit": {
     "agreementEyebrow": "SUBMISSION AGREEMENT",
-    "agreementLead": "アプリを提出する前に、開発者提出ポリシー、プライバシー要件、デバイス安全要件、拒否ルールを読み同意してください。Pull Request を作成することは、メタデータが正確で、権限宣言が完全で、メンテナーのレビューに協力することを確認するものです。",
+    "agreementLead": "アプリを公開する前に、開発者提出ポリシー、プライバシー要件、デバイス安全要件、拒否ルールを読み同意してください。czdev publish を実行して package Pull Request を作成することは、メタデータが正確で、権限宣言が完全で、メンテナーのレビューに協力することを確認するものです。",
     "agreementTitle": "先に規約と掲載条件を読んでください",
     "ci": [
-      "CI は UUID、共有コード、必須項目、アイコン、スクリーンショット、ダウンロード URL、checksum を検証します。",
-      "ソースが提供されている場合、CI はソース到達性、基本的な静的チェック、依存関係、ビルド、smoke test を実行できます。",
+      "Prepublish check は app-builder.json、.deb control、APPLaunch .desktop、アイコン、スクリーンショット、package 名、MD5 を検証します。",
+      "Packages CI は package metadata、Git LFS assets、APT Packages index、registry 生成入力を検証します。",
       "CI 通過は自動掲載を意味しません。メンテナーがポリシー、リスク、体験を確認します。"
     ],
     "ciTitle": "自動チェック",
-    "directoryExample": "appstore-hub/\n  apps/\n    123e4567-e89b-12d3-a456-426614174000.yml\n  assets/\n    123e4567-e89b-12d3-a456-426614174000/\n      icon.png\n      screenshots/\n        main.png\n        settings.png",
-    "eyebrow": "PULL REQUEST FLOW",
-    "flowLead": "まず自分の GitHub リポジトリでアプリコードまたは release を公開し、その後 AppStore Hub registry リポジトリへメタデータを提出します。",
-    "flowTitle": "標準提出フロー",
-    "formatLead": "アプリメタデータは YAML または package meta.json を使用します。GitHub Actions が検証し、マージ後に正規の registry.json を生成します。",
+    "directoryExample": "CardputerZero/packages/\n  pool/main/my-app/\n    my-app_1.0.1_arm64.deb\n    meta.json\n    my-app.png\n    screenshots/\n      main.png\n      detail.png\n      settings.png\n      confirm.png",
+    "eyebrow": "CZDEV PUBLISH FLOW",
+    "flowLead": "まず自分の GitHub リポジトリでソースまたは release を公開し、その後 czdev publish で .deb、meta.json、アイコン、スクリーンショットを CardputerZero/packages に提出します。",
+    "flowTitle": "標準公開フロー",
+    "formatLead": "ソース側 metadata は app-builder.json に置きます。package Pull Request の pool/main/<package>/meta.json は package directory からの相対画像パスを使います。",
     "formatTitle": "メタデータ形式",
-    "lead": "開発者は GitHub Pull Request でアプリメタデータを提出します。メンテナー承認後、GitHub Actions が静的 registry を生成し、GitHub Pages が Hub に公開します。",
+    "lead": "開発者は czdev でインストール可能な .deb package を公開します。CardputerZero/packages でメンテナーが承認すると APT index が再生成され、この Hub が Web と実機 AppStore 向けの registry JSON を同期します。",
     "metadata": [
-      "各アプリには安定した UUID が必要です。共有コードは通常 UUID の先頭 4 文字で、registry 内で一意である必要があります。",
-      "タイトル、概要、GitHub 作者、バージョン、license、ソース公開度、Debian .deb ダウンロード URL、パッケージ名、MD5 checksum が必要です。",
-      "権限、プライバシー動作、外部ハードウェア、バックグラウンドサービス、HDMI、商用制限、既知リスクを宣言する必要があります。"
+      "app-builder.json には summary、categories、icon、screenshots を含む store セクションが必要で、zh-CN/en/ja の locale を推奨します。",
+      ".deb は arm64 で、APPLaunch .desktop、実行ファイル、/usr/share/APPLaunch 配下の正方形 PNG アイコンを含む必要があります。",
+      "Package metadata には package 名、MD5、published_at、updated_at、権限、プライバシー、外部機器、サービス、HDMI、商用制限、既知リスクが必要です。"
     ],
-    "metadataExample": "schema_version: 1\nuuid: \"123e4567-e89b-12d3-a456-426614174000\"\ntitle: \"My Cardputer App\"\nsummary: \"One sentence user-facing summary.\"\ndescription: \"Longer description for the detail page.\"\ncategories:\n  - Utilities\ndevice_targets:\n  - CardputerZero\nauthor:\n  github: \"your-github-id\"\nversion: \"1.0.0\"\nlicense: \"MIT\"\nsource:\n  openness: \"open-source\"\n  repository: \"https://github.com/your-github-id/my-cardputer-app\"\ndownload:\n  type: \"deb\"\n  package: \"my-cardputer-app\"\n  url: \"https://github.com/your-github-id/my-cardputer-app/raw/main/dist/my-cardputer-app_1.0.0_arm64.deb\"\n  md5: \"...\"\npermissions:\n  network: false\n  microphone: false\n  filesystem: \"app-data-only\"\nprivacy:\n  collects_personal_data: false\n  data_retention: \"none\"\nassets:\n  icon: \"assets/123e4567-e89b-12d3-a456-426614174000/icon.png\"\n  screenshots:\n    - \"assets/123e4567-e89b-12d3-a456-426614174000/screenshots/main.png\"\nreview:\n  status: \"pending\"",
+    "metadataExample": "{\n  \"package_name\": \"my-app\",\n  \"app_name\": \"My App\",\n  \"store\": {\n    \"summary\": \"Short user-facing summary.\",\n    \"categories\": [\"Utilities\"],\n    \"icon\": \"share/images/my-app.png\",\n    \"screenshots\": [\n      \"store/screenshots/main.png\",\n      \"store/screenshots/detail.png\",\n      \"store/screenshots/settings.png\",\n      \"store/screenshots/confirm.png\"\n    ],\n    \"locales\": {\n      \"zh-CN\": { \"title\": \"我的应用\", \"summary\": \"简短中文简介。\" },\n      \"en\": { \"title\": \"My App\", \"summary\": \"Short English summary.\" },\n      \"ja\": { \"title\": \"マイアプリ\", \"summary\": \"短い日本語の説明。\" }\n    }\n  }\n}",
     "metadataTitle": "メタデータ",
     "openPolicyDoc": "完全なポリシーを開く",
     "readAgreement": "規約を読む",
     "review": [
-      "Pull Request の説明には、アプリの目的、テスト方法、ダウンロード元、CardputerZero 実機検証の有無を書いてください。",
+      "package Pull Request の説明には、アプリの目的、テスト方法、ダウンロード元、CardputerZero 実機検証の有無を書いてください。",
       "クローズドソース、バイナリのみ、ネットワーク、マイク、ファイルシステム、外部ハードウェア、バックグラウンドサービスはより厳格にレビューされます。",
       "メンテナーは修正、追加宣言、実験的表示、拒否、掲載停止、ブロックを要求できます。異議申し立ては Issue または Pull Request で記録します。"
     ],
@@ -296,30 +296,30 @@
     "steps": [
       {
         "title": "アプリリポジトリを準備",
-        "body": "アプリコードを GitHub にコミットし、README、license、ビルド手順、release 産物を用意します。ダウンロード URL は安定してアクセスできる必要があります。"
+        "body": "コードを GitHub にコミットし、README、license、ビルド手順、app-builder.json store metadata、アイコン、スクリーンショットを用意します。"
       },
       {
-        "title": "registry リポジトリを fork",
-        "body": "CardputerZero/appstore-hub リポジトリを自分の GitHub アカウントへ fork し、main から提出用ブランチを作成します。"
+        "title": "package をビルド",
+        "body": "APPLaunch ファイルを /usr/share/APPLaunch にインストールし、正方形 PNG アイコンを含む arm64 .deb を作成します。"
       },
       {
-        "title": "メタデータと素材を追加",
-        "body": "apps/ に UUID 名の YAML メタデータファイルを追加し、assets/<uuid>/ に icon.png とスクリーンショットを配置します。"
+        "title": "prepublish check を実行",
+        "body": "app-builder.json、source assets、.deb control、.desktop、icon、package 名、MD5 を strict check します。"
       },
       {
-        "title": "metadata を記入",
-        "body": "schema に従って title、summary、author、version、license、source、download、checksum、permissions、privacy、risk を記入します。"
+        "title": "czdev で公開",
+        "body": "初回は czdev login を実行し、既存 package 更新時は必要に応じて czdev bump を確認し、czdev publish --deb <file.deb> を実行します。"
       },
       {
-        "title": "Pull Request を作成",
-        "body": "ブランチを fork に push し、AppStore Hub に Pull Request を作成します。アプリ説明、テスト結果、レビューすべきリスクを書いてください。"
+        "title": "package PR を確認",
+        "body": "czdev は CardputerZero/packages へ Pull Request を作成します。実機テスト、プライバシー、権限、リスクを書いてください。"
       },
       {
-        "title": "CI とレビューを待つ",
-        "body": "GitHub Actions が自動チェックを実行します。メンテナーが承認してマージすると、Hub は静的 registry を再生成し GitHub Pages に公開します。"
+        "title": "リリース同期を待つ",
+        "body": "メンテナー承認とマージ後、packages repo が APT index を再生成し、この Hub が registry JSON を同期します。"
       }
     ],
-    "structureLead": "最初の registry では 1 アプリにつき 1 つの YAML ファイルを使います。表示素材は対応する UUID の assets ディレクトリに置きます。",
+    "structureLead": "提出された package directory には meta.json、.deb、icon、4 枚の screenshot が入ります。Hub registry は package metadata から生成されます。",
     "structureTitle": "ディレクトリ構造",
     "title": "アプリを提出"
   },
@@ -330,16 +330,16 @@
   "tutorial": {
     "eyebrow": "DEVELOPER TUTORIAL",
     "title": "開発と提出のチュートリアル",
-    "lead": "ローカル開発、Debian パッケージ、実機検証から、registry メタデータ、CI、メンテナー審査までの流れです。",
+    "lead": "ローカル開発、Debian パッケージ、実機検証から、prepublish check、czdev 公開、メンテナー審査までの流れです。",
     "agreementEyebrow": "READ FIRST",
     "agreementTitle": "先に規約と登録ルールを確認",
-    "agreementLead": "Pull Request を開くことは、メタデータが正確で、権限宣言が完全で、ダウンロードを検証でき、審査に協力することを意味します。詳細はドキュメントにあります。",
+    "agreementLead": "czdev publish を実行して package Pull Request を開くことは、メタデータが正確で、権限宣言が完全で、ダウンロードを検証でき、審査に協力することを意味します。詳細はドキュメントにあります。",
     "readAgreement": "規約を読む",
     "openGuide": "ガイドを開く",
     "skillTitle": "Skill と AI Coding で開発する",
-    "skillLead": "cardputer-zero-application skill をチェックリストとして使い、AI に APPLaunch 契約、framebuffer、パッケージ配置、実機検証点を確認させてから実装します。",
+    "skillLead": "cardputer-zero-application でアプリ品質を確認し、cardputer-app-publish で czdev 公開チェックを行い、AI に APPLaunch 契約、素材、package metadata、実機検証点を確認させます。",
     "flowTitle": "開発と審査フロー",
-    "flowLead": "各ステップをクリックすると検収項目と関連文書を確認できます。内容は cardputer-zero-application skill の APPLaunch、Debian パッケージ、framebuffer、実機検証の経験に基づきます。",
+    "flowLead": "各ステップをクリックすると検収項目と関連文書を確認できます。内容は cardputer-zero-application の APPLaunch 検証と cardputer-app-publish の czdev 公開チェックを組み合わせています。",
     "detailTitle": "選択中のステップ",
     "checksTitle": "検収項目",
     "openDocument": "関連文書を開く",
@@ -353,7 +353,7 @@
         "checks": [
           "最初に実装言語、アプリ種別、起動方式を決めます。",
           "対象が 320 x 170 GUI、CLI、バックグラウンドサービスのどれか決めます。",
-          "README に依存関係、入力、終了方法、既知制限を書きます。"
+          "README または app-builder.json に依存関係、入力、終了方法、既知制限、store metadata を書きます。"
         ]
       },
       {
@@ -363,7 +363,7 @@
         "checks": [
           "/usr/share/APPLaunch の契約に沿ってファイルを配置します。",
           ".desktop には少なくとも Name と Exec を入れ、Terminal は基本 false です。",
-          "registry は .deb のみ受け付け、package 名と MD5 が必要です。"
+          "Package は arm64 で、package 名、MD5、APPLaunch .desktop、icon が必要です。"
         ]
       },
       {
@@ -377,22 +377,22 @@
         ]
       },
       {
-        "title": "メタデータ準備",
-        "body": "UUID、共有コード、作者、バージョン、URL、MD5、権限、プライバシー、リスクを記入します。",
+        "title": "公開メタデータ準備",
+        "body": "app-builder.json store metadata、locales、icon、4 枚の 320 x 170 screenshots、timestamps、権限、プライバシー、リスクを記入します。",
         "doc": "app-submission-guide",
         "checks": [
           "ネットワーク、ファイル、マイク、外部機器、サービスを宣言します。",
           "ソース公開度、license、商用利用制限を説明します。",
-          "URL を安定させ、checksum が同じ .deb を指すことを確認します。"
+          "秒と明示的な timezone を含む ISO 8601 timestamps を使います。"
         ]
       },
       {
-        "title": "PR を提出",
-        "body": "registry リポジトリを fork し、アプリ YAML と assets を追加して Pull Request を開きます。",
+        "title": "czdev で公開",
+        "body": "strict prepublish check を実行し、czdev login / bump / publish で package Pull Request を作成します。",
         "doc": "app-submission-guide",
         "checks": [
-          "PR 本文に用途、テスト端末、検証結果を書きます。",
-          "アイコンとスクリーンショットのパスを静的サイトから読めるようにします。",
+          "Prepublish check に ERROR がありません。",
+          "Package PR 本文に用途、テスト端末、検証結果を書きます。",
           "実験的またはデバイスリスクがある場合は先に明記します。"
         ]
       }
@@ -400,11 +400,11 @@
     "reviewFlow": [
       {
         "title": "自動チェック",
-        "body": "GitHub Actions がフィールド、UUID、共有コード、素材、URL、checksum、registry 生成を検証します。",
+        "body": "GitHub Actions が package metadata、assets、APT Packages 出力、checksum、registry 生成を検証します。",
         "doc": "appstore-registry-requirements",
         "checks": [
-          "YAML/JSON が解析でき、UUID と共有コードが一意です。",
-          "URL、package 名、MD5 を検証できます。",
+          "meta.json が解析でき、画像パスが package 相対です。",
+          "Package 名、MD5、SHA256、APT index entry を検証できます。",
           "registry.json が生成され、registry-index.json は旧互換 alias として保持されます。"
         ]
       },
@@ -430,17 +430,17 @@
       },
       {
         "title": "マージと公開",
-        "body": "承認された PR は JSON/YAML registry を再生成し GitHub Pages で公開されます。",
+        "body": "承認された package PR は APT index を再生成します。Hub 同期後に registry JSON が再生成され GitHub Pages で公開されます。",
         "doc": "appstore-registry-requirements",
         "checks": [
-          "GitHub Pages から新しい registry を取得できます。",
-          "実機 AppStore を更新するとアプリが表示されます。",
+          "GitHub Pages から同期済み registry を取得できます。",
+          "実機 AppStore を更新すると approved アプリが表示されます。",
           "詳細ページ、共有コード、コメント入口が動作します。"
         ]
       },
       {
         "title": "継続メンテ",
-        "body": "URL、バージョン、権限、動作が変わった場合は registry メタデータを更新します。",
+        "body": "バージョン、スクリーンショット、権限、動作が変わった場合は新しい package または metadata 更新を公開します。",
         "doc": "user-agreement",
         "checks": [
           "動作変更時は権限とプライバシーを先に更新します。",
@@ -450,19 +450,19 @@
       }
     ],
     "developmentTitle": "開発者の準備",
-    "developmentLead": "提出前にソース、APPLaunch、Debian パッケージ、MD5、実機検証を準備します。詳細例は提出ガイドにあります。",
+    "developmentLead": "公開前にソース、APPLaunch、Debian パッケージ、store assets、MD5、実機検証を準備します。詳細例は提出ガイドにあります。",
     "reviewTitle": "審査と公開",
     "reviewLead": "CI は最初のゲートです。メンテナーはリスク、体験、プライバシー、デバイス安全性を確認します。",
     "metadataTitle": "メタデータ要点",
     "metadata": [
-      "安定した UUID と一意の共有コードが必要です。",
-      "Debian .deb ダウンロードのみ受け付け、MD5 が必要です。",
+      "app-builder.json には store metadata と zh-CN/en/ja の多言語テキストを用意します。",
+      "Debian .deb package のみ受け付け、packages repository に MD5 と package metadata を保持します。",
       "権限、プライバシー、外部機器、サービス、HDMI、商用制限、既知リスクを宣言します。"
     ],
     "ciTitle": "自動チェック",
     "ci": [
-      "registry メタデータ、UUID、共有コード、必須項目、素材を検証します。",
-      "URL、package 名、checksum、registry.json を確認します。",
+      "app-builder.json、package metadata、必須項目、素材を検証します。",
+      "Package 名、checksum、APT index、registry.json を確認します。",
       "CI 通過は自動掲載を意味しません。"
     ],
     "maintainerTitle": "メンテナー審査",
@@ -494,7 +494,7 @@
       },
       "submission": {
         "title": "アプリ提出ガイド",
-        "summary": "アプリリポジトリ、Debian パッケージ、metadata、assets、Pull Request の準備方法。"
+        "summary": "czdev、Debian package、app-builder metadata、assets、prepublish check、package Pull Request の準備方法。"
       },
       "agreement": {
         "title": "ユーザーと開発者の規約",

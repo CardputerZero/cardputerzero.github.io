@@ -7,7 +7,7 @@ This document explains how to use the `cardputer-zero-application` skill as an o
 - Build or port a CardputerZero app.
 - Fix APPLaunch launch, icon, `.desktop`, exit, or keyboard behavior.
 - Package an AArch64 Debian `.deb`.
-- Prepare AppStore registry metadata.
+- Prepare AppStore metadata, store assets, and `czdev publish` materials.
 - Validate `/usr/share/APPLaunch`, `LV_LINUX_FBDEV_DEVICE`, installation, launch, and uninstall on a device.
 
 ## Recommended Prompt
@@ -34,7 +34,7 @@ This keeps AI from applying generic desktop Linux assumptions to the device.
 7. Build locally and produce a `.deb`.
 8. Copy the package to the device and install it.
 9. Launch, exit, relaunch, and check logs.
-10. Prepare registry metadata, MD5, and pull request notes.
+10. Run the prepublish check and prepare metadata, MD5, screenshots, and `czdev publish` notes.
 
 ## Device Constraints
 
@@ -83,8 +83,9 @@ Focus on .desktop, Exec path, permissions, shared libraries, framebuffer, logs, 
 ### AppStore Submission
 
 ```text
-Use the cardputer-zero-application skill to draft AppStore metadata for this app.
-Include UUID, share code, author, version, .deb URL, package, MD5, permissions, privacy, risks, and device validation notes.
+Use the cardputer-zero-application and cardputer-app-publish skills to prepare this app for AppStore publishing.
+Check the app-builder.json store section, icon, four 320x170 screenshots, .deb control fields, APPLaunch .desktop, package name, MD5, and device validation notes.
+After the strict prepublish check passes, provide the czdev login / bump / publish commands.
 ```
 
 ## Device Acceptance Checklist
@@ -106,6 +107,8 @@ After implementation, ask AI to summarize:
 - Files changed.
 - How to build the `.deb`.
 - How MD5 was calculated.
+- Whether the prepublish check passed.
+- Which `czdev publish --deb <file.deb>` command should be run.
 - Which device checks passed.
 - Which metadata fields still need manual confirmation.
 

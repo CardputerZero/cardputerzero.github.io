@@ -32,6 +32,17 @@ dpkg-deb
 aarch64-linux-gnu-g++
 ```
 
+AppBuilder workflow を使う場合は `czdev` をインストールします。
+
+```bash
+git clone --recursive git@github.com:m5stack/CardputerZero-AppBuilder.git
+cd CardputerZero-AppBuilder
+cargo build --release -p czdev
+./target/release/czdev doctor
+```
+
+`czdev run` と `czdev watch` はデスクトップエミュレーターでのデバッグに使えます。`czdev deploy --host pi@<device-ip> --deb <file.deb>` はビルド済み `.deb` を実機へ入れるために使います。AppStore に公開する前に `czdev login` と `czdev publish --deb <file.deb>` を使います。
+
 実機で VibAPP または軽量 LVGL アプリを作る場合は、APPLaunch 内蔵テンプレートを優先します。
 
 ```text
@@ -67,7 +78,7 @@ aarch64-linux-gnu-g++
 7. framebuffer を扱う：`LV_LINUX_FBDEV_DEVICE` を尊重し、`/dev/fb0` を固定しない。
 8. `/usr/share/APPLaunch` の構造でパッケージする。
 9. 実機でアイコン、起動、終了、アンインストールを検証する。
-10. AppStore metadata、MD5、スクリーンショット、Pull Request を準備する。
+10. AppStore metadata、MD5、4 枚の 320 x 170 スクリーンショットを準備し、`czdev publish` で package Pull Request を提出する。
 
 ## 最小 APPLaunch 構成
 
@@ -132,6 +143,6 @@ exec /usr/share/APPLaunch/bin/helloworld.bin
 
 HelloWorld の後に読む文書：
 
-- [アプリ提出ガイド](#/documents/app-submission-guide)：metadata、assets、MD5、Pull Request。
+- [アプリ提出ガイド](#/documents/app-submission-guide)：`czdev`、metadata、assets、MD5、prepublish check、package Pull Request。
 - [Registry と Web UI 要件](#/documents/appstore-registry-requirements)：registry フィールドと表示ルール。
 - [Skill と AI Coding ガイド](#/documents/skill-ai-coding-guide)：上記の開発パターンを AI に補助させる方法。

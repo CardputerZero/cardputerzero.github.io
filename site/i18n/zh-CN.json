@@ -219,7 +219,7 @@
     "files": "静态文件",
     "loaded": "页面加载",
     "open": "查看 registry",
-    "pageLead": "Web UI 使用 JSON registry；YAML 文件供维护者 review 和真机工具链对接。",
+    "pageLead": "Web UI 使用生成后的 JSON registry；package metadata 在 CardputerZero/packages 中审核。",
     "pageTitle": "Registry 数据源",
     "risk": "有风险标记",
     "schema": "Schema",
@@ -263,32 +263,32 @@
   },
   "submit": {
     "agreementEyebrow": "SUBMISSION AGREEMENT",
-    "agreementLead": "提交应用前，请先阅读并接受开发者提交规范、隐私要求、设备安全要求和拒收规则。提交 Pull Request 即表示你确认元信息真实、权限声明完整，并愿意配合维护者 review。",
+    "agreementLead": "发布应用前，请先阅读并接受开发者提交规范、隐私要求、设备安全要求和拒收规则。运行 czdev publish 并创建 package Pull Request 即表示你确认元信息真实、权限声明完整，并愿意配合维护者 review。",
     "agreementTitle": "提交前请先阅读协议和准入规则",
     "ci": [
-      "CI 会校验 UUID、分享码、必填字段、图标、截图、下载地址和 checksum。",
-      "如果提供源码，CI 会尝试执行源码可访问性检查、基础静态检查、依赖检查、构建检查和 smoke test。",
+      "Prepublish check 会校验 app-builder.json、.deb control、APPLaunch .desktop、图标、截图、package 名和 MD5。",
+      "Packages CI 会校验 package metadata、Git LFS 素材、APT Packages index 和 registry 生成输入。",
       "CI 通过不等于自动上架；维护者仍会根据政策、风险和体验做人工审核。"
     ],
     "ciTitle": "自动检查",
-    "directoryExample": "appstore-hub/\n  apps/\n    123e4567-e89b-12d3-a456-426614174000.yml\n  assets/\n    123e4567-e89b-12d3-a456-426614174000/\n      icon.png\n      screenshots/\n        main.png\n        settings.png",
-    "eyebrow": "PULL REQUEST FLOW",
-    "flowLead": "请先在自己的 GitHub 仓库发布代码或 release，再向 AppStore Hub registry 仓库提交应用元信息。",
-    "flowTitle": "标准提交流程",
-    "formatLead": "应用元信息使用 YAML 或 package meta.json。字段会被 GitHub Actions 校验，并在合并后生成唯一的 registry.json。",
+    "directoryExample": "CardputerZero/packages/\n  pool/main/my-app/\n    my-app_1.0.1_arm64.deb\n    meta.json\n    my-app.png\n    screenshots/\n      main.png\n      detail.png\n      settings.png\n      confirm.png",
+    "eyebrow": "CZDEV PUBLISH FLOW",
+    "flowLead": "请先在自己的 GitHub 仓库发布源码或 release，再用 czdev publish 把 .deb、meta.json、图标和截图提交到 CardputerZero/packages。",
+    "flowTitle": "标准发布流程",
+    "formatLead": "源码侧 metadata 放在 app-builder.json；package PR 中的 pool/main/<package>/meta.json 使用相对 package 目录的图片路径。",
     "formatTitle": "metadata 格式",
-    "lead": "开发者通过 GitHub Pull Request 提交应用元信息。维护者审核通过后，GitHub Actions 会生成新的静态 registry，并由 GitHub Pages 发布到 Hub 页面。",
+    "lead": "开发者通过 czdev 发布可安装的 .deb package。维护者在 CardputerZero/packages 审核通过后，APT 索引会重建，官网会同步生成供网页和真机 AppStore 使用的 registry JSON。",
     "metadata": [
-      "每个应用必须有稳定 UUID。分享码默认取 UUID 前四位，必须在 registry 内唯一。",
-      "必须声明标题、简介、作者 GitHub ID、版本、许可证、源码开放程度、Debian .deb 下载地址、包名和 MD5 checksum。",
-      "必须完整声明权限、隐私行为、外部硬件、后台服务、HDMI、商业使用限制和已知风险。"
+      "app-builder.json 需要 store 段，包含 summary、categories、icon、screenshots，并推荐提供 zh-CN/en/ja 多语言。",
+      ".deb 必须是 arm64，并包含 APPLaunch .desktop、可执行文件和 /usr/share/APPLaunch 下的方形 PNG 图标。",
+      "Package metadata 需要 package 名、MD5、published_at、updated_at、权限、隐私、外部硬件、后台服务、HDMI、商业限制和已知风险。"
     ],
-    "metadataExample": "schema_version: 1\nuuid: \"123e4567-e89b-12d3-a456-426614174000\"\ntitle: \"My Cardputer App\"\nsummary: \"One sentence user-facing summary.\"\ndescription: \"Longer description for the detail page.\"\ncategories:\n  - Utilities\ndevice_targets:\n  - CardputerZero\nauthor:\n  github: \"your-github-id\"\nversion: \"1.0.0\"\nlicense: \"MIT\"\nsource:\n  openness: \"open-source\"\n  repository: \"https://github.com/your-github-id/my-cardputer-app\"\ndownload:\n  type: \"deb\"\n  package: \"my-cardputer-app\"\n  url: \"https://github.com/your-github-id/my-cardputer-app/raw/main/dist/my-cardputer-app_1.0.0_arm64.deb\"\n  md5: \"...\"\npermissions:\n  network: false\n  microphone: false\n  filesystem: \"app-data-only\"\nprivacy:\n  collects_personal_data: false\n  data_retention: \"none\"\nassets:\n  icon: \"assets/123e4567-e89b-12d3-a456-426614174000/icon.png\"\n  screenshots:\n    - \"assets/123e4567-e89b-12d3-a456-426614174000/screenshots/main.png\"\nreview:\n  status: \"pending\"",
+    "metadataExample": "{\n  \"package_name\": \"my-app\",\n  \"app_name\": \"My App\",\n  \"store\": {\n    \"summary\": \"Short user-facing summary.\",\n    \"categories\": [\"Utilities\"],\n    \"icon\": \"share/images/my-app.png\",\n    \"screenshots\": [\n      \"store/screenshots/main.png\",\n      \"store/screenshots/detail.png\",\n      \"store/screenshots/settings.png\",\n      \"store/screenshots/confirm.png\"\n    ],\n    \"locales\": {\n      \"zh-CN\": { \"title\": \"我的应用\", \"summary\": \"简短中文简介。\" },\n      \"en\": { \"title\": \"My App\", \"summary\": \"Short English summary.\" },\n      \"ja\": { \"title\": \"マイアプリ\", \"summary\": \"短い日本語の説明。\" }\n    }\n  }\n}",
     "metadataTitle": "元信息",
     "openPolicyDoc": "打开完整规范",
     "readAgreement": "阅读协议和规则",
     "review": [
-      "请在 PR 描述里说明应用用途、测试方式、下载来源和是否已经在 CardputerZero 上验证。",
+      "请在 package PR 描述里说明应用用途、测试方式、下载来源和是否已经在 CardputerZero 上验证。",
       "闭源、binary-only、网络、麦克风、文件系统、外部硬件和后台服务应用会进入更严格审核。",
       "维护者可能要求修改、补充声明、标记实验性、拒收、下架或 block；申诉通过 Issue 或 PR 记录。"
     ],
@@ -296,30 +296,30 @@
     "steps": [
       {
         "title": "准备你的应用仓库",
-        "body": "先把自己的应用代码提交到 GitHub，提供清晰 README、license、构建方式和 release 产物。下载地址应稳定可访问。"
+        "body": "先把应用代码提交到 GitHub，提供 README、license、构建方式、app-builder.json store metadata、图标和截图。"
       },
       {
-        "title": "Fork registry 仓库",
-        "body": "Fork CardputerZero/appstore-hub 仓库到你的 GitHub 账号，并从主分支创建一个用于提交应用的分支。"
+        "title": "构建 package",
+        "body": "构建 arm64 .deb，安装 APPLaunch 文件到 /usr/share/APPLaunch，并包含方形 PNG 图标。"
       },
       {
-        "title": "新增应用目录和素材",
-        "body": "在 apps/ 下新增一个以 UUID 命名的 YAML 元信息文件；在 assets/<uuid>/ 下放置 icon.png 和截图。"
+        "title": "运行 prepublish check",
+        "body": "严格检查 app-builder.json、源素材、.deb control、.desktop、图标、package 名和 MD5。"
       },
       {
-        "title": "填写 metadata",
-        "body": "按照 schema 填写标题、简介、作者、版本、许可证、源码、下载、checksum、权限、隐私和风险字段。"
+        "title": "使用 czdev 发布",
+        "body": "首次运行 czdev login，更新已有包时可先运行 czdev bump，然后运行 czdev publish --deb <file.deb>。"
       },
       {
-        "title": "提交 Pull Request",
-        "body": "把分支推送到你的 fork，并向 AppStore Hub 发起 PR。PR 描述中说明应用用途、测试结果和需要维护者注意的风险。"
+        "title": "检查 package PR",
+        "body": "czdev 会向 CardputerZero/packages 创建 Pull Request。PR 中说明真机测试、隐私、权限和风险。"
       },
       {
-        "title": "等待 CI 和审核",
-        "body": "GitHub Actions 会先做自动校验。维护者审核通过并合并后，Hub 会重新生成静态 registry 并发布到 GitHub Pages。"
+        "title": "等待发布同步",
+        "body": "维护者审核并合并后，packages 仓库重建 APT index，官网同步生成 registry JSON。"
       }
     ],
-    "structureLead": "第一版 registry 以一个 YAML 文件描述一个应用，展示素材单独放在对应 UUID 的 assets 目录下。",
+    "structureLead": "提交后的 package 目录保存 meta.json、.deb、图标和 4 张截图；Hub registry 从 package metadata 生成。",
     "structureTitle": "目录结构",
     "title": "提交应用"
   },
@@ -330,16 +330,16 @@
   "tutorial": {
     "eyebrow": "DEVELOPER TUTORIAL",
     "title": "开发与提交教程",
-    "lead": "从本地应用开发、Debian 打包、真机验证，到 registry 元信息提交、CI 校验和维护者审核的完整流程。",
+    "lead": "从本地应用开发、Debian 打包、真机验证，到 prepublish check、czdev 发布和维护者审核的完整流程。",
     "agreementEyebrow": "READ FIRST",
     "agreementTitle": "提交前先阅读用户协议和准入规则",
-    "agreementLead": "提交 Pull Request 即表示你确认应用元信息真实、权限声明完整、下载文件可校验，并愿意配合维护者 review。详细条款已迁移到文档中心。",
+    "agreementLead": "运行 czdev publish 并创建 package Pull Request 即表示你确认应用元信息真实、权限声明完整、下载文件可校验，并愿意配合维护者 review。详细条款已迁移到文档中心。",
     "readAgreement": "阅读协议",
     "openGuide": "打开提交指南",
     "skillTitle": "使用 Skill 和 AI Coding 开发",
-    "skillLead": "把 cardputer-zero-application skill 当作开发检查表，让 AI 先确认 APPLaunch 约定、framebuffer、打包路径和真机验证点，再开始编码。",
+    "skillLead": "用 cardputer-zero-application 检查应用质量，用 cardputer-app-publish 检查 czdev 发布流程，让 AI 在发布前确认 APPLaunch 约定、素材、package metadata 和真机验证点。",
     "flowTitle": "开发和审核流程图",
-    "flowLead": "点击任一步骤查看验收点和对应文档。流程内容来自 cardputer-zero-application skill 的 APPLaunch、Debian 打包、framebuffer 和真机验证经验。",
+    "flowLead": "点击任一步骤查看验收点和对应文档。流程结合了 cardputer-zero-application 的 APPLaunch 验证和 cardputer-app-publish 的 czdev 发布检查。",
     "detailTitle": "当前步骤",
     "checksTitle": "验收点",
     "openDocument": "打开对应文档",
@@ -353,7 +353,7 @@
         "checks": [
           "先确定使用语言、应用类型和运行方式。",
           "确认目标是 320 x 170 GUI、CLI 工具还是后台服务。",
-          "README 写清楚依赖、输入、退出方式和已知限制。"
+          "README 或 app-builder.json 写清楚依赖、输入、退出方式、已知限制和 store metadata。"
         ]
       },
       {
@@ -363,7 +363,7 @@
         "checks": [
           "安装到 /usr/share/APPLaunch 约定目录。",
           ".desktop 至少包含 Name 和 Exec，Terminal 默认 false。",
-          "registry 只接受 .deb，并要求 package 名和 MD5。"
+          "Package 必须是 arm64，并包含 package 名、MD5、APPLaunch .desktop 和图标。"
         ]
       },
       {
@@ -377,22 +377,22 @@
         ]
       },
       {
-        "title": "准备元信息",
-        "body": "补全 UUID、分享码、作者、版本、下载 URL、MD5、权限、隐私和风险声明。",
+        "title": "准备发布元信息",
+        "body": "补全 app-builder.json store metadata、多语言、图标、4 张 320 x 170 截图、时间戳、权限、隐私和风险声明。",
         "doc": "app-submission-guide",
         "checks": [
           "声明网络、文件系统、麦克风、外设和后台服务。",
           "描述源码开放程度、license 和商业使用限制。",
-          "确保下载 URL 稳定，checksum 对应同一个 .deb 文件。"
+          "使用带秒和明确时区的 ISO 8601 时间戳。"
         ]
       },
       {
-        "title": "提交 PR",
-        "body": "Fork registry 仓库，新增应用 YAML 和 assets，向主仓库提交 Pull Request。",
+        "title": "使用 czdev 发布",
+        "body": "运行严格 prepublish check，然后用 czdev login / bump / publish 创建 package Pull Request。",
         "doc": "app-submission-guide",
         "checks": [
-          "PR 描述包含应用用途、测试设备和测试结果。",
-          "图标和截图路径能被静态站点读取。",
+          "Prepublish check 无 ERROR。",
+          "Package PR 描述包含应用用途、测试设备和测试结果。",
           "如果是实验性或设备相关风险，主动标记。"
         ]
       }
@@ -400,11 +400,11 @@
     "reviewFlow": [
       {
         "title": "自动校验",
-        "body": "GitHub Actions 校验字段、UUID、分享码、素材、下载地址、checksum 和 registry 生成。",
+        "body": "GitHub Actions 校验 package metadata、素材、APT Packages 输出、checksum 和 registry 生成。",
         "doc": "appstore-registry-requirements",
         "checks": [
-          "YAML/JSON 能解析，UUID 和分享码唯一。",
-          "下载地址、包名和 MD5 可以验证。",
+          "meta.json 能解析，图片路径是 package 相对路径。",
+          "Package 名、MD5、SHA256 和 APT index 条目可以验证。",
           "生成 registry.json，并保留 registry-index.json 作为旧版兼容别名。"
         ]
       },
@@ -430,17 +430,17 @@
       },
       {
         "title": "合并发布",
-        "body": "审核通过后合并 PR，生成 registry JSON/YAML，并通过 GitHub Pages 发布。",
+        "body": "Package PR 审核通过后重建 APT index；Hub 同步后重新生成 registry JSON 并通过 GitHub Pages 发布。",
         "doc": "appstore-registry-requirements",
         "checks": [
-          "GitHub Pages 能访问新 registry。",
-          "真机 AppStore 刷新后能看到应用。",
+          "GitHub Pages 能访问同步后的 registry。",
+          "真机 AppStore 刷新后能看到 approved 应用。",
           "详情页、分享码和评论入口正常。"
         ]
       },
       {
         "title": "持续维护",
-        "body": "下载地址、版本、权限或行为变化时，开发者需要继续更新 registry 元信息。",
+        "body": "版本、截图、权限或行为变化时，开发者需要发布新 package 或 metadata 更新。",
         "doc": "user-agreement",
         "checks": [
           "新版本行为变化要先更新权限和隐私声明。",
@@ -450,19 +450,19 @@
       }
     ],
     "developmentTitle": "开发者准备",
-    "developmentLead": "提交前应先完成源码仓库、APPLaunch 启动、Debian 包、MD5 和真机验证。完整字段和示例放在提交指南里。",
+    "developmentLead": "发布前应先完成源码仓库、APPLaunch 启动、Debian 包、store assets、MD5 和真机验证。完整字段和示例放在提交指南里。",
     "reviewTitle": "审核与发布",
     "reviewLead": "CI 只是第一道门槛，维护者会继续检查风险、体验、隐私和设备安全。完整规则放在准入政策里。",
     "metadataTitle": "元信息重点",
     "metadata": [
-      "每个应用必须有稳定 UUID 和唯一分享码。",
-      "以后只接受 Debian .deb 下载，并要求 registry 提供 MD5。",
+      "app-builder.json 应提供 store metadata 和 zh-CN/en/ja 多语言文本。",
+      "只接受 Debian .deb package，并在 packages 仓库保留 MD5 和 package metadata。",
       "权限、隐私、外部硬件、后台服务、HDMI、商业限制和已知风险必须明确声明。"
     ],
     "ciTitle": "自动检查",
     "ci": [
-      "校验 registry 元信息、UUID、分享码、必填字段和素材路径。",
-      "检查下载地址、包名、checksum 和生成后的 registry.json。",
+      "校验 app-builder.json、package metadata、必填字段和素材路径。",
+      "检查 package 名、checksum、APT index 和生成后的 registry.json。",
       "CI 通过不等于自动上架。"
     ],
     "maintainerTitle": "维护者审核",
@@ -494,7 +494,7 @@
       },
       "submission": {
         "title": "应用提交指南",
-        "summary": "如何准备应用仓库、Debian 包、metadata、assets，并通过 Pull Request 提交。"
+        "summary": "如何准备 czdev、Debian 包、app-builder metadata、assets、prepublish check 和 package PR。"
       },
       "agreement": {
         "title": "用户与开发者协议",

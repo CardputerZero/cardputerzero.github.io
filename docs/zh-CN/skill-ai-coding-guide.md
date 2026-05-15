@@ -7,7 +7,7 @@
 - 新建或移植 CardputerZero 应用。
 - 修复 APPLaunch 启动、图标、`.desktop`、退出或键盘问题。
 - 打包 AArch64 Debian `.deb`。
-- 准备 AppStore registry 元信息。
+- 准备 AppStore metadata、store assets 和 `czdev publish` 发布材料。
 - 在真机上验证 `/usr/share/APPLaunch`、`LV_LINUX_FBDEV_DEVICE`、安装、运行和卸载流程。
 
 ## 推荐协作方式
@@ -34,7 +34,7 @@
 7. 本地构建并生成 `.deb`。
 8. 拷贝到真机安装。
 9. 从 APPLaunch 启动、退出、重新进入，并检查日志。
-10. 整理 registry metadata、MD5 和提交说明。
+10. 运行 prepublish check，整理 metadata、MD5、截图和 `czdev publish` 提交说明。
 
 ## 关键设备约束
 
@@ -83,8 +83,9 @@ framebuffer 应用必须谨慎处理设备号。真机小屏实际可能是 `/de
 ### 准备提交 AppStore
 
 ```text
-使用 cardputer-zero-application skill，基于这个应用生成 AppStore metadata 草稿。
-必须包含 UUID、share code、作者、版本、.deb URL、package、MD5、权限、隐私、风险和真机验证说明。
+使用 cardputer-zero-application 和 cardputer-app-publish skill，准备这个应用的 AppStore 发布材料。
+先检查 app-builder.json 的 store 段、图标、4 张 320x170 截图、.deb control、APPLaunch .desktop、package、MD5 和真机验证说明。
+严格 prepublish check 通过后，再给出 czdev login / bump / publish 命令。
 ```
 
 ## 真机验收清单
@@ -106,6 +107,8 @@ framebuffer 应用必须谨慎处理设备号。真机小屏实际可能是 `/de
 - 修改了哪些文件。
 - 如何构建 `.deb`。
 - 如何计算 MD5。
+- 是否已经通过 prepublish check。
+- 应该执行的 `czdev publish --deb <file.deb>` 命令。
 - 真机测试了哪些项目。
 - AppStore metadata 还有哪些字段需要人工确认。
 
