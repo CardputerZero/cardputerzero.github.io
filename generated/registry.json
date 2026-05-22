@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-15T00:17:06+08:00",
+  "generated_at": "2026-05-22T20:30:06+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -186,6 +186,95 @@
         "assets/ff2ee91e/screenshots/subscriptions.png",
         "assets/ff2ee91e/screenshots/source-edit.png",
         "assets/ff2ee91e/screenshots/manager.png"
+      ]
+    },
+    {
+      "uuid": "2c7750a1-8ad8-5bb2-b16d-813115dc04b8",
+      "share_code": "card",
+      "title": "XiaoZhi",
+      "summary": "Voice-first AI assistant for CardputerZero with activation, chat, and continuous listening.",
+      "description": "XiaoZhi brings the xiaozhi.me voice assistant experience to CardputerZero with activation-code pairing, push-to-talk wake, bidirectional voice chat, server-side VAD, and continuous conversation flow. The package is tuned for the 320 x 170 framebuffer UI and ships as an APPLaunch-ready Debian package.",
+      "locales": {
+        "zh-CN": {
+          "title": "小智语音助手",
+          "summary": "面向 CardputerZero 的语音 AI 助手，支持激活、对话和连续聆听。",
+          "description": "XiaoZhi 将小智语音助手移植到 CardputerZero，提供激活码绑定、按键唤醒、双向语音对话、服务端 VAD 和连续对话体验。应用面向 320 x 170 framebuffer 屏幕优化，内置中文与 emoji 字体打包策略，并通过 APPLaunch 入口集成到设备主界面。"
+        },
+        "en": {
+          "title": "XiaoZhi Voice Assistant",
+          "summary": "Voice-first AI assistant for CardputerZero with activation, chat, and continuous listening.",
+          "description": "XiaoZhi brings the xiaozhi.me voice assistant experience to CardputerZero with activation-code pairing, push-to-talk wake, bidirectional voice chat, server-side VAD, and continuous conversation flow. The package is tuned for the 320 x 170 framebuffer UI and ships as an APPLaunch-ready Debian package."
+        },
+        "ja": {
+          "title": "XiaoZhi 音声アシスタント",
+          "summary": "CardputerZero 向けの音声 AI アシスタント。認証、会話、連続リスニングに対応。",
+          "description": "XiaoZhi は xiaozhi.me の音声アシスタント体験を CardputerZero に移植したアプリです。アクティベーションコード連携、プッシュトゥトーク、双方向音声会話、サーバー側 VAD、連続会話フローを提供し、320 x 170 の framebuffer UI に最適化されています。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "小智语音助手",
+          "summary": "面向 CardputerZero 的语音 AI 助手，支持激活、对话和连续聆听。",
+          "description": "XiaoZhi 将小智语音助手移植到 CardputerZero，提供激活码绑定、按键唤醒、双向语音对话、服务端 VAD 和连续对话体验。应用面向 320 x 170 framebuffer 屏幕优化，内置中文与 emoji 字体打包策略，并通过 APPLaunch 入口集成到设备主界面。"
+        },
+        "en": {
+          "title": "XiaoZhi Voice Assistant",
+          "summary": "Voice-first AI assistant for CardputerZero with activation, chat, and continuous listening.",
+          "description": "XiaoZhi brings the xiaozhi.me voice assistant experience to CardputerZero with activation-code pairing, push-to-talk wake, bidirectional voice chat, server-side VAD, and continuous conversation flow. The package is tuned for the 320 x 170 framebuffer UI and ships as an APPLaunch-ready Debian package."
+        },
+        "ja": {
+          "title": "XiaoZhi 音声アシスタント",
+          "summary": "CardputerZero 向けの音声 AI アシスタント。認証、会話、連続リスニングに対応。",
+          "description": "XiaoZhi は xiaozhi.me の音声アシスタント体験を CardputerZero に移植したアプリです。アクティベーションコード連携、プッシュトゥトーク、双方向音声会話、サーバー側 VAD、連続会話フローを提供し、320 x 170 の framebuffer UI に最適化されています。"
+        }
+      },
+      "categories": [
+        "AI",
+        "Communication",
+        "Utilities"
+      ],
+      "author": {},
+      "version": "0.2.0-m5stack1",
+      "published_at": "2026-05-22T20:30:06+08:00",
+      "updated_at": "2026-05-22T20:30:06+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/JdaieLin/cardputer-xiaozhi",
+      "download": {
+        "type": "deb",
+        "package": "cardputerzero-xiaozhi",
+        "url": "https://github.com/CardputerZero/packages/raw/main/pool/main/cardputerzero-xiaozhi/cardputerzero-xiaozhi_0.2.0-m5stack1_arm64.deb",
+        "md5": "f8cac7a13bec83f353292ffe1c191757",
+        "sha256": "03765f84c02014355820b84b07eb920a3b1a610291ea4015c626bdafc46bc4f7",
+        "size": 25877702
+      },
+      "depends": "",
+      "permissions": {
+        "microphone": true,
+        "audio_output": true,
+        "network": true,
+        "filesystem": "app-data-only",
+        "keyboard_input": true,
+        "background_service": false,
+        "external_hardware": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/xiaozhi.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/01-binding.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/02-idle.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/03-listening.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/04-speaking.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/xiaozhi.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/01-binding.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/02-idle.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/03-listening.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/04-speaking.png"
       ]
     },
     {
