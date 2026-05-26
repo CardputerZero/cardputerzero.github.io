@@ -212,6 +212,7 @@ Pull Request 阶段应执行：
 - `categories`：分类，可多选。
 - `device_targets`：设备，当前暂时只有 `CardputerZero`，Web UI 可先隐藏。
 - `author.github`：作者 GitHub ID。
+- `author.website`：作者或团队网站，推荐使用 `https://` URL；Web UI 会在详情页右侧属性栏中作为外部链接展示。
 - `icon`：应用图标。
 - `screenshots`：截图，强烈推荐。
 - `download.url`：Debian `.deb` 下载地址或 release artifact 地址。
@@ -258,7 +259,8 @@ Pull Request 阶段应执行：
   "categories": ["Utilities"],
   "author": {
     "github": "developer-github-id",
-    "display_name": "Developer Name"
+    "display_name": "Developer Name",
+    "website": "https://example.com"
   },
   "license": "MIT",
   "source_repo": "https://github.com/example/app",

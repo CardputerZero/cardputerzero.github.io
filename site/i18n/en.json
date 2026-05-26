@@ -63,6 +63,7 @@
     "screenshots": "Screenshots"
   },
   "fields": {
+    "author": "Author",
     "checksum": "MD5",
     "download": "Download URL",
     "license": "License",
@@ -70,7 +71,8 @@
     "status": "Review status",
     "updated": "Updated",
     "uuid": "UUID",
-    "version": "Version"
+    "version": "Version",
+    "website": "Author Website"
   },
   "filters": {
     "any": "Any",

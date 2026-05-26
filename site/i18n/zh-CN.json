@@ -63,6 +63,7 @@
     "screenshots": "截图"
   },
   "fields": {
+    "author": "作者",
     "checksum": "MD5",
     "download": "下载地址",
     "license": "许可证",
@@ -70,7 +71,8 @@
     "status": "审核状态",
     "updated": "更新时间",
     "uuid": "UUID",
-    "version": "版本"
+    "version": "版本",
+    "website": "作者网站"
   },
   "filters": {
     "any": "不限",

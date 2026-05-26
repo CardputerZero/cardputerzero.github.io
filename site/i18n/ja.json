@@ -63,6 +63,7 @@
     "screenshots": "スクリーンショット"
   },
   "fields": {
+    "author": "作者",
     "checksum": "MD5",
     "download": "ダウンロード URL",
     "license": "ライセンス",
@@ -70,7 +71,8 @@
     "status": "レビュー状態",
     "updated": "更新日",
     "uuid": "UUID",
-    "version": "バージョン"
+    "version": "バージョン",
+    "website": "作者サイト"
   },
   "filters": {
     "any": "すべて",

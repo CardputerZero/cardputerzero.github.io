@@ -44,7 +44,7 @@ Hub は GitHub Pages で公開できるアプリカタログです。生成さ�
 必要なアプリ情報：
 
 - 安定した UUID と一意の共有コード。
-- タイトル、概要、説明、`locales` / `i18n` の多言語文言、カテゴリ、GitHub 作者 ID。
+- タイトル、概要、説明、`locales` / `i18n` の多言語文言、カテゴリ、GitHub 作者 ID、任意の `author.website` URL。
 - バージョン、license、ソース公開度、ソースリポジトリ。
 - Debian package 名、`.deb` URL、MD5 checksum、package 相対の icon と screenshot パス。
 - 権限、プライバシー、外部機器、バックグラウンドサービス、HDMI、商用利用、リスク。

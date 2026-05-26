@@ -144,6 +144,11 @@ GUI 应用使用 `Terminal=false`。如果需要参数、切换目录或设置 f
     "screenshots/settings.png",
     "screenshots/confirm.png"
   ],
+  "author": {
+    "github": "developer-github-id",
+    "display_name": "Developer Name",
+    "website": "https://example.com"
+  },
   "published_at": "2026-05-14T23:20:55+08:00",
   "updated_at": "2026-05-14T23:20:55+08:00"
 }

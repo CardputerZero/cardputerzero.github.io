@@ -187,10 +187,12 @@ function normalizeApp(app) {
   const review = app.review || {
     status: app.review_status || "approved"
   };
+  const author = app.author && typeof app.author === "object" ? app.author : {};
   const appMeta = app.app || {};
   return {
     ...app,
     categories: app.categories || [],
+    author,
     locales: app.locales || app.i18n || {},
     published_at: publishedAt,
     updated_at: updatedAt,
@@ -595,6 +597,8 @@ function getFilteredApps() {
         app.uuid,
         app.share_code,
         app.author.github,
+        app.author.display_name,
+        app.author.website,
         app.categories.join(" "),
         app.source.openness,
         localized(app, "title"),
@@ -700,6 +704,8 @@ function renderDetail(id) {
             <button class="button secondary" data-copy="${escapeAttr(app.share_code)}" type="button">${t("actions.copy")}</button>
           </div>
           <div class="meta-list">
+            ${metaExternalLink(t("fields.author"), authorDisplayName(app), authorGithubUrl(app))}
+            ${authorWebsiteUrl(app) ? metaExternalLink(t("fields.website"), urlDisplayText(authorWebsiteUrl(app)), authorWebsiteUrl(app), true) : ""}
             ${meta(t("fields.status"), labelFor("review", app.review.status))}
             ${meta(t("fields.version"), app.version)}
             ${meta(t("fields.updated"), formatDate(app.updated_at))}
@@ -1269,6 +1275,56 @@ function badge(text, type = "") {
 function meta(label, value, mono = false) {
   const content = mono ? `<code>${escapeHtml(value)}</code>` : `<strong>${escapeHtml(value)}</strong>`;
   return `<div class="meta-row"><span>${escapeHtml(label)}</span>${content}</div>`;
+}
+
+function metaExternalLink(label, value, href, mono = false) {
+  if (!value) return "";
+  const safeHref = safeExternalUrl(href);
+  if (!safeHref) return meta(label, value, mono);
+  const content = mono ? `<code>${escapeHtml(value)}</code>` : `<strong>${escapeHtml(value)}</strong>`;
+  return `<div class="meta-row"><span>${escapeHtml(label)}</span><a href="${escapeAttr(safeHref)}" target="_blank" rel="noopener noreferrer">${content}</a></div>`;
+}
+
+function authorDisplayName(app) {
+  const author = app.author || {};
+  return author.display_name || author.name || author.github || "";
+}
+
+function authorGithubUrl(app) {
+  const github = String(app.author?.github || "").trim();
+  if (!github) return "";
+  if (github.startsWith("http://") || github.startsWith("https://")) return safeExternalUrl(github);
+  if (!/^[A-Za-z0-9-]+$/.test(github)) return "";
+  return `https://github.com/${encodeURIComponent(github)}`;
+}
+
+function authorWebsiteUrl(app) {
+  const author = app.author || {};
+  return safeExternalUrl(author.website || author.url || author.homepage || "");
+}
+
+function safeExternalUrl(value) {
+  const raw = String(value || "").trim();
+  if (!raw) return "";
+  const href = /^[a-z][a-z0-9+.-]*:/i.test(raw) ? raw : `https://${raw}`;
+  try {
+    const url = new URL(href);
+    return url.protocol === "http:" || url.protocol === "https:" ? url.href : "";
+  } catch {
+    return "";
+  }
+}
+
+function urlDisplayText(value) {
+  const safeHref = safeExternalUrl(value);
+  if (!safeHref) return "";
+  try {
+    const url = new URL(safeHref);
+    const path = url.pathname === "/" ? "" : url.pathname.replace(/\/$/, "");
+    return `${url.hostname}${path}${url.search}`;
+  } catch {
+    return value;
+  }
 }
 
 function allPermissionBadges(app) {

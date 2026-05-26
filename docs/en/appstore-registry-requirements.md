@@ -44,7 +44,7 @@ Each app should provide source-side `app-builder.json` store metadata and packag
 Required app information:
 
 - Stable UUID and unique share code.
-- Title, summary, description, localized `locales` / `i18n` text, categories, and author GitHub ID.
+- Title, summary, description, localized `locales` / `i18n` text, categories, author GitHub ID, and optional `author.website` URL.
 - Version, license, source openness, and source repository.
 - Debian package name, `.deb` URL, MD5 checksum, and package-relative icon and screenshot paths.
 - Permissions, privacy behavior, external hardware, background service, HDMI, commercial use, and risk flags.

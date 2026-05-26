@@ -144,6 +144,11 @@ Package metadata copied into `CardputerZero/packages` must use paths relative to
     "screenshots/settings.png",
     "screenshots/confirm.png"
   ],
+  "author": {
+    "github": "developer-github-id",
+    "display_name": "Developer Name",
+    "website": "https://example.com"
+  },
   "published_at": "2026-05-14T23:20:55+08:00",
   "updated_at": "2026-05-14T23:20:55+08:00"
 }
