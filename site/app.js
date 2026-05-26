@@ -218,9 +218,9 @@ function normalizeApp(app) {
 }
 
 async function loadLocale(locale) {
-  const response = await fetch(`site/i18n/${locale}.json`);
+  const response = await fetch(withTimestamp(`site/i18n/${locale}.json`, APP_LOADED_AT));
   if (!response.ok) {
-    return fetchJson("site/i18n/zh-CN.json");
+    return fetchJson(withTimestamp("site/i18n/zh-CN.json", APP_LOADED_AT));
   }
   return response.json();
 }
