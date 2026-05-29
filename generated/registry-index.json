@@ -19,7 +19,7 @@
       "uuid": "4ff51d2b-acfa-5300-b79a-27ef9512e079",
       "share_code": "2048",
       "title": "2048",
-      "summary": "Classic 2048 puzzle game tuned for the Cardputer Zero keyboard.",
+      "summary": "Classic 2048 puzzle game tuned for the CardputerZero keyboard.",
       "description": "Classic 2048 puzzle game for CardputerZero with keyboard controls, smooth tile movement, and sound effects.",
       "locales": {
         "en": {
