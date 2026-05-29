@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-27T15:49:58+08:00",
+  "generated_at": "2026-05-29T22:41:54+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -19,7 +19,7 @@
       "uuid": "4ff51d2b-acfa-5300-b79a-27ef9512e079",
       "share_code": "2048",
       "title": "2048",
-      "summary": "Classic 2048 puzzle game tuned for the CardputerZero keyboard.",
+      "summary": "Classic 2048 puzzle game tuned for the Cardputer Zero keyboard.",
       "description": "Classic 2048 puzzle game for CardputerZero with keyboard controls, smooth tile movement, and sound effects.",
       "locales": {
         "en": {
@@ -191,7 +191,7 @@
       ]
     },
     {
-      "uuid": "7867eb64-8a1c-5b02-aa58-c43f87c9eb99",
+      "uuid": "6756f2ad-b29a-5241-85e7-93a08f14e1e8",
       "share_code": "card",
       "title": "XiaoZhi",
       "summary": "Voice-first AI assistant for CardputerZero with activation, chat, and continuous listening.",
@@ -236,9 +236,9 @@
         "Utilities"
       ],
       "author": {},
-      "version": "0.2.1-m5stack1",
-      "published_at": "2026-05-27T15:49:58+08:00",
-      "updated_at": "2026-05-27T15:49:58+08:00",
+      "version": "0.2.2-m5stack1",
+      "published_at": "2026-05-29T22:41:54+08:00",
+      "updated_at": "2026-05-29T22:41:54+08:00",
       "review": {
         "status": "approved"
       },
@@ -247,12 +247,12 @@
       "download": {
         "type": "deb",
         "package": "cardputerzero-xiaozhi",
-        "url": "https://github.com/CardputerZero/packages/raw/main/pool/main/cardputerzero-xiaozhi/cardputerzero-xiaozhi_0.2.1-m5stack1_arm64.deb",
-        "md5": "ec93c9221fee51dcf8e592dfe006c492",
-        "sha256": "d32a06a6ca416e01f06118ca09321fbaa1f81cd3739c7aa551f33e6ec7d66d55",
-        "size": 25694064
+        "url": "https://github.com/CardputerZero/packages/raw/main/pool/main/cardputerzero-xiaozhi/cardputerzero-xiaozhi_0.2.2-m5stack1_arm64.deb",
+        "md5": "c69b50c077af62676d52be83daef9d40",
+        "sha256": "53c6dea5d7dc671618d5edfbe894522c72f5efb38ff545a9eeec7a15327f7ea4",
+        "size": 25851200
       },
-      "depends": "",
+      "depends": "libsdl2-2.0-0, libsdl2-ttf-2.0-0, libopus0, python3, python3-pil, pipewire, pipewire-pulse, wireplumber",
       "permissions": {
         "microphone": true,
         "audio_output": true,
