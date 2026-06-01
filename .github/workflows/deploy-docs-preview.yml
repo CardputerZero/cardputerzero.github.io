@@ -1,0 +1,119 @@
+name: Deploy Docs Preview
+
+on:
+  push:
+    branches:
+      - docs/vitepress
+      - docs/mkdocs
+      - docs/docusaurus
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  deployments: write
+
+jobs:
+  deploy-vitepress:
+    if: github.ref == 'refs/heads/docs/vitepress'
+    runs-on: ubuntu-latest
+    environment:
+      name: docs-preview-vitepress
+      url: ${{ steps.deployment.outputs.page_url }}docs/
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install and Build
+        working-directory: developer-docs
+        run: |
+          npm install
+          npm run build
+
+      - name: Merge with existing site
+        run: |
+          mkdir -p _site
+          # Copy existing static site
+          cp -r index.html assets site generated _site/ 2>/dev/null || true
+          cp -r docs _site/docs-old 2>/dev/null || true
+          # Copy VitePress output to /docs/
+          cp -r developer-docs/.vitepress/dist _site/docs
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  deploy-mkdocs:
+    if: github.ref == 'refs/heads/docs/mkdocs'
+    runs-on: ubuntu-latest
+    environment:
+      name: docs-preview-mkdocs
+      url: ${{ steps.deployment.outputs.page_url }}docs/
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install and Build
+        working-directory: developer-docs
+        run: |
+          pip install -r requirements.txt
+          mkdocs build -d site
+
+      - name: Merge with existing site
+        run: |
+          mkdir -p _site
+          cp -r index.html assets site generated _site/ 2>/dev/null || true
+          cp -r docs _site/docs-old 2>/dev/null || true
+          cp -r developer-docs/site _site/docs
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  deploy-docusaurus:
+    if: github.ref == 'refs/heads/docs/docusaurus'
+    runs-on: ubuntu-latest
+    environment:
+      name: docs-preview-docusaurus
+      url: ${{ steps.deployment.outputs.page_url }}docs/
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install and Build
+        working-directory: developer-docs
+        run: |
+          npm install
+          npm run build
+
+      - name: Merge with existing site
+        run: |
+          mkdir -p _site
+          cp -r index.html assets site generated _site/ 2>/dev/null || true
+          cp -r docs _site/docs-old 2>/dev/null || true
+          cp -r developer-docs/build _site/docs
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
