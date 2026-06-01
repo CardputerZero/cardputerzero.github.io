@@ -118,6 +118,7 @@ export default defineConfig({
     nav: [
       { text: 'User', link: '/user/' },
       { text: 'Developer', link: '/dev/' },
+      { text: 'Open Tasks', link: '/dev/open-tasks' },
     ],
     sidebar: {
       '/user/': [
