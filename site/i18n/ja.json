@@ -98,7 +98,11 @@
     "featuredLead": "実際の APPLaunch 素材を使った mock registry です。ページ、フィルタ、共有コードの検証に使えます。",
     "lead": "静的に公開できる CardputerZero アプリディレクトリです。検索、絞り込み、権限とリスク確認、共有コードでのデバイス検索に対応します。",
     "subtitle": "AppStore & Registry",
-    "title": "CardputerZero Hub"
+    "title": "CardputerZero Hub",
+    "developersCta": "開発者向け",
+    "developersLead": "CardputerZero アプリを提出・管理し、発見しやすく安全なダウンロードを実現します。",
+    "usersCta": "ユーザー向け",
+    "usersLead": "CardputerZero アプリを検索・絞り込みし、AppStore の共有コードからダウンロードできます。"
   },
   "notFound": {
     "lead": "この UUID または共有コードは現在の mock registry にありません。",

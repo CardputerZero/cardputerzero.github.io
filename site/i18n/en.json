@@ -98,7 +98,11 @@
     "featuredLead": "A mock registry built with real APPLaunch assets for validating pages, filters, and share-code flows.",
     "lead": "A static CardputerZero app directory. Search, filter, review permissions and risks, then use a share code on the device AppStore.",
     "subtitle": "AppStore & Registry",
-    "title": "CardputerZero Hub"
+    "title": "CardputerZero Hub",
+    "developersCta": "For developers",
+    "developersLead": "Submit and manage CardputerZero apps for easier discovery and safer downloads.",
+    "usersCta": "For users",
+    "usersLead": "Search and filter CardputerZero apps, and download them via share code in the AppStore."
   },
   "notFound": {
     "lead": "This UUID or share code is not present in the current mock registry.",

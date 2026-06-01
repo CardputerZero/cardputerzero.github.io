@@ -313,18 +313,22 @@ function renderHome() {
   appRoot.innerHTML = `
     <section class="route-panel">
       <div class="home-grid">
-        <section class="hero">
-          <div>
-            <p class="eyebrow">${t("home.eyebrow")}</p>
-            <h1>${t("home.title")}</h1>
-            <p class="hero-subtitle">${t("home.subtitle")}</p>
-            <p class="lead">${t("home.lead")}</p>
+        <section class="hero hero-banner">
+          <div class="hero-banner-media" aria-hidden="true">
+            <img class="hero-banner-image" src="assets/banner.jpg" alt="">
           </div>
-          <form class="search-row" id="home-search">
-            <label class="visually-hidden" for="home-query">${t("search.label")}</label>
-            <input class="input" id="home-query" name="query" type="search" autocomplete="off" placeholder="${t("search.placeholder")}" value="${escapeAttr(state.query)}">
-            <button class="button" type="submit">${t("actions.search")}</button>
-          </form>
+          <div class="hero-banner-overlay">
+            <div class="hero-cta-grid">
+              <div class="hero-cta hero-cta-developers">
+                <a class="hero-cta-button hero-cta-button-developers" href="#/documents">${t("home.developersCta")}</a>
+                <p class="hero-cta-desc">${t("home.developersLead")}</p>
+              </div>
+              <div class="hero-cta hero-cta-users">
+                <a class="hero-cta-button hero-cta-button-users" href="#/apps">${t("home.usersCta")}</a>
+                <p class="hero-cta-desc">${t("home.usersLead")}</p>
+              </div>
+            </div>
+          </div>
         </section>
         ${renderRegistryPanel()}
       </div>
@@ -341,12 +345,6 @@ function renderHome() {
     </section>
   `;
 
-  document.querySelector("#home-search").addEventListener("submit", (event) => {
-    event.preventDefault();
-    state.query = new FormData(event.currentTarget).get("query").trim();
-    state.page = 1;
-    location.hash = "#/apps";
-  });
 }
 
 function renderRegistryPanel() {

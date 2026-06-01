@@ -98,7 +98,11 @@
     "featuredLead": "用真实 APPLaunch 素材组成的 mock registry，适合验证页面、筛选和分享码流程。",
     "lead": "一个可静态发布的 CardputerZero 应用目录。用户可以搜索、筛选、查看权限风险，并用分享码在真机 AppStore 中查找下载。",
     "subtitle": "AppStore & Registry",
-    "title": "CardputerZero Hub"
+    "title": "CardputerZero Hub",
+    "developersCta": "面向开发者",
+    "developersLead": "提交并管理 CardputerZero 应用，让应用更容易被发现、下载更安全。",
+    "usersCta": "面向用户",
+    "usersLead": "搜索和筛选 CardputerZero 应用，并通过 AppStore 分享码下载安装。"
   },
   "notFound": {
     "lead": "这个 UUID 或分享码不在当前 mock registry 中。",
