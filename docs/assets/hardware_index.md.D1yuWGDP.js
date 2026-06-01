@@ -1,0 +1,16 @@
+import{_ as n,o as s,c as e,a2 as r}from"./chunks/framework.y1bVONfd.js";const m=JSON.parse('{"title":"Hardware Overview","description":"","frontmatter":{},"headers":[],"relativePath":"hardware/index.md","filePath":"hardware/index.md"}'),i={name:"hardware/index.md"};function p(l,a,t,c,o,d){return s(),e("div",null,[...a[0]||(a[0]=[r(`<h1 id="hardware-overview" tabindex="-1">Hardware Overview <a class="header-anchor" href="#hardware-overview" aria-label="Permalink to &quot;Hardware Overview&quot;">​</a></h1><p>CardputerZero V0.3 block diagram:</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>┌──────────┐    ┌──────────┐    ┌─────────────────────────┐</span></span>
+<span class="line"><span>│  USB-A   │    │  HDMI    │    │      CM0 (132-pin)      │</span></span>
+<span class="line"><span>│  USBC-L  │───▶│USB2.0 HUB│───▶│  BCM2710A1             │</span></span>
+<span class="line"><span>│  100M RJ45│    │          │    │  Cortex-A53 × 4        │</span></span>
+<span class="line"><span>│  1.25-4p │    └──────────┘    │  512MB LPDDR2          │</span></span>
+<span class="line"><span>└──────────┘                    │  WiFi/BT               │</span></span>
+<span class="line"><span>                                │                         │</span></span>
+<span class="line"><span>┌──────────┐    ┌──────────┐    │  SPI0 ──── LCD         │</span></span>
+<span class="line"><span>│  USBC-R  │───▶│  IP2315  │    │  I2S  ──── ES8389      │</span></span>
+<span class="line"><span>│ (charge) │    │ (charger)│    │  I2C1 ──── TCA8418 KB  │</span></span>
+<span class="line"><span>└──────────┘    └──────────┘    │  I2C1 ──── BQ27220     │</span></span>
+<span class="line"><span>                                │  I2C1 ──── IMU/RTC     │</span></span>
+<span class="line"><span>┌──────────┐    ┌──────────┐    │  CSI  ──── Camera      │</span></span>
+<span class="line"><span>│  BATTERY │───▶│ BQ27220  │    │  GPIO ──── Grove/HAT   │</span></span>
+<span class="line"><span>│ 1500mAh  │    │ (gauge)  │    └─────────────────────────┘</span></span>
+<span class="line"><span>└──────────┘    └──────────┘</span></span></code></pre></div><h2 id="sections" tabindex="-1">Sections <a class="header-anchor" href="#sections" aria-label="Permalink to &quot;Sections&quot;">​</a></h2><ul><li><a href="/docs/hardware/display.html">Display</a> — ST7789V3, SPI interface, backlight control</li><li><a href="/docs/hardware/keyboard.html">Keyboard</a> — 46-key matrix, TCA8418 scanner</li><li><a href="/docs/hardware/audio.html">Audio</a> — ES8389 codec, speaker, mic, 3.5mm jack</li><li><a href="/docs/hardware/power.html">Power</a> — Battery, charging, power management</li><li><a href="/docs/hardware/connectivity.html">Connectivity</a> — WiFi, BT, Ethernet, USB, HDMI, IR</li><li><a href="/docs/hardware/camera.html">Camera</a> — 8MP IMX219 via MIPI CSI (Full version)</li><li><a href="/docs/hardware/expansion.html">Expansion</a> — Grove, HAT port, GPIO header</li></ul>`,5)])])}const v=n(i,[["render",p]]);export{m as __pageData,v as default};

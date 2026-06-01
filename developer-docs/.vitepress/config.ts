@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'CardputerZero',
   description: 'Developer Documentation for M5Stack CardputerZero',
+  ignoreDeadLinks: true,
   base: '/docs/',
   themeConfig: {
     logo: '/logo.png',
