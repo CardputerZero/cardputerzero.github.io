@@ -25,7 +25,7 @@ CardputerZero 运行完整 Linux 系统，配合针对 320×170 屏幕和 46 键
 vim main.c
 
 # 2. 用 Docker SDK 编译（Windows/macOS/Linux 通用）
-docker run --rm -v $(pwd):/src ghcr.io/cardputerzero/sdk:latest \
+docker run --rm -v $(pwd):/src ghcr.io/cardputerzero/build-env:latest \
   scripts/pack-deb.sh MyApp
 
 # 3. 部署到设备

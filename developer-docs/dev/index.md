@@ -37,7 +37,7 @@ CardputerZero runs a full Linux system with a custom application layer optimized
 vim main.c
 
 # 2. Build with Docker SDK (works on Windows/macOS/Linux)
-docker run --rm -v $(pwd):/src ghcr.io/cardputerzero/sdk:latest \
+docker run --rm -v $(pwd):/src ghcr.io/cardputerzero/build-env:latest \
   scripts/pack-deb.sh MyApp
 
 # 3. Deploy to device

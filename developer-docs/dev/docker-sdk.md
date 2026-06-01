@@ -18,7 +18,7 @@ git clone https://github.com/eggfly/CardputerZero-Examples.git
 cd CardputerZero-Examples
 
 # Build ALL examples into .deb packages
-docker run --rm -v $(pwd):/src ghcr.io/cardputerzero/sdk:latest
+docker run --rm -v $(pwd):/src ghcr.io/cardputerzero/build-env:latest
 
 # Output
 ls dist/
@@ -30,7 +30,7 @@ ls dist/
 ## Build a Single App
 
 ```bash
-docker run --rm -v $(pwd):/src ghcr.io/cardputerzero/sdk:latest \
+docker run --rm -v $(pwd):/src ghcr.io/cardputerzero/build-env:latest \
   scripts/pack-deb.sh SDL2_HelloWorld
 ```
 
@@ -48,7 +48,7 @@ Your app now appears in the APPLauncher home screen.
 
 ## What's Inside the SDK Image
 
-The `ghcr.io/cardputerzero/sdk` Docker image includes:
+The `ghcr.io/cardputerzero/build-env` Docker image includes:
 
 | Tool | Purpose |
 |------|---------|
@@ -79,7 +79,7 @@ Our images are signed with [Sigstore cosign](https://docs.sigstore.dev/):
 cosign verify \
   --certificate-identity-regexp="github.com/CardputerZero/.*" \
   --certificate-oidc-issuer=https://token.actions.githubusercontent.com \
-  ghcr.io/cardputerzero/sdk:latest
+  ghcr.io/cardputerzero/build-env:latest
 ```
 
 ## Troubleshooting
