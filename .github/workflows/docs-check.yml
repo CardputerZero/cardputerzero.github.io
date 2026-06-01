@@ -1,0 +1,24 @@
+name: Docs Build Check
+
+on:
+  pull_request:
+    paths:
+      - 'developer-docs/**'
+
+jobs:
+  build-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        working-directory: developer-docs
+        run: npm install
+
+      - name: Build VitePress
+        working-directory: developer-docs
+        run: npm run build
