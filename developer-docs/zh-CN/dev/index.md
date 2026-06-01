@@ -21,18 +21,20 @@ CardputerZero 运行完整 Linux 系统，配合针对 320×170 屏幕和 46 键
 ## 开发流程
 
 ```bash
-# 1. 编写应用
-vim main.c
+# 1. 克隆 AppBuilder 仓库
+git clone https://github.com/CardputerZero/CardputerZero-AppBuilder.git
+cd CardputerZero-AppBuilder
 
-# 2. 用 Docker SDK 编译（Windows/macOS/Linux 通用）
-docker run --rm -v $(pwd):/src ghcr.io/cardputerzero/build-env:latest \
-  scripts/pack-deb.sh MyApp
+# 2. 一条命令编译任意示例
+docker run --rm -v $(pwd):/src -w /src \
+  ghcr.io/cardputerzero/build-env:latest \
+  scripts/pack-deb.sh examples/SDL2_HelloWorld
 
 # 3. 部署到设备
-scp dist/myapp_*.deb pi@<设备IP>:/tmp/
-ssh pi@<设备IP> "sudo dpkg -i /tmp/myapp_*.deb"
+scp dist/sdl2-hello_*.deb pi@<设备IP>:/tmp/
+ssh pi@<设备IP> "sudo dpkg -i /tmp/sdl2-hello_*.deb"
 
-# 4. 应用自动出现在主界面
+# 4. 应用立即出现在主界面
 ```
 
 ## 快速链接

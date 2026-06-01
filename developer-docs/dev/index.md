@@ -33,18 +33,20 @@ CardputerZero runs a full Linux system with a custom application layer optimized
 ## Development Workflow
 
 ```bash
-# 1. Write your app
-vim main.c
+# 1. Clone the AppBuilder
+git clone https://github.com/CardputerZero/CardputerZero-AppBuilder.git
+cd CardputerZero-AppBuilder
 
-# 2. Build with Docker SDK (works on Windows/macOS/Linux)
-docker run --rm -v $(pwd):/src ghcr.io/cardputerzero/build-env:latest \
-  scripts/pack-deb.sh MyApp
+# 2. Build any example with one command
+docker run --rm -v $(pwd):/src -w /src \
+  ghcr.io/cardputerzero/build-env:latest \
+  scripts/pack-deb.sh examples/SDL2_HelloWorld
 
 # 3. Deploy to device
-scp dist/myapp_*.deb pi@<device-ip>:/tmp/
-ssh pi@<device-ip> "sudo dpkg -i /tmp/myapp_*.deb"
+scp dist/sdl2-hello_*.deb pi@<device-ip>:/tmp/
+ssh pi@<device-ip> "sudo dpkg -i /tmp/sdl2-hello_*.deb"
 
-# 4. App appears in APPLauncher automatically
+# 4. App appears in APPLauncher immediately
 ```
 
 ## Key Specs (Developer-Relevant)
