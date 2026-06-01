@@ -4,11 +4,35 @@ Build CardputerZero apps on **any OS** (Windows, macOS, Linux) using Docker. No 
 
 ## Prerequisites
 
-1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) (Windows/macOS) or Docker Engine (Linux)
-2. Install [Git](https://git-scm.com/)
+You need a Docker runtime and Git. Choose one of the following:
+
+### macOS (Apple Silicon recommended)
+
+| Option | Install | Notes |
+|--------|---------|-------|
+| **OrbStack** (recommended) | [orbstack.dev](https://orbstack.dev/) | Fastest, lightest, free for personal use |
+| **Lima + Docker Engine** | `brew install lima && limactl start` | Fully open source, CLI-only |
+| Docker Desktop | [docker.com](https://www.docker.com/products/docker-desktop/) | Heavier, free for small teams |
+
+### Linux
+
+```bash
+# Docker Engine (official)
+curl -fsSL https://get.docker.com | sh
+sudo usermod -aG docker $USER
+```
+
+### Windows
+
+| Option | Install | Notes |
+|--------|---------|-------|
+| **Rancher Desktop** | [rancherdesktop.io](https://rancherdesktop.io/) | Open source, includes GUI |
+| Docker Desktop | [docker.com](https://www.docker.com/products/docker-desktop/) | Free for small teams |
+
+Also install [Git](https://git-scm.com/).
 
 ::: tip macOS Apple Silicon
-Docker runs arm64 Linux natively — builds are fast, no emulation.
+All options above run arm64 Linux natively — builds are fast, no emulation.
 :::
 
 ## Step 1: Clone the AppBuilder
