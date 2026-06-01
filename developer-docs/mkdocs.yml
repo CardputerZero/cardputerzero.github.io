@@ -1,0 +1,54 @@
+site_name: CardputerZero Docs
+site_url: https://cardputerzero.github.io/docs/
+site_description: Developer Documentation for M5Stack CardputerZero
+repo_url: https://github.com/CardputerZero
+repo_name: CardputerZero
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: black
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: white
+      accent: green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Guide:
+    - Introduction: guide/index.md
+    - Quick Start: guide/quick-start.md
+    - Tech Specs: guide/tech-specs.md
+  - Hardware:
+    - Overview: hardware/index.md
+  - Software:
+    - Overview: software/index.md
+    - Docker SDK: software/docker-sdk.md
+  - Resources:
+    - Repositories: resources/index.md
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
