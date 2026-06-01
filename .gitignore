@@ -1,2 +1,5 @@
 __pycache__/
 *.py[cod]
+developer-docs/.vitepress/cache
+developer-docs/.docusaurus
+developer-docs/node_modules
