@@ -1,0 +1,15 @@
+{
+  "name": "cardputerzero-docs",
+  "private": true,
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.7.0",
+    "@docusaurus/preset-classic": "^3.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
