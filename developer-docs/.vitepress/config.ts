@@ -92,26 +92,9 @@ export default defineConfig({
         },
       }
     },
-    'zh-TW': {
-      label: '繁體中文',
-      lang: 'zh-TW',
-      themeConfig: {
-        nav: [
-          { text: '使用者', link: '/zh-TW/user/' },
-          { text: '開發者', link: '/zh-TW/dev/' },
-        ],
-      }
-    },
-    ja: {
-      label: '日本語',
-      lang: 'ja',
-      themeConfig: {
-        nav: [
-          { text: 'ユーザー', link: '/ja/user/' },
-          { text: '開発者', link: '/ja/dev/' },
-        ],
-      }
-    },
+    // zh-TW and ja will be added back when translations are ready
+    // 'zh-TW': { label: '繁體中文', lang: 'zh-TW' },
+    // ja: { label: '日本語', lang: 'ja' },
   },
   themeConfig: {
     logo: '/logo.png',
