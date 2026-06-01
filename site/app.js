@@ -315,7 +315,7 @@ function renderHome() {
       <div class="home-grid">
         <section class="hero hero-banner">
           <div class="hero-banner-media" aria-hidden="true">
-            <img class="hero-banner-image" src="assets/banner.jpg" alt="">
+            <img class="hero-banner-image" src="assets/banner.jpg?v=20260601" alt="">
           </div>
           <div class="hero-banner-overlay">
             <div class="hero-cta-grid">
