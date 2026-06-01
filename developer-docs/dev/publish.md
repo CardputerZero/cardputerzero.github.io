@@ -1,12 +1,31 @@
 # AppStore Submission
 
-Publish your app to the CardputerZero AppStore so users can install it with one click.
+Publish your app to the CardputerZero AppStore using the `czdev` CLI tool.
 
 ## Overview
 
-The AppStore is backed by a GitHub-hosted APT repository at [CardputerZero/packages](https://github.com/CardputerZero/packages). Publishing means submitting a PR to that repo with your `.deb` file and metadata.
+```
+Developer → czdev login → czdev publish → PR auto-created → Review → Merged → Live in AppStore
+```
 
-## Step 1: Build Your .deb Package
+No manual git operations needed. `czdev` handles forking, branching, uploading, and PR creation automatically.
+
+## Prerequisites
+
+- `czdev` CLI installed ([CardputerZero-AppBuilder](https://github.com/CardputerZero/CardputerZero-AppBuilder))
+- `git` and `git-lfs` installed
+- A built `.deb` package
+- Screenshots (320×170 PNG) and icon (100×100 PNG)
+
+## Step 1: Login (one-time)
+
+```bash
+czdev login
+```
+
+Opens GitHub OAuth in your browser (Device Flow). After authorization, your token is stored at `~/.config/czdev/token`.
+
+## Step 2: Build Your Package
 
 ```bash
 cd CardputerZero-AppBuilder
@@ -15,121 +34,90 @@ docker run --rm -v $(pwd):/src -w /src \
   scripts/pack-deb.sh examples/MyApp
 ```
 
-Verify the output:
+## Step 3: Publish
+
 ```bash
-dpkg-deb --info dist/myapp_0.1-m5stack1_arm64.deb
+czdev publish --deb dist/myapp_1.0-m5stack1_arm64.deb
 ```
 
-## Step 2: Prepare Metadata
+This automatically:
+1. Validates your `.deb` (checks `.desktop`, email, size < 100 MB)
+2. Forks `CardputerZero/packages` (if needed)
+3. Creates a `publish/myapp-1.0-<timestamp>` branch
+4. Uploads `.deb` via git-lfs + `meta.json` + icon + screenshots
+5. Opens a Pull Request
+6. Returns the PR URL
 
-Create a `meta.json` file for your app:
+## Step 4: Review
+
+- CI validates package structure
+- A maintainer reviews the app
+- Once merged, the app appears in AppStore within minutes
+
+## Metadata (meta.json)
+
+Place alongside your source in `app-builder.json` or provide during publish:
 
 ```json
 {
   "title": "My App",
-  "summary": "A short one-line description.",
-  "description": "Detailed description of what the app does.",
+  "summary": "One-line description",
+  "description": "Detailed description.",
   "locales": {
     "zh-CN": {
       "title": "我的应用",
-      "summary": "简短描述。",
-      "description": "详细描述。"
+      "summary": "简短描述"
     }
   },
-  "categories": ["Games", "Utilities"],
+  "categories": ["Games"],
   "license": "MIT",
-  "source_repo": "https://github.com/yourname/myapp",
+  "source_repo": "https://github.com/you/myapp",
   "icon": "myapp.png",
-  "screenshots": ["screenshots/01.png", "screenshots/02.png"],
+  "screenshots": ["screenshots/01.png"],
   "permissions": {
     "microphone": false,
     "audio_output": true,
     "network": false,
-    "filesystem": "app-data-only",
-    "keyboard_input": true,
-    "background_service": false,
-    "external_hardware": false
+    "keyboard_input": true
   }
 }
 ```
 
-### Required Fields
+### Categories
 
-| Field | Description |
-|-------|-------------|
-| `title` | App name (English) |
-| `summary` | One-line description (< 80 chars) |
-| `categories` | At least one from: Games, Utilities, Communication, AI, Media, Education, Development, System |
-| `license` | SPDX identifier (MIT, GPL-3.0, Apache-2.0, etc.) |
-| `icon` | 100×100 PNG, transparent background |
+Games, Utilities, Communication, AI, Media, Education, Development, System
 
-### Optional Fields
+### Permissions
 
-| Field | Description |
-|-------|-------------|
-| `locales` | Translations (zh-CN, ja, etc.) |
-| `source_repo` | Link to source code |
-| `screenshots` | Up to 4 screenshots (320×170 PNG) |
-| `permissions` | What the app accesses |
-| `description` | Full description (Markdown supported) |
+| Permission | Description |
+|-----------|-------------|
+| `microphone` | MEMS mic access |
+| `audio_output` | Speaker / 3.5mm |
+| `network` | WiFi / Ethernet |
+| `filesystem` | `"app-data-only"` or `"full"` |
+| `keyboard_input` | Keyboard events |
+| `background_service` | Runs after exit |
+| `external_hardware` | GPIO / Grove / USB |
 
-## Step 3: Prepare Assets
-
-```
-myapp/
-├── myapp_0.1-m5stack1_arm64.deb    # The package
-├── meta.json                        # Metadata
-├── myapp.png                        # Icon (100×100)
-└── screenshots/
-    ├── 01.png                       # Screenshots (320×170)
-    └── 02.png
-```
-
-## Step 4: Submit PR
-
-1. Fork [CardputerZero/packages](https://github.com/CardputerZero/packages)
-2. Create directory `pool/main/myapp/`
-3. Copy your files into it
-4. Submit a Pull Request
+## Updating
 
 ```bash
-git clone https://github.com/YOUR_FORK/packages.git
-cd packages
-mkdir -p pool/main/myapp/screenshots
-cp /path/to/myapp_*.deb pool/main/myapp/
-cp /path/to/meta.json pool/main/myapp/
-cp /path/to/myapp.png pool/main/myapp/
-cp /path/to/screenshots/*.png pool/main/myapp/screenshots/
-git add pool/main/myapp/
-git commit -m "publish: myapp 0.1 (arm64)"
-git push
-# Then open PR on GitHub
+# Bump version in meta.env, rebuild, then:
+czdev publish --deb dist/myapp_1.1-m5stack1_arm64.deb
 ```
 
-## Step 5: Review
-
-After PR submission:
-- CI validates package structure and metadata
-- A maintainer reviews the app
-- Once merged, the app appears in the AppStore within minutes
+A new PR is created for the version bump.
 
 ## Share Codes
 
-After approval, your app gets a 4-character share code (e.g., `myap`). Users can enter this code on the device home screen (press `S`) to install directly.
-
-## Updating Your App
-
-To publish a new version:
-1. Bump `PKG_VERSION` in `packaging/meta.env`
-2. Rebuild the `.deb`
-3. Replace the `.deb` in your PR (same directory)
-4. Update `meta.json` if description changed
+After approval, your app gets a 4-character share code. Users press `S` on the home screen and enter the code to install.
 
 ## Guidelines
 
-- Apps must work on 320×170 display
-- No malware, adware, or cryptocurrency miners
+- Must work on 320×170 display
+- Handle ESC key to exit cleanly
+- No malware, adware, or miners
 - Must not modify system files outside `/usr/share/APPLaunch/`
-- Should handle ESC key to exit cleanly
-- Icon must be your own work or properly licensed
-- Include at least one screenshot showing the app running
+- Icon must be original or properly licensed
+- Include at least one screenshot
+- Package size < 100 MB
