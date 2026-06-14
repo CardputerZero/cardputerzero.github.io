@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-14T14:31:52+08:00",
+  "generated_at": "2026-06-14T14:47:13+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -237,8 +237,8 @@
       ],
       "author": {},
       "version": "0.2.2-m5stack1",
-      "published_at": "2026-06-14T14:31:52+08:00",
-      "updated_at": "2026-06-14T14:31:52+08:00",
+      "published_at": "2026-06-14T14:47:13+08:00",
+      "updated_at": "2026-06-14T14:47:13+08:00",
       "review": {
         "status": "approved"
       },
@@ -296,8 +296,8 @@
         "display_name": "Flint Devices"
       },
       "version": "0.0.25",
-      "published_at": "2026-06-14T14:31:52+08:00",
-      "updated_at": "2026-06-14T14:31:52+08:00",
+      "published_at": "2026-06-14T14:47:13+08:00",
+      "updated_at": "2026-06-14T14:47:13+08:00",
       "review": {
         "status": "approved"
       },
