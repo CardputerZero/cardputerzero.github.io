@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-29T22:41:54+08:00",
+  "generated_at": "2026-06-14T14:31:52+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -237,8 +237,8 @@
       ],
       "author": {},
       "version": "0.2.2-m5stack1",
-      "published_at": "2026-05-29T22:41:54+08:00",
-      "updated_at": "2026-05-29T22:41:54+08:00",
+      "published_at": "2026-06-14T14:31:52+08:00",
+      "updated_at": "2026-06-14T14:31:52+08:00",
       "review": {
         "status": "approved"
       },
@@ -277,6 +277,90 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/02-idle.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/03-listening.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/04-speaking.png"
+      ]
+    },
+    {
+      "uuid": "eda9d233-da30-5f0f-9ae8-bc2c635f2aaf",
+      "share_code": "flin",
+      "title": "Flint",
+      "summary": "Offensive security firmware for M5Stack CardputerZero",
+      "description": "Offensive security firmware for M5Stack CardputerZero",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Security",
+        "Utilities"
+      ],
+      "author": {
+        "github": "flintdevices",
+        "display_name": "Flint Devices"
+      },
+      "version": "0.0.25",
+      "published_at": "2026-06-14T14:31:52+08:00",
+      "updated_at": "2026-06-14T14:31:52+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/flintdevices/flint",
+      "download": {
+        "type": "deb",
+        "package": "flint",
+        "url": "https://github.com/CardputerZero/packages/raw/main/pool/main/flint/flint_0.0.25_arm64.deb",
+        "md5": "05253380a353284bb3905c30ac0edfd4",
+        "sha256": "fcfb04c52e2c06f4023f0453bfd88e052c314465b3283715c5e514a6d3af4e38",
+        "size": 3374248
+      },
+      "depends": "python3 (>= 3.11), python3-pip, python3-venv,\npython3-pil, python3-pygame, python3-numpy,\npython3-evdev, python3-yaml, python3-setuptools,\nlibjpeg62-turbo | libjpeg8, libfreetype6, libsdl2-2.0-0, libsdl2-image-2.0-0,\nreaver",
+      "permissions": {
+        "network": true,
+        "keyboard_input": true,
+        "filesystem": true,
+        "external_hardware": true
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/flint.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/01_home_carousel.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/02_wifi_scan.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/03_ping_stats.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/04_ping_chart.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/05_sysmon_dashboard.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/06_deauth_running.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/07_beacon_spam_running.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/08_handshake_capture.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/09_probe_scan.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/10_signal_monitor.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/11_station_scan.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/12_anomaly_detector.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/13_cctv_scanner.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/14_tetris.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/15_nfc_scan.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/16_lora_radio.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/17_rf_scan.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/18_gps_info.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/flint.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/01_home_carousel.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/02_wifi_scan.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/03_ping_stats.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/04_ping_chart.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/05_sysmon_dashboard.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/06_deauth_running.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/07_beacon_spam_running.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/08_handshake_capture.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/09_probe_scan.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/10_signal_monitor.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/11_station_scan.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/12_anomaly_detector.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/13_cctv_scanner.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/14_tetris.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/15_nfc_scan.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/16_lora_radio.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/17_rf_scan.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/18_gps_info.png"
       ]
     },
     {
