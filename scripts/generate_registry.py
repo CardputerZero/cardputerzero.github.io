@@ -98,6 +98,13 @@ def normalize_assets(pkg_name: str, meta: dict[str, Any]) -> dict[str, Any]:
 def build_app(pkg_name: str, pkg_info: dict[str, str], meta: dict[str, Any], generated_at: str) -> dict[str, Any]:
     sha256 = pkg_info.get("SHA256", "")
     filename = pkg_info.get("Filename", "")
+    # Filename may be an absolute URL (the .deb is served from a GitHub Release)
+    # or a legacy in-repo path. Use absolute URLs verbatim; otherwise resolve
+    # against the packages repo's raw content.
+    if filename.startswith(("http://", "https://")):
+        download_url = filename
+    else:
+        download_url = f"https://github.com/CardputerZero/packages/raw/main/{filename}"
     assets = normalize_assets(pkg_name, meta)
     locales = meta.get("locales") if isinstance(meta.get("locales"), dict) else {}
     i18n = meta.get("i18n") if isinstance(meta.get("i18n"), dict) else {}
@@ -130,7 +137,7 @@ def build_app(pkg_name: str, pkg_info: dict[str, str], meta: dict[str, Any], gen
         "download": {
             "type": "deb",
             "package": pkg_name,
-            "url": f"https://github.com/CardputerZero/packages/raw/main/{filename}",
+            "url": download_url,
             "md5": pkg_info.get("MD5sum", ""),
             "sha256": sha256,
             "size": int(pkg_info.get("Size", 0) or 0),
