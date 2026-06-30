@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-14T14:31:52+08:00",
+  "generated_at": "2026-06-30T19:37:00+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -75,7 +75,7 @@
       "download": {
         "type": "deb",
         "package": "2048",
-        "url": "https://github.com/CardputerZero/packages/raw/main/pool/main/2048/2048_0.1.0_arm64.deb",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/2048_0.1.0_arm64.deb",
         "md5": "f676071577eb122ea2bcbc623bb3a5d3",
         "sha256": "38a124d7433b583969fb9298a9bc4bd89e3f91e1b182d345b67b9dfd759782f7",
         "size": 300860
@@ -162,7 +162,7 @@
       "download": {
         "type": "deb",
         "package": "calendar",
-        "url": "https://github.com/CardputerZero/packages/raw/main/pool/main/calendar/calendar_0.1.3_arm64.deb",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/calendar_0.1.3_arm64.deb",
         "md5": "238b192ea1240e3b7873dc1b83e66d67",
         "sha256": "bd799bfebbd87a37ca120bdeeedc8697c3fb6467c358e386d86b6e9da87d3098",
         "size": 722812
@@ -188,6 +188,79 @@
         "assets/ff2ee91e/screenshots/subscriptions.png",
         "assets/ff2ee91e/screenshots/source-edit.png",
         "assets/ff2ee91e/screenshots/manager.png"
+      ]
+    },
+    {
+      "uuid": "1cae73de-aa3e-5410-bfc2-0747ac721f84",
+      "share_code": "card",
+      "title": "Pwnagotchi",
+      "summary": "Pwnagotchi status, control, and handshake dashboard for CardputerZero with an external monitor-mode USB Wi-Fi adapter.",
+      "description": "Pwnagotchi monitor dashboard and controls for CardputerZero for M5Cardputer Zero\nRequires a monitor-mode capable external USB Wi-Fi adapter; the CM0 onboard\nWi-Fi does not support monitor mode for Pwnagotchi capture.",
+      "locales": {
+        "zh-CN": {
+          "title": "Pwnagotchi",
+          "summary": "CardputerZero 上的 Pwnagotchi 状态、控制与握手仪表盘，需要外接支持 monitor mode 的 USB Wi-Fi 网卡。",
+          "description": "Pwnagotchi 将本地 pwnagotchi 与 bettercap 状态集成到 CardputerZero APPLaunch，提供 Home、Stats、Control 三个页面，以及 Start、Stop、Restart、Manual、Auto 控制。硬件限制：CM0 板载 Wi-Fi 不支持 monitor mode，不能用于抓包；本应用必须配合支持 monitor mode 的外接 USB Wi-Fi 网卡使用。实际测试通过的网卡为 TP-Link TL-WN722N v1.0 USB Wi-Fi adapter（Atheros AR9271 芯片）。"
+        },
+        "en": {
+          "title": "Pwnagotchi",
+          "summary": "Pwnagotchi status, control, and handshake dashboard for CardputerZero with an external monitor-mode USB Wi-Fi adapter.",
+          "description": "Pwnagotchi integrates local pwnagotchi and bettercap status into CardputerZero APPLaunch with Home, Stats, and Control pages plus Start, Stop, Restart, Manual, and Auto actions. Hardware limitation: the CM0 onboard Wi-Fi does not support monitor mode and cannot be used for packet capture. This app requires an external monitor-mode capable USB Wi-Fi adapter. Tested hardware: TP-Link TL-WN722N v1.0 USB Wi-Fi adapter (Atheros AR9271 chipset)."
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "Pwnagotchi",
+          "summary": "CardputerZero 上的 Pwnagotchi 状态、控制与握手仪表盘，需要外接支持 monitor mode 的 USB Wi-Fi 网卡。",
+          "description": "Pwnagotchi 将本地 pwnagotchi 与 bettercap 状态集成到 CardputerZero APPLaunch，提供 Home、Stats、Control 三个页面，以及 Start、Stop、Restart、Manual、Auto 控制。硬件限制：CM0 板载 Wi-Fi 不支持 monitor mode，不能用于抓包；本应用必须配合支持 monitor mode 的外接 USB Wi-Fi 网卡使用。实际测试通过的网卡为 TP-Link TL-WN722N v1.0 USB Wi-Fi adapter（Atheros AR9271 芯片）。"
+        },
+        "en": {
+          "title": "Pwnagotchi",
+          "summary": "Pwnagotchi status, control, and handshake dashboard for CardputerZero with an external monitor-mode USB Wi-Fi adapter.",
+          "description": "Pwnagotchi integrates local pwnagotchi and bettercap status into CardputerZero APPLaunch with Home, Stats, and Control pages plus Start, Stop, Restart, Manual, and Auto actions. Hardware limitation: the CM0 onboard Wi-Fi does not support monitor mode and cannot be used for packet capture. This app requires an external monitor-mode capable USB Wi-Fi adapter. Tested hardware: TP-Link TL-WN722N v1.0 USB Wi-Fi adapter (Atheros AR9271 chipset)."
+        }
+      },
+      "categories": [
+        "Security",
+        "Networking",
+        "Utilities"
+      ],
+      "author": {},
+      "version": "0.1.1-m5stack1",
+      "published_at": "2026-06-30T19:37:00+08:00",
+      "updated_at": "2026-06-30T19:37:00+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "cardputerzero-pwnagotchi",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputerzero-pwnagotchi_0.1.1-m5stack1_arm64.deb",
+        "md5": "3cdac931c2dbd7bd32c2836e217b90ed",
+        "sha256": "0d4b2b0d2afe8fd048dc4058103f0ff4a2b3a364f5e968f6368a40f250b0a73e",
+        "size": 32801896
+      },
+      "depends": "sudo, python3, python3-pip, python3-pil, curl, git, fonts-noto-cjk, fonts-noto-color-emoji, binutils, iw, wireless-tools, rfkill, bettercap, bettercap-caplets, iptables",
+      "permissions": {
+        "microphone": false,
+        "audio_output": false,
+        "network": true,
+        "filesystem": "app-data-and-handshakes",
+        "keyboard_input": true,
+        "background_service": true,
+        "external_hardware": true
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-pwnagotchi/tools/assets/pwnagotchi.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-pwnagotchi/store/screenshots/01-home.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-pwnagotchi/tools/assets/pwnagotchi.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-pwnagotchi/store/screenshots/01-home.png"
       ]
     },
     {
@@ -237,8 +310,8 @@
       ],
       "author": {},
       "version": "0.2.2-m5stack1",
-      "published_at": "2026-06-14T14:31:52+08:00",
-      "updated_at": "2026-06-14T14:31:52+08:00",
+      "published_at": "2026-06-30T19:37:00+08:00",
+      "updated_at": "2026-06-30T19:37:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -247,7 +320,7 @@
       "download": {
         "type": "deb",
         "package": "cardputerzero-xiaozhi",
-        "url": "https://github.com/CardputerZero/packages/raw/main/pool/main/cardputerzero-xiaozhi/cardputerzero-xiaozhi_0.2.2-m5stack1_arm64.deb",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputerzero-xiaozhi_0.2.2-m5stack1_arm64.deb",
         "md5": "c69b50c077af62676d52be83daef9d40",
         "sha256": "53c6dea5d7dc671618d5edfbe894522c72f5efb38ff545a9eeec7a15327f7ea4",
         "size": 25851200
@@ -296,8 +369,8 @@
         "display_name": "Flint Devices"
       },
       "version": "0.0.25",
-      "published_at": "2026-06-14T14:31:52+08:00",
-      "updated_at": "2026-06-14T14:31:52+08:00",
+      "published_at": "2026-06-30T19:37:00+08:00",
+      "updated_at": "2026-06-30T19:37:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -306,7 +379,7 @@
       "download": {
         "type": "deb",
         "package": "flint",
-        "url": "https://github.com/CardputerZero/packages/raw/main/pool/main/flint/flint_0.0.25_arm64.deb",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/flint_0.0.25_arm64.deb",
         "md5": "05253380a353284bb3905c30ac0edfd4",
         "sha256": "fcfb04c52e2c06f4023f0453bfd88e052c314465b3283715c5e514a6d3af4e38",
         "size": 3374248
@@ -432,7 +505,7 @@
       "download": {
         "type": "deb",
         "package": "lofibox",
-        "url": "https://github.com/CardputerZero/packages/raw/main/pool/main/lofibox/lofibox_0.2.0-1~lofibox23_arm64.deb",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/lofibox_0.2.0-1.lofibox23_arm64.deb",
         "md5": "6a9798c1208e6d8bf5a9f28914160483",
         "sha256": "469d14c030d4addb5ff54f6eef7700b1781da3c33047796b1bbd2c8b3fe3177d",
         "size": 9077082
@@ -529,7 +602,7 @@
       "download": {
         "type": "deb",
         "package": "nc2000",
-        "url": "https://github.com/CardputerZero/packages/raw/main/pool/main/nc2000/nc2000_1.0.3_arm64.deb",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/nc2000_1.0.3_arm64.deb",
         "md5": "3b70ee689a4bbb4e9523410fb2daea15",
         "sha256": "6f3e8c3ac385cb9a306f4ab5205f4bc3a0d4ae776c4fbdbe136df243b5f73ed8",
         "size": 20560444
