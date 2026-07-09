@@ -490,6 +490,10 @@
     "noToc": "这个文档没有可生成目录的标题。",
     "source": "来源：{path}",
     "items": {
+      "keys": {
+        "title": "CardputerZero 按键规范",
+        "summary": "固定功能键、修饰键、Fn 组合键及应用界面按键设计建议。"
+      },
       "development": {
         "title": "CardputerZero 应用开发入门",
         "summary": "普通开发路线：语言选择、环境搭建、仓库定位、开发范式和 HelloWorld 示例。"

@@ -11,64 +11,14 @@ const GISCUS_CONFIG = {
 };
 const DOCUMENTS = [
   {
-    slug: "application-development-guide",
+    slug: "cp0-keys",
     paths: {
-      "zh-CN": "docs/zh-CN/application-development-guide.md",
-      en: "docs/en/application-development-guide.md",
-      ja: "docs/ja/application-development-guide.md"
+      "zh-CN": "docs/zh-CN/CP0_keys.md",
+      en: "docs/en/CP0_keys.md",
+      ja: "docs/ja/CP0_keys.md"
     },
-    titleKey: "documents.items.development.title",
-    summaryKey: "documents.items.development.summary"
-  },
-  {
-    slug: "skill-ai-coding-guide",
-    paths: {
-      "zh-CN": "docs/zh-CN/skill-ai-coding-guide.md",
-      en: "docs/en/skill-ai-coding-guide.md",
-      ja: "docs/ja/skill-ai-coding-guide.md"
-    },
-    titleKey: "documents.items.skill.title",
-    summaryKey: "documents.items.skill.summary"
-  },
-  {
-    slug: "app-submission-guide",
-    paths: {
-      "zh-CN": "docs/zh-CN/app-submission-guide.md",
-      en: "docs/app-submission-guide.md",
-      ja: "docs/ja/app-submission-guide.md"
-    },
-    titleKey: "documents.items.submission.title",
-    summaryKey: "documents.items.submission.summary"
-  },
-  {
-    slug: "user-agreement",
-    paths: {
-      "zh-CN": "docs/zh-CN/user-agreement.md",
-      en: "docs/user-agreement.md",
-      ja: "docs/ja/user-agreement.md"
-    },
-    titleKey: "documents.items.agreement.title",
-    summaryKey: "documents.items.agreement.summary"
-  },
-  {
-    slug: "appstore-registry-requirements",
-    paths: {
-      "zh-CN": "docs/appstore-registry-requirements.md",
-      en: "docs/en/appstore-registry-requirements.md",
-      ja: "docs/ja/appstore-registry-requirements.md"
-    },
-    titleKey: "documents.items.registry.title",
-    summaryKey: "documents.items.registry.summary"
-  },
-  {
-    slug: "developer-submission-policy",
-    paths: {
-      "zh-CN": "docs/developer-submission-policy.md",
-      en: "docs/en/developer-submission-policy.md",
-      ja: "docs/ja/developer-submission-policy.md"
-    },
-    titleKey: "documents.items.policy.title",
-    summaryKey: "documents.items.policy.summary"
+    titleKey: "documents.items.keys.title",
+    summaryKey: "documents.items.keys.summary"
   }
 ];
 
@@ -960,10 +910,8 @@ function renderDocumentCard(doc) {
   return `
     <article class="document-card">
       <a href="#/documents/${escapeAttr(doc.slug)}">
-        <p class="eyebrow">${escapeHtml(renderDocumentSource(doc))}</p>
         <h2>${escapeHtml(t(doc.titleKey))}</h2>
         <p>${escapeHtml(t(doc.summaryKey))}</p>
-        <span>${t("documents.open")}</span>
       </a>
     </article>
   `;
@@ -1158,6 +1106,7 @@ function bindDocumentToc() {
 
 function renderInlineMarkdown(text) {
   return escapeHtml(text)
+    .replace(/&lt;br\s*\/?&gt;/gi, "<br>")
     .replace(/`([^`]+)`/g, "<code>$1</code>")
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, href) => {

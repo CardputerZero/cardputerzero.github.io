@@ -490,6 +490,10 @@
     "noToc": "This document has no headings for a table of contents.",
     "source": "Source: {path}",
     "items": {
+      "keys": {
+        "title": "CardputerZero Key Specifications",
+        "summary": "Dedicated keys, modifier behavior, Fn combinations, and recommended key mapping for application interfaces."
+      },
       "development": {
         "title": "CardputerZero App Development Guide",
         "summary": "The normal development path: language choice, environment setup, repository roles, development pattern, and HelloWorld."
