@@ -1230,6 +1230,36 @@ code {
   overflow-wrap: anywhere;
 }
 
+.doc-figure {
+  margin: 20px 0;
+}
+
+.doc-image-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.doc-image-row .doc-image {
+  min-width: 0;
+  margin: 0;
+}
+
+.doc-image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: min(840px, 72vh);
+  margin: 0 auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-surface-raised);
+}
+
 .loading {
   display: grid;
   place-items: center;

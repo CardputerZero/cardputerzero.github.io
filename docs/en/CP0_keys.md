@@ -1,5 +1,7 @@
 # CardputerZero Key Specifications
 
+![latest_key_sticker](assets/docs/latest_key_sticker.png){width=60%}
+
 ## Dedicated Function Keys
 
 Side **Boot** key: Used to trigger USB boot mode before powering on.<br>
@@ -18,6 +20,8 @@ Trigger behavior of the **sym**, **shift**, and **fn** modifier keys:
 - **Press the modifier key once**: The corresponding indicator **blinks slowly**. Press any alphanumeric key to enter the corresponding character and exit modifier mode, or press the modifier key once again to exit modifier mode.
 - **Press the modifier key twice**: The corresponding indicator **blinks rapidly**. You can press multiple alphanumeric keys consecutively (for example, to enter multiple symbols or uppercase letters). Press the modifier key once or twice again to exit modifier mode.
 - **Press and hold the modifier key**: The corresponding indicator **stays on**. You can press one or more alphanumeric keys. Releasing the modifier key exits modifier mode.
+
+![double_click_shift](assets/docs/double_click_shift.png){width=40%} ![hold_shift](assets/docs/hold_shift.png){width=40%}
 
 The **ctrl** and **alt** keys behave the same as on a standard keyboard.
 
@@ -52,6 +56,10 @@ fn + Letter **N** = Standard **End** key<br>
 
 The CardputerZero display is aligned with the **4~8** number keys below it. It is recommended to use these five keys for the most frequently used actions. As shown below, display an icon and/or text label at the bottom of the screen to indicate the function of each key, with a short vertical line pointing to the corresponding key. The recommended **center** X coordinates of the five icons are `180, 236, 292, 348, 404`, the recommended Y coordinate is `153`, and the recommended icon size is `22 * 22`.
 
+![screen_keys_1](assets/docs/screen_keys_1.png){width=60%}
+
 In addition to the **4~8** number keys, you can also use other keys such as **OK (Enter)**, **Space**, **ESC**, or letter keys. In this case, it is recommended to display the available keys and their corresponding functions at the bottom of the screen, as shown below.
+
+![screen_keys_2](assets/docs/screen_keys_2.png){width=60%}
 
 **Special handling for arrow keys:** When the device is not in text input mode, it is recommended to allow the **F**, **Z**, **X**, and **C** letter keys to function directly as arrow keys, rather than requiring the **fn** modifier. This provides a better user experience.

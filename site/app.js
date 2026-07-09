@@ -966,7 +966,7 @@ async function renderDocument(slug) {
 
 async function loadMarkdown(path) {
   if (state.documentCache.has(path)) return state.documentCache.get(path);
-  const response = await fetch(path);
+  const response = await fetch(withTimestamp(path, APP_LOADED_AT));
   if (!response.ok) {
     throw new Error(`Unable to load ${path}: ${response.status}`);
   }
@@ -987,7 +987,10 @@ function renderMarkdown(markdown) {
 
   function flushParagraph() {
     if (!paragraph.length) return;
-    html.push(`<p>${renderInlineMarkdown(paragraph.join(" "))}</p>`);
+    const paragraphText = paragraph.join(" ");
+    const tag = isDocumentImageRow(paragraphText) ? "div" : "p";
+    const className = tag === "div" ? ' class="doc-image-row"' : "";
+    html.push(`<${tag}${className}>${renderInlineMarkdown(paragraphText)}</${tag}>`);
     paragraph = [];
   }
 
@@ -1019,6 +1022,14 @@ function renderMarkdown(markdown) {
     if (!line.trim()) {
       flushParagraph();
       flushList();
+      continue;
+    }
+
+    const image = line.match(/^!\[([^\]]*)\]\(([^)\s]+)(?:\s+["']([^"']*)["'])?\)(?:\{width=(\d{1,4})(%|px)?\})?$/);
+    if (image) {
+      flushParagraph();
+      flushList();
+      html.push(`<figure class="doc-figure">${renderDocumentImage(image[2], image[1], image[3], image[4], image[5])}</figure>`);
       continue;
     }
 
@@ -1105,7 +1116,17 @@ function bindDocumentToc() {
 }
 
 function renderInlineMarkdown(text) {
-  return escapeHtml(text)
+  const images = [];
+  const withImageTokens = String(text).replace(
+    /!\[([^\]]*)\]\(([^)\s]+)(?:\s+["']([^"']*)["'])?\)(?:\{width=(\d{1,4})(%|px)?\})?/g,
+    (_, alt, src, title, width, widthUnit) => {
+      const token = `DOCIMGTOKEN${images.length}END`;
+      images.push({ token, html: renderDocumentImage(src, alt, title, width, widthUnit) });
+      return token;
+    }
+  );
+
+  let html = escapeHtml(withImageTokens)
     .replace(/&lt;br\s*\/?&gt;/gi, "<br>")
     .replace(/`([^`]+)`/g, "<code>$1</code>")
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
@@ -1115,6 +1136,43 @@ function renderInlineMarkdown(text) {
         : "#/documents";
       return `<a href="${escapeAttr(safeHref)}">${label}</a>`;
     });
+
+  images.forEach((image) => {
+    html = html.replace(image.token, image.html);
+  });
+  return html;
+}
+
+function isDocumentImageRow(text) {
+  const imagePattern = /!\[[^\]]*\]\([^)\s]+(?:\s+["'][^"']*["'])?\)(?:\{width=\d{1,4}(?:%|px)?\})?/g;
+  const images = String(text).match(imagePattern) || [];
+  return images.length > 1 && String(text).replace(imagePattern, "").trim() === "";
+}
+
+function renderDocumentImage(src, alt = "", title = "", width = "", widthUnit = "") {
+  const safeSrc = safeDocumentImageUrl(src);
+  if (!safeSrc) return escapeHtml(alt);
+  const titleAttr = title ? ` title="${escapeAttr(title)}"` : "";
+  const safeWidth = normalizeDocumentImageWidth(width, widthUnit);
+  const styleAttr = safeWidth ? ` style="width: ${safeWidth}"` : "";
+  return `<img class="doc-image" src="${escapeAttr(safeSrc)}" alt="${escapeAttr(alt)}"${titleAttr}${styleAttr} loading="lazy" decoding="async">`;
+}
+
+function normalizeDocumentImageWidth(value, unit) {
+  if (!value) return "";
+  const width = Number(value);
+  if (!Number.isFinite(width) || width <= 0) return "";
+  if (unit === "%") return `${Math.min(100, Math.max(10, width))}%`;
+  return `${Math.min(1600, Math.max(64, width))}px`;
+}
+
+function safeDocumentImageUrl(value) {
+  const src = String(value || "").trim();
+  if (!src) return "";
+  if (/^https?:\/\//i.test(src)) return safeExternalUrl(src);
+  if (!/^(?:assets|docs)\//.test(src)) return "";
+  if (src.includes("..") || src.includes("\\") || /[\u0000-\u001f\u007f]/.test(src)) return "";
+  return src;
 }
 
 function renderRegistry() {
