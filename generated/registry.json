@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-30T19:37:00+08:00",
+  "generated_at": "2026-07-10T19:39:58+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -225,10 +225,13 @@
         "Networking",
         "Utilities"
       ],
-      "author": {},
+      "author": {
+        "github": "JdaieLin",
+        "display_name": "Jdaie"
+      },
       "version": "0.1.1-m5stack1",
-      "published_at": "2026-06-30T19:37:00+08:00",
-      "updated_at": "2026-06-30T19:37:00+08:00",
+      "published_at": "2026-07-10T19:39:58+08:00",
+      "updated_at": "2026-07-10T19:39:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -308,10 +311,13 @@
         "Communication",
         "Utilities"
       ],
-      "author": {},
+      "author": {
+        "github": "JdaieLin",
+        "display_name": "Jdaie"
+      },
       "version": "0.2.2-m5stack1",
-      "published_at": "2026-06-30T19:37:00+08:00",
-      "updated_at": "2026-06-30T19:37:00+08:00",
+      "published_at": "2026-07-10T19:39:58+08:00",
+      "updated_at": "2026-07-10T19:39:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -369,8 +375,8 @@
         "display_name": "Flint Devices"
       },
       "version": "0.0.25",
-      "published_at": "2026-06-30T19:37:00+08:00",
-      "updated_at": "2026-06-30T19:37:00+08:00",
+      "published_at": "2026-07-10T19:39:58+08:00",
+      "updated_at": "2026-07-10T19:39:58+08:00",
       "review": {
         "status": "approved"
       },
