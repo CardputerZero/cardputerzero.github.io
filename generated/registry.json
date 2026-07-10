@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-07-10T19:39:58+08:00",
+  "generated_at": "2026-07-10T19:42:35+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -60,9 +60,8 @@
         "Puzzle"
       ],
       "author": {
-        "github": "CardputerZero",
-        "display_name": "CardputerZero",
-        "website": "https://github.com/CardputerZero"
+        "github": "zhuzhe1983",
+        "display_name": "Zhu Zhe"
       },
       "version": "0.1.0",
       "published_at": "2026-05-14T23:20:55+08:00",
@@ -147,9 +146,8 @@
         "Calendar"
       ],
       "author": {
-        "github": "CardputerZero",
-        "display_name": "CardputerZero",
-        "website": "https://github.com/CardputerZero"
+        "github": "zhuzhe1983",
+        "display_name": "Zhu Zhe"
       },
       "version": "0.1.3",
       "published_at": "2026-05-14T23:16:38+08:00",
@@ -230,8 +228,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.1.1-m5stack1",
-      "published_at": "2026-07-10T19:39:58+08:00",
-      "updated_at": "2026-07-10T19:39:58+08:00",
+      "published_at": "2026-07-10T19:42:35+08:00",
+      "updated_at": "2026-07-10T19:42:35+08:00",
       "review": {
         "status": "approved"
       },
@@ -316,8 +314,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.2.2-m5stack1",
-      "published_at": "2026-07-10T19:39:58+08:00",
-      "updated_at": "2026-07-10T19:39:58+08:00",
+      "published_at": "2026-07-10T19:42:35+08:00",
+      "updated_at": "2026-07-10T19:42:35+08:00",
       "review": {
         "status": "approved"
       },
@@ -375,8 +373,8 @@
         "display_name": "Flint Devices"
       },
       "version": "0.0.25",
-      "published_at": "2026-07-10T19:39:58+08:00",
-      "updated_at": "2026-07-10T19:39:58+08:00",
+      "published_at": "2026-07-10T19:42:35+08:00",
+      "updated_at": "2026-07-10T19:42:35+08:00",
       "review": {
         "status": "approved"
       },
