@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-07-15T16:20:17+08:00",
+  "generated_at": "2026-07-15T16:31:22+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -146,8 +146,8 @@
       ],
       "author": {},
       "version": "1.0.0",
-      "published_at": "2026-07-15T16:20:17+08:00",
-      "updated_at": "2026-07-15T16:20:17+08:00",
+      "published_at": "2026-07-15T16:31:22+08:00",
+      "updated_at": "2026-07-15T16:31:22+08:00",
       "review": {
         "status": "approved"
       },
@@ -304,8 +304,8 @@
       ],
       "author": {},
       "version": "0.1.1",
-      "published_at": "2026-07-15T16:20:17+08:00",
-      "updated_at": "2026-07-15T16:20:17+08:00",
+      "published_at": "2026-07-15T16:31:22+08:00",
+      "updated_at": "2026-07-15T16:31:22+08:00",
       "review": {
         "status": "approved"
       },
@@ -387,8 +387,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.1.1-m5stack1",
-      "published_at": "2026-07-15T16:20:17+08:00",
-      "updated_at": "2026-07-15T16:20:17+08:00",
+      "published_at": "2026-07-15T16:31:22+08:00",
+      "updated_at": "2026-07-15T16:31:22+08:00",
       "review": {
         "status": "approved"
       },
@@ -473,8 +473,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.2.2-m5stack1",
-      "published_at": "2026-07-15T16:20:17+08:00",
-      "updated_at": "2026-07-15T16:20:17+08:00",
+      "published_at": "2026-07-15T16:31:22+08:00",
+      "updated_at": "2026-07-15T16:31:22+08:00",
       "review": {
         "status": "approved"
       },
@@ -560,8 +560,8 @@
       ],
       "author": {},
       "version": "1.0.0",
-      "published_at": "2026-07-15T16:20:17+08:00",
-      "updated_at": "2026-07-15T16:20:17+08:00",
+      "published_at": "2026-07-15T16:31:22+08:00",
+      "updated_at": "2026-07-15T16:31:22+08:00",
       "review": {
         "status": "approved"
       },
@@ -607,8 +607,8 @@
       ],
       "author": {},
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-15T16:20:17+08:00",
-      "updated_at": "2026-07-15T16:20:17+08:00",
+      "published_at": "2026-07-15T16:31:22+08:00",
+      "updated_at": "2026-07-15T16:31:22+08:00",
       "review": {
         "status": "approved"
       },
@@ -662,8 +662,8 @@
         "display_name": "n0xa"
       },
       "version": "0.4.0",
-      "published_at": "2026-07-15T16:20:17+08:00",
-      "updated_at": "2026-07-15T16:20:17+08:00",
+      "published_at": "2026-07-15T16:31:22+08:00",
+      "updated_at": "2026-07-15T16:31:22+08:00",
       "review": {
         "status": "approved"
       },
@@ -708,8 +708,8 @@
         "display_name": "Flint Devices"
       },
       "version": "0.0.25",
-      "published_at": "2026-07-15T16:20:17+08:00",
-      "updated_at": "2026-07-15T16:20:17+08:00",
+      "published_at": "2026-07-15T16:31:22+08:00",
+      "updated_at": "2026-07-15T16:31:22+08:00",
       "review": {
         "status": "approved"
       },
@@ -828,8 +828,8 @@
       ],
       "author": {},
       "version": "0.2.0",
-      "published_at": "2026-07-15T16:20:17+08:00",
-      "updated_at": "2026-07-15T16:20:17+08:00",
+      "published_at": "2026-07-15T16:31:22+08:00",
+      "updated_at": "2026-07-15T16:31:22+08:00",
       "review": {
         "status": "approved"
       },
@@ -1098,8 +1098,8 @@
       ],
       "author": {},
       "version": "0.1.0",
-      "published_at": "2026-07-15T16:20:17+08:00",
-      "updated_at": "2026-07-15T16:20:17+08:00",
+      "published_at": "2026-07-15T16:31:22+08:00",
+      "updated_at": "2026-07-15T16:31:22+08:00",
       "review": {
         "status": "approved"
       },
@@ -1183,8 +1183,8 @@
       ],
       "author": {},
       "version": "0.2.2",
-      "published_at": "2026-07-15T16:20:17+08:00",
-      "updated_at": "2026-07-15T16:20:17+08:00",
+      "published_at": "2026-07-15T16:31:22+08:00",
+      "updated_at": "2026-07-15T16:31:22+08:00",
       "review": {
         "status": "approved"
       },
@@ -1253,8 +1253,8 @@
       ],
       "author": {},
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-15T16:20:17+08:00",
-      "updated_at": "2026-07-15T16:20:17+08:00",
+      "published_at": "2026-07-15T16:31:22+08:00",
+      "updated_at": "2026-07-15T16:31:22+08:00",
       "review": {
         "status": "approved"
       },
@@ -1328,8 +1328,8 @@
       ],
       "author": {},
       "version": "0.1.1",
-      "published_at": "2026-07-15T16:20:17+08:00",
-      "updated_at": "2026-07-15T16:20:17+08:00",
+      "published_at": "2026-07-15T16:31:22+08:00",
+      "updated_at": "2026-07-15T16:31:22+08:00",
       "review": {
         "status": "approved"
       },
@@ -1391,8 +1391,8 @@
       ],
       "author": {},
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-15T16:20:17+08:00",
-      "updated_at": "2026-07-15T16:20:17+08:00",
+      "published_at": "2026-07-15T16:31:22+08:00",
+      "updated_at": "2026-07-15T16:31:22+08:00",
       "review": {
         "status": "approved"
       },
@@ -1443,8 +1443,8 @@
       ],
       "author": {},
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-15T16:20:17+08:00",
-      "updated_at": "2026-07-15T16:20:17+08:00",
+      "published_at": "2026-07-15T16:31:22+08:00",
+      "updated_at": "2026-07-15T16:31:22+08:00",
       "review": {
         "status": "approved"
       },
@@ -1527,8 +1527,8 @@
       ],
       "author": {},
       "version": "0.1.0-m5stack1",
-      "published_at": "2026-07-15T16:20:17+08:00",
-      "updated_at": "2026-07-15T16:20:17+08:00",
+      "published_at": "2026-07-15T16:31:22+08:00",
+      "updated_at": "2026-07-15T16:31:22+08:00",
       "review": {
         "status": "approved"
       },
@@ -1576,8 +1576,8 @@
       ],
       "author": {},
       "version": "0.2.0",
-      "published_at": "2026-07-15T16:20:17+08:00",
-      "updated_at": "2026-07-15T16:20:17+08:00",
+      "published_at": "2026-07-15T16:31:22+08:00",
+      "updated_at": "2026-07-15T16:31:22+08:00",
       "review": {
         "status": "approved"
       },
