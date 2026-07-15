@@ -7,9 +7,11 @@ import argparse
 import copy
 import datetime as dt
 import json
+import re
 import uuid
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 
 
 NAMESPACE_CZ = uuid.UUID("c4d70000-a770-4000-8000-000000000000")
@@ -77,12 +79,31 @@ def list_value(value: Any) -> list[str]:
     return []
 
 
-def resolve_asset_ref(pkg_name: str, ref: str) -> str:
+def resolve_asset_ref(pkg_name: str, ref: str, kind: str) -> str:
+    """Map a meta.json asset reference onto the pool directory layout.
+
+    czdev copies store assets into pool/main/<pkg>/ with a flat, normalized
+    layout — the icon at <pkg-dir>/<basename> and screenshots under
+    <pkg-dir>/screenshots/<basename> — but meta.json keeps the *source repo*
+    relative paths (e.g. "share/images/foo.png", "packaging/icon.png",
+    "store/screenshots/a.png"), which do not exist under pool/. Resolving by
+    basename against the pool layout is therefore the reliable rule.
+    Absolute URLs and site-local "assets/" refs (used by overrides) pass
+    through untouched.
+    """
     if not ref:
         return ""
-    if ref.startswith(("http://", "https://", "assets/")):
+    if ref.startswith(("http://", "https://")):
         return ref
-    return f"{RAW_PACKAGE_BASE}/{pkg_name}/{ref.lstrip('/')}"
+    # Site-local refs (used by registry-overrides.json) pass through, but only
+    # when the file actually exists in this repo — meta.json source paths can
+    # coincidentally start with "assets/" too (e.g. "assets/images/foo.png").
+    if ref.startswith("assets/") and Path(ref).exists():
+        return ref
+    basename = quote(ref.rstrip("/").rsplit("/", 1)[-1])
+    if kind == "icon":
+        return f"{RAW_PACKAGE_BASE}/{pkg_name}/{basename}"
+    return f"{RAW_PACKAGE_BASE}/{pkg_name}/screenshots/{basename}"
 
 
 def normalize_assets(pkg_name: str, meta: dict[str, Any]) -> dict[str, Any]:
@@ -90,9 +111,36 @@ def normalize_assets(pkg_name: str, meta: dict[str, Any]) -> dict[str, Any]:
     icon = str(assets.get("icon") or meta.get("icon") or "")
     screenshots = list_value(assets.get("screenshots") or meta.get("screenshots"))
     return {
-        "icon": resolve_asset_ref(pkg_name, icon),
-        "screenshots": [resolve_asset_ref(pkg_name, item) for item in screenshots],
+        "icon": resolve_asset_ref(pkg_name, icon, "icon"),
+        "screenshots": [resolve_asset_ref(pkg_name, item, "screenshot") for item in screenshots],
     }
+
+
+MAINTAINER_RE = re.compile(r"^\s*(.*?)\s*<([^>]+)>\s*$")
+NOREPLY_RE = re.compile(r"^(?:\d+\+)?([a-z0-9](?:[a-z0-9-]*[a-z0-9])?)@users\.noreply\.github\.com$", re.IGNORECASE)
+
+
+def author_from_maintainer(maintainer: str) -> dict[str, str]:
+    """Derive an author object from the APT Maintainer field.
+
+    czdev-generated meta.json has no author section, but the package's
+    Maintainer field ("Name <email>") is validated against the submitter's
+    GitHub identity, so it is a trustworthy source. GitHub noreply addresses
+    also yield the login.
+    """
+    match = MAINTAINER_RE.match(maintainer or "")
+    if not match:
+        return {}
+    display_name, email = match.group(1).strip(), match.group(2).strip()
+    author: dict[str, str] = {}
+    noreply = NOREPLY_RE.match(email)
+    if noreply:
+        author["github"] = noreply.group(1)
+    if display_name:
+        author["display_name"] = display_name
+    elif noreply:
+        author["display_name"] = noreply.group(1)
+    return author
 
 
 def build_app(pkg_name: str, pkg_info: dict[str, str], meta: dict[str, Any], generated_at: str) -> dict[str, Any]:
@@ -127,7 +175,8 @@ def build_app(pkg_name: str, pkg_info: dict[str, str], meta: dict[str, Any], gen
         "locales": locales,
         "i18n": i18n,
         "categories": list_value(meta.get("categories")),
-        "author": meta.get("author") if isinstance(meta.get("author"), dict) else {},
+        "author": (meta.get("author") if isinstance(meta.get("author"), dict) and meta.get("author") else None)
+                  or author_from_maintainer(pkg_info.get("Maintainer", "")),
         "version": pkg_info.get("Version", ""),
         "published_at": published_at,
         "updated_at": updated_at,
