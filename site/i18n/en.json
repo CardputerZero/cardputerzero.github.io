@@ -519,5 +519,8 @@
         "summary": "Admission rules, privacy, device safety, rejection criteria, review execution, and appeals."
       }
     }
+  },
+  "pagination": {
+    "perPage": "Per page"
   }
 }

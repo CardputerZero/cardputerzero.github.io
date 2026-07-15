@@ -708,8 +708,24 @@ code {
 .pagination {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
   margin-top: 18px;
+}
+
+.page-size-picker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 12px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.page-size-picker .select {
+  width: auto;
+  min-width: 0;
 }
 
 .detail-layout {

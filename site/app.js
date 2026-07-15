@@ -1,5 +1,14 @@
 const REGISTRY_URL = "generated/registry.json";
-const PAGE_SIZE = 6;
+// The app grid renders 3 columns, so page sizes are multiples of 3 to keep
+// full rows. The user's choice persists in localStorage.
+const DEFAULT_PAGE_SIZE = 30;
+const PAGE_SIZE_OPTIONS = [6, 12, 18, 30, 60, 90];
+const PAGE_SIZE_STORAGE_KEY = "cz_apps_page_size";
+
+function loadPageSize() {
+  const stored = Number(localStorage.getItem(PAGE_SIZE_STORAGE_KEY));
+  return PAGE_SIZE_OPTIONS.includes(stored) ? stored : DEFAULT_PAGE_SIZE;
+}
 const SUPPORTED_LOCALES = ["zh-CN", "en", "ja"];
 const APP_LOADED_AT = new Date();
 const REGISTRY_LOADED_URL = withTimestamp(REGISTRY_URL, APP_LOADED_AT);
@@ -37,6 +46,7 @@ const state = {
   commercial: "",
   sort: "updated",
   page: 1,
+  pageSize: loadPageSize(),
   filtersOpen: false,
   filterTimer: null,
   searchComposing: false,
@@ -344,10 +354,10 @@ function renderAppsPage() {
   }
 
   const filtered = getFilteredApps();
-  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const totalPages = Math.max(1, Math.ceil(filtered.length / state.pageSize));
   state.page = Math.min(state.page, totalPages);
-  const offset = (state.page - 1) * PAGE_SIZE;
-  const pageApps = filtered.slice(offset, offset + PAGE_SIZE);
+  const offset = (state.page - 1) * state.pageSize;
+  const pageApps = filtered.slice(offset, offset + state.pageSize);
 
   appRoot.innerHTML = `
     <section class="route-panel">
@@ -499,6 +509,13 @@ function bindFilterEvents() {
       state.page = Number(button.dataset.page);
       renderAppsPage();
     });
+  });
+
+  document.querySelector("#page-size-select")?.addEventListener("change", (event) => {
+    state.pageSize = Number(event.target.value);
+    localStorage.setItem(PAGE_SIZE_STORAGE_KEY, String(state.pageSize));
+    state.page = 1;
+    renderAppsPage();
   });
 
   restoreQueryInputFocus();
@@ -1213,12 +1230,19 @@ function renderNotFound() {
 }
 
 function renderPagination(totalPages) {
-  if (totalPages <= 1) return "";
-  const buttons = Array.from({ length: totalPages }, (_, index) => {
+  const buttons = totalPages <= 1 ? "" : Array.from({ length: totalPages }, (_, index) => {
     const page = index + 1;
     return `<button class="button ${page === state.page ? "" : "secondary"}" data-page="${page}" type="button">${page}</button>`;
   }).join("");
-  return `<div class="pagination">${buttons}</div>`;
+  const sizeOptions = PAGE_SIZE_OPTIONS
+    .map((size) => option(String(size), String(size), String(state.pageSize)))
+    .join("");
+  const sizePicker = `
+    <label class="page-size-picker">
+      <span>${t("pagination.perPage")}</span>
+      <select class="select" id="page-size-select">${sizeOptions}</select>
+    </label>`;
+  return `<div class="pagination">${buttons}${sizePicker}</div>`;
 }
 
 function renderActiveFilters() {
