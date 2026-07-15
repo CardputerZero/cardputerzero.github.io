@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-07-15T15:52:55+08:00",
+  "generated_at": "2026-07-15T16:20:17+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -146,8 +146,8 @@
       ],
       "author": {},
       "version": "1.0.0",
-      "published_at": "2026-07-15T15:52:55+08:00",
-      "updated_at": "2026-07-15T15:52:55+08:00",
+      "published_at": "2026-07-15T16:20:17+08:00",
+      "updated_at": "2026-07-15T16:20:17+08:00",
       "review": {
         "status": "approved"
       },
@@ -304,8 +304,8 @@
       ],
       "author": {},
       "version": "0.1.1",
-      "published_at": "2026-07-15T15:52:55+08:00",
-      "updated_at": "2026-07-15T15:52:55+08:00",
+      "published_at": "2026-07-15T16:20:17+08:00",
+      "updated_at": "2026-07-15T16:20:17+08:00",
       "review": {
         "status": "approved"
       },
@@ -387,8 +387,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.1.1-m5stack1",
-      "published_at": "2026-07-15T15:52:55+08:00",
-      "updated_at": "2026-07-15T15:52:55+08:00",
+      "published_at": "2026-07-15T16:20:17+08:00",
+      "updated_at": "2026-07-15T16:20:17+08:00",
       "review": {
         "status": "approved"
       },
@@ -473,8 +473,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.2.2-m5stack1",
-      "published_at": "2026-07-15T15:52:55+08:00",
-      "updated_at": "2026-07-15T15:52:55+08:00",
+      "published_at": "2026-07-15T16:20:17+08:00",
+      "updated_at": "2026-07-15T16:20:17+08:00",
       "review": {
         "status": "approved"
       },
@@ -560,8 +560,8 @@
       ],
       "author": {},
       "version": "1.0.0",
-      "published_at": "2026-07-15T15:52:55+08:00",
-      "updated_at": "2026-07-15T15:52:55+08:00",
+      "published_at": "2026-07-15T16:20:17+08:00",
+      "updated_at": "2026-07-15T16:20:17+08:00",
       "review": {
         "status": "approved"
       },
@@ -595,6 +595,57 @@
       ]
     },
     {
+      "uuid": "457887b8-d796-57de-8cd2-c931d5f7592d",
+      "share_code": "crea",
+      "title": "Creative Pressure",
+      "summary": "Offline creative focus ritual for Cardputer Zero.",
+      "description": "Creative Pressure is a timed focus ritual for writing under pressure, with session notes, local history, rage mode, and generated ambient sound.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Productivity"
+      ],
+      "author": {},
+      "version": "0.1.0-noirsonance2",
+      "published_at": "2026-07-15T16:20:17+08:00",
+      "updated_at": "2026-07-15T16:20:17+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Proprietary",
+      "source_repo": "https://github.com/NoirSonance/creative-pressure-cardputerzero",
+      "download": {
+        "type": "deb",
+        "package": "creative-pressure",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/creative-pressure_0.1.0-noirsonance2_arm64.deb",
+        "md5": "6fdb0ac493ee3aba3929a5657e305738",
+        "sha256": "939a435e94b9322ca0b3065c8589fe9d2e477c08a250280895cf70b13513a015",
+        "size": 11606
+      },
+      "depends": "python3, python3-pil, python3-evdev, alsa-utils",
+      "permissions": {
+        "microphone": false,
+        "audio_output": true,
+        "network": false,
+        "filesystem": "app-data-only",
+        "keyboard_input": true,
+        "background_service": false,
+        "external_hardware": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/creative-pressure/packaging/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/creative-pressure/packaging/store/screenshots/timer.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/creative-pressure/packaging/store/screenshots/notes.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/creative-pressure/packaging/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/creative-pressure/packaging/store/screenshots/timer.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/creative-pressure/packaging/store/screenshots/notes.png"
+      ]
+    },
+    {
       "uuid": "2c81aaf6-3219-5b91-bc06-b237b49be5a6",
       "share_code": "czco",
       "title": "czconsole",
@@ -611,8 +662,8 @@
         "display_name": "n0xa"
       },
       "version": "0.4.0",
-      "published_at": "2026-07-15T15:52:55+08:00",
-      "updated_at": "2026-07-15T15:52:55+08:00",
+      "published_at": "2026-07-15T16:20:17+08:00",
+      "updated_at": "2026-07-15T16:20:17+08:00",
       "review": {
         "status": "approved"
       },
@@ -657,8 +708,8 @@
         "display_name": "Flint Devices"
       },
       "version": "0.0.25",
-      "published_at": "2026-07-15T15:52:55+08:00",
-      "updated_at": "2026-07-15T15:52:55+08:00",
+      "published_at": "2026-07-15T16:20:17+08:00",
+      "updated_at": "2026-07-15T16:20:17+08:00",
       "review": {
         "status": "approved"
       },
@@ -682,6 +733,8 @@
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/flint.png",
         "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/00_home.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/00_home_list.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/01_home_carousel.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/02_wifi_scan.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/03_ping_stats.png",
@@ -699,11 +752,21 @@
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/15_nfc_scan.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/16_lora_radio.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/17_rf_scan.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/18_gps_info.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/18_gps_info.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/19_ble_spam_running.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/20_codegotchi.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/21_snake.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/22_evil_portal_config.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/23_file_manager.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/24_mac_tracker.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/25_pwnagotchi.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/26_virtual_keyboard.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/flint.png",
       "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/00_home.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/00_home_list.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/01_home_carousel.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/02_wifi_scan.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/03_ping_stats.png",
@@ -721,7 +784,97 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/15_nfc_scan.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/16_lora_radio.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/17_rf_scan.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/18_gps_info.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/18_gps_info.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/19_ble_spam_running.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/20_codegotchi.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/21_snake.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/22_evil_portal_config.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/23_file_manager.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/24_mac_tracker.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/25_pwnagotchi.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/26_virtual_keyboard.png"
+      ]
+    },
+    {
+      "uuid": "1c0e86f0-15e6-534d-b4f1-94839cb2dd30",
+      "share_code": "loca",
+      "title": "Location Tracker",
+      "summary": "LoRa multi-node GPS location receiver — live node list, node detail, and an offline map view.",
+      "description": "A receiver/display for a LoRa (SX1262) multi-node GPS tracking mesh. Nodes send their position over LoRa; this CardputerZero app shows a live hub view (per-node ID / solution quality / lat-lon / satellites / signal) and a node-detail view (GPS fix, speed, altitude, TX). Radio + GNSS use the M5Stack Cap LoRa-1262 (SX1262 + AT6668/ATGM336H GNSS) — the same cap as the Cardputer ADV — driven on the CM0 via spidev/GPIO, so nodes and hubs interoperate across ADV and CardputerZero. Data arrives as NDJSON on stdin from a LoRa hub over USB-CDC, or from the on-device native LoRa receiver. The SIDE key cycles hub → hub-map → node → node-map, so each mode has both a text screen and a full-screen offline map. The map draws SD-stored offline slippy tiles (no network) with GPS/LoRa positions as markers, a scale bar, and pan/zoom (arrows pan, +/- zoom, 0 recenters): the hub-map auto-fits all received nodes, the node-map follows your own position at the most detail available. A small demo tile set of the Kanto–Chubu region (© GSI Japan / 地理院タイル, credited on-screen) ships with the app so the map self-demos out of the box; point CZ_TILES_DIR at your own tiles (see tools/cztiles) for other areas. Bundles a sample track so the whole app self-demos without hardware. A companion macOS app (native MapKit map view) reads the same LoRa-hub NDJSON stream over USB-CDC/TCP, so the same fleet can be viewed on the Mac at the same time.",
+      "locales": {
+        "en": {
+          "title": "Location Tracker",
+          "summary": "LoRa multi-node GPS location receiver — live node list, node detail, and an offline map view."
+        },
+        "ja": {
+          "title": "ロケーショントラッカー",
+          "summary": "LoRa マルチノードGPS位置の受信/表示。ノード一覧＋ノード詳細＋オフライン地図。"
+        }
+      },
+      "i18n": {
+        "en": {
+          "title": "Location Tracker",
+          "summary": "LoRa multi-node GPS location receiver — live node list, node detail, and an offline map view."
+        },
+        "ja": {
+          "title": "ロケーショントラッカー",
+          "summary": "LoRa マルチノードGPS位置の受信/表示。ノード一覧＋ノード詳細＋オフライン地図。"
+        }
+      },
+      "categories": [
+        "Hardware",
+        "Utilities",
+        "Communication"
+      ],
+      "author": {},
+      "version": "0.2.0",
+      "published_at": "2026-07-15T16:20:17+08:00",
+      "updated_at": "2026-07-15T16:20:17+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/u44e/cardputerzero-location-tracker",
+      "download": {
+        "type": "deb",
+        "package": "location-tracker",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/location-tracker_0.2.0_arm64.deb",
+        "md5": "481cb98bdcfa48e2bf671e83b98b1615",
+        "sha256": "3195687616446f7821cfdb4998f7aad93093bbba3ee0090bb4b8290f14f89b48",
+        "size": 2959750
+      },
+      "depends": "libc6, libfreetype6",
+      "permissions": {
+        "keyboard_input": true,
+        "network": false,
+        "filesystem": "full",
+        "external_hardware": true,
+        "hdmi_output": false,
+        "background_service": false,
+        "audio_output": false,
+        "microphone": false,
+        "camera": false,
+        "sensors": true,
+        "gps": true,
+        "device_id": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/location-tracker/share/images/location-tracker.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/location-tracker/store/screenshots/01-hub-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/location-tracker/store/screenshots/02-node-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/location-tracker/store/screenshots/03-node-detail-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/location-tracker/store/screenshots/04-hub-map-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/location-tracker/store/screenshots/05-node-map-320x170.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/location-tracker/share/images/location-tracker.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/location-tracker/store/screenshots/01-hub-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/location-tracker/store/screenshots/02-node-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/location-tracker/store/screenshots/03-node-detail-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/location-tracker/store/screenshots/04-hub-map-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/location-tracker/store/screenshots/05-node-map-320x170.png"
       ]
     },
     {
@@ -945,8 +1098,8 @@
       ],
       "author": {},
       "version": "0.1.0",
-      "published_at": "2026-07-15T15:52:55+08:00",
-      "updated_at": "2026-07-15T15:52:55+08:00",
+      "published_at": "2026-07-15T16:20:17+08:00",
+      "updated_at": "2026-07-15T16:20:17+08:00",
       "review": {
         "status": "approved"
       },
@@ -1030,8 +1183,8 @@
       ],
       "author": {},
       "version": "0.2.2",
-      "published_at": "2026-07-15T15:52:55+08:00",
-      "updated_at": "2026-07-15T15:52:55+08:00",
+      "published_at": "2026-07-15T16:20:17+08:00",
+      "updated_at": "2026-07-15T16:20:17+08:00",
       "review": {
         "status": "approved"
       },
@@ -1100,8 +1253,8 @@
       ],
       "author": {},
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-15T15:52:55+08:00",
-      "updated_at": "2026-07-15T15:52:55+08:00",
+      "published_at": "2026-07-15T16:20:17+08:00",
+      "updated_at": "2026-07-15T16:20:17+08:00",
       "review": {
         "status": "approved"
       },
@@ -1175,8 +1328,8 @@
       ],
       "author": {},
       "version": "0.1.1",
-      "published_at": "2026-07-15T15:52:55+08:00",
-      "updated_at": "2026-07-15T15:52:55+08:00",
+      "published_at": "2026-07-15T16:20:17+08:00",
+      "updated_at": "2026-07-15T16:20:17+08:00",
       "review": {
         "status": "approved"
       },
@@ -1225,6 +1378,110 @@
       ]
     },
     {
+      "uuid": "3ebede22-1158-5920-a8c9-eaedc8748f7e",
+      "share_code": "void",
+      "title": "Void Notes",
+      "summary": "Offline Markdown vault for tiny Cardputer screens.",
+      "description": "Void Notes provides plain-file Markdown notes, search, daily notes, tags, wiki links, and an autosaving keyboard editor for Cardputer Zero.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Productivity",
+        "Utilities"
+      ],
+      "author": {},
+      "version": "0.1.0-noirsonance2",
+      "published_at": "2026-07-15T16:20:17+08:00",
+      "updated_at": "2026-07-15T16:20:17+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Proprietary",
+      "source_repo": "https://github.com/NoirSonance/void-notes-cardputerzero",
+      "download": {
+        "type": "deb",
+        "package": "void-notes",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/void-notes_0.1.0-noirsonance2_arm64.deb",
+        "md5": "b0c45b7e7fc008fa1501d56e1641c1f7",
+        "sha256": "f6cedba66fb9d72eef41d7472233620d07cdbfd542f4c52e125fec3c12ed95ac",
+        "size": 15248
+      },
+      "depends": "python3, python3-pil, python3-evdev",
+      "permissions": {
+        "microphone": false,
+        "audio_output": false,
+        "network": false,
+        "filesystem": "app-data-only",
+        "keyboard_input": true,
+        "background_service": false,
+        "external_hardware": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/void-notes/packaging/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/void-notes/packaging/store/screenshots/vault.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/void-notes/packaging/store/screenshots/editor.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/void-notes/packaging/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/void-notes/packaging/store/screenshots/vault.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/void-notes/packaging/store/screenshots/editor.png"
+      ]
+    },
+    {
+      "uuid": "db282581-9bb5-53d2-8139-5adb9978aec9",
+      "share_code": "void",
+      "title": "Void Room",
+      "summary": "Distraction-free offline writing room tuned for Cardputer Zero.",
+      "description": "Void Room is a quiet offline writing space for timed focus sessions, with no-exit and no-backspace modes, local session archive, and optional ambient sound.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Utilities",
+        "Productivity"
+      ],
+      "author": {},
+      "version": "0.1.0-noirsonance2",
+      "published_at": "2026-07-15T16:20:17+08:00",
+      "updated_at": "2026-07-15T16:20:17+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Proprietary",
+      "source_repo": "https://github.com/NoirSonance/void-room-cardputerzero",
+      "download": {
+        "type": "deb",
+        "package": "void-room",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/void-room_0.1.0-noirsonance2_arm64.deb",
+        "md5": "43fc9c005e39194022e091800a787269",
+        "sha256": "86f1df5a7b974b6207bd0208354761354e36783f693cd58f175f3530a0e6c82f",
+        "size": 11588
+      },
+      "depends": "python3, python3-tk, python3-pil, python3-evdev, alsa-utils",
+      "permissions": {
+        "microphone": false,
+        "audio_output": true,
+        "network": false,
+        "filesystem": "app-data-only",
+        "keyboard_input": true,
+        "background_service": false,
+        "external_hardware": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/void-room/packaging/cardputer-store/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/void-room/packaging/cardputer-store/screenshots/home-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/void-room/packaging/cardputer-store/screenshots/room-320x170.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/void-room/packaging/cardputer-store/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/void-room/packaging/cardputer-store/screenshots/home-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/void-room/packaging/cardputer-store/screenshots/room-320x170.png"
+      ]
+    },
+    {
       "uuid": "adc96eba-b329-5541-91fc-d2dbf6e60491",
       "share_code": "zero",
       "title": "Zero MP3",
@@ -1270,8 +1527,8 @@
       ],
       "author": {},
       "version": "0.1.0-m5stack1",
-      "published_at": "2026-07-15T15:52:55+08:00",
-      "updated_at": "2026-07-15T15:52:55+08:00",
+      "published_at": "2026-07-15T16:20:17+08:00",
+      "updated_at": "2026-07-15T16:20:17+08:00",
       "review": {
         "status": "approved"
       },
@@ -1302,6 +1559,55 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeromp3/store/screenshots/player.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeromp3/store/screenshots/playlist.png"
+      ]
+    },
+    {
+      "uuid": "0d3e5217-dfe1-51d9-bb6d-0f1ac0b7cf8e",
+      "share_code": "zero",
+      "title": "zeroSDR",
+      "summary": "Real-time SDR spectrum analyzer and audio demodulator for RTL-SDR devices",
+      "description": "zeroSDR is a lightweight Software Defined Radio (SDR) receiver optimized for embedded Linux systems with small displays. Features real-time spectrum and waterfall visualization, FM/NFM/AM audio demodulation with AGC and squelch, and direct framebuffer rendering for minimal overhead. Designed for Raspberry Pi Zero 2W and Pi 5 with RTL-SDR dongles.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "hamradio",
+        "utility",
+        "multimedia"
+      ],
+      "author": {},
+      "version": "0.2.0",
+      "published_at": "2026-07-15T16:20:17+08:00",
+      "updated_at": "2026-07-15T16:20:17+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "",
+      "source_repo": "https://github.com/nullbeing/zeroSDR",
+      "download": {
+        "type": "deb",
+        "package": "zerosdr",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosdr_0.2.0_arm64.deb",
+        "md5": "04e7f36ce2ef1857dc293346a61108ad",
+        "sha256": "888789b66b0483e9b9a47c356f103a315b925009cac332a8b2b76860db08d6cf",
+        "size": 101396
+      },
+      "depends": "librtlsdr0, libasound2, libc6",
+      "permissions": {},
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/share/images/zerosdr.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/store/screenshots/screenshot1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/store/screenshots/screenshot2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/store/screenshots/screenshot3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/store/screenshots/screenshot4.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/share/images/zerosdr.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/store/screenshots/screenshot1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/store/screenshots/screenshot2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/store/screenshots/screenshot3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/store/screenshots/screenshot4.png"
       ]
     }
   ]
