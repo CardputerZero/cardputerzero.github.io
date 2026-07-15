@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-07-10T19:42:35+08:00",
+  "generated_at": "2026-07-15T15:52:55+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -102,6 +102,85 @@
       ]
     },
     {
+      "uuid": "5cc5012b-23e1-55e4-9492-558c098fbc9f",
+      "share_code": "batt",
+      "title": "Battleship",
+      "summary": "Classic naval combat: 1P vs AI or 2P over BLE/WiFi.",
+      "description": "CardputerZero Battleship game",
+      "locales": {
+        "zh-CN": {
+          "title": "海战棋",
+          "summary": "经典海战游戏：单人对战 AI，或通过 BLE/WiFi 双人对战。",
+          "description": "经典的海战益智游戏，专为 CardputerZero 打造。单人模式下与本地概率密度 AI 对战（三档难度），并有解说员实时点评战况。双人模式下可通过内置蓝牙（BLE，默认，无需路由器）或 WiFi 局域网与另一台 CardputerZero 对战。界面支持简体中文/日语/英语三语切换，随时可在设置中更改并即时生效。"
+        },
+        "en": {
+          "title": "Battleship",
+          "summary": "Classic naval combat: 1P vs AI or 2P over BLE/WiFi.",
+          "description": "A classic naval combat puzzle game built for CardputerZero. Play solo against a local probability-density AI (three difficulty levels) with live battle commentary. Play two-player over built-in Bluetooth (BLE, the default, no access point needed) or WiFi LAN against another CardputerZero. The UI switches between English, Japanese, and Simplified Chinese instantly from Settings."
+        },
+        "ja": {
+          "title": "バトルシップ",
+          "summary": "王道の海戦ゲーム。1人用はAI対戦、2人用はBLE/WiFi通信対戦。",
+          "description": "CardputerZero向けに作られた、古典的な海戦パズルゲームです。1人用モードでは、ローカルの確率密度AI（難易度3段階）と対戦でき、戦況をリアルタイムで実況する解説機能もあります。2人用モードでは、内蔵Bluetooth（BLE、デフォルト、アクセスポイント不要）またはWiFi LAN経由で、もう1台のCardputerZeroと対戦できます。UIは英語・日本語・簡体字中国語を設定画面から即座に切り替え可能です。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "海战棋",
+          "summary": "经典海战游戏：单人对战 AI，或通过 BLE/WiFi 双人对战。",
+          "description": "经典的海战益智游戏，专为 CardputerZero 打造。单人模式下与本地概率密度 AI 对战（三档难度），并有解说员实时点评战况。双人模式下可通过内置蓝牙（BLE，默认，无需路由器）或 WiFi 局域网与另一台 CardputerZero 对战。界面支持简体中文/日语/英语三语切换，随时可在设置中更改并即时生效。"
+        },
+        "en": {
+          "title": "Battleship",
+          "summary": "Classic naval combat: 1P vs AI or 2P over BLE/WiFi.",
+          "description": "A classic naval combat puzzle game built for CardputerZero. Play solo against a local probability-density AI (three difficulty levels) with live battle commentary. Play two-player over built-in Bluetooth (BLE, the default, no access point needed) or WiFi LAN against another CardputerZero. The UI switches between English, Japanese, and Simplified Chinese instantly from Settings."
+        },
+        "ja": {
+          "title": "バトルシップ",
+          "summary": "王道の海戦ゲーム。1人用はAI対戦、2人用はBLE/WiFi通信対戦。",
+          "description": "CardputerZero向けに作られた、古典的な海戦パズルゲームです。1人用モードでは、ローカルの確率密度AI（難易度3段階）と対戦でき、戦況をリアルタイムで実況する解説機能もあります。2人用モードでは、内蔵Bluetooth（BLE、デフォルト、アクセスポイント不要）またはWiFi LAN経由で、もう1台のCardputerZeroと対戦できます。UIは英語・日本語・簡体字中国語を設定画面から即座に切り替え可能です。"
+        }
+      },
+      "categories": [
+        "Games"
+      ],
+      "author": {},
+      "version": "1.0.0",
+      "published_at": "2026-07-15T15:52:55+08:00",
+      "updated_at": "2026-07-15T15:52:55+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "battleship",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/battleship_1.0.0_arm64.deb",
+        "md5": "f0e5e022c9341cd530d9bbf334bf9376",
+        "sha256": "3de768d040c44e2e2a66fbf7f49d5fa2125d16dda94b58365eb5a4bc62069d6c",
+        "size": 965790
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libsystemd0",
+      "permissions": {},
+      "assets": {
+        "icon": "assets/images/battleship.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/battleship/store/screenshots/main.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/battleship/store/screenshots/placement.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/battleship/store/screenshots/battle.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/battleship/store/screenshots/network.png"
+        ]
+      },
+      "icon": "assets/images/battleship.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/battleship/store/screenshots/main.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/battleship/store/screenshots/placement.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/battleship/store/screenshots/battle.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/battleship/store/screenshots/network.png"
+      ]
+    },
+    {
       "uuid": "ff2ee91e-c334-5a5d-8b91-725c59c08294",
       "share_code": "cale",
       "title": "Calendar",
@@ -189,6 +268,86 @@
       ]
     },
     {
+      "uuid": "191fd112-3862-5bfd-a695-bddb8f9019c4",
+      "share_code": "cams",
+      "title": "CamStreamEmu",
+      "summary": "Reproduce a captured camera's video stream (multicast / RTSP / HTTP-MJPEG) from the built-in camera.",
+      "description": "CamStreamEmu regenerates the video stream of a real network camera from a profile captured by PacketScope. Pick a camera-profile JSON on the 320x170 screen and it encodes the built-in camera to that exact format via GStreamer (hardware H.264 on the Pi) and delivers it the same way the real camera did — multicast RTP (H.264/MPEG2-TS, MPEG-2, MLIT MPEG2-TTS/PT103, RTP-JPEG), an RTSP server, or an HTTP Motion-JPEG server — while showing live delivery mode / destination / packet & byte counters. Video-only; there is no pan/tilt/zoom camera control. Pairs with PacketScope (observe -> reproduce round-trip).",
+      "locales": {
+        "en": {
+          "title": "CamStreamEmu",
+          "summary": "Reproduce a captured camera's video stream (multicast / RTSP / HTTP-MJPEG) from the built-in camera.",
+          "description": "CamStreamEmu regenerates a real network camera's video stream from a profile captured by PacketScope. Pick a camera-profile JSON on the 320x170 screen; it encodes the built-in camera to that exact format via GStreamer (hardware H.264 on the Pi) and delivers it the way the real camera did: multicast RTP (H.264/MPEG2-TS, MPEG-2, MLIT MPEG2-TTS/PT103, RTP-JPEG), an RTSP server, or an HTTP Motion-JPEG server — with live delivery-mode / destination / packet & byte counters. Video only (no PTZF camera control). Pairs with PacketScope as the observe->reproduce round-trip."
+        },
+        "ja": {
+          "title": "カムストリームエミュ",
+          "summary": "取得したカメラの映像ストリームを内蔵カメラから再現(マルチキャスト/RTSP/HTTP-MJPEG)。",
+          "description": "CamStreamEmu は、PacketScope で取得したプロファイルから実ネットワークカメラの映像ストリームを再現します。320x170 の画面でカメラプロファイルJSONを選ぶと、内蔵カメラを GStreamer(Piではハードウェア H.264)でその形式に符号化し、実カメラと同じ方式で配信します: マルチキャストRTP(H.264/MPEG2-TS・MPEG-2・国交省MPEG2-TTS/PT103・RTP-JPEG)、RTSPサーバ、HTTP Motion-JPEG サーバ。配信モード・宛先・パケット/バイト数をライブ表示します。映像のみ(PTZFカメラ制御なし)。PacketScope と対で「観測→再現」の往復を成します。"
+        }
+      },
+      "i18n": {
+        "en": {
+          "title": "CamStreamEmu",
+          "summary": "Reproduce a captured camera's video stream (multicast / RTSP / HTTP-MJPEG) from the built-in camera.",
+          "description": "CamStreamEmu regenerates a real network camera's video stream from a profile captured by PacketScope. Pick a camera-profile JSON on the 320x170 screen; it encodes the built-in camera to that exact format via GStreamer (hardware H.264 on the Pi) and delivers it the way the real camera did: multicast RTP (H.264/MPEG2-TS, MPEG-2, MLIT MPEG2-TTS/PT103, RTP-JPEG), an RTSP server, or an HTTP Motion-JPEG server — with live delivery-mode / destination / packet & byte counters. Video only (no PTZF camera control). Pairs with PacketScope as the observe->reproduce round-trip."
+        },
+        "ja": {
+          "title": "カムストリームエミュ",
+          "summary": "取得したカメラの映像ストリームを内蔵カメラから再現(マルチキャスト/RTSP/HTTP-MJPEG)。",
+          "description": "CamStreamEmu は、PacketScope で取得したプロファイルから実ネットワークカメラの映像ストリームを再現します。320x170 の画面でカメラプロファイルJSONを選ぶと、内蔵カメラを GStreamer(Piではハードウェア H.264)でその形式に符号化し、実カメラと同じ方式で配信します: マルチキャストRTP(H.264/MPEG2-TS・MPEG-2・国交省MPEG2-TTS/PT103・RTP-JPEG)、RTSPサーバ、HTTP Motion-JPEG サーバ。配信モード・宛先・パケット/バイト数をライブ表示します。映像のみ(PTZFカメラ制御なし)。PacketScope と対で「観測→再現」の往復を成します。"
+        }
+      },
+      "categories": [
+        "Multimedia",
+        "Video",
+        "Utilities"
+      ],
+      "author": {},
+      "version": "0.1.1",
+      "published_at": "2026-07-15T15:52:55+08:00",
+      "updated_at": "2026-07-15T15:52:55+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/u44e/CamStreamEmu",
+      "download": {
+        "type": "deb",
+        "package": "camstreamemu",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/camstreamemu_0.1.1_arm64.deb",
+        "md5": "3260c80c4cacae95f8e67d3064fb480a",
+        "sha256": "63692877147de7036422dcd386ecf714d3eb53010d4f8e8e6943ba67aa4b2a5c",
+        "size": 452680
+      },
+      "depends": "libc6, libfreetype6, gstreamer1.0-tools, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-bad, gstreamer1.0-libav, libgstrtspserver-1.0-0",
+      "permissions": {
+        "keyboard_input": true,
+        "network": true,
+        "filesystem": "full",
+        "external_hardware": false,
+        "hdmi_output": false,
+        "background_service": false,
+        "audio_output": false,
+        "microphone": false,
+        "camera": true,
+        "sensors": false,
+        "gps": false,
+        "device_id": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/camstreamemu/share/images/camstreamemu.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/camstreamemu/store/screenshots/01-list-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/camstreamemu/store/screenshots/02-reproduce-320x170.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/camstreamemu/share/images/camstreamemu.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/camstreamemu/store/screenshots/01-list-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/camstreamemu/store/screenshots/02-reproduce-320x170.png"
+      ]
+    },
+    {
       "uuid": "1cae73de-aa3e-5410-bfc2-0747ac721f84",
       "share_code": "card",
       "title": "Pwnagotchi",
@@ -228,8 +387,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.1.1-m5stack1",
-      "published_at": "2026-07-10T19:42:35+08:00",
-      "updated_at": "2026-07-10T19:42:35+08:00",
+      "published_at": "2026-07-15T15:52:55+08:00",
+      "updated_at": "2026-07-15T15:52:55+08:00",
       "review": {
         "status": "approved"
       },
@@ -314,8 +473,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.2.2-m5stack1",
-      "published_at": "2026-07-10T19:42:35+08:00",
-      "updated_at": "2026-07-10T19:42:35+08:00",
+      "published_at": "2026-07-15T15:52:55+08:00",
+      "updated_at": "2026-07-15T15:52:55+08:00",
       "review": {
         "status": "approved"
       },
@@ -357,6 +516,131 @@
       ]
     },
     {
+      "uuid": "e9e7b981-11a7-508a-b2c1-485a1684713a",
+      "share_code": "chai",
+      "title": "ChainLED",
+      "summary": "Create 8x8 LED animations and drive a real Chain Mono/RGB matrix.",
+      "description": "CardputerZero Chain LED animation editor & simulator",
+      "locales": {
+        "zh-CN": {
+          "title": "链式LED模拟器",
+          "summary": "创建8x8 LED动画，并驱动真实的Chain Mono/RGB矩阵。",
+          "description": "为CardputerZero打造的8x8像素动画编辑器与LED矩阵模拟器。使用键盘绘制最多10帧的动画（支持从第一帧自动生成剩余帧），在屏幕上以RGB或单色模式预览，并可通过UART实时驱动真实的Chain Mono / Chain RGB（M5Stack Chain系列）8x8 LED矩阵。可通过内置蓝牙（BLE，默认）或WiFi局域网与另一台CardputerZero互相发送/接收动画。界面支持简体中文/英语/日语三语切换，随时可在设置中更改并即时生效。"
+        },
+        "en": {
+          "title": "ChainLED",
+          "summary": "Create 8x8 LED animations and drive a real Chain Mono/RGB matrix.",
+          "description": "An 8x8 pixel-animation editor and LED-matrix simulator built for CardputerZero. Draw up to 10 frames with a keyboard-only editor (with automatic remaining-frame generation from a single seed frame), preview in RGB or Mono mode on-screen, and drive a real Chain Mono / Chain RGB (M5Stack Chain series) 8x8 LED matrix live over UART. Send and receive animations with another CardputerZero over built-in Bluetooth (BLE, the default) or WiFi LAN. The UI switches between English, Japanese, and Simplified Chinese instantly from Settings."
+        },
+        "ja": {
+          "title": "チェーンLEDシミュレーション",
+          "summary": "8x8のLEDアニメーションを作成し、実機のChain Mono/RGBを駆動。",
+          "description": "CardputerZero向けに作られた、8x8ドットアニメーションエディタ兼LEDマトリクスシミュレータです。キーボード操作のみで最大10コマのアニメーションを作成でき（1枚目のコマから残りを自動生成する機能付き）、画面上でRGB/Monoモードのプレビュー再生ができるほか、実際のChain Mono / Chain RGB（M5Stack Chainシリーズ）8x8 LEDマトリクスにUART経由でリアルタイム出力できます。内蔵Bluetooth（BLE、デフォルト）またはWiFi LAN経由で、もう1台のCardputerZeroとアニメーションを送受信できます。UIは英語・日本語・簡体字中国語を設定画面から即座に切り替え可能です。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "链式LED模拟器",
+          "summary": "创建8x8 LED动画，并驱动真实的Chain Mono/RGB矩阵。",
+          "description": "为CardputerZero打造的8x8像素动画编辑器与LED矩阵模拟器。使用键盘绘制最多10帧的动画（支持从第一帧自动生成剩余帧），在屏幕上以RGB或单色模式预览，并可通过UART实时驱动真实的Chain Mono / Chain RGB（M5Stack Chain系列）8x8 LED矩阵。可通过内置蓝牙（BLE，默认）或WiFi局域网与另一台CardputerZero互相发送/接收动画。界面支持简体中文/英语/日语三语切换，随时可在设置中更改并即时生效。"
+        },
+        "en": {
+          "title": "ChainLED",
+          "summary": "Create 8x8 LED animations and drive a real Chain Mono/RGB matrix.",
+          "description": "An 8x8 pixel-animation editor and LED-matrix simulator built for CardputerZero. Draw up to 10 frames with a keyboard-only editor (with automatic remaining-frame generation from a single seed frame), preview in RGB or Mono mode on-screen, and drive a real Chain Mono / Chain RGB (M5Stack Chain series) 8x8 LED matrix live over UART. Send and receive animations with another CardputerZero over built-in Bluetooth (BLE, the default) or WiFi LAN. The UI switches between English, Japanese, and Simplified Chinese instantly from Settings."
+        },
+        "ja": {
+          "title": "チェーンLEDシミュレーション",
+          "summary": "8x8のLEDアニメーションを作成し、実機のChain Mono/RGBを駆動。",
+          "description": "CardputerZero向けに作られた、8x8ドットアニメーションエディタ兼LEDマトリクスシミュレータです。キーボード操作のみで最大10コマのアニメーションを作成でき（1枚目のコマから残りを自動生成する機能付き）、画面上でRGB/Monoモードのプレビュー再生ができるほか、実際のChain Mono / Chain RGB（M5Stack Chainシリーズ）8x8 LEDマトリクスにUART経由でリアルタイム出力できます。内蔵Bluetooth（BLE、デフォルト）またはWiFi LAN経由で、もう1台のCardputerZeroとアニメーションを送受信できます。UIは英語・日本語・簡体字中国語を設定画面から即座に切り替え可能です。"
+        }
+      },
+      "categories": [
+        "Graphics"
+      ],
+      "author": {},
+      "version": "1.0.0",
+      "published_at": "2026-07-15T15:52:55+08:00",
+      "updated_at": "2026-07-15T15:52:55+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "chainled",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/chainled_1.0.0_arm64.deb",
+        "md5": "415df301b391f7a6f18d85603faa3a4b",
+        "sha256": "5cca53b98418b36ad7bf4245244d3ceb4a59652ad3d3857952773f58beae7eff",
+        "size": 786114
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libsystemd0",
+      "permissions": {},
+      "assets": {
+        "icon": "assets/images/chainled.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/store/screenshots/editor.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/store/screenshots/simulator.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/store/screenshots/send_receive.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/store/screenshots/settings.png"
+        ]
+      },
+      "icon": "assets/images/chainled.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/store/screenshots/editor.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/store/screenshots/simulator.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/store/screenshots/send_receive.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/store/screenshots/settings.png"
+      ]
+    },
+    {
+      "uuid": "2c81aaf6-3219-5b91-bc06-b237b49be5a6",
+      "share_code": "czco",
+      "title": "czconsole",
+      "summary": "Phone + on-device field console: telemetry, LCD mirror, files, and wardrive/SDR/recon tools",
+      "description": "A privilege-separated field console for the M5Stack CardputerZero. A powerless Go web worker serves a phone dashboard (telemetry, LCD mirror, file browser) and drives capability-gated tools — nmap, gobuster, tcpdump, rtl_433, rtl_power (RF heatmaps), and kismet+GPS wardriving — all defined by runtime JSON specs. A native LCD frontend runs the same tools on the device's own screen and keypad. OS-agnostic: same package on Kali and stock RaspiOS; tools self-disable when absent.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Security",
+        "Utilities"
+      ],
+      "author": {
+        "github": "n0xa",
+        "display_name": "n0xa"
+      },
+      "version": "0.4.0",
+      "published_at": "2026-07-15T15:52:55+08:00",
+      "updated_at": "2026-07-15T15:52:55+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/n0xa/czconsole",
+      "download": {
+        "type": "deb",
+        "package": "czconsole",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/czconsole_0.4.0_arm64.deb",
+        "md5": "4cfa292c826747780cec718069d941de",
+        "sha256": "2a9400541a506d1c2e92e3f78e98c72b700fc69e3369304906e69bfc307435ef",
+        "size": 13664440
+      },
+      "depends": "pamtester, libpam-modules, acl, rtl-sdr, rtl-433, tcpdump, nmap, gobuster",
+      "permissions": {
+        "network": true,
+        "keyboard_input": true,
+        "filesystem": true,
+        "external_hardware": true
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czconsole/czconsole.png",
+        "screenshots": []
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czconsole/czconsole.png",
+      "screenshots": []
+    },
+    {
       "uuid": "eda9d233-da30-5f0f-9ae8-bc2c635f2aaf",
       "share_code": "flin",
       "title": "Flint",
@@ -373,8 +657,8 @@
         "display_name": "Flint Devices"
       },
       "version": "0.0.25",
-      "published_at": "2026-07-10T19:42:35+08:00",
-      "updated_at": "2026-07-10T19:42:35+08:00",
+      "published_at": "2026-07-15T15:52:55+08:00",
+      "updated_at": "2026-07-15T15:52:55+08:00",
       "review": {
         "status": "approved"
       },
@@ -626,6 +910,398 @@
       "icon": "assets/2000e000/icon.png",
       "screenshots": [
         "assets/2000e000/screenshots/main.png"
+      ]
+    },
+    {
+      "uuid": "aa2ba61e-c0eb-59a8-a98d-ccc246cf8e53",
+      "share_code": "nets",
+      "title": "NetSim",
+      "summary": "2-port inline network tester: traffic load-generator + tc netem WAN impairment emulator over the built-in LAN port + one USB-LAN adapter.",
+      "description": "Turn a two-port CardputerZero (built-in LAN + one USB-LAN adapter) into a portable network lab. LOAD mode blasts self-timestamped frames out port A and receives them raw on port B, measuring one-way latency (min/avg/max), jitter, packet loss, duplication and reorder, plus a binary-search rate sweep that finds the loss-free maximum throughput of the device under test. IMPAIR mode bridges the two ports transparently (no IP needed) and shapes the pass-through traffic per direction with tc netem: delay, jitter, loss, duplicate, corrupt, reorder and rate limiting, with CCTV-tuned presets (Satellite, Congested, Lossy-wireless, Brownout, ...). Every ip/tc/nmcli command is shown in an on-device log. Designed for destructive testing of multicast RTP / MLIT CCTV streams.",
+      "locales": {
+        "en": {
+          "title": "NetSim",
+          "summary": "2-port inline network tester: traffic load-generator + tc netem WAN impairment emulator over the built-in LAN port + one USB-LAN adapter."
+        },
+        "ja": {
+          "title": "NetSim",
+          "summary": "USB-LAN 2ポートで使うインライン型ネットワーク試験機。負荷試験(トラフィック生成+片方向遅延/ロス/スループット測定+レートスイープ)と、透過ブリッジ+tc netem による遅延/ジッタ/ロス/帯域制限の劣化注入(WANエミュレータ)。"
+        }
+      },
+      "i18n": {
+        "en": {
+          "title": "NetSim",
+          "summary": "2-port inline network tester: traffic load-generator + tc netem WAN impairment emulator over the built-in LAN port + one USB-LAN adapter."
+        },
+        "ja": {
+          "title": "NetSim",
+          "summary": "USB-LAN 2ポートで使うインライン型ネットワーク試験機。負荷試験(トラフィック生成+片方向遅延/ロス/スループット測定+レートスイープ)と、透過ブリッジ+tc netem による遅延/ジッタ/ロス/帯域制限の劣化注入(WANエミュレータ)。"
+        }
+      },
+      "categories": [
+        "Network",
+        "Utilities",
+        "System"
+      ],
+      "author": {},
+      "version": "0.1.0",
+      "published_at": "2026-07-15T15:52:55+08:00",
+      "updated_at": "2026-07-15T15:52:55+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/u44e/cardputerzero-netsim",
+      "download": {
+        "type": "deb",
+        "package": "netsim",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/netsim_0.1.0_arm64.deb",
+        "md5": "17372a6eda3f7516816a6722f4b657c0",
+        "sha256": "4d2e187122b749c72084d211fd3afefcc9d24e654f2185f7701d159c7aa8bc29",
+        "size": 444218
+      },
+      "depends": "libc6, iproute2, libcap2-bin",
+      "permissions": {
+        "keyboard_input": true,
+        "network": true,
+        "filesystem": "none",
+        "external_hardware": true,
+        "hdmi_output": false,
+        "background_service": false,
+        "audio_output": false,
+        "microphone": false,
+        "camera": false,
+        "sensors": false,
+        "gps": false,
+        "device_id": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netsim/share/images/netsim.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netsim/store/screenshots/01-home-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netsim/store/screenshots/02-load-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netsim/store/screenshots/03-sweep-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netsim/store/screenshots/04-impair-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netsim/store/screenshots/05-presets-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netsim/store/screenshots/06-log-320x170.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netsim/share/images/netsim.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netsim/store/screenshots/01-home-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netsim/store/screenshots/02-load-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netsim/store/screenshots/03-sweep-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netsim/store/screenshots/04-impair-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netsim/store/screenshots/05-presets-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netsim/store/screenshots/06-log-320x170.png"
+      ]
+    },
+    {
+      "uuid": "cf1b57b8-b7de-553a-90d6-75f4173cf588",
+      "share_code": "nett",
+      "title": "NetTerm",
+      "summary": "SSH / telnet / USB-serial / shell terminal with profiles, VPN, macros and file injection.",
+      "description": "A pocket terminal for network gear: SSH, telnet, USB-serial console (picocom) and local shell. Connection profiles with OS-managed VPN, per-profile SSH key and color theme, session logging with search, quick-send macros, charset-auto-detect file injection with wait-for-prompt, scrollback with search and line copy/paste, full SGR colour, and a switchable EN/JA UI.",
+      "locales": {
+        "en": {
+          "title": "NetTerm",
+          "summary": "SSH / telnet / USB-serial / shell terminal with profiles, VPN, macros and file injection."
+        },
+        "ja": {
+          "title": "NetTerm",
+          "summary": "SSH / telnet / USB-シリアル / シェル端末。プロファイル・VPN・マクロ・ファイル流し込み対応。"
+        }
+      },
+      "i18n": {
+        "en": {
+          "title": "NetTerm",
+          "summary": "SSH / telnet / USB-serial / shell terminal with profiles, VPN, macros and file injection."
+        },
+        "ja": {
+          "title": "NetTerm",
+          "summary": "SSH / telnet / USB-シリアル / シェル端末。プロファイル・VPN・マクロ・ファイル流し込み対応。"
+        }
+      },
+      "categories": [
+        "Network",
+        "Developer Tools",
+        "Utilities",
+        "System"
+      ],
+      "author": {},
+      "version": "0.2.2",
+      "published_at": "2026-07-15T15:52:55+08:00",
+      "updated_at": "2026-07-15T15:52:55+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/u44e/cardputerzero-ssh-term",
+      "download": {
+        "type": "deb",
+        "package": "netterm",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/netterm_0.2.2_arm64.deb",
+        "md5": "153238d05c65433168370b3fc72174c4",
+        "sha256": "7bc8e075190a28a63238f1cff585af75aa8269d7d5ecadaa487395f4b5602d0e",
+        "size": 473664
+      },
+      "depends": "libc6, libfreetype6, libvterm0, libevdev2, openssh-client, telnet, picocom",
+      "permissions": {
+        "keyboard_input": true,
+        "network": true,
+        "filesystem": "full",
+        "external_hardware": true,
+        "hdmi_output": false,
+        "background_service": false,
+        "audio_output": false,
+        "microphone": false,
+        "camera": false,
+        "sensors": false,
+        "gps": false,
+        "device_id": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/share/images/netterm.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/01-sessions-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/02-editor-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/03-terminal-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/04-menu-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/05-macros-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/06-macro-edit-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/07-files-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/08-send-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/09-logview-320x170.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/share/images/netterm.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/01-sessions-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/02-editor-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/03-terminal-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/04-menu-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/05-macros-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/06-macro-edit-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/07-files-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/08-send-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/store/screenshots/09-logview-320x170.png"
+      ]
+    },
+    {
+      "uuid": "75eec6c1-26d9-59d5-81af-746c01945759",
+      "share_code": "noir",
+      "title": "Control Center",
+      "summary": "Privacy-safe local dashboard for Cardputer Zero.",
+      "description": "Control Center provides local device health, configurable checks, safe actions, and a privacy status page without bundling personal infrastructure data.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Utilities"
+      ],
+      "author": {},
+      "version": "0.1.0-noirsonance2",
+      "published_at": "2026-07-15T15:52:55+08:00",
+      "updated_at": "2026-07-15T15:52:55+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Proprietary",
+      "source_repo": "https://github.com/NoirSonance/control-center-cardputerzero",
+      "download": {
+        "type": "deb",
+        "package": "noirsonance-control-center",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/noirsonance-control-center_0.1.0-noirsonance2_arm64.deb",
+        "md5": "75461390bd9df17ab6a4a33eb578e3cd",
+        "sha256": "76989cbe51414917439c6de75636bf4b145c7bdcd44264b760087bc2bb5dd088",
+        "size": 14102
+      },
+      "depends": "python3, python3-pil, python3-evdev",
+      "permissions": {
+        "microphone": false,
+        "audio_output": false,
+        "network": false,
+        "filesystem": "app-data-only",
+        "keyboard_input": true,
+        "background_service": false,
+        "external_hardware": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-control-center/packaging/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-control-center/packaging/store/screenshots/dashboard.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-control-center/packaging/store/screenshots/privacy.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-control-center/packaging/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-control-center/packaging/store/screenshots/dashboard.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-control-center/packaging/store/screenshots/privacy.png"
+      ]
+    },
+    {
+      "uuid": "2aa0c29a-a02a-5a76-9005-6fd76ac8fd20",
+      "share_code": "pack",
+      "title": "PacketScope",
+      "summary": "Offline pcap/pcapng investigator — packet list, protocol tree, hex, filters, RTP & video-stream stats.",
+      "description": "A fully offline packet-capture investigation tool. Open a .pcap/.pcapng from the SD card and explore it Wireshark-style on the 320x170 screen: a virtualized packet list (No/Time/Src/Dst/Proto/Len/Info), an expandable protocol tree synced to a hex dump with field highlighting, display filters (ip.addr==, udp.port==, rtp.ssrc==, proto keywords, &&/||/!), and statistics: protocol hierarchy, conversations, RTP streams (loss/jitter/rate per SSRC) and a video-stream check (codec/resolution/GOP conformance for CCTV MPEG2-TS/TTS and H.264/MPEG-2). Exports a camera profile (control request + video format) as JSON. Dissectors: Ethernet/VLAN/ARP/IPv4/IPv6/UDP/TCP/ICMP/ICMPv6/IGMP/DNS/DHCP/NTP/RTSP/HTTP/SDP/MJPEG/RTP/MPEG2-TS/TTS(192)/H.264/MPEG-2. Focus protocols: RTSP, MJPEG, TCP, UDP. Includes a bundled sample capture so it self-demos without any setup. Viewer only: no network permission, nothing ever leaves the device.",
+      "locales": {
+        "en": {
+          "title": "PacketScope",
+          "summary": "Offline pcap/pcapng investigator — packet list, protocol tree, hex, filters, RTP & video-stream stats.",
+          "description": "A fully offline packet-capture investigation tool. Open a .pcap/.pcapng from the SD card and explore it Wireshark-style on the 320x170 screen: a virtualized packet list (No/Time/Src/Dst/Proto/Len/Info), an expandable protocol tree synced to a hex dump with field highlighting, display filters (ip.addr==, udp.port==, rtp.ssrc==, proto keywords, &&/||/!), and statistics: protocol hierarchy, conversations, RTP streams (loss/jitter/rate per SSRC) and a video-stream check for CCTV media (MPEG2-TS/TTS and H.264/MPEG-2). It can export a camera profile (control request + video format) as JSON. Focus protocols: RTSP, MJPEG, TCP, UDP. Viewer-first and offline: nothing ever leaves the device."
+        },
+        "ja": {
+          "title": "パケットスコープ",
+          "summary": "pcap/pcapngをその場で解析 — パケット一覧・プロトコルツリー・HEX・フィルタ・RTP/映像ストリーム統計。",
+          "description": "完全オフラインのパケットキャプチャ調査ツール。SDカードの .pcap/.pcapng を開き、320x170の画面でWireshark風に解析します: 仮想化されたパケット一覧(No/時刻/送信元/宛先/プロト/長さ/情報)、HEXダンプと同期しフィールドを強調表示する展開可能なプロトコルツリー、表示フィルタ(ip.addr==, udp.port==, rtp.ssrc==, プロト名, &&/||/!)、統計(プロトコル階層・カンバセーション・RTPストリームのSSRC別ロス/ジッタ/レート)、CCTV映像の形式チェック(MPEG2-TS/TTS・H.264/MPEG-2)。カメラプロファイル(制御要求+映像形式)をJSONで書き出せます。重点プロトコル: RTSP・MJPEG・TCP・UDP。ビューア中心・完全オフラインで、データは一切デバイス外へ出ません。"
+        }
+      },
+      "i18n": {
+        "en": {
+          "title": "PacketScope",
+          "summary": "Offline pcap/pcapng investigator — packet list, protocol tree, hex, filters, RTP & video-stream stats.",
+          "description": "A fully offline packet-capture investigation tool. Open a .pcap/.pcapng from the SD card and explore it Wireshark-style on the 320x170 screen: a virtualized packet list (No/Time/Src/Dst/Proto/Len/Info), an expandable protocol tree synced to a hex dump with field highlighting, display filters (ip.addr==, udp.port==, rtp.ssrc==, proto keywords, &&/||/!), and statistics: protocol hierarchy, conversations, RTP streams (loss/jitter/rate per SSRC) and a video-stream check for CCTV media (MPEG2-TS/TTS and H.264/MPEG-2). It can export a camera profile (control request + video format) as JSON. Focus protocols: RTSP, MJPEG, TCP, UDP. Viewer-first and offline: nothing ever leaves the device."
+        },
+        "ja": {
+          "title": "パケットスコープ",
+          "summary": "pcap/pcapngをその場で解析 — パケット一覧・プロトコルツリー・HEX・フィルタ・RTP/映像ストリーム統計。",
+          "description": "完全オフラインのパケットキャプチャ調査ツール。SDカードの .pcap/.pcapng を開き、320x170の画面でWireshark風に解析します: 仮想化されたパケット一覧(No/時刻/送信元/宛先/プロト/長さ/情報)、HEXダンプと同期しフィールドを強調表示する展開可能なプロトコルツリー、表示フィルタ(ip.addr==, udp.port==, rtp.ssrc==, プロト名, &&/||/!)、統計(プロトコル階層・カンバセーション・RTPストリームのSSRC別ロス/ジッタ/レート)、CCTV映像の形式チェック(MPEG2-TS/TTS・H.264/MPEG-2)。カメラプロファイル(制御要求+映像形式)をJSONで書き出せます。重点プロトコル: RTSP・MJPEG・TCP・UDP。ビューア中心・完全オフラインで、データは一切デバイス外へ出ません。"
+        }
+      },
+      "categories": [
+        "Utilities",
+        "Development",
+        "Communication"
+      ],
+      "author": {},
+      "version": "0.1.1",
+      "published_at": "2026-07-15T15:52:55+08:00",
+      "updated_at": "2026-07-15T15:52:55+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/u44e/cardputerzero-packetscope",
+      "download": {
+        "type": "deb",
+        "package": "packetscope",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/packetscope_0.1.1_arm64.deb",
+        "md5": "b7e8bdcdd9d85df86444d1c89fcb8911",
+        "sha256": "a29dd354c2a7a3a9d72b1d31cc435734b59ace7efbd7a9598e361aca3151001e",
+        "size": 2045568
+      },
+      "depends": "libc6, libfreetype6",
+      "permissions": {
+        "keyboard_input": true,
+        "network": true,
+        "filesystem": "full",
+        "external_hardware": false,
+        "hdmi_output": false,
+        "background_service": false,
+        "audio_output": false,
+        "microphone": false,
+        "camera": false,
+        "sensors": false,
+        "gps": false,
+        "device_id": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/packetscope/share/images/packetscope.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/packetscope/store/screenshots/01-list-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/packetscope/store/screenshots/02-detail-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/packetscope/store/screenshots/03-filter-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/packetscope/store/screenshots/04-rtp-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/packetscope/store/screenshots/05-streamcheck-320x170.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/packetscope/share/images/packetscope.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/packetscope/store/screenshots/01-list-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/packetscope/store/screenshots/02-detail-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/packetscope/store/screenshots/03-filter-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/packetscope/store/screenshots/04-rtp-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/packetscope/store/screenshots/05-streamcheck-320x170.png"
+      ]
+    },
+    {
+      "uuid": "adc96eba-b329-5541-91fc-d2dbf6e60491",
+      "share_code": "zero",
+      "title": "Zero MP3",
+      "summary": "Play local MP3 files with playlist, volume, repeat, and shuffle controls.",
+      "description": "Zero MP3 is a lightweight local music player for CardputerZero. It scans common music locations such as /home/pi/Music, /media, and /mnt, and can also use ZEROMP3_DIR for a custom music folder.",
+      "locales": {
+        "zh-CN": {
+          "title": "Zero MP3",
+          "summary": "播放本地 MP3 文件，支持播放列表、音量、循环和随机播放。",
+          "description": "Zero MP3 是为 CardputerZero 设计的轻量本地音乐播放器。它会扫描 /home/pi/Music、/media、/mnt 等目录，也支持通过 ZEROMP3_DIR 指定音乐目录。应用提供播放列表、播放/暂停、上一首/下一首、音量调节、循环播放和随机播放等常用控制。"
+        },
+        "en": {
+          "title": "Zero MP3",
+          "summary": "Play local MP3 files with playlist, volume, repeat, and shuffle controls.",
+          "description": "Zero MP3 is a lightweight local music player for CardputerZero. It scans common music locations such as /home/pi/Music, /media, and /mnt, and can also use ZEROMP3_DIR for a custom music folder. The app provides playlist browsing, play/pause, previous/next, volume adjustment, repeat, and shuffle controls."
+        },
+        "ja": {
+          "title": "Zero MP3",
+          "summary": "ローカル MP3 をプレイリスト、音量、リピート、シャッフル操作で再生します。",
+          "description": "Zero MP3 は CardputerZero 向けの軽量なローカル音楽プレイヤーです。/home/pi/Music、/media、/mnt などの一般的な音楽フォルダをスキャンし、ZEROMP3_DIR で任意のフォルダも指定できます。プレイリスト表示、再生/一時停止、前後の曲への移動、音量調整、リピート、シャッフル操作に対応します。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "Zero MP3",
+          "summary": "播放本地 MP3 文件，支持播放列表、音量、循环和随机播放。",
+          "description": "Zero MP3 是为 CardputerZero 设计的轻量本地音乐播放器。它会扫描 /home/pi/Music、/media、/mnt 等目录，也支持通过 ZEROMP3_DIR 指定音乐目录。应用提供播放列表、播放/暂停、上一首/下一首、音量调节、循环播放和随机播放等常用控制。"
+        },
+        "en": {
+          "title": "Zero MP3",
+          "summary": "Play local MP3 files with playlist, volume, repeat, and shuffle controls.",
+          "description": "Zero MP3 is a lightweight local music player for CardputerZero. It scans common music locations such as /home/pi/Music, /media, and /mnt, and can also use ZEROMP3_DIR for a custom music folder. The app provides playlist browsing, play/pause, previous/next, volume adjustment, repeat, and shuffle controls."
+        },
+        "ja": {
+          "title": "Zero MP3",
+          "summary": "ローカル MP3 をプレイリスト、音量、リピート、シャッフル操作で再生します。",
+          "description": "Zero MP3 は CardputerZero 向けの軽量なローカル音楽プレイヤーです。/home/pi/Music、/media、/mnt などの一般的な音楽フォルダをスキャンし、ZEROMP3_DIR で任意のフォルダも指定できます。プレイリスト表示、再生/一時停止、前後の曲への移動、音量調整、リピート、シャッフル操作に対応します。"
+        }
+      },
+      "categories": [
+        "Media",
+        "Music"
+      ],
+      "author": {},
+      "version": "0.1.0-m5stack1",
+      "published_at": "2026-07-15T15:52:55+08:00",
+      "updated_at": "2026-07-15T15:52:55+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/dianjixz/launcher",
+      "download": {
+        "type": "deb",
+        "package": "zeromp3",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zeromp3_0.1.0-m5stack1_arm64.deb",
+        "md5": "5e7d131375c1f538fd5fd6d1b12d23e0",
+        "sha256": "034a99a20106e3d742139d7dc18221d2288a64c87979520068401ea38e59818c",
+        "size": 5920144
+      },
+      "depends": "",
+      "permissions": {
+        "audio": true,
+        "filesystem": true,
+        "keyboard_input": true
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeromp3/share/images/zeromp3.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeromp3/store/screenshots/player.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeromp3/store/screenshots/playlist.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeromp3/share/images/zeromp3.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeromp3/store/screenshots/player.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeromp3/store/screenshots/playlist.png"
       ]
     }
   ]
