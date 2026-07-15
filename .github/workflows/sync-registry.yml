@@ -45,20 +45,16 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Create PR with updated registry
+      # The registry is derived data: packages already went through human
+      # review in CardputerZero/packages (publish PR), so the sync commits
+      # straight to main — a second review gate here only let the store lag.
+      - name: Commit updated registry to main
         if: steps.diff.outputs.changed == 'true'
         run: |
-          BRANCH="auto/sync-registry-$(date +%s)"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$BRANCH"
           git add generated/
           git commit -m "chore: sync registry from packages repository"
-          git push origin "$BRANCH"
-          gh pr create \
-            --title "chore: sync registry from packages" \
-            --body "Auto-generated from CardputerZero/packages update. Review and merge to publish." \
-            --base main \
-            --head "$BRANCH"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Rebase in case another run landed between checkout and push.
+          git pull --rebase origin main
+          git push origin main
