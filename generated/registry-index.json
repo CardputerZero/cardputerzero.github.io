@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-07-15T16:31:22+08:00",
+  "generated_at": "2026-07-15T16:38:45+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -146,8 +146,8 @@
       ],
       "author": {},
       "version": "1.0.0",
-      "published_at": "2026-07-15T16:31:22+08:00",
-      "updated_at": "2026-07-15T16:31:22+08:00",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -304,8 +304,8 @@
       ],
       "author": {},
       "version": "0.1.1",
-      "published_at": "2026-07-15T16:31:22+08:00",
-      "updated_at": "2026-07-15T16:31:22+08:00",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -387,8 +387,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.1.1-m5stack1",
-      "published_at": "2026-07-15T16:31:22+08:00",
-      "updated_at": "2026-07-15T16:31:22+08:00",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -473,8 +473,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.2.2-m5stack1",
-      "published_at": "2026-07-15T16:31:22+08:00",
-      "updated_at": "2026-07-15T16:31:22+08:00",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -560,8 +560,8 @@
       ],
       "author": {},
       "version": "1.0.0",
-      "published_at": "2026-07-15T16:31:22+08:00",
-      "updated_at": "2026-07-15T16:31:22+08:00",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -607,8 +607,8 @@
       ],
       "author": {},
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-15T16:31:22+08:00",
-      "updated_at": "2026-07-15T16:31:22+08:00",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -662,8 +662,8 @@
         "display_name": "n0xa"
       },
       "version": "0.4.0",
-      "published_at": "2026-07-15T16:31:22+08:00",
-      "updated_at": "2026-07-15T16:31:22+08:00",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -708,8 +708,8 @@
         "display_name": "Flint Devices"
       },
       "version": "0.0.25",
-      "published_at": "2026-07-15T16:31:22+08:00",
-      "updated_at": "2026-07-15T16:31:22+08:00",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -828,8 +828,8 @@
       ],
       "author": {},
       "version": "0.2.0",
-      "published_at": "2026-07-15T16:31:22+08:00",
-      "updated_at": "2026-07-15T16:31:22+08:00",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -935,7 +935,7 @@
         "github": "vicliu624",
         "display_name": "vicliu624"
       },
-      "version": "0.2.0-1~lofibox23",
+      "version": "0.2.8-1~lofibox40",
       "published_at": "2026-05-14T23:42:32+08:00",
       "updated_at": "2026-05-15T00:09:15+08:00",
       "review": {
@@ -946,12 +946,12 @@
       "download": {
         "type": "deb",
         "package": "lofibox",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/lofibox_0.2.0-1.lofibox23_arm64.deb",
-        "md5": "6a9798c1208e6d8bf5a9f28914160483",
-        "sha256": "469d14c030d4addb5ff54f6eef7700b1781da3c33047796b1bbd2c8b3fe3177d",
-        "size": 9077082
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/lofibox_0.2.8-1.lofibox40_arm64.deb",
+        "md5": "3e76c6ee25d06df5943662a2aedc7a1b",
+        "sha256": "b38be6767491e9e6c25486078a56108d52dd8e73eeb9c10dd4ecc5e33264305e",
+        "size": 12138244
       },
-      "depends": "libc6 (>= 2.38), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1), libx11-6, libxkbcommon0 (>= 0.5.0), alsa-utils, ffmpeg, python3, python3-mutagen",
+      "depends": "libc6 (>= 2.38), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1), libwayland-client0 (>= 1.20.0), libx11-6, libxkbcommon0 (>= 0.5.0), alsa-utils, ffmpeg, python3, python3-mutagen",
       "permissions": {
         "audio_output": true,
         "keyboard_input": true,
@@ -1098,8 +1098,8 @@
       ],
       "author": {},
       "version": "0.1.0",
-      "published_at": "2026-07-15T16:31:22+08:00",
-      "updated_at": "2026-07-15T16:31:22+08:00",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1183,8 +1183,8 @@
       ],
       "author": {},
       "version": "0.2.2",
-      "published_at": "2026-07-15T16:31:22+08:00",
-      "updated_at": "2026-07-15T16:31:22+08:00",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1241,6 +1241,58 @@
       ]
     },
     {
+      "uuid": "2fa94e4c-cecb-5d3c-9ec8-0380cd990847",
+      "share_code": "noir",
+      "title": "NoirSonance Check",
+      "summary": "Local WAV analysis utility for Cardputer Zero.",
+      "description": "NoirSonance Check analyzes local 16-bit PCM WAV files for peak, RMS, crest factor, DC offset, and stereo correlation without uploading audio.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Audio",
+        "Productivity"
+      ],
+      "author": {},
+      "version": "0.1.0-noirsonance2",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Proprietary",
+      "source_repo": "https://github.com/NoirSonance/noirsonance-check-cardputerzero",
+      "download": {
+        "type": "deb",
+        "package": "noirsonance-check",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/noirsonance-check_0.1.0-noirsonance2_arm64.deb",
+        "md5": "a21d71093b53b594bff95e23629c9a2f",
+        "sha256": "210ee5c296b9dd57fae63d061d077f6ee7cb34ad13ba8daed38a91e786ef8a5f",
+        "size": 12120
+      },
+      "depends": "python3, python3-pil, python3-evdev",
+      "permissions": {
+        "microphone": false,
+        "audio_output": false,
+        "network": false,
+        "filesystem": "app-data-only",
+        "keyboard_input": true,
+        "background_service": false,
+        "external_hardware": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-check/packaging/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-check/packaging/store/screenshots/ready.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-check/packaging/store/screenshots/analysis.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-check/packaging/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-check/packaging/store/screenshots/ready.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-check/packaging/store/screenshots/analysis.png"
+      ]
+    },
+    {
       "uuid": "75eec6c1-26d9-59d5-81af-746c01945759",
       "share_code": "noir",
       "title": "Control Center",
@@ -1253,8 +1305,8 @@
       ],
       "author": {},
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-15T16:31:22+08:00",
-      "updated_at": "2026-07-15T16:31:22+08:00",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1289,6 +1341,57 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-control-center/packaging/store/screenshots/dashboard.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-control-center/packaging/store/screenshots/privacy.png"
+      ]
+    },
+    {
+      "uuid": "6cfdf8dd-1b61-5955-8c1d-487968106d9d",
+      "share_code": "noir",
+      "title": "NoirSonance Toolkit",
+      "summary": "Compact studio field toolkit for Cardputer Zero.",
+      "description": "NoirSonance Toolkit provides six handheld studio utilities: MIDI/frequency, frequency-to-note, dB/linear conversion, delay time, pitch shift, and tap tempo.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Utilities"
+      ],
+      "author": {},
+      "version": "0.1.0-noirsonance2",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Proprietary",
+      "source_repo": "https://github.com/NoirSonance/noirsonance-toolkit-cardputerzero",
+      "download": {
+        "type": "deb",
+        "package": "noirsonance-toolkit",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/noirsonance-toolkit_0.1.0-noirsonance2_arm64.deb",
+        "md5": "d7b1122818d2454507cd36a8db7a76aa",
+        "sha256": "fd2968da46beb82281efed731804a29423e9a5ed0b20e07955e603dcd620b96f",
+        "size": 19690
+      },
+      "depends": "python3, python3-pil, python3-evdev",
+      "permissions": {
+        "microphone": false,
+        "audio_output": false,
+        "network": false,
+        "filesystem": "app-data-only",
+        "keyboard_input": true,
+        "background_service": false,
+        "external_hardware": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-toolkit/packaging/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-toolkit/packaging/store/screenshots/tools.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-toolkit/packaging/store/screenshots/audio-freq.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-toolkit/packaging/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-toolkit/packaging/store/screenshots/tools.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-toolkit/packaging/store/screenshots/audio-freq.png"
       ]
     },
     {
@@ -1328,8 +1431,8 @@
       ],
       "author": {},
       "version": "0.1.1",
-      "published_at": "2026-07-15T16:31:22+08:00",
-      "updated_at": "2026-07-15T16:31:22+08:00",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1378,6 +1481,58 @@
       ]
     },
     {
+      "uuid": "1efab377-74f5-55c2-bd7a-a0f22d278dd5",
+      "share_code": "sign",
+      "title": "Signal vs Noise",
+      "summary": "Offline writing distillation tool for Cardputer Zero.",
+      "description": "Signal vs Noise turns messy input into one usable sentence through staged compression, then lets you keep or discard the final signal.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Utilities",
+        "Productivity"
+      ],
+      "author": {},
+      "version": "0.1.0-noirsonance2",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Proprietary",
+      "source_repo": "https://github.com/NoirSonance/signal-vs-noise-cardputerzero",
+      "download": {
+        "type": "deb",
+        "package": "signal-vs-noise",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/signal-vs-noise_0.1.0-noirsonance2_arm64.deb",
+        "md5": "f224a438c7bdfa04d5144cb9c93fadcf",
+        "sha256": "d471d53c74d2fd0c09a3e2177975223736e0cb28ada47022e9881cdc9644a97a",
+        "size": 11490
+      },
+      "depends": "python3, python3-pil, python3-evdev",
+      "permissions": {
+        "microphone": false,
+        "audio_output": false,
+        "network": false,
+        "filesystem": "app-data-only",
+        "keyboard_input": true,
+        "background_service": false,
+        "external_hardware": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/signal-vs-noise/packaging/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/signal-vs-noise/packaging/store/screenshots/start.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/signal-vs-noise/packaging/store/screenshots/distill.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/signal-vs-noise/packaging/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/signal-vs-noise/packaging/store/screenshots/start.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/signal-vs-noise/packaging/store/screenshots/distill.png"
+      ]
+    },
+    {
       "uuid": "3ebede22-1158-5920-a8c9-eaedc8748f7e",
       "share_code": "void",
       "title": "Void Notes",
@@ -1391,8 +1546,8 @@
       ],
       "author": {},
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-15T16:31:22+08:00",
-      "updated_at": "2026-07-15T16:31:22+08:00",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1443,8 +1598,8 @@
       ],
       "author": {},
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-15T16:31:22+08:00",
-      "updated_at": "2026-07-15T16:31:22+08:00",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1527,8 +1682,8 @@
       ],
       "author": {},
       "version": "0.1.0-m5stack1",
-      "published_at": "2026-07-15T16:31:22+08:00",
-      "updated_at": "2026-07-15T16:31:22+08:00",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1576,8 +1731,8 @@
       ],
       "author": {},
       "version": "0.2.0",
-      "published_at": "2026-07-15T16:31:22+08:00",
-      "updated_at": "2026-07-15T16:31:22+08:00",
+      "published_at": "2026-07-15T16:38:45+08:00",
+      "updated_at": "2026-07-15T16:38:45+08:00",
       "review": {
         "status": "approved"
       },
