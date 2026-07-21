@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-07-21T18:29:58+08:00",
+  "generated_at": "2026-07-21T22:05:08+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -149,8 +149,8 @@
         "display_name": "YutaCar"
       },
       "version": "1.0.0",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -310,8 +310,8 @@
         "display_name": "u44e"
       },
       "version": "0.1.1",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -393,8 +393,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.1.1-m5stack1",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -479,8 +479,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.2.2-m5stack1",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -569,8 +569,8 @@
         "display_name": "yutacar"
       },
       "version": "1.0.0",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -619,8 +619,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -674,8 +674,8 @@
         "display_name": "n0xa"
       },
       "version": "0.4.0",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -720,8 +720,8 @@
         "display_name": "Flint Devices"
       },
       "version": "0.0.25",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -855,8 +855,8 @@
         "display_name": "XuHaifeng"
       },
       "version": "0.0.1-m5stack",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -906,8 +906,8 @@
         "display_name": "ESP Flasher"
       },
       "version": "0.0.2-cardputer1",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1047,8 +1047,8 @@
         "display_name": "u44e"
       },
       "version": "0.2.0",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1197,9 +1197,14 @@
       "uuid": "2000e000-0000-4000-8000-000000000007",
       "share_code": "nc20",
       "title": "NC2000",
-      "summary": "WenQuXing NC2000/NC1020 emulator for CardputerZero",
-      "description": "A WenQuXing (文曲星) NC2000 / NC1020 handheld computer emulator tuned for M5CardputerZero's 320x170 LCD.",
+      "summary": "NC2000 WenQuXing Emulator for CardputerZero",
+      "description": "NC2000 WenQuXing Emulator for CardputerZero\nA WenQuXing (文曲星) NC2000 / NC1020 handheld computer emulator\ntuned for M5CardputerZero's 320x170 LCD. Based on wangyu-/NC2000.",
       "locales": {
+        "en": {
+          "title": "NC2000",
+          "summary": "WenQuXing NC2000/NC1020 emulator for CardputerZero",
+          "description": "A WenQuXing NC2000 / NC1020 handheld computer emulator tuned for CardputerZero's 320x170 LCD."
+        },
         "zh-CN": {
           "title": "NC2000 文曲星模拟器",
           "summary": "适配 320x170 CardputerZero 屏幕的文曲星 NC2000/NC1020 模拟器",
@@ -1209,11 +1214,6 @@
           "title": "NC2000 文曲星模擬器",
           "summary": "適配 320x170 CardputerZero 螢幕的文曲星 NC2000/NC1020 模擬器",
           "description": "面向 CardputerZero 320x170 LCD 最佳化的文曲星 NC2000 / NC1020 掌上電腦模擬器。"
-        },
-        "en": {
-          "title": "NC2000",
-          "summary": "WenQuXing NC2000/NC1020 emulator for CardputerZero",
-          "description": "A WenQuXing NC2000 / NC1020 handheld computer emulator tuned for CardputerZero's 320x170 LCD."
         },
         "ja": {
           "title": "NC2000 文曲星エミュレーター",
@@ -1243,36 +1243,29 @@
           "description": "CardputerZero の 320x170 LCD 向けに調整した WenQuXing NC2000 / NC1020 携帯コンピューターエミュレーターです。"
         }
       },
-      "categories": [
-        "Emulators",
-        "Games"
-      ],
+      "categories": [],
       "author": {
         "github": "eggfly",
         "display_name": "eggfly"
       },
-      "version": "1.0.2",
+      "version": "1.0.4",
       "published_at": "2026-05-14T23:42:32+08:00",
       "updated_at": "2026-05-14T23:42:32+08:00",
       "review": {
         "status": "approved"
       },
-      "license": "MIT",
-      "source_repo": "https://github.com/eggfly/CardputerZero-NC2000",
+      "license": "",
+      "source_repo": "",
       "download": {
         "type": "deb",
         "package": "nc2000",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/nc2000_1.0.2_arm64.deb",
-        "md5": "6b0074b08d75440598635de2df009b4e",
-        "sha256": "d9dbbf7cad57bb468d20dee1c8d3aef2afe374a6f399c0dc5eb198bf399bae3e",
-        "size": 20560484
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/nc2000_1.0.4_arm64.deb",
+        "md5": "a8bb35f3289c0c136cc72833915ddd4a",
+        "sha256": "873670a119083172616afe024b4a77e0cc136014d29fa956a601d4d86303a25b",
+        "size": 20560446
       },
       "depends": "libsdl2-2.0-0",
-      "permissions": {
-        "audio_output": true,
-        "keyboard_input": true,
-        "network": false
-      },
+      "permissions": {},
       "assets": {
         "icon": "assets/2000e000/icon.png",
         "screenshots": [
@@ -1320,8 +1313,8 @@
         "display_name": "u44e"
       },
       "version": "0.1.0",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1408,8 +1401,8 @@
         "display_name": "u44e"
       },
       "version": "0.2.2",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1482,8 +1475,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1536,8 +1529,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1590,8 +1583,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1668,8 +1661,8 @@
         "display_name": "u44e"
       },
       "version": "0.1.1",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1734,8 +1727,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1789,8 +1782,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1844,8 +1837,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1931,8 +1924,8 @@
         "display_name": "dianjixz"
       },
       "version": "0.1.0-m5stack1",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1982,8 +1975,8 @@
         "display_name": "Weiming Feng"
       },
       "version": "0.2.0",
-      "published_at": "2026-07-21T18:29:58+08:00",
-      "updated_at": "2026-07-21T18:29:58+08:00",
+      "published_at": "2026-07-21T22:05:08+08:00",
+      "updated_at": "2026-07-21T22:05:08+08:00",
       "review": {
         "status": "approved"
       },
