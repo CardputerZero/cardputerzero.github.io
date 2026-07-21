@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-07-15T17:13:41+08:00",
+  "generated_at": "2026-07-21T18:29:58+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -149,8 +149,8 @@
         "display_name": "YutaCar"
       },
       "version": "1.0.0",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -310,8 +310,8 @@
         "display_name": "u44e"
       },
       "version": "0.1.1",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -393,8 +393,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.1.1-m5stack1",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -479,8 +479,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.2.2-m5stack1",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -569,8 +569,8 @@
         "display_name": "yutacar"
       },
       "version": "1.0.0",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -619,8 +619,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -674,8 +674,8 @@
         "display_name": "n0xa"
       },
       "version": "0.4.0",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -720,8 +720,8 @@
         "display_name": "Flint Devices"
       },
       "version": "0.0.25",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -808,6 +808,89 @@
       ]
     },
     {
+      "uuid": "0e937cbb-433f-5c56-8b40-04c82d4dec59",
+      "share_code": "harr",
+      "title": "HarrisonTest",
+      "summary": "A CardputerZero packaging flow demo.",
+      "description": "HarrisonTest is a small LVGL application for validating the CardputerZero build, packaging, device deployment, and AppStore publishing workflow.",
+      "locales": {
+        "zh-CN": {
+          "title": "HarrisonTest",
+          "summary": "用于验证 CardputerZero 应用打包流程的演示应用。",
+          "description": "HarrisonTest 是一个小型 LVGL 应用，用于验证 CardputerZero 的构建、打包、真机部署和 AppStore 发布流程。"
+        },
+        "en": {
+          "title": "HarrisonTest",
+          "summary": "A CardputerZero packaging flow demo.",
+          "description": "HarrisonTest is a small LVGL application for validating the CardputerZero build, packaging, device deployment, and AppStore publishing workflow."
+        },
+        "ja": {
+          "title": "HarrisonTest",
+          "summary": "CardputerZero のパッケージ作成フローを検証するデモアプリです。",
+          "description": "HarrisonTest は、CardputerZero のビルド、パッケージ作成、実機へのデプロイ、AppStore 公開フローを検証するための小規模な LVGL アプリです。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "HarrisonTest",
+          "summary": "用于验证 CardputerZero 应用打包流程的演示应用。",
+          "description": "HarrisonTest 是一个小型 LVGL 应用，用于验证 CardputerZero 的构建、打包、真机部署和 AppStore 发布流程。"
+        },
+        "en": {
+          "title": "HarrisonTest",
+          "summary": "A CardputerZero packaging flow demo.",
+          "description": "HarrisonTest is a small LVGL application for validating the CardputerZero build, packaging, device deployment, and AppStore publishing workflow."
+        },
+        "ja": {
+          "title": "HarrisonTest",
+          "summary": "CardputerZero のパッケージ作成フローを検証するデモアプリです。",
+          "description": "HarrisonTest は、CardputerZero のビルド、パッケージ作成、実機へのデプロイ、AppStore 公開フローを検証するための小規模な LVGL アプリです。"
+        }
+      },
+      "categories": [
+        "Utilities"
+      ],
+      "author": {
+        "github": "Harrison-Xu",
+        "display_name": "XuHaifeng"
+      },
+      "version": "0.0.1-m5stack",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/Harrison-Xu/Template",
+      "download": {
+        "type": "deb",
+        "package": "harrisontest",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/harrisontest_0.0.1-m5stack_arm64.deb",
+        "md5": "df9cf92cd367ba89062fe01d3c3e9628",
+        "sha256": "52fdc032fa441d7118a774b74cfba9cc5de49891bcacd527f1f2dadb0f798383",
+        "size": 1738050
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g",
+      "permissions": {
+        "microphone": false,
+        "audio_output": false,
+        "network": false,
+        "keyboard_input": true,
+        "background_service": true,
+        "external_hardware": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/harrisontest/harrison_test.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/harrisontest/screenshots/harrison_test.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/harrisontest/harrison_test.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/harrisontest/screenshots/harrison_test.png"
+      ]
+    },
+    {
       "uuid": "3c8375db-f273-502c-ab14-a57225355c5c",
       "share_code": "laun",
       "title": "ESP Flasher",
@@ -823,8 +906,8 @@
         "display_name": "ESP Flasher"
       },
       "version": "0.0.2-cardputer1",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -964,8 +1047,8 @@
         "display_name": "u44e"
       },
       "version": "0.2.0",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -1168,7 +1251,7 @@
         "github": "eggfly",
         "display_name": "eggfly"
       },
-      "version": "1.0.3",
+      "version": "1.0.2",
       "published_at": "2026-05-14T23:42:32+08:00",
       "updated_at": "2026-05-14T23:42:32+08:00",
       "review": {
@@ -1179,10 +1262,10 @@
       "download": {
         "type": "deb",
         "package": "nc2000",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/nc2000_1.0.3_arm64.deb",
-        "md5": "3b70ee689a4bbb4e9523410fb2daea15",
-        "sha256": "6f3e8c3ac385cb9a306f4ab5205f4bc3a0d4ae776c4fbdbe136df243b5f73ed8",
-        "size": 20560444
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/nc2000_1.0.2_arm64.deb",
+        "md5": "6b0074b08d75440598635de2df009b4e",
+        "sha256": "d9dbbf7cad57bb468d20dee1c8d3aef2afe374a6f399c0dc5eb198bf399bae3e",
+        "size": 20560484
       },
       "depends": "libsdl2-2.0-0",
       "permissions": {
@@ -1237,8 +1320,8 @@
         "display_name": "u44e"
       },
       "version": "0.1.0",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -1325,8 +1408,8 @@
         "display_name": "u44e"
       },
       "version": "0.2.2",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -1399,8 +1482,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -1453,8 +1536,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -1507,8 +1590,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -1585,8 +1668,8 @@
         "display_name": "u44e"
       },
       "version": "0.1.1",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -1651,8 +1734,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -1706,8 +1789,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -1761,8 +1844,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -1848,8 +1931,8 @@
         "display_name": "dianjixz"
       },
       "version": "0.1.0-m5stack1",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
@@ -1899,8 +1982,8 @@
         "display_name": "Weiming Feng"
       },
       "version": "0.2.0",
-      "published_at": "2026-07-15T17:13:41+08:00",
-      "updated_at": "2026-07-15T17:13:41+08:00",
+      "published_at": "2026-07-21T18:29:58+08:00",
+      "updated_at": "2026-07-21T18:29:58+08:00",
       "review": {
         "status": "approved"
       },
