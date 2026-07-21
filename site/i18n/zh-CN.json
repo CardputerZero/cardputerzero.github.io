@@ -9,7 +9,8 @@
     "apps": "应用",
     "tutorial": "教程",
     "documents": "文档",
-    "registry": "数据源"
+    "registry": "数据源",
+    "portal": "开发者门户"
   },
   "language": {
     "label": "语言"

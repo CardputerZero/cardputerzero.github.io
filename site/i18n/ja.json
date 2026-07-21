@@ -9,7 +9,8 @@
     "apps": "アプリ",
     "tutorial": "チュートリアル",
     "documents": "ドキュメント",
-    "registry": "レジストリ"
+    "registry": "レジストリ",
+    "portal": "開発者ポータル"
   },
   "language": {
     "label": "言語"

@@ -9,7 +9,8 @@
     "apps": "Apps",
     "tutorial": "Tutorial",
     "documents": "Documents",
-    "registry": "Registry"
+    "registry": "Registry",
+    "portal": "Developer Portal"
   },
   "language": {
     "label": "Language"
