@@ -482,6 +482,12 @@
     "eyebrow": "MARKDOWN ドキュメント",
     "title": "ドキュメント",
     "lead": "CardputerZero Hub の Markdown ドキュメントセンターです。ガイド、規約、ポリシー、registry 要件を現在の言語に合わせて docs/ から読み込みます。",
+    "portal": {
+      "eyebrow": "開発者ポータル",
+      "title": "dev.cardputer.cc でアプリを公開",
+      "body": "GitHub でサインインし、.deb をアップロードしてストア情報（アイコン、320×170 のスクリーンショット、概要、カテゴリ）を追加すると、自動で検証され公開 PR が作成されます。",
+      "cta": "開発者ポータルを開く"
+    },
     "open": "文書を開く",
     "readMore": "詳細を見る",
     "back": "ドキュメントへ戻る",

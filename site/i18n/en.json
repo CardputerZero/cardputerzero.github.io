@@ -482,6 +482,12 @@
     "eyebrow": "MARKDOWN DOCS",
     "title": "Documents",
     "lead": "A Markdown-backed documentation center for CardputerZero Hub. Guides, agreements, policies, and registry requirements are loaded from docs/.",
+    "portal": {
+      "eyebrow": "Developer Portal",
+      "title": "Publish your app at dev.cardputer.cc",
+      "body": "Sign in with GitHub, upload your .deb and add store details (icon, 320×170 screenshots, summary, categories); it validates automatically and opens a publish PR.",
+      "cta": "Open the developer portal"
+    },
     "open": "Open document",
     "readMore": "Read details",
     "back": "Back to documents",

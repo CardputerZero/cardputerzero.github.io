@@ -482,6 +482,12 @@
     "eyebrow": "MARKDOWN 文档",
     "title": "文档中心",
     "lead": "基于 Markdown 的 CardputerZero Hub 文档中心。教程、协议、提交规范和 registry 需求会按当前语言从 docs/ 目录加载。",
+    "portal": {
+      "eyebrow": "开发者门户",
+      "title": "在 dev.cardputer.cc 发布你的应用",
+      "body": "用 GitHub 登录，上传 .deb 安装包并补充商店信息（图标、320×170 截图、简介、分类），系统会自动校验并生成发布 PR。",
+      "cta": "打开开发者门户"
+    },
     "open": "打开文档",
     "readMore": "查看细节",
     "back": "返回文档中心",

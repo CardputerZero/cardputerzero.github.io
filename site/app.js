@@ -916,6 +916,16 @@ function renderDocuments() {
           <p class="lead">${t("documents.lead")}</p>
         </div>
       </div>
+      <section class="notice-panel">
+        <div>
+          <p class="eyebrow">${t("documents.portal.eyebrow")}</p>
+          <h2>${t("documents.portal.title")}</h2>
+          <p>${t("documents.portal.body")}</p>
+        </div>
+        <div class="notice-actions">
+          <a class="button" href="https://dev.cardputer.cc" target="_blank" rel="noopener noreferrer">${t("documents.portal.cta")} →</a>
+        </div>
+      </section>
       <section class="documents-grid">
         ${DOCUMENTS.map(renderDocumentCard).join("")}
       </section>
