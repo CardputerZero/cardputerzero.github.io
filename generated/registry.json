@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-07-21T22:05:08+08:00",
+  "generated_at": "2026-07-23T13:39:45+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -149,8 +149,8 @@
         "display_name": "YutaCar"
       },
       "version": "1.0.0",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -310,8 +310,8 @@
         "display_name": "u44e"
       },
       "version": "0.1.1",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -393,8 +393,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.1.1-m5stack1",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -479,8 +479,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.2.2-m5stack1",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -569,8 +569,8 @@
         "display_name": "yutacar"
       },
       "version": "1.0.0",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -619,8 +619,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -674,8 +674,8 @@
         "display_name": "n0xa"
       },
       "version": "0.4.0",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -720,8 +720,8 @@
         "display_name": "Flint Devices"
       },
       "version": "0.0.25",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -855,8 +855,8 @@
         "display_name": "XuHaifeng"
       },
       "version": "0.0.1-m5stack",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -891,6 +891,43 @@
       ]
     },
     {
+      "uuid": "6dcab9db-eff0-587d-aa22-9ecf397b5f3c",
+      "share_code": "icon",
+      "title": "Icon Takeover",
+      "summary": "Replace every CardputerZero APPLaunch icon with one image",
+      "description": "Replace every CardputerZero APPLaunch icon with one image\nIcon Takeover updates dynamic desktop entries and built-in 100-pixel launcher\nicons while retaining reversible backups under /var/lib/icon-takeover.",
+      "locales": {},
+      "i18n": {},
+      "categories": [],
+      "author": {
+        "display_name": "imliubo"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "icon-takeover",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/icon-takeover_1.0.0_all.deb",
+        "md5": "ae1ad27bf95b2ca8eab80291fd43e797",
+        "sha256": "c71781f8bb1e7bce46e76495ef315b5772d8ecbd2be01b7f7a80d630a52fc4bc",
+        "size": 22500
+      },
+      "depends": "python3, sudo",
+      "permissions": {},
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icon-takeover/liu-bo-icon.png",
+        "screenshots": []
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icon-takeover/liu-bo-icon.png",
+      "screenshots": []
+    },
+    {
       "uuid": "3c8375db-f273-502c-ab14-a57225355c5c",
       "share_code": "laun",
       "title": "ESP Flasher",
@@ -906,8 +943,8 @@
         "display_name": "ESP Flasher"
       },
       "version": "0.0.2-cardputer1",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1047,8 +1084,8 @@
         "display_name": "u44e"
       },
       "version": "0.2.0",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1313,8 +1350,8 @@
         "display_name": "u44e"
       },
       "version": "0.1.0",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1401,8 +1438,8 @@
         "display_name": "u44e"
       },
       "version": "0.2.2",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1475,8 +1512,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1529,8 +1566,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1583,8 +1620,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1661,8 +1698,8 @@
         "display_name": "u44e"
       },
       "version": "0.1.1",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1727,8 +1764,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1782,8 +1819,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1837,8 +1874,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1924,8 +1961,8 @@
         "display_name": "dianjixz"
       },
       "version": "0.1.0-m5stack1",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
@@ -1975,8 +2012,8 @@
         "display_name": "Weiming Feng"
       },
       "version": "0.2.0",
-      "published_at": "2026-07-21T22:05:08+08:00",
-      "updated_at": "2026-07-21T22:05:08+08:00",
+      "published_at": "2026-07-23T13:39:45+08:00",
+      "updated_at": "2026-07-23T13:39:45+08:00",
       "review": {
         "status": "approved"
       },
