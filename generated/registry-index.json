@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-07-28T16:42:15+08:00",
+  "generated_at": "2026-07-28T17:16:42+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -149,8 +149,8 @@
         "display_name": "YutaCar"
       },
       "version": "1.0.0",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -310,8 +310,8 @@
         "display_name": "u44e"
       },
       "version": "0.1.1",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -393,8 +393,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.1.1-m5stack1",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -479,8 +479,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.2.2-m5stack1",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -569,8 +569,8 @@
         "display_name": "yutacar"
       },
       "version": "1.0.0",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -619,8 +619,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -674,8 +674,8 @@
         "display_name": "n0xa"
       },
       "version": "0.4.0",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -720,8 +720,8 @@
         "display_name": "Flint Devices"
       },
       "version": "0.0.25",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -808,23 +808,20 @@
       ]
     },
     {
-      "uuid": "b6c9b1bb-cb93-5e31-8045-d23b150a0056",
+      "uuid": "0afdd36c-8868-599a-a255-9d44b268d2c9",
       "share_code": "fxca",
       "title": "fxcam",
-      "summary": "FXCam is a pocket-sized creative camera for CardputerZero, featuring 106 live fi",
+      "summary": "FXCam: 106 live filters, full-res photos, watermarks, and a zoomable gallery.",
       "description": "FXCam transforms the M5CardputerZero into a compact creative camera built for playful, hands-on photography. It offers 106 real-time effects, ranging from Polaroid, Game Boy, and iPhone-inspired looks to CRT, thermal, comic, and retro palette-based dithering styles. Filters are applied consistently to both the live preview and full-resolution JPEG captures, while every photo can include a transparent watermark with the device name, timestamp, application name, aperture, active filter, and author signature. The built-in gallery provides cached thumbnails, image information, deletion controls, and full-resolution viewing with zoom and pan support. FXCam supports CSI cameras through libcamera and USB cameras through V4L2, integrates with APPLaunch, and is distributed as an arm64 Debian package for straightforward installation on the device.",
       "locales": {},
       "i18n": {},
-      "categories": [
-        "camera",
-        "entertainment"
-      ],
+      "categories": [],
       "author": {
         "github": "imliubo"
       },
-      "version": "1.0.0-m5stack1",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "version": "1.0.1-m5stack1",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -833,19 +830,27 @@
       "download": {
         "type": "deb",
         "package": "fxcam",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/fxcam_1.0.0-m5stack1_arm64.deb",
-        "md5": "8bd50d02754701249ee7ca983f24b3a1",
-        "sha256": "038ff492a2d5218cb4227f62a93750033951e16e757e2b3d11d820f60a2b8c21",
-        "size": 973820
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/fxcam_1.0.1-m5stack1_arm64.deb",
+        "md5": "a9be309c8b73398f9eb6623c6b677787",
+        "sha256": "6c790760098c3ebc307632a4a8ae2b98793534a6a02416cf81cfb07e403b9cb6",
+        "size": 979232
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libfmt10, libcamera0.7 | libcamera0.6 | libcamera0.5 | libcamera0.4 | libcamera0.3 | libcamera0.2 | libcamera0, libcamera-ipa, libasound2, libcjson1, libv4l-0",
       "permissions": {},
       "assets": {
-        "icon": "",
-        "screenshots": []
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fxcam/fxcam_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fxcam/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fxcam/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fxcam/screenshots/screenshot-2.png"
+        ]
       },
-      "icon": "",
-      "screenshots": []
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fxcam/fxcam_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fxcam/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fxcam/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fxcam/screenshots/screenshot-2.png"
+      ]
     },
     {
       "uuid": "0e937cbb-433f-5c56-8b40-04c82d4dec59",
@@ -895,8 +900,8 @@
         "display_name": "XuHaifeng"
       },
       "version": "0.0.1-m5stack",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -943,8 +948,8 @@
         "github": "imliubo"
       },
       "version": "1.0.0",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -983,8 +988,8 @@
         "display_name": "ESP Flasher"
       },
       "version": "0.0.2-cardputer1",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -1124,8 +1129,8 @@
         "display_name": "u44e"
       },
       "version": "0.2.0",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -1390,8 +1395,8 @@
         "display_name": "u44e"
       },
       "version": "0.1.0",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -1478,8 +1483,8 @@
         "display_name": "u44e"
       },
       "version": "0.2.2",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -1552,8 +1557,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -1606,8 +1611,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -1660,8 +1665,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -1738,8 +1743,8 @@
         "display_name": "u44e"
       },
       "version": "0.1.1",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -1800,8 +1805,8 @@
         "github": "whywilson"
       },
       "version": "0.1",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -1855,8 +1860,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -1894,6 +1899,43 @@
       ]
     },
     {
+      "uuid": "a8a80032-dc97-58fb-9fbf-8be6c9dedda3",
+      "share_code": "spin",
+      "title": "Spin3D",
+      "summary": "Spinning 3D teapot / sphere / cube / torus demo",
+      "description": "Spinning 3D teapot / sphere / cube / torus demo\nA tiny dependency-free software 3D renderer for the CardputerZero\n320x170 LCD: Utah teapot, UV sphere, cube and torus with flat shading,\nrendered straight into /dev/fb0. Keys 1-4 switch shapes, W toggles\nwireframe, arrows spin, Q quits.",
+      "locales": {},
+      "i18n": {},
+      "categories": [],
+      "author": {
+        "github": "eggfly"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "spin3d",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/spin3d_1.0.0_arm64.deb",
+        "md5": "b50141ffa02997e207a337618ae78d95",
+        "sha256": "b9872f6e98d2e6a399418653e1ef09a5af8af29e59c90d89ab6d26b03b223e39",
+        "size": 206268
+      },
+      "depends": "",
+      "permissions": {},
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/spin3d/spin3d_icon.png",
+        "screenshots": []
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/spin3d/spin3d_icon.png",
+      "screenshots": []
+    },
+    {
       "uuid": "3ebede22-1158-5920-a8c9-eaedc8748f7e",
       "share_code": "void",
       "title": "Void Notes",
@@ -1910,8 +1952,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -1965,8 +2007,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -2052,8 +2094,8 @@
         "display_name": "dianjixz"
       },
       "version": "0.1.0-m5stack1",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
@@ -2103,8 +2145,8 @@
         "display_name": "Weiming Feng"
       },
       "version": "0.2.0",
-      "published_at": "2026-07-28T16:42:15+08:00",
-      "updated_at": "2026-07-28T16:42:15+08:00",
+      "published_at": "2026-07-28T17:16:42+08:00",
+      "updated_at": "2026-07-28T17:16:42+08:00",
       "review": {
         "status": "approved"
       },
