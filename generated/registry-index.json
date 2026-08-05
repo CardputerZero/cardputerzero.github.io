@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-07-28T21:22:56+08:00",
+  "generated_at": "2026-08-05T21:26:08+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -149,8 +149,8 @@
         "display_name": "YutaCar"
       },
       "version": "1.0.0",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -310,8 +310,8 @@
         "display_name": "u44e"
       },
       "version": "0.1.1",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -368,8 +368,8 @@
         "github": "kur1k0"
       },
       "version": "1.0.0",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -442,8 +442,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.1.1-m5stack1",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -528,8 +528,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.2.2-m5stack1",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -618,8 +618,8 @@
         "display_name": "yutacar"
       },
       "version": "1.0.0",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -668,8 +668,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -723,8 +723,8 @@
         "display_name": "n0xa"
       },
       "version": "0.4.0",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -769,8 +769,8 @@
         "display_name": "Flint Devices"
       },
       "version": "0.0.25",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -857,6 +857,47 @@
       ]
     },
     {
+      "uuid": "548becd9-2167-5523-ab44-2c447b826cb7",
+      "share_code": "font",
+      "title": "fontpreview",
+      "summary": "",
+      "description": "Multilingual font and typeface preview for CardputerZero",
+      "locales": {},
+      "i18n": {},
+      "categories": [],
+      "author": {
+        "github": "Harrison-Xu"
+      },
+      "version": "0.4.1-m5stack1",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "fontpreview",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/fontpreview_0.4.1-m5stack1_arm64.deb",
+        "md5": "262c9d1b4b9da667d1608a1d31953d49",
+        "sha256": "64649cb4db722b9912621464f14bdc43932d811218da95f333963c6caaf258aa",
+        "size": 76059540
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libsdl2-2.0-0, libsdl2-mixer-2.0-0, fonts-go, fonts-inter, fonts-dejavu-core, fonts-dejavu-extra, fonts-dejavu-mono, fonts-jetbrains-mono",
+      "permissions": {},
+      "assets": {
+        "icon": "",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fontpreview/screenshots/screenshot-0.png"
+        ]
+      },
+      "icon": "",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fontpreview/screenshots/screenshot-0.png"
+      ]
+    },
+    {
       "uuid": "0afdd36c-8868-599a-a255-9d44b268d2c9",
       "share_code": "fxca",
       "title": "fxcam",
@@ -869,8 +910,8 @@
         "github": "imliubo"
       },
       "version": "1.0.1-m5stack1",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -949,8 +990,8 @@
         "display_name": "XuHaifeng"
       },
       "version": "0.0.1-m5stack",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -997,8 +1038,8 @@
         "github": "imliubo"
       },
       "version": "1.0.0",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1020,6 +1061,127 @@
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icon-takeover/liu-bo-icon.png",
       "screenshots": []
+    },
+    {
+      "uuid": "3c8375db-f273-502c-ab14-a57225355c5c",
+      "share_code": "laun",
+      "title": "ESP Flasher",
+      "summary": "ESP Flasher for Cardputer Zero, flash any M5Stack device with M5Burner firmware",
+      "description": "ESP32 firmware browser and flasher for CardputerZero",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Utilities"
+      ],
+      "author": {
+        "github": "bmorcelli",
+        "display_name": "ESP Flasher"
+      },
+      "version": "0.0.2-cardputer1",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/bmorcelli/LauncherESPFlasher",
+      "download": {
+        "type": "deb",
+        "package": "launcherespflasher",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/launcherespflasher_0.0.2-cardputer1_arm64.deb",
+        "md5": "9f9f95eec0694a53f3ebcd50cd8bc4d8",
+        "sha256": "834a4d4663a3f877f4915c055bfd5aaf3099a9f3739e1fbdf43b8574c91613f3",
+        "size": 1067798
+      },
+      "depends": "python3, python3-pip, python3-pil, python3-numpy, python3-evdev, python3-requests, python3-qrcode, fonts-dejavu-core",
+      "permissions": {
+        "network": true,
+        "keyboard_input": true,
+        "filesystem": true,
+        "external_hardware": true
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/Launcher_128x128.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/00%20bootscreen.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/00%20bootscreen_guide1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/00%20bootscreen_guide2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/00%20bootscreen_guide3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/01%20main_name.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/02%20main_cnt.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/03%20main_dev_m5stack.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/04%20main_dev_xcyd.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/05%20main_filter.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/06%20main_info.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/06%20main_reload.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/07%20main_info_detail.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/08%20main_file.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/09%20main_online.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/10%20main_offline.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/11%20file_esp_detection.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/12%20file_esp_detected.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/13%20file_firmware_pick.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/14%20file_install_merged.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/15%20file_install_multipart.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/16%20file_install_multipart_detail.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/17%20firmware_DL.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/18%20firmware_DATE.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/19%20firmware_NAME.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/20%20firmware_filter.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/21%20firmware_detail.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/22%20firmware_detail_cover.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/23%20firmware_detail_coverimg.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/24%20firmware_detail_version.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/25%20firmware_detail_version_pick.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/26%20firmware_detail_downloaded.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/27%20firmware_detail_flash.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/28%20firmware_flash_progress.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/28%20firmware_flash_progress2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/29%20firmware_flash_done.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/30%20firmware_detail_multipart.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/31%20firmware_detail_multipart_info.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/Launcher_128x128.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/00%20bootscreen.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/00%20bootscreen_guide1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/00%20bootscreen_guide2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/00%20bootscreen_guide3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/01%20main_name.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/02%20main_cnt.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/03%20main_dev_m5stack.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/04%20main_dev_xcyd.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/05%20main_filter.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/06%20main_info.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/06%20main_reload.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/07%20main_info_detail.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/08%20main_file.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/09%20main_online.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/10%20main_offline.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/11%20file_esp_detection.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/12%20file_esp_detected.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/13%20file_firmware_pick.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/14%20file_install_merged.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/15%20file_install_multipart.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/16%20file_install_multipart_detail.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/17%20firmware_DL.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/18%20firmware_DATE.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/19%20firmware_NAME.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/20%20firmware_filter.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/21%20firmware_detail.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/22%20firmware_detail_cover.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/23%20firmware_detail_coverimg.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/24%20firmware_detail_version.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/25%20firmware_detail_version_pick.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/26%20firmware_detail_downloaded.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/27%20firmware_detail_flash.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/28%20firmware_flash_progress.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/28%20firmware_flash_progress2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/29%20firmware_flash_done.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/30%20firmware_detail_multipart.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/31%20firmware_detail_multipart_info.png"
+      ]
     },
     {
       "uuid": "1c0e86f0-15e6-534d-b4f1-94839cb2dd30",
@@ -1057,8 +1219,8 @@
         "display_name": "u44e"
       },
       "version": "0.2.0",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1323,8 +1485,8 @@
         "display_name": "u44e"
       },
       "version": "0.1.0",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1411,8 +1573,8 @@
         "display_name": "u44e"
       },
       "version": "0.2.2",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1485,8 +1647,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1539,8 +1701,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1593,8 +1755,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1671,8 +1833,8 @@
         "display_name": "u44e"
       },
       "version": "0.1.1",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1733,8 +1895,8 @@
         "github": "whywilson"
       },
       "version": "0.1",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1788,8 +1950,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1839,8 +2001,8 @@
         "github": "eggfly"
       },
       "version": "1.0.0",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1880,8 +2042,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -1935,8 +2097,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -2022,8 +2184,8 @@
         "display_name": "dianjixz"
       },
       "version": "0.1.0-m5stack1",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -2073,8 +2235,8 @@
         "display_name": "Weiming Feng"
       },
       "version": "0.2.0",
-      "published_at": "2026-07-28T21:22:56+08:00",
-      "updated_at": "2026-07-28T21:22:56+08:00",
+      "published_at": "2026-08-05T21:26:08+08:00",
+      "updated_at": "2026-08-05T21:26:08+08:00",
       "review": {
         "status": "approved"
       },
