@@ -501,6 +501,10 @@
         "title": "CardputerZero キー仕様",
         "summary": "固定機能キー、修飾キー、Fn キーの組み合わせ、アプリ画面向けの推奨キー設計。"
       },
+      "cp0Dev": {
+        "title": "CardputerZero アプリケーション開発ガイドライン",
+        "summary": "アプリのメタデータ、カテゴリ、権限宣言、ストア素材、提出フローの基本ルール。"
+      },
       "development": {
         "title": "CardputerZero アプリ開発入門",
         "summary": "通常の開発ルート：言語選択、環境構築、リポジトリの役割、開発パターン、HelloWorld。"
