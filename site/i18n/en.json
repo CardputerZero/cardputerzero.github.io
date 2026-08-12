@@ -501,6 +501,10 @@
         "title": "CardputerZero Key Specifications",
         "summary": "Dedicated keys, modifier behavior, Fn combinations, and recommended key mapping for application interfaces."
       },
+      "cp0Dev": {
+        "title": "CardputerZero Application Development Guidelines",
+        "summary": "Baseline rules for app metadata, categories, permission declarations, store assets, and submission flow."
+      },
       "development": {
         "title": "CardputerZero App Development Guide",
         "summary": "The normal development path: language choice, environment setup, repository roles, development pattern, and HelloWorld."

@@ -28,6 +28,16 @@ const DOCUMENTS = [
     },
     titleKey: "documents.items.keys.title",
     summaryKey: "documents.items.keys.summary"
+  },
+  {
+    slug: "cp0-dev",
+    paths: {
+      "zh-CN": "docs/zh-CN/CP0_dev.md",
+      en: "docs/en/CP0_dev.md",
+      ja: "docs/ja/CP0_dev.md"
+    },
+    titleKey: "documents.items.cp0Dev.title",
+    summaryKey: "documents.items.cp0Dev.summary"
   }
 ];
 
