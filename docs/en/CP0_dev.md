@@ -55,7 +55,7 @@ Example `app-builder.json`:
 Each application must select 1-2 categories from the following category list.
 
 | No. | Category          | Description                                                                                                                                                   |
-| --- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :---: | :---------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 01  | System Tools      | Apps for system settings, file management, status monitoring, device maintenance and other general-purpose functions.                                         |
 | 02  | Development       | Tools for code editing, running scripts, terminal operations, software debugging, log analysis, app development, and technical demonstrations.                |
 | 03  | Hardware & IoT    | Apps for connecting to and controlling sensors, actuators, USB peripherals, Grove/EXT modules, and other IoT devices.                                         |

@@ -1251,6 +1251,58 @@ code {
   background: rgba(50, 232, 117, 0.06);
 }
 
+.doc-table-wrap {
+  margin: 20px 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-surface-raised);
+}
+
+.doc-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.doc-table th,
+.doc-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  vertical-align: middle;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.doc-table th:last-child,
+.doc-table td:last-child {
+  border-right: 0;
+}
+
+.doc-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.doc-table th {
+  color: var(--color-text);
+  background: rgba(50, 232, 117, 0.08);
+  font-weight: 700;
+}
+
+.doc-table-left {
+  text-align: left;
+}
+
+.doc-table-center {
+  text-align: center;
+}
+
+.doc-table-right {
+  text-align: right;
+}
+
 .markdown-doc code {
   overflow-wrap: anywhere;
 }

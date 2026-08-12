@@ -1037,7 +1037,8 @@ function renderMarkdown(markdown) {
     listType = null;
   }
 
-  for (const line of lines) {
+  for (let index = 0; index < lines.length; index += 1) {
+    const line = lines[index];
     if (line.startsWith("```")) {
       if (inCode) {
         html.push(`<pre class="code-block"><code>${escapeHtml(codeLines.join("\n"))}</code></pre>`);
@@ -1059,6 +1060,20 @@ function renderMarkdown(markdown) {
     if (!line.trim()) {
       flushParagraph();
       flushList();
+      continue;
+    }
+
+    if (isMarkdownTableStart(lines, index)) {
+      flushParagraph();
+      flushList();
+      const tableLines = [line, lines[index + 1]];
+      index += 2;
+      while (index < lines.length && isMarkdownTableRow(lines[index])) {
+        tableLines.push(lines[index]);
+        index += 1;
+      }
+      index -= 1;
+      html.push(renderMarkdownTable(tableLines));
       continue;
     }
 
@@ -1111,6 +1126,104 @@ function renderMarkdown(markdown) {
   flushList();
   if (inCode) html.push(`<pre class="code-block"><code>${escapeHtml(codeLines.join("\n"))}</code></pre>`);
   return { html: html.join("\n"), toc };
+}
+
+function isMarkdownTableStart(lines, index) {
+  return isMarkdownTableRow(lines[index]) && isMarkdownTableDivider(lines[index + 1]);
+}
+
+function isMarkdownTableRow(line) {
+  return Boolean(line && line.includes("|") && splitMarkdownTableRow(line).length > 1);
+}
+
+function isMarkdownTableDivider(line) {
+  if (!isMarkdownTableRow(line)) return false;
+  return splitMarkdownTableRow(line).every((cell) => /^:?-{3,}:?$/.test(cell.replace(/\s+/g, "")));
+}
+
+function splitMarkdownTableRow(line) {
+  let text = String(line).trim();
+  if (text.startsWith("|")) text = text.slice(1);
+  if (text.endsWith("|")) text = text.slice(0, -1);
+
+  const cells = [];
+  let cell = "";
+  let escaped = false;
+  for (const char of text) {
+    if (char === "|" && !escaped) {
+      cells.push(cell.trim().replace(/\\\|/g, "|"));
+      cell = "";
+    } else {
+      cell += char;
+    }
+    escaped = char === "\\" && !escaped;
+    if (char !== "\\") escaped = false;
+  }
+  cells.push(cell.trim().replace(/\\\|/g, "|"));
+  return cells;
+}
+
+function renderMarkdownTable(lines) {
+  const header = splitMarkdownTableRow(lines[0]);
+  const alignments = splitMarkdownTableRow(lines[1]).map((cell) => {
+    const marker = cell.replace(/\s+/g, "");
+    if (marker.startsWith(":") && marker.endsWith(":")) return "center";
+    if (marker.endsWith(":")) return "right";
+    return "left";
+  });
+  const rows = lines.slice(2).map(splitMarkdownTableRow);
+  const columnCount = header.length;
+  const columnWidths = getMarkdownTableColumnWidths([header, ...rows], columnCount);
+  const renderCell = (cell, index, tag) => {
+    const align = alignments[index] || "left";
+    return `<${tag} class="doc-table-${align}">${renderInlineMarkdown(cell || "")}</${tag}>`;
+  };
+  return `
+    <div class="doc-table-wrap">
+      <table class="doc-table">
+        <colgroup>
+          ${columnWidths.map((width) => `<col style="width: ${width}%">`).join("")}
+        </colgroup>
+        <thead>
+          <tr>${header.map((cell, index) => renderCell(cell, index, "th")).join("")}</tr>
+        </thead>
+        <tbody>
+          ${rows.map((row) => `
+            <tr>${Array.from({ length: columnCount }, (_, index) => renderCell(row[index], index, "td")).join("")}</tr>
+          `).join("")}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+function getMarkdownTableColumnWidths(rows, columnCount) {
+  const weights = Array.from({ length: columnCount }, (_, columnIndex) => {
+    const maxLength = Math.max(
+      ...rows.map((row) => measureMarkdownTableCell(row[columnIndex] || ""))
+    );
+    return Math.min(72, Math.max(6, maxLength));
+  });
+  const total = weights.reduce((sum, weight) => sum + weight, 0) || 1;
+  return weights.map((weight) => Number(((weight / total) * 100).toFixed(2)));
+}
+
+function measureMarkdownTableCell(cell) {
+  const plain = String(cell)
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+    .replace(/[`*_~]/g, "")
+    .replace(/\\\|/g, "|");
+  const segments = plain.split(/\n+/).map((segment) => segment.trim()).filter(Boolean);
+  const longest = segments.length ? Math.max(...segments.map(measureTextWidth)) : 0;
+  return longest;
+}
+
+function measureTextWidth(text) {
+  return Array.from(text).reduce((width, char) => {
+    return width + (/[\u3000-\u9fff\u3040-\u30ff\uff00-\uffef]/.test(char) ? 2 : 1);
+  }, 0);
 }
 
 function uniqueHeadingId(title, headingIds) {
