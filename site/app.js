@@ -993,6 +993,7 @@ async function renderDocument(slug) {
     if (docNode) docNode.innerHTML = rendered.html;
     if (tocNode) tocNode.innerHTML = renderToc(rendered.toc);
     bindDocumentToc();
+    bindCopyButtons();
   } catch (error) {
     const docNode = document.querySelector(".markdown-doc");
     if (docNode) docNode.innerHTML = `<div class="error">${escapeHtml(error.message)}</div>`;
@@ -1021,6 +1022,7 @@ function renderMarkdown(markdown) {
   let listType = null;
   let inCode = false;
   let codeLines = [];
+  let codeLanguage = "";
 
   function flushParagraph() {
     if (!paragraph.length) return;
@@ -1039,15 +1041,18 @@ function renderMarkdown(markdown) {
 
   for (let index = 0; index < lines.length; index += 1) {
     const line = lines[index];
-    if (line.startsWith("```")) {
+    const codeFence = line.match(/^```\s*([A-Za-z0-9_+#.-]+)?\s*$/);
+    if (codeFence) {
       if (inCode) {
-        html.push(`<pre class="code-block"><code>${escapeHtml(codeLines.join("\n"))}</code></pre>`);
+        html.push(renderCodeBlock(codeLines, codeLanguage));
         inCode = false;
         codeLines = [];
+        codeLanguage = "";
       } else {
         flushParagraph();
         flushList();
         inCode = true;
+        codeLanguage = codeFence[1] || "";
       }
       continue;
     }
@@ -1124,8 +1129,168 @@ function renderMarkdown(markdown) {
 
   flushParagraph();
   flushList();
-  if (inCode) html.push(`<pre class="code-block"><code>${escapeHtml(codeLines.join("\n"))}</code></pre>`);
+  if (inCode) html.push(renderCodeBlock(codeLines, codeLanguage));
   return { html: html.join("\n"), toc };
+}
+
+function renderCodeBlock(lines, languageHint = "") {
+  const code = lines.join("\n");
+  const language = normalizeCodeLanguage(languageHint) || inferCodeLanguage(code);
+  const copyLabel = escapeHtml(t("actions.copy"));
+  return `
+    <div class="code-block-wrap">
+      <button class="code-copy-button" data-code-copy type="button" aria-label="${escapeAttr(t("actions.copy"))}">${copyLabel}</button>
+      <pre class="code-block"><code class="language-${escapeAttr(language)}">${highlightCode(code, language)}</code></pre>
+    </div>
+  `;
+}
+
+function normalizeCodeLanguage(language) {
+  const name = String(language || "").trim().toLowerCase();
+  const aliases = {
+    js: "javascript",
+    jsx: "javascript",
+    mjs: "javascript",
+    cjs: "javascript",
+    ts: "typescript",
+    tsx: "typescript",
+    py: "python",
+    sh: "shell",
+    bash: "shell",
+    zsh: "shell",
+    c: "cpp",
+    h: "cpp",
+    "c++": "cpp",
+    hpp: "cpp",
+    html: "markup",
+    xml: "markup",
+    svg: "markup",
+    yml: "yaml",
+    text: "plain",
+    txt: "plain"
+  };
+  const supported = new Set([
+    "javascript", "typescript", "python", "shell", "cpp", "json", "jsonc",
+    "markup", "css", "scss", "yaml", "toml", "ini", "markdown", "plain"
+  ]);
+  const normalized = aliases[name] || name;
+  return supported.has(normalized) ? normalized : "";
+}
+
+function inferCodeLanguage(code) {
+  const text = String(code || "");
+  const trimmed = text.trim();
+  if (!trimmed) return "plain";
+  if (trimmed.startsWith("{") || trimmed.startsWith("[")) {
+    try {
+      JSON.parse(trimmed);
+      return "json";
+    } catch (error) {
+      // Continue with the remaining lightweight language checks.
+    }
+  }
+  if (/^\s*<\/?[A-Za-z][\s\S]*>/m.test(text)) return "markup";
+  if (/(?:^|\n)\s*(?:\$\s*)?(?:git|gh|npm|pnpm|yarn|bun|python3?|pip3?|curl|wget|cd|mkdir|cp|mv|ssh|sudo|apt)\b/m.test(text)) return "shell";
+  if (/#include\s*[<"]|\bstd::|\bint\s+main\s*\(/.test(text)) return "cpp";
+  if (/\b(?:def|elif|print|self|None|True|False)\b|(?:^|\n)\s*(?:from|import)\s+[A-Za-z_.]+/m.test(text)) return "python";
+  if (/\b(?:const|let|var|function|export|async|await)\b|=>/.test(text)) return "javascript";
+  if (/(?:^|\n)\s*(?:[.#][\w-]+|[A-Za-z][\w-]*)\s*\{[\s\S]*:[^;{}]+;/m.test(text)) return "css";
+  return "plain";
+}
+
+function highlightCode(code, language) {
+  const commonStrings = /"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'/g;
+  const commonNumbers = /\b(?:0x[\da-f]+|\d+(?:\.\d+)?)\b/gi;
+  const patterns = [];
+  const add = (pattern, className, priority = patterns.length) => {
+    patterns.push({ pattern, className, priority });
+  };
+
+  if (language === "json" || language === "jsonc") {
+    if (language === "jsonc") add(/\/\*[\s\S]*?\*\/|\/\/[^\n]*/g, "code-token-comment");
+    add(/"(?:\\.|[^"\\])*"(?=\s*:)/g, "code-token-property");
+    add(commonStrings, "code-token-string");
+    add(/\b(?:true|false|null)\b/g, "code-token-literal");
+    add(commonNumbers, "code-token-number");
+  } else if (language === "markup") {
+    add(/<!--[\s\S]*?-->/g, "code-token-comment");
+    add(/<\/?[A-Za-z][\w:.-]*/g, "code-token-keyword");
+    add(commonStrings, "code-token-string");
+    add(/\b[A-Za-z_:][\w:.-]*(?=\s*=)/g, "code-token-property");
+  } else if (language === "css" || language === "scss") {
+    add(/\/\*[\s\S]*?\*\//g, "code-token-comment");
+    add(commonStrings, "code-token-string");
+    add(/(?:--)?[A-Za-z_-][\w-]*(?=\s*:)/g, "code-token-property");
+    add(/#[\da-f]{3,8}\b|\b\d+(?:\.\d+)?(?:px|rem|em|%|vh|vw|s|ms|deg)?\b/gi, "code-token-number");
+    add(/![A-Za-z-]+\b/g, "code-token-keyword");
+  } else if (language === "python") {
+    add(/#[^\n]*/g, "code-token-comment");
+    add(/'''[\s\S]*?'''|"""[\s\S]*?"""|"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'/g, "code-token-string");
+    add(/\b(?:and|as|assert|async|await|break|class|continue|def|del|elif|else|except|False|finally|for|from|global|if|import|in|is|lambda|None|nonlocal|not|or|pass|raise|return|True|try|while|with|yield)\b/g, "code-token-keyword");
+    add(/\b[A-Za-z_]\w*(?=\s*\()/g, "code-token-function");
+    add(commonNumbers, "code-token-number");
+  } else if (language === "shell") {
+    add(/#[^\n]*/g, "code-token-comment");
+    add(commonStrings, "code-token-string");
+    add(/\$\{?[A-Za-z_][A-Za-z0-9_]*\}?/g, "code-token-property");
+    add(/(?:^|\n)\s*(?:\$\s*)?[A-Za-z0-9_./-]+/g, "code-token-function");
+    add(/(?:^|\s)--?[A-Za-z0-9][\w-]*/g, "code-token-keyword");
+    add(/\b(?:if|then|else|elif|fi|for|while|in|do|done|case|esac|function)\b/g, "code-token-keyword");
+    add(commonNumbers, "code-token-number");
+  } else if (["javascript", "typescript", "cpp"].includes(language)) {
+    add(/\/\*[\s\S]*?\*\/|\/\/[^\n]*/g, "code-token-comment");
+    add(/`(?:\\.|[^`\\])*`|"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'/g, "code-token-string");
+    const keywords = language === "cpp"
+      ? /\b(?:alignas|auto|bool|break|case|catch|char|class|const|constexpr|continue|default|delete|do|double|else|enum|explicit|extern|false|float|for|friend|if|inline|int|long|namespace|new|nullptr|operator|private|protected|public|return|short|signed|sizeof|static|struct|switch|template|this|throw|true|try|typedef|typename|union|unsigned|using|virtual|void|volatile|while)\b/g
+      : /\b(?:async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|export|extends|false|finally|for|from|function|get|if|import|in|instanceof|interface|let|new|null|of|return|set|static|super|switch|this|throw|true|try|typeof|undefined|var|void|while|yield)\b/g;
+    add(keywords, "code-token-keyword");
+    add(/\b[A-Za-z_$][\w$]*(?=\s*\()/g, "code-token-function");
+    add(commonNumbers, "code-token-number");
+  } else if (["yaml", "toml", "ini"].includes(language)) {
+    add(/#[^\n]*|;[^\n]*/g, "code-token-comment");
+    add(commonStrings, "code-token-string");
+    add(/(?:^|\n)\s*[A-Za-z_][\w.-]*(?=\s*[:=])/g, "code-token-property");
+    add(/\b(?:true|false|null|yes|no|on|off)\b/gi, "code-token-literal");
+    add(commonNumbers, "code-token-number");
+  } else {
+    add(/\/\*[\s\S]*?\*\/|\/\/[^\n]*|#[^\n]*/g, "code-token-comment");
+    add(commonStrings, "code-token-string");
+    add(/\b(?:true|false|null|none)\b/gi, "code-token-literal");
+    add(commonNumbers, "code-token-number");
+  }
+
+  return renderHighlightedRanges(String(code || ""), patterns);
+}
+
+function renderHighlightedRanges(code, patternSpecs) {
+  const ranges = [];
+  patternSpecs.forEach(({ pattern, className, priority }) => {
+    pattern.lastIndex = 0;
+    let match;
+    while ((match = pattern.exec(code))) {
+      if (!match[0]) {
+        pattern.lastIndex += 1;
+        continue;
+      }
+      ranges.push({
+        start: match.index,
+        end: match.index + match[0].length,
+        className,
+        priority
+      });
+    }
+  });
+  ranges.sort((left, right) => left.start - right.start || left.priority - right.priority || right.end - left.end);
+
+  let cursor = 0;
+  let html = "";
+  ranges.forEach((range) => {
+    if (range.start < cursor) return;
+    html += escapeHtml(code.slice(cursor, range.start));
+    html += `<span class="${range.className}">${escapeHtml(code.slice(range.start, range.end))}</span>`;
+    cursor = range.end;
+  });
+  return html + escapeHtml(code.slice(cursor));
 }
 
 function isMarkdownTableStart(lines, index) {
@@ -1590,6 +1755,17 @@ function bindCopyButtons() {
   document.querySelectorAll("[data-copy]").forEach((button) => {
     button.addEventListener("click", async () => {
       await navigator.clipboard.writeText(button.dataset.copy);
+      button.textContent = t("actions.copied");
+      setTimeout(() => {
+        button.textContent = t("actions.copy");
+      }, 1200);
+    });
+  });
+
+  document.querySelectorAll("[data-code-copy]").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const code = button.closest(".code-block-wrap")?.querySelector("code")?.textContent || "";
+      await navigator.clipboard.writeText(code);
       button.textContent = t("actions.copied");
       setTimeout(() => {
         button.textContent = t("actions.copy");
