@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-08-18T20:56:40+08:00",
+  "generated_at": "2026-08-20T14:42:03+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -146,11 +146,11 @@
       ],
       "author": {
         "github": "yutacar",
-        "display_name": "YutaCar"
+        "display_name": "yutacar"
       },
       "version": "1.0.0",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -303,11 +303,11 @@
       ],
       "author": {
         "github": "u44e",
-        "display_name": "u44e"
+        "display_name": "Yusuke Yoshie"
       },
       "version": "0.1.1",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -366,11 +366,12 @@
         "Network"
       ],
       "author": {
-        "github": "maxhayim"
+        "github": "maxhayim",
+        "display_name": "maxhayim"
       },
       "version": "0.1.0",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -411,11 +412,12 @@
         "Games"
       ],
       "author": {
-        "github": "kur1k0"
+        "github": "kur1k0",
+        "display_name": "kur1k0"
       },
       "version": "1.0.0",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -488,8 +490,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.1.1-m5stack1",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -539,11 +541,12 @@
         "Utilities"
       ],
       "author": {
-        "github": "churchja"
+        "github": "churchja",
+        "display_name": "churchja"
       },
       "version": "0.2.0-3",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -626,8 +629,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.2.2-m5stack1",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -716,8 +719,8 @@
         "display_name": "yutacar"
       },
       "version": "1.0.0",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -762,12 +765,12 @@
         "Productivity"
       ],
       "author": {
-        "github": "rimedag-nullworks",
+        "github": "NoirSonance",
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -821,8 +824,8 @@
         "display_name": "n0xa"
       },
       "version": "0.4.0",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -867,8 +870,8 @@
         "display_name": "Flint Devices"
       },
       "version": "0.0.25",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -1002,8 +1005,8 @@
         "display_name": "XuHaifeng"
       },
       "version": "0.4.3-m5stack1",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -1047,11 +1050,12 @@
       "i18n": {},
       "categories": [],
       "author": {
-        "github": "imliubo"
+        "github": "imliubo",
+        "display_name": "imliubo"
       },
       "version": "1.0.1-m5stack1",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -1092,11 +1096,12 @@
       "i18n": {},
       "categories": [],
       "author": {
-        "github": "tghost"
+        "github": "tghost",
+        "display_name": "tghost"
       },
       "version": "0.1.0",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -1129,11 +1134,12 @@
       "i18n": {},
       "categories": [],
       "author": {
-        "github": "tghost"
+        "github": "tghost",
+        "display_name": "tghost"
       },
       "version": "0.1.0",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -1166,11 +1172,12 @@
       "i18n": {},
       "categories": [],
       "author": {
-        "github": "tghost"
+        "github": "tghost",
+        "display_name": "tghost"
       },
       "version": "0.1.0",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -1203,11 +1210,12 @@
       "i18n": {},
       "categories": [],
       "author": {
-        "github": "imliubo"
+        "github": "imliubo",
+        "display_name": "imliubo"
       },
       "version": "1.0.0",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -1246,8 +1254,8 @@
         "display_name": "ESP Flasher"
       },
       "version": "0.0.2-cardputer1",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -1384,11 +1392,11 @@
       ],
       "author": {
         "github": "u44e",
-        "display_name": "u44e"
+        "display_name": "Yusuke Yoshie"
       },
       "version": "0.2.0",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -1560,8 +1568,8 @@
         "display_name": "m5stack"
       },
       "version": "0.1.8",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -1705,11 +1713,11 @@
       ],
       "author": {
         "github": "u44e",
-        "display_name": "u44e"
+        "display_name": "Yusuke Yoshie"
       },
       "version": "0.1.0",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -1793,11 +1801,11 @@
       ],
       "author": {
         "github": "u44e",
-        "display_name": "u44e"
+        "display_name": "Yusuke Yoshie"
       },
       "version": "0.2.2",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -1866,12 +1874,12 @@
         "Productivity"
       ],
       "author": {
-        "github": "rimedag-nullworks",
+        "github": "NoirSonance",
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -1920,12 +1928,12 @@
         "Utilities"
       ],
       "author": {
-        "github": "rimedag-nullworks",
+        "github": "NoirSonance",
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -1974,12 +1982,12 @@
         "Utilities"
       ],
       "author": {
-        "github": "rimedag-nullworks",
+        "github": "NoirSonance",
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -2053,11 +2061,11 @@
       ],
       "author": {
         "github": "u44e",
-        "display_name": "u44e"
+        "display_name": "Yusuke Yoshie"
       },
       "version": "0.1.1",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -2131,8 +2139,8 @@
         "display_name": "renletao"
       },
       "version": "0.1.0",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -2174,11 +2182,12 @@
         "125KHz"
       ],
       "author": {
-        "github": "whywilson"
+        "github": "whywilson",
+        "display_name": "whywilson"
       },
       "version": "0.3",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -2228,12 +2237,12 @@
         "Productivity"
       ],
       "author": {
-        "github": "rimedag-nullworks",
+        "github": "NoirSonance",
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -2280,11 +2289,12 @@
       "i18n": {},
       "categories": [],
       "author": {
-        "github": "eggfly"
+        "github": "eggfly",
+        "display_name": "eggfly"
       },
       "version": "1.0.0",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -2320,12 +2330,12 @@
         "Utilities"
       ],
       "author": {
-        "github": "rimedag-nullworks",
+        "github": "NoirSonance",
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -2375,12 +2385,12 @@
         "Productivity"
       ],
       "author": {
-        "github": "rimedag-nullworks",
+        "github": "NoirSonance",
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -2434,8 +2444,8 @@
         "display_name": "zhenquan-yao"
       },
       "version": "1.0.9-m5stack1",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -2483,8 +2493,8 @@
         "email": "dylan.luo@m5stack.com"
       },
       "version": "0.1.0-m5stack1",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -2529,11 +2539,12 @@
         "Game"
       ],
       "author": {
-        "github": "TinyuZhao"
+        "github": "TinyuZhao",
+        "display_name": "TinyuZhao"
       },
       "version": "0.0.2-m5stack1",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -2613,8 +2624,8 @@
         "display_name": "dianjixz"
       },
       "version": "0.1.0-m5stack1",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
@@ -2661,11 +2672,12 @@
         "multimedia"
       ],
       "author": {
+        "github": "nullbeing",
         "display_name": "Weiming Feng"
       },
       "version": "0.2.0",
-      "published_at": "2026-08-18T20:56:40+08:00",
-      "updated_at": "2026-08-18T20:56:40+08:00",
+      "published_at": "2026-08-20T14:42:03+08:00",
+      "updated_at": "2026-08-20T14:42:03+08:00",
       "review": {
         "status": "approved"
       },
