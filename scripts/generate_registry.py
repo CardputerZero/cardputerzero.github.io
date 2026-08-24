@@ -23,8 +23,14 @@ def now_iso() -> str:
     return dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).strftime("%Y-%m-%dT%H:%M:%S+08:00")
 
 
-def make_uuid(pkg_name: str, sha256_hex: str) -> str:
-    return str(uuid.uuid5(NAMESPACE_CZ, f"{pkg_name}:{sha256_hex}"))
+def make_uuid(pkg_name: str) -> str:
+    """Fallback for a package whose meta.json carries no pinned uuid.
+
+    Derived from the package name only — the old formula mixed in the deb's
+    sha256, so an app's identity changed on every release. All published
+    packages now pin their uuid in meta.json; this covers future gaps.
+    """
+    return str(uuid.uuid5(NAMESPACE_CZ, pkg_name))
 
 
 def parse_packages(path: Path) -> dict[str, dict[str, str]]:
@@ -167,8 +173,11 @@ def build_app(pkg_name: str, pkg_info: dict[str, str], meta: dict[str, Any], gen
     review = {**review, "status": review_status}
 
     app = {
-        "uuid": str(meta.get("uuid") or make_uuid(pkg_name, sha256)),
-        "share_code": str(meta.get("share_code") or pkg_name[:4]),
+        "uuid": str(meta.get("uuid") or make_uuid(pkg_name)),
+        # No fallback: an invented code (the old pkg_name[:4]) collided five
+        # ways and could shadow a real one. Submission CI requires the field;
+        # an app without one simply is not reachable by code.
+        "share_code": str(meta.get("share_code") or ""),
         "title": str(meta.get("title") or pkg_name),
         "summary": str(meta.get("summary") or ""),
         "description": str(meta.get("description") or pkg_info.get("Description") or ""),
@@ -216,6 +225,27 @@ def build_registry(packages_path: Path, meta_dir: Path, overrides_path: Path) ->
         if isinstance(override, dict):
             meta = deep_merge(meta, override)
         apps.append(build_app(pkg_name, pkg_info, meta, generated_at))
+
+    # Share codes and titles are user-facing lookup keys; submission CI
+    # enforces their uniqueness, and the registry refuses to publish a
+    # conflicting state rather than silently shipping ambiguous lookups.
+    seen_codes: dict[str, str] = {}
+    seen_titles: dict[str, str] = {}
+    conflicts = []
+    for app in apps:
+        pkg = app["download"]["package"]
+        code = app["share_code"].strip().upper()
+        if code:
+            if code in seen_codes:
+                conflicts.append(f"share_code {app['share_code']!r}: {seen_codes[code]} vs {pkg}")
+            seen_codes[code] = pkg
+        title = re.sub(r"\s+", " ", app["title"]).strip().casefold()
+        if title:
+            if title in seen_titles:
+                conflicts.append(f"title {app['title']!r}: {seen_titles[title]} vs {pkg}")
+            seen_titles[title] = pkg
+    if conflicts:
+        raise SystemExit("registry uniqueness violated:\n  " + "\n  ".join(conflicts))
 
     return {
         "schema_version": 2,
