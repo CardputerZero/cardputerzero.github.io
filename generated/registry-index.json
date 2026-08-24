@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-08-22T22:52:45+08:00",
+  "generated_at": "2026-08-24T11:17:00+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -56,8 +56,7 @@
         }
       },
       "categories": [
-        "Games",
-        "Puzzle"
+        "Games"
       ],
       "author": {
         "github": "zhuzhe1983",
@@ -81,8 +80,13 @@
       },
       "depends": "",
       "permissions": {
-        "audio": true,
-        "keyboard_input": true
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
       },
       "assets": {
         "icon": "assets/4ff51d2b/icon.png",
@@ -103,7 +107,7 @@
     },
     {
       "uuid": "5cc5012b-23e1-55e4-9492-558c098fbc9f",
-      "share_code": "batt",
+      "share_code": "SHIP",
       "title": "Battleship",
       "summary": "Classic naval combat: 1P vs AI or 2P over BLE/WiFi.",
       "description": "CardputerZero Battleship game",
@@ -149,8 +153,8 @@
         "display_name": "yutacar"
       },
       "version": "1.0.0",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -185,10 +189,10 @@
     },
     {
       "uuid": "ff2ee91e-c334-5a5d-8b91-725c59c08294",
-      "share_code": "cale",
+      "share_code": "CALE",
       "title": "Calendar",
       "summary": "中英日等多国日历",
-      "description": "Calendar for CardputerZero with local schedules, online ICS subscriptions, lunar details, regional holidays, almanac, weather, and multilingual UI.",
+      "description": "中英日等多国日历，支持 ics 和部分内置日志",
       "locales": {
         "en": {
           "title": "Calendar",
@@ -225,7 +229,7 @@
       },
       "categories": [
         "Lifestyle",
-        "System"
+        "System Tools"
       ],
       "author": {
         "github": "zhuzhe1983",
@@ -268,7 +272,7 @@
     },
     {
       "uuid": "191fd112-3862-5bfd-a695-bddb8f9019c4",
-      "share_code": "cams",
+      "share_code": "CAMS",
       "title": "CamStreamEmu",
       "summary": "Reproduce a captured camera's video stream (multicast / RTSP / HTTP-MJPEG) from the built-in camera.",
       "description": "CamStreamEmu regenerates the video stream of a real network camera from a profile captured by PacketScope. Pick a camera-profile JSON on the 320x170 screen and it encodes the built-in camera to that exact format via GStreamer (hardware H.264 on the Pi) and delivers it the same way the real camera did — multicast RTP (H.264/MPEG2-TS, MPEG-2, MLIT MPEG2-TTS/PT103, RTP-JPEG), an RTSP server, or an HTTP Motion-JPEG server — while showing live delivery mode / destination / packet & byte counters. Video-only; there is no pan/tilt/zoom camera control. Pairs with PacketScope (observe -> reproduce round-trip).",
@@ -297,17 +301,16 @@
         }
       },
       "categories": [
-        "Multimedia",
-        "Video",
-        "Utilities"
+        "Media",
+        "System Tools"
       ],
       "author": {
         "github": "u44e",
         "display_name": "Yusuke Yoshie"
       },
       "version": "0.1.1",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -323,18 +326,13 @@
       },
       "depends": "libc6, libfreetype6, gstreamer1.0-tools, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-bad, gstreamer1.0-libav, libgstrtspserver-1.0-0",
       "permissions": {
-        "keyboard_input": true,
-        "network": true,
-        "filesystem": "full",
-        "external_hardware": false,
-        "hdmi_output": false,
-        "background_service": false,
-        "audio_output": false,
-        "microphone": false,
         "camera": true,
-        "sensors": false,
-        "gps": false,
-        "device_id": false
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/camstreamemu/camstreamemu.png",
@@ -351,27 +349,23 @@
     },
     {
       "uuid": "1c604a40-dec8-5260-8af2-4c21f6315c65",
-      "share_code": "card",
+      "share_code": "MESH",
       "title": "CardMesh for MeshMonitor",
       "summary": "Your pocket console for the mesh.",
       "description": "It gives you a compact physical interface to MeshMonitor's channels, direct messages, nodes, and telemetry — without needing a phone, tablet, or laptop nearby. MeshMonitor does the heavy lifting (radio connectivity, message storage, node history); CardMesh is a lightweight remote client optimized for fast, keyboard-first field use.",
       "locales": {},
       "i18n": {},
       "categories": [
-        "LoRa",
-        "Meshtastic",
-        "Meshcore",
-        "Meshmonitor",
-        "Utility",
-        "Network"
+        "Radio & Comms",
+        "System Tools"
       ],
       "author": {
         "github": "maxhayim",
         "display_name": "maxhayim"
       },
       "version": "0.1.0",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -402,7 +396,7 @@
     },
     {
       "uuid": "fca3809e-9639-5b4c-b9b6-1a57fd414019",
-      "share_code": "card",
+      "share_code": "ASTR",
       "title": "Astro Box",
       "summary": "Astro Box lets you create, explore, and share interactive N-body universes.",
       "description": "Create stars and planets, define their mass, color, and initial velocity, then watch gravity shape their paths in real time. Explore built-in orbital systems, pause or accelerate the simulation, follow individual bodies, and share complete universes with other CardputerZero users through QR codes.",
@@ -416,8 +410,8 @@
         "display_name": "kur1k0"
       },
       "version": "1.0.0",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -452,7 +446,7 @@
     },
     {
       "uuid": "1cae73de-aa3e-5410-bfc2-0747ac721f84",
-      "share_code": "card",
+      "share_code": "PWNA",
       "title": "Pwnagotchi",
       "summary": "Pwnagotchi status, control, and handshake dashboard for CardputerZero with an external monitor-mode USB Wi-Fi adapter.",
       "description": "Pwnagotchi monitor dashboard and controls for CardputerZero for M5Cardputer Zero\nRequires a monitor-mode capable external USB Wi-Fi adapter; the CM0 onboard\nWi-Fi does not support monitor mode for Pwnagotchi capture.",
@@ -482,16 +476,15 @@
       },
       "categories": [
         "Security",
-        "Networking",
-        "Utilities"
+        "Radio & Comms"
       ],
       "author": {
         "github": "JdaieLin",
         "display_name": "Jdaie"
       },
       "version": "0.1.1-m5stack1",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -507,13 +500,13 @@
       },
       "depends": "sudo, python3, python3-pip, python3-pil, curl, git, fonts-noto-cjk, fonts-noto-color-emoji, binutils, iw, wireless-tools, rfkill, bettercap, bettercap-caplets, iptables",
       "permissions": {
+        "camera": false,
         "microphone": false,
-        "audio_output": false,
+        "imu": false,
         "network": true,
-        "filesystem": "app-data-and-handshakes",
-        "keyboard_input": true,
+        "additional_hardware": false,
         "background_service": true,
-        "external_hardware": true
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-pwnagotchi/pwnagotchi.png",
@@ -528,25 +521,23 @@
     },
     {
       "uuid": "954ab268-8e91-5994-b0f8-22df86ec923e",
-      "share_code": "card",
+      "share_code": "RADI",
       "title": "cardputerzero-radio",
       "summary": "Internet radio with station search, favourites, sleep timer and alarm",
       "description": "Stream internet radio on your CardputerZero.\r\n\r\nShips with a curated station list you can edit, plus live search across the\r\nRadio Browser directory so you can find and save new stations on-device.\r\n\r\n- Favourites, and scrolling track titles from stations that broadcast them\r\n- Automatic reconnect when a stream drops\r\n- Sleep timer, and a wake-to-radio alarm\r\n- Record the live stream to the SD card\r\n- Optional boot-to-radio autostart, toggled in Settings\r\n- Tells you plainly when Wi-Fi is missing instead of blaming the station\r\n\r\nDriven entirely from the keyboard. SPACE plays, arrows tune and set volume,\r\n/ searches, G opens settings.\r\n\r\nRequires an internet connection. Not yet tested on production hardware.",
       "locales": {},
       "i18n": {},
       "categories": [
-        "Audio",
-        "Music",
-        "Internet",
-        "Utilities"
+        "Media",
+        "Radio & Comms"
       ],
       "author": {
         "github": "churchja",
         "display_name": "churchja"
       },
       "version": "0.2.0-3",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -581,7 +572,7 @@
     },
     {
       "uuid": "5efda523-4689-5970-976d-dfc0e7d22e65",
-      "share_code": "card",
+      "share_code": "XIAO",
       "title": "XiaoZhi",
       "summary": "Voice-first AI assistant for CardputerZero with activation, chat, and continuous listening.",
       "description": "XiaoZhi brings the xiaozhi.me voice assistant experience to CardputerZero with activation-code pairing, push-to-talk wake, bidirectional voice chat, server-side VAD, and continuous conversation flow. The package is tuned for the 320 x 170 framebuffer UI and ships as an APPLaunch-ready Debian package.",
@@ -621,16 +612,15 @@
       },
       "categories": [
         "AI",
-        "Communication",
-        "Utilities"
+        "Radio & Comms"
       ],
       "author": {
         "github": "JdaieLin",
         "display_name": "Jdaie"
       },
       "version": "0.2.4-m5stack1",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -646,13 +636,13 @@
       },
       "depends": "libsdl2-2.0-0, libsdl2-ttf-2.0-0, libopus0, python3, python3-pil, python3-cairosvg, curl, unzip, pipewire, pipewire-pulse, wireplumber",
       "permissions": {
+        "camera": false,
         "microphone": true,
-        "audio_output": true,
+        "imu": false,
         "network": true,
-        "filesystem": "app-data-only",
-        "keyboard_input": true,
+        "additional_hardware": false,
         "background_service": false,
-        "external_hardware": false
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/xiaozhi.png",
@@ -673,7 +663,7 @@
     },
     {
       "uuid": "e9e7b981-11a7-508a-b2c1-485a1684713a",
-      "share_code": "chai",
+      "share_code": "CLED",
       "title": "ChainLED",
       "summary": "Create 8x8 LED animations and drive a real Chain Mono/RGB matrix.",
       "description": "CardputerZero Chain LED animation editor & simulator",
@@ -712,15 +702,15 @@
         }
       },
       "categories": [
-        "Graphics"
+        "Creative & Office"
       ],
       "author": {
         "github": "yutacar",
         "display_name": "yutacar"
       },
       "version": "1.0.0",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -755,22 +745,22 @@
     },
     {
       "uuid": "457887b8-d796-57de-8cd2-c931d5f7592d",
-      "share_code": "crea",
+      "share_code": "CPRS",
       "title": "Creative Pressure",
       "summary": "Offline creative focus ritual for Cardputer Zero.",
       "description": "Creative Pressure is a timed focus ritual for writing under pressure, with session notes, local history, rage mode, and generated ambient sound.",
       "locales": {},
       "i18n": {},
       "categories": [
-        "Productivity"
+        "Creative & Office"
       ],
       "author": {
         "github": "NoirSonance",
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -786,13 +776,13 @@
       },
       "depends": "python3, python3-pil, python3-evdev, alsa-utils",
       "permissions": {
+        "camera": false,
         "microphone": false,
-        "audio_output": true,
+        "imu": false,
         "network": false,
-        "filesystem": "app-data-only",
-        "keyboard_input": true,
+        "additional_hardware": false,
         "background_service": false,
-        "external_hardware": false
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/creative-pressure/icon.png",
@@ -809,7 +799,7 @@
     },
     {
       "uuid": "2c81aaf6-3219-5b91-bc06-b237b49be5a6",
-      "share_code": "czco",
+      "share_code": "CZCO",
       "title": "czconsole",
       "summary": "Phone + on-device field console: telemetry, LCD mirror, files, and wardrive/SDR/recon tools",
       "description": "A privilege-separated field console for the M5Stack CardputerZero. A powerless Go web worker serves a phone dashboard (telemetry, LCD mirror, file browser) and drives capability-gated tools — nmap, gobuster, tcpdump, rtl_433, rtl_power (RF heatmaps), and kismet+GPS wardriving — all defined by runtime JSON specs. A native LCD frontend runs the same tools on the device's own screen and keypad. OS-agnostic: same package on Kali and stock RaspiOS; tools self-disable when absent.",
@@ -817,15 +807,15 @@
       "i18n": {},
       "categories": [
         "Security",
-        "Utilities"
+        "System Tools"
       ],
       "author": {
         "github": "n0xa",
         "display_name": "n0xa"
       },
       "version": "0.4.0",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -841,10 +831,13 @@
       },
       "depends": "pamtester, libpam-modules, acl, rtl-sdr, rtl-433, tcpdump, nmap, gobuster",
       "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
         "network": true,
-        "keyboard_input": true,
-        "filesystem": true,
-        "external_hardware": true
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czconsole/czconsole.png",
@@ -855,7 +848,7 @@
     },
     {
       "uuid": "eda9d233-da30-5f0f-9ae8-bc2c635f2aaf",
-      "share_code": "flin",
+      "share_code": "FLNT",
       "title": "Flint",
       "summary": "Offensive security firmware for M5Stack CardputerZero",
       "description": "Offensive security firmware for M5Stack CardputerZero",
@@ -863,15 +856,15 @@
       "i18n": {},
       "categories": [
         "Security",
-        "Utilities"
+        "System Tools"
       ],
       "author": {
         "github": "flintdevices",
         "display_name": "Flint Devices"
       },
       "version": "0.0.25",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -887,10 +880,13 @@
       },
       "depends": "python3 (>= 3.11), python3-pip, python3-venv,\npython3-pil, python3-pygame, python3-numpy,\npython3-evdev, python3-yaml, python3-setuptools,\nlibjpeg62-turbo | libjpeg8, libfreetype6, libsdl2-2.0-0, libsdl2-image-2.0-0,\nreaver",
       "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
         "network": true,
-        "keyboard_input": true,
-        "filesystem": true,
-        "external_hardware": true
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/flint.png",
@@ -959,7 +955,7 @@
     },
     {
       "uuid": "797a244a-162d-548e-8b33-f4a3e7c3fc3c",
-      "share_code": "font",
+      "share_code": "FONT",
       "title": "FontPreview",
       "summary": "Preview multilingual text with five font families.",
       "description": "A focused typography preview for CardputerZero. Compare nine languages and code with five font families, six typeface styles, 8–24 px sizes, three weights, and eight color schemes.",
@@ -998,15 +994,15 @@
         }
       },
       "categories": [
-        "Utilities"
+        "System Tools"
       ],
       "author": {
         "github": "Harrison-Xu",
         "display_name": "XuHaifeng"
       },
       "version": "0.4.3-m5stack1",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -1022,12 +1018,13 @@
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libsdl2-2.0-0, libsdl2-mixer-2.0-0, fonts-noto-cjk, fonts-go, fonts-inter, fonts-dejavu-core, fonts-dejavu-extra, fonts-dejavu-mono, fonts-jetbrains-mono",
       "permissions": {
+        "camera": false,
         "microphone": false,
-        "audio_output": true,
+        "imu": false,
         "network": false,
-        "keyboard_input": true,
+        "additional_hardware": false,
         "background_service": false,
-        "external_hardware": false
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fontpreview/fontpreview.png",
@@ -1042,7 +1039,7 @@
     },
     {
       "uuid": "0afdd36c-8868-599a-a255-9d44b268d2c9",
-      "share_code": "fxca",
+      "share_code": "FXCA",
       "title": "fxcam",
       "summary": "FXCam: 106 live filters, full-res photos, watermarks, and a zoomable gallery.",
       "description": "FXCam transforms the M5CardputerZero into a compact creative camera built for playful, hands-on photography. It offers 106 real-time effects, ranging from Polaroid, Game Boy, and iPhone-inspired looks to CRT, thermal, comic, and retro palette-based dithering styles. Filters are applied consistently to both the live preview and full-resolution JPEG captures, while every photo can include a transparent watermark with the device name, timestamp, application name, aperture, active filter, and author signature. The built-in gallery provides cached thumbnails, image information, deletion controls, and full-resolution viewing with zoom and pan support. FXCam supports CSI cameras through libcamera and USB cameras through V4L2, integrates with APPLaunch, and is distributed as an arm64 Debian package for straightforward installation on the device.",
@@ -1054,8 +1051,8 @@
         "display_name": "imliubo"
       },
       "version": "1.0.1-m5stack1",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -1088,7 +1085,7 @@
     },
     {
       "uuid": "a9aebd47-7790-5bdf-8d71-438525dcc0ef",
-      "share_code": "haof",
+      "share_code": "HAOF",
       "title": "haofan",
       "summary": "haofan - placeholder",
       "description": "haofan - placeholder",
@@ -1100,8 +1097,8 @@
         "display_name": "tghost"
       },
       "version": "0.1.0",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -1126,7 +1123,7 @@
     },
     {
       "uuid": "3c57b696-ed46-59eb-a1cc-86350d3d3330",
-      "share_code": "hf",
+      "share_code": "HFHF",
       "title": "hf",
       "summary": "hf - placeholder",
       "description": "hf - placeholder",
@@ -1138,8 +1135,8 @@
         "display_name": "tghost"
       },
       "version": "0.1.0",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -1164,7 +1161,7 @@
     },
     {
       "uuid": "aaf8f2c6-09ae-5b3e-8d04-11dd0239ed06",
-      "share_code": "hf-t",
+      "share_code": "HFTL",
       "title": "hf-tools",
       "summary": "hf-tools - placeholder",
       "description": "hf-tools - placeholder",
@@ -1176,8 +1173,8 @@
         "display_name": "tghost"
       },
       "version": "0.1.0",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -1202,7 +1199,7 @@
     },
     {
       "uuid": "6dcab9db-eff0-587d-aa22-9ecf397b5f3c",
-      "share_code": "icon",
+      "share_code": "ICTK",
       "title": "Icon Takeover",
       "summary": "Replace every CardputerZero APPLaunch icon with one image",
       "description": "Replace every CardputerZero APPLaunch icon with one image\nIcon Takeover updates dynamic desktop entries and built-in 100-pixel launcher\nicons while retaining reversible backups under /var/lib/icon-takeover.",
@@ -1214,8 +1211,8 @@
         "display_name": "imliubo"
       },
       "version": "1.0.0",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -1240,22 +1237,22 @@
     },
     {
       "uuid": "3c8375db-f273-502c-ab14-a57225355c5c",
-      "share_code": "laun",
+      "share_code": "ESPF",
       "title": "ESP Flasher",
       "summary": "ESP Flasher for Cardputer Zero, flash any M5Stack device with M5Burner firmware",
       "description": "ESP32 firmware browser and flasher for CardputerZero",
       "locales": {},
       "i18n": {},
       "categories": [
-        "Utilities"
+        "System Tools"
       ],
       "author": {
         "github": "bmorcelli",
         "display_name": "ESP Flasher"
       },
       "version": "0.0.2-cardputer1",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -1271,10 +1268,13 @@
       },
       "depends": "python3, python3-pip, python3-pil, python3-numpy, python3-evdev, python3-requests, python3-qrcode, fonts-dejavu-core",
       "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
         "network": true,
-        "keyboard_input": true,
-        "filesystem": true,
-        "external_hardware": true
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/Launcher_128x128.png",
@@ -1361,7 +1361,7 @@
     },
     {
       "uuid": "1c0e86f0-15e6-534d-b4f1-94839cb2dd30",
-      "share_code": "loca",
+      "share_code": "LOCT",
       "title": "Location Tracker",
       "summary": "LoRa multi-node GPS location receiver — live node list, node detail, and an offline map view.",
       "description": "A receiver/display for a LoRa (SX1262) multi-node GPS tracking mesh. Nodes send their position over LoRa; this CardputerZero app shows a live hub view (per-node ID / solution quality / lat-lon / satellites / signal) and a node-detail view (GPS fix, speed, altitude, TX). Radio + GNSS use the M5Stack Cap LoRa-1262 (SX1262 + AT6668/ATGM336H GNSS) — the same cap as the Cardputer ADV — driven on the CM0 via spidev/GPIO, so nodes and hubs interoperate across ADV and CardputerZero. Data arrives as NDJSON on stdin from a LoRa hub over USB-CDC, or from the on-device native LoRa receiver. The SIDE key cycles hub → hub-map → node → node-map, so each mode has both a text screen and a full-screen offline map. The map draws SD-stored offline slippy tiles (no network) with GPS/LoRa positions as markers, a scale bar, and pan/zoom (arrows pan, +/- zoom, 0 recenters): the hub-map auto-fits all received nodes, the node-map follows your own position at the most detail available. A small demo tile set of the Kanto–Chubu region (© GSI Japan / 地理院タイル, credited on-screen) ships with the app so the map self-demos out of the box; point CZ_TILES_DIR at your own tiles (see tools/cztiles) for other areas. Bundles a sample track so the whole app self-demos without hardware. A companion macOS app (native MapKit map view) reads the same LoRa-hub NDJSON stream over USB-CDC/TCP, so the same fleet can be viewed on the Mac at the same time.",
@@ -1386,17 +1386,16 @@
         }
       },
       "categories": [
-        "Hardware",
-        "Utilities",
-        "Communication"
+        "Hardware & IoT",
+        "System Tools"
       ],
       "author": {
         "github": "u44e",
         "display_name": "Yusuke Yoshie"
       },
       "version": "0.2.0",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -1412,18 +1411,13 @@
       },
       "depends": "libc6, libfreetype6",
       "permissions": {
-        "keyboard_input": true,
-        "network": false,
-        "filesystem": "full",
-        "external_hardware": true,
-        "hdmi_output": false,
-        "background_service": false,
-        "audio_output": false,
-        "microphone": false,
         "camera": false,
-        "sensors": true,
-        "gps": true,
-        "device_id": false
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/location-tracker/location-tracker.png",
@@ -1446,30 +1440,18 @@
     },
     {
       "uuid": "10f1b000-0000-4000-8000-000000000008",
-      "share_code": "lofi",
+      "share_code": "LOFI",
       "title": "LoFiBox",
       "summary": "Chromeless desktop-widget music player",
-      "description": "LoFiBox is a compact music player for local playback, media-library browsing, metadata, artwork, and extensible remote sources.",
+      "description": "LoFiBox is a pure C++ Linux music player with a compact chromeless desktop-widget surface, local playback, media-library browsing, and DSP-ready audio pipeline.",
       "locales": {
         "zh-CN": {
           "title": "LoFiBox 音乐播放器",
-          "summary": "无边框桌面小部件音乐播放器",
-          "description": "LoFiBox 是面向本地播放、媒体库浏览、元数据、封面和可扩展远程来源的紧凑音乐播放器。"
+          "summary": "无边框桌面小部件音乐播放器"
         },
         "zh-TW": {
           "title": "LoFiBox 音樂播放器",
-          "summary": "無邊框桌面小部件音樂播放器",
-          "description": "LoFiBox 是面向本機播放、媒體庫瀏覽、中繼資料、封面和可擴充遠端來源的緊湊音樂播放器。"
-        },
-        "en": {
-          "title": "LoFiBox",
-          "summary": "Chromeless desktop-widget music player",
-          "description": "LoFiBox is a compact music player for local playback, media-library browsing, metadata, artwork, and extensible remote sources."
-        },
-        "ja": {
-          "title": "LoFiBox 音楽プレーヤー",
-          "summary": "枠なしデスクトップウィジェット型の音楽プレーヤー",
-          "description": "LoFiBox は、ローカル再生、メディアライブラリ閲覧、メタデータ、アートワーク、拡張可能なリモートソースに対応したコンパクトな音楽プレーヤーです。"
+          "summary": "無邊框桌面小部件音樂播放器"
         }
       },
       "i18n": {
@@ -1495,8 +1477,7 @@
         }
       },
       "categories": [
-        "Media",
-        "Music"
+        "Media"
       ],
       "author": {
         "github": "vicliu624",
@@ -1520,9 +1501,13 @@
       },
       "depends": "libc6 (>= 2.38), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1), libwayland-client0 (>= 1.20.0), libx11-6, libxkbcommon0 (>= 0.5.0), alsa-utils, ffmpeg, python3, python3-mutagen",
       "permissions": {
-        "audio_output": true,
-        "keyboard_input": true,
-        "network": true
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
       },
       "assets": {
         "icon": "assets/10f1b000/icon.png",
@@ -1543,7 +1528,7 @@
     },
     {
       "uuid": "48f5f2c6-2740-55b2-922e-d0700dbbad18",
-      "share_code": "mmus",
+      "share_code": "MMUS",
       "title": "mMusic",
       "summary": "Browse and play local music with album art, lyrics, and a live spectrum.",
       "description": "A keyboard-first local music player for CardputerZero with indexed libraries, album Cover Flow, playback modes, a live spectrum, and the official five-key control layout.",
@@ -1560,7 +1545,6 @@
         }
       },
       "categories": [
-        "Music",
         "Media"
       ],
       "author": {
@@ -1568,8 +1552,8 @@
         "display_name": "m5stack"
       },
       "version": "0.1.8",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -1598,7 +1582,7 @@
     },
     {
       "uuid": "2000e000-0000-4000-8000-000000000007",
-      "share_code": "nc20",
+      "share_code": "NC2K",
       "title": "NC2000",
       "summary": "NC2000 WenQuXing Emulator for CardputerZero",
       "description": "NC2000 WenQuXing Emulator for CardputerZero\nA WenQuXing (文曲星) NC2000 / NC1020 handheld computer emulator\ntuned for M5CardputerZero's 320x170 LCD. Based on wangyu-/NC2000.",
@@ -1682,7 +1666,7 @@
     },
     {
       "uuid": "aa2ba61e-c0eb-59a8-a98d-ccc246cf8e53",
-      "share_code": "nets",
+      "share_code": "NSIM",
       "title": "NetSim",
       "summary": "2-port inline network tester: traffic load-generator + tc netem WAN impairment emulator over the built-in LAN port + one USB-LAN adapter.",
       "description": "Turn a two-port CardputerZero (built-in LAN + one USB-LAN adapter) into a portable network lab. LOAD mode blasts self-timestamped frames out port A and receives them raw on port B, measuring one-way latency (min/avg/max), jitter, packet loss, duplication and reorder, plus a binary-search rate sweep that finds the loss-free maximum throughput of the device under test. IMPAIR mode bridges the two ports transparently (no IP needed) and shapes the pass-through traffic per direction with tc netem: delay, jitter, loss, duplicate, corrupt, reorder and rate limiting, with CCTV-tuned presets (Satellite, Congested, Lossy-wireless, Brownout, ...). Every ip/tc/nmcli command is shown in an on-device log. Designed for destructive testing of multicast RTP / MLIT CCTV streams.",
@@ -1707,17 +1691,16 @@
         }
       },
       "categories": [
-        "Network",
-        "Utilities",
-        "System"
+        "Radio & Comms",
+        "System Tools"
       ],
       "author": {
         "github": "u44e",
         "display_name": "Yusuke Yoshie"
       },
       "version": "0.1.0",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -1733,18 +1716,13 @@
       },
       "depends": "libc6, iproute2, libcap2-bin",
       "permissions": {
-        "keyboard_input": true,
-        "network": true,
-        "filesystem": "none",
-        "external_hardware": true,
-        "hdmi_output": false,
-        "background_service": false,
-        "audio_output": false,
-        "microphone": false,
         "camera": false,
-        "sensors": false,
-        "gps": false,
-        "device_id": false
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netsim/netsim.png",
@@ -1769,7 +1747,7 @@
     },
     {
       "uuid": "cf1b57b8-b7de-553a-90d6-75f4173cf588",
-      "share_code": "nett",
+      "share_code": "NTRM",
       "title": "NetTerm",
       "summary": "SSH / telnet / USB-serial / shell terminal with profiles, VPN, macros and file injection.",
       "description": "A pocket terminal for network gear: SSH, telnet, USB-serial console (picocom) and local shell. Connection profiles with OS-managed VPN, per-profile SSH key and color theme, session logging with search, quick-send macros, charset-auto-detect file injection with wait-for-prompt, scrollback with search and line copy/paste, full SGR colour, and a switchable EN/JA UI.",
@@ -1794,18 +1772,16 @@
         }
       },
       "categories": [
-        "Network",
-        "Developer Tools",
-        "Utilities",
-        "System"
+        "Radio & Comms",
+        "Development"
       ],
       "author": {
         "github": "u44e",
         "display_name": "Yusuke Yoshie"
       },
       "version": "0.2.2",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -1821,18 +1797,13 @@
       },
       "depends": "libc6, libfreetype6, libvterm0, libevdev2, openssh-client, telnet, picocom",
       "permissions": {
-        "keyboard_input": true,
-        "network": true,
-        "filesystem": "full",
-        "external_hardware": true,
-        "hdmi_output": false,
-        "background_service": false,
-        "audio_output": false,
-        "microphone": false,
         "camera": false,
-        "sensors": false,
-        "gps": false,
-        "device_id": false
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/netterm/netterm.png",
@@ -1863,23 +1834,23 @@
     },
     {
       "uuid": "2fa94e4c-cecb-5d3c-9ec8-0380cd990847",
-      "share_code": "noir",
+      "share_code": "NSCK",
       "title": "NoirSonance Check",
       "summary": "Local WAV analysis utility for Cardputer Zero.",
       "description": "NoirSonance Check analyzes local 16-bit PCM WAV files for peak, RMS, crest factor, DC offset, and stereo correlation without uploading audio.",
       "locales": {},
       "i18n": {},
       "categories": [
-        "Audio",
-        "Productivity"
+        "Media",
+        "Creative & Office"
       ],
       "author": {
         "github": "NoirSonance",
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -1895,13 +1866,13 @@
       },
       "depends": "python3, python3-pil, python3-evdev",
       "permissions": {
+        "camera": false,
         "microphone": false,
-        "audio_output": false,
+        "imu": false,
         "network": false,
-        "filesystem": "app-data-only",
-        "keyboard_input": true,
+        "additional_hardware": false,
         "background_service": false,
-        "external_hardware": false
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-check/icon.png",
@@ -1918,22 +1889,22 @@
     },
     {
       "uuid": "75eec6c1-26d9-59d5-81af-746c01945759",
-      "share_code": "noir",
+      "share_code": "NSCC",
       "title": "Control Center",
       "summary": "Privacy-safe local dashboard for Cardputer Zero.",
       "description": "Control Center provides local device health, configurable checks, safe actions, and a privacy status page without bundling personal infrastructure data.",
       "locales": {},
       "i18n": {},
       "categories": [
-        "Utilities"
+        "System Tools"
       ],
       "author": {
         "github": "NoirSonance",
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -1949,13 +1920,13 @@
       },
       "depends": "python3, python3-pil, python3-evdev",
       "permissions": {
+        "camera": false,
         "microphone": false,
-        "audio_output": false,
+        "imu": false,
         "network": false,
-        "filesystem": "app-data-only",
-        "keyboard_input": true,
+        "additional_hardware": false,
         "background_service": false,
-        "external_hardware": false
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-control-center/icon.png",
@@ -1972,22 +1943,22 @@
     },
     {
       "uuid": "6cfdf8dd-1b61-5955-8c1d-487968106d9d",
-      "share_code": "noir",
+      "share_code": "NSTK",
       "title": "NoirSonance Toolkit",
       "summary": "Compact studio field toolkit for Cardputer Zero.",
       "description": "NoirSonance Toolkit provides six handheld studio utilities: MIDI/frequency, frequency-to-note, dB/linear conversion, delay time, pitch shift, and tap tempo.",
       "locales": {},
       "i18n": {},
       "categories": [
-        "Utilities"
+        "System Tools"
       ],
       "author": {
         "github": "NoirSonance",
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -2003,13 +1974,13 @@
       },
       "depends": "python3, python3-pil, python3-evdev",
       "permissions": {
+        "camera": false,
         "microphone": false,
-        "audio_output": false,
+        "imu": false,
         "network": false,
-        "filesystem": "app-data-only",
-        "keyboard_input": true,
+        "additional_hardware": false,
         "background_service": false,
-        "external_hardware": false
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/noirsonance-toolkit/icon.png",
@@ -2026,7 +1997,7 @@
     },
     {
       "uuid": "2aa0c29a-a02a-5a76-9005-6fd76ac8fd20",
-      "share_code": "pack",
+      "share_code": "PKTS",
       "title": "PacketScope",
       "summary": "Offline pcap/pcapng investigator — packet list, protocol tree, hex, filters, RTP & video-stream stats.",
       "description": "A fully offline packet-capture investigation tool. Open a .pcap/.pcapng from the SD card and explore it Wireshark-style on the 320x170 screen: a virtualized packet list (No/Time/Src/Dst/Proto/Len/Info), an expandable protocol tree synced to a hex dump with field highlighting, display filters (ip.addr==, udp.port==, rtp.ssrc==, proto keywords, &&/||/!), and statistics: protocol hierarchy, conversations, RTP streams (loss/jitter/rate per SSRC) and a video-stream check (codec/resolution/GOP conformance for CCTV MPEG2-TS/TTS and H.264/MPEG-2). Exports a camera profile (control request + video format) as JSON. Dissectors: Ethernet/VLAN/ARP/IPv4/IPv6/UDP/TCP/ICMP/ICMPv6/IGMP/DNS/DHCP/NTP/RTSP/HTTP/SDP/MJPEG/RTP/MPEG2-TS/TTS(192)/H.264/MPEG-2. Focus protocols: RTSP, MJPEG, TCP, UDP. Includes a bundled sample capture so it self-demos without any setup. Viewer only: no network permission, nothing ever leaves the device.",
@@ -2055,17 +2026,16 @@
         }
       },
       "categories": [
-        "Utilities",
-        "Development",
-        "Communication"
+        "System Tools",
+        "Development"
       ],
       "author": {
         "github": "u44e",
         "display_name": "Yusuke Yoshie"
       },
       "version": "0.1.1",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -2081,18 +2051,13 @@
       },
       "depends": "libc6, libfreetype6",
       "permissions": {
-        "keyboard_input": true,
-        "network": true,
-        "filesystem": "full",
-        "external_hardware": false,
-        "hdmi_output": false,
-        "background_service": false,
-        "audio_output": false,
-        "microphone": false,
         "camera": false,
-        "sensors": false,
-        "gps": false,
-        "device_id": false
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/packetscope/packetscope.png",
@@ -2115,7 +2080,7 @@
     },
     {
       "uuid": "a5173145-dd89-5961-a338-3b2e6350090a",
-      "share_code": "quic",
+      "share_code": "QTAP",
       "title": "QuickTap",
       "summary": "Test your reflexes in a fast, minimal reaction game.",
       "description": "Wait for the panel to turn green, then press Enter as quickly as you can. QuickTap tracks your personal best and includes light and dark themes.",
@@ -2139,8 +2104,8 @@
         "display_name": "renletao"
       },
       "version": "0.1.0",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -2169,7 +2134,7 @@
     },
     {
       "uuid": "a76ce93f-0c0a-5f65-8e7a-16f9fd5c5afa",
-      "share_code": "rfid",
+      "share_code": "RFID",
       "title": "RFID",
       "summary": "CardputerZero RFID Independent Application",
       "description": "CardputerZero RFID Independent Application",
@@ -2177,11 +2142,12 @@
       "i18n": {},
       "categories": [],
       "author": {
-        "github": "whywilson"
+        "github": "whywilson",
+        "display_name": "whywilson"
       },
       "version": "0.4",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -2206,23 +2172,23 @@
     },
     {
       "uuid": "1efab377-74f5-55c2-bd7a-a0f22d278dd5",
-      "share_code": "sign",
+      "share_code": "SVSN",
       "title": "Signal vs Noise",
       "summary": "Offline writing distillation tool for Cardputer Zero.",
       "description": "Signal vs Noise turns messy input into one usable sentence through staged compression, then lets you keep or discard the final signal.",
       "locales": {},
       "i18n": {},
       "categories": [
-        "Utilities",
-        "Productivity"
+        "System Tools",
+        "Creative & Office"
       ],
       "author": {
         "github": "NoirSonance",
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -2238,13 +2204,13 @@
       },
       "depends": "python3, python3-pil, python3-evdev",
       "permissions": {
+        "camera": false,
         "microphone": false,
-        "audio_output": false,
+        "imu": false,
         "network": false,
-        "filesystem": "app-data-only",
-        "keyboard_input": true,
+        "additional_hardware": false,
         "background_service": false,
-        "external_hardware": false
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/signal-vs-noise/icon.png",
@@ -2261,7 +2227,7 @@
     },
     {
       "uuid": "a8a80032-dc97-58fb-9fbf-8be6c9dedda3",
-      "share_code": "spin",
+      "share_code": "SP3D",
       "title": "Spin3D",
       "summary": "Spinning 3D teapot / sphere / cube / torus demo",
       "description": "Spinning 3D teapot / sphere / cube / torus demo\nA tiny dependency-free software 3D renderer for the CardputerZero\n320x170 LCD: Utah teapot, UV sphere, cube and torus with flat shading,\nrendered straight into /dev/fb0. Keys 1-4 switch shapes, W toggles\nwireframe, arrows spin, Q quits.",
@@ -2273,8 +2239,8 @@
         "display_name": "eggfly"
       },
       "version": "1.0.0",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -2299,23 +2265,23 @@
     },
     {
       "uuid": "3ebede22-1158-5920-a8c9-eaedc8748f7e",
-      "share_code": "void",
+      "share_code": "VDNT",
       "title": "Void Notes",
       "summary": "Offline Markdown vault for tiny Cardputer screens.",
       "description": "Void Notes provides plain-file Markdown notes, search, daily notes, tags, wiki links, and an autosaving keyboard editor for Cardputer Zero.",
       "locales": {},
       "i18n": {},
       "categories": [
-        "Productivity",
-        "Utilities"
+        "Creative & Office",
+        "System Tools"
       ],
       "author": {
         "github": "NoirSonance",
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -2331,13 +2297,13 @@
       },
       "depends": "python3, python3-pil, python3-evdev",
       "permissions": {
+        "camera": false,
         "microphone": false,
-        "audio_output": false,
+        "imu": false,
         "network": false,
-        "filesystem": "app-data-only",
-        "keyboard_input": true,
+        "additional_hardware": false,
         "background_service": false,
-        "external_hardware": false
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/void-notes/icon.png",
@@ -2354,23 +2320,23 @@
     },
     {
       "uuid": "db282581-9bb5-53d2-8139-5adb9978aec9",
-      "share_code": "void",
+      "share_code": "VDRM",
       "title": "Void Room",
       "summary": "Distraction-free offline writing room tuned for Cardputer Zero.",
       "description": "Void Room is a quiet offline writing space for timed focus sessions, with no-exit and no-backspace modes, local session archive, and optional ambient sound.",
       "locales": {},
       "i18n": {},
       "categories": [
-        "Utilities",
-        "Productivity"
+        "System Tools",
+        "Creative & Office"
       ],
       "author": {
         "github": "NoirSonance",
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -2386,13 +2352,13 @@
       },
       "depends": "python3, python3-tk, python3-pil, python3-evdev, alsa-utils",
       "permissions": {
+        "camera": false,
         "microphone": false,
-        "audio_output": true,
+        "imu": false,
         "network": false,
-        "filesystem": "app-data-only",
-        "keyboard_input": true,
+        "additional_hardware": false,
         "background_service": false,
-        "external_hardware": false
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/void-room/icon.png",
@@ -2409,7 +2375,7 @@
     },
     {
       "uuid": "59b4ef02-deb0-5055-b1a8-697263fc0970",
-      "share_code": "wate",
+      "share_code": "WFSM",
       "title": "Water & Fire",
       "summary": "Interactive water and fire simulations that react to every tilt.",
       "description": "Turn your CardputerZero into a pocket-sized physics display. Tilt and shake the device to move a volume-preserving water simulation with fluid inertia, or switch to a full-width combustion field where flames and embers bend with gravity while retaining their upward jet. Note: CardputerZero Lite does not include an IMU, so the interactive experience is limited on that model.",
@@ -2424,8 +2390,8 @@
         "display_name": "zhenquan-yao"
       },
       "version": "1.0.9-m5stack1",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -2456,7 +2422,7 @@
     },
     {
       "uuid": "c753c55b-4ddc-58a7-be5d-e3260b62fdad",
-      "share_code": "yaoy",
+      "share_code": "YYYO",
       "title": "爻一爻",
       "summary": "晃动 CardputerZero，以三枚铜钱完成六爻起卦",
       "description": "爻一爻是一款为 CardputerZero 设计的六爻摇卦模拟器。晃动机身驱动三枚铜钱翻滚，也可按 5 键代摇；六次成卦后显示本卦、之卦、卦辞与动爻爻辞。仅供传统文化娱乐体验。",
@@ -2473,8 +2439,8 @@
         "email": "dylan.luo@m5stack.com"
       },
       "version": "0.1.0-m5stack1",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -2509,22 +2475,22 @@
     },
     {
       "uuid": "e50a1f7a-100d-5d19-a8c6-c82cd73109d4",
-      "share_code": "zeno",
+      "share_code": "ZENO",
       "title": "zeno-runner",
       "summary": "Jump, dodge, and chase high scores in a day-and-night CardputerZero runner.",
       "description": "Zeno Runner is a lightweight endless runner designed for CardputerZero. Guide your dinosaur over cacti, duck under flying obstacles, and survive as the game steadily speeds up. The scenery smoothly alternates between day and night, while a local leaderboard records the top three scores. Simple controls make it easy to start, but mastering the timing and rising pace takes sharp reflexes.",
       "locales": {},
       "i18n": {},
       "categories": [
-        "Game"
+        "Games"
       ],
       "author": {
         "github": "TinyuZhao",
         "display_name": "TinyuZhao"
       },
       "version": "0.0.2-m5stack1",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -2557,7 +2523,7 @@
     },
     {
       "uuid": "adc96eba-b329-5541-91fc-d2dbf6e60491",
-      "share_code": "zero",
+      "share_code": "ZMP3",
       "title": "Zero MP3",
       "summary": "Play local MP3 files with playlist, volume, repeat, and shuffle controls.",
       "description": "Zero MP3 is a lightweight local music player for CardputerZero. It scans common music locations such as /home/pi/Music, /media, and /mnt, and can also use ZEROMP3_DIR for a custom music folder.",
@@ -2596,16 +2562,15 @@
         }
       },
       "categories": [
-        "Media",
-        "Music"
+        "Media"
       ],
       "author": {
         "github": "dianjixz",
         "display_name": "dianjixz"
       },
       "version": "0.1.0-m5stack1",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -2621,9 +2586,13 @@
       },
       "depends": "",
       "permissions": {
-        "audio": true,
-        "filesystem": true,
-        "keyboard_input": true
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
       },
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeromp3/zeromp3.png",
@@ -2640,24 +2609,23 @@
     },
     {
       "uuid": "0d3e5217-dfe1-51d9-bb6d-0f1ac0b7cf8e",
-      "share_code": "zero",
+      "share_code": "ZSDR",
       "title": "zeroSDR",
       "summary": "Real-time SDR spectrum analyzer and audio demodulator for RTL-SDR devices",
       "description": "zeroSDR is a lightweight Software Defined Radio (SDR) receiver optimized for embedded Linux systems with small displays. Features real-time spectrum and waterfall visualization, FM/NFM/AM audio demodulation with AGC and squelch, and direct framebuffer rendering for minimal overhead. Designed for Raspberry Pi Zero 2W and Pi 5 with RTL-SDR dongles.",
       "locales": {},
       "i18n": {},
       "categories": [
-        "hamradio",
-        "utility",
-        "multimedia"
+        "Radio & Comms",
+        "System Tools"
       ],
       "author": {
         "github": "nullbeing",
         "display_name": "Weiming Feng"
       },
       "version": "0.2.0",
-      "published_at": "2026-08-22T22:52:45+08:00",
-      "updated_at": "2026-08-22T22:52:45+08:00",
+      "published_at": "2026-08-24T11:17:00+08:00",
+      "updated_at": "2026-08-24T11:17:00+08:00",
       "review": {
         "status": "approved"
       },
