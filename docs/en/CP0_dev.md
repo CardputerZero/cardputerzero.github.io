@@ -4,49 +4,61 @@
 
 - deb package filename: `packagename_version-revision_arm64.deb`
 
-- Application name: Keep it as short as possible. It is displayed in the CardputerZero launcher and store.
-- Package name: Use lowercase letters only. Spaces are not allowed. Hyphens (-) can be used as separators.
-- Icon: PNG format, size 256*256 (automatically scaled to required sizes in different places). Icons with built-in rounded corners or borders are not recommended.
-- Version
-- Screenshots: Size 320*170 (CardputerZero screen size). Multiple screenshots are recommended.
-- Description: English is the default. Japanese and Chinese are also supported.
-- Category: Must select 1-2 categories from the category list below.
-- Permissions and requirements: The application must declare whether it requires each of the requirements listed below.
-- Author
-- Author email
-- Open source URL
-- License
-- Store sharing code: Four letters or numbers, used for quickly finding the application in the store.
+The same metadata rules are enforced on both submission channels (the developer portal web upload and `czdev publish`). Submissions that fail validation are rejected automatically with a report explaining what to fix.
+
+Required fields:
+
+- Application name (`app_name` / store title): Keep it as short as possible. It is displayed in the CardputerZero launcher and store. Must be unique in the store.
+- Package name (`package_name`): A valid Debian package name — lowercase letters, digits, `.`, `+`, `-` only; no spaces or underscores. This is the stable identifier and cannot be changed after first publish.
+- Version (`version`)
+- Summary (`store.summary`): A one-line description. English is the default; Japanese and Chinese overrides go in `store.locales`.
+- Icon (`store.icon`): Square PNG between 128×128 and 512×512 (256×256 recommended; automatically scaled where needed). Icons with built-in rounded corners or borders are not recommended.
+- Screenshots (`store.screenshots`): PNG, exactly 320×170 (CardputerZero screen size). At least one is required; multiple are recommended.
+- Categories (`store.categories`): 1–2 categories from the category list below.
+- Permissions (`store.permissions`): All seven declarations listed below, each explicitly `true` or `false`.
+- Author (`store.author`): An object; `display_name` is required, `github` / `email` / `website` are optional.
+- License (`store.license`): An SPDX identifier such as `MIT` or `GPL-3.0-only`.
+- Share code (`store.share_code`): Exactly 4 letters/digits (A–Z, 0–9), used for quickly finding the application in the store. Must be globally unique; do not change it after first publish.
+
+Optional fields:
+
+- Long description (`store.description`) and localized texts (`store.locales`).
+- Open source URL (`store.source_repo`): Strongly recommended.
+
+First-time submissions of a **new** package are held for manual review and require a short demo video (posted in the submission's pull request). Updates to already-published packages are validated and merged automatically.
 
 Example `app-builder.json`: 
 
 ```
 {
   "app_name": "Your App",
-  "package_name": "your_app",
-  "icon": "assets/images/your_app_icon.png",
+  "package_name": "your-app",
   "version": "0.0.1",
-  "screenshots": ["assets/images/screenshot01.png", "assets/images/screenshot02.png", "assets/images/screenshot03.png"],
-  "description": {
-    "en": "Your app description",
-    "ja": "あなたのアプリの説明",
-    "zh-CN": "你的应用的描述"
-  },
-  "categories": ["Category1", "Category2"],
-  "permissions": {
-    "camera": false,
-    "microphone": false,
-    "imu": false,
-    "network": false,
-    "additional_hardware": false,
-    "background_service": false,
-    "external_display": false
-  },
-  "author": "Your Name",
-  "author_mail": "Your Mail",
-  "source_repo": "https://github.com/YourGitHubHandle/YourAppRepo",
-  "license": "YourLicense",
-  "share_code": "YOUR"
+
+  "store": {
+    "summary": "Your app in one line",
+    "description": "A longer description of what your app does.",
+    "locales": {
+      "ja": { "summary": "あなたのアプリの説明" },
+      "zh-CN": { "summary": "你的应用的描述" }
+    },
+    "icon": "assets/images/your_app_icon.png",
+    "screenshots": ["assets/images/screenshot01.png", "assets/images/screenshot02.png"],
+    "categories": ["Games"],
+    "permissions": {
+      "camera": false,
+      "microphone": false,
+      "imu": false,
+      "network": false,
+      "additional_hardware": false,
+      "background_service": false,
+      "external_display": false
+    },
+    "author": { "display_name": "Your Name", "github": "your-github-login" },
+    "source_repo": "https://github.com/YourGitHubHandle/YourAppRepo",
+    "license": "MIT",
+    "share_code": "YOUR"
+  }
 }
 ```
 

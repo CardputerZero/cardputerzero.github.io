@@ -4,49 +4,61 @@
 
 - deb インストールパッケージファイル名：`packagename_version-revision_arm64.deb`
 
-- アプリケーション名：できるだけ短くしてください。CardputerZero ランチャーおよびストアに表示されます。
-- パッケージ名：すべて小文字で指定してください。スペースは使用できません。区切り文字としてハイフン（-）を使用できます。
-- アイコン：PNG 形式、サイズ 256*256（各場所で必要なサイズに自動的に拡大・縮小されます）。アイコン自体に角丸や枠を付けることは推奨しません。
-- バージョン
-- スクリーンショット：サイズ 320*170（CardputerZero の画面サイズ）。複数枚のスクリーンショットを推奨します。
-- 説明：デフォルトは英語です。日本語と中国語にも対応できます。
-- カテゴリ：下記のカテゴリ一覧から 1〜2 個を必ず選択してください。
-- 権限と実行要件：下記の各要件について、アプリケーションが必要とするかどうかを必ず宣言してください。
-- 作者
-- 作者メールアドレス
-- オープンソース URL
-- ライセンス
-- ストア共有コード：4 桁の英数字。アプリケーションをすばやく検索するために使用します。
+2 つの提出チャネル（開発者ポータルの Web アップロードと `czdev publish`）では、同一のメタデータ検証ルールが適用されます。検証に失敗した提出は自動的に却下され、修正方法を説明するレポートが添付されます。
+
+必須フィールド：
+
+- アプリケーション名（`app_name` / ストア表示名）：できるだけ短くしてください。CardputerZero ランチャーおよびストアに表示され、ストア内で一意である必要があります。
+- パッケージ名（`package_name`）：有効な Debian パッケージ名——小文字・数字・`.`・`+`・`-` のみ使用可能で、スペースやアンダースコアは使用できません。安定した識別子であり、初回公開後は変更できません。
+- バージョン（`version`）
+- 概要（`store.summary`）：1 行の説明。デフォルトは英語で、日本語と中国語は `store.locales` に記述します。
+- アイコン（`store.icon`）：正方形の PNG、128×128〜512×512（推奨 256×256。各場所で必要なサイズに自動的に拡大・縮小されます）。アイコン自体に角丸や枠を付けることは推奨しません。
+- スクリーンショット（`store.screenshots`）：PNG、サイズは必ず 320×170（CardputerZero の画面サイズ）。最低 1 枚、複数枚を推奨します。
+- カテゴリ（`store.categories`）：下記のカテゴリ一覧から 1〜2 個を選択してください。
+- 権限（`store.permissions`）：下記の 7 項目すべてについて、明示的に `true` または `false` を宣言してください。
+- 作者（`store.author`）：オブジェクト形式。`display_name` は必須、`github` / `email` / `website` は任意です。
+- ライセンス（`store.license`）：`MIT` や `GPL-3.0-only` などの SPDX 識別子。
+- ストア共有コード（`store.share_code`）：4 桁の英数字（A–Z、0–9）。アプリケーションをすばやく検索するために使用します。ストア全体で一意である必要があり、初回公開後は変更しないでください。
+
+任意フィールド：
+
+- 詳細説明（`store.description`）とローカライズ文言（`store.locales`）。
+- オープンソース URL（`store.source_repo`）：記入を強く推奨します。
+
+**新規アプリケーション**の初回提出は手動レビューの対象となり、提出に対応する Pull Request に短いデモ動画を添付する必要があります。公開済みアプリケーションのバージョン更新は、検証を通過すると自動的にマージ・公開されます。
 
 `app-builder.json` の例：
 
 ```
 {
   "app_name": "Your App",
-  "package_name": "your_app",
-  "icon": "assets/images/your_app_icon.png",
+  "package_name": "your-app",
   "version": "0.0.1",
-  "screenshots": ["assets/images/screenshot01.png", "assets/images/screenshot02.png", "assets/images/screenshot03.png"],
-  "description": {
-    "en": "Your app description",
-    "ja": "あなたのアプリの説明",
-    "zh-CN": "你的应用的描述"
-  },
-  "categories": ["Category1", "Category2"],
-  "permissions": {
-    "camera": false,
-    "microphone": false,
-    "imu": false,
-    "network": false,
-    "additional_hardware": false,
-    "background_service": false,
-    "external_display": false
-  },
-  "author": "Your Name",
-  "author_mail": "Your Mail",
-  "source_repo": "https://github.com/YourGitHubHandle/YourAppRepo",
-  "license": "YourLicense",
-  "share_code": "YOUR"
+
+  "store": {
+    "summary": "Your app in one line",
+    "description": "A longer description of what your app does.",
+    "locales": {
+      "ja": { "summary": "あなたのアプリの説明" },
+      "zh-CN": { "summary": "你的应用的描述" }
+    },
+    "icon": "assets/images/your_app_icon.png",
+    "screenshots": ["assets/images/screenshot01.png", "assets/images/screenshot02.png"],
+    "categories": ["Games"],
+    "permissions": {
+      "camera": false,
+      "microphone": false,
+      "imu": false,
+      "network": false,
+      "additional_hardware": false,
+      "background_service": false,
+      "external_display": false
+    },
+    "author": { "display_name": "Your Name", "github": "your-github-login" },
+    "source_repo": "https://github.com/YourGitHubHandle/YourAppRepo",
+    "license": "MIT",
+    "share_code": "YOUR"
+  }
 }
 ```
 

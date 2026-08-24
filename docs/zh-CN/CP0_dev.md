@@ -4,49 +4,61 @@
 
 - deb 安装包文件名：`packagename_version-revision_arm64.deb`
 
-- 应用名称：尽量简短，显示在 CardputerZero 启动器及商店。
-- 包名：全小写，不能有空格，可用连字符（-）连接。
-- 图标：png 格式，尺寸 256*256（各处会自动缩放至所需尺寸），不建议图标自带圆角、边框。
-- 版本号
-- 截图：尺寸 320*170（CardputerZero 屏幕尺寸），推荐多张。
-- 描述：默认英文，也支持日文和中文。
-- 分类：必须从下方分类枚举中选择 1~2 个。
-- 权限与运行要求：必须声明应用是否需要下方的各项要求。
-- 作者
-- 作者邮箱
-- 开源地址
-- 许可证
-- 商店分享码：四位字母或数字，用于快速查找应用。
+两个提交渠道（开发者门户网页上传与 `czdev publish`）执行同一套元数据校验规则。校验不通过的提交会被自动拒绝，并附带说明如何修复的报告。
+
+必填字段：
+
+- 应用名称（`app_name` / 商店显示名）：尽量简短，显示在 CardputerZero 启动器及商店，在商店内必须唯一。
+- 包名（`package_name`）：合法的 Debian 包名——仅允许小写字母、数字、`.`、`+`、`-`，不能有空格或下划线。这是稳定标识符，首次发布后不可更改。
+- 版本号（`version`）
+- 简介（`store.summary`）：一句话描述。默认英文，日文与中文写在 `store.locales` 中。
+- 图标（`store.icon`）：正方形 PNG，128×128 到 512×512（推荐 256×256，各处会自动缩放至所需尺寸），不建议图标自带圆角、边框。
+- 截图（`store.screenshots`）：PNG，尺寸必须为 320×170（CardputerZero 屏幕尺寸）。至少 1 张，推荐多张。
+- 分类（`store.categories`）：从下方分类枚举中选择 1~2 个。
+- 权限（`store.permissions`）：下方 7 项声明必须全部给出，每项显式填 `true` 或 `false`。
+- 作者（`store.author`）：对象格式；`display_name` 必填，`github` / `email` / `website` 可选。
+- 许可证（`store.license`）：SPDX 标识符，如 `MIT`、`GPL-3.0-only`。
+- 商店分享码（`store.share_code`）：4 位字母或数字（A–Z、0–9），用于快速查找应用。全商店唯一，首次发布后不要更改。
+
+可选字段：
+
+- 详细描述（`store.description`）与本地化文案（`store.locales`）。
+- 开源地址（`store.source_repo`）：强烈建议填写。
+
+**新应用**首次提交会进入人工审核，需在提交对应的 Pull Request 中附一段简短的演示视频；已上架应用的版本更新通过校验后自动合并上架。
 
 示例 `app-builder.json`：
 
 ```
 {
   "app_name": "Your App",
-  "package_name": "your_app",
-  "icon": "assets/images/your_app_icon.png",
+  "package_name": "your-app",
   "version": "0.0.1",
-  "screenshots": ["assets/images/screenshot01.png", "assets/images/screenshot02.png", "assets/images/screenshot03.png"],
-  "description": {
-    "en": "Your app description",
-    "ja": "あなたのアプリの説明",
-    "zh-CN": "你的应用的描述"
-  },
-  "categories": ["Category1", "Category2"],
-  "permissions": {
-    "camera": false,
-    "microphone": false,
-    "imu": false,
-    "network": false,
-    "additional_hardware": false,
-    "background_service": false,
-    "external_display": false
-  },
-  "author": "Your Name",
-  "author_mail": "Your Mail",
-  "source_repo": "https://github.com/YourGitHubHandle/YourAppRepo",
-  "license": "YourLicense",
-  "share_code": "YOUR"
+
+  "store": {
+    "summary": "Your app in one line",
+    "description": "A longer description of what your app does.",
+    "locales": {
+      "ja": { "summary": "あなたのアプリの説明" },
+      "zh-CN": { "summary": "你的应用的描述" }
+    },
+    "icon": "assets/images/your_app_icon.png",
+    "screenshots": ["assets/images/screenshot01.png", "assets/images/screenshot02.png"],
+    "categories": ["Games"],
+    "permissions": {
+      "camera": false,
+      "microphone": false,
+      "imu": false,
+      "network": false,
+      "additional_hardware": false,
+      "background_service": false,
+      "external_display": false
+    },
+    "author": { "display_name": "Your Name", "github": "your-github-login" },
+    "source_repo": "https://github.com/YourGitHubHandle/YourAppRepo",
+    "license": "MIT",
+    "share_code": "YOUR"
+  }
 }
 ```
 
