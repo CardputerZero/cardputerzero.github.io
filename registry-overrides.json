@@ -1,37 +1,7 @@
 {
   "calendar": {
-    "assets": {
-      "icon": "assets/ff2ee91e/icon.png",
-      "screenshots": [
-        "assets/ff2ee91e/screenshots/month.png",
-        "assets/ff2ee91e/screenshots/subscriptions.png",
-        "assets/ff2ee91e/screenshots/source-edit.png",
-        "assets/ff2ee91e/screenshots/manager.png"
-      ]
-    },
-    "author": {
-      "github": "zhuzhe1983",
-      "display_name": "Zhu Zhe"
-    },
     "published_at": "2026-05-14T23:16:38+08:00",
-    "updated_at": "2026-05-14T23:16:38+08:00",
-    "i18n": {
-      "en": {
-        "title": "Calendar",
-        "summary": "Compact Calendar app for local and online ICS schedules.",
-        "description": "Calendar for CardputerZero with local schedules, online ICS subscriptions, lunar details, regional holidays, almanac, weather, and multilingual UI."
-      },
-      "zh-CN": {
-        "title": "日历",
-        "summary": "支持本地日程和在线 ICS 订阅的紧凑日历应用。",
-        "description": "为 CardputerZero 优化的日历应用，支持本地日程、在线 ICS 订阅、农历信息、节假日、黄历、天气和多语言界面。"
-      },
-      "ja": {
-        "title": "カレンダー",
-        "summary": "ローカル予定とオンライン ICS 購読に対応したコンパクトなカレンダーです。",
-        "description": "CardputerZero 向けのカレンダーです。ローカル予定、オンライン ICS 購読、旧暦、祝日、暦注、天気、多言語 UI に対応します。"
-      }
-    }
+    "updated_at": "2026-05-14T23:16:38+08:00"
   },
   "lofibox": {
     "assets": {
@@ -76,62 +46,10 @@
       ]
     },
     "published_at": "2026-05-14T23:42:32+08:00",
-    "updated_at": "2026-05-14T23:42:32+08:00",
-    "i18n": {
-      "en": {
-        "title": "NC2000",
-        "summary": "WenQuXing NC2000/NC1020 emulator for CardputerZero",
-        "description": "A WenQuXing NC2000 / NC1020 handheld computer emulator tuned for CardputerZero's 320x170 LCD."
-      },
-      "zh-CN": {
-        "title": "NC2000 文曲星模拟器",
-        "summary": "适配 320x170 CardputerZero 屏幕的文曲星 NC2000/NC1020 模拟器",
-        "description": "面向 CardputerZero 320x170 LCD 优化的文曲星 NC2000 / NC1020 掌上电脑模拟器。"
-      },
-      "zh-TW": {
-        "title": "NC2000 文曲星模擬器",
-        "summary": "適配 320x170 CardputerZero 螢幕的文曲星 NC2000/NC1020 模擬器",
-        "description": "面向 CardputerZero 320x170 LCD 最佳化的文曲星 NC2000 / NC1020 掌上電腦模擬器。"
-      },
-      "ja": {
-        "title": "NC2000 文曲星エミュレーター",
-        "summary": "CardputerZero の 320x170 画面に合わせた WenQuXing NC2000/NC1020 エミュレーター",
-        "description": "CardputerZero の 320x170 LCD 向けに調整した WenQuXing NC2000 / NC1020 携帯コンピューターエミュレーターです。"
-      }
-    }
+    "updated_at": "2026-05-14T23:42:32+08:00"
   },
   "2048": {
-    "author": {
-      "github": "zhuzhe1983",
-      "display_name": "Zhu Zhe"
-    },
     "published_at": "2026-05-14T23:20:55+08:00",
-    "updated_at": "2026-05-14T23:20:55+08:00",
-    "i18n": {
-      "en": {
-        "title": "2048",
-        "summary": "Classic 2048 puzzle game tuned for the CardputerZero keyboard.",
-        "description": "Classic 2048 puzzle game for CardputerZero with keyboard controls, smooth tile movement, and sound effects."
-      },
-      "zh-CN": {
-        "title": "2048",
-        "summary": "为 CardputerZero 键盘优化的经典 2048 数字合成游戏。",
-        "description": "面向 CardputerZero 优化的经典 2048 数字合成游戏，支持键盘操作、平滑方块移动和音效反馈。"
-      },
-      "ja": {
-        "title": "2048",
-        "summary": "CardputerZero のキーボード向けに調整した定番 2048 パズルゲームです。",
-        "description": "CardputerZero 向けに調整した定番 2048 パズルゲームです。キーボード操作、滑らかなタイル移動、効果音に対応します。"
-      }
-    },
-    "assets": {
-      "icon": "assets/4ff51d2b/icon.png",
-      "screenshots": [
-        "assets/4ff51d2b/screenshots/start.png",
-        "assets/4ff51d2b/screenshots/midgame.png",
-        "assets/4ff51d2b/screenshots/win.png",
-        "assets/4ff51d2b/screenshots/gameover.png"
-      ]
-    }
+    "updated_at": "2026-05-14T23:20:55+08:00"
   }
 }
