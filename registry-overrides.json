@@ -1,8 +1,4 @@
 {
-  "calendar": {
-    "published_at": "2026-05-14T23:16:38+08:00",
-    "updated_at": "2026-05-14T23:16:38+08:00"
-  },
   "lofibox": {
     "assets": {
       "icon": "assets/10f1b000/icon.png",
@@ -14,7 +10,6 @@
       ]
     },
     "published_at": "2026-05-14T23:42:32+08:00",
-    "updated_at": "2026-05-15T00:09:15+08:00",
     "i18n": {
       "en": {
         "title": "LoFiBox",
@@ -45,11 +40,9 @@
         "assets/2000e000/screenshots/main.png"
       ]
     },
-    "published_at": "2026-05-14T23:42:32+08:00",
-    "updated_at": "2026-05-14T23:42:32+08:00"
+    "published_at": "2026-05-14T23:42:32+08:00"
   },
   "2048": {
-    "published_at": "2026-05-14T23:20:55+08:00",
-    "updated_at": "2026-05-14T23:20:55+08:00"
+    "published_at": "2026-05-14T23:20:55+08:00"
   }
 }
