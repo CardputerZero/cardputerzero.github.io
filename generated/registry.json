@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-26T09:42:35+08:00",
+  "generated_at": "2026-09-26T20:05:57+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -153,8 +153,8 @@
         "display_name": "yutacar"
       },
       "version": "1.0.0",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -317,8 +317,8 @@
         "display_name": "Yusuke Yoshie"
       },
       "version": "0.1.1",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -372,8 +372,8 @@
         "display_name": "maxhayim"
       },
       "version": "0.1.0",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -418,8 +418,8 @@
         "display_name": "kur1k0"
       },
       "version": "1.0.0",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -491,8 +491,8 @@
         "display_name": "Jdaie"
       },
       "version": "0.1.1-m5stack1",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -544,8 +544,8 @@
         "display_name": "churchja"
       },
       "version": "0.2.0-3",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -717,8 +717,8 @@
         "display_name": "yutacar"
       },
       "version": "1.0.0",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -767,8 +767,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -822,8 +822,8 @@
         "display_name": "n0xa"
       },
       "version": "0.4.0",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -870,9 +870,9 @@
         "github": "marivaaldo",
         "display_name": "Flint Devices"
       },
-      "version": "0.0.56",
+      "version": "0.0.57",
       "published_at": "2026-09-05T21:57:16+00:00",
-      "updated_at": "2026-09-26T01:34:15+00:00",
+      "updated_at": "2026-09-26T11:57:11+00:00",
       "review": {
         "status": "approved"
       },
@@ -881,10 +881,10 @@
       "download": {
         "type": "deb",
         "package": "flint",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/flint_0.0.56_arm64.deb",
-        "md5": "fe3486fdba930d937cd1eec568b35b0d",
-        "sha256": "cc5e299a2bf510e6689434b138c90cd479c1fde9a332e49dfea91f4df52ecf8c",
-        "size": 4133262
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/flint_0.0.57_arm64.deb",
+        "md5": "5c5a9effea8f46488450741103427e65",
+        "sha256": "3be445f55deb0f0bec8dbf487ab4c257e2c763e0ac0ed160be521d0aee4877e2",
+        "size": 4136224
       },
       "depends": "python3 (>= 3.11), python3-pip, python3-venv,\npython3-pil, python3-pygame, python3-numpy,\npython3-evdev, python3-yaml, python3-setuptools,\npython3-rpi.gpio, python3-spidev,\npython3-websockets, python3-bleak, python3-scapy,\npython3-aiohttp, python3-cryptography, python3-qrcode,\nlibjpeg62-turbo | libjpeg8, libfreetype6, libsdl2-2.0-0, libsdl2-image-2.0-0,\nreaver, bluez, iw",
       "permissions": {
@@ -965,8 +965,8 @@
         "display_name": "XuHaifeng"
       },
       "version": "0.4.3-m5stack1",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -1015,8 +1015,8 @@
         "display_name": "imliubo"
       },
       "version": "1.0.1-m5stack1",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -1113,8 +1113,8 @@
         "display_name": "tghost"
       },
       "version": "0.1.0",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -1151,8 +1151,8 @@
         "display_name": "tghost"
       },
       "version": "0.1.0",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -1189,8 +1189,8 @@
         "display_name": "tghost"
       },
       "version": "0.1.0",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -1227,8 +1227,8 @@
         "display_name": "imliubo"
       },
       "version": "1.0.0",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -1349,8 +1349,8 @@
         "display_name": "Yusuke Yoshie"
       },
       "version": "0.2.0",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -1507,8 +1507,8 @@
         "display_name": "m5stack"
       },
       "version": "0.1.8",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -1654,8 +1654,8 @@
         "display_name": "Yusuke Yoshie"
       },
       "version": "0.1.0",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -1735,8 +1735,8 @@
         "display_name": "Yusuke Yoshie"
       },
       "version": "0.2.2",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -1804,8 +1804,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -1858,8 +1858,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -1912,8 +1912,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -1989,8 +1989,8 @@
         "display_name": "Yusuke Yoshie"
       },
       "version": "0.1.1",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -2059,8 +2059,8 @@
         "display_name": "renletao"
       },
       "version": "0.1.0",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -2101,8 +2101,8 @@
         "display_name": "whywilson"
       },
       "version": "0.4",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -2142,8 +2142,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -2194,8 +2194,8 @@
         "display_name": "eggfly"
       },
       "version": "1.0.0",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -2235,8 +2235,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -2290,8 +2290,8 @@
         "display_name": "NoirSonance"
       },
       "version": "0.1.0-noirsonance2",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -2345,8 +2345,8 @@
         "display_name": "zhenquan-yao"
       },
       "version": "1.0.9-m5stack1",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -2394,8 +2394,8 @@
         "email": "dylan.luo@m5stack.com"
       },
       "version": "0.1.0-m5stack1",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -2444,8 +2444,8 @@
         "display_name": "TinyuZhao"
       },
       "version": "0.0.2-m5stack1",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -2524,8 +2524,8 @@
         "display_name": "dianjixz"
       },
       "version": "0.1.0-m5stack1",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
@@ -2579,8 +2579,8 @@
         "display_name": "Weiming Feng"
       },
       "version": "0.2.0",
-      "published_at": "2026-09-26T09:42:35+08:00",
-      "updated_at": "2026-09-26T09:42:35+08:00",
+      "published_at": "2026-09-26T20:05:57+08:00",
+      "updated_at": "2026-09-26T20:05:57+08:00",
       "review": {
         "status": "approved"
       },
