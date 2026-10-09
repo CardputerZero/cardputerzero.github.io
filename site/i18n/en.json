@@ -514,8 +514,8 @@
         "summary": "Use the cardputer-zero-application skill to guide AI development, packaging, device validation, and submission."
       },
       "submission": {
-        "title": "App Submission Guide",
-        "summary": "Prepare czdev, Debian packages, app-builder metadata, assets, prepublish checks, and package pull requests."
+        "title": "CardputerZero App Submission Guide",
+        "summary": "Upload apps using czdev or the Developer Center website, submit a physical-device demo video, and complete the review process."
       },
       "agreement": {
         "title": "User And Developer Agreement",

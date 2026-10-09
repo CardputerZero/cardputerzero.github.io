@@ -514,8 +514,8 @@
         "summary": "cardputer-zero-application skill で AI 開発、パッケージ、実機検証、提出を進める方法。"
       },
       "submission": {
-        "title": "アプリ提出ガイド",
-        "summary": "czdev、Debian package、app-builder metadata、assets、prepublish check、package Pull Request の準備方法。"
+        "title": "CardputerZero アプリ提出ガイド",
+        "summary": "czdev または開発者センターのウェブサイトでアプリをアップロードし、実機デモ動画を提出して審査を受ける手順。"
       },
       "agreement": {
         "title": "ユーザーと開発者の規約",

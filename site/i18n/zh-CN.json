@@ -514,8 +514,8 @@
         "summary": "如何用 cardputer-zero-application skill 指导 AI 开发、打包、真机验证和提交。"
       },
       "submission": {
-        "title": "应用提交指南",
-        "summary": "如何准备 czdev、Debian 包、app-builder metadata、assets、prepublish check 和 package PR。"
+        "title": "CardputerZero 应用提交指南",
+        "summary": "通过 czdev 或开发者中心网站上传应用、提交实机演示视频并完成审核。"
       },
       "agreement": {
         "title": "用户与开发者协议",

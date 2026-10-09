@@ -38,6 +38,16 @@ const DOCUMENTS = [
     },
     titleKey: "documents.items.cp0Dev.title",
     summaryKey: "documents.items.cp0Dev.summary"
+  },
+  {
+    slug: "cp0-submit",
+    paths: {
+      "zh-CN": "docs/zh-CN/CP0_submit.md",
+      en: "docs/en/CP0_submit.md",
+      ja: "docs/ja/CP0_submit.md"
+    },
+    titleKey: "documents.items.submission.title",
+    summaryKey: "documents.items.submission.summary"
   }
 ];
 
