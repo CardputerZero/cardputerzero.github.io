@@ -33,13 +33,13 @@ CardputerZero Store 的应用提交及管理，有两种路径：
 
 ### czdev
 
-在新应用所在项目的根目录（`app-builder.json` 所在目录，不一定是 AppBuilder 仓库）执行 `./czdev publish --deb the_new_app.deb`。工具会检查该应用的安装包及相关文件是否符合规范，通过后在 https://github.com/CardputerZero/packages/pulls 新建一条 pull request。
+在新应用所在项目的根目录（`app-builder.json` 所在目录，不一定是 AppBuilder 仓库）执行 `the_path_of_AppBuilder/czdev publish --deb the_new_app.deb`。工具会检查该应用的安装包及相关文件是否符合规范，通过后在 https://github.com/CardputerZero/packages/pulls 新建一条 pull request。
 
 ![czdev publish](assets/docs/Submit06_czdev_publish.png)
 
 ### 网站
 
-浏览器打开网站 https://dev.cardputer.cc/，点击上传按钮上传 `.deb` 安装包，完成解析后填入各项信息。点击上传，工具会检查该应用的安装包及所填信息是否符合规范，通过后在 https://github.com/CardputerZero/packages/pulls 新建一条 pull request。
+浏览器打开网站 https://dev.cardputer.cc/，点击上传按钮上传 `.deb` 安装包，完成解析后填入各项信息。点击上传，网站会检查该应用的安装包及所填信息是否符合规范，通过后在 https://github.com/CardputerZero/packages/pulls 新建一条 pull request。
 
 ![web publish](assets/docs/Submit07_web_publish.png)
 
@@ -51,8 +51,34 @@ CardputerZero Store 的应用提交及管理，有两种路径：
 
 ## 应用更新
 
-待更新。
+### czdev
+
+与新应用上传类似，在相同位置执行 `the_path_of_AppBuilder/czdev publish --deb the_new_version.deb`，工具会自动处理新版本安装包的相关信息并新建 pull request。
+
+### 网站
+
+与新应用上传类似，在网站上传新版安装包，网站会自动解析并填入该应用上一版本的各项信息。如有更新，请更改相应字段。提交后，网站会新建 pull request。
 
 ## 应用下架
 
-待更新。
+### czdev
+
+与新应用上传类似，在相同位置执行 `the_path_of_AppBuilder/czdev unpublish package_name --version 1.2.3`，工具会检查应用归属等信息后新建一条用于下架该版本应用的 pull request。
+
+![czdev unpublish](assets/docs/Submit10_czdev_unpublish.png)
+
+### 网站
+
+与新应用上传类似，在网站上点击 `My packages` 按钮，即可看到该 GitHub 账号对应的所有应用及版本。在对应的项目中点击 `unpublish`，网站会新建一条用于下架该版本应用的 pull request。
+
+![web manage](assets/docs/Submit09_web_manage.png)
+
+## 参考内容
+
+- [CardputerZero 应用开发规范](https://cardputer.cc/#/documents/cp0-dev)
+- [CardputerZero/Template](https://github.com/CardputerZero/Template)：应用开发模版
+- [CardputerZero/AppBuilder](https://github.com/CardputerZero/AppBuilder)：包含 czdev 命令行工具
+- [CardputerZero/dev-portal](https://github.com/CardputerZero/dev-portal)：开发者中心网站工具
+- [CardputerZero/packages](https://github.com/CardputerZero/packages)：Store 中所有第三方应用的目录
+- [CardputerZero/Store](https://github.com/CardputerZero/Store)：设备端 Store 应用
+- [CardputerZero/cardputerzero.github.io](https://github.com/CardputerZero/cardputerzero.github.io)：cardputer.cc 网站
