@@ -3,3 +3,4 @@ __pycache__/
 developer-docs/.vitepress/cache
 developer-docs/.docusaurus
 developer-docs/node_modules
+*.DS_Store
