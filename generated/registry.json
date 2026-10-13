@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-12T20:12:00+08:00",
+  "generated_at": "2026-10-13T15:39:17+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -14,5 +14,90 @@
       "ja"
     ]
   },
-  "apps": []
+  "apps": [
+    {
+      "uuid": "691e3384-5280-5c9b-a7e9-42e0b97c46a7",
+      "share_code": "FONT",
+      "title": "FontPreview",
+      "summary": "Preview multilingual text using existing system fonts.",
+      "description": "A focused typography preview for CardputerZero. Compare nine languages and code using installed system fonts, six typeface styles, 8–24 px sizes, three weights, and eight color schemes. Supports Noto CJK, Go, Inter, DejaVu, and JetBrains Mono when present on the system. No fonts are bundled, downloaded, or installed; unavailable faces are reported in the preview.",
+      "locales": {
+        "zh-CN": {
+          "title": "字体预览",
+          "summary": "预览系统已有字体的多语言、字号和字重效果。",
+          "description": "专为 CardputerZero 设计的字体预览应用。使用系统已有字体比较九种语言和代码、六种字体形态、8–24 px 字号、三种字重和八种配色。支持系统中已存在的 Noto CJK、Go、Inter、DejaVu 和 JetBrains Mono。不附带、下载或安装任何字体；系统缺少的字体形态会在预览区提示。"
+        },
+        "en": {
+          "title": "FontPreview",
+          "summary": "Preview multilingual text using existing system fonts.",
+          "description": "A focused typography preview for CardputerZero. Compare nine languages and code using installed system fonts, six typeface styles, 8–24 px sizes, three weights, and eight color schemes. Supports Noto CJK, Go, Inter, DejaVu, and JetBrains Mono when present on the system. No fonts are bundled, downloaded, or installed; unavailable faces are reported in the preview."
+        },
+        "ja": {
+          "title": "フォントプレビュー",
+          "summary": "システムにあるフォントで多言語表示を確認できます。",
+          "description": "CardputerZero 向けのフォントプレビューアプリです。システムにあるフォントを使い、9言語とコードを6種類の書体、8～24 px、3ウェイト、8配色で比較できます。Noto CJK、Go、Inter、DejaVu、JetBrains Mono がシステムにある場合に対応します。フォントの同梱・ダウンロード・インストールは行わず、利用できない書体はプレビューに表示します。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "字体预览",
+          "summary": "预览系统已有字体的多语言、字号和字重效果。",
+          "description": "专为 CardputerZero 设计的字体预览应用。使用系统已有字体比较九种语言和代码、六种字体形态、8–24 px 字号、三种字重和八种配色。支持系统中已存在的 Noto CJK、Go、Inter、DejaVu 和 JetBrains Mono。不附带、下载或安装任何字体；系统缺少的字体形态会在预览区提示。"
+        },
+        "en": {
+          "title": "FontPreview",
+          "summary": "Preview multilingual text using existing system fonts.",
+          "description": "A focused typography preview for CardputerZero. Compare nine languages and code using installed system fonts, six typeface styles, 8–24 px sizes, three weights, and eight color schemes. Supports Noto CJK, Go, Inter, DejaVu, and JetBrains Mono when present on the system. No fonts are bundled, downloaded, or installed; unavailable faces are reported in the preview."
+        },
+        "ja": {
+          "title": "フォントプレビュー",
+          "summary": "システムにあるフォントで多言語表示を確認できます。",
+          "description": "CardputerZero 向けのフォントプレビューアプリです。システムにあるフォントを使い、9言語とコードを6種類の書体、8～24 px、3ウェイト、8配色で比較できます。Noto CJK、Go、Inter、DejaVu、JetBrains Mono がシステムにある場合に対応します。フォントの同梱・ダウンロード・インストールは行わず、利用できない書体はプレビューに表示します。"
+        }
+      },
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "display_name": "XuHaifeng",
+        "github": "Harrison-Xu"
+      },
+      "version": "0.4.6-1",
+      "published_at": "2026-10-12T11:16:47+00:00",
+      "updated_at": "2026-10-12T11:16:47+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/Harrison-Xu/FontPreview",
+      "download": {
+        "type": "deb",
+        "package": "fontpreview",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/fontpreview_0.4.6-1_arm64.deb",
+        "md5": "60d381e538cb5e99849cc48f1b2b1396",
+        "sha256": "cc957e0d6b5b40621936d3155af61397e8cc72a9f3558fd4591c93c51d51cb92",
+        "size": 820766
+      },
+      "depends": "libc6 (>= 2.34), libstdc++6 (>= 9), libgcc-s1, libfreetype6, libpng16-16 | libpng16-16t64, zlib1g, libsdl2-2.0-0 (>= 2.0.4)",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fontpreview/fontpreview.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fontpreview/screenshots/fontpreview.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fontpreview/fontpreview.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fontpreview/screenshots/fontpreview.png"
+      ]
+    }
+  ]
 }
