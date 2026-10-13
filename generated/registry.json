@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-13T15:39:17+08:00",
+  "generated_at": "2026-10-13T18:08:17+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -97,6 +97,169 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fontpreview/fontpreview.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fontpreview/screenshots/fontpreview.png"
+      ]
+    },
+    {
+      "uuid": "efa43595-1d2f-5d85-baaf-e5441a055c2b",
+      "share_code": "MTRM",
+      "title": "MeshTerm",
+      "summary": "A full-featured MeshCore client. Uses the Cap LoRa-1262 or a companion.",
+      "description": "MeshTerm is a full-featured MeshCore client. On the Cardputer Zero, it runs the Cap LoRa-1262 as its own radio, or it connects to a MeshCore companion over USB, Bluetooth, or TCP. Chat on channels and in direct messages, see the mesh on a map, trace paths, manage repeaters and rooms, and keep a record of every node heard. Fn+4 to Fn+8 drive the row of labels at the bottom of the display. Hold Esc to quit.",
+      "locales": {
+        "en": {
+          "title": "MeshTerm",
+          "summary": "A full-featured MeshCore client. Uses the Cap LoRa-1262 or a companion.",
+          "description": "MeshTerm is a full-featured MeshCore client. On the Cardputer Zero, it runs the Cap LoRa-1262 as its own radio, or it connects to a MeshCore companion over USB, Bluetooth, or TCP. Chat on channels and in direct messages, see the mesh on a map, trace paths, manage repeaters and rooms, and keep a record of every node heard. Fn+4 to Fn+8 drive the row of labels at the bottom of the display. Hold Esc to quit."
+        },
+        "zh-CN": {
+          "title": "MeshTerm",
+          "summary": "功能完整的 MeshCore 客户端，可使用 Cap LoRa-1262 或 companion 设备。",
+          "description": "MeshTerm 是一款功能完整的 MeshCore 客户端。在 Cardputer Zero 上，它可以直接把 Cap LoRa-1262 用作自己的无线电，也可以通过 USB、蓝牙或 TCP 连接 MeshCore companion 设备。你可以在频道和私信中聊天、在地图上查看网络、追踪路径、管理中继器和房间，并记录收到过的每一个节点。Fn+4 至 Fn+8 操作屏幕底部的功能标签。长按 Esc 退出。"
+        },
+        "zh-TW": {
+          "title": "MeshTerm",
+          "summary": "功能完整的 MeshCore 用戶端，可使用 Cap LoRa-1262 或 companion 裝置。",
+          "description": "MeshTerm 是一款功能完整的 MeshCore 用戶端。在 Cardputer Zero 上，它可以直接把 Cap LoRa-1262 當作自己的無線電，也可以透過 USB、藍牙或 TCP 連線 MeshCore companion 裝置。你可以在頻道和私訊中聊天、在地圖上檢視網路、追蹤路徑、管理中繼器和房間，並記錄收到過的每一個節點。Fn+4 至 Fn+8 操作螢幕底部的功能標籤。長按 Esc 結束。"
+        },
+        "ja": {
+          "title": "MeshTerm",
+          "summary": "フル機能の MeshCore クライアント。Cap LoRa-1262 またはコンパニオン端末を使用。",
+          "description": "MeshTerm はフル機能の MeshCore クライアントです。Cardputer Zero では Cap LoRa-1262 を自身の無線機として直接使うことも、USB・Bluetooth・TCP 経由で MeshCore のコンパニオン端末に接続することもできます。チャンネルやダイレクトメッセージでのチャット、地図上でのメッシュの表示、経路のトレース、リピーターやルームの管理ができ、受信したすべてのノードを記録します。画面下部のラベルは Fn+4〜Fn+8 で操作します。Esc を長押しすると終了します。"
+        }
+      },
+      "i18n": {
+        "en": {
+          "title": "MeshTerm",
+          "summary": "A full-featured MeshCore client. Uses the Cap LoRa-1262 or a companion.",
+          "description": "MeshTerm is a full-featured MeshCore client. On the Cardputer Zero, it runs the Cap LoRa-1262 as its own radio, or it connects to a MeshCore companion over USB, Bluetooth, or TCP. Chat on channels and in direct messages, see the mesh on a map, trace paths, manage repeaters and rooms, and keep a record of every node heard. Fn+4 to Fn+8 drive the row of labels at the bottom of the display. Hold Esc to quit."
+        },
+        "zh-CN": {
+          "title": "MeshTerm",
+          "summary": "功能完整的 MeshCore 客户端，可使用 Cap LoRa-1262 或 companion 设备。",
+          "description": "MeshTerm 是一款功能完整的 MeshCore 客户端。在 Cardputer Zero 上，它可以直接把 Cap LoRa-1262 用作自己的无线电，也可以通过 USB、蓝牙或 TCP 连接 MeshCore companion 设备。你可以在频道和私信中聊天、在地图上查看网络、追踪路径、管理中继器和房间，并记录收到过的每一个节点。Fn+4 至 Fn+8 操作屏幕底部的功能标签。长按 Esc 退出。"
+        },
+        "zh-TW": {
+          "title": "MeshTerm",
+          "summary": "功能完整的 MeshCore 用戶端，可使用 Cap LoRa-1262 或 companion 裝置。",
+          "description": "MeshTerm 是一款功能完整的 MeshCore 用戶端。在 Cardputer Zero 上，它可以直接把 Cap LoRa-1262 當作自己的無線電，也可以透過 USB、藍牙或 TCP 連線 MeshCore companion 裝置。你可以在頻道和私訊中聊天、在地圖上檢視網路、追蹤路徑、管理中繼器和房間，並記錄收到過的每一個節點。Fn+4 至 Fn+8 操作螢幕底部的功能標籤。長按 Esc 結束。"
+        },
+        "ja": {
+          "title": "MeshTerm",
+          "summary": "フル機能の MeshCore クライアント。Cap LoRa-1262 またはコンパニオン端末を使用。",
+          "description": "MeshTerm はフル機能の MeshCore クライアントです。Cardputer Zero では Cap LoRa-1262 を自身の無線機として直接使うことも、USB・Bluetooth・TCP 経由で MeshCore のコンパニオン端末に接続することもできます。チャンネルやダイレクトメッセージでのチャット、地図上でのメッシュの表示、経路のトレース、リピーターやルームの管理ができ、受信したすべてのノードを記録します。画面下部のラベルは Fn+4〜Fn+8 で操作します。Esc を長押しすると終了します。"
+        }
+      },
+      "categories": [
+        "Radio & Comms"
+      ],
+      "author": {
+        "github": "jpmartineau",
+        "display_name": "Jean-Pierre Martineau"
+      },
+      "version": "0.11.0-1",
+      "published_at": "2026-10-12T14:52:44+00:00",
+      "updated_at": "2026-10-12T14:52:44+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Apache-2.0",
+      "source_repo": "https://github.com/jpmartineau/MeshTerm",
+      "download": {
+        "type": "deb",
+        "package": "meshterm",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/meshterm_0.11.0-1_arm64.deb",
+        "md5": "3af0535afb7404ef6066aeca58146797",
+        "sha256": "3e977502b20fec010e1850ee2191c6761bc403d27dc9be273084ccc70583f7b9",
+        "size": 12042364
+      },
+      "depends": "python3 (>= 3.13), python3 (<< 3.14)",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/splash.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/menu.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/chat.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/contact.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/map.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/livefeed.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/splash.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/menu.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/chat.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/contact.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/map.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/livefeed.png"
+      ]
+    },
+    {
+      "uuid": "71e736fc-1fdf-5d72-aebc-d9081cb2151f",
+      "share_code": "RJAK",
+      "title": "RaspyJack",
+      "summary": "Full-featured offensive security & pentest toolkit for CardputerZero",
+      "description": "RaspyJack turns the CardputerZero into a pocket red-team platform: network recon (nmap, ARP/MITM, Responder), Wi-Fi attacks (deauth, evil twin, beacon/probe, wardriving), NFC/RFID, Sub-GHz CC1101 (spectrum, chat, replay), BLE, SDR, DNS spoofing and a full web UI. Needs an external USB Wi-Fi adapter for monitor-mode attacks.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Security",
+        "Radio & Comms"
+      ],
+      "author": {
+        "github": "7h30th3r0n3",
+        "display_name": "7h30th3r0n3"
+      },
+      "version": "0.1.0-raspyjack1",
+      "published_at": "2026-10-12T13:36:38+00:00",
+      "updated_at": "2026-10-12T13:36:38+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/7h30th3r0n3/RaspyJack",
+      "download": {
+        "type": "deb",
+        "package": "raspyjack",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/raspyjack_0.1.0-raspyjack1_arm64.deb",
+        "md5": "080a57c56dad39a1c8309fde04e5faee",
+        "sha256": "701e74c074a5595e5d5372f19c7d714f846533bf78178e5907d367717e6e8cc9",
+        "size": 26881408
+      },
+      "depends": "sudo, python3, python3-pip, python3-dev, python3-scapy, python3-netifaces, python3-pyudev, python3-serial, python3-smbus, python3-rpi.gpio, python3-spidev, python3-pil, python3-qrcode, python3-numpy, python3-setuptools, python3-cryptography, python3-requests, python3-websockets, python3-evdev, libglib2.0-dev, python3-bluez, bluez, fonts-dejavu-core, fonts-font-awesome, wget, nmap, ncat, tcpdump, tshark, arp-scan, dsniff, ettercap-text-only, php-cli, procps, aircrack-ng, wireless-tools, wpasupplicant, iw, hostapd, dnsmasq-base, sshpass, bridge-utils, john, autossh, reaver, ebtables, firmware-realtek, firmware-atheros, firmware-misc-nonfree, git, i2c-tools, rtl-sdr, alsa-utils, pipewire-alsa, caddy, unzip, ffmpeg, yt-dlp, gpsd, gpsd-clients, mpv, rtl-433, bluez-alsa-utils, chocolate-doom, freedoom, xvfb, xdotool",
+      "permissions": {
+        "camera": true,
+        "microphone": true,
+        "imu": true,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": true,
+        "external_display": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/raspyjack/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/raspyjack/screenshots/01-menu.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/raspyjack/screenshots/02-nfc.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/raspyjack/screenshots/03-cctv.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/raspyjack/screenshots/04-subghz.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/raspyjack/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/raspyjack/screenshots/01-menu.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/raspyjack/screenshots/02-nfc.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/raspyjack/screenshots/03-cctv.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/raspyjack/screenshots/04-subghz.png"
       ]
     }
   ]
