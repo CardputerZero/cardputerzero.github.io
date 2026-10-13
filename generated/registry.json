@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-13T18:08:17+08:00",
+  "generated_at": "2026-10-14T00:00:36+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -260,6 +260,112 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/raspyjack/screenshots/02-nfc.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/raspyjack/screenshots/03-cctv.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/raspyjack/screenshots/04-subghz.png"
+      ]
+    },
+    {
+      "uuid": "f750ece4-bf9f-55ba-87db-068202e83c14",
+      "share_code": "ZRAD",
+      "title": "ZeroRadio",
+      "summary": "Pocket radio lab: SDR, scanner, ADS-B, AIS and ISM with an RTL-SDR dongle",
+      "description": "ZeroRadio turns the CardputerZero into a pocket receiver. Plug an RTL-SDR dongle (for example the RTL-SDR Blog V4) into the USB-A port and open the hub.\n\n- SDR: spectrum, waterfall and WFM/FM/AM/USB/LSB/CW audio on the speaker.\n- Scanner: sweep a wide band, list the strongest signals, open one in the SDR.\n- ISM: 433/868 MHz weather sensors, tyre pressure sensors and remotes.\n- ADS-B: aircraft list, radar and world map at 1090 MHz.\n- AIS: ship list, radar and world map at 162 MHz.\n\nEvery decoder runs on the device, with no computer or network. Set your position by city, coordinates or GPS (Cap LoRa-1262-GPS or a USB GPS). Press H in any app for its help. The package bundles readsb and AIS-catcher (GPL-3.0); see Credits in the app.",
+      "locales": {
+        "en": {
+          "summary": "Pocket radio lab: SDR, scanner, ADS-B, AIS and ISM with an RTL-SDR dongle"
+        },
+        "it": {
+          "summary": "Laboratorio radio tascabile: SDR, scanner, ADS-B, AIS e ISM con una chiavetta RTL-SDR"
+        },
+        "fr": {
+          "summary": "Labo radio de poche : SDR, scanner, ADS-B, AIS et ISM avec une clé RTL-SDR"
+        },
+        "de": {
+          "summary": "Funklabor im Taschenformat: SDR, Scanner, ADS-B, AIS und ISM mit einem RTL-SDR-Stick"
+        },
+        "es": {
+          "summary": "Laboratorio de radio de bolsillo: SDR, escáner, ADS-B, AIS e ISM con un dongle RTL-SDR"
+        },
+        "ja": {
+          "summary": "ポケット無線ラボ：RTL-SDR ドングルで SDR、スキャナー、ADS-B、AIS、ISM を利用"
+        },
+        "zh-CN": {
+          "summary": "掌上无线电实验室：插上 RTL-SDR 接收器，即可使用 SDR、频段扫描、ADS-B、AIS 与 ISM"
+        }
+      },
+      "i18n": {
+        "en": {
+          "summary": "Pocket radio lab: SDR, scanner, ADS-B, AIS and ISM with an RTL-SDR dongle"
+        },
+        "it": {
+          "summary": "Laboratorio radio tascabile: SDR, scanner, ADS-B, AIS e ISM con una chiavetta RTL-SDR"
+        },
+        "fr": {
+          "summary": "Labo radio de poche : SDR, scanner, ADS-B, AIS et ISM avec une clé RTL-SDR"
+        },
+        "de": {
+          "summary": "Funklabor im Taschenformat: SDR, Scanner, ADS-B, AIS und ISM mit einem RTL-SDR-Stick"
+        },
+        "es": {
+          "summary": "Laboratorio de radio de bolsillo: SDR, escáner, ADS-B, AIS e ISM con un dongle RTL-SDR"
+        },
+        "ja": {
+          "summary": "ポケット無線ラボ：RTL-SDR ドングルで SDR、スキャナー、ADS-B、AIS、ISM を利用"
+        },
+        "zh-CN": {
+          "summary": "掌上无线电实验室：插上 RTL-SDR 接收器，即可使用 SDR、频段扫描、ADS-B、AIS 与 ISM"
+        }
+      },
+      "categories": [
+        "Radio & Comms"
+      ],
+      "author": {
+        "github": "andreahaku",
+        "display_name": "Andrea Salvatore (IU4APC)"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-10-13T12:10:44+00:00",
+      "updated_at": "2026-10-13T12:10:44+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/andreahaku/zeroradio",
+      "download": {
+        "type": "deb",
+        "package": "zeroradio",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zeroradio_1.0.0_arm64.deb",
+        "md5": "d635244b2351689bb255f874ec985c3c",
+        "sha256": "c654312e095a1d0d34b4e4c730b41594a5e3736d9bcd7d92a3c8ba723b23e61c",
+        "size": 9003894
+      },
+      "depends": "rtl-sdr, rtl-433, hackrf, pipewire-alsa, libasound2t64 (>= 1.0.16), libc6 (>= 2.39), libfftw3-single3 (>= 3.3.10), libfmt10 (>= 10.1.1+ds1), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.0), libncurses6 (>= 6), libpng16-16t64 (>= 1.6.46), librtlsdr0, libstdc++6 (>= 14), libtinfo6 (>= 6), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.6)",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/zeroradio.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/hub.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/sdr.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/scanner.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/ism.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/adsb.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/ais.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/zeroradio.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/hub.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/sdr.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/scanner.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/ism.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/adsb.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/ais.png"
       ]
     }
   ]
