@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-15T20:12:17+08:00",
+  "generated_at": "2026-10-15T20:21:45+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -329,6 +329,79 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/talktome/screenshots/ukrainian.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/talktome/screenshots/keyboard-en.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/talktome/screenshots/keyboard-uk.png"
+      ]
+    },
+    {
+      "uuid": "7c760443-9268-56fa-aaa6-b0d761e09054",
+      "share_code": "TLGA",
+      "title": "Telega",
+      "summary": "Unofficial Telegram client: chats, photos, voice messages, EN/UA typing.",
+      "description": "Telega is an unofficial Telegram client built for the Cardputer Zero keyboard and 320x170 screen. Sign in by scanning a QR code with the Telegram app on your phone, or with a phone number and login code.\n\nThe chat list follows your Telegram folders (New, All and your own tabs), shows pinned, muted and unread state, and searches by name as you type. Open a chat to read history with read ticks and day separators, reply, react, delete, view and save photos, send images from the device, and record or play voice messages on the built-in microphone and speaker. Forum groups open as a list of threads.\n\nTyping uses a full-screen editor with an on-screen keyboard map: Alt switches between English and Ukrainian (transliterated from the Latin keys), SYM lights up the symbols each key will type, Fn+Z/C and Fn+F/X move the cursor, and Ctrl+C / Ctrl+V go through the system clipboard. Every screen lists its keys at the bottom, and Fn+J saves a screenshot.\n\nTelega is not affiliated with Telegram. It is built on TDLib and uses its own application credentials; your account data stays on the device in your home directory.",
+      "locales": {
+        "uk": {
+          "title": "Telega",
+          "summary": "Неофіційний клієнт Telegram: чати, фото, голосові, введення EN/UA."
+        }
+      },
+      "i18n": {
+        "uk": {
+          "title": "Telega",
+          "summary": "Неофіційний клієнт Telegram: чати, фото, голосові, введення EN/UA."
+        }
+      },
+      "categories": [
+        "Radio & Comms",
+        "Lifestyle"
+      ],
+      "author": {
+        "github": "d4rkmen",
+        "display_name": "d4rkmen"
+      },
+      "version": "0.2.0-1",
+      "published_at": "2026-10-14T21:51:15+00:00",
+      "updated_at": "2026-10-14T21:51:15+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/d4rkmen/telega",
+      "download": {
+        "type": "deb",
+        "package": "telega",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/telega_0.2.0-1_arm64.deb",
+        "md5": "963f7fae170fa9f5f8e6afb44842460d",
+        "sha256": "03f61ba3670dcd5ae7ada01b3f04ba49e1572f4eb4db86f904f1f1ba9fee6291",
+        "size": 15736850
+      },
+      "depends": "fonts-noto-cjk, fonts-dejavu-core, libc6 (>= 2.38), libfmt10 (>= 10.1.1+ds1), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.0), libopus0 (>= 1.1), libpipewire-0.3-0t64 (>= 0.3.8), libpng16-16t64 (>= 1.6.46), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1), zlib1g (>= 1:1.1.4)",
+      "permissions": {
+        "camera": false,
+        "microphone": true,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/telega_256.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/screenshots/sign-in.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/screenshots/chats.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/screenshots/chat.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/screenshots/voice.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/screenshots/editor.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/screenshots/menu.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/telega_256.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/screenshots/sign-in.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/screenshots/chats.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/screenshots/chat.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/screenshots/voice.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/screenshots/editor.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/screenshots/menu.png"
       ]
     },
     {
