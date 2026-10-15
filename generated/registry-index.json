@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-15T20:21:45+08:00",
+  "generated_at": "2026-10-15T20:27:17+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -97,6 +97,60 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fontpreview/fontpreview.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fontpreview/screenshots/fontpreview.png"
+      ]
+    },
+    {
+      "uuid": "ec9291b4-8c41-5136-a9fd-da04be3c546b",
+      "share_code": "FRME",
+      "title": "Frame",
+      "summary": "Stream and watch videos on your CardputerZero.",
+      "description": "Frame is a video streaming application built for the CardputerZero. Browse and play your favorite videos directly on the device with a clean, responsive interface designed for the handheld form factor. Stream over the network or play local media, with playback controls tailored to the compact screen and keypad.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Media"
+      ],
+      "author": {
+        "github": "d4rkmen",
+        "display_name": "pan Dmytro"
+      },
+      "version": "0.2.1-1",
+      "published_at": "2026-10-14T21:24:11+00:00",
+      "updated_at": "2026-10-14T21:24:11+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/CardputerZero/frame",
+      "download": {
+        "type": "deb",
+        "package": "frame",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/frame_0.2.1-1_arm64.deb",
+        "md5": "0919cde004fcc90f8495a341905f008a",
+        "sha256": "40c43ffdbf8df33e235ee2a55e24a7c5d760f867ba0ae6c0119f7fdd3f09d946",
+        "size": 3284038
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libpipewire-0.3-0, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frame/store-icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frame/screenshots/store-1-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frame/screenshots/store-2-320x170.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frame/store-icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frame/screenshots/store-1-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frame/screenshots/store-2-320x170.png"
       ]
     },
     {
