@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-16T15:52:52+08:00",
+  "generated_at": "2026-10-16T18:25:34+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -212,7 +212,7 @@
       },
       "version": "0.11.2-1",
       "published_at": "2026-10-12T14:52:44+00:00",
-      "updated_at": "2026-10-14T06:31:09+00:00",
+      "updated_at": "2026-10-16T07:49:19+00:00",
       "review": {
         "status": "approved"
       },
@@ -273,9 +273,9 @@
         "github": "7h30th3r0n3",
         "display_name": "7h30th3r0n3"
       },
-      "version": "0.1.2-raspyjack1",
+      "version": "0.1.3-raspyjack1",
       "published_at": "2026-10-12T13:36:38+00:00",
-      "updated_at": "2026-10-15T16:28:42+00:00",
+      "updated_at": "2026-10-16T10:17:48+00:00",
       "review": {
         "status": "approved"
       },
@@ -284,12 +284,12 @@
       "download": {
         "type": "deb",
         "package": "raspyjack",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/raspyjack_0.1.2-raspyjack1_arm64.deb",
-        "md5": "e135f819528b083eb1605f742b1968c2",
-        "sha256": "d09634afb5c1cfdcc4deead4329be63f62ebc20fc420b08a941d016d2e23f5f5",
-        "size": 26999300
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/raspyjack_0.1.3-raspyjack1_arm64.deb",
+        "md5": "8cbb59594d3376a3f49513f9edf16b41",
+        "sha256": "e40ac2ab093017dccbce2240e8c9eaccad8edef8b3cd2707eedcfa6ad35d772d",
+        "size": 27000192
       },
-      "depends": "sudo, python3, python3-pip, python3-dev, python3-scapy, python3-netifaces, python3-pyudev, python3-serial, python3-smbus, python3-rpi.gpio, python3-spidev, python3-pil, python3-qrcode, python3-numpy, python3-setuptools, python3-cryptography, python3-requests, python3-websockets, python3-evdev, python3-bluez, bluez, fonts-dejavu-core, fonts-font-awesome, wget, nmap, ncat, tcpdump, arp-scan, procps, aircrack-ng, wireless-tools, wpasupplicant, iw, hostapd, dnsmasq-base, sshpass, bridge-utils, ebtables, git, i2c-tools, unzip, alsa-utils, pipewire-alsa, caddy",
+      "depends": "sudo, python3, python3-pip, python3-dev, python3-netifaces, python3-pyudev, python3-serial, python3-smbus, python3-rpi.gpio, python3-spidev, python3-pil, python3-qrcode, python3-numpy, python3-setuptools, python3-cryptography, python3-requests, python3-websockets, python3-evdev, python3-bluez, bluez, fonts-dejavu-core, fonts-font-awesome, wget, nmap, ncat, tcpdump, arp-scan, procps, aircrack-ng, wireless-tools, wpasupplicant, iw, hostapd, dnsmasq-base, sshpass, bridge-utils, ebtables, git, i2c-tools, unzip, alsa-utils, pipewire-alsa, caddy",
       "permissions": {
         "camera": true,
         "microphone": true,
