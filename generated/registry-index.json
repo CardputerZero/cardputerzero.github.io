@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-16T18:25:34+08:00",
+  "generated_at": "2026-10-17T19:03:58+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -517,9 +517,9 @@
         "github": "andreahaku",
         "display_name": "Andrea Salvatore (IU4APC)"
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "published_at": "2026-10-13T12:10:44+00:00",
-      "updated_at": "2026-10-13T12:10:44+00:00",
+      "updated_at": "2026-10-17T10:58:24+00:00",
       "review": {
         "status": "approved"
       },
@@ -528,12 +528,12 @@
       "download": {
         "type": "deb",
         "package": "zeroradio",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zeroradio_1.0.0_arm64.deb",
-        "md5": "d635244b2351689bb255f874ec985c3c",
-        "sha256": "c654312e095a1d0d34b4e4c730b41594a5e3736d9bcd7d92a3c8ba723b23e61c",
-        "size": 9003894
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zeroradio_1.1.0_arm64.deb",
+        "md5": "e9c4f7662482ef26dece523461ce61da",
+        "sha256": "c7ed394175d4ac29b97cc3d0b93c4749b22b9e3ea27deb53f5e1169d186fa64d",
+        "size": 9081282
       },
-      "depends": "rtl-sdr, rtl-433, hackrf, pipewire-alsa, libasound2t64 (>= 1.0.16), libc6 (>= 2.39), libfftw3-single3 (>= 3.3.10), libfmt10 (>= 10.1.1+ds1), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.0), libncurses6 (>= 6), libpng16-16t64 (>= 1.6.46), librtlsdr0, libstdc++6 (>= 14), libtinfo6 (>= 6), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.6)",
+      "depends": "rtl-sdr, rtl-433, hackrf, pipewire-alsa, fonts-droid-fallback, libasound2t64 (>= 1.0.16), libc6 (>= 2.39), libfftw3-single3 (>= 3.3.10), libfmt10 (>= 10.1.1+ds1), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.0), libncurses6 (>= 6), libpng16-16t64 (>= 1.6.46), librtlsdr0, libstdc++6 (>= 14), libtinfo6 (>= 6), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.6)",
       "permissions": {
         "camera": false,
         "microphone": false,
