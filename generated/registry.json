@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-17T19:03:58+08:00",
+  "generated_at": "2026-10-18T18:21:50+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -342,9 +342,9 @@
         "github": "d4rkmen",
         "display_name": "d4rkmen"
       },
-      "version": "0.2.1",
+      "version": "0.3.0",
       "published_at": "2026-10-14T22:09:23+00:00",
-      "updated_at": "2026-10-14T22:09:23+00:00",
+      "updated_at": "2026-10-18T10:18:29+00:00",
       "review": {
         "status": "approved"
       },
@@ -353,10 +353,10 @@
       "download": {
         "type": "deb",
         "package": "talktome",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/talktome_0.2.1_arm64.deb",
-        "md5": "363794e4ddfbfd8358977effc80dc7bd",
-        "sha256": "0fa4953074395fd1563d610f38c545d1aa47f5ea3e72f2a43be844f085a15024",
-        "size": 18454836
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/talktome_0.3.0_arm64.deb",
+        "md5": "8c5d7eddb1ab09a9f6d6b3de01d9b2b1",
+        "sha256": "d7b343c316f3920be59ca58639b98a08716c75231fc241ce840649a090fa3383",
+        "size": 25323764
       },
       "depends": "libsdl2-2.0-0, libsdl2-ttf-2.0-0, libwayland-client0, libgomp1, fonts-dejavu-core",
       "permissions": {
