@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-20T15:24:10+08:00",
+  "generated_at": "2026-10-20T17:45:21+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -15,6 +15,82 @@
     ]
   },
   "apps": [
+    {
+      "uuid": "2deabe03-8763-5464-92bf-98e368292246",
+      "share_code": "ASTR",
+      "title": "Astro Box",
+      "summary": "Astro Box lets you create, explore, and share interactive N-body universes.",
+      "description": "Create stars and planets, define their mass, color, and initial velocity, then watch gravity shape their paths in real time. Explore built-in orbital systems, pause or accelerate the simulation, follow individual bodies, and share complete universes with other CardputerZero users through QR codes.",
+      "locales": {
+        "zh-CN": {
+          "title": "Astro Box",
+          "summary": "在 CardputerZero 上创建、探索并分享互动的 N 体引力宇宙。"
+        },
+        "ja": {
+          "title": "Astro Box",
+          "summary": "CardputerZero で N 体引力シミュレーションを作って探索し、QR で共有。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "Astro Box",
+          "summary": "在 CardputerZero 上创建、探索并分享互动的 N 体引力宇宙。"
+        },
+        "ja": {
+          "title": "Astro Box",
+          "summary": "CardputerZero で N 体引力シミュレーションを作って探索し、QR で共有。"
+        }
+      },
+      "categories": [
+        "Games"
+      ],
+      "author": {
+        "github": "kur1k0",
+        "display_name": "kur1k0"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-10-20T08:51:40+00:00",
+      "updated_at": "2026-10-20T08:51:40+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/kur1k0/AstroBox",
+      "download": {
+        "type": "deb",
+        "package": "cardputerzero-astro-box",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputerzero-astro-box_1.0.0_arm64.deb",
+        "md5": "e22f63d631d456f0b6026a030f5cb3f7",
+        "sha256": "3a29a03e82b614d6636eeed8c140c13b6d39499192c0c9a593e41d014ecd774b",
+        "size": 420864
+      },
+      "depends": "",
+      "permissions": {
+        "camera": true,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/icon-256.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/figure-8.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/solar-system.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/milky-way.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/create-body.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/icon-256.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/figure-8.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/solar-system.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/milky-way.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/create-body.png"
+      ]
+    },
     {
       "uuid": "691e3384-5280-5c9b-a7e9-42e0b97c46a7",
       "share_code": "FONT",
