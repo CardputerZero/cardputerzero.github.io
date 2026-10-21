@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-21T10:46:44+08:00",
+  "generated_at": "2026-10-21T15:01:01+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -21,26 +21,8 @@
       "title": "Astro Box",
       "summary": "Astro Box lets you create, explore, and share interactive N-body universes.",
       "description": "Create stars and planets, define their mass, color, and initial velocity, then watch gravity shape their paths in real time. Explore built-in orbital systems, pause or accelerate the simulation, follow individual bodies, and share complete universes with other CardputerZero users through QR codes.",
-      "locales": {
-        "zh-CN": {
-          "title": "Astro Box",
-          "summary": "在 CardputerZero 上创建、探索并分享互动的 N 体引力宇宙。"
-        },
-        "ja": {
-          "title": "Astro Box",
-          "summary": "CardputerZero で N 体引力シミュレーションを作って探索し、QR で共有。"
-        }
-      },
-      "i18n": {
-        "zh-CN": {
-          "title": "Astro Box",
-          "summary": "在 CardputerZero 上创建、探索并分享互动的 N 体引力宇宙。"
-        },
-        "ja": {
-          "title": "Astro Box",
-          "summary": "CardputerZero で N 体引力シミュレーションを作って探索し、QR で共有。"
-        }
-      },
+      "locales": {},
+      "i18n": {},
       "categories": [
         "Games"
       ],
