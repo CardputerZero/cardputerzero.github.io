@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-20T17:45:21+08:00",
+  "generated_at": "2026-10-21T10:46:44+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -585,6 +585,83 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/screenshots/voice.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/screenshots/editor.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/screenshots/menu.png"
+      ]
+    },
+    {
+      "uuid": "e780601a-d630-5e27-a72a-afa348867713",
+      "share_code": "TC80",
+      "title": "TIC-80",
+      "summary": "TIC-80 fantasy computer: make, play and share tiny retro games",
+      "description": "TIC-80 is a fantasy computer for making, playing and sharing tiny games, by Vadim Grigoruk (nesbox). This is an unofficial build for the CardputerZero, not affiliated with nesbox.\n\n- Runs on the internal panel: the 240x136 TIC-80 screen at scale 1 inside its border.\n- Gamepad on the keyboard: F/X/Z/C move, L/K are A/B, O/I are X/Y. Change it in the game menu under Options.\n- Console and code editor work from the keyboard. Write games in Lua, JavaScript, Python, Fennel, MoonScript, Wren, Janet, Squirrel, Scheme, Forth or WASM.\n- Type demo in the console to install the demo carts, then load quest.tic and run.\n\nThe sprite, map and music editors expect a mouse. Type exit in the console to go back to the launcher.\n\nTIC-80: https://tic80.com\nSource: https://github.com/nesbox/TIC-80\nDocs: https://github.com/nesbox/TIC-80/wiki\nThis build: https://github.com/andreahaku/tic80-c0",
+      "locales": {
+        "en": {
+          "summary": "TIC-80 fantasy computer: make, play and share tiny retro games"
+        },
+        "it": {
+          "summary": "Il fantasy computer TIC-80: crea, gioca e condividi piccoli giochi retrò"
+        }
+      },
+      "i18n": {
+        "en": {
+          "summary": "TIC-80 fantasy computer: make, play and share tiny retro games"
+        },
+        "it": {
+          "summary": "Il fantasy computer TIC-80: crea, gioca e condividi piccoli giochi retrò"
+        }
+      },
+      "categories": [
+        "Games",
+        "Development"
+      ],
+      "author": {
+        "github": "andreahaku",
+        "display_name": "Andrea Salvatore (IU4APC)"
+      },
+      "version": "1.3.1-rev1",
+      "published_at": "2026-10-20T13:55:23+00:00",
+      "updated_at": "2026-10-20T13:55:23+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/andreahaku/tic80-c0",
+      "download": {
+        "type": "deb",
+        "package": "tic80-c0",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/tic80-c0_1.3.1-rev1_arm64.deb",
+        "md5": "575bc77dfbc7ffe5de5d4e0bd6811a85",
+        "sha256": "e9945b3656923dd60b64202c74f3afbf541eccd4019e706fc5b20d7e08ba22f0",
+        "size": 2289112
+      },
+      "depends": "libc6, libsdl2-2.0-0, libcurl4t64 | libcurl4",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/tic80-c0.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/screenshots/01-quest.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/screenshots/02-code-editor.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/screenshots/03-console.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/screenshots/04-fire.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/screenshots/05-p3d.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/screenshots/06-car.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/tic80-c0.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/screenshots/01-quest.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/screenshots/02-code-editor.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/screenshots/03-console.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/screenshots/04-fire.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/screenshots/05-p3d.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/screenshots/06-car.png"
       ]
     },
     {
