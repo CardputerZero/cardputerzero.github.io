@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-21T15:01:01+08:00",
+  "generated_at": "2026-10-21T15:15:31+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -30,9 +30,9 @@
         "github": "kur1k0",
         "display_name": "kur1k0"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "published_at": "2026-10-20T08:51:40+00:00",
-      "updated_at": "2026-10-20T08:51:40+00:00",
+      "updated_at": "2026-10-21T07:09:50+00:00",
       "review": {
         "status": "approved"
       },
@@ -41,10 +41,10 @@
       "download": {
         "type": "deb",
         "package": "cardputerzero-astro-box",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputerzero-astro-box_1.0.0_arm64.deb",
-        "md5": "e22f63d631d456f0b6026a030f5cb3f7",
-        "sha256": "3a29a03e82b614d6636eeed8c140c13b6d39499192c0c9a593e41d014ecd774b",
-        "size": 420864
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputerzero-astro-box_1.0.1_arm64.deb",
+        "md5": "293c18b2a521577f44beddeca786e60c",
+        "sha256": "4bf4eedb0cc5552ef2c7bdd75603c4092d9b7ab72945013fa687f6920a6c3ad0",
+        "size": 421296
       },
       "depends": "",
       "permissions": {
