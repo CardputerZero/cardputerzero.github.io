@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-22T14:57:02+08:00",
+  "generated_at": "2026-10-22T15:13:16+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -15,6 +15,61 @@
     ]
   },
   "apps": [
+    {
+      "uuid": "7ac45573-63fb-5873-abcb-0b379291f43f",
+      "share_code": "AWUI",
+      "title": "AdvanceWebUI",
+      "summary": "AdvanceWebUI for Cardputer ZERO upload files to the cardputer via web ui using A",
+      "description": "AdvanceWebUI enables seamless file management on the Cardputer ZERO through a Web‑based interface. Using either an Access Point or a Wi‑Fi connection, you can upload multiple files, download files directly from the device to your PC or phone, and install .deb packages via the WebUI.\r\n\r\nThe system works entirely offline, with no Internet connection required, by creating a local Access Point. You can download the .deb package from the Release section and install it on the Cardputer ZERO.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Creative & Office"
+      ],
+      "author": {
+        "display_name": "Bomberman30",
+        "github": "bomberman30"
+      },
+      "version": "1.0.2",
+      "published_at": "2026-10-13T18:40:52+00:00",
+      "updated_at": "2026-10-13T18:40:52+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/bomberman30/AdvanceWebUI-for-Cardputer-ZERO",
+      "download": {
+        "type": "deb",
+        "package": "advancewebui",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/advancewebui_1.0.2_arm64.deb",
+        "md5": "13a1dc96e6d20786dd8e512a9c070049",
+        "sha256": "152a5d6f544bd773b8d79f259e6d055d4ac9d20fb6c50a794a7f7ba462021236",
+        "size": 641452
+      },
+      "depends": "",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/advancewebui/advancewebui_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/advancewebui/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/advancewebui/screenshots/screenshot-1.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/advancewebui/advancewebui_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/advancewebui/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/advancewebui/screenshots/screenshot-1.png"
+      ]
+    },
     {
       "uuid": "2deabe03-8763-5464-92bf-98e368292246",
       "share_code": "ASTR",
