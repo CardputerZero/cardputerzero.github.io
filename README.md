@@ -38,6 +38,7 @@ Static UI files:
 - `site/styles.css`
 - `site/i18n/zh-CN.json`
 - `site/i18n/en.json`
+- `site/i18n/uk.json`
 - `site/i18n/ja.json`
 
 Test assets copied from local APPLaunch apps live under `assets/`.

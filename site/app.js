@@ -9,7 +9,7 @@ function loadPageSize() {
   const stored = Number(localStorage.getItem(PAGE_SIZE_STORAGE_KEY));
   return PAGE_SIZE_OPTIONS.includes(stored) ? stored : DEFAULT_PAGE_SIZE;
 }
-const SUPPORTED_LOCALES = ["zh-CN", "en", "ja"];
+const SUPPORTED_LOCALES = ["zh-CN", "en", "uk", "ja"];
 const APP_LOADED_AT = new Date();
 const REGISTRY_LOADED_URL = withTimestamp(REGISTRY_URL, APP_LOADED_AT);
 const GISCUS_CONFIG = {
@@ -211,6 +211,7 @@ function resolveInitialLocale() {
   const browser = navigator.language || "";
   if (SUPPORTED_LOCALES.includes(browser)) return browser;
   if (browser.startsWith("zh")) return "zh-CN";
+  if (browser.startsWith("uk")) return "uk";
   if (browser.startsWith("ja")) return "ja";
   if (browser.startsWith("en")) return "en";
   return "zh-CN";

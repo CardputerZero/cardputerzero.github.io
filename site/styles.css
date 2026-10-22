@@ -202,6 +202,7 @@ img {
 
 .select {
   padding: 0 34px 0 10px;
+  max-width: 100%;
 }
 
 .compact-select {
@@ -676,6 +677,14 @@ code {
   font-weight: 700;
 }
 
+/* Native selects size to their longest option, which can overflow the
+   narrow filter column. Pin them to the group width instead. */
+.filter-group .select {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
 .check-row {
   display: flex;
   align-items: center;
@@ -701,6 +710,11 @@ code {
   display: flex;
   gap: 8px;
   align-items: center;
+}
+
+.results-actions .select {
+  min-width: 0;
+  max-width: 100%;
 }
 
 .filter-toggle {
