@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-22T15:23:28+08:00",
+  "generated_at": "2026-10-27T17:58:23+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -270,7 +270,7 @@
       "uuid": "6c70ae0d-d9ee-58d4-92e7-df6bff91dcbd",
       "share_code": "FXCM",
       "title": "FXCam",
-      "summary": "Camera with retro effects for M5CardputerZero.",
+      "summary": "Camera with retro effects for CardputerZero.",
       "description": "FXCam is a pocket-sized creative camera for CardputerZero, featuring 106 live filters,\r\nfull-resolution photo capture, timestamped photo watermarks, and a zoomable on-device gallery.",
       "locales": {},
       "i18n": {},
@@ -284,7 +284,7 @@
       },
       "version": "1.0.1-m5stack1",
       "published_at": "2026-10-21T14:34:44+00:00",
-      "updated_at": "2026-10-21T14:34:44+00:00",
+      "updated_at": "2026-10-27T09:54:03+00:00",
       "review": {
         "status": "approved"
       },
