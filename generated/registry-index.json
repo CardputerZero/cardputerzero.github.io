@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-27T18:23:48+08:00",
+  "generated_at": "2026-10-28T23:38:40+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -445,9 +445,9 @@
         "github": "7h30th3r0n3",
         "display_name": "7h30th3r0n3"
       },
-      "version": "0.1.3-raspyjack1",
+      "version": "0.1.4-raspyjack1",
       "published_at": "2026-10-12T13:36:38+00:00",
-      "updated_at": "2026-10-16T10:17:48+00:00",
+      "updated_at": "2026-10-27T13:11:44+00:00",
       "review": {
         "status": "approved"
       },
@@ -456,12 +456,12 @@
       "download": {
         "type": "deb",
         "package": "raspyjack",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/raspyjack_0.1.3-raspyjack1_arm64.deb",
-        "md5": "8cbb59594d3376a3f49513f9edf16b41",
-        "sha256": "e40ac2ab093017dccbce2240e8c9eaccad8edef8b3cd2707eedcfa6ad35d772d",
-        "size": 27000192
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/raspyjack_0.1.4-raspyjack1_arm64.deb",
+        "md5": "3bc3baee5aaaa5e8446589e6ec9644bc",
+        "sha256": "5325b30c86df6015a72f99619145b8d52d2517673bf8d6ec18959e8d9a878de5",
+        "size": 27031432
       },
-      "depends": "sudo, python3, python3-pip, python3-dev, python3-netifaces, python3-pyudev, python3-serial, python3-smbus, python3-rpi.gpio, python3-spidev, python3-pil, python3-qrcode, python3-numpy, python3-setuptools, python3-cryptography, python3-requests, python3-websockets, python3-evdev, python3-bluez, bluez, fonts-dejavu-core, fonts-font-awesome, wget, nmap, ncat, tcpdump, arp-scan, procps, aircrack-ng, wireless-tools, wpasupplicant, iw, hostapd, dnsmasq-base, sshpass, bridge-utils, ebtables, git, i2c-tools, unzip, alsa-utils, pipewire-alsa, caddy",
+      "depends": "sudo, python3, python3-pip, python3-dev, python3-netifaces, python3-pyudev, python3-serial, python3-smbus, python3-rpi.gpio, python3-spidev, python3-pil, python3-qrcode, python3-numpy, python3-setuptools, python3-cryptography, python3-requests, python3-websockets, python3-evdev, python3-pyte, python3-bluez, bluez, fonts-dejavu-core, fonts-font-awesome, wget, nmap, ncat, tcpdump, arp-scan, procps, aircrack-ng, wireless-tools, wpasupplicant, iw, hostapd, dnsmasq-base, sshpass, bridge-utils, ebtables, git, i2c-tools, unzip, alsa-utils, pipewire-alsa, caddy",
       "permissions": {
         "camera": true,
         "microphone": true,
