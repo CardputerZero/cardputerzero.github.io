@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-28T23:38:40+08:00",
+  "generated_at": "2026-10-29T12:33:47+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -427,6 +427,87 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/contact.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/map.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/livefeed.png"
+      ]
+    },
+    {
+      "uuid": "9d4067bd-fc4d-5500-a427-92bff6179ce4",
+      "share_code": "TOOL",
+      "title": "Tools",
+      "summary": "13 tools on the Zero's own sensors: level, IR remote, audio, radio, camera, more",
+      "description": "Tools turns the CardputerZero's own hardware into thirteen pocket instruments behind one icon grid: a bubble level, angle finder and compass on the IMU; an IR remote that learns keys from any remote and sends them back; a sound meter, spectrum, tuner and recorder on the microphone; a list of nearby Wi-Fi networks and Bluetooth devices; a camera with a live viewfinder and a QR reader; a shake and impact meter; a clock with a timer and a stopwatch; a metronome; a calculator; a hand counter; a key tester; a flashlight; and battery, memory and brightness at a glance. Every screen is driven by the keyboard (F/X/Z/C move, Enter acts, Esc goes back, / searches), Tab changes the size of the icon grid, and every move animates. Built with PocketJS; source at https://github.com/pocket-nexus/pocket-zero-tools.",
+      "locales": {
+        "zh-CN": {
+          "title": "Tools",
+          "summary": "用 Zero 自带硬件的 13 个工具：水平仪、红外遥控、音频、无线、相机等"
+        },
+        "ja": {
+          "title": "Tools",
+          "summary": "Zero 内蔵ハードで動く 13 のツール：水準器、赤外線リモコン、音声、無線、カメラなど"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "Tools",
+          "summary": "用 Zero 自带硬件的 13 个工具：水平仪、红外遥控、音频、无线、相机等"
+        },
+        "ja": {
+          "title": "Tools",
+          "summary": "Zero 内蔵ハードで動く 13 のツール：水準器、赤外線リモコン、音声、無線、カメラなど"
+        }
+      },
+      "categories": [
+        "System Tools",
+        "Hardware & IoT"
+      ],
+      "author": {
+        "display_name": "Pocket Nexus",
+        "github": "doodlewind"
+      },
+      "version": "0.2.0-2",
+      "published_at": "2026-10-28T16:21:16+00:00",
+      "updated_at": "2026-10-28T16:21:16+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/pocket-nexus/pocket-zero-tools",
+      "download": {
+        "type": "deb",
+        "package": "pocket-zero-tools",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pocket-zero-tools_0.2.0-2_arm64.deb",
+        "md5": "4b053fbcebbb965fc4b33522517add41",
+        "sha256": "7716babf17658cad5c564c6a78fa7585426848e6f156c68d18109a41e5b3e7db",
+        "size": 1628444
+      },
+      "depends": "",
+      "permissions": {
+        "camera": true,
+        "microphone": true,
+        "imu": true,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/01-home.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/02-level.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/03-audio.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/04-radio.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/05-calculator.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/06-small-grid.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/01-home.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/02-level.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/03-audio.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/04-radio.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/05-calculator.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/06-small-grid.png"
       ]
     },
     {
