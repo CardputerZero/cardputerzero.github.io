@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-29T12:33:47+08:00",
+  "generated_at": "2026-10-30T00:47:17+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -57,6 +57,7 @@
         "microphone": false,
         "network": false
       },
+      "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/advancewebui/advancewebui_icon.png",
         "screenshots": [
@@ -111,6 +112,7 @@
         "background_service": false,
         "external_display": false
       },
+      "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/icon-256.png",
         "screenshots": [
@@ -201,6 +203,7 @@
         "background_service": false,
         "external_display": false
       },
+      "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fontpreview/fontpreview.png",
         "screenshots": [
@@ -253,6 +256,7 @@
         "background_service": false,
         "external_display": false
       },
+      "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frame/store-icon.png",
         "screenshots": [
@@ -308,6 +312,7 @@
         "microphone": false,
         "network": false
       },
+      "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fxcam/fxcam_icon.png",
         "screenshots": [
@@ -408,6 +413,7 @@
         "background_service": false,
         "external_display": false
       },
+      "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/icon.png",
         "screenshots": [
@@ -463,9 +469,9 @@
         "display_name": "Pocket Nexus",
         "github": "doodlewind"
       },
-      "version": "0.2.0-2",
+      "version": "0.2.1-1",
       "published_at": "2026-10-28T16:21:16+00:00",
-      "updated_at": "2026-10-28T16:21:16+00:00",
+      "updated_at": "2026-10-29T16:39:50+00:00",
       "review": {
         "status": "approved"
       },
@@ -474,10 +480,10 @@
       "download": {
         "type": "deb",
         "package": "pocket-zero-tools",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pocket-zero-tools_0.2.0-2_arm64.deb",
-        "md5": "4b053fbcebbb965fc4b33522517add41",
-        "sha256": "7716babf17658cad5c564c6a78fa7585426848e6f156c68d18109a41e5b3e7db",
-        "size": 1628444
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pocket-zero-tools_0.2.1-1_arm64.deb",
+        "md5": "c4abda00f2a6a34ceeeca7388a48afc7",
+        "sha256": "2958ee3e1177574b7fecc461397656931091c02cdfa1354016f1530fb713721a",
+        "size": 1651960
       },
       "depends": "",
       "permissions": {
@@ -489,6 +495,7 @@
         "background_service": false,
         "external_display": false
       },
+      "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/icon.png",
         "screenshots": [
@@ -552,6 +559,7 @@
         "background_service": true,
         "external_display": false
       },
+      "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/raspyjack/icon.png",
         "screenshots": [
@@ -611,6 +619,7 @@
         "microphone": false,
         "network": true
       },
+      "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/retro-zero/retro-zero_icon.png",
         "screenshots": [
@@ -664,6 +673,7 @@
         "microphone": false,
         "network": false
       },
+      "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rfid/rfid_icon.png",
         "screenshots": [
@@ -733,6 +743,7 @@
         "background_service": false,
         "external_display": false
       },
+      "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/talktome/talktome_256.png",
         "screenshots": [
@@ -802,6 +813,7 @@
         "background_service": false,
         "external_display": false
       },
+      "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/telega/telega_256.png",
         "screenshots": [
@@ -879,6 +891,7 @@
         "background_service": false,
         "external_display": false
       },
+      "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/tic80-c0.png",
         "screenshots": [
@@ -985,6 +998,7 @@
         "background_service": false,
         "external_display": false
       },
+      "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/zeroradio.png",
         "screenshots": [
@@ -1092,6 +1106,7 @@
         "background_service": false,
         "external_display": false
       },
+      "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/zerotracker.png",
         "screenshots": [
