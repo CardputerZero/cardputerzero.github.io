@@ -101,16 +101,18 @@
     "service": "バックグラウンドサービス"
   },
   "home": {
-    "eyebrow": "STATIC REGISTRY / GITHUB PAGES",
-    "featured": "おすすめと最近の更新",
-    "featuredLead": "CardputerZero アプリの機能、スクリーンショット、実行要件を確認できます。",
-    "lead": "静的に公開できる CardputerZero アプリディレクトリです。検索、絞り込み、権限とリスク確認、共有コードでのデバイス検索に対応します。",
+    "documentsTitle": "開発者向けドキュメント",
+    "documentsLead": "キー操作、アプリ開発、提出のガイドで CardputerZero 向けの開発を始めましょう。",
+    "featured": "最近の更新",
+    "featuredLead": "最近更新されたアプリの機能や動作要件を確認できます。",
+    "lead": "CardputerZero のアプリを探して、できることを広げよう。",
     "subtitle": "Store",
-    "title": "CardputerZero Hub",
-    "developersCta": "開発者向け",
-    "developersLead": "CardputerZero アプリを提出・管理し、発見しやすく安全なダウンロードを実現します。",
-    "usersCta": "ユーザー向け",
-    "usersLead": "CardputerZero アプリを検索・絞り込みし、Store の共有コードからダウンロードできます。"
+    "title": "CardputerZero Store",
+    "developersRole": "開発者の方",
+    "usersRole": "ユーザーの方",
+    "developersCta": "アプリを公開",
+    "usersCta": "アプリを探す",
+    "bannerAlt": "ゲーム、音楽、カメラ、通信などのアプリアイコンと CardputerZero"
   },
   "notFound": {
     "lead": "このアプリまたは共有コードはアプリ一覧に見つかりませんでした。",

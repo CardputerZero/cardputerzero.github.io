@@ -234,7 +234,7 @@ function render() {
     renderHome();
   }
 
-  if (!["apps", "detail", "share", "documents"].includes(route.name)) {
+  if (!["home", "apps", "detail", "share", "documents"].includes(route.name)) {
     appRoot.insertAdjacentHTML("afterbegin", renderWipBanner());
   }
   nav.classList.remove("open");
@@ -268,41 +268,55 @@ function parseRoute() {
 function updateNav(routeName) {
   const activeName = routeName === "document" ? "documents" : routeName;
   document.querySelectorAll("[data-nav]").forEach((item) => {
-    item.classList.toggle("active", item.dataset.nav === activeName);
+    const active = item.dataset.nav === activeName;
+    item.classList.toggle("active", active);
+    if (active) item.setAttribute("aria-current", "page");
+    else item.removeAttribute("aria-current");
   });
 }
 
 function renderHome() {
-  const approved = state.apps.filter((app) => app.review.status === "approved" || app.review.status === "ci-passed");
-  const featured = state.apps
-    .filter((app) => app.featured)
-    .concat(approved)
-    .filter(uniqueByUuid)
-    .slice(0, 6);
+  const recent = [...state.apps]
+    .sort((a, b) => dateTimeValue(b.updated_at) - dateTimeValue(a.updated_at))
+    .slice(0, 3);
 
   appRoot.innerHTML = `
-    <section class="route-panel">
+    <section class="route-panel home-page">
+      <header class="home-intro">
+        <div>
+          <h1>${t("home.title")}</h1>
+          <p class="lead">${t("home.lead")}</p>
+        </div>
+      </header>
       <div class="home-grid">
-        <section class="hero hero-banner">
-          <div class="hero-banner-media" aria-hidden="true">
-            <img class="hero-banner-image" src="assets/banner.jpg?v=20260601" alt="">
+        <div class="home-feature">
+          <figure class="home-banner">
+            <img src="assets/home-store.png" width="1480" height="940" alt="${escapeAttr(t("home.bannerAlt"))}" fetchpriority="high">
+          </figure>
+          <div class="home-actions">
+            <a class="button" href="#/apps">
+              <span class="home-action-role">${t("home.usersRole")}</span>
+              <span class="home-action-label">${t("home.usersCta")}</span>
+            </a>
+            <a class="button secondary" href="https://dev.cardputer.cc" target="_blank" rel="noopener noreferrer">
+              <span class="home-action-role">${t("home.developersRole")}</span>
+              <span class="home-action-label">${t("home.developersCta")}</span>
+            </a>
           </div>
-          <div class="hero-banner-overlay">
-            <div class="hero-cta-grid">
-              <div class="hero-cta hero-cta-developers">
-                <a class="hero-cta-button hero-cta-button-developers" href="#/documents">${t("home.developersCta")}</a>
-                <p class="hero-cta-desc">${t("home.developersLead")}</p>
-              </div>
-              <div class="hero-cta hero-cta-users">
-                <a class="hero-cta-button hero-cta-button-users" href="#/apps">${t("home.usersCta")}</a>
-                <p class="hero-cta-desc">${t("home.usersLead")}</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        </div>
         ${renderRegistryPanel()}
       </div>
-      <section>
+      <section class="home-documents" aria-labelledby="home-documents-title">
+        <div class="section-head">
+          <div>
+            <h2 id="home-documents-title">${t("home.documentsTitle")}</h2>
+            <p>${t("home.documentsLead")}</p>
+          </div>
+          <a class="button secondary" href="#/documents">${t("actions.viewAll")}</a>
+        </div>
+        <div class="documents-grid">${DOCUMENTS.map((doc) => renderDocumentCard(doc, "h3")).join("")}</div>
+      </section>
+      <section class="home-recent">
         <div class="section-head">
           <div>
             <h2>${t("home.featured")}</h2>
@@ -310,7 +324,7 @@ function renderHome() {
           </div>
           <a class="button secondary" href="#/apps">${t("actions.viewAll")}</a>
         </div>
-        <div class="app-grid">${featured.map(renderAppCard).join("")}</div>
+        <div class="app-grid">${recent.map((app) => renderAppCard(app, true)).join("")}</div>
       </section>
     </section>
   `;
@@ -331,7 +345,7 @@ function renderRegistryPanel() {
         </div>
         <div class="status-item">
           <span class="status-label">${t("registry.updated")}</span>
-          <span class="status-value">${formatDateTime(registry.generated_at)}</span>
+          <span class="status-value">${formatDate(registry.generated_at)}</span>
         </div>
         <div class="status-item">
           <span class="status-label">${t("registry.targets")}</span>
@@ -339,7 +353,7 @@ function renderRegistryPanel() {
         </div>
         <div class="status-item">
           <span class="status-label">${t("registry.source")}</span>
-          <a class="status-value" href="https://github.com/CardputerZero/packages" target="_blank" rel="noopener noreferrer">CardputerZero/packages</a>
+          <a class="status-value" href="https://github.com/CardputerZero/packages" target="_blank" rel="noopener noreferrer">CardputerZero/<wbr>packages</a>
         </div>
       </div>
     </aside>
@@ -385,7 +399,7 @@ function renderAppsPage() {
               </select>
             </div>
           </div>
-          ${pageApps.length ? `<div class="app-grid">${pageApps.map(renderAppCard).join("")}</div>` : `<div class="empty">${t("apps.empty")}</div>`}
+          ${pageApps.length ? `<div class="app-grid">${pageApps.map((app) => renderAppCard(app)).join("")}</div>` : `<div class="empty">${t("apps.empty")}</div>`}
           ${renderPagination(totalPages)}
         </section>
       </div>
@@ -541,7 +555,7 @@ function sortApps(a, b) {
   return dateTimeValue(b.updated_at) - dateTimeValue(a.updated_at);
 }
 
-function renderAppCard(app) {
+function renderAppCard(app, showUpdated = false) {
   const categoryBadges = app.categories.map((category) => badge(labelFor("categories", category), "category")).join("");
   const permissions = declaredPermissions(app);
   const permissionBadges = permissions.map((permission) => badge(labelFor("permissions", permission), "capability")).join("");
@@ -549,6 +563,7 @@ function renderAppCard(app) {
   const authorName = authorDisplayName(app);
   const github = authorGithubUrl(app) ? `@${new URL(authorGithubUrl(app)).pathname.replaceAll("/", "")}` : "";
   const authorText = [authorName, github && github !== `@${authorName}` ? github : ""].filter(Boolean).join(" · ");
+  const updatedDate = showUpdated ? parseDate(app.updated_at) : null;
   return `
     <article class="app-card">
       <a class="app-card-link" href="#/apps/${app.uuid}">
@@ -574,6 +589,7 @@ function renderAppCard(app) {
             <div class="badge-row app-signals">${permissionBadges || `<span class="card-permissions-empty">${escapeHtml(t(noRequirements ? "detail.noRequirements" : "detail.undeclared"))}</span>`}</div>
           </div>
         </div>
+        ${showUpdated ? `<p class="app-updated"><span>${escapeHtml(t("fields.updated"))}</span>${updatedDate ? `<time datetime="${updatedDate.toISOString()}">${escapeHtml(formatDate(updatedDate))}</time>` : `<span>—</span>`}</p>` : ""}
       </a>
     </article>
   `;
@@ -896,17 +912,17 @@ function renderDocuments() {
         </div>
       </section>
       <section class="documents-grid">
-        ${DOCUMENTS.map(renderDocumentCard).join("")}
+        ${DOCUMENTS.map((doc) => renderDocumentCard(doc)).join("")}
       </section>
     </section>
   `;
 }
 
-function renderDocumentCard(doc) {
+function renderDocumentCard(doc, headingTag = "h2") {
   return `
     <article class="document-card">
       <a href="#/documents/${escapeAttr(doc.slug)}">
-        <h2>${escapeHtml(t(doc.titleKey))}</h2>
+        <${headingTag}>${escapeHtml(t(doc.titleKey))}</${headingTag}>
         <p>${escapeHtml(t(doc.summaryKey))}</p>
         <span class="document-card-action">${escapeHtml(t("documents.open"))}</span>
       </a>
@@ -1570,10 +1586,6 @@ function declaredPermissions(app) {
 
 function hasPermission(app, permission) {
   return app.permissions[permission] === true;
-}
-
-function uniqueByUuid(app, index, list) {
-  return list.findIndex((item) => item.uuid === app.uuid) === index;
 }
 
 function localized(app, field) {

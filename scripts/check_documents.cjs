@@ -64,6 +64,21 @@ vm.runInContext(source + `
     assert.equal((panel.match(/class="status-item"/g) || []).length, 4);
     assert.ok(panel.includes("https://github.com/CardputerZero/packages"));
     assert.ok(!panel.includes("#/registry") && !panel.includes("registry.json"));
+    location.hash = "#/";
+    render();
+    assert.ok(!appRoot.innerHTML.includes("wip-banner"), "The published homepage has no work-in-progress notice");
+    assert.equal((appRoot.innerHTML.match(/<h1\\b/g) || []).length, 1);
+    assert.ok(appRoot.innerHTML.includes('src="assets/home-store.png"'));
+    assert.ok(appRoot.innerHTML.includes('alt="' + dictionaries[locale].home.bannerAlt + '"'));
+    assert.ok(appRoot.innerHTML.includes('href="https://dev.cardputer.cc"'));
+    assert.equal((appRoot.innerHTML.match(/class="document-card"/g) || []).length, DOCUMENTS.length);
+    assert.ok(appRoot.innerHTML.indexOf('class="home-documents"') < appRoot.innerHTML.indexOf('class="home-recent"'),
+      "Developer documentation comes before the recent apps");
+    for (const doc of DOCUMENTS) {
+      assert.ok(appRoot.innerHTML.includes('href="#/documents/' + doc.slug + '"'));
+      assert.ok(appRoot.innerHTML.includes('<h3>' + t(doc.titleKey) + '</h3>'));
+    }
+    assert.equal((appRoot.innerHTML.match(/class="app-updated"/g) || []).length, Math.min(3, registry.apps.length));
     for (const doc of DOCUMENTS) {
       await renderDocument(doc.slug);
       assert.equal((node.innerHTML.match(/<h1\\b/g) || []).length, 1, locale + ": " + doc.slug);

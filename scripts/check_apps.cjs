@@ -42,6 +42,33 @@ assert.ok(appRoot.innerHTML.includes("No apps available"));
 assert.ok(!appRoot.innerHTML.includes("disabled"), "Empty categories remain selectable");
 clear();
 
+const catalogApps = state.apps;
+const catalogSort = state.sort;
+state.apps = [
+  ["old-featured", "A", "2026-10-01T00:00:00Z"],
+  ["middle", "B", "2026-10-20T00:00:00Z"],
+  ["no-date", "C", ""],
+  ["latest", "Z", "2026-10-29T09:00:00+08:00"],
+  ["second", "Y", "2026-10-28T23:00:00Z"],
+  ["third", "X", "2026-10-25T00:00:00Z"],
+  ["fourth", "W", "2026-10-24T00:00:00Z"],
+  ["invalid-date", "D", "invalid"]
+].map(([uuid, title, updated_at]) => normalizeApp({
+  uuid, title, updated_at, featured: uuid === "old-featured",
+  published_at: uuid === "old-featured" ? "2026-10-30T00:00:00Z" : ""
+}));
+const originalOrder = state.apps.map((app) => app.uuid);
+for (const sort of ["name", "published", "updated"]) {
+  state.sort = sort;
+  renderHome();
+  const homeIds = [...appRoot.innerHTML.matchAll(/class="app-card-link" href="#\\/apps\\/([^\"]+)"/g)].map((match) => match[1]);
+  assert.equal(homeIds.join(","), "latest,second,third",
+    "Home shows three latest updates, independently of names, featured flags, publish dates and catalog sort");
+  assert.equal(state.apps.map((app) => app.uuid).join(","), originalOrder.join(","), "Home must not reorder the catalog data");
+}
+state.apps = catalogApps;
+state.sort = catalogSort;
+
 const sample = normalizeApp({
   uuid: "example", share_code: "EXAM", version: "1.0.0",
   title: "Example", summary: "Default English", author: { display_name: "Display only" },

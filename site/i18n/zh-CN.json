@@ -101,16 +101,18 @@
     "service": "后台服务"
   },
   "home": {
-    "eyebrow": "STATIC REGISTRY / GITHUB PAGES",
-    "featured": "推荐和最近更新",
-    "featuredLead": "浏览 CardputerZero 应用，查看功能介绍、截图和运行要求。",
-    "lead": "一个可静态发布的 CardputerZero 应用目录。用户可以搜索、筛选、查看权限风险，并用分享码在真机 Store 中查找下载。",
+    "documentsTitle": "开发者文档",
+    "documentsLead": "从按键规范到应用开发与提交，开始为 CardputerZero 开发。",
+    "featured": "最近更新",
+    "featuredLead": "发现最近更新的应用，查看功能与运行要求。",
+    "lead": "探索 CardputerZero 应用，发现更多玩法。",
     "subtitle": "Store",
-    "title": "CardputerZero Hub",
-    "developersCta": "面向开发者",
-    "developersLead": "提交并管理 CardputerZero 应用，让应用更容易被发现、下载更安全。",
-    "usersCta": "面向用户",
-    "usersLead": "搜索和筛选 CardputerZero 应用，并通过 Store 分享码下载安装。"
+    "title": "CardputerZero Store",
+    "developersRole": "我是开发者",
+    "usersRole": "我是用户",
+    "developersCta": "发布应用",
+    "usersCta": "浏览应用",
+    "bannerAlt": "CardputerZero 设备与游戏、音乐、摄影、通信等应用图标"
   },
   "notFound": {
     "lead": "应用目录中没有找到这个应用或分享码。",

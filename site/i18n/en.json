@@ -101,16 +101,18 @@
     "service": "Background service"
   },
   "home": {
-    "eyebrow": "STATIC REGISTRY / GITHUB PAGES",
-    "featured": "Featured and recently updated",
-    "featuredLead": "Explore CardputerZero apps, their features, screenshots, and requirements.",
-    "lead": "A static CardputerZero app directory. Search, filter, review permissions and risks, then use a share code on the device Store.",
+    "documentsTitle": "Developer documentation",
+    "documentsLead": "Build for CardputerZero with guides to controls, app development, and submission.",
+    "featured": "Recently updated",
+    "featuredLead": "Explore the latest app updates, features, and requirements.",
+    "lead": "Discover apps for your CardputerZero.",
     "subtitle": "Store",
-    "title": "CardputerZero Hub",
-    "developersCta": "For developers",
-    "developersLead": "Submit and manage CardputerZero apps for easier discovery and safer downloads.",
-    "usersCta": "For users",
-    "usersLead": "Search and filter CardputerZero apps, and download them via share code in the Store."
+    "title": "CardputerZero Store",
+    "developersRole": "For developers",
+    "usersRole": "For users",
+    "developersCta": "Publish an app",
+    "usersCta": "Browse apps",
+    "bannerAlt": "CardputerZero with icons for games, music, photography, communication, and other apps"
   },
   "notFound": {
     "lead": "This app or share code was not found in the app directory.",
