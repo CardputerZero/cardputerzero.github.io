@@ -23,12 +23,13 @@
     "copied": "Copied",
     "copy": "Copy",
     "search": "Search",
-    "viewAll": "View all"
+    "viewAll": "View all",
+    "download": "Download package"
   },
   "apps": {
-    "empty": "No apps match the current search and filters.",
+    "empty": "No apps available",
     "eyebrow": "APPSTORE INDEX",
-    "lead": "Filter CardputerZero apps by category, permission, source openness, and device capability.",
+    "lead": "Find CardputerZero apps by category, permission, and device capability.",
     "results": "{count} results",
     "title": "App directory"
   },
@@ -37,14 +38,19 @@
     "true": "Yes"
   },
   "categories": {
+    "System Tools": "System Tools",
+    "Development": "Development",
+    "Hardware & IoT": "Hardware & IoT",
+    "Security": "Security",
+    "Radio & Comms": "Radio & Comms",
     "AI": "AI",
-    "Developer Tools": "Developer Tools",
-    "Experimental": "Experimental",
-    "Games": "Games",
+    "Creative & Office": "Creative & Office",
     "Media": "Media",
-    "Music": "Music",
-    "Productivity": "Productivity",
-    "Utilities": "Utilities"
+    "Games": "Games",
+    "Emulators": "Emulators",
+    "Education": "Education",
+    "Lifestyle": "Lifestyle",
+    "Other": "Other"
   },
   "commercial": {
     "allowed": "Commercial use allowed",
@@ -55,37 +61,39 @@
     "comments": "Comments and feedback",
     "commentsLead": "Comments are hosted on GitHub Discussions. Each app uses its own discussion thread; sign in with GitHub to comment or react.",
     "install": "Install information",
-    "installLead": "Enter the share code on the device AppStore. Check permissions, risks, and checksum before installing.",
-    "noRisks": "No extra risk flags are declared in this mock registry.",
-    "noSensitivePermissions": "No sensitive permissions",
+    "installLead": "Download the app package, or enter its share code in the device AppStore. Review permissions and requirements before installing.",
     "openDiscussions": "Open GitHub Discussions",
-    "permissions": "Permissions and capabilities",
+    "permissions": "Permissions and requirements",
     "risks": "Risk notes",
-    "screenshots": "Screenshots"
+    "screenshots": "Screenshots",
+    "noRequirements": "None of these permissions or capabilities are declared as required.",
+    "undeclared": "Not declared",
+    "noScreenshots": "No screenshots available",
+    "screenshotAlt": "{title} screenshot {number}",
+    "notProvided": "Not provided",
+    "noDownload": "No download URL is available.",
+    "technicalInfo": "Technical information",
+    "copyChecksum": "Copy {algorithm} checksum"
   },
   "fields": {
     "author": "Author",
-    "checksum": "MD5",
     "download": "Download URL",
     "license": "License",
-    "source": "Source openness",
-    "status": "Review status",
     "updated": "Updated",
     "uuid": "UUID",
     "version": "Version",
-    "website": "Author Website"
+    "website": "Author Website",
+    "package": "Package",
+    "size": "Package size",
+    "sourceRepo": "Source repository",
+    "shareCode": "Share code"
   },
   "filters": {
     "any": "Any",
     "categories": "Categories",
     "clear": "Clear",
-    "commercial": "Commercial use",
-    "externalHardware": "External hardware",
-    "hdmi": "HDMI",
     "open": "Filters",
-    "permissions": "Permissions",
-    "service": "Background service",
-    "source": "Source",
+    "permissions": "Permissions and capabilities",
     "title": "Filters"
   },
   "flags": {
@@ -96,7 +104,7 @@
   "home": {
     "eyebrow": "STATIC REGISTRY / GITHUB PAGES",
     "featured": "Featured and recently updated",
-    "featuredLead": "A mock registry built with real APPLaunch assets for validating pages, filters, and share-code flows.",
+    "featuredLead": "Explore CardputerZero apps, their features, screenshots, and requirements.",
     "lead": "A static CardputerZero app directory. Search, filter, review permissions and risks, then use a share code on the device AppStore.",
     "subtitle": "AppStore & Registry",
     "title": "CardputerZero Hub",
@@ -106,20 +114,17 @@
     "usersLead": "Search and filter CardputerZero apps, and download them via share code in the AppStore."
   },
   "notFound": {
-    "lead": "This UUID or share code is not present in the current mock registry.",
+    "lead": "This app or share code was not found in the app directory.",
     "title": "App not found"
   },
   "permissions": {
-    "audio_output": "Audio output",
-    "background_service": "Background service",
     "camera": "Camera",
-    "external_hardware": "External hardware",
-    "filesystem": "Filesystem",
-    "gps": "GPS",
-    "keyboard_input": "Keyboard input",
     "microphone": "Microphone",
+    "imu": "IMU",
     "network": "Network",
-    "sensors": "Sensors"
+    "additional_hardware": "External hardware",
+    "background_service": "Background operation",
+    "external_display": "External display"
   },
   "policy": {
     "acceptanceText": "If you do not agree to this agreement, the submission policy, or maintainer review requirements, do not submit an app. If an accepted app later violates this agreement, maintainers may request changes, flag risk, delist, block, or retain audit records. The agreement may evolve with the project; material changes should be recorded publicly in the repository.",
@@ -252,13 +257,12 @@
   },
   "search": {
     "label": "Search apps",
-    "placeholder": "Search title, author, category, or share code"
+    "placeholder": "Search name, author, category, package, or share code"
   },
   "sort": {
     "label": "Sort",
     "name": "Name",
     "published": "Newest published",
-    "review": "Review status",
     "updated": "Recently updated"
   },
   "source": {
@@ -533,5 +537,14 @@
   },
   "pagination": {
     "perPage": "Per page"
+  },
+  "permissionStatements": {
+    "camera": "Accesses the camera",
+    "microphone": "Accesses the microphone",
+    "imu": "Accesses IMU",
+    "network": "Uses the network",
+    "additional_hardware": "Requires external hardware",
+    "background_service": "Can continue running in the background",
+    "external_display": "Supports external displays"
   }
 }

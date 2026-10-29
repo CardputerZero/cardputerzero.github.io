@@ -202,6 +202,7 @@ def build_app(pkg_name: str, pkg_info: dict[str, str], meta: dict[str, Any], gen
         },
         "depends": pkg_info.get("Depends", ""),
         "permissions": meta.get("permissions") if isinstance(meta.get("permissions"), dict) else {},
+        "risk_flags": list_value(meta.get("risk_flags")),
         "assets": assets,
         "icon": assets["icon"],
         "screenshots": assets["screenshots"],

@@ -4,6 +4,13 @@ const REGISTRY_URL = "generated/registry.json";
 const DEFAULT_PAGE_SIZE = 30;
 const PAGE_SIZE_OPTIONS = [6, 12, 18, 30, 60, 90];
 const PAGE_SIZE_STORAGE_KEY = "cz_apps_page_size";
+const APP_CATEGORIES = [
+  "System Tools", "Development", "Hardware & IoT", "Security", "Radio & Comms",
+  "AI", "Creative & Office", "Media", "Games", "Emulators", "Education", "Lifestyle", "Other"
+];
+const APP_PERMISSIONS = [
+  "camera", "microphone", "imu", "network", "additional_hardware", "background_service", "external_display"
+];
 
 function loadPageSize() {
   const stored = Number(localStorage.getItem(PAGE_SIZE_STORAGE_KEY));
@@ -59,11 +66,6 @@ const state = {
   query: "",
   categories: new Set(),
   permissions: new Set(),
-  source: "",
-  externalHardware: "",
-  service: "",
-  hdmi: "",
-  commercial: "",
   sort: "updated",
   page: 1,
   pageSize: loadPageSize(),
@@ -86,6 +88,7 @@ document.addEventListener("DOMContentLoaded", init);
 window.addEventListener("hashchange", () => {
   state.page = 1;
   render();
+  window.scrollTo({ top: 0, left: 0, behavior: "instant" });
 });
 
 async function init() {
@@ -157,42 +160,26 @@ function formatUrlTimestamp(date) {
 }
 
 function normalizeApp(app) {
-  const registryGeneratedAt = state.registry?.generated_at || "";
-  const publishedAt = app.published_at || app.updated_at || registryGeneratedAt;
-  const updatedAt = app.updated_at || app.published_at || registryGeneratedAt;
-  const source = app.source || {
-    openness: app.source_openness || "unknown",
-    repository: app.source_repo || ""
-  };
-  const review = app.review || {
-    status: app.review_status || "approved"
-  };
   const author = app.author && typeof app.author === "object" ? app.author : {};
-  const appMeta = app.app || {};
   return {
     ...app,
+    title: app.title || app.app_name || app.download?.package || "",
     categories: app.categories || [],
     author,
-    locales: app.locales || app.i18n || {},
-    published_at: publishedAt,
-    updated_at: updatedAt,
-    source,
-    review,
+    locales: app.locales || {},
+    i18n: app.i18n || {},
+    published_at: app.published_at || "",
+    updated_at: app.updated_at || "",
+    source_repo: app.source_repo || app.source?.repository || "",
+    review: app.review || { status: app.review_status || "approved" },
     download: app.download || {},
-    permissions: app.permissions || {},
-    privacy: app.privacy || {},
+    permissions: Object.fromEntries(APP_PERMISSIONS.map((key) => [
+      key, typeof app.permissions?.[key] === "boolean" ? app.permissions[key] : null
+    ])),
     risk_flags: app.risk_flags || [],
-    assets: app.assets || {
-      icon: app.icon || "",
-      screenshots: app.screenshots || []
-    },
-    app: {
-      service: Boolean(appMeta.service),
-      dependencies: appMeta.dependencies || (app.depends ? [app.depends] : []),
-      external_hardware: appMeta.external_hardware || { required: false, items: [] },
-      hdmi_output: Boolean(appMeta.hdmi_output),
-      commercial_use: appMeta.commercial_use || "allowed",
-      applaunch: appMeta.applaunch || {}
+    assets: {
+      icon: app.assets?.icon || app.icon || "",
+      screenshots: app.assets?.screenshots || app.screenshots || []
     }
   };
 }
@@ -246,7 +233,9 @@ function render() {
     renderHome();
   }
 
-  appRoot.insertAdjacentHTML("afterbegin", renderWipBanner());
+  if (!["apps", "detail", "share"].includes(route.name)) {
+    appRoot.insertAdjacentHTML("afterbegin", renderWipBanner());
+  }
   nav.classList.remove("open");
   appRoot.focus({ preventScroll: true });
 }
@@ -380,7 +369,7 @@ function renderAppsPage() {
   const pageApps = filtered.slice(offset, offset + state.pageSize);
 
   appRoot.innerHTML = `
-    <section class="route-panel">
+    <section class="route-panel apps-page">
       <div class="section-head">
         <div>
           <p class="eyebrow">${t("apps.eyebrow")}</p>
@@ -390,7 +379,7 @@ function renderAppsPage() {
       </div>
       <div class="list-layout">
         ${renderFilters()}
-        <section>
+        <section class="apps-results">
           <div class="results-head">
             <div>
               <h2>${t("apps.results", { count: filtered.length })}</h2>
@@ -403,7 +392,6 @@ function renderAppsPage() {
                 ${option("updated", t("sort.updated"), state.sort)}
                 ${option("published", t("sort.published"), state.sort)}
                 ${option("name", t("sort.name"), state.sort)}
-                ${option("review", t("sort.review"), state.sort)}
               </select>
             </div>
           </div>
@@ -418,9 +406,9 @@ function renderAppsPage() {
 }
 
 function renderFilters() {
-  const categories = [...new Set(state.apps.flatMap((app) => app.categories))].sort();
-  const permissions = ["network", "filesystem", "microphone", "audio_output", "external_hardware", "background_service", "keyboard_input"];
-
+  const counts = new Map(APP_CATEGORIES.map((category) => [
+    category, state.apps.filter((app) => app.categories.includes(category)).length
+  ]));
   return `
     <aside class="filters ${state.filtersOpen ? "open" : ""}" id="filters">
       <div class="filters-header">
@@ -433,23 +421,12 @@ function renderFilters() {
       </div>
       <div class="filter-group">
         <span class="filter-group-title">${t("filters.categories")}</span>
-        ${categories.map((category) => checkbox("category", category, labelFor("categories", category), state.categories.has(category))).join("")}
+        ${APP_CATEGORIES.map((category) => checkbox("category", category, labelFor("categories", category), state.categories.has(category), counts.get(category))).join("")}
       </div>
       <div class="filter-group">
         <span class="filter-group-title">${t("filters.permissions")}</span>
-        ${permissions.map((permission) => checkbox("permission", permission, labelFor("permissions", permission), state.permissions.has(permission))).join("")}
+        ${APP_PERMISSIONS.map((permission) => checkbox("permission", permission, labelFor("permissions", permission), state.permissions.has(permission))).join("")}
       </div>
-      <div class="filter-group">
-        <label class="filter-group-title" for="source-filter">${t("filters.source")}</label>
-        <select class="select" id="source-filter">
-          ${option("", t("filters.any"), state.source)}
-          ${["open-source", "source-available", "closed-source", "binary-only", "mixed"].map((value) => option(value, labelFor("source", value), state.source)).join("")}
-        </select>
-      </div>
-      ${triStateSelect("external-hardware-filter", "externalHardware", t("filters.externalHardware"))}
-      ${triStateSelect("service-filter", "service", t("filters.service"))}
-      ${triStateSelect("hdmi-filter", "hdmi", t("filters.hdmi"))}
-      ${commercialSelect("commercial-filter", "commercial", t("filters.commercial"))}
     </aside>
   `;
 }
@@ -486,25 +463,6 @@ function bindFilterEvents() {
     input.addEventListener("change", () => updateSetFilter(state.permissions, input.value, input.checked));
   });
 
-  document.querySelector("#source-filter").addEventListener("change", (event) => {
-    state.source = event.target.value;
-    state.page = 1;
-    renderAppsPage();
-  });
-
-  [
-    ["external-hardware-filter", "externalHardware"],
-    ["service-filter", "service"],
-    ["hdmi-filter", "hdmi"],
-    ["commercial-filter", "commercial"]
-  ].forEach(([id, key]) => {
-    document.querySelector(`#${id}`).addEventListener("change", (event) => {
-      state[key] = event.target.value;
-      state.page = 1;
-      renderAppsPage();
-    });
-  });
-
   document.querySelector("#sort-select").addEventListener("change", (event) => {
     state.sort = event.target.value;
     state.page = 1;
@@ -515,11 +473,6 @@ function bindFilterEvents() {
     state.query = "";
     state.categories.clear();
     state.permissions.clear();
-    state.source = "";
-    state.externalHardware = "";
-    state.service = "";
-    state.hdmi = "";
-    state.commercial = "";
     state.page = 1;
     renderAppsPage();
   });
@@ -576,44 +529,36 @@ function updateSetFilter(set, value, enabled) {
 
 function getFilteredApps() {
   const query = state.query.trim().toLowerCase();
-  return state.apps
-    .filter((app) => {
-      const text = [
-        app.uuid,
-        app.share_code,
-        app.author.github,
-        app.author.display_name,
-        app.author.website,
-        app.categories.join(" "),
-        app.source.openness,
-        localized(app, "title"),
-        localized(app, "summary"),
-        localized(app, "description")
-      ].join(" ").toLowerCase();
-      if (query && !text.includes(query)) return false;
-      if (state.categories.size && !app.categories.some((category) => state.categories.has(category))) return false;
-      if (state.permissions.size && ![...state.permissions].every((permission) => hasPermission(app, permission))) return false;
-      if (state.source && app.source.openness !== state.source) return false;
-      if (state.externalHardware && boolString(app.app.external_hardware.required) !== state.externalHardware) return false;
-      if (state.service && boolString(app.app.service) !== state.service) return false;
-      if (state.hdmi && boolString(app.app.hdmi_output) !== state.hdmi) return false;
-      if (state.commercial && app.app.commercial_use !== state.commercial) return false;
-      return true;
-    })
-    .sort(sortApps);
+  return state.apps.filter((app) => {
+    const text = [
+      app.uuid, app.share_code, app.download.package,
+      app.author.github, app.author.display_name, app.author.website,
+      app.title, app.summary, app.description,
+      app.categories.join(" "),
+      app.categories.map((category) => labelFor("categories", category)).join(" "),
+      localized(app, "title"), localized(app, "summary"), localized(app, "description")
+    ].join(" ").toLowerCase();
+    if (query && !text.includes(query)) return false;
+    if (state.categories.size && !app.categories.some((category) => state.categories.has(category))) return false;
+    if (![...state.permissions].every((permission) => hasPermission(app, permission))) return false;
+    return true;
+  }).sort(sortApps);
 }
 
 function sortApps(a, b) {
   if (state.sort === "published") return dateTimeValue(b.published_at) - dateTimeValue(a.published_at);
   if (state.sort === "name") return localized(a, "title").localeCompare(localized(b, "title"), state.locale);
-  if (state.sort === "review") return a.review.status.localeCompare(b.review.status);
   return dateTimeValue(b.updated_at) - dateTimeValue(a.updated_at);
 }
 
 function renderAppCard(app) {
-  const categoryBadges = app.categories.slice(0, 2).map((category) => badge(labelFor("categories", category), "info")).join("");
-  const permissionBadges = sensitivePermissions(app).slice(0, 2).map((permission) => badge(labelFor("permissions", permission), "warning")).join("");
-  const extra = Math.max(0, sensitivePermissions(app).length - 2);
+  const categoryBadges = app.categories.map((category) => badge(labelFor("categories", category), "category")).join("");
+  const permissions = declaredPermissions(app);
+  const permissionBadges = permissions.map((permission) => badge(labelFor("permissions", permission), "capability")).join("");
+  const noRequirements = APP_PERMISSIONS.every((permission) => app.permissions[permission] === false);
+  const authorName = authorDisplayName(app);
+  const github = authorGithubUrl(app) ? `@${new URL(authorGithubUrl(app)).pathname.replaceAll("/", "")}` : "";
+  const authorText = [authorName, github && github !== `@${authorName}` ? github : ""].filter(Boolean).join(" · ");
   return `
     <article class="app-card">
       <a class="app-card-link" href="#/apps/${app.uuid}">
@@ -621,17 +566,23 @@ function renderAppCard(app) {
           <img class="app-icon" src="${escapeAttr(app.assets.icon)}" alt="${escapeAttr(localized(app, "title"))}">
           <div class="app-title-block">
             <h3>${escapeHtml(localized(app, "title"))}</h3>
-            <p class="app-author">@${escapeHtml(app.author.github)}</p>
+            ${authorText ? `<p class="app-author" title="${escapeAttr(authorText)}">${escapeHtml(authorText)}</p>` : ""}
           </div>
-          <code class="share-code">${escapeHtml(app.share_code)}</code>
+        </div>
+        <div class="app-package-meta">
+          <div class="app-package-field"><span class="card-meta-label">${escapeHtml(t("fields.version"))}</span><span class="card-meta-value">${escapeHtml(app.version || "—")}</span></div>
+          <div class="app-package-field"><span class="card-meta-label">${escapeHtml(t("fields.size"))}</span><span class="card-meta-value">${escapeHtml(formatFileSize(app.download.size))}</span></div>
         </div>
         <p class="app-summary">${escapeHtml(localized(app, "summary"))}</p>
-        <div class="badge-row app-categories">${categoryBadges}</div>
-        <div class="badge-row app-signals">
-          ${badge(labelFor("review", app.review.status), app.review.status)}
-          ${badge(labelFor("source", app.source.openness), app.source.openness)}
-          ${permissionBadges}
-          ${extra ? badge(`+${extra}`, "warning") : ""}
+        <div class="app-taxonomy">
+          <div class="app-tag-group">
+            <span class="card-group-label">${escapeHtml(t("filters.categories"))}</span>
+            <div class="badge-row app-categories">${categoryBadges}</div>
+          </div>
+          <div class="app-tag-group">
+            <span class="card-group-label">${escapeHtml(t("filters.permissions"))}</span>
+            <div class="badge-row app-signals">${permissionBadges || `<span class="card-permissions-empty">${escapeHtml(t(noRequirements ? "detail.noRequirements" : "detail.undeclared"))}</span>`}</div>
+          </div>
         </div>
       </a>
     </article>
@@ -644,75 +595,77 @@ function renderDetail(id) {
     renderNotFound();
     return;
   }
-
   const screenshots = app.assets.screenshots.length
-    ? app.assets.screenshots.map((src) => `<img class="screenshot" src="${escapeAttr(src)}" alt="${escapeAttr(localized(app, "title"))} screenshot">`).join("")
-    : `<img class="screenshot" src="${escapeAttr(app.assets.icon)}" alt="${escapeAttr(localized(app, "title"))} icon">`;
-
+    ? `<div class="screenshots">${app.assets.screenshots.map((src, index) => `<img class="screenshot" src="${escapeAttr(src)}" alt="${escapeAttr(t("detail.screenshotAlt", { title: localized(app, "title"), number: index + 1 }))}" loading="lazy">`).join("")}</div>`
+    : `<p class="markdown-copy">${escapeHtml(t("detail.noScreenshots"))}</p>`;
+  const downloadUrl = safeExternalUrl(app.download.url);
   appRoot.innerHTML = `
-    <section class="route-panel">
-      <a class="button secondary" href="#/apps">${t("actions.backToApps")}</a>
+    <section class="route-panel app-detail">
+      <a class="button secondary detail-back" href="#/apps">${t("actions.backToApps")}</a>
       <div class="detail-layout">
         <article class="section-panel detail-main">
           <div class="detail-hero">
             <img class="detail-icon" src="${escapeAttr(app.assets.icon)}" alt="${escapeAttr(localized(app, "title"))}">
             <div>
-              <p class="eyebrow">${app.categories.map((category) => labelFor("categories", category)).join(" / ")}</p>
+              <p class="eyebrow">${escapeHtml(app.categories.map((category) => labelFor("categories", category)).join(" / "))}</p>
               <h1>${escapeHtml(localized(app, "title"))}</h1>
               <p class="detail-summary">${escapeHtml(localized(app, "summary"))}</p>
             </div>
           </div>
           <section class="detail-section">
             <h2>${t("detail.about")}</h2>
-            <p class="markdown-copy">${escapeHtml(localized(app, "description"))}</p>
+            <p class="markdown-copy">${escapeHtml(localized(app, "description") || localized(app, "summary"))}</p>
           </section>
           <section class="detail-section">
             <h2>${t("detail.screenshots")}</h2>
-            <div class="screenshots">${screenshots}</div>
+            ${screenshots}
           </section>
           <section class="detail-section">
             <h2>${t("detail.permissions")}</h2>
-            <div class="badge-row">
-              ${allPermissionBadges(app)}
-            </div>
+            ${renderPermissionDeclarations(app)}
           </section>
-          <section class="detail-section">
+          ${app.risk_flags.length ? `<section class="detail-section">
             <h2>${t("detail.risks")}</h2>
-            ${app.risk_flags.length ? `<div class="badge-row">${app.risk_flags.map((risk) => badge(labelFor("risks", risk), "warning")).join("")}</div>` : `<p class="markdown-copy">${t("detail.noRisks")}</p>`}
-          </section>
+            <div class="badge-row">${app.risk_flags.map((risk) => badge(labelFor("risks", risk), "warning")).join("")}</div>
+          </section>` : ""}
         </article>
         <aside class="detail-aside">
-          <h2>${t("detail.install")}</h2>
-          <p class="markdown-copy">${t("detail.installLead")}</p>
-          <div class="copy-row">
-            <code>${escapeHtml(app.share_code)}</code>
-            <button class="button secondary" data-copy="${escapeAttr(app.share_code)}" type="button">${t("actions.copy")}</button>
+          <div class="install-heading">
+            <h2>${t("detail.install")}</h2>
+            <p class="markdown-copy">${t("detail.installLead")}</p>
+          </div>
+          ${downloadUrl ? `<a class="button download-button" href="${escapeAttr(downloadUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("actions.download"))}</a>` : `<p>${escapeHtml(t("detail.noDownload"))}</p>`}
+          <div class="install-share">
+            <p class="meta-label">${escapeHtml(t("fields.shareCode"))}</p>
+            <div class="copy-row">
+              <code>${escapeHtml(app.share_code)}</code>
+              <button class="button secondary" data-copy="${escapeAttr(app.share_code)}" type="button">${t("actions.copy")}</button>
+            </div>
           </div>
           <div class="meta-list">
             ${metaExternalLink(t("fields.author"), authorDisplayName(app), authorGithubUrl(app))}
             ${authorWebsiteUrl(app) ? metaExternalLink(t("fields.website"), urlDisplayText(authorWebsiteUrl(app)), authorWebsiteUrl(app), true) : ""}
-            ${meta(t("fields.status"), labelFor("review", app.review.status))}
-            ${meta(t("fields.version"), app.version)}
+            ${meta(t("fields.package"), app.download.package || "—", true)}
+            ${meta(t("fields.version"), app.version || "—")}
+            ${meta(t("fields.size"), formatFileSize(app.download.size))}
             ${meta(t("fields.updated"), formatDate(app.updated_at))}
-            ${meta(t("fields.source"), labelFor("source", app.source.openness))}
-            ${meta(t("fields.license"), app.license)}
-            ${meta(t("fields.checksum"), checksumText(app), true)}
-            ${meta(t("fields.download"), app.download.url, true)}
-            ${meta(t("fields.uuid"), app.uuid, true)}
+            ${metaExternalLink(t("fields.sourceRepo"), app.source_repo ? urlDisplayText(app.source_repo) : t("detail.notProvided"), app.source_repo, true)}
+            ${meta(t("fields.license"), app.license || t("detail.notProvided"))}
           </div>
-          <div class="badge-row">
-            ${badge(labelFor("review", app.review.status), app.review.status)}
-            ${badge(labelFor("source", app.source.openness), app.source.openness)}
-            ${app.app.external_hardware.required ? badge(t("flags.externalHardware"), "warning") : ""}
-            ${app.app.service ? badge(t("flags.service"), "warning") : ""}
-            ${app.app.hdmi_output ? badge(t("flags.hdmi"), "info") : ""}
-          </div>
+          <details class="technical-info">
+            <summary>${escapeHtml(t("detail.technicalInfo"))}</summary>
+            <div class="meta-list">
+              ${renderChecksum("MD5", app.download.md5)}
+              ${renderChecksum("SHA256", app.download.sha256)}
+              ${metaExternalLink(t("fields.download"), downloadUrl, downloadUrl, true)}
+              ${meta(t("fields.uuid"), app.uuid, true)}
+            </div>
+          </details>
         </aside>
       </div>
       ${renderComments(app)}
     </section>
   `;
-
   bindCopyButtons();
   mountGiscus(app);
 }
@@ -732,10 +685,16 @@ function renderComments(app) {
   `;
 }
 
-function checksumText(app) {
-  if (app.download?.md5) return `md5:${app.download.md5}`;
-  if (app.download?.sha256) return `sha256:${app.download.sha256}`;
-  return "-";
+function renderChecksum(algorithm, value) {
+  if (!value) return "";
+  return `<div class="meta-row"><span>${escapeHtml(algorithm)}</span><div class="copy-row"><code>${escapeHtml(value)}</code><button class="button secondary" data-copy="${escapeAttr(value)}" type="button" aria-label="${escapeAttr(t("detail.copyChecksum", { algorithm }))}">${escapeHtml(t("actions.copy"))}</button></div></div>`;
+}
+
+function formatFileSize(value) {
+  if (typeof value !== "number" || !Number.isFinite(value) || value < 0) return "—";
+  const units = ["B", "KiB", "MiB", "GiB"];
+  const index = value >= 1 ? Math.min(Math.floor(Math.log(value) / Math.log(1024)), units.length - 1) : 0;
+  return `${new Intl.NumberFormat(state.locale, { maximumFractionDigits: index ? 1 : 0 }).format(value / 1024 ** index)} ${units[index]}`;
 }
 
 function mountGiscus(app) {
@@ -1556,47 +1515,17 @@ function renderPagination(totalPages) {
 function renderActiveFilters() {
   const chips = [];
   if (state.query.trim()) chips.push(badge(state.query.trim(), "info"));
-  state.categories.forEach((value) => chips.push(badge(labelFor("categories", value), "info")));
-  state.permissions.forEach((value) => chips.push(badge(labelFor("permissions", value), "warning")));
-  if (state.source) chips.push(badge(labelFor("source", state.source), "info"));
-  if (state.externalHardware) chips.push(badge(`${t("filters.externalHardware")}: ${labelFor("boolean", state.externalHardware)}`, "warning"));
-  if (state.service) chips.push(badge(`${t("filters.service")}: ${labelFor("boolean", state.service)}`, "warning"));
-  if (state.hdmi) chips.push(badge(`${t("filters.hdmi")}: ${labelFor("boolean", state.hdmi)}`, "info"));
-  if (state.commercial) chips.push(badge(`${t("filters.commercial")}: ${labelFor("commercial", state.commercial)}`, "info"));
+  state.categories.forEach((value) => chips.push(badge(labelFor("categories", value), "category")));
+  state.permissions.forEach((value) => chips.push(badge(labelFor("permissions", value), "capability")));
   return chips.join("");
 }
 
-function triStateSelect(id, key, label) {
-  return `
-    <div class="filter-group">
-      <label class="filter-group-title" for="${id}">${label}</label>
-      <select class="select" id="${id}">
-        ${option("", t("filters.any"), state[key])}
-        ${option("true", t("boolean.true"), state[key])}
-        ${option("false", t("boolean.false"), state[key])}
-      </select>
-    </div>
-  `;
-}
-
-function commercialSelect(id, key, label) {
-  return `
-    <div class="filter-group">
-      <label class="filter-group-title" for="${id}">${label}</label>
-      <select class="select" id="${id}">
-        ${option("", t("filters.any"), state[key])}
-        ${option("allowed", labelFor("commercial", "allowed"), state[key])}
-        ${option("restricted", labelFor("commercial", "restricted"), state[key])}
-      </select>
-    </div>
-  `;
-}
-
-function checkbox(name, value, label, checked) {
+function checkbox(name, value, label, checked, count) {
   return `
     <label class="check-row">
       <input type="checkbox" name="${name}" value="${escapeAttr(value)}" ${checked ? "checked" : ""}>
       <span>${escapeHtml(label)}</span>
+      ${count !== undefined ? `<span class="category-count">${count}</span>` : ""}
     </label>
   `;
 }
@@ -1664,39 +1593,23 @@ function urlDisplayText(value) {
   }
 }
 
-function allPermissionBadges(app) {
-  const permissions = [
-    "camera",
-    "microphone",
-    "audio_output",
-    "sensors",
-    "gps",
-    "network",
-    "filesystem",
-    "keyboard_input",
-    "external_hardware",
-    "background_service"
-  ];
-  return permissions
-    .filter((permission) => hasPermission(app, permission))
-    .map((permission) => badge(labelFor("permissions", permission), sensitivePermissions(app).includes(permission) ? "warning" : "info"))
-    .join("") || badge(t("detail.noSensitivePermissions"), "approved");
+function renderPermissionDeclarations(app) {
+  const noneRequired = APP_PERMISSIONS.every((permission) => app.permissions[permission] === false);
+  return `${noneRequired ? `<p class="markdown-copy">${escapeHtml(t("detail.noRequirements"))}</p>` : ""}
+    <dl class="permission-declarations">${APP_PERMISSIONS.map((permission) => {
+      const value = app.permissions[permission];
+      const status = typeof value === "boolean" ? t(`boolean.${value}`) : t("detail.undeclared");
+      const statusClass = value === true ? "enabled" : value === false ? "disabled" : "undeclared";
+      return `<div class="permission-declaration"><dt>${escapeHtml(labelFor("permissionStatements", permission))}</dt><dd><span class="permission-status ${statusClass}">${escapeHtml(status)}</span></dd></div>`;
+    }).join("")}</dl>`;
 }
 
-function sensitivePermissions(app) {
-  return ["network", "filesystem", "camera", "microphone", "sensors", "gps", "external_hardware", "background_service"]
-    .filter((permission) => hasPermission(app, permission));
+function declaredPermissions(app) {
+  return APP_PERMISSIONS.filter((permission) => hasPermission(app, permission));
 }
 
 function hasPermission(app, permission) {
-  if (permission === "filesystem") return app.permissions.filesystem && app.permissions.filesystem !== "none";
-  if (permission === "external_hardware") return app.app.external_hardware.required;
-  if (permission === "background_service") return app.app.service;
-  return Boolean(app.permissions[permission]);
-}
-
-function boolString(value) {
-  return value ? "true" : "false";
+  return app.permissions[permission] === true;
 }
 
 function uniqueByUuid(app, index, list) {
@@ -1704,20 +1617,15 @@ function uniqueByUuid(app, index, list) {
 }
 
 function localized(app, field) {
-  const sources = [app.i18n, app.locales].filter((source) => source && typeof source === "object");
-  const candidates = localeCandidates();
-  for (const source of sources) {
-    for (const locale of candidates) {
+  const sources = [app.locales, app.i18n];
+  const candidates = [...new Set([state.locale, state.locale.split("-")[0], "en"])];
+  for (const locale of candidates) {
+    for (const source of sources) {
       const value = source?.[locale]?.[field];
-      if (value) return value;
+      if (typeof value === "string" && value.trim()) return value;
     }
   }
   return app[field] || "";
-}
-
-function localeCandidates() {
-  const base = state.locale.split("-")[0];
-  return [...new Set([state.locale, base, "en", "zh-CN"])];
 }
 
 function labelFor(group, value) {

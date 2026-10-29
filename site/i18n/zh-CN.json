@@ -23,12 +23,13 @@
     "copied": "已复制",
     "copy": "复制",
     "search": "搜索",
-    "viewAll": "查看全部"
+    "viewAll": "查看全部",
+    "download": "下载安装包"
   },
   "apps": {
-    "empty": "没有匹配的应用。请调整搜索或筛选条件。",
+    "empty": "暂无应用",
     "eyebrow": "APPSTORE INDEX",
-    "lead": "按分类、权限、源码开放程度和设备能力筛选 CardputerZero 应用。",
+    "lead": "按分类、权限和设备能力查找 CardputerZero 应用。",
     "results": "{count} 个结果",
     "title": "应用目录"
   },
@@ -37,14 +38,19 @@
     "true": "是"
   },
   "categories": {
-    "AI": "AI",
-    "Developer Tools": "开发者工具",
-    "Experimental": "实验性",
-    "Games": "游戏",
-    "Media": "媒体",
-    "Music": "音乐",
-    "Productivity": "效率",
-    "Utilities": "工具"
+    "System Tools": "系统工具",
+    "Development": "编程开发",
+    "Hardware & IoT": "硬件物联",
+    "Security": "安全测试",
+    "Radio & Comms": "无线通信",
+    "AI": "人工智能",
+    "Creative & Office": "创作办公",
+    "Media": "影音媒体",
+    "Games": "游戏娱乐",
+    "Emulators": "模拟器",
+    "Education": "学习教育",
+    "Lifestyle": "日常生活",
+    "Other": "其他"
   },
   "commercial": {
     "allowed": "允许商用",
@@ -55,37 +61,39 @@
     "comments": "评论与反馈",
     "commentsLead": "评论由 GitHub Discussions 托管。每个应用使用独立讨论串，登录 GitHub 后即可留言或添加 reaction。",
     "install": "安装信息",
-    "installLead": "真机 AppStore 可输入分享码查找应用。下载前请检查权限、风险和 checksum。",
-    "noRisks": "当前 mock registry 未声明额外风险。",
-    "noSensitivePermissions": "无敏感权限",
+    "installLead": "下载应用安装包，或在真机 AppStore 中输入分享码查找应用。安装前请查看权限和运行要求。",
     "openDiscussions": "打开 GitHub Discussions",
-    "permissions": "权限和能力",
+    "permissions": "权限和运行要求",
     "risks": "风险提示",
-    "screenshots": "截图"
+    "screenshots": "截图",
+    "noRequirements": "未声明需要上述权限或能力。",
+    "undeclared": "未声明",
+    "noScreenshots": "暂无截图",
+    "screenshotAlt": "{title} 截图 {number}",
+    "notProvided": "未提供",
+    "noDownload": "暂未提供下载地址。",
+    "technicalInfo": "技术信息",
+    "copyChecksum": "复制 {algorithm} 校验值"
   },
   "fields": {
     "author": "作者",
-    "checksum": "MD5",
     "download": "下载地址",
     "license": "许可证",
-    "source": "源码开放程度",
-    "status": "审核状态",
     "updated": "更新时间",
     "uuid": "UUID",
     "version": "版本",
-    "website": "作者网站"
+    "website": "作者网站",
+    "package": "包名",
+    "size": "安装包大小",
+    "sourceRepo": "源码仓库",
+    "shareCode": "分享码"
   },
   "filters": {
     "any": "不限",
     "categories": "分类",
     "clear": "清除",
-    "commercial": "允许商用",
-    "externalHardware": "外部硬件",
-    "hdmi": "HDMI",
     "open": "筛选",
-    "permissions": "权限",
-    "service": "后台服务",
-    "source": "源码",
+    "permissions": "权限和设备能力",
     "title": "筛选"
   },
   "flags": {
@@ -96,7 +104,7 @@
   "home": {
     "eyebrow": "STATIC REGISTRY / GITHUB PAGES",
     "featured": "推荐和最近更新",
-    "featuredLead": "用真实 APPLaunch 素材组成的 mock registry，适合验证页面、筛选和分享码流程。",
+    "featuredLead": "浏览 CardputerZero 应用，查看功能介绍、截图和运行要求。",
     "lead": "一个可静态发布的 CardputerZero 应用目录。用户可以搜索、筛选、查看权限风险，并用分享码在真机 AppStore 中查找下载。",
     "subtitle": "AppStore & Registry",
     "title": "CardputerZero Hub",
@@ -106,20 +114,17 @@
     "usersLead": "搜索和筛选 CardputerZero 应用，并通过 AppStore 分享码下载安装。"
   },
   "notFound": {
-    "lead": "这个 UUID 或分享码不在当前 mock registry 中。",
+    "lead": "应用目录中没有找到这个应用或分享码。",
     "title": "未找到应用"
   },
   "permissions": {
-    "audio_output": "音频输出",
-    "background_service": "后台服务",
     "camera": "摄像头",
-    "external_hardware": "外部硬件",
-    "filesystem": "文件系统",
-    "gps": "GPS",
-    "keyboard_input": "键盘输入",
     "microphone": "麦克风",
+    "imu": "IMU",
     "network": "网络",
-    "sensors": "传感器"
+    "additional_hardware": "外部硬件",
+    "background_service": "后台运行",
+    "external_display": "外接显示器"
   },
   "policy": {
     "acceptanceText": "如果你不同意本协议、提交规范或维护者的审核要求，请不要提交应用。已经合并的应用如果后续违反本协议，维护者可以要求修改、标记风险、下架、屏蔽或保留审计记录。协议和规则会随项目发展调整，重大变化应在仓库中公开记录。",
@@ -252,13 +257,12 @@
   },
   "search": {
     "label": "搜索应用",
-    "placeholder": "搜索标题、作者、分类或分享码"
+    "placeholder": "搜索名称、作者、分类、包名或分享码"
   },
   "sort": {
     "label": "排序",
     "name": "名称",
     "published": "最新发布",
-    "review": "审核状态",
     "updated": "最近更新"
   },
   "source": {
@@ -533,5 +537,14 @@
   },
   "pagination": {
     "perPage": "每页"
+  },
+  "permissionStatements": {
+    "camera": "访问摄像头",
+    "microphone": "访问麦克风",
+    "imu": "访问 IMU",
+    "network": "使用网络",
+    "additional_hardware": "需要外部硬件",
+    "background_service": "可在后台持续运行",
+    "external_display": "支持外接显示器"
   }
 }

@@ -23,12 +23,13 @@
     "copied": "コピー済み",
     "copy": "コピー",
     "search": "検索",
-    "viewAll": "すべて表示"
+    "viewAll": "すべて表示",
+    "download": "パッケージをダウンロード"
   },
   "apps": {
-    "empty": "現在の検索条件に一致するアプリはありません。",
+    "empty": "アプリはありません",
     "eyebrow": "APPSTORE INDEX",
-    "lead": "カテゴリ、権限、ソース公開度、デバイス機能で CardputerZero アプリを絞り込めます。",
+    "lead": "カテゴリ、権限、デバイス機能から CardputerZero アプリを探せます。",
     "results": "{count} 件",
     "title": "アプリディレクトリ"
   },
@@ -37,14 +38,19 @@
     "true": "はい"
   },
   "categories": {
-    "AI": "AI",
-    "Developer Tools": "開発者ツール",
-    "Experimental": "実験的",
-    "Games": "ゲーム",
+    "System Tools": "システム",
+    "Development": "開発",
+    "Hardware & IoT": "ハードウェア・IoT",
+    "Security": "セキュリティ",
+    "Radio & Comms": "無線通信",
+    "AI": "人工知能",
+    "Creative & Office": "制作・オフィス",
     "Media": "メディア",
-    "Music": "音楽",
-    "Productivity": "生産性",
-    "Utilities": "ユーティリティ"
+    "Games": "ゲーム",
+    "Emulators": "エミュレーター",
+    "Education": "学習・教育",
+    "Lifestyle": "日常生活",
+    "Other": "その他"
   },
   "commercial": {
     "allowed": "商用利用可",
@@ -55,37 +61,39 @@
     "comments": "コメントとフィードバック",
     "commentsLead": "コメントは GitHub Discussions でホストされます。各アプリは個別の discussion を使い、GitHub にログインするとコメントやリアクションを投稿できます。",
     "install": "インストール情報",
-    "installLead": "デバイスの AppStore で共有コードを入力します。インストール前に権限、リスク、checksum を確認してください。",
-    "noRisks": "この mock registry では追加リスクは宣言されていません。",
-    "noSensitivePermissions": "センシティブ権限なし",
+    "installLead": "アプリのパッケージをダウンロードするか、デバイスの AppStore に共有コードを入力してください。インストール前に権限と実行要件を確認してください。",
     "openDiscussions": "GitHub Discussions を開く",
-    "permissions": "権限と機能",
+    "permissions": "権限と実行要件",
     "risks": "リスク情報",
-    "screenshots": "スクリーンショット"
+    "screenshots": "スクリーンショット",
+    "noRequirements": "上記の権限や機能は、いずれも必要と宣言されていません。",
+    "undeclared": "未申告",
+    "noScreenshots": "スクリーンショットはありません",
+    "screenshotAlt": "{title} スクリーンショット {number}",
+    "notProvided": "未提供",
+    "noDownload": "ダウンロード URL は提供されていません。",
+    "technicalInfo": "技術情報",
+    "copyChecksum": "{algorithm} チェックサムをコピー"
   },
   "fields": {
     "author": "作者",
-    "checksum": "MD5",
     "download": "ダウンロード URL",
     "license": "ライセンス",
-    "source": "ソース公開度",
-    "status": "レビュー状態",
     "updated": "更新日",
     "uuid": "UUID",
     "version": "バージョン",
-    "website": "作者サイト"
+    "website": "作者サイト",
+    "package": "パッケージ名",
+    "size": "パッケージサイズ",
+    "sourceRepo": "ソースリポジトリ",
+    "shareCode": "共有コード"
   },
   "filters": {
     "any": "すべて",
     "categories": "カテゴリ",
     "clear": "クリア",
-    "commercial": "商用利用",
-    "externalHardware": "外部ハードウェア",
-    "hdmi": "HDMI",
     "open": "フィルタ",
-    "permissions": "権限",
-    "service": "バックグラウンドサービス",
-    "source": "ソース",
+    "permissions": "権限とデバイス機能",
     "title": "フィルタ"
   },
   "flags": {
@@ -96,7 +104,7 @@
   "home": {
     "eyebrow": "STATIC REGISTRY / GITHUB PAGES",
     "featured": "おすすめと最近の更新",
-    "featuredLead": "実際の APPLaunch 素材を使った mock registry です。ページ、フィルタ、共有コードの検証に使えます。",
+    "featuredLead": "CardputerZero アプリの機能、スクリーンショット、実行要件を確認できます。",
     "lead": "静的に公開できる CardputerZero アプリディレクトリです。検索、絞り込み、権限とリスク確認、共有コードでのデバイス検索に対応します。",
     "subtitle": "AppStore & Registry",
     "title": "CardputerZero Hub",
@@ -106,20 +114,17 @@
     "usersLead": "CardputerZero アプリを検索・絞り込みし、AppStore の共有コードからダウンロードできます。"
   },
   "notFound": {
-    "lead": "この UUID または共有コードは現在の mock registry にありません。",
+    "lead": "このアプリまたは共有コードはアプリ一覧に見つかりませんでした。",
     "title": "アプリが見つかりません"
   },
   "permissions": {
-    "audio_output": "音声出力",
-    "background_service": "バックグラウンドサービス",
     "camera": "カメラ",
-    "external_hardware": "外部ハードウェア",
-    "filesystem": "ファイルシステム",
-    "gps": "GPS",
-    "keyboard_input": "キーボード入力",
     "microphone": "マイク",
+    "imu": "IMU",
     "network": "ネットワーク",
-    "sensors": "センサー"
+    "additional_hardware": "外部ハードウェア",
+    "background_service": "バックグラウンド実行",
+    "external_display": "外部ディスプレイ"
   },
   "policy": {
     "acceptanceText": "本規約、提出ポリシー、またはメンテナーのレビュー要件に同意できない場合は、アプリを提出しないでください。承認済みのアプリでも後から違反が判明した場合、メンテナーは修正要求、リスク表示、掲載停止、ブロック、監査記録の保持を行えます。規約はプロジェクトの発展に合わせて変更されることがあり、重要な変更はリポジトリで公開記録されます。",
@@ -252,13 +257,12 @@
   },
   "search": {
     "label": "アプリ検索",
-    "placeholder": "タイトル、作者、カテゴリ、共有コードを検索"
+    "placeholder": "名前、作者、カテゴリ、パッケージ名、共有コードを検索"
   },
   "sort": {
     "label": "並び替え",
     "name": "名前",
     "published": "新着公開",
-    "review": "レビュー状態",
     "updated": "最近更新"
   },
   "source": {
@@ -533,5 +537,14 @@
   },
   "pagination": {
     "perPage": "1ページあたり"
+  },
+  "permissionStatements": {
+    "camera": "カメラにアクセスする",
+    "microphone": "マイクにアクセスする",
+    "imu": "IMU を使用する",
+    "network": "ネットワークを使用する",
+    "additional_hardware": "外部ハードウェアが必要",
+    "background_service": "バックグラウンドで継続実行できる",
+    "external_display": "外部ディスプレイに対応する"
   }
 }
