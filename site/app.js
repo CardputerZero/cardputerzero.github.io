@@ -226,14 +226,15 @@ function render() {
     appRoot.focus({ preventScroll: true });
     return;
   } else if (route.name === "registry") {
-    renderRegistry();
+    location.replace("#/");
+    return;
   } else if (route.name === "apps") {
     renderAppsPage();
   } else {
     renderHome();
   }
 
-  if (!["apps", "detail", "share"].includes(route.name)) {
+  if (!["apps", "detail", "share", "documents"].includes(route.name)) {
     appRoot.insertAdjacentHTML("afterbegin", renderWipBanner());
   }
   nav.classList.remove("open");
@@ -318,8 +319,6 @@ function renderHome() {
 
 function renderRegistryPanel() {
   const registry = state.registry;
-  const approvedCount = state.apps.filter((app) => app.review.status === "approved").length;
-  const riskCount = state.apps.filter((app) => app.risk_flags.length > 0).length;
 
   return `
     <aside class="registry-panel">
@@ -331,27 +330,18 @@ function renderRegistryPanel() {
           <span class="status-value">${state.apps.length}</span>
         </div>
         <div class="status-item">
-          <span class="status-label">${t("registry.approved")}</span>
-          <span class="status-value">${approvedCount}</span>
-        </div>
-        <div class="status-item">
-          <span class="status-label">${t("registry.risk")}</span>
-          <span class="status-value">${riskCount}</span>
-        </div>
-        <div class="status-item">
           <span class="status-label">${t("registry.updated")}</span>
-          <span class="status-value">${formatDate(registry.generated_at)}</span>
+          <span class="status-value">${formatDateTime(registry.generated_at)}</span>
         </div>
         <div class="status-item">
-          <span class="status-label">${t("registry.loaded")}</span>
-          <span class="status-value">${formatDateTime(APP_LOADED_AT)}</span>
+          <span class="status-label">${t("registry.targets")}</span>
+          <span class="status-value">${escapeHtml((registry.device_targets || []).join(" / ") || "—")}</span>
         </div>
         <div class="status-item">
-          <span class="status-label">${t("registry.schema")}</span>
-          <span class="status-value">v${registry.schema_version}</span>
+          <span class="status-label">${t("registry.source")}</span>
+          <a class="status-value" href="https://github.com/CardputerZero/packages" target="_blank" rel="noopener noreferrer">CardputerZero/packages</a>
         </div>
       </div>
-      <a class="button" href="#/registry">${t("registry.open")}</a>
     </aside>
   `;
 }
@@ -887,7 +877,7 @@ function renderSubmitBand(titleKey, listKey) {
 
 function renderDocuments() {
   appRoot.innerHTML = `
-    <section class="route-panel">
+    <section class="route-panel documents-index">
       <div class="section-head">
         <div>
           <p class="eyebrow">${t("documents.eyebrow")}</p>
@@ -918,6 +908,7 @@ function renderDocumentCard(doc) {
       <a href="#/documents/${escapeAttr(doc.slug)}">
         <h2>${escapeHtml(t(doc.titleKey))}</h2>
         <p>${escapeHtml(t(doc.summaryKey))}</p>
+        <span class="document-card-action">${escapeHtml(t("documents.open"))}</span>
       </a>
     </article>
   `;
@@ -927,35 +918,28 @@ async function renderDocument(slug) {
   const doc = DOCUMENTS.find((item) => item.slug === slug);
   if (!doc) {
     renderNotFound();
-    appRoot.insertAdjacentHTML("afterbegin", renderWipBanner());
     return;
   }
+  const path = documentPath(doc);
 
   appRoot.innerHTML = `
-    <section class="route-panel">
-      ${renderWipBanner()}
-      <div class="section-head compact">
-        <div>
-          <p class="eyebrow">${t("documents.eyebrow")}</p>
-          <h1>${escapeHtml(t(doc.titleKey))}</h1>
-          <p class="lead">${escapeHtml(t(doc.summaryKey))}</p>
-        </div>
-        <a class="button secondary" href="#/documents">${t("documents.back")}</a>
-      </div>
+    <section class="route-panel document-page">
+      <a class="button secondary document-back" href="#/documents">${t("documents.back")}</a>
       <div class="document-layout">
         <aside class="doc-toc" aria-label="${escapeAttr(t("documents.toc"))}">
           <p class="eyebrow">${t("documents.toc")}</p>
           <p>${t("documents.loading")}</p>
         </aside>
-        <section class="section-panel markdown-doc" aria-live="polite">
+        <article class="section-panel markdown-doc" aria-live="polite" data-document-path="${escapeAttr(path)}">
           <p>${t("documents.loading")}</p>
-        </section>
+        </article>
       </div>
     </section>
   `;
 
   try {
-    const markdown = await loadMarkdown(documentPath(doc));
+    const markdown = await loadMarkdown(path);
+    if (document.querySelector(".markdown-doc")?.dataset.documentPath !== path) return;
     const rendered = renderMarkdown(markdown);
     const docNode = document.querySelector(".markdown-doc");
     const tocNode = document.querySelector(".doc-toc");
@@ -964,6 +948,7 @@ async function renderDocument(slug) {
     bindDocumentToc();
     bindCopyButtons();
   } catch (error) {
+    if (document.querySelector(".markdown-doc")?.dataset.documentPath !== path) return;
     const docNode = document.querySelector(".markdown-doc");
     if (docNode) docNode.innerHTML = `<div class="error">${escapeHtml(error.message)}</div>`;
     const tocNode = document.querySelector(".doc-toc");
@@ -1457,31 +1442,6 @@ function safeDocumentImageUrl(value) {
   if (!/^(?:assets|docs)\//.test(src)) return "";
   if (src.includes("..") || src.includes("\\") || /[\u0000-\u001f\u007f]/.test(src)) return "";
   return src;
-}
-
-function renderRegistry() {
-  const registryText = JSON.stringify(state.registry, null, 2);
-  appRoot.innerHTML = `
-    <section class="route-panel">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">${t("registry.eyebrow")}</p>
-          <h1>${t("registry.pageTitle")}</h1>
-          <p class="lead">${t("registry.pageLead")}</p>
-        </div>
-      </div>
-      ${renderRegistryPanel()}
-      <section class="section-panel">
-        <div class="section-head">
-          <h2>${t("registry.files")}</h2>
-        </div>
-        <div class="badge-row">
-          <a class="button secondary" href="generated/registry.json">registry.json</a>
-        </div>
-      </section>
-      <pre class="registry-preview">${escapeHtml(registryText)}</pre>
-    </section>
-  `;
 }
 
 function renderNotFound() {

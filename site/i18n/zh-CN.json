@@ -1,15 +1,14 @@
 {
   "meta": {
     "title": "CardputerZero Hub",
-    "description": "用于 GitHub Pages 的 CardputerZero AppStore registry 和响应式应用目录。"
+    "description": "用于 GitHub Pages 的 CardputerZero Store registry 和响应式应用目录。"
   },
   "nav": {
-    "home": "CardputerZero AppStore 首页",
+    "home": "CardputerZero Store 首页",
     "toggle": "展开或收起导航",
     "apps": "应用",
     "tutorial": "教程",
     "documents": "文档",
-    "registry": "数据源",
     "portal": "开发者门户"
   },
   "language": {
@@ -28,7 +27,7 @@
   },
   "apps": {
     "empty": "暂无应用",
-    "eyebrow": "APPSTORE INDEX",
+    "eyebrow": "STORE INDEX",
     "lead": "按分类、权限和设备能力查找 CardputerZero 应用。",
     "results": "{count} 个结果",
     "title": "应用目录"
@@ -61,7 +60,7 @@
     "comments": "评论与反馈",
     "commentsLead": "评论由 GitHub Discussions 托管。每个应用使用独立讨论串，登录 GitHub 后即可留言或添加 reaction。",
     "install": "安装信息",
-    "installLead": "下载应用安装包，或在真机 AppStore 中输入分享码查找应用。安装前请查看权限和运行要求。",
+    "installLead": "下载应用安装包，或在真机 Store 中输入分享码查找应用。安装前请查看权限和运行要求。",
     "openDiscussions": "打开 GitHub Discussions",
     "permissions": "权限和运行要求",
     "risks": "风险提示",
@@ -105,13 +104,13 @@
     "eyebrow": "STATIC REGISTRY / GITHUB PAGES",
     "featured": "推荐和最近更新",
     "featuredLead": "浏览 CardputerZero 应用，查看功能介绍、截图和运行要求。",
-    "lead": "一个可静态发布的 CardputerZero 应用目录。用户可以搜索、筛选、查看权限风险，并用分享码在真机 AppStore 中查找下载。",
-    "subtitle": "AppStore & Registry",
+    "lead": "一个可静态发布的 CardputerZero 应用目录。用户可以搜索、筛选、查看权限风险，并用分享码在真机 Store 中查找下载。",
+    "subtitle": "Store",
     "title": "CardputerZero Hub",
     "developersCta": "面向开发者",
     "developersLead": "提交并管理 CardputerZero 应用，让应用更容易被发现、下载更安全。",
     "usersCta": "面向用户",
-    "usersLead": "搜索和筛选 CardputerZero 应用，并通过 AppStore 分享码下载安装。"
+    "usersLead": "搜索和筛选 CardputerZero 应用，并通过 Store 分享码下载安装。"
   },
   "notFound": {
     "lead": "应用目录中没有找到这个应用或分享码。",
@@ -130,8 +129,8 @@
     "acceptanceText": "如果你不同意本协议、提交规范或维护者的审核要求，请不要提交应用。已经合并的应用如果后续违反本协议，维护者可以要求修改、标记风险、下架、屏蔽或保留审计记录。协议和规则会随项目发展调整，重大变化应在仓库中公开记录。",
     "acceptanceTitle": "接受和持续遵守",
     "agreementEyebrow": "USER / DEVELOPER AGREEMENT",
-    "agreementLead": "本协议适用于浏览、下载、提交、维护或审核 CardputerZero AppStore Hub 中的应用、元信息、截图、二进制文件和相关讨论。提交应用即表示你已经阅读并同意这些规则。",
-    "agreementTitle": "AppStore Hub 用户与开发者协议",
+    "agreementLead": "本协议适用于浏览、下载、提交、维护或审核 CardputerZero Store Hub 中的应用、元信息、截图、二进制文件和相关讨论。提交应用即表示你已经阅读并同意这些规则。",
+    "agreementTitle": "Store Hub 用户与开发者协议",
     "device": [
       "可能影响系统、存储、网络、传感器或外部模块的应用必须声明风险。",
       "应用必须能从 APPLaunch 启动，并提供清晰退出方式。",
@@ -140,7 +139,7 @@
     "deviceTitle": "设备安全",
     "eyebrow": "AGREEMENT / POLICY",
     "fullDoc": "完整规范文档",
-    "lead": "AppStore Hub 优先保护用户、设备、维护者和开源社区的信任。提交应用前，开发者必须阅读并接受本协议、隐私要求、设备安全要求和拒收规则。",
+    "lead": "Store Hub 优先保护用户、设备、维护者和开源社区的信任。提交应用前，开发者必须阅读并接受本协议、隐私要求、设备安全要求和拒收规则。",
     "privacy": [
       "必须声明是否收集、保存、上传或共享用户数据。",
       "网络、账号、文件系统和设备唯一标识访问必须说明用途。",
@@ -225,19 +224,12 @@
     "title": "用户与开发者协议"
   },
   "registry": {
-    "approved": "已批准",
+    "status": "STORE STATUS",
+    "title": "Store 概况",
     "apps": "应用数量",
-    "eyebrow": "REGISTRY FILES",
-    "files": "静态文件",
-    "loaded": "页面加载",
-    "open": "查看 registry",
-    "pageLead": "Web UI 使用生成后的 JSON registry；package metadata 在 CardputerZero/packages 中审核。",
-    "pageTitle": "Registry 数据源",
-    "risk": "有风险标记",
-    "schema": "Schema",
-    "status": "REGISTRY STATUS",
-    "title": "实时读取静态数据",
-    "updated": "生成时间"
+    "updated": "目录更新时间",
+    "targets": "适用设备",
+    "source": "数据来源"
   },
   "review": {
     "approved": "已通过",
@@ -288,7 +280,7 @@
     "flowTitle": "标准发布流程",
     "formatLead": "源码侧 metadata 放在 app-builder.json；package PR 中的 pool/main/<package>/meta.json 使用相对 package 目录的图片路径。",
     "formatTitle": "metadata 格式",
-    "lead": "开发者通过 czdev 发布可安装的 .deb package。维护者在 CardputerZero/packages 审核通过后，APT 索引会重建，官网会同步生成供网页和真机 AppStore 使用的 registry JSON。",
+    "lead": "开发者通过 czdev 发布可安装的 .deb package。维护者在 CardputerZero/packages 审核通过后，APT 索引会重建，官网会同步生成供网页和真机 Store 使用的 registry JSON。",
     "metadata": [
       "app-builder.json 需要 store 段，包含 summary、categories、icon、screenshots，并推荐提供 zh-CN/en/ja 多语言。",
       ".deb 必须是 arm64，并包含 APPLaunch .desktop、可执行文件和 /usr/share/APPLaunch 下的方形 PNG 图标。",
@@ -445,7 +437,7 @@
         "doc": "appstore-registry-requirements",
         "checks": [
           "GitHub Pages 能访问同步后的 registry。",
-          "真机 AppStore 刷新后能看到 approved 应用。",
+          "真机 Store 刷新后能看到 approved 应用。",
           "详情页、分享码和评论入口正常。"
         ]
       },
@@ -484,9 +476,9 @@
     ]
   },
   "documents": {
-    "eyebrow": "MARKDOWN 文档",
+    "eyebrow": "DOCUMENTATION",
     "title": "文档中心",
-    "lead": "基于 Markdown 的 CardputerZero Hub 文档中心。教程、协议、提交规范和 registry 需求会按当前语言从 docs/ 目录加载。",
+    "lead": "查阅按键规范、应用开发规范和应用提交指南。",
     "portal": {
       "eyebrow": "开发者门户",
       "title": "在 dev.cardputer.cc 发布你的应用",
@@ -496,7 +488,7 @@
     "open": "打开文档",
     "readMore": "查看细节",
     "back": "返回文档中心",
-    "loading": "正在加载 Markdown 文档...",
+    "loading": "正在加载文档...",
     "toc": "目录",
     "noToc": "这个文档没有可生成目录的标题。",
     "source": "来源：{path}",
@@ -523,7 +515,7 @@
       },
       "agreement": {
         "title": "用户与开发者协议",
-        "summary": "浏览、下载、提交、维护和审核 AppStore 应用时需要遵守的正式协议。"
+        "summary": "浏览、下载、提交、维护和审核 Store 应用时需要遵守的正式协议。"
       },
       "registry": {
         "title": "Registry 和 Web UI 需求",

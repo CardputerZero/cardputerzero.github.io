@@ -1,15 +1,14 @@
 {
   "meta": {
     "title": "CardputerZero Hub",
-    "description": "GitHub Pages 向けの CardputerZero AppStore registry とレスポンシブなアプリディレクトリです。"
+    "description": "GitHub Pages 向けの CardputerZero Store registry とレスポンシブなアプリディレクトリです。"
   },
   "nav": {
-    "home": "CardputerZero AppStore ホーム",
+    "home": "CardputerZero Store ホーム",
     "toggle": "ナビゲーションを開閉",
     "apps": "アプリ",
     "tutorial": "チュートリアル",
     "documents": "ドキュメント",
-    "registry": "レジストリ",
     "portal": "開発者ポータル"
   },
   "language": {
@@ -28,7 +27,7 @@
   },
   "apps": {
     "empty": "アプリはありません",
-    "eyebrow": "APPSTORE INDEX",
+    "eyebrow": "STORE INDEX",
     "lead": "カテゴリ、権限、デバイス機能から CardputerZero アプリを探せます。",
     "results": "{count} 件",
     "title": "アプリディレクトリ"
@@ -61,7 +60,7 @@
     "comments": "コメントとフィードバック",
     "commentsLead": "コメントは GitHub Discussions でホストされます。各アプリは個別の discussion を使い、GitHub にログインするとコメントやリアクションを投稿できます。",
     "install": "インストール情報",
-    "installLead": "アプリのパッケージをダウンロードするか、デバイスの AppStore に共有コードを入力してください。インストール前に権限と実行要件を確認してください。",
+    "installLead": "アプリのパッケージをダウンロードするか、デバイスの Store に共有コードを入力してください。インストール前に権限と実行要件を確認してください。",
     "openDiscussions": "GitHub Discussions を開く",
     "permissions": "権限と実行要件",
     "risks": "リスク情報",
@@ -106,12 +105,12 @@
     "featured": "おすすめと最近の更新",
     "featuredLead": "CardputerZero アプリの機能、スクリーンショット、実行要件を確認できます。",
     "lead": "静的に公開できる CardputerZero アプリディレクトリです。検索、絞り込み、権限とリスク確認、共有コードでのデバイス検索に対応します。",
-    "subtitle": "AppStore & Registry",
+    "subtitle": "Store",
     "title": "CardputerZero Hub",
     "developersCta": "開発者向け",
     "developersLead": "CardputerZero アプリを提出・管理し、発見しやすく安全なダウンロードを実現します。",
     "usersCta": "ユーザー向け",
-    "usersLead": "CardputerZero アプリを検索・絞り込みし、AppStore の共有コードからダウンロードできます。"
+    "usersLead": "CardputerZero アプリを検索・絞り込みし、Store の共有コードからダウンロードできます。"
   },
   "notFound": {
     "lead": "このアプリまたは共有コードはアプリ一覧に見つかりませんでした。",
@@ -130,8 +129,8 @@
     "acceptanceText": "本規約、提出ポリシー、またはメンテナーのレビュー要件に同意できない場合は、アプリを提出しないでください。承認済みのアプリでも後から違反が判明した場合、メンテナーは修正要求、リスク表示、掲載停止、ブロック、監査記録の保持を行えます。規約はプロジェクトの発展に合わせて変更されることがあり、重要な変更はリポジトリで公開記録されます。",
     "acceptanceTitle": "同意と継続的な遵守",
     "agreementEyebrow": "USER / DEVELOPER AGREEMENT",
-    "agreementLead": "本規約は CardputerZero AppStore Hub のアプリ、メタデータ、スクリーンショット、バイナリ、および関連する議論の閲覧、ダウンロード、提出、保守、レビューに適用されます。アプリを提出することは、これらの規則を読み同意したことを意味します。",
-    "agreementTitle": "AppStore Hub ユーザー・開発者規約",
+    "agreementLead": "本規約は CardputerZero Store Hub のアプリ、メタデータ、スクリーンショット、バイナリ、および関連する議論の閲覧、ダウンロード、提出、保守、レビューに適用されます。アプリを提出することは、これらの規則を読み同意したことを意味します。",
+    "agreementTitle": "Store Hub ユーザー・開発者規約",
     "device": [
       "システム、ストレージ、ネットワーク、センサー、外部モジュールに影響するアプリはリスクを宣言する必要があります。",
       "アプリは APPLaunch から起動でき、明確な終了方法を持つ必要があります。",
@@ -140,7 +139,7 @@
     "deviceTitle": "デバイス安全性",
     "eyebrow": "AGREEMENT / POLICY",
     "fullDoc": "完全なポリシー文書",
-    "lead": "AppStore Hub はユーザー、デバイス、メンテナー、オープンソースコミュニティの信頼を優先します。アプリを提出する前に、本規約、プライバシー要件、デバイス安全要件、拒否ルールを読んで同意する必要があります。",
+    "lead": "Store Hub はユーザー、デバイス、メンテナー、オープンソースコミュニティの信頼を優先します。アプリを提出する前に、本規約、プライバシー要件、デバイス安全要件、拒否ルールを読んで同意する必要があります。",
     "privacy": [
       "ユーザーデータの収集、保存、アップロード、共有の有無を宣言する必要があります。",
       "ネットワーク、アカウント、ファイルシステム、デバイス識別子へのアクセスは目的を説明する必要があります。",
@@ -225,19 +224,12 @@
     "title": "ユーザー・開発者規約"
   },
   "registry": {
-    "approved": "承認済み",
+    "status": "STORE STATUS",
+    "title": "Store の概要",
     "apps": "アプリ数",
-    "eyebrow": "REGISTRY FILES",
-    "files": "静的ファイル",
-    "loaded": "ページ読み込み",
-    "open": "registry を開く",
-    "pageLead": "Web UI は生成された JSON registry を読み込みます。package metadata は CardputerZero/packages でレビューされます。",
-    "pageTitle": "Registry データソース",
-    "risk": "リスクあり",
-    "schema": "Schema",
-    "status": "REGISTRY STATUS",
-    "title": "静的データを読み込み中",
-    "updated": "生成日"
+    "updated": "カタログ更新日時",
+    "targets": "対応デバイス",
+    "source": "データソース"
   },
   "review": {
     "approved": "承認済み",
@@ -288,7 +280,7 @@
     "flowTitle": "標準公開フロー",
     "formatLead": "ソース側 metadata は app-builder.json に置きます。package Pull Request の pool/main/<package>/meta.json は package directory からの相対画像パスを使います。",
     "formatTitle": "メタデータ形式",
-    "lead": "開発者は czdev でインストール可能な .deb package を公開します。CardputerZero/packages でメンテナーが承認すると APT index が再生成され、この Hub が Web と実機 AppStore 向けの registry JSON を同期します。",
+    "lead": "開発者は czdev でインストール可能な .deb package を公開します。CardputerZero/packages でメンテナーが承認すると APT index が再生成され、この Hub が Web と実機 Store 向けの registry JSON を同期します。",
     "metadata": [
       "app-builder.json には summary、categories、icon、screenshots を含む store セクションが必要で、zh-CN/en/ja の locale を推奨します。",
       ".deb は arm64 で、APPLaunch .desktop、実行ファイル、/usr/share/APPLaunch 配下の正方形 PNG アイコンを含む必要があります。",
@@ -445,7 +437,7 @@
         "doc": "appstore-registry-requirements",
         "checks": [
           "GitHub Pages から同期済み registry を取得できます。",
-          "実機 AppStore を更新すると approved アプリが表示されます。",
+          "実機 Store を更新すると approved アプリが表示されます。",
           "詳細ページ、共有コード、コメント入口が動作します。"
         ]
       },
@@ -484,9 +476,9 @@
     ]
   },
   "documents": {
-    "eyebrow": "MARKDOWN ドキュメント",
+    "eyebrow": "DOCUMENTATION",
     "title": "ドキュメント",
-    "lead": "CardputerZero Hub の Markdown ドキュメントセンターです。ガイド、規約、ポリシー、registry 要件を現在の言語に合わせて docs/ から読み込みます。",
+    "lead": "キー操作規則、アプリ開発ガイドライン、提出ガイドを確認できます。",
     "portal": {
       "eyebrow": "開発者ポータル",
       "title": "dev.cardputer.cc でアプリを公開",
@@ -496,7 +488,7 @@
     "open": "文書を開く",
     "readMore": "詳細を見る",
     "back": "ドキュメントへ戻る",
-    "loading": "Markdown 文書を読み込み中...",
+    "loading": "ドキュメントを読み込み中...",
     "toc": "目次",
     "noToc": "この文書には目次にできる見出しがありません。",
     "source": "ソース：{path}",
@@ -523,7 +515,7 @@
       },
       "agreement": {
         "title": "ユーザーと開発者の規約",
-        "summary": "AppStore アプリの閲覧、ダウンロード、提出、保守、審査に関する正式ルール。"
+        "summary": "Store アプリの閲覧、ダウンロード、提出、保守、審査に関する正式ルール。"
       },
       "registry": {
         "title": "Registry と Web UI 要件",

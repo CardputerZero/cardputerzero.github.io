@@ -1,6 +1,6 @@
-# CardputerZero AppStore Hub
+# CardputerZero Store Hub
 
-This directory contains the static GitHub Pages site for the CardputerZero AppStore registry, documentation center, and web UI. The registry is generated from `CardputerZero/packages` package metadata.
+This directory contains the static GitHub Pages site for the CardputerZero Store registry, documentation center, and web UI. The registry is generated from `CardputerZero/packages` package metadata.
 
 ## Local Preview
 
@@ -30,7 +30,7 @@ hub/index.html
 Static data files:
 
 - `generated/registry.json`
-- `generated/registry-index.json` compatibility alias for older AppStore clients
+- `generated/registry-index.json` compatibility alias for older Store clients
 
 Static UI files:
 

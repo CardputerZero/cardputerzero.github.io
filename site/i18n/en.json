@@ -1,15 +1,14 @@
 {
   "meta": {
     "title": "CardputerZero Hub",
-    "description": "A static CardputerZero AppStore registry and responsive app directory for GitHub Pages."
+    "description": "A static CardputerZero Store registry and responsive app directory for GitHub Pages."
   },
   "nav": {
-    "home": "CardputerZero AppStore Home",
+    "home": "CardputerZero Store Home",
     "toggle": "Toggle navigation",
     "apps": "Apps",
     "tutorial": "Tutorial",
     "documents": "Documents",
-    "registry": "Registry",
     "portal": "Developer Portal"
   },
   "language": {
@@ -28,7 +27,7 @@
   },
   "apps": {
     "empty": "No apps available",
-    "eyebrow": "APPSTORE INDEX",
+    "eyebrow": "STORE INDEX",
     "lead": "Find CardputerZero apps by category, permission, and device capability.",
     "results": "{count} results",
     "title": "App directory"
@@ -61,7 +60,7 @@
     "comments": "Comments and feedback",
     "commentsLead": "Comments are hosted on GitHub Discussions. Each app uses its own discussion thread; sign in with GitHub to comment or react.",
     "install": "Install information",
-    "installLead": "Download the app package, or enter its share code in the device AppStore. Review permissions and requirements before installing.",
+    "installLead": "Download the app package, or enter its share code in the device Store. Review permissions and requirements before installing.",
     "openDiscussions": "Open GitHub Discussions",
     "permissions": "Permissions and requirements",
     "risks": "Risk notes",
@@ -105,13 +104,13 @@
     "eyebrow": "STATIC REGISTRY / GITHUB PAGES",
     "featured": "Featured and recently updated",
     "featuredLead": "Explore CardputerZero apps, their features, screenshots, and requirements.",
-    "lead": "A static CardputerZero app directory. Search, filter, review permissions and risks, then use a share code on the device AppStore.",
-    "subtitle": "AppStore & Registry",
+    "lead": "A static CardputerZero app directory. Search, filter, review permissions and risks, then use a share code on the device Store.",
+    "subtitle": "Store",
     "title": "CardputerZero Hub",
     "developersCta": "For developers",
     "developersLead": "Submit and manage CardputerZero apps for easier discovery and safer downloads.",
     "usersCta": "For users",
-    "usersLead": "Search and filter CardputerZero apps, and download them via share code in the AppStore."
+    "usersLead": "Search and filter CardputerZero apps, and download them via share code in the Store."
   },
   "notFound": {
     "lead": "This app or share code was not found in the app directory.",
@@ -130,8 +129,8 @@
     "acceptanceText": "If you do not agree to this agreement, the submission policy, or maintainer review requirements, do not submit an app. If an accepted app later violates this agreement, maintainers may request changes, flag risk, delist, block, or retain audit records. The agreement may evolve with the project; material changes should be recorded publicly in the repository.",
     "acceptanceTitle": "Acceptance and ongoing compliance",
     "agreementEyebrow": "USER / DEVELOPER AGREEMENT",
-    "agreementLead": "This agreement applies to browsing, downloading, submitting, maintaining, or reviewing CardputerZero AppStore Hub apps, metadata, screenshots, binaries, and related discussions. Submitting an app means you have read and agree to these rules.",
-    "agreementTitle": "AppStore Hub User and Developer Agreement",
+    "agreementLead": "This agreement applies to browsing, downloading, submitting, maintaining, or reviewing CardputerZero Store Hub apps, metadata, screenshots, binaries, and related discussions. Submitting an app means you have read and agree to these rules.",
+    "agreementTitle": "Store Hub User and Developer Agreement",
     "device": [
       "Apps touching system settings, storage, network, sensors, or external modules must declare risk.",
       "Apps must launch from APPLaunch and provide a clear exit path.",
@@ -140,7 +139,7 @@
     "deviceTitle": "Device safety",
     "eyebrow": "AGREEMENT / POLICY",
     "fullDoc": "Full policy document",
-    "lead": "AppStore Hub puts user, device, maintainer, and open-source community trust first. Before submitting an app, developers must read and accept this agreement, privacy requirements, device-safety requirements, and rejection rules.",
+    "lead": "Store Hub puts user, device, maintainer, and open-source community trust first. Before submitting an app, developers must read and accept this agreement, privacy requirements, device-safety requirements, and rejection rules.",
     "privacy": [
       "Apps must declare whether they collect, store, upload, or share user data.",
       "Network, account, filesystem, and device identifier access must explain purpose.",
@@ -225,19 +224,12 @@
     "title": "User and Developer Agreement"
   },
   "registry": {
-    "approved": "Approved",
+    "status": "STORE STATUS",
+    "title": "Store overview",
     "apps": "Apps",
-    "eyebrow": "REGISTRY FILES",
-    "files": "Static files",
-    "loaded": "Page loaded",
-    "open": "Open registry",
-    "pageLead": "The Web UI reads the generated JSON registry. Package metadata is reviewed in CardputerZero/packages.",
-    "pageTitle": "Registry data source",
-    "risk": "Risk flagged",
-    "schema": "Schema",
-    "status": "REGISTRY STATUS",
-    "title": "Static data loaded live",
-    "updated": "Generated"
+    "updated": "Catalog updated",
+    "targets": "Devices",
+    "source": "Data source"
   },
   "review": {
     "approved": "Approved",
@@ -288,7 +280,7 @@
     "flowTitle": "Standard publish flow",
     "formatLead": "Source app metadata lives in app-builder.json. The package pull request carries pool/main/<package>/meta.json with image paths relative to that package directory.",
     "formatTitle": "Metadata format",
-    "lead": "Developers publish installable .deb packages through czdev. After maintainer approval in CardputerZero/packages, the APT index is rebuilt and this Hub syncs generated registry JSON for the website and device AppStore.",
+    "lead": "Developers publish installable .deb packages through czdev. After maintainer approval in CardputerZero/packages, the APT index is rebuilt and this Hub syncs generated registry JSON for the website and device Store.",
     "metadata": [
       "app-builder.json needs a store section with summary, categories, icon, screenshots, and recommended zh-CN/en/ja locales.",
       "The .deb must be arm64 and include APPLaunch .desktop, executable, and square PNG icon under /usr/share/APPLaunch.",
@@ -445,7 +437,7 @@
         "doc": "appstore-registry-requirements",
         "checks": [
           "GitHub Pages can serve the synced registry.",
-          "Device AppStore sees the approved app after refresh.",
+          "Device Store sees the approved app after refresh.",
           "Detail page, share code, and comments entry work."
         ]
       },
@@ -484,9 +476,9 @@
     ]
   },
   "documents": {
-    "eyebrow": "MARKDOWN DOCS",
+    "eyebrow": "DOCUMENTATION",
     "title": "Documents",
-    "lead": "A Markdown-backed documentation center for CardputerZero Hub. Guides, agreements, policies, and registry requirements are loaded from docs/.",
+    "lead": "Read the keyboard rules, application development guidelines, and submission guide.",
     "portal": {
       "eyebrow": "Developer Portal",
       "title": "Publish your app at dev.cardputer.cc",
@@ -496,7 +488,7 @@
     "open": "Open document",
     "readMore": "Read details",
     "back": "Back to documents",
-    "loading": "Loading Markdown document...",
+    "loading": "Loading document...",
     "toc": "Contents",
     "noToc": "This document has no headings for a table of contents.",
     "source": "Source: {path}",
@@ -523,7 +515,7 @@
       },
       "agreement": {
         "title": "User And Developer Agreement",
-        "summary": "Formal rules for browsing, downloading, submitting, maintaining, and reviewing AppStore apps."
+        "summary": "Formal rules for browsing, downloading, submitting, maintaining, and reviewing Store apps."
       },
       "registry": {
         "title": "Registry And Web UI Requirements",
