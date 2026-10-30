@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-30T00:47:17+08:00",
+  "generated_at": "2026-10-30T10:14:39+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -74,13 +74,14 @@
     {
       "uuid": "2deabe03-8763-5464-92bf-98e368292246",
       "share_code": "ASTR",
-      "title": "Astro Box",
-      "summary": "Astro Box lets you create, explore, and share interactive N-body universes.",
+      "title": "AstroBox",
+      "summary": "AstroBox lets you create, explore, and share interactive N-body universes.",
       "description": "Create stars and planets, define their mass, color, and initial velocity, then watch gravity shape their paths in real time. Explore built-in orbital systems, pause or accelerate the simulation, follow individual bodies, and share complete universes with other CardputerZero users through QR codes.",
       "locales": {},
       "i18n": {},
       "categories": [
-        "Games"
+        "Games",
+        "Education"
       ],
       "author": {
         "github": "kur1k0",
@@ -88,7 +89,7 @@
       },
       "version": "1.0.1",
       "published_at": "2026-10-20T08:51:40+00:00",
-      "updated_at": "2026-10-21T07:09:50+00:00",
+      "updated_at": "2026-10-30T02:10:01+00:00",
       "review": {
         "status": "approved"
       },
@@ -104,30 +105,30 @@
       },
       "depends": "",
       "permissions": {
-        "camera": true,
-        "microphone": false,
-        "imu": false,
-        "network": false,
         "additional_hardware": false,
         "background_service": false,
-        "external_display": false
+        "camera": true,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
       },
       "risk_flags": [],
       "assets": {
-        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/icon-256.png",
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/cardputerzero-astro-box_icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/figure-8.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/solar-system.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/milky-way.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/create-body.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/screenshot-3.png"
         ]
       },
-      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/icon-256.png",
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/cardputerzero-astro-box_icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/figure-8.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/solar-system.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/milky-way.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/create-body.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-astro-box/screenshots/screenshot-3.png"
       ]
     },
     {
