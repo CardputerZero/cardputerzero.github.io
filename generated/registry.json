@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-02T16:39:01+08:00",
+  "generated_at": "2026-11-02T18:11:44+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -221,6 +221,70 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/02-idle.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/03-listening.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/04-speaking.png"
+      ]
+    },
+    {
+      "uuid": "0d3c2edd-d89a-5736-8133-f15d1088845f",
+      "share_code": "FLNT",
+      "title": "Flint",
+      "summary": "Offensive security toolkit for the CardputerZero: Wi-Fi, BLE, IR, RF & more.",
+      "description": "Offensive security firmware for the CardputerZero: Wi-Fi, BLE, IR, RF and more, for authorized security testing and educational research.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Security",
+        "Radio & Comms"
+      ],
+      "author": {
+        "github": "marivaaldo",
+        "display_name": "Flint Devices"
+      },
+      "version": "0.0.59",
+      "published_at": "2026-11-01T19:08:26+00:00",
+      "updated_at": "2026-11-01T19:08:26+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/flintdevices/flint",
+      "download": {
+        "type": "deb",
+        "package": "flint",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/flint_0.0.59_arm64.deb",
+        "md5": "b3a9dbad2b006bdc7f383c34bc3c4f61",
+        "sha256": "585df9572715998f7ba19b827fcfe7ffd8dca2a5748f77f70399e077164a578c",
+        "size": 4193096
+      },
+      "depends": "python3 (>= 3.11), python3-pip, python3-venv,\npython3-pil, python3-pygame, python3-numpy,\npython3-evdev, python3-yaml, python3-setuptools,\npython3-rpi.gpio, python3-spidev,\npython3-websockets, python3-bleak, python3-scapy,\npython3-aiohttp, python3-cryptography, python3-qrcode,\nlibjpeg62-turbo | libjpeg8, libfreetype6, libsdl2-2.0-0, libsdl2-image-2.0-0,\nreaver, bluez, iw",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/flint_icon_store.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/00_home.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/00_home_list.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/01_home_carousel.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/20_codegotchi.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/05_sysmon_dashboard.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/06_deauth_running.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/flint_icon_store.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/00_home.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/00_home_list.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/01_home_carousel.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/20_codegotchi.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/05_sysmon_dashboard.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flint/screenshots/06_deauth_running.png"
       ]
     },
     {
@@ -1173,6 +1237,113 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/memories.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/sdr-cal.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/adsb.png"
+      ]
+    },
+    {
+      "uuid": "0c1808a0-6a5d-54df-95fc-b1060d126167",
+      "share_code": "ZSKY",
+      "title": "ZeroSky",
+      "summary": "Pocket AR planetarium: point the device at the sky and see what is there",
+      "description": "ZeroSky shows the real sky, live. It computes the stars, constellations, planets, Sun and Moon for the time and your position, and draws them in the direction you point the CardputerZero.\n\n- Sky: 5,070 stars, 605 Messier, NGC and IC objects, constellation figures with their names, and the Solar System. The star limit follows daylight and twilight.\n- Pointing: the IMU follows the device. Calibrate the compass outdoors with a guided figure 8 and it also finds true north; without it, align north with the arrows.\n- Find: type a name, and an arrow and rising beeps lead you to the object.\n- Camera: draw the sky over the live image and align it with the stars you see.\n- Red night theme, blue day theme, location by city, coordinates or GPS.\n\nEverything runs on the device, with no network. Press H for help in seven languages. Pointing accuracy and the camera lens field (an estimated 62.2 degrees) are not yet measured against the night sky.",
+      "locales": {
+        "en": {
+          "summary": "Pocket AR planetarium: point the device at the sky and see what is there"
+        },
+        "it": {
+          "summary": "Planetario AR tascabile: punta il device verso il cielo e scopri cosa c'è"
+        },
+        "fr": {
+          "summary": "Planétarium AR de poche : pointez l'appareil vers le ciel et explorez-le"
+        },
+        "de": {
+          "summary": "AR-Planetarium für die Tasche: zum Himmel richten und Sterne entdecken"
+        },
+        "es": {
+          "summary": "Planetario RA de bolsillo: apunta al cielo y descubre sus objetos"
+        },
+        "ja": {
+          "summary": "ポケットARプラネタリウム：空に向けて星を探そう"
+        },
+        "zh-CN": {
+          "summary": "口袋 AR 天象仪：将设备指向天空，探索星空"
+        }
+      },
+      "i18n": {
+        "en": {
+          "summary": "Pocket AR planetarium: point the device at the sky and see what is there"
+        },
+        "it": {
+          "summary": "Planetario AR tascabile: punta il device verso il cielo e scopri cosa c'è"
+        },
+        "fr": {
+          "summary": "Planétarium AR de poche : pointez l'appareil vers le ciel et explorez-le"
+        },
+        "de": {
+          "summary": "AR-Planetarium für die Tasche: zum Himmel richten und Sterne entdecken"
+        },
+        "es": {
+          "summary": "Planetario RA de bolsillo: apunta al cielo y descubre sus objetos"
+        },
+        "ja": {
+          "summary": "ポケットARプラネタリウム：空に向けて星を探そう"
+        },
+        "zh-CN": {
+          "summary": "口袋 AR 天象仪：将设备指向天空，探索星空"
+        }
+      },
+      "categories": [
+        "Education"
+      ],
+      "author": {
+        "github": "andreahaku",
+        "display_name": "Andrea Salvatore (IU4APC)"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-11-01T09:43:34+00:00",
+      "updated_at": "2026-11-01T09:43:34+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/andreahaku/zerosky",
+      "download": {
+        "type": "deb",
+        "package": "zerosky",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosky_1.0.0_arm64.deb",
+        "md5": "a2dd07cc351eb81a3913d7d2180d6e2e",
+        "sha256": "f129ab159f3a21081456f07f5a212f82ff0b45e1999b3a99be4be8017ac1a8f5",
+        "size": 2662078
+      },
+      "depends": "rpicam-apps-core, fonts-droid-fallback, pipewire-alsa, libasound2t64 (>= 1.0.16), libc6 (>= 2.38), libfmt10 (>= 10.1.1+ds1), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.0), libpng16-16t64 (>= 1.6.46), libstdc++6 (>= 13.1)",
+      "permissions": {
+        "camera": true,
+        "microphone": false,
+        "imu": true,
+        "network": false,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosky/zerosky.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosky/screenshots/sky.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosky/screenshots/find-on-screen.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosky/screenshots/find-arrow.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosky/screenshots/sky-day.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosky/screenshots/calibration.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosky/screenshots/find.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosky/zerosky.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosky/screenshots/sky.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosky/screenshots/find-on-screen.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosky/screenshots/find-arrow.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosky/screenshots/sky-day.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosky/screenshots/calibration.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosky/screenshots/find.png"
       ]
     },
     {
