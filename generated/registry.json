@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-04T21:05:18+08:00",
+  "generated_at": "2026-11-05T02:08:24+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -633,6 +633,84 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/key-dash/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/key-dash/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/key-dash/screenshots/screenshot-4.png"
+      ]
+    },
+    {
+      "uuid": "c3575908-bcd5-5f6e-9b56-9ea5b304fa7f",
+      "share_code": "LESP",
+      "title": "Launcher ESP Flasher",
+      "summary": "ESP Flasher for Cardputer Zero, flash any M5Stack device with M5Burner firmware",
+      "description": "Browse the LauncherHub catalogue of ESP32 firmwares, filter and sort by device, preview cover art, pick a specific version, and flash straight to any connected ESP32 over USB — all from the CardputerZero, no PC required. Includes an offline mode to flash any local .bin file from the filesystem.",
+      "locales": {
+        "ja": {
+          "summary": "M5Burner のファームウェアを M5Stack デバイスに書き込む ESP32 フラッシャー"
+        },
+        "zh-CN": {
+          "summary": "ESP32 固件浏览与烧录工具，为任意 M5Stack 设备烧录 M5Burner 固件"
+        }
+      },
+      "i18n": {
+        "ja": {
+          "summary": "M5Burner のファームウェアを M5Stack デバイスに書き込む ESP32 フラッシャー"
+        },
+        "zh-CN": {
+          "summary": "ESP32 固件浏览与烧录工具，为任意 M5Stack 设备烧录 M5Burner 固件"
+        }
+      },
+      "categories": [
+        "Hardware & IoT",
+        "System Tools"
+      ],
+      "author": {
+        "github": "bmorcelli",
+        "display_name": "bmorcelli"
+      },
+      "version": "0.0.6-m5stack1",
+      "published_at": "2026-11-04T16:42:42+00:00",
+      "updated_at": "2026-11-04T16:42:42+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/bmorcelli/LauncherESPFlasher",
+      "download": {
+        "type": "deb",
+        "package": "launcherespflasher",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/launcherespflasher_0.0.6-m5stack1_arm64.deb",
+        "md5": "e9dee2e0186e71d086588dabbeca9adc",
+        "sha256": "f08c9fc986651d0da7c74d2c5b6c0222cb4e7837547e144bb08ec44f5469fb37",
+        "size": 1196394
+      },
+      "depends": "python3, python3-pip, python3-pil, python3-numpy, python3-evdev, python3-requests, python3-qrcode, fonts-dejavu-core",
+      "permissions": {
+        "network": true,
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/Launcher_128x128.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/01-boot.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/02-device-select.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/03-firmware-list.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/04-firmware-detail.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/05-flash-progress.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/06-file-install.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/Launcher_128x128.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/01-boot.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/02-device-select.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/03-firmware-list.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/04-firmware-detail.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/05-flash-progress.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/06-file-install.png"
       ]
     },
     {
@@ -1270,6 +1348,60 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ultimate-remote/ultimate-remote_icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ultimate-remote/screenshots/screenshot-0.png"
+      ]
+    },
+    {
+      "uuid": "4da006ec-b0f9-53b8-ab26-b60b120ea595",
+      "share_code": "NETB",
+      "title": "Zero Browser",
+      "summary": "Lightweight experimental web browser for the Cardputer Zero.",
+      "description": "Browse websites, search the web and download files. Zero Browser is designed for the Cardputer Zero small screen and built-in keyboard. Choose QtWebKit for general browsing with Javascript support, or NetSurf for lightweight browsing on simpler websites.\r\n\r\nZero Browser is experimental. Some websites may reject this unfamiliar browser or fail to load due to JavaScript incompatibilities. It should not be used for sensitive activities or anything requiring security. Don't expect it to work like a regular browser capable of handling large, complex web applications. This browser is based on old WebKit revision with known unpatched vulnerabilities. Please use it carefully and avoid visiting untrusted websites and using it for transmission of sensitive data.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Media",
+        "Other"
+      ],
+      "author": {
+        "display_name": "geo-tp",
+        "github": "geo-tp"
+      },
+      "version": "1:0.1-2",
+      "published_at": "2026-11-04T15:00:04+00:00",
+      "updated_at": "2026-11-04T15:00:04+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/geo-tp/Zero-Browser",
+      "download": {
+        "type": "deb",
+        "package": "zero-browser",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-browser_1.0.1-2_arm64.deb",
+        "md5": "cbfe4bfc8f45f717128d03d775cfa99f",
+        "sha256": "8d1f2e2b7ab801e8a1bd4781d7ad9c54227470129dd23e78f61b20770f6d59b5",
+        "size": 38880836
+      },
+      "depends": "dbus-daemon, fontconfig, labwc, libbrotli1 (>= 0.6.0), libc6, libc6 (>= 2.35), libcups2 (>= 1.4.0), libdbus-1-3 (>= 1.9.14), libdrm2 (>= 2.4.62), libegl1, libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.6), libgbm1 (>= 8.1~0), libgcc-s1 (>= 4.0), libgl1, libglib2.0-0 (>= 2.37.3), libgssapi-krb5-2 (>= 1.17), libgstreamer-plugins-base1.0-0 (>= 1.2.0), libgstreamer1.0-0 (>= 1.4.0), libgtk-3-0t64, libharfbuzz0b (>= 1.6.0), libice6 (>= 1:1.0.0), libinput10 (>= 0.15.0), libjpeg62-turbo (>= 1.3.1), libmtdev1 (>= 1.0.8), libpng16-16 (>= 1.6.2-1), libsm6, libsqlite3-0 (>= 3.7.15), libssl3, libstdc++6, libstdc++6 (>= 12), libudev1 (>= 183), libwayland-client0, libwayland-client0 (>= 1.20.0), libwayland-cursor0 (>= 1.8.1), libwayland-egl1 (>= 1.15.0), libwayland-server0 (>= 1.9.91), libwebp7, libx11-6, libx11-xcb1 (>= 2:1.8.4), libxcb-glx0, libxcb-icccm4 (>= 0.4.1), libxcb-image0 (>= 0.2.1), libxcb-keysyms1 (>= 0.4.0), libxcb-randr0 (>= 1.3), libxcb-render-util0, libxcb-render0, libxcb-shape0, libxcb-shm0 (>= 1.10), libxcb-sync1, libxcb-xfixes0, libxcb-xinerama0, libxcb-xinput0 (>= 1.15), libxcb-xkb1, libxcb1 (>= 1.8), libxcomposite1 (>= 1:0.4.5), libxkbcommon-x11-0 (>= 0.5.0), libxkbcommon0 (>= 0.5.0), libxml2 (>= 2.7.4), libxrender1, libxslt1.1 (>= 1.1.25), libzstd1 (>= 1.5.2), netsurf-gtk, shared-mime-info, wlr-randr, xdg-user-dirs, zlib1g (>= 1:1.2.0)",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-browser/zero-browser_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-browser/screenshots/screenshot-0.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-browser/zero-browser_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-browser/screenshots/screenshot-0.png"
       ]
     },
     {
