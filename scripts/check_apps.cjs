@@ -27,20 +27,31 @@ state.dict = dictionaries.en;
 const names = () => getFilteredApps().map((app) => app.title).sort().join(",");
 const clear = () => { state.query = ""; state.categories.clear(); state.permissions.clear(); };
 
+// Keep filter expectations stable as the live registry gains apps.
+const registryApps = state.apps;
+state.apps = [
+  ["hardware", "Hardware", { additional_hardware: true }],
+  ["background", "Background", { background_service: true }],
+  ["motion", "Motion", { imu: true }],
+  ["combined", "Combined", { imu: true, network: true }]
+].map(([uuid, title, permissions]) => normalizeApp({
+  uuid, title, permissions, categories: ["System Tools"]
+}));
 state.permissions.add("additional_hardware");
-assert.equal(names(), "MeshTerm,RFID,RaspyJack,Retro-Zero,ZeroRadio");
+assert.equal(names(), "Hardware");
 clear(); state.permissions.add("background_service");
-assert.equal(names(), "RaspyJack");
+assert.equal(names(), "Background");
 clear(); state.permissions.add("imu");
-assert.equal(names(), state.apps.some((app) => app.title === "Tools") ? "RaspyJack,Tools" : "RaspyJack");
+assert.equal(names(), "Combined,Motion");
 state.permissions.add("network");
-assert.equal(names(), "RaspyJack", "Multiple permissions must all match");
+assert.equal(names(), "Combined", "Multiple permissions must all match");
 clear(); state.categories.add("Education");
 assert.equal(names(), "");
 renderAppsPage();
 assert.ok(appRoot.innerHTML.includes("No apps available"));
 assert.ok(!appRoot.innerHTML.includes("disabled"), "Empty categories remain selectable");
 clear();
+state.apps = registryApps;
 
 const catalogApps = state.apps;
 const catalogSort = state.sort;

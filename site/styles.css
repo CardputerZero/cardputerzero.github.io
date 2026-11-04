@@ -340,7 +340,8 @@ img {
 .home-feature {
   display: grid;
   grid-column: span 8;
-  grid-template-rows: minmax(320px, 1fr) auto;
+  grid-template-rows: auto auto;
+  align-self: start;
   min-width: 0;
   overflow: hidden;
   border: 1px solid var(--color-border);
@@ -417,9 +418,9 @@ img {
 .home-banner {
   position: relative;
   min-width: 0;
+  aspect-ratio: 2400 / 1000;
   margin: 0;
   overflow: hidden;
-  background: #081522;
 }
 
 .home-banner img {
@@ -427,7 +428,8 @@ img {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
 }
 
 .home-page .registry-panel {
@@ -2128,8 +2130,12 @@ code {
   }
 
   .nav-toggle {
-    display: inline-grid;
-    place-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 0;
     width: 38px;
     height: 38px;
     border: 1px solid var(--color-border);
@@ -2141,7 +2147,7 @@ code {
     display: block;
     width: 16px;
     height: 2px;
-    margin: 2px 0;
+    border-radius: 1px;
     background: var(--color-text);
   }
 
@@ -2229,7 +2235,7 @@ code {
 
   .home-banner {
     min-height: 0;
-    aspect-ratio: 1480 / 940;
+    aspect-ratio: 3 / 2;
   }
 
   .home-page .registry-panel {

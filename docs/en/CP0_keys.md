@@ -54,7 +54,7 @@ fn + Letter **N** = Standard **End** key<br>
 
 ## Recommended Key Mapping Design
 
-The CardputerZero display is aligned with the **4~8** number keys below it. It is recommended to use these five keys for the most frequently used actions. As shown below, display an icon and/or text label at the bottom of the screen to indicate the function of each key, with a short vertical line pointing to the corresponding key. The recommended **center** X coordinates of the five icons are `180, 236, 292, 348, 404`, the recommended Y coordinate is `153`, and the recommended icon size is `22 * 22`.
+The CardputerZero display is aligned with the **4~8** number keys below it. It is recommended to use these five keys for the most frequently used actions. As shown below, display an icon and/or text label at the bottom of the screen to indicate the function of each key, with a short vertical line pointing to the corresponding key. The recommended **center** X coordinates of the five icons are `49, 105, 161, 217, 273`, the recommended Y coordinate is `153`, and the recommended icon size is `22 * 22`.
 
 ![screen_keys_1](assets/docs/screen_keys_1.png){width=60%}
 

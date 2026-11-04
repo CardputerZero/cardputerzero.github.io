@@ -1,4 +1,8 @@
-:root {
+/* Complete upstream palette for controls not overridden below. */
+@import url("https://giscus.app/themes/dark.css");
+
+:root,
+main {
   color-scheme: dark;
   --color-prettylights-syntax-comment: #5f7a68;
   --color-prettylights-syntax-constant: #64d2ff;
@@ -32,7 +36,7 @@
   --color-prettylights-syntax-constant-other-reference-link: #64d2ff;
   --color-fg-default: #d8f3df;
   --color-fg-muted: #88a894;
-  --color-fg-subtle: #5f7a68;
+  --color-fg-subtle: #88a894;
   --color-canvas-default: #020403;
   --color-canvas-overlay: #07100c;
   --color-canvas-inset: #020403;

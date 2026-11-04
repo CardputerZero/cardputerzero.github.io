@@ -12,7 +12,7 @@ const dictionaries = Object.fromEntries(["zh-CN", "en", "ja"].map((locale) => [
 const registry = JSON.parse(fs.readFileSync(path.join(root, "generated/registry.json"), "utf8"));
 const node = { innerHTML: "", dataset: {} };
 const toc = { innerHTML: "" };
-const chrome = { classList: { remove() {} }, focus() {} };
+const chrome = { classList: { remove() {} }, focus() {}, setAttribute() {} };
 const app = {
   html: "",
   get innerHTML() { return this.html; },
@@ -68,7 +68,7 @@ vm.runInContext(source + `
     render();
     assert.ok(!appRoot.innerHTML.includes("wip-banner"), "The published homepage has no work-in-progress notice");
     assert.equal((appRoot.innerHTML.match(/<h1\\b/g) || []).length, 1);
-    assert.ok(appRoot.innerHTML.includes('src="assets/home-store.png"'));
+    assert.ok(appRoot.innerHTML.includes('src="assets/home-apps.png"'));
     assert.ok(appRoot.innerHTML.includes('alt="' + dictionaries[locale].home.bannerAlt + '"'));
     assert.ok(appRoot.innerHTML.includes('href="https://dev.cardputer.cc"'));
     assert.equal((appRoot.innerHTML.match(/class="document-card"/g) || []).length, DOCUMENTS.length);

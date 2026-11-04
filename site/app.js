@@ -103,7 +103,8 @@ async function init() {
   });
 
   navToggle.addEventListener("click", () => {
-    nav.classList.toggle("open");
+    const isOpen = nav.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
   });
 
   try {
@@ -223,6 +224,7 @@ function render() {
   } else if (route.name === "document") {
     renderDocument(route.slug);
     nav.classList.remove("open");
+    navToggle.setAttribute("aria-expanded", "false");
     appRoot.focus({ preventScroll: true });
     return;
   } else if (route.name === "registry") {
@@ -238,6 +240,7 @@ function render() {
     appRoot.insertAdjacentHTML("afterbegin", renderWipBanner());
   }
   nav.classList.remove("open");
+  navToggle.setAttribute("aria-expanded", "false");
   appRoot.focus({ preventScroll: true });
 }
 
@@ -291,7 +294,7 @@ function renderHome() {
       <div class="home-grid">
         <div class="home-feature">
           <figure class="home-banner">
-            <img src="assets/home-store.png" width="1480" height="940" alt="${escapeAttr(t("home.bannerAlt"))}" fetchpriority="high">
+            <img src="assets/home-apps.png" width="2400" height="1000" alt="${escapeAttr(t("home.bannerAlt"))}" fetchpriority="high">
           </figure>
           <div class="home-actions">
             <a class="button" href="#/apps">
@@ -729,7 +732,7 @@ function mountGiscus(app) {
 }
 
 function giscusThemeUrl() {
-  return new URL("site/giscus-theme.css", document.baseURI).href;
+  return new URL("site/giscus-theme.css?v=20261104", document.baseURI).href;
 }
 
 function giscusLang() {
