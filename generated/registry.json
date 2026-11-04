@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-04T14:23:15+08:00",
+  "generated_at": "2026-11-04T21:05:18+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -485,6 +485,92 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fxcam/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fxcam/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fxcam/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "d4590eff-84b2-5572-9e66-4c09138a19aa",
+      "share_code": "GMLV",
+      "title": "Gemini Live",
+      "summary": "Live speech-to-speech AI voice assistant with streaming transcripts.",
+      "description": "Gemini Live turns the Cardputer Zero into a real-time conversational voice assistant powered by the Google Gemini Live API (BidiGenerateContent).\n\nSpeak naturally into the built-in microphone and hear spoken replies through the speaker while both sides of the conversation stream live on the 320x170 screen — user prompts anchored on the right and assistant replies on the left, each with an inline voice waveform indicator. Press ESC or key 6 while the assistant is speaking to interrupt the reply and immediately start listening again, or press key 5 to clear the history and start a fresh conversation context.\n\nIn Settings, configure your Google AI Studio API key (with a built-in QR code link and Ctrl+V clipboard paste), pick from live-capable Gemini models (including extended-thinking models), select a prebuilt voice (Kore, Puck, Charon, Fenrir, Aoede, Leda, Orus, Vesta, Zephyr), and customize the system instructions using the full-screen English/Ukrainian (EN/UA) keyboard editor with Sym, Shift, Fn, Ctrl, Alt layer highlights and Ctrl+C / Ctrl+V clipboard support.",
+      "locales": {
+        "uk": {
+          "title": "Gemini Live",
+          "summary": "Голосовий AI-асистент Gemini у реальному часі з транскрипцією розмови."
+        },
+        "zh-CN": {
+          "title": "Gemini Live",
+          "summary": "基于 Google Gemini Live API 的实时语音对话助手，支持双向语音与实时字幕。"
+        },
+        "ja": {
+          "title": "Gemini Live",
+          "summary": "Google Gemini Live API によるリアルタイム音声対話・文字起こしアシスタント。"
+        }
+      },
+      "i18n": {
+        "uk": {
+          "title": "Gemini Live",
+          "summary": "Голосовий AI-асистент Gemini у реальному часі з транскрипцією розмови."
+        },
+        "zh-CN": {
+          "title": "Gemini Live",
+          "summary": "基于 Google Gemini Live API 的实时语音对话助手，支持双向语音与实时字幕。"
+        },
+        "ja": {
+          "title": "Gemini Live",
+          "summary": "Google Gemini Live API によるリアルタイム音声対話・文字起こしアシスタント。"
+        }
+      },
+      "categories": [
+        "AI",
+        "Lifestyle"
+      ],
+      "author": {
+        "github": "d4rkmen",
+        "display_name": "d4rkmen"
+      },
+      "version": "0.1.0-1",
+      "published_at": "2026-11-04T11:54:43+00:00",
+      "updated_at": "2026-11-04T11:54:43+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/d4rkmen/geminilive",
+      "download": {
+        "type": "deb",
+        "package": "geminilive",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/geminilive_0.1.0-1_arm64.deb",
+        "md5": "94623063d3ccc96ca0a7a58d90064c9f",
+        "sha256": "5144d129f75582095232e695a9c18ad677532ca47262a8c8b8bbbc05aecb9388",
+        "size": 3454970
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libpipewire-0.3-0t64 | libpipewire-0.3-0, libfreetype6, libpng16-16t64 | libpng16-16, libjpeg62-turbo, zlib1g, libcurl4t64 | libcurl4",
+      "permissions": {
+        "camera": false,
+        "microphone": true,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/geminilive_256.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/screenshots/chat.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/screenshots/settings.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/screenshots/apikey-qr.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/screenshots/editor.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/geminilive_256.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/screenshots/chat.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/screenshots/settings.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/screenshots/apikey-qr.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/screenshots/editor.png"
       ]
     },
     {
