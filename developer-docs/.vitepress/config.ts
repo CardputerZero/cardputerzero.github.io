@@ -5,6 +5,13 @@ export default defineConfig({
   description: 'Documentation for M5Stack CardputerZero',
   ignoreDeadLinks: true,
   base: '/docs/',
+  head: [
+    ['script', {
+      src: 'https://analytics.m5stack.com/api/script.js',
+      'data-site-id': '12949b7162b4',
+      defer: '',
+    }],
+  ],
   locales: {
     root: {
       label: 'English',
