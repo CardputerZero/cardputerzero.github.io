@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-05T02:08:24+08:00",
+  "generated_at": "2026-11-05T04:19:25+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1368,7 +1368,7 @@
       },
       "version": "1:0.1-2",
       "published_at": "2026-11-04T15:00:04+00:00",
-      "updated_at": "2026-11-04T15:00:04+00:00",
+      "updated_at": "2026-11-04T20:14:07+00:00",
       "review": {
         "status": "approved"
       },
@@ -1390,7 +1390,7 @@
         "external_display": false,
         "imu": false,
         "microphone": false,
-        "network": false
+        "network": true
       },
       "risk_flags": [],
       "assets": {
