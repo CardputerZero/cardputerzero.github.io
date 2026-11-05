@@ -254,7 +254,7 @@
   },
   "search": {
     "label": "搜索应用",
-    "placeholder": "搜索名称、作者、分类、包名或分享码"
+    "placeholder": "名称 / 作者 / 分享码"
   },
   "sort": {
     "label": "排序",
@@ -482,7 +482,7 @@
   },
   "documents": {
     "eyebrow": "DOCUMENTATION",
-    "title": "文档中心",
+    "title": "开发者文档",
     "lead": "查阅按键规范、应用开发规范和应用提交指南。",
     "portal": {
       "eyebrow": "开发者门户",
@@ -492,7 +492,7 @@
     },
     "open": "打开文档",
     "readMore": "查看细节",
-    "back": "返回文档中心",
+    "back": "返回开发者文档",
     "loading": "正在加载文档...",
     "toc": "目录",
     "noToc": "这个文档没有可生成目录的标题。",
@@ -533,7 +533,12 @@
     }
   },
   "pagination": {
-    "perPage": "每页"
+    "perPage": "每页",
+    "label": "应用分页",
+    "previous": "上一页",
+    "next": "下一页",
+    "page": "第 {page} 页",
+    "range": "{start}–{end} / 共 {total} 个"
   },
   "permissionStatements": {
     "camera": "访问摄像头",

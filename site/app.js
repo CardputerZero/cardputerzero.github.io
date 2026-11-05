@@ -1,8 +1,8 @@
 const REGISTRY_URL = "generated/registry.json";
 // The app grid renders 3 columns, so page sizes are multiples of 3 to keep
 // full rows. The user's choice persists in localStorage.
-const DEFAULT_PAGE_SIZE = 30;
-const PAGE_SIZE_OPTIONS = [6, 12, 18, 30, 60, 90];
+const DEFAULT_PAGE_SIZE = 12;
+const PAGE_SIZE_OPTIONS = [12, 24, 48];
 const PAGE_SIZE_STORAGE_KEY = "cz_apps_page_size";
 const APP_CATEGORIES = [
   "System Tools", "Development", "Hardware & IoT", "Security", "Radio & Comms",
@@ -313,7 +313,7 @@ function renderHome() {
           </div>
           <a class="button secondary" href="#/documents">${t("actions.viewAll")}</a>
         </div>
-        <div class="documents-grid">${DOCUMENTS.map((doc) => renderDocumentCard(doc, "h3", false)).join("")}</div>
+        <div class="documents-grid">${DOCUMENTS.map((doc) => renderDocumentCard(doc, "h3")).join("")}</div>
       </section>
       <section class="home-recent">
         <div class="section-head">
@@ -366,6 +366,7 @@ function renderRegistryPanel() {
 
 function renderAppsPage() {
   const existingFilters = document.querySelector("#filters");
+  const filtersScrollTop = existingFilters?.scrollTop || 0;
   if (existingFilters) {
     state.filtersOpen = existingFilters.classList.contains("open");
   }
@@ -380,9 +381,7 @@ function renderAppsPage() {
     <section class="route-panel apps-page">
       <div class="section-head">
         <div>
-          <p class="eyebrow">${t("apps.eyebrow")}</p>
           <h1>${t("apps.title")}</h1>
-          <p class="lead">${t("apps.lead")}</p>
         </div>
       </div>
       <div class="list-layout">
@@ -404,12 +403,13 @@ function renderAppsPage() {
             </div>
           </div>
           ${pageApps.length ? `<div class="app-grid">${pageApps.map((app) => renderAppCard(app)).join("")}</div>` : `<div class="empty">${t("apps.empty")}</div>`}
-          ${renderPagination(totalPages)}
+          ${renderPagination(totalPages, filtered.length)}
         </section>
       </div>
     </section>
   `;
 
+  document.querySelector("#filters").scrollTop = filtersScrollTop;
   bindFilterEvents();
 }
 
@@ -418,7 +418,7 @@ function renderFilters() {
     category, state.apps.filter((app) => app.categories.includes(category)).length
   ]));
   return `
-    <aside class="filters ${state.filtersOpen ? "open" : ""}" id="filters">
+    <aside class="filters ${state.filtersOpen ? "open" : ""}" id="filters" tabindex="0" aria-label="${escapeAttr(t("filters.title"))}">
       <div class="filters-header">
         <h2>${t("filters.title")}</h2>
         <button class="button secondary" id="clear-filters" type="button">${t("filters.clear")}</button>
@@ -489,6 +489,7 @@ function bindFilterEvents() {
     button.addEventListener("click", () => {
       state.page = Number(button.dataset.page);
       renderAppsPage();
+      document.querySelector(".apps-results").scrollIntoView({ block: "start" });
     });
   });
 
@@ -974,16 +975,12 @@ function renderDocuments() {
     <section class="route-panel documents-index">
       <div class="section-head">
         <div>
-          <p class="eyebrow">${t("documents.eyebrow")}</p>
           <h1>${t("documents.title")}</h1>
-          <p class="lead">${t("documents.lead")}</p>
         </div>
       </div>
       <section class="notice-panel">
         <div>
-          <p class="eyebrow">${t("documents.portal.eyebrow")}</p>
           <h2>${t("documents.portal.title")}</h2>
-          <p>${t("documents.portal.body")}</p>
         </div>
         <div class="notice-actions">
           <a class="button" href="https://dev.cardputer.cc" target="_blank" rel="noopener noreferrer">${t("documents.portal.cta")} →</a>
@@ -996,13 +993,12 @@ function renderDocuments() {
   `;
 }
 
-function renderDocumentCard(doc, headingTag = "h2", showAction = true) {
+function renderDocumentCard(doc, headingTag = "h2") {
   return `
     <article class="document-card">
       <a href="#/documents/${escapeAttr(doc.slug)}">
         <${headingTag}>${escapeHtml(t(doc.titleKey))}</${headingTag}>
         <p>${escapeHtml(t(doc.summaryKey))}</p>
-        ${showAction ? `<span class="document-card-action">${escapeHtml(t("documents.open"))}</span>` : ""}
       </a>
     </article>
   `;
@@ -1550,20 +1546,34 @@ function renderNotFound() {
   `;
 }
 
-function renderPagination(totalPages) {
-  const buttons = totalPages <= 1 ? "" : Array.from({ length: totalPages }, (_, index) => {
-    const page = index + 1;
-    return `<button class="button ${page === state.page ? "" : "secondary"}" data-page="${page}" type="button">${page}</button>`;
+function renderPagination(totalPages, totalResults) {
+  const visiblePages = new Set([1, totalPages]);
+  for (let page = Math.max(1, state.page - 1); page <= Math.min(totalPages, state.page + 1); page++) {
+    visiblePages.add(page);
+  }
+  const pageButton = (page, label, options = "") => `<button class="button secondary" data-page="${page}" type="button" ${options}>${label}</button>`;
+  let previous = 0;
+  const buttons = [...visiblePages].sort((a, b) => a - b).map((page) => {
+    const gap = page > previous + 1 ? '<span class="pagination-gap" aria-hidden="true">…</span>' : "";
+    previous = page;
+    return gap + pageButton(page, page, `aria-label="${escapeAttr(t("pagination.page", { page }))}" ${page === state.page ? 'aria-current="page"' : ""}`);
   }).join("");
-  const sizeOptions = PAGE_SIZE_OPTIONS
-    .map((size) => option(String(size), String(size), String(state.pageSize)))
-    .join("");
-  const sizePicker = `
-    <label class="page-size-picker">
-      <span>${t("pagination.perPage")}</span>
-      <select class="select" id="page-size-select">${sizeOptions}</select>
-    </label>`;
-  return `<div class="pagination">${buttons}${sizePicker}</div>`;
+  const start = totalResults ? (state.page - 1) * state.pageSize + 1 : 0;
+  const end = Math.min(state.page * state.pageSize, totalResults);
+  return `
+    <nav class="pagination" aria-label="${escapeAttr(t("pagination.label"))}">
+      <span class="pagination-summary">${escapeHtml(t("pagination.range", { start, end, total: totalResults }))}</span>
+      <div class="pagination-pages">
+        ${pageButton(Math.max(1, state.page - 1), "‹", `aria-label="${escapeAttr(t("pagination.previous"))}" ${state.page === 1 ? "disabled" : ""}`)}
+        ${buttons}
+        ${pageButton(Math.min(totalPages, state.page + 1), "›", `aria-label="${escapeAttr(t("pagination.next"))}" ${state.page === totalPages ? "disabled" : ""}`)}
+      </div>
+      <label class="page-size-picker">
+        <span>${t("pagination.perPage")}</span>
+        <select class="select" id="page-size-select">${PAGE_SIZE_OPTIONS.map((size) => option(String(size), String(size), String(state.pageSize))).join("")}</select>
+      </label>
+    </nav>
+  `;
 }
 
 function renderActiveFilters() {

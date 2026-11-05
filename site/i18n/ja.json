@@ -254,7 +254,7 @@
   },
   "search": {
     "label": "アプリ検索",
-    "placeholder": "名前、作者、カテゴリ、パッケージ名、共有コードを検索"
+    "placeholder": "名前 / 作者 / コード"
   },
   "sort": {
     "label": "並び替え",
@@ -482,7 +482,7 @@
   },
   "documents": {
     "eyebrow": "DOCUMENTATION",
-    "title": "ドキュメント",
+    "title": "開発者ドキュメント",
     "lead": "キー操作規則、アプリ開発ガイドライン、提出ガイドを確認できます。",
     "portal": {
       "eyebrow": "開発者ポータル",
@@ -492,7 +492,7 @@
     },
     "open": "文書を開く",
     "readMore": "詳細を見る",
-    "back": "ドキュメントへ戻る",
+    "back": "開発者ドキュメントに戻る",
     "loading": "ドキュメントを読み込み中...",
     "toc": "目次",
     "noToc": "この文書には目次にできる見出しがありません。",
@@ -533,7 +533,12 @@
     }
   },
   "pagination": {
-    "perPage": "1ページあたり"
+    "perPage": "1ページあたり",
+    "label": "アプリのページ",
+    "previous": "前のページ",
+    "next": "次のページ",
+    "page": "{page} ページ",
+    "range": "{total} 件中 {start}–{end} 件"
   },
   "permissionStatements": {
     "camera": "カメラにアクセスする",

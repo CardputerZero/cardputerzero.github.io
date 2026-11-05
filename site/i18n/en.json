@@ -254,7 +254,7 @@
   },
   "search": {
     "label": "Search apps",
-    "placeholder": "Search name, author, category, package, or share code"
+    "placeholder": "Name / Author / ID"
   },
   "sort": {
     "label": "Sort",
@@ -482,7 +482,7 @@
   },
   "documents": {
     "eyebrow": "DOCUMENTATION",
-    "title": "Documents",
+    "title": "Developer documentation",
     "lead": "Read the keyboard rules, application development guidelines, and submission guide.",
     "portal": {
       "eyebrow": "Developer Portal",
@@ -492,7 +492,7 @@
     },
     "open": "Open document",
     "readMore": "Read details",
-    "back": "Back to documents",
+    "back": "Back to developer docs",
     "loading": "Loading document...",
     "toc": "Contents",
     "noToc": "This document has no headings for a table of contents.",
@@ -533,7 +533,12 @@
     }
   },
   "pagination": {
-    "perPage": "Per page"
+    "perPage": "Per page",
+    "label": "App pages",
+    "previous": "Previous page",
+    "next": "Next page",
+    "page": "Page {page}",
+    "range": "{start}–{end} of {total}"
   },
   "permissionStatements": {
     "camera": "Accesses the camera",
