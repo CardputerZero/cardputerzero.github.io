@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-05T04:19:25+08:00",
+  "generated_at": "2026-11-05T16:58:05+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1170,9 +1170,9 @@
         "github": "d4rkmen",
         "display_name": "d4rkmen"
       },
-      "version": "0.2.0-1",
+      "version": "0.3.0-1",
       "published_at": "2026-10-14T21:51:15+00:00",
-      "updated_at": "2026-10-14T21:51:15+00:00",
+      "updated_at": "2026-11-05T08:45:01+00:00",
       "review": {
         "status": "approved"
       },
@@ -1181,10 +1181,10 @@
       "download": {
         "type": "deb",
         "package": "telega",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/telega_0.2.0-1_arm64.deb",
-        "md5": "963f7fae170fa9f5f8e6afb44842460d",
-        "sha256": "03f61ba3670dcd5ae7ada01b3f04ba49e1572f4eb4db86f904f1f1ba9fee6291",
-        "size": 15736850
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/telega_0.3.0-1_arm64.deb",
+        "md5": "fa7e0612f43db753488203ffa802218d",
+        "sha256": "5117494ae494d2a7b09e690c8f3eb9855bfcf850237cb4357b450b9419e2379c",
+        "size": 15790874
       },
       "depends": "fonts-noto-cjk, fonts-dejavu-core, libc6 (>= 2.38), libfmt10 (>= 10.1.1+ds1), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.0), libopus0 (>= 1.1), libpipewire-0.3-0t64 (>= 0.3.8), libpng16-16t64 (>= 1.6.46), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1), zlib1g (>= 1:1.1.4)",
       "permissions": {
