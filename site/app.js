@@ -692,28 +692,25 @@ function renderDetail(id) {
           </details>
         </aside>
       </div>
-      ${renderComments(app)}
+      ${renderComments()}
     </section>
   `;
   bindCopyButtons();
   mountGiscus(app);
 }
 
-function renderComments(app) {
+function renderComments() {
   return `
     <section class="section-panel comments-panel">
-      <div class="section-head compact">
-        <div>
-          <h2>${t("detail.comments")}</h2>
-          <p>${t("detail.commentsLead")}</p>
-        </div>
-        <a class="button secondary" data-discussion-link href="${escapeAttr(discussionSearchUrl(app))}" rel="noopener noreferrer" target="_blank">${t("detail.openDiscussions")}</a>
+      <div class="comments-heading">
+        <h2>${t("detail.comments")}</h2>
+        <button class="button secondary" data-comments-compose type="button" aria-expanded="false" aria-controls="app-comments" disabled>${t("detail.commentsWrite")}</button>
       </div>
       <div class="comments-status" role="status" aria-live="polite">
         <p data-comments-status>${t("detail.commentsLoading")}</p>
         <button class="button secondary" data-comments-retry type="button" hidden>${t("detail.commentsRetry")}</button>
       </div>
-      <div class="giscus" id="giscus-${escapeAttr(app.uuid)}"></div>
+      <div class="giscus" id="app-comments"></div>
     </section>
   `;
 }
@@ -731,12 +728,8 @@ function formatFileSize(value) {
 }
 
 function discussionTerm(app) {
-  // Keep the original identity: changing public URLs must not split existing comments.
-  return `cardputerzero-app:${app.uuid}`;
-}
-
-function discussionSearchUrl(app) {
-  return `https://github.com/${GISCUS_CONFIG.repo}/discussions?discussions_q=${encodeURIComponent(`"${discussionTerm(app)}"`)}`;
+  // Use the canonical name so all interface languages share one discussion.
+  return `${app.share_code} · ${app.title}`;
 }
 
 let disposeGiscus = () => {};
@@ -748,6 +741,8 @@ function mountGiscus(app) {
   container.textContent = "";
   const status = document.querySelector("[data-comments-status]");
   const retry = document.querySelector("[data-comments-retry]");
+  const compose = document.querySelector("[data-comments-compose]");
+  compose.disabled = true;
   status.textContent = t("detail.commentsLoading");
   retry.hidden = true;
   let active = true;
@@ -771,24 +766,28 @@ function mountGiscus(app) {
       clearTimeout(timer);
       status.textContent = "";
       retry.hidden = true;
+      compose.disabled = false;
     }
-    if (message.discussion?.url) {
-      const url = safeExternalUrl(message.discussion.url);
-      const prefix = `https://github.com/${GISCUS_CONFIG.repo}/discussions/`;
-      if (url && url.startsWith(prefix) && /^\d+$/.test(url.slice(prefix.length))) {
-        document.querySelector("[data-discussion-link]").href = url;
-      }
-    }
+  };
+  const onCompose = () => {
+    const expanded = compose.getAttribute("aria-expanded") !== "true";
+    compose.setAttribute("aria-expanded", String(expanded));
+    compose.textContent = t(expanded ? "detail.commentsCollapse" : "detail.commentsWrite");
+    container.querySelector("iframe")?.contentWindow.postMessage({
+      giscus: { setConfig: { theme: giscusThemeUrl(expanded) } }
+    }, "https://giscus.app");
   };
   const onRetry = () => mountGiscus(app);
   window.addEventListener("message", onMessage);
   retry.addEventListener("click", onRetry);
+  compose.addEventListener("click", onCompose);
   timer = setTimeout(showSlow, 15000);
   disposeGiscus = () => {
     active = false;
     clearTimeout(timer);
     window.removeEventListener("message", onMessage);
     retry.removeEventListener("click", onRetry);
+    compose.removeEventListener("click", onCompose);
     script.onerror = null;
   };
 
@@ -803,10 +802,10 @@ function mountGiscus(app) {
   script.setAttribute("data-mapping", "specific");
   script.setAttribute("data-term", discussionTerm(app));
   script.setAttribute("data-strict", "1");
-  script.setAttribute("data-reactions-enabled", "1");
+  script.setAttribute("data-reactions-enabled", "0");
   script.setAttribute("data-emit-metadata", "1");
   script.setAttribute("data-input-position", "top");
-  script.setAttribute("data-theme", giscusThemeUrl());
+  script.setAttribute("data-theme", giscusThemeUrl(compose.getAttribute("aria-expanded") === "true"));
   script.setAttribute("data-lang", giscusLang());
   script.setAttribute("data-loading", "eager");
   script.onerror = () => {
@@ -816,8 +815,9 @@ function mountGiscus(app) {
   container.appendChild(script);
 }
 
-function giscusThemeUrl() {
-  return new URL("site/giscus-theme.css?v=20261104", document.baseURI).href;
+function giscusThemeUrl(expanded) {
+  const file = expanded ? "giscus-theme.css" : "giscus-compact.css";
+  return new URL(`site/${file}?v=20261105-compact`, document.baseURI).href;
 }
 
 function giscusLang() {

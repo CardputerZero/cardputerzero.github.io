@@ -1,0 +1,6 @@
+@import url("./giscus-theme.css?v=20261105-compact");
+
+/* Only collapse the main composer; inline replies stay available. */
+.gsc-comments > .gsc-comment-box {
+  display: none;
+}

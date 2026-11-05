@@ -160,3 +160,28 @@ textarea:focus {
 .markdown-body pre {
   background: var(--color-markdown-code-bg);
 }
+
+/* Keep the embedded discussion compact without changing comment controls. */
+body {
+  background: transparent;
+}
+
+.gsc-main {
+  gap: 8px;
+}
+
+.gsc-header {
+  padding-block: 4px;
+}
+
+.gsc-comment-box {
+  margin-block: 8px;
+}
+
+.gsc-comment-box-textarea {
+  min-height: 88px;
+}
+
+.gsc-timeline {
+  margin-top: 8px;
+}
