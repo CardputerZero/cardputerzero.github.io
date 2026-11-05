@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "CardputerZero Hub",
+    "title": "CardputerZero Store",
     "description": "A static CardputerZero Store registry and responsive app directory for GitHub Pages."
   },
   "nav": {
@@ -64,7 +64,7 @@
     "commentsSlow": "Comments are temporarily unavailable. Please retry.",
     "commentsRetry": "Reload comments",
     "install": "Install information",
-    "installLead": "Download the app package, or enter its share code in the device Store. Review permissions and requirements before installing.",
+    "installLead": "Enter the share code in the device Store to find this app. Review permissions and requirements before installing.",
     "permissions": "Permissions and requirements",
     "risks": "Risk notes",
     "screenshots": "Screenshots",

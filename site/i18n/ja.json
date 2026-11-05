@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "CardputerZero Hub",
+    "title": "CardputerZero Store",
     "description": "GitHub Pages 向けの CardputerZero Store registry とレスポンシブなアプリディレクトリです。"
   },
   "nav": {
@@ -64,7 +64,7 @@
     "commentsSlow": "コメントを読み込めません。再読み込みしてください。",
     "commentsRetry": "コメントを再読み込み",
     "install": "インストール情報",
-    "installLead": "アプリのパッケージをダウンロードするか、デバイスの Store に共有コードを入力してください。インストール前に権限と実行要件を確認してください。",
+    "installLead": "デバイスの Store に共有コードを入力してアプリを検索してください。インストール前に権限と実行要件を確認してください。",
     "permissions": "権限と実行要件",
     "risks": "リスク情報",
     "screenshots": "スクリーンショット",

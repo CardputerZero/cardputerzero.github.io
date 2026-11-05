@@ -132,21 +132,13 @@ img {
   font-weight: 700;
 }
 
-.brand-title,
-.brand-subtitle {
+.brand-title {
   display: block;
 }
 
 .brand-title {
   font-size: 17px;
   font-weight: 700;
-}
-
-.brand-subtitle {
-  margin-top: 2px;
-  color: var(--color-text-muted);
-  font-family: var(--font-mono);
-  font-size: 12px;
 }
 
 .nav {
@@ -1086,14 +1078,12 @@ code {
   padding: 24px;
 }
 
-.install-heading,
-.install-share {
+.install-heading {
   display: grid;
   gap: 8px;
 }
 
-.install-heading .markdown-copy,
-.install-share .meta-label {
+.install-heading .markdown-copy {
   margin: 0;
   line-height: 24px;
 }
@@ -1103,14 +1093,29 @@ code {
   gap: 16px;
 }
 
-.download-button {
-  width: 100%;
-}
-
 .meta-label {
   margin-bottom: 8px;
   color: var(--color-text-muted);
   font-size: 12px;
+}
+
+.detail-aside .meta-row > span,
+.detail-aside .meta-row > strong,
+.detail-aside .meta-row > a,
+.detail-aside .meta-row a > strong,
+.detail-aside .meta-value,
+.detail-aside .technical-info summary {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.detail-aside .meta-row strong {
+  font-weight: 400;
+}
+
+.detail-aside .meta-value {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .technical-info {
@@ -2131,10 +2136,6 @@ code {
     min-height: 64px;
   }
 
-  .brand-subtitle {
-    display: none;
-  }
-
   .brand-title {
     font-size: 15px;
   }
@@ -2199,23 +2200,42 @@ code {
     padding-left: 8px;
   }
 
+  .language-picker {
+    width: 38px;
+    height: 38px;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-control);
+    background: var(--color-surface-raised);
+  }
+
+  /* Keep the native menu's original width and typography; clip only its trigger. */
   .language-picker .select {
+    position: absolute;
+    top: -1px;
+    right: -1px;
     width: 118px;
+    height: 38px;
     min-height: 38px;
     padding: 0 26px 0 30px;
     font-size: 13px;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .language-picker:focus-within {
+    outline: 2px solid var(--color-accent-strong);
+    outline-offset: 2px;
   }
 
   .language-picker::after {
-    right: 8px;
-    width: 14px;
-    height: 14px;
+    display: none;
   }
 
   .language-icon {
-    left: 8px;
-    width: 16px;
-    height: 16px;
+    left: 9px;
+    width: 18px;
+    height: 18px;
   }
 
   .app-shell {

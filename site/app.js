@@ -310,17 +310,15 @@ function renderHome() {
         <div class="section-head">
           <div>
             <h2 id="home-documents-title">${t("home.documentsTitle")}</h2>
-            <p>${t("home.documentsLead")}</p>
           </div>
           <a class="button secondary" href="#/documents">${t("actions.viewAll")}</a>
         </div>
-        <div class="documents-grid">${DOCUMENTS.map((doc) => renderDocumentCard(doc, "h3")).join("")}</div>
+        <div class="documents-grid">${DOCUMENTS.map((doc) => renderDocumentCard(doc, "h3", false)).join("")}</div>
       </section>
       <section class="home-recent">
         <div class="section-head">
           <div>
             <h2>${t("home.featured")}</h2>
-            <p>${t("home.featuredLead")}</p>
           </div>
           <a class="button secondary" href="#/apps">${t("actions.viewAll")}</a>
         </div>
@@ -663,31 +661,24 @@ function renderDetail(id) {
             <h2>${t("detail.install")}</h2>
             <p class="markdown-copy">${t("detail.installLead")}</p>
           </div>
-          ${downloadUrl ? `<a class="button download-button" href="${escapeAttr(downloadUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("actions.download"))}</a>` : `<p>${escapeHtml(t("detail.noDownload"))}</p>`}
-          <div class="install-share">
-            <p class="meta-label">${escapeHtml(t("fields.shareCode"))}</p>
-            <div class="copy-row">
-              <code>${escapeHtml(app.share_code)}</code>
-              <button class="button secondary" data-copy="${escapeAttr(app.share_code)}" type="button">${t("actions.copy")}</button>
-            </div>
-          </div>
           <div class="meta-list">
+            ${meta(t("fields.shareCode"), app.share_code)}
             ${metaExternalLink(t("fields.author"), authorDisplayName(app), authorGithubUrl(app))}
-            ${authorWebsiteUrl(app) ? metaExternalLink(t("fields.website"), urlDisplayText(authorWebsiteUrl(app)), authorWebsiteUrl(app), true) : ""}
-            ${meta(t("fields.package"), app.download.package || "—", true)}
+            ${authorWebsiteUrl(app) ? metaExternalLink(t("fields.website"), urlDisplayText(authorWebsiteUrl(app)), authorWebsiteUrl(app)) : ""}
+            ${meta(t("fields.package"), app.download.package || "—")}
             ${meta(t("fields.version"), app.version || "—")}
             ${meta(t("fields.size"), formatFileSize(app.download.size))}
             ${meta(t("fields.updated"), formatDate(app.updated_at))}
-            ${metaExternalLink(t("fields.sourceRepo"), app.source_repo ? urlDisplayText(app.source_repo) : t("detail.notProvided"), app.source_repo, true)}
+            ${metaExternalLink(t("fields.sourceRepo"), app.source_repo ? urlDisplayText(app.source_repo) : t("detail.notProvided"), app.source_repo)}
             ${meta(t("fields.license"), app.license || t("detail.notProvided"))}
           </div>
           <details class="technical-info">
             <summary>${escapeHtml(t("detail.technicalInfo"))}</summary>
             <div class="meta-list">
-              ${renderChecksum("MD5", app.download.md5)}
-              ${renderChecksum("SHA256", app.download.sha256)}
-              ${metaExternalLink(t("fields.download"), downloadUrl, downloadUrl, true)}
-              ${meta(t("fields.uuid"), app.uuid, true)}
+              ${metaText("MD5", app.download.md5 || "—")}
+              ${metaText("SHA256", app.download.sha256 || "—")}
+              ${metaText(t("fields.download"), downloadUrl || "—")}
+              ${metaText(t("fields.uuid"), app.uuid)}
             </div>
           </details>
         </aside>
@@ -715,9 +706,8 @@ function renderComments() {
   `;
 }
 
-function renderChecksum(algorithm, value) {
-  if (!value) return "";
-  return `<div class="meta-row"><span>${escapeHtml(algorithm)}</span><div class="copy-row"><code>${escapeHtml(value)}</code><button class="button secondary" data-copy="${escapeAttr(value)}" type="button" aria-label="${escapeAttr(t("detail.copyChecksum", { algorithm }))}">${escapeHtml(t("actions.copy"))}</button></div></div>`;
+function metaText(label, value) {
+  return `<div class="meta-row"><span>${escapeHtml(label)}</span><div class="meta-value">${escapeHtml(value)}</div></div>`;
 }
 
 function formatFileSize(value) {
@@ -1006,13 +996,13 @@ function renderDocuments() {
   `;
 }
 
-function renderDocumentCard(doc, headingTag = "h2") {
+function renderDocumentCard(doc, headingTag = "h2", showAction = true) {
   return `
     <article class="document-card">
       <a href="#/documents/${escapeAttr(doc.slug)}">
         <${headingTag}>${escapeHtml(t(doc.titleKey))}</${headingTag}>
         <p>${escapeHtml(t(doc.summaryKey))}</p>
-        <span class="document-card-action">${escapeHtml(t("documents.open"))}</span>
+        ${showAction ? `<span class="document-card-action">${escapeHtml(t("documents.open"))}</span>` : ""}
       </a>
     </article>
   `;
