@@ -59,6 +59,9 @@
     "about": "概要",
     "comments": "コメントとフィードバック",
     "commentsLead": "コメントは GitHub Discussions でホストされます。各アプリは個別の discussion を使い、GitHub にログインするとコメントやリアクションを投稿できます。",
+    "commentsLoading": "GitHub のコメントに接続しています…",
+    "commentsSlow": "コメントへの接続に時間がかかっているか、一時的に利用できません。再読み込みするか、上のリンクからこのアプリの GitHub ディスカッションを開いてください。",
+    "commentsRetry": "コメントを再読み込み",
     "install": "インストール情報",
     "installLead": "アプリのパッケージをダウンロードするか、デバイスの Store に共有コードを入力してください。インストール前に権限と実行要件を確認してください。",
     "openDiscussions": "GitHub Discussions を開く",
@@ -110,7 +113,7 @@
     "title": "CardputerZero Store",
     "developersRole": "開発者の方",
     "usersRole": "ユーザーの方",
-    "developersCta": "アプリを公開",
+    "developersCta": "開発者ドキュメントを読む",
     "usersCta": "アプリを探す",
     "bannerAlt": "ゲーム、音楽、カメラ、通信などのアプリアイコンと CardputerZero"
   },
@@ -226,9 +229,9 @@
     "title": "ユーザー・開発者規約"
   },
   "registry": {
-    "status": "STORE STATUS",
     "title": "Store の概要",
     "apps": "アプリ数",
+    "developers": "開発者数",
     "updated": "カタログ更新日時",
     "targets": "対応デバイス",
     "source": "データソース"

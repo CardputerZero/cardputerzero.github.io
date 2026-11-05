@@ -164,6 +164,7 @@ function normalizeApp(app) {
   const author = app.author && typeof app.author === "object" ? app.author : {};
   return {
     ...app,
+    share_code: String(app.share_code || "").trim().toUpperCase(),
     title: app.title || app.app_name || app.download?.package || "",
     categories: app.categories || [],
     author,
@@ -205,18 +206,14 @@ function resolveInitialLocale() {
 }
 
 function render() {
+  disposeGiscus();
   const route = parseRoute();
   updateNav(route.name);
 
   if (route.name === "detail") {
     renderDetail(route.id);
   } else if (route.name === "share") {
-    const app = state.apps.find((item) => item.share_code.toLowerCase() === route.code.toLowerCase());
-    if (app) {
-      location.hash = `#/apps/${app.uuid}`;
-    } else {
-      renderNotFound();
-    }
+    renderDetail(route.code);
   } else if (route.name === "tutorial") {
     renderTutorial();
   } else if (route.name === "documents") {
@@ -301,7 +298,7 @@ function renderHome() {
               <span class="home-action-role">${t("home.usersRole")}</span>
               <span class="home-action-label">${t("home.usersCta")}</span>
             </a>
-            <a class="button secondary" href="https://dev.cardputer.cc" target="_blank" rel="noopener noreferrer">
+            <a class="button secondary" href="#/documents">
               <span class="home-action-role">${t("home.developersRole")}</span>
               <span class="home-action-label">${t("home.developersCta")}</span>
             </a>
@@ -336,15 +333,21 @@ function renderHome() {
 
 function renderRegistryPanel() {
   const registry = state.registry;
+  const developers = new Set(state.apps.map((app) =>
+    String(app.author.github || app.author.display_name || app.author.name || "").trim().toLowerCase()
+  ).filter(Boolean));
 
   return `
     <aside class="registry-panel">
-      <p class="eyebrow">${t("registry.status")}</p>
       <h2>${t("registry.title")}</h2>
       <div class="status-stack">
         <div class="status-item">
           <span class="status-label">${t("registry.apps")}</span>
           <span class="status-value">${state.apps.length}</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">${t("registry.developers")}</span>
+          <span class="status-value">${developers.size}</span>
         </div>
         <div class="status-item">
           <span class="status-label">${t("registry.updated")}</span>
@@ -569,7 +572,7 @@ function renderAppCard(app, showUpdated = false) {
   const updatedDate = showUpdated ? parseDate(app.updated_at) : null;
   return `
     <article class="app-card">
-      <a class="app-card-link" href="#/apps/${app.uuid}">
+      <a class="app-card-link" href="${escapeAttr(appHref(app))}">
         <div class="app-card-head">
           <img class="app-icon" src="${escapeAttr(app.assets.icon)}" alt="${escapeAttr(localized(app, "title"))}">
           <div class="app-title-block">
@@ -598,12 +601,29 @@ function renderAppCard(app, showUpdated = false) {
   `;
 }
 
+function appHref(app) {
+  return `#/apps/${encodeURIComponent(app.share_code || app.uuid)}`;
+}
+
+function findApp(id) {
+  let identifier;
+  try {
+    identifier = decodeURIComponent(id).toLowerCase();
+  } catch {
+    return null;
+  }
+  return state.apps.find((app) => app.uuid.toLowerCase() === identifier
+    || (app.share_code && app.share_code.toLowerCase() === identifier));
+}
+
 function renderDetail(id) {
-  const app = state.apps.find((item) => item.uuid === id);
+  const app = findApp(id);
   if (!app) {
     renderNotFound();
     return;
   }
+  // Replace the legacy entry so Back returns to the previous page, not the UUID URL.
+  if (location.hash !== appHref(app)) history.replaceState(null, "", appHref(app));
   const screenshots = app.assets.screenshots.length
     ? `<div class="screenshots">${app.assets.screenshots.map((src, index) => `<img class="screenshot" src="${escapeAttr(src)}" alt="${escapeAttr(t("detail.screenshotAlt", { title: localized(app, "title"), number: index + 1 }))}" loading="lazy">`).join("")}</div>`
     : `<p class="markdown-copy">${escapeHtml(t("detail.noScreenshots"))}</p>`;
@@ -687,7 +707,11 @@ function renderComments(app) {
           <h2>${t("detail.comments")}</h2>
           <p>${t("detail.commentsLead")}</p>
         </div>
-        <a class="button secondary" href="https://github.com/${GISCUS_CONFIG.repo}/discussions/categories/app-comments" rel="noopener noreferrer" target="_blank">${t("detail.openDiscussions")}</a>
+        <a class="button secondary" data-discussion-link href="${escapeAttr(discussionSearchUrl(app))}" rel="noopener noreferrer" target="_blank">${t("detail.openDiscussions")}</a>
+      </div>
+      <div class="comments-status" role="status" aria-live="polite">
+        <p data-comments-status>${t("detail.commentsLoading")}</p>
+        <button class="button secondary" data-comments-retry type="button" hidden>${t("detail.commentsRetry")}</button>
       </div>
       <div class="giscus" id="giscus-${escapeAttr(app.uuid)}"></div>
     </section>
@@ -706,10 +730,67 @@ function formatFileSize(value) {
   return `${new Intl.NumberFormat(state.locale, { maximumFractionDigits: index ? 1 : 0 }).format(value / 1024 ** index)} ${units[index]}`;
 }
 
+function discussionTerm(app) {
+  // Keep the original identity: changing public URLs must not split existing comments.
+  return `cardputerzero-app:${app.uuid}`;
+}
+
+function discussionSearchUrl(app) {
+  return `https://github.com/${GISCUS_CONFIG.repo}/discussions?discussions_q=${encodeURIComponent(`"${discussionTerm(app)}"`)}`;
+}
+
+let disposeGiscus = () => {};
+
 function mountGiscus(app) {
+  disposeGiscus();
   const container = document.querySelector(".giscus");
   if (!container) return;
   container.textContent = "";
+  const status = document.querySelector("[data-comments-status]");
+  const retry = document.querySelector("[data-comments-retry]");
+  status.textContent = t("detail.commentsLoading");
+  retry.hidden = true;
+  let active = true;
+  let timer;
+  const showSlow = () => {
+    if (!active || !container.isConnected) return;
+    status.textContent = t("detail.commentsSlow");
+    retry.hidden = false;
+  };
+  const onMessage = (event) => {
+    const frame = container.querySelector("iframe");
+    if (event.origin !== "https://giscus.app" || !frame || event.source !== frame.contentWindow) return;
+    const message = event.data?.giscus;
+    if (!message) return;
+    if (typeof message.error === "string" && !message.error.includes("Discussion not found")) {
+      clearTimeout(timer);
+      showSlow();
+      return;
+    }
+    if (message.resizeHeight > 0 || message.discussion) {
+      clearTimeout(timer);
+      status.textContent = "";
+      retry.hidden = true;
+    }
+    if (message.discussion?.url) {
+      const url = safeExternalUrl(message.discussion.url);
+      const prefix = `https://github.com/${GISCUS_CONFIG.repo}/discussions/`;
+      if (url && url.startsWith(prefix) && /^\d+$/.test(url.slice(prefix.length))) {
+        document.querySelector("[data-discussion-link]").href = url;
+      }
+    }
+  };
+  const onRetry = () => mountGiscus(app);
+  window.addEventListener("message", onMessage);
+  retry.addEventListener("click", onRetry);
+  timer = setTimeout(showSlow, 15000);
+  disposeGiscus = () => {
+    active = false;
+    clearTimeout(timer);
+    window.removeEventListener("message", onMessage);
+    retry.removeEventListener("click", onRetry);
+    script.onerror = null;
+  };
 
   const script = document.createElement("script");
   script.src = "https://giscus.app/client.js";
@@ -720,14 +801,18 @@ function mountGiscus(app) {
   script.setAttribute("data-category", GISCUS_CONFIG.category);
   script.setAttribute("data-category-id", GISCUS_CONFIG.categoryId);
   script.setAttribute("data-mapping", "specific");
-  script.setAttribute("data-term", `cardputerzero-app:${app.uuid}`);
+  script.setAttribute("data-term", discussionTerm(app));
   script.setAttribute("data-strict", "1");
   script.setAttribute("data-reactions-enabled", "1");
-  script.setAttribute("data-emit-metadata", "0");
+  script.setAttribute("data-emit-metadata", "1");
   script.setAttribute("data-input-position", "top");
   script.setAttribute("data-theme", giscusThemeUrl());
   script.setAttribute("data-lang", giscusLang());
-  script.setAttribute("data-loading", "lazy");
+  script.setAttribute("data-loading", "eager");
+  script.onerror = () => {
+    clearTimeout(timer);
+    showSlow();
+  };
   container.appendChild(script);
 }
 

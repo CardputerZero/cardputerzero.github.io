@@ -439,11 +439,6 @@ img {
   padding: 24px;
 }
 
-.home-page .registry-panel .eyebrow {
-  margin: 0 0 8px;
-  line-height: 16px;
-}
-
 .home-page h2 {
   line-height: 32px;
 }
@@ -593,7 +588,7 @@ h3 {
 
 .registry-panel .status-item {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
-  align-items: start;
+  align-items: center;
 }
 
 .registry-panel .status-value {
@@ -1278,6 +1273,23 @@ code {
 
 .comments-panel {
   margin-top: 18px;
+}
+
+.comments-status {
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+.comments-status p:empty {
+  display: none;
+}
+
+.comments-status [hidden] {
+  display: none;
+}
+
+.comments-status .button:not([hidden]) {
+  margin-block: 8px 16px;
 }
 
 .comments-panel .section-head p {
@@ -2050,6 +2062,11 @@ code {
 }
 
 @media (max-width: 767px) {
+  :root {
+    --mobile-gutter-left: max(20px, env(safe-area-inset-left, 0px));
+    --mobile-gutter-right: max(20px, env(safe-area-inset-right, 0px));
+  }
+
   #app:has(> .home-page),
   #app:has(> .apps-page),
   #app:has(> .app-detail),
@@ -2107,7 +2124,9 @@ code {
 
   .shell,
   .app-shell {
-    width: min(100% - 20px, 1240px);
+    width: auto;
+    margin-left: var(--mobile-gutter-left);
+    margin-right: var(--mobile-gutter-right);
   }
 
   .header {
@@ -2155,8 +2174,8 @@ code {
     position: absolute;
     z-index: 4;
     top: 64px;
-    left: 10px;
-    right: 10px;
+    left: var(--mobile-gutter-left);
+    right: var(--mobile-gutter-right);
     display: none;
     padding: 10px;
     border: 1px solid var(--color-border);
@@ -2166,10 +2185,16 @@ code {
 
   .nav.open {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    justify-content: stretch;
   }
 
   .nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 40px;
+    text-align: center;
   }
 
   .compact-select {
@@ -2242,10 +2267,6 @@ code {
     padding: 16px;
   }
 
-  .home-page .registry-panel .eyebrow {
-    display: none;
-  }
-
   .home-page .registry-panel h2 {
     font-size: 18px;
     line-height: 24px;
@@ -2259,7 +2280,7 @@ code {
 
   .home-page .status-item {
     grid-template-columns: minmax(0, 1fr);
-    align-content: start;
+    align-content: center;
     gap: 4px;
     padding: 0;
     border: 0;

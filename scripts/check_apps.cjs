@@ -10,9 +10,14 @@ const registry = JSON.parse(fs.readFileSync(process.argv[2] || path.join(root, "
 const dictionaries = Object.fromEntries(["zh-CN", "en", "ja"].map((locale) => [
   locale, JSON.parse(fs.readFileSync(path.join(root, `site/i18n/${locale}.json`), "utf8"))
 ]));
-const element = { innerHTML: "", addEventListener() {}, focus() {}, classList: { contains: () => false } };
+const element = {
+  innerHTML: "", addEventListener() {}, setAttribute() {}, removeAttribute() {}, focus() {},
+  classList: { contains: () => false, remove() {} }
+};
+const location = { hash: "#/" };
 const context = vm.createContext({
-  assert, registry, dictionaries, URL, console,
+  assert, registry, dictionaries, URL, console, location, setTimeout, clearTimeout,
+  history: { replaceState(_state, _title, hash) { location.hash = hash; } },
   document: {
     querySelector: (selector) => selector === ".giscus" ? null : element,
     querySelectorAll: () => [], addEventListener() {}
@@ -100,7 +105,8 @@ assert.equal(formatFileSize(undefined), "—");
 const card = renderAppCard(sample);
 assert.ok(card.includes("Display only"));
 assert.ok(card.includes("1 MiB"), "Cards display the package size");
-assert.ok(!card.includes("EXAM"), "Cards do not display the share code");
+assert.ok(card.includes('href="#/apps/EXAM"'), "Cards use readable share-code URLs");
+assert.ok(!card.includes('class="share-code"'), "Share codes are not displayed as card labels");
 assert.ok(!card.includes("undefined") && !card.includes("@undefined"));
 assert.ok(!card.includes("Approved") && !card.includes("unknown"));
 
@@ -139,6 +145,34 @@ assert.ok(names().includes("MeshTerm"), "Search must recognize translated catego
 clear(); state.query = "fontpreview";
 assert.equal(names(), "FontPreview", "English and package search work in Chinese");
 clear();
+for (const app of state.apps) {
+  assert.equal(findApp(app.uuid), app);
+  assert.equal(findApp(app.share_code.toLowerCase()), app);
+  assert.equal(findApp(encodeURIComponent(app.share_code)), app);
+  location.hash = "#/apps/" + app.uuid;
+  render();
+  assert.equal(location.hash, appHref(app), "UUID links redirect to the canonical short URL");
+  location.hash = "#/s/" + app.share_code.toLowerCase();
+  render();
+  assert.equal(location.hash, appHref(app), "Legacy share links also redirect to the canonical URL");
+  assert.equal(discussionTerm(app), "cardputerzero-app:" + app.uuid,
+    "Changing public URLs must retain the original discussion identity");
+  assert.ok(renderComments(app).includes(escapeAttr(discussionSearchUrl(app))));
+}
+assert.equal(findApp("%E0%A4%A"), null, "Malformed encoded URLs do not crash the page");
+assert.equal(findApp("UNKNOWN-CODE"), undefined);
+location.hash = "#/apps/UNKNOWN-CODE";
+render();
+assert.ok(appRoot.innerHTML.includes(t("notFound.title")));
+for (const locale of ["zh-CN", "en", "ja"]) {
+  state.locale = locale; state.dict = dictionaries[locale];
+  renderHome();
+  assert.ok(!appRoot.innerHTML.includes("STORE STATUS"));
+  assert.ok(appRoot.innerHTML.includes(t("registry.developers")));
+  assert.ok(appRoot.innerHTML.includes(t("registry.targets")));
+  assert.ok(appRoot.innerHTML.includes('<a class="button secondary" href="#/documents">'));
+}
+state.locale = "zh-CN"; state.dict = dictionaries["zh-CN"];
 state.apps.push(normalizeApp({
   uuid: "missing-data", title: "Missing", share_code: "MISS", summary: "Summary fallback",
   author: { display_name: "Author" }, assets: { icon: "icon.png", screenshots: [] },
@@ -152,5 +186,75 @@ assert.ok(!appRoot.innerHTML.includes('class="screenshot"'));
 assert.ok(!appRoot.innerHTML.includes("无敏感权限"));
 const allFalse = normalizeApp({ permissions: Object.fromEntries(APP_PERMISSIONS.map((key) => [key, false])) });
 assert.ok(renderPermissionDeclarations(allFalse).includes("未声明需要上述权限或能力"));
-console.log("Passed app metadata, filters, localization, and detail checks for " + registry.apps.length + " apps in 3 languages.");
+
+// Exercise the iframe lifecycle without connecting to GitHub or creating comments.
+const originalQuerySelector = document.querySelector;
+const originalSetTimeout = setTimeout;
+const originalClearTimeout = clearTimeout;
+const timers = new Map();
+let nextTimer = 0;
+setTimeout = (callback) => { timers.set(++nextTimer, callback); return nextTimer; };
+clearTimeout = (id) => timers.delete(id);
+const messageHandlers = new Set();
+window.addEventListener = (type, handler) => { if (type === "message") messageHandlers.add(handler); };
+window.removeEventListener = (type, handler) => { if (type === "message") messageHandlers.delete(handler); };
+const retryHandlers = new Set();
+const retryButton = {
+  hidden: true,
+  addEventListener: (_type, handler) => retryHandlers.add(handler),
+  removeEventListener: (_type, handler) => retryHandlers.delete(handler)
+};
+const loadingStatus = { textContent: "" };
+const discussionLink = { href: discussionSearchUrl(sample) };
+const frame = { contentWindow: {} };
+const scripts = [];
+const container = {
+  isConnected: true, textContent: "",
+  querySelector: () => frame,
+  appendChild: (script) => scripts.push(script)
+};
+document.baseURI = "https://cardputer.cc/";
+document.querySelector = (selector) => ({
+  ".giscus": container,
+  "[data-comments-status]": loadingStatus,
+  "[data-comments-retry]": retryButton,
+  "[data-discussion-link]": discussionLink
+}[selector] || element);
+document.createElement = () => ({ attrs: {}, setAttribute(name, value) { this.attrs[name] = value; } });
+const sendGiscus = (giscus, origin = "https://giscus.app", source = frame.contentWindow) => {
+  for (const handler of messageHandlers) handler({ origin, source, data: { giscus } });
+};
+mountGiscus(sample);
+assert.equal(scripts[0].attrs["data-term"], "cardputerzero-app:example");
+assert.equal(scripts[0].attrs["data-loading"], "eager");
+assert.equal(scripts[0].attrs["data-emit-metadata"], "1");
+assert.equal(retryButton.hidden, true);
+const actualDiscussionUrl = "https://github.com/CardputerZero/cardputerzero.github.io/discussions/31";
+sendGiscus({ discussion: { url: actualDiscussionUrl } }, "https://example.com");
+sendGiscus({ discussion: { url: actualDiscussionUrl } }, "https://giscus.app", {});
+assert.equal(discussionLink.href, discussionSearchUrl(sample), "Ignore messages from other origins or frames");
+for (const timer of [...timers.values()]) timer();
+assert.equal(retryButton.hidden, false, "Slow connections expose retry and retain the GitHub link");
+for (const retry of [...retryHandlers]) retry();
+assert.equal(scripts.length, 2);
+assert.equal(messageHandlers.size, 1, "Retry removes the previous listener");
+assert.equal(timers.size, 1, "Retry removes the previous timeout");
+assert.equal(retryButton.hidden, true);
+sendGiscus({ discussion: { url: "https://github.com/other/repo/discussions/31" } });
+assert.equal(discussionLink.href, discussionSearchUrl(sample), "Only accept this repository's discussion URLs");
+sendGiscus({ discussion: { url: actualDiscussionUrl }, resizeHeight: 400 });
+assert.equal(discussionLink.href, actualDiscussionUrl, "The GitHub button opens the exact loaded discussion");
+assert.equal(loadingStatus.textContent, "");
+assert.equal(timers.size, 0);
+scripts[1].onerror();
+assert.equal(retryButton.hidden, false, "Script errors offer retry");
+location.hash = "#/";
+render();
+assert.equal(messageHandlers.size, 0, "Navigation removes iframe listeners");
+assert.equal(retryHandlers.size, 0);
+assert.equal(timers.size, 0);
+document.querySelector = originalQuerySelector;
+setTimeout = originalSetTimeout;
+clearTimeout = originalClearTimeout;
+console.log("Passed app metadata, filters, localization, short-link redirects, and comment lifecycle checks for " + registry.apps.length + " apps in 3 languages.");
 `, context);

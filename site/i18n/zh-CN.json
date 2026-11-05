@@ -59,6 +59,9 @@
     "about": "介绍",
     "comments": "评论与反馈",
     "commentsLead": "评论由 GitHub Discussions 托管。每个应用使用独立讨论串，登录 GitHub 后即可留言或添加 reaction。",
+    "commentsLoading": "正在连接 GitHub 评论区…",
+    "commentsSlow": "评论区连接较慢或暂时不可用。可以重试，或使用上方链接前往该应用的 GitHub 讨论。",
+    "commentsRetry": "重新加载评论",
     "install": "安装信息",
     "installLead": "下载应用安装包，或在真机 Store 中输入分享码查找应用。安装前请查看权限和运行要求。",
     "openDiscussions": "打开 GitHub Discussions",
@@ -110,7 +113,7 @@
     "title": "CardputerZero Store",
     "developersRole": "我是开发者",
     "usersRole": "我是用户",
-    "developersCta": "发布应用",
+    "developersCta": "阅读开发者文档",
     "usersCta": "浏览应用",
     "bannerAlt": "CardputerZero 设备与游戏、音乐、摄影、通信等应用图标"
   },
@@ -226,9 +229,9 @@
     "title": "用户与开发者协议"
   },
   "registry": {
-    "status": "STORE STATUS",
     "title": "Store 概况",
     "apps": "应用数量",
+    "developers": "开发者数量",
     "updated": "目录更新时间",
     "targets": "适用设备",
     "source": "数据来源"

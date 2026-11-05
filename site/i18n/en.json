@@ -59,6 +59,9 @@
     "about": "About",
     "comments": "Comments and feedback",
     "commentsLead": "Comments are hosted on GitHub Discussions. Each app uses its own discussion thread; sign in with GitHub to comment or react.",
+    "commentsLoading": "Connecting to GitHub comments…",
+    "commentsSlow": "Comments are taking longer to connect or are temporarily unavailable. Retry, or use the link above to open this app’s GitHub discussion.",
+    "commentsRetry": "Reload comments",
     "install": "Install information",
     "installLead": "Download the app package, or enter its share code in the device Store. Review permissions and requirements before installing.",
     "openDiscussions": "Open GitHub Discussions",
@@ -110,7 +113,7 @@
     "title": "CardputerZero Store",
     "developersRole": "For developers",
     "usersRole": "For users",
-    "developersCta": "Publish an app",
+    "developersCta": "Read developer docs",
     "usersCta": "Browse apps",
     "bannerAlt": "CardputerZero with icons for games, music, photography, communication, and other apps"
   },
@@ -226,9 +229,9 @@
     "title": "User and Developer Agreement"
   },
   "registry": {
-    "status": "STORE STATUS",
     "title": "Store overview",
     "apps": "Apps",
+    "developers": "Developers",
     "updated": "Catalog updated",
     "targets": "Devices",
     "source": "Data source"
