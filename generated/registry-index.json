@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-09T19:09:00+08:00",
+  "generated_at": "2026-11-09T23:17:12+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -86,9 +86,9 @@
         "display_name": "olp5735-sys",
         "github": "olp5735-sys"
       },
-      "version": "0.1.22",
+      "version": "0.1.32",
       "published_at": "2026-11-08T14:57:41+00:00",
-      "updated_at": "2026-11-08T14:57:41+00:00",
+      "updated_at": "2026-11-09T15:07:11+00:00",
       "review": {
         "status": "approved"
       },
@@ -97,10 +97,10 @@
       "download": {
         "type": "deb",
         "package": "cardputer-zero-iptv",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-zero-iptv_0.1.22_arm64.deb",
-        "md5": "d244ee40868c86116fe794b2fcbba319",
-        "sha256": "056217324401ffa9947a131c0e83c5aed3f9438680a8bc6c0a7154bf7e6fbf81",
-        "size": 1619916
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-zero-iptv_0.1.32_arm64.deb",
+        "md5": "bb3cba5f11bdfd712de446924b7ed8fc",
+        "sha256": "db8f00e9073469a28855162f0612d82a11e654f4660cd132546bb7bd38e061ff",
+        "size": 1625160
       },
       "depends": "python3, python3-pil, python3-evdev, ffmpeg, pulseaudio-utils",
       "permissions": {
