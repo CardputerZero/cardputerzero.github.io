@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-09T23:17:12+08:00",
+  "generated_at": "2026-11-10T00:48:22+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1024,6 +1024,64 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/contact.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/map.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshterm/screenshots/livefeed.png"
+      ]
+    },
+    {
+      "uuid": "027e3e25-4980-56f0-aaca-1365eb53ae0c",
+      "share_code": "MTAG",
+      "title": "MusicTagger",
+      "summary": "扫描音乐目录，在线匹配封面与歌词，并写回音乐文件标签",
+      "description": "MusicTagger 是给 CardputerZero 用的歌词与封面匹配工具，让只有音频的音乐文件也能补全专辑封面和歌词标签。\r\n\r\n主要功能：\r\n• 扫描音乐目录：默认扫描 ~/Music，支持 MP3、FLAC、M4A/MP4；列出曲目并标记是否已有封面和歌词。\r\n• 在线匹配：优先 QQ 音乐，失败时自动回退 iTunes；匹配到的封面和歌词直接写回音频文件标签，不需要电脑。\r\n• 封面预览：右侧实时显示当前歌曲的专辑封面，没有封面时显示占位图。\r\n• 歌词预览：按 L 打开内嵌歌词，F/X 逐行滚动，Z/C 翻页，ESC 或 L 返回。\r\n• 匹配操作：Enter 匹配当前歌曲；A 匹配全部；Ctrl+A 全选后再按 Enter 一键匹配所有歌曲。\r\n• 状态标识：COVER / LYRICS 两列圆点分别表示封面和歌词是否已有，绿点=有，白色空心=没有；当前歌曲行会放大显示并用青绿色边框标出。\r\n• 主题切换：T 键切换浅色/青蓝深色主题，选择会自动记住。\r\n\r\n使用说明：\r\n• 需要联网访问匹配服务；首次匹配会在后台启动 Python 助手，任务结束后自动退出，不常驻后台。\r\n• 已完整的歌曲会自动跳过，不会重复写入；修改标签前建议先备份音乐文件。\r\n• 支持读取内嵌歌词（ID3 USLT / Vorbis LYRICS / MP4 ©lyr）并在设备上滚动预览。\r\n\r\n注意事项：\r\n• QQ 音乐接口为非官方接口，仅供个人使用；接口不可用时会自动回退 iTunes。\r\n• 封面和歌词版权归原权利人所有，请仅用于个人合法拥有的音乐。",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Creative & Office",
+        "Media"
+      ],
+      "author": {
+        "display_name": "ddddd",
+        "github": "jiawud"
+      },
+      "version": "0.2.1",
+      "published_at": "2026-11-09T16:13:51+00:00",
+      "updated_at": "2026-11-09T16:13:51+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "musictagger",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/musictagger_0.2.1_arm64.deb",
+        "md5": "06905712ea00ebadcea888f3d02fca71",
+        "sha256": "1b27e48a428c6180442975b9bf0cd3dbc69dc169dcc5d8d80725c2a8deeae832",
+        "size": 1414524
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, python3",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/musictagger/musictagger_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/musictagger/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/musictagger/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/musictagger/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/musictagger/musictagger_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/musictagger/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/musictagger/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/musictagger/screenshots/screenshot-2.png"
       ]
     },
     {
