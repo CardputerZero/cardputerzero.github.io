@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-09T18:56:55+08:00",
+  "generated_at": "2026-11-09T19:09:00+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1334,6 +1334,63 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rfid/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rfid/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rfid/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "20ab12fc-9cb3-51ca-9ff8-b24dae213a9e",
+      "share_code": "1919",
+      "title": "Sudoku",
+      "summary": "键盘党的数独：唯一解生成、三档难度、笔记、计时最佳纪录",
+      "description": "为 M5Stack CardputerZero 打造的键盘数独 —— 物理键盘直操，随开随玩。\r\n\r\n每一局都由内置生成器现场出题：位掩码回溯生成全解，再逐格挖洞并校验唯一性，保证恰好一个答案，绝不出现无解或多解局。\r\n\r\n【三档难度】\r\n· 轻松：40 个提示数，茶余饭后\r\n· 标准：32 个提示数，正式挑战\r\n· 挑战：26 个提示数，硬核推理\r\n\r\n【玩法特性】\r\n· 笔记候选：小字标记每格可能的数字，反复按同数字切换\r\n· 即时反馈：填错标红、同数高亮、所在行列宫淡色提示\r\n· 余数统计：每个数字还剩几个一目了然，快速找到突破口\r\n· 计时纪录：用时与最佳成绩按难度分别保存，挑战自我\r\n· 音效：合成短音零素材，落子/错误/通关各有提示音\r\n\r\n【按键说明】\r\nF/X/Z/C（键帽丝印方向键）移动光标\r\n1-9 填数字（笔记模式下写候选）\r\n0 / 退格 擦除\r\nn 笔记模式开关\r\nr 重开一局    d 切换难度\r\nFn+S / Fn+D 调节系统音量    Fn+A 静音\r\nEsc 退出\r\n\r\n开源：github.com/dbrhspyjkf-code/sudokuzero",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games"
+      ],
+      "author": {
+        "display_name": "Leen Zhou",
+        "github": "dbrhspyjkf-code"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-11-07T15:35:22+00:00",
+      "updated_at": "2026-11-07T15:35:22+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/dbrhspyjkf-code/sudokuzero",
+      "download": {
+        "type": "deb",
+        "package": "sudokuzero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/sudokuzero_1.0.0_arm64.deb",
+        "md5": "236e863ecd8860c14c99422ef25310a4",
+        "sha256": "c6cddfa4f196f0371dcb1f537081ffe91479dfbe0db3f7302202353c0b5f173f",
+        "size": 47496
+      },
+      "depends": "python3, python3-pygame",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sudokuzero/sudokuzero_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sudokuzero/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sudokuzero/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sudokuzero/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sudokuzero/sudokuzero_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sudokuzero/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sudokuzero/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sudokuzero/screenshots/screenshot-2.png"
       ]
     },
     {
