@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-09T18:39:07+08:00",
+  "generated_at": "2026-11-09T18:56:55+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -69,6 +69,63 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/advancewebui/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/advancewebui/screenshots/screenshot-1.png"
+      ]
+    },
+    {
+      "uuid": "7fd7a685-3e5f-57d3-a8ec-a3c9dc16c1b9",
+      "share_code": "CZTV",
+      "title": "Cardputer TV",
+      "summary": "Cardputer Zero 轻量视频播放器，支持自定义源及帧率设置；订阅兼容性仅做有限样本测试。",
+      "description": "Cardputer TV 是面向 M5Stack Cardputer Zero 的轻量视频播放器，适配设备自带 320×170 屏幕、键盘和扬声器。\r\n\r\n【功能】\r\n• 自定义播放源：支持 M3U/M3U8 频道列表、频道 JSON、兼容的 HTTP(S)/HLS 媒体地址，以及部分 TVBox 配置中的直播列表。\r\n• 单路播放：切换频道时先结束旧播放，再加载新频道；等待时保留最后一帧并显示“正在加载”，不进行双路预加载。\r\n• 音量控制：播放中每次增减 5%，屏幕显示实际音量百分比。\r\n• 帧率设置：20 / 30 / 60 帧可选，默认 20 帧；保存后下次开始播放生效，重启应用后保留。\r\n\r\n【订阅源兼容性说明｜测试范围有限】\r\n订阅源尚未经过充分测试。目前仅做了有限样本验证，真机实播以少量直播频道为主，尚未对各家订阅服务、不同格式变体和 TVBox 配置开展广泛兼容性测试。不能保证所有订阅源都能解析、列出频道或正常播放；部分源可能需要特定请求头、访问条件或不受支持的解析方式。请以自己的实际测试结果为准。\r\n\r\n【从电脑导入源文件】\r\n可先在电脑上编辑 UTF-8 的 sources.json，再通过 SFTP 或 ADB 传到运行应用用户的 ~/.config/cardputer-zero-iptv/sources.json，重新打开应用读取。请先退出应用并备份原配置；覆盖文件会替换整个源列表，不会自动合并。~ 指应用用户的主目录，实际用户名以设备为准，配置文件建议权限 600。\r\n也可以上传 M3U 频道列表或频道 JSON，在 Tab 源管理中按 N 新增，将 URL 填为设备上的绝对路径，保存后选中该源并回车切换。文件内容修改后按 R 刷新。含私人 Token 的配置仅保存在自己的设备，请勿公开。\r\n\r\n【按键】\r\n频道列表：F/X 或上下选择频道，长按可加速连续选台，Z/C 或左右翻页，回车播放，Tab 管理源，S 打开播放设置。\r\n播放中：F/X 切换频道，Z/C 调整音量，Esc 停止并返回列表。\r\n播放设置：F/X 或方向键选择帧率，回车保存，Esc 取消。\r\n\r\n【片源与隐私】\r\n本应用不附带私人订阅、付费账号或商业频道聚合源，仅提供 Big Buck Bunny 公开测试流。请自行添加有权访问和播放的源。第三方源的内容、可用性和访问条件由其提供者决定；播放时会连接所选源及媒体服务器并消耗网络流量。源配置和帧率偏好保存在设备当前用户目录，升级不会覆盖已有源配置。\r\n不支持 DRM 加密节目、加密订阅解密或需要 jar/spider 执行的点播接口。\r\n\r\n【运行要求与性能】\r\n适用于 Cardputer Zero 的原生 Linux/APPLaunch 环境，使用内置屏幕和音频输出，需要读取设备键盘和写入 framebuffer 的权限。依赖 Python 3、Pillow、python3-evdev、FFmpeg 和 pulseaudio-utils，由软件包声明；网络播放需要联网。无需相机、麦克风、额外硬件或应用专属后台服务。\r\n当前使用软件解码。设置帧率是视频输出目标，不保证每个源都达到该帧率，也不代表 LCD 的物理刷新率；高分辨率、高复杂度编码或网络波动会影响连续性。高于片源原始帧率时包含重复帧。\r\n安装脚本仅将本应用启动脚本设为 0755，不修改系统网络或显示模式。\r\n\r\n【许可证】\r\n应用代码尚未声明标准开源许可证（NOASSERTION），不新增开源授权。随包文泉驿微米黑字体按 Apache-2.0 分发，许可与署名文件位于 fonts 目录。\r\n\r\n【版本 0.1.22】\r\n频道列表支持长按 F/X 快速连续选台。改善嵌套明文订阅列表识别，保留同名频道和分组；订阅兼容性仍只做有限样本测试。\r\n\r\n【版本 0.1.20】\r\n将设备启动器菜单名称统一为 Cardputer TV，与商店展示名一致；内部包名仍为 cardputer-zero-iptv，升级保留已有源配置和帧率偏好。继续提供 20 / 30 / 60 帧设置、音量百分比、单路切台及加载提示。",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Media"
+      ],
+      "author": {
+        "display_name": "olp5735-sys",
+        "github": "olp5735-sys"
+      },
+      "version": "0.1.22",
+      "published_at": "2026-11-08T14:57:41+00:00",
+      "updated_at": "2026-11-08T14:57:41+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "NOASSERTION",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "cardputer-zero-iptv",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-zero-iptv_0.1.22_arm64.deb",
+        "md5": "d244ee40868c86116fe794b2fcbba319",
+        "sha256": "056217324401ffa9947a131c0e83c5aed3f9438680a8bc6c0a7154bf7e6fbf81",
+        "size": 1619916
+      },
+      "depends": "python3, python3-pil, python3-evdev, ffmpeg, pulseaudio-utils",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-iptv/cardputer-zero-iptv_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-iptv/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-iptv/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-iptv/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-iptv/cardputer-zero-iptv_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-iptv/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-iptv/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-iptv/screenshots/screenshot-2.png"
       ]
     },
     {
@@ -1049,6 +1106,60 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/04-radio.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/05-calculator.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/06-small-grid.png"
+      ]
+    },
+    {
+      "uuid": "b094a837-24c4-5d1c-bef4-8d4e9da3a7ff",
+      "share_code": "RR86",
+      "title": "r86",
+      "summary": "Fast x86 emulator, it runs windows!",
+      "description": "Fast x86 emulator written in Rust, with heavily optimized ARM64 JIT engine.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Emulators"
+      ],
+      "author": {
+        "display_name": "t",
+        "github": "tcchen2026"
+      },
+      "version": "0.1.0",
+      "published_at": "2026-11-08T17:35:15+00:00",
+      "updated_at": "2026-11-08T17:35:15+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Apache-2.0",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "r86",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/r86_0.1.0_arm64.deb",
+        "md5": "707a2848e75114c6ccc6507864f7635e",
+        "sha256": "79d6e42fcc33f3925c58368361099576ba9c656e561e856f9aa9e10629049307",
+        "size": 22453060
+      },
+      "depends": "curl, coreutils",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": true,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/r86_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-0.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/r86_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-0.png"
       ]
     },
     {
