@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-10T00:48:22+08:00",
+  "generated_at": "2026-11-10T01:04:58+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -520,9 +520,9 @@
         "github": "d4rkmen",
         "display_name": "pan Dmytro"
       },
-      "version": "0.2.1-1",
+      "version": "0.3.0-1",
       "published_at": "2026-10-14T21:24:11+00:00",
-      "updated_at": "2026-10-14T21:24:11+00:00",
+      "updated_at": "2026-11-09T16:52:00+00:00",
       "review": {
         "status": "approved"
       },
@@ -531,10 +531,10 @@
       "download": {
         "type": "deb",
         "package": "frame",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/frame_0.2.1-1_arm64.deb",
-        "md5": "0919cde004fcc90f8495a341905f008a",
-        "sha256": "40c43ffdbf8df33e235ee2a55e24a7c5d760f867ba0ae6c0119f7fdd3f09d946",
-        "size": 3284038
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/frame_0.3.0-1_arm64.deb",
+        "md5": "3b0b692f721cbab3348d596289522fe6",
+        "sha256": "544c5fba97a97502277ceeb10d1dc43b42ffe02366a0fcb124af85e8777d5ebb",
+        "size": 3287592
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libpipewire-0.3-0, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g",
       "permissions": {
@@ -1477,9 +1477,9 @@
         "github": "d4rkmen",
         "display_name": "d4rkmen"
       },
-      "version": "0.3.0",
+      "version": "0.4.0",
       "published_at": "2026-10-14T22:09:23+00:00",
-      "updated_at": "2026-10-18T10:18:29+00:00",
+      "updated_at": "2026-11-09T16:57:32+00:00",
       "review": {
         "status": "approved"
       },
@@ -1488,10 +1488,10 @@
       "download": {
         "type": "deb",
         "package": "talktome",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/talktome_0.3.0_arm64.deb",
-        "md5": "8c5d7eddb1ab09a9f6d6b3de01d9b2b1",
-        "sha256": "d7b343c316f3920be59ca58639b98a08716c75231fc241ce840649a090fa3383",
-        "size": 25323764
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/talktome_0.4.0_arm64.deb",
+        "md5": "44485355fc4602f735cf16a47b54a5e0",
+        "sha256": "d52b4aa306ed4f181047f859a2c94ef1ecb80cd8c976c6750df07513ec0a125d",
+        "size": 25395300
       },
       "depends": "libsdl2-2.0-0, libsdl2-ttf-2.0-0, libwayland-client0, libgomp1, fonts-dejavu-core",
       "permissions": {
