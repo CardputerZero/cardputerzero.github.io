@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-10T16:46:40+08:00",
+  "generated_at": "2026-11-10T17:28:25+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1089,6 +1089,65 @@
       ]
     },
     {
+      "uuid": "2be641dc-2458-5528-9bcd-1e0ac2774611",
+      "share_code": "MUSE",
+      "title": "Muser",
+      "summary": "Talk to Muse with a pixel companion and live captions.",
+      "description": "Muser is an independent, unofficial community app for Cardputer Zero. Voice conversations, captions, keyboard chat and session-only records on a 320x170 display.\r\n\r\nEnglish UI by default, with Simplified Chinese available in Settings.\r\n\r\nRequires a Muse account, SDK token and phone pairing; Muse is not available in every country or region, so confirm that you are in a supported region and that your account works before pairing.\r\n\r\nNot affiliated with or endorsed by Meta. Fn-free navigation with message paging, an in-app key reference, and setup by QR or the displayed IP and port; paste your SDK token in any phone or PC browser, then pair over Bluetooth.\r\n\r\nSaved pairing is retained while Muse service connections retry.\r\n\r\n\r\nMuser 是独立开发的非官方社区应用，支持语音、字幕、英文键盘聊天和本次会话记录。\r\n\r\n英语默认、简体中文可切换；无需 Fn 即可使用消息翻页、按键帮助等导航。\r\n\r\nApp 内扫码在手机粘贴个人 SDK token 后自动蓝牙配对，与 Meta 无隶属或背书关系。\r\n\r\nMuse 并非在所有地区可用，请在配对前确认你处于支持的地区且账号可用。",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "AI"
+      ],
+      "author": {
+        "display_name": "YuHaibo",
+        "github": "YuHaibo"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-11-10T01:54:54+00:00",
+      "updated_at": "2026-11-10T01:54:54+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Apache-2.0",
+      "source_repo": "https://github.com/YuHaibo/Muser",
+      "download": {
+        "type": "deb",
+        "package": "muser",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/muser_1.0.0_arm64.deb",
+        "md5": "056c2f5b014d7adc36c761504e0cc265",
+        "sha256": "40539a0a97a1b74c9e0b203be8b4dcf0e94da6e63f96dd8c0de88414fcaa2989",
+        "size": 14703450
+      },
+      "depends": "libc6 (>= 2.38), libstdc++6 (>= 13.2), libgcc-s1, libfreetype6, libpng16-16, zlib1g, python3 (>= 3.9), python3-cryptography, python3-cffi, python3-dbus, python3-gi, libportaudio2, bluez, ca-certificates",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": true,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/muser/muser_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/muser/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/muser/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/muser/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/muser/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/muser/muser_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/muser/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/muser/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/muser/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/muser/screenshots/screenshot-3.png"
+      ]
+    },
+    {
       "uuid": "027e3e25-4980-56f0-aaca-1365eb53ae0c",
       "share_code": "MTAG",
       "title": "MusicTagger",
@@ -1875,6 +1934,66 @@
       ]
     },
     {
+      "uuid": "4339eb5c-fcc0-524c-a4c3-02cf676e705b",
+      "share_code": "VIBE",
+      "title": "VibeOffice",
+      "summary": "Your pocket office suite: open, edit and present .docx, .xlsx and .pptx files.",
+      "description": "Opens, edits and saves real .docx, .xlsx and .pptx files on the CardputerZero: read a document on the go, check a spreadsheet, or connect an HDMI screen and present your slides.\r\n\r\nIt is made for the keyboard and the 320×170 screen, and keeps your files in ~/VibeOffice/Documents; copy them in over Wi-Fi with any SFTP app.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Creative & Office",
+        "Lifestyle"
+      ],
+      "author": {
+        "display_name": "t",
+        "github": "tcchen2026"
+      },
+      "version": "2026.11.09+git718d37",
+      "published_at": "2026-11-09T15:07:52+00:00",
+      "updated_at": "2026-11-09T15:07:52+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Apache-2.0",
+      "source_repo": "https://github.com/tcchen2026/VibeOffice",
+      "download": {
+        "type": "deb",
+        "package": "vibeoffice",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/vibeoffice_2026.11.09+git718d37_arm64.deb",
+        "md5": "3998ef488df5bbdff76340b07ea027d8",
+        "sha256": "a2af12e60cd84a8be4044119fc06973639a6601d435b6a4da3cb218ed03fb7f9",
+        "size": 6549864
+      },
+      "depends": "cage, libwebkit2gtk-4.1-0",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": true,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/vibeoffice/vibeoffice_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/vibeoffice/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/vibeoffice/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/vibeoffice/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/vibeoffice/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/vibeoffice/vibeoffice_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/vibeoffice/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/vibeoffice/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/vibeoffice/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/vibeoffice/screenshots/screenshot-3.png"
+      ]
+    },
+    {
       "uuid": "4da006ec-b0f9-53b8-ab26-b60b120ea595",
       "share_code": "NETB",
       "title": "Zero Browser",
@@ -2092,6 +2211,68 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/memories.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/sdr-cal.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/adsb.png"
+      ]
+    },
+    {
+      "uuid": "5d82b0b9-5a8a-5a5d-99fd-25bbeb42cfdd",
+      "share_code": "0SDR",
+      "title": "zeroSDR",
+      "summary": "zeroSDR turns the Cardputer Zero into a pocket SDR receiver.",
+      "description": "FEATURES\r\n- Real-time spectrum and waterfall on the 320x170 display\r\n- FM / NFM / AM / USB / LSB demodulation with squelch, audio AGC and\r\n  FM de-emphasis (50/75 us)\r\n- Adjustable tuning step, display zoom, FFT size and sample rate\r\n- On-screen key reference and settings panel (press H)\r\n- ADSB aircraft page: sortable list, detail view with a PFD, and a radar\r\n  view with a fading sweep, range rings and a large callsign plate\r\n- Runs as the normal user through the librtlsdr udev rule - no root,\r\n  no background service\r\n\r\nREQUIRED EXTRA HARDWARE\r\n- An RTL-SDR USB dongle (tested with RTL-SDR Blog V4 / RTL2832U).\r\n  The app has no built-in radio, so a dongle is mandatory.\r\n- An antenna: any VHF/UHF antenna for the SDR page; a 1090 MHz antenna\r\n  for the ADSB page.\r\n- The dongle plugs into the Cardputer Zero USB-A port and is powered by\r\n  the device.\r\n\r\nNOTES\r\n- ADSB decoding is done by the external \"readsb\" program, which must be\r\n  installed separately (a build with the RTL-SDR backend). Without it the\r\n  ADSB list stays empty; the SDR page still works.\r\n- Audio plays through the built-in speaker or the 3.5 mm jack.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "Weiming Feng",
+        "github": "nullbeing"
+      },
+      "version": "0.3.1",
+      "published_at": "2026-11-10T02:37:56+00:00",
+      "updated_at": "2026-11-10T02:37:56+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-3.0",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "zerosdr",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosdr_0.3.1_arm64.deb",
+        "md5": "2881afa8f863fd26198a9704c946f6f3",
+        "sha256": "035a8bcf828839102cef1c7bb2a6bea31a7649a6e9d2aaa4eb4bf168cc8e65e4",
+        "size": 121956
+      },
+      "depends": "libasound2 (>= 1.0.18), libc6 (>= 2.31), libfreetype6, libgcc-s1 | libgcc1, librtlsdr0 (>= 0.6.0), libstdc++6 (>= 5.2)",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/zerosdr_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-4.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/zerosdr_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-4.png"
       ]
     },
     {
