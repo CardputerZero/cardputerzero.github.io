@@ -75,7 +75,6 @@ const state = {
   restoreQueryFocus: false,
   querySelectionStart: null,
   querySelectionEnd: null,
-  selectedFlowStep: "dev-0",
   documentCache: new Map()
 };
 
@@ -214,8 +213,6 @@ function render() {
     renderDetail(route.id);
   } else if (route.name === "share") {
     renderDetail(route.code);
-  } else if (route.name === "tutorial") {
-    renderTutorial();
   } else if (route.name === "documents") {
     renderDocuments();
   } else if (route.name === "document") {
@@ -257,10 +254,10 @@ function parseRoute() {
   if (parts[0] === "apps" && parts[1]) return { name: "detail", id: parts[1] };
   if (parts[0] === "apps") return { name: "apps" };
   if (parts[0] === "s" && parts[1]) return { name: "share", code: parts[1] };
-  if (parts[0] === "tutorial" || parts[0] === "submit") return { name: "tutorial" };
+  if (parts[0] === "tutorial" || parts[0] === "submit") return { name: "document", slug: "cp0-submit" };
   if (parts[0] === "documents" && parts[1]) return { name: "document", slug: parts[1] };
   if (parts[0] === "documents") return { name: "documents" };
-  if (parts[0] === "policy") return { name: "document", slug: "user-agreement" };
+  if (parts[0] === "policy") return { name: "documents" };
   if (parts[0] === "registry") return { name: "registry" };
   return { name: "home" };
 }
@@ -817,157 +814,12 @@ function giscusLang() {
   return "zh-CN";
 }
 
-function renderTutorial() {
-  appRoot.innerHTML = `
-    <section class="route-panel">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">${t("tutorial.eyebrow")}</p>
-          <h1>${t("tutorial.title")}</h1>
-          <p class="lead">${t("tutorial.lead")}</p>
-        </div>
-      </div>
-      <section class="notice-panel">
-        <div>
-          <p class="eyebrow">${t("tutorial.agreementEyebrow")}</p>
-          <h2>${t("tutorial.agreementTitle")}</h2>
-          <p>${t("tutorial.agreementLead")}</p>
-        </div>
-        <div class="notice-actions">
-          <a class="button" href="#/documents/user-agreement">${t("tutorial.readAgreement")}</a>
-          <a class="button secondary" href="#/documents/app-submission-guide">${t("tutorial.openGuide")}</a>
-        </div>
-      </section>
-      <section class="section-panel">
-        <div class="section-head">
-          <div>
-            <h2>${t("tutorial.flowTitle")}</h2>
-            <p>${t("tutorial.flowLead")}</p>
-          </div>
-        </div>
-        ${renderWorkflowMap()}
-      </section>
-      <div class="two-column">
-        <section class="submit-band">
-          <h2>${t("tutorial.developmentTitle")}</h2>
-          <p>${t("tutorial.developmentLead")}</p>
-          <a class="button secondary" href="#/documents/application-development-guide">${t("documents.open")}</a>
-        </section>
-        <section class="submit-band">
-          <h2>${t("tutorial.skillTitle")}</h2>
-          <p>${t("tutorial.skillLead")}</p>
-          <a class="button secondary" href="#/documents/skill-ai-coding-guide">${t("documents.open")}</a>
-        </section>
-      </div>
-      <div class="two-column">
-        <section class="submit-band">
-          <h2>${t("tutorial.reviewTitle")}</h2>
-          <p>${t("tutorial.reviewLead")}</p>
-          <a class="button secondary" href="#/documents/developer-submission-policy">${t("documents.open")}</a>
-        </section>
-        <section class="submit-band">
-          <h2>${t("documents.items.agreement.title")}</h2>
-          <p>${t("documents.items.agreement.summary")}</p>
-          <a class="button secondary" href="#/documents/user-agreement">${t("documents.open")}</a>
-        </section>
-      </div>
-      <div class="submit-grid">
-        ${renderSubmitBand("tutorial.metadataTitle", "tutorial.metadata")}
-        ${renderSubmitBand("tutorial.ciTitle", "tutorial.ci")}
-        ${renderSubmitBand("tutorial.maintainerTitle", "tutorial.maintainer")}
-      </div>
-    </section>
-  `;
-  bindTutorialFlow();
-}
-
-function renderWorkflowMap() {
-  const steps = getWorkflowSteps();
-  const selected = steps.find((step) => step.key === state.selectedFlowStep) || steps[0];
-  return `
-    <div class="workflow-board" aria-label="${escapeAttr(t("tutorial.flowTitle"))}">
-      <div class="workflow-map">
-        <section class="workflow-lane">
-          <div class="workflow-lane-head">
-            <span>${t("tutorial.devLane")}</span>
-          </div>
-          ${t("tutorial.devFlow").map((step, index) => renderFlowNode(step, index, "dev", selected.key)).join("")}
-        </section>
-        <section class="workflow-lane review-lane">
-          <div class="workflow-lane-head">
-            <span>${t("tutorial.reviewLane")}</span>
-          </div>
-          ${t("tutorial.reviewFlow").map((step, index) => renderFlowNode(step, index, "review", selected.key)).join("")}
-        </section>
-      </div>
-      <aside class="flow-detail" aria-live="polite">
-        <p class="eyebrow">${escapeHtml(t("tutorial.detailTitle"))}</p>
-        <h3>${escapeHtml(selected.title)}</h3>
-        <p>${escapeHtml(selected.body)}</p>
-        ${selected.checks?.length ? `
-          <div class="flow-checks">
-            <strong>${escapeHtml(t("tutorial.checksTitle"))}</strong>
-            <ul>${selected.checks.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
-          </div>
-        ` : ""}
-        ${selected.doc ? `
-          <a class="button secondary" href="#/documents/${escapeAttr(selected.doc)}">${escapeHtml(t("tutorial.openDocument"))}</a>
-        ` : ""}
-      </aside>
-    </div>
-  `;
-}
-
-function getWorkflowSteps() {
-  const devSteps = t("tutorial.devFlow").map((step, index) => ({
-    ...step,
-    lane: "dev",
-    key: `dev-${index}`
-  }));
-  const reviewSteps = t("tutorial.reviewFlow").map((step, index) => ({
-    ...step,
-    lane: "review",
-    key: `review-${index}`
-  }));
-  return devSteps.concat(reviewSteps);
-}
-
-function renderFlowNode(step, index, lane, selectedKey) {
-  const key = `${lane}-${index}`;
-  const isActive = key === selectedKey;
-  return `
-    <button class="flow-step ${isActive ? "active" : ""}" data-flow-step="${escapeAttr(key)}" type="button" aria-pressed="${isActive}">
-      <span class="flow-index">${String(index + 1).padStart(2, "0")}</span>
-      <span class="flow-title">${escapeHtml(step.title)}</span>
-      <span class="flow-body">${escapeHtml(step.body)}</span>
-    </button>
-  `;
-}
-
-function bindTutorialFlow() {
-  document.querySelectorAll("[data-flow-step]").forEach((button) => {
-    button.addEventListener("click", () => {
-      state.selectedFlowStep = button.dataset.flowStep;
-      render();
-    });
-  });
-}
-
 function documentPath(doc) {
   return doc.paths?.[state.locale] || doc.paths?.["zh-CN"] || doc.paths?.en || doc.path;
 }
 
 function renderDocumentSource(doc) {
   return t("documents.source", { path: documentPath(doc) });
-}
-
-function renderSubmitBand(titleKey, listKey) {
-  return `
-    <section class="submit-band">
-      <h2>${t(titleKey)}</h2>
-      <ul>${t(listKey).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
-    </section>
-  `;
 }
 
 function renderDocuments() {
