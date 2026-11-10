@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-10T16:03:03+08:00",
+  "generated_at": "2026-11-10T16:46:40+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -69,6 +69,68 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/advancewebui/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/advancewebui/screenshots/screenshot-1.png"
+      ]
+    },
+    {
+      "uuid": "3e957833-e113-513b-8e4c-3650776680eb",
+      "share_code": "BRCE",
+      "title": "Bruce CardputerZero",
+      "summary": "Bruce pentest toolkit UI — Wi-Fi, Bluetooth, RF, network and SMB tools",
+      "description": "Bruce-style security toolkit UI for the CardputerZero: a purple/black LVGL menu that launches Wi-Fi, Bluetooth, RF, network and SMB tooling from the device screen.\n\n- Launches the real Linux binaries already on the device (curl, nc, iw, bluetoothctl, smbclient, responder, rtl_433, …) and streams their output to the screen, so every tool behaves exactly like its CLI.\n- Category carousel, per-category tool lists, live tool-run log, and an interactive terminal (commands run in-session; a leading 'sudo ' runs as root).\n- Add a tool by editing one data file (the tool catalog) — no screen code needed.\n- Status bar with clock, Wi-Fi strength and battery; light/dark toggle and accent theme picker.\n\n⚠️ For authorized security testing, CTF and research only. Several menu entries (Responder, port scans, packet capture) are only legal against systems you own or have written permission to test.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Security",
+        "System Tools"
+      ],
+      "author": {
+        "github": "pr3y",
+        "display_name": "pr3y"
+      },
+      "version": "0.1.0-bruce1",
+      "published_at": "2026-11-09T00:24:05+00:00",
+      "updated_at": "2026-11-09T00:24:05+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "AGPL-3.0-only",
+      "source_repo": "https://github.com/BruceDevices/CardputerZero",
+      "download": {
+        "type": "deb",
+        "package": "brucecardputerzero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/brucecardputerzero_0.1.0-bruce1_arm64.deb",
+        "md5": "8204032b5052c4ea301e21aadae778c1",
+        "sha256": "c2c3d91a54ec9cd85fd15ecba74578761989bad3586f55e6ef1a27966bae18d3",
+        "size": 4050630
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libfmt10",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/bruce_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/01-menu.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/02-wifi-tools.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/03-wifi-scan.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/04-terminal.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/05-theme.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/bruce_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/01-menu.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/02-wifi-tools.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/03-wifi-scan.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/04-terminal.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/05-theme.png"
       ]
     },
     {
