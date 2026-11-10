@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-10T09:53:31+08:00",
+  "generated_at": "2026-11-10T16:03:03+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1710,9 +1710,9 @@
         "display_name": "vicliu624",
         "website": "https://vicliu624.github.io/trail-mate/"
       },
-      "version": "1.1.1",
+      "version": "1.2.1",
       "published_at": "2026-11-09T01:40:11+00:00",
-      "updated_at": "2026-11-10T01:45:04+00:00",
+      "updated_at": "2026-11-10T07:52:03+00:00",
       "review": {
         "status": "approved"
       },
@@ -1721,12 +1721,12 @@
       "download": {
         "type": "deb",
         "package": "trailmate",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/trailmate_1.1.1_arm64.deb",
-        "md5": "75056b786e316a0514ffa5efc8136648",
-        "sha256": "3ffb81fb6ac14a0090e9deac6c0e7e21ee4a20fc4b10b8ce1b80c61e3548429c",
-        "size": 68828226
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/trailmate_1.2.1_arm64.deb",
+        "md5": "19689d1dba8ee50bb87988f10a45fc48",
+        "sha256": "4eb0277c03c2d11535342d6bf908b3ad874e1589a78e140593a9662fc02a749a",
+        "size": 68856458
       },
-      "depends": "libc6, libstdc++6, libgcc-s1, libsqlite3-0, libcurl4, libssl3, libarchive13, libjpeg62-turbo, libpng16-16, libsdl2-2.0-0, libwayland-client0, libxkbcommon0, libnotify-bin, gdal-bin, unzip, ca-certificates, network-manager, osmium-tool, libicu72 | libicu74 | libicu76",
+      "depends": "libc6, libstdc++6, libgcc-s1, libsqlite3-0, libcurl4, libssl3, libarchive13, libfreetype6, libjpeg62-turbo, libpng16-16, libsdl2-2.0-0, libwayland-client0, libxkbcommon0, libnotify-bin, gdal-bin, unzip, ca-certificates, network-manager, osmium-tool, libicu72 | libicu74 | libicu76",
       "permissions": {
         "camera": false,
         "microphone": true,
