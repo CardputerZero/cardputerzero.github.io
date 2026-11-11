@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-10T23:12:22+08:00",
+  "generated_at": "2026-11-11T18:15:33+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -981,6 +981,85 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/04-firmware-detail.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/05-flash-progress.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/launcherespflasher/screenshots/06-file-install.png"
+      ]
+    },
+    {
+      "uuid": "f30baa76-f0b1-5344-a7ba-9d572cb1d884",
+      "share_code": "LOFI",
+      "title": "LoFiBox",
+      "summary": "Music player with library, metadata scraping, lyrics, EQ and network sources",
+      "description": "LoFiBox is a music player built for Cardputer Zero, bringing a local music library, online metadata scraping, network sources and several control interfaces to a handheld device.\n\n- Library browsing and search: add multiple local music folders, index your collection, browse by artist, album, song, genre, composer or compilation, and search and sort the library.\n- Music metadata scraping: read embedded tags, match and fill in song information, album covers and lyrics online, and cache matching results locally. When the format, write permissions and writeback rules allow it, metadata, artwork or lyrics can be written back to local music files.\n- Playback and queue: pause, resume, skip, seek, adjust volume, shuffle, repeat one or repeat all. Use the playback queue and built-in smart playlists for recently added, most played and recently played music.\n- Covers and lyrics: see album artwork and track information in Now Playing. The lyrics page supports plain lyrics and synchronized highlighting, using embedded content or online matches.\n- Equalizer and presets: adjust frequency gains with a 10-band equalizer and switch presets.\n- Network sources: configure media servers such as Jellyfin, Emby and OpenSubsonic/Navidrome, or play network audio URLs and internet radio. Supply a reachable service address and any required account permissions.\n- Device controls and visualization: contextual icon actions map to keys 4-8. Now Playing uses a translucent background spectrum, and the three white keyboard LEDs follow its rightmost column.\n- Stop-and-exit and screen timers: the close timer stops playback and exits LoFiBox without powering off the device. An independent idle-screen timer turns off the backlight while music continues; the first wake key only wakes the display. Both timers reset to OFF when the app is reopened.\n- Multiple control interfaces: the device GUI, terminal TUI, command-line CLI and browser WebUI share playback state. Control the player remotely from a browser on the local network.\n\nOnline scraping results depend on the network and available data sources. This release provides built-in smart playlists and does not include custom playlist editing.",
+      "locales": {
+        "zh-CN": {
+          "title": "LoFiBox",
+          "summary": "集音乐库、信息刮削、歌词、均衡器和网络音源于一体的掌上音乐播放器。",
+          "description": "LoFiBox 是一款为 Cardputer Zero 打造的音乐播放器，将本地音乐库、联网刮削、网络音源和多种控制界面集中在掌上设备中。\n\n- 音乐库浏览与搜索：添加多个本地音乐目录，建立音乐索引，按歌手、专辑、歌曲、流派、作曲者和合辑浏览，支持搜索与排序。\n- 音乐信息刮削：读取音乐文件中的标签，联网匹配并补全歌曲信息、专辑封面和歌词，在本地缓存匹配结果。在文件格式与写入权限支持、结果符合写入规则时，可将元数据、封面或歌词回写到本地音乐文件。\n- 播放与队列：支持暂停、继续、上一首、下一首、进度跳转、音量调整、随机播放、单曲循环和列表循环；提供播放队列，以及最近添加、最多播放、最近播放等内置智能歌单。\n- 封面与歌词：播放页显示专辑封面和曲目信息，歌词页支持普通歌词与随播放进度高亮的同步歌词，可使用文件内嵌内容或在线匹配结果。\n- 均衡器与预设：提供 10 段均衡器和预设切换，可按喜好调整各频段增益。\n- 网络音源：可配置 Jellyfin、Emby、OpenSubsonic/Navidrome 等媒体服务器，也可播放网络音频地址与网络电台；需自行提供可访问的服务地址及必要的账号权限。\n- 设备交互与音乐可视化：各页面提供与数字键 4–8 对应的图标操作；Now Playing 使用半透明背景频谱，三颗白色键盘灯跟随最右侧频谱柱变化。\n- 定时关闭与息屏：定时关闭会停止播放并退出 LoFiBox，不关闭设备电源；独立的定时息屏在音乐继续播放时关闭背光，首次唤醒按键只负责唤醒。两个计时设置在重新打开应用后均恢复为关闭。\n- 多种控制方式：设备图形界面、终端界面 TUI、命令行 CLI 和浏览器 WebUI 共用播放状态，可通过局域网浏览器遥控播放器。\n\n在线刮削的可用结果取决于网络和数据源。本版提供内置智能歌单，不包含自定义歌单编辑功能。"
+        },
+        "ja": {
+          "title": "LoFiBox",
+          "summary": "ライブラリ、情報取得、歌詞、EQ、ネットワーク音源を備えた携帯音楽プレーヤー",
+          "description": "LoFiBox は Cardputer Zero 向けの音楽プレーヤーです。ローカルライブラリ、オンラインでの音楽情報取得、ネットワーク音源、複数の操作画面を携帯端末にまとめています。\n\n- ライブラリの参照と検索：複数のローカル音楽フォルダーを追加してインデックスを作成し、アーティスト、アルバム、曲、ジャンル、作曲者、コンピレーション別に参照できます。検索と並べ替えにも対応します。\n- 音楽情報の取得：埋め込みタグを読み取り、曲情報、アルバム画像、歌詞をオンラインで照合・補完し、結果をローカルにキャッシュします。形式、書き込み権限、書き戻し規則が許可する場合、メタデータ、画像、歌詞をローカル音楽ファイルへ書き戻せます。\n- 再生とキュー：一時停止、再開、曲送り、シーク、音量調整、シャッフル、1 曲リピート、全曲リピートに対応します。再生キューと、最近追加・よく再生・最近再生の内蔵スマートプレイリストを利用できます。\n- 画像と歌詞：再生画面にアルバム画像と曲情報を表示します。歌詞画面は通常の歌詞と再生位置に合わせたハイライトに対応し、埋め込みデータまたはオンラインの照合結果を使用します。\n- イコライザーとプリセット：10 バンドの周波数ゲインを調整し、プリセットを切り替えられます。\n- ネットワーク音源：Jellyfin、Emby、OpenSubsonic/Navidrome などのメディアサーバーを設定でき、音声 URL やインターネットラジオも再生できます。アクセス可能なサービスアドレスと必要なアカウント権限を用意してください。\n- 端末操作と可視化：各画面のアイコン操作は数字キー 4–8 に対応します。再生画面には半透明の背景スペクトラムを表示し、3 個の白いキーボード LED が右端のスペクトラムに追従します。\n- 終了と消灯のタイマー：終了タイマーは再生を停止して LoFiBox を終了し、端末の電源は切りません。独立したアイドル消灯タイマーは音楽の再生中もバックライトを消灯します。最初のキー入力は画面の復帰のみを行います。どちらのタイマーもアプリを開き直すと OFF に戻ります。\n- 複数の操作方法：端末 GUI、端末画面 TUI、コマンドライン CLI、ブラウザー WebUI が再生状態を共有します。ローカルネットワーク上のブラウザーからリモート操作できます。\n\nオンラインで取得できる情報は、ネットワークとデータ提供元によって異なります。この版は内蔵スマートプレイリストを提供し、カスタムプレイリスト編集は含みません。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "LoFiBox",
+          "summary": "集音乐库、信息刮削、歌词、均衡器和网络音源于一体的掌上音乐播放器。",
+          "description": "LoFiBox 是一款为 Cardputer Zero 打造的音乐播放器，将本地音乐库、联网刮削、网络音源和多种控制界面集中在掌上设备中。\n\n- 音乐库浏览与搜索：添加多个本地音乐目录，建立音乐索引，按歌手、专辑、歌曲、流派、作曲者和合辑浏览，支持搜索与排序。\n- 音乐信息刮削：读取音乐文件中的标签，联网匹配并补全歌曲信息、专辑封面和歌词，在本地缓存匹配结果。在文件格式与写入权限支持、结果符合写入规则时，可将元数据、封面或歌词回写到本地音乐文件。\n- 播放与队列：支持暂停、继续、上一首、下一首、进度跳转、音量调整、随机播放、单曲循环和列表循环；提供播放队列，以及最近添加、最多播放、最近播放等内置智能歌单。\n- 封面与歌词：播放页显示专辑封面和曲目信息，歌词页支持普通歌词与随播放进度高亮的同步歌词，可使用文件内嵌内容或在线匹配结果。\n- 均衡器与预设：提供 10 段均衡器和预设切换，可按喜好调整各频段增益。\n- 网络音源：可配置 Jellyfin、Emby、OpenSubsonic/Navidrome 等媒体服务器，也可播放网络音频地址与网络电台；需自行提供可访问的服务地址及必要的账号权限。\n- 设备交互与音乐可视化：各页面提供与数字键 4–8 对应的图标操作；Now Playing 使用半透明背景频谱，三颗白色键盘灯跟随最右侧频谱柱变化。\n- 定时关闭与息屏：定时关闭会停止播放并退出 LoFiBox，不关闭设备电源；独立的定时息屏在音乐继续播放时关闭背光，首次唤醒按键只负责唤醒。两个计时设置在重新打开应用后均恢复为关闭。\n- 多种控制方式：设备图形界面、终端界面 TUI、命令行 CLI 和浏览器 WebUI 共用播放状态，可通过局域网浏览器遥控播放器。\n\n在线刮削的可用结果取决于网络和数据源。本版提供内置智能歌单，不包含自定义歌单编辑功能。"
+        },
+        "ja": {
+          "title": "LoFiBox",
+          "summary": "ライブラリ、情報取得、歌詞、EQ、ネットワーク音源を備えた携帯音楽プレーヤー",
+          "description": "LoFiBox は Cardputer Zero 向けの音楽プレーヤーです。ローカルライブラリ、オンラインでの音楽情報取得、ネットワーク音源、複数の操作画面を携帯端末にまとめています。\n\n- ライブラリの参照と検索：複数のローカル音楽フォルダーを追加してインデックスを作成し、アーティスト、アルバム、曲、ジャンル、作曲者、コンピレーション別に参照できます。検索と並べ替えにも対応します。\n- 音楽情報の取得：埋め込みタグを読み取り、曲情報、アルバム画像、歌詞をオンラインで照合・補完し、結果をローカルにキャッシュします。形式、書き込み権限、書き戻し規則が許可する場合、メタデータ、画像、歌詞をローカル音楽ファイルへ書き戻せます。\n- 再生とキュー：一時停止、再開、曲送り、シーク、音量調整、シャッフル、1 曲リピート、全曲リピートに対応します。再生キューと、最近追加・よく再生・最近再生の内蔵スマートプレイリストを利用できます。\n- 画像と歌詞：再生画面にアルバム画像と曲情報を表示します。歌詞画面は通常の歌詞と再生位置に合わせたハイライトに対応し、埋め込みデータまたはオンラインの照合結果を使用します。\n- イコライザーとプリセット：10 バンドの周波数ゲインを調整し、プリセットを切り替えられます。\n- ネットワーク音源：Jellyfin、Emby、OpenSubsonic/Navidrome などのメディアサーバーを設定でき、音声 URL やインターネットラジオも再生できます。アクセス可能なサービスアドレスと必要なアカウント権限を用意してください。\n- 端末操作と可視化：各画面のアイコン操作は数字キー 4–8 に対応します。再生画面には半透明の背景スペクトラムを表示し、3 個の白いキーボード LED が右端のスペクトラムに追従します。\n- 終了と消灯のタイマー：終了タイマーは再生を停止して LoFiBox を終了し、端末の電源は切りません。独立したアイドル消灯タイマーは音楽の再生中もバックライトを消灯します。最初のキー入力は画面の復帰のみを行います。どちらのタイマーもアプリを開き直すと OFF に戻ります。\n- 複数の操作方法：端末 GUI、端末画面 TUI、コマンドライン CLI、ブラウザー WebUI が再生状態を共有します。ローカルネットワーク上のブラウザーからリモート操作できます。\n\nオンラインで取得できる情報は、ネットワークとデータ提供元によって異なります。この版は内蔵スマートプレイリストを提供し、カスタムプレイリスト編集は含みません。"
+        }
+      },
+      "categories": [
+        "Media"
+      ],
+      "author": {
+        "display_name": "vicliu624",
+        "github": "vicliu624"
+      },
+      "version": "0.3.8-4",
+      "published_at": "2026-11-10T13:42:09+00:00",
+      "updated_at": "2026-11-10T13:42:09+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-3.0-or-later",
+      "source_repo": "https://github.com/vicliu624/LoFiBox-Zero",
+      "download": {
+        "type": "deb",
+        "package": "lofibox-cardputer-zero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/lofibox-cardputer-zero_0.3.8-4_arm64.deb",
+        "md5": "a30e6b5e0f389ca60414e9b3919e59e4",
+        "sha256": "1696e536e821970f2b208c793d6cda479f1a57de670395ceae3307a452de0a86",
+        "size": 4569428
+      },
+      "depends": "libc6 (>= 2.34), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.0), libmpg123-0 (>= 1.28.0), libsoxr0 (>= 0.1.0), libstdc++6 (>= 12), libxkbcommon0 (>= 0.5.0), alsa-utils, ffmpeg, python3, python3-mutagen",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/logo.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/now-playing.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/library.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/timers.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/logo.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/now-playing.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/library.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/timers.png"
       ]
     },
     {
