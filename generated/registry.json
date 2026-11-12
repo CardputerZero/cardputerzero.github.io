@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-12T17:26:46+08:00",
+  "generated_at": "2026-11-12T19:29:52+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -586,12 +586,12 @@
         "System Tools"
       ],
       "author": {
-        "display_name": "XuHaifeng",
+        "display_name": "HarrisonXu",
         "github": "Harrison-Xu"
       },
-      "version": "0.4.6-1",
+      "version": "0.4.7-1",
       "published_at": "2026-10-12T11:16:47+00:00",
-      "updated_at": "2026-10-12T11:16:47+00:00",
+      "updated_at": "2026-11-12T11:18:56+00:00",
       "review": {
         "status": "approved"
       },
@@ -600,10 +600,10 @@
       "download": {
         "type": "deb",
         "package": "fontpreview",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/fontpreview_0.4.6-1_arm64.deb",
-        "md5": "60d381e538cb5e99849cc48f1b2b1396",
-        "sha256": "cc957e0d6b5b40621936d3155af61397e8cc72a9f3558fd4591c93c51d51cb92",
-        "size": 820766
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/fontpreview_0.4.7-1_arm64.deb",
+        "md5": "28b2c7ef1264307015f08c5dbe9e6c6a",
+        "sha256": "8d2b2433dee57c29c3f069191031e785f00abc4c96256b1dd46a62c902f4ff73",
+        "size": 823726
       },
       "depends": "libc6 (>= 2.34), libstdc++6 (>= 9), libgcc-s1, libfreetype6, libpng16-16 | libpng16-16t64, zlib1g, libsdl2-2.0-0 (>= 2.0.4)",
       "permissions": {
