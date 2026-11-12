@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-13T02:00:39+08:00",
+  "generated_at": "2026-11-13T06:54:07+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1662,7 +1662,7 @@
       "share_code": "RFID",
       "title": "RFID",
       "summary": "NFC/UHF scan, saved dumps, NTAG emulation and RFID tools",
-      "description": "RFID 1.0.3 for CardputerZero: READ, SAVED, EMU and TOOLS for M5 NFC CAP (SPI), M5 NFC Unit (IIC), PN532, PN532Killer and compatible UHF readers. Includes saved MFC dump writing, MFKey32v2/MFKey64/Staticnested tools and JSON-backed NTAG emulation. Hardware support varies by function; an external reader is required.\r\n\r\n1.0.3 restores the panel mode from the board firmware at startup, after CAP operations and on clean exit; Gen1A Saved writes reuse one unlocked session, check every write ACK and finish without read-back verification. Other write modes retain verification. Prefixed dump key export is corrected, and source modules/tests/build tools are reorganized.\r\n\r\nSPI MFC 1K encrypted emulation remains experimental and disabled by default because restart authentication regression is unresolved. Its kernel helper is not installed by this package. The intermittent panel-mode trigger remains under investigation; this release adds recovery.",
+      "description": "RFID 1.0.4 for CardputerZero: READ, SAVED, EMU and TOOLS for M5 NFC CAP (SPI), M5 NFC Unit (IIC), PN532, PN532Killer and compatible UHF readers. Includes saved MFC dump writing, MFKey32v2/MFKey64/Staticnested tools and JSON-backed NTAG emulation. Hardware support varies by function; an external reader is required.\r\n\r\n1.0.4 improves GroveNFC emulation and RFID read streaming, verifies PN532Killer ISO15693 block writes by readback, and adjusts NFC Unit listener recovery and MFKey UID input.\r\n\r\nSPI MFC 1K encrypted emulation remains experimental and disabled by default because restart authentication regression is unresolved. Its kernel helper is not installed by this package. The intermittent panel-mode trigger remains under investigation; panel-mode recovery remains enabled.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -1673,9 +1673,9 @@
         "display_name": "whywilson",
         "github": "whywilson"
       },
-      "version": "1.0.3",
+      "version": "1.0.4",
       "published_at": "2026-10-21T09:04:48+00:00",
-      "updated_at": "2026-10-21T15:08:49+00:00",
+      "updated_at": "2026-11-12T22:46:10+00:00",
       "review": {
         "status": "approved"
       },
@@ -1684,10 +1684,10 @@
       "download": {
         "type": "deb",
         "package": "rfid",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/rfid_1.0.3_arm64.deb",
-        "md5": "c4d4978702da52b81555659e4f2f2a7d",
-        "sha256": "29663d9f675543fe7b4a2046db3484d13e9d795231ff1bcdcd598906f7371a2e",
-        "size": 2409596
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/rfid_1.0.4_arm64.deb",
+        "md5": "9001277a145bd4102cb9682fdd4d860a",
+        "sha256": "04f9f9c8a964d3f002e0bd3a1ac190f6648a0744089c95e22d232a11ada1d2d6",
+        "size": 2408320
       },
       "depends": "",
       "permissions": {
