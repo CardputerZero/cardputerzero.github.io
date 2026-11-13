@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-14T00:14:12+08:00",
+  "generated_at": "2026-11-14T00:34:23+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -715,6 +715,63 @@
       ]
     },
     {
+      "uuid": "809b7bd7-9db7-5e5a-9575-5ebddf96665c",
+      "share_code": "FIVE",
+      "title": "Five",
+      "summary": "离线五子棋，支持 Rapfi 人机和同机双人。 Offline Gomoku with Rapfi or local two-player.",
+      "description": "简体中文\r\n在 Cardputer Zero 上离线下五子棋。可与 Rapfi 对弈，选择简单、普通或困难，也可在同一台设备上双人对弈。支持 15×15 和 13×13 棋盘、自由规则和连珠禁手。设置中可查看规则说明，两种对局均支持悔棋和续局。界面支持简体中文和英文。\r\n\r\nFive 应用部分采用专有许可。Rapfi 是独立引擎，按 GPL-3.0-or-later 分发，官方模型权重采用 CC0-1.0。安装包内的 /usr/share/doc/five/ 提供 Rapfi 对应源码、构建脚本及许可证。\r\n\r\nEnglish\r\nPlay offline Gomoku on Cardputer Zero. Play Rapfi at three difficulty levels or share one device with a friend. Choose a 15×15 or 13×13 board and Freestyle or Renju fouls. A rules guide, undo and resume are available. The interface supports Simplified Chinese and English.\r\n\r\nFive is proprietary. The separate Rapfi engine is distributed under GPL-3.0-or-later and its official weights under CC0-1.0. Corresponding Rapfi source, build instructions and license texts are included in the package under /usr/share/doc/five/.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games"
+      ],
+      "author": {
+        "display_name": "xu-c",
+        "github": "xu-c"
+      },
+      "version": "1.0.0-6",
+      "published_at": "2026-11-13T15:17:18+00:00",
+      "updated_at": "2026-11-13T15:17:18+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Proprietary",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "five",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/five_1.0.0-6_arm64.deb",
+        "md5": "c58277b0173d7db41f25e4c35019eaa6",
+        "sha256": "bbf319e4c8937848ed05e3f3cb6c1659542413fc1207d3892ff54c130b601619",
+        "size": 1790618
+      },
+      "depends": "python3 (>= 3.9), python3-pil (>= 9.2), python3-evdev, fonts-noto-cjk, alsa-utils",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/five_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/five_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-2.png"
+      ]
+    },
+    {
       "uuid": "0d3c2edd-d89a-5736-8133-f15d1088845f",
       "share_code": "FLNT",
       "title": "Flint",
@@ -1376,9 +1433,9 @@
         "display_name": "vicliu624",
         "github": "vicliu624"
       },
-      "version": "0.3.8-4",
+      "version": "0.3.9-1",
       "published_at": "2026-11-10T13:42:09+00:00",
-      "updated_at": "2026-11-10T13:42:09+00:00",
+      "updated_at": "2026-11-13T16:22:54+00:00",
       "review": {
         "status": "approved"
       },
@@ -1387,10 +1444,10 @@
       "download": {
         "type": "deb",
         "package": "lofibox-cardputer-zero",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/lofibox-cardputer-zero_0.3.8-4_arm64.deb",
-        "md5": "a30e6b5e0f389ca60414e9b3919e59e4",
-        "sha256": "1696e536e821970f2b208c793d6cda479f1a57de670395ceae3307a452de0a86",
-        "size": 4569428
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/lofibox-cardputer-zero_0.3.9-1_arm64.deb",
+        "md5": "ecc9043c26dc5bd5453c689df1cc6c11",
+        "sha256": "cd66e96a606a721acf677b16d3ad4667123f354ab0956a15c38e2efd20b00367",
+        "size": 4440460
       },
       "depends": "libc6 (>= 2.34), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.0), libmpg123-0 (>= 1.28.0), libsoxr0 (>= 0.1.0), libstdc++6 (>= 12), libxkbcommon0 (>= 0.5.0), alsa-utils, ffmpeg, python3, python3-mutagen",
       "permissions": {
@@ -1408,14 +1465,16 @@
         "screenshots": [
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/now-playing.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/library.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/timers.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/timers.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/power.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/logo.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/now-playing.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/library.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/timers.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/timers.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/power.png"
       ]
     },
     {
