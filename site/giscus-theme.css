@@ -185,3 +185,11 @@ body {
 .gsc-timeline {
   margin-top: 8px;
 }
+
+/* Developer mentions still notify on GitHub; keep the store discussion human.
+   Match the author profile rather than mentions inside another person's text. */
+.gsc-reply:has(.gsc-reply-author-avatar a[href="https://github.com/apps/github-actions"]),
+.gsc-replies:has(.gsc-reply-author-avatar a[href="https://github.com/apps/github-actions"]):not(:has(.gsc-reply-author-avatar a:not([href="https://github.com/apps/github-actions"]))):not(:has(> .flex)),
+.gsc-comment:has(.gsc-reply-author-avatar a[href="https://github.com/apps/github-actions"]):not(:has(.gsc-reply-author-avatar a:not([href="https://github.com/apps/github-actions"]))):not(:has(.gsc-replies > .flex)) .gsc-comment-replies-count {
+  display: none;
+}

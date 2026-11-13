@@ -5,6 +5,11 @@
 `author.github` account from `generated/registry.json` and linking to the new
 comment. This also covers comments posted directly on GitHub.
 
+The store's shared Giscus theme hides replies authored by the GitHub Actions app account.
+Threads containing only those replies also hide the reply area and reply count;
+human replies and pagination controls remain available. The notification replies
+remain on GitHub, so developer mentions and notification delivery are unchanged.
+
 - Current `CODE · Title` discussion titles and the earlier
   `cardputerzero-app:UUID` titles are recognized. Ambiguous or unknown titles
   and missing/invalid GitHub accounts are skipped.

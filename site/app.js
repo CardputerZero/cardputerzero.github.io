@@ -805,7 +805,7 @@ function mountGiscus(app) {
 
 function giscusThemeUrl(expanded) {
   const file = expanded ? "giscus-theme.css" : "giscus-compact.css";
-  return new URL(`site/${file}?v=20261105-compact`, document.baseURI).href;
+  return new URL(`site/${file}?v=20261114-notifications`, document.baseURI).href;
 }
 
 function giscusLang() {
