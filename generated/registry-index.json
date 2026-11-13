@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-13T18:04:07+08:00",
+  "generated_at": "2026-11-13T22:55:38+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2696,7 +2696,7 @@
       "share_code": "WTHR",
       "title": "Weather",
       "summary": "Current weather and 3-day forecast from Open-Meteo, with optional GPS location.",
-      "description": "Shows the current temperature, feels-like, humidity and wind, plus a 3-day forecast with rain chance. Data comes from Open-Meteo (no API key needed) and refreshes every 15 minutes.\r\n\r\nLocation: uses the Cap LoRa-1262 GPS when it has a fix; otherwise a fixed place you search for in Settings.\r\n\r\nKeys: S settings, R refresh, ESC exit. In Settings, F/X move up/down and ENTER selects.",
+      "description": "Shows the current temperature, feels-like, humidity and wind, plus a 3-day forecast with rain chance. Data comes from Open-Meteo (no API key needed) and refreshes every 15 minutes.\n\nLocation: uses the Cap LoRa-1262 GPS when it has a fix; otherwise a fixed place you search for in Settings.\n\nKeys: S settings, R refresh, hold ESC 3 seconds to exit. In Settings, F/X move up/down and ENTER selects.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -2706,9 +2706,9 @@
         "display_name": "ChrisOr-Dev",
         "github": "ChrisOr-Dev"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "published_at": "2026-11-12T15:30:29+00:00",
-      "updated_at": "2026-11-12T15:30:29+00:00",
+      "updated_at": "2026-11-13T14:45:58+00:00",
       "review": {
         "status": "approved"
       },
@@ -2717,33 +2717,35 @@
       "download": {
         "type": "deb",
         "package": "zero-weather",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-weather_1.0.0_all.deb",
-        "md5": "8dab8c5e18a304dd194b5d005c6ed22d",
-        "sha256": "ad62de71d94e92f8a447c5dedcb12cc11a46d3e0479eaa0b9dd424f3e07b93f0",
-        "size": 9812
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-weather_1.0.1_all.deb",
+        "md5": "475da5b35f3e7dc8aa6c2a7eb3db8e88",
+        "sha256": "2324bd9efca6f6671ff953e91f7c8ed870d6934222eb929c09ce2c1b9840df14",
+        "size": 10584
       },
       "depends": "python3, python3-pil, python3-numpy",
       "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
         "additional_hardware": true,
         "background_service": false,
-        "camera": false,
-        "external_display": false,
-        "imu": false,
-        "microphone": false,
-        "network": true
+        "external_display": false
       },
       "risk_flags": [],
       "assets": {
-        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/zero-weather_icon.png",
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/screenshots/screenshot-0.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/screenshots/screenshot-1.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/screenshots/main.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/screenshots/settings.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/screenshots/search-results.png"
         ]
       },
-      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/zero-weather_icon.png",
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/screenshots/screenshot-0.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/screenshots/screenshot-1.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/screenshots/main.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/screenshots/settings.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/screenshots/search-results.png"
       ]
     },
     {
