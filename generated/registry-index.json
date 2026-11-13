@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-14T05:53:22+08:00",
+  "generated_at": "2026-11-14T06:25:00+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2711,9 +2711,9 @@
         "github": "ChrisOr-Dev",
         "display_name": "ChrisOr-Dev"
       },
-      "version": "1.0.1",
+      "version": "1.0.2",
       "published_at": "2026-11-12T17:18:33+00:00",
-      "updated_at": "2026-11-13T17:04:22+00:00",
+      "updated_at": "2026-11-13T22:15:38+00:00",
       "review": {
         "status": "approved"
       },
@@ -2722,10 +2722,10 @@
       "download": {
         "type": "deb",
         "package": "zero-news",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-news_1.0.1_all.deb",
-        "md5": "e8542dda018c605b9ec33f63e0779677",
-        "sha256": "f634308baf52de598031569f29e0d58e24532c60ffb54ebb121a68ef869c14b2",
-        "size": 20576
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-news_1.0.2_all.deb",
+        "md5": "0ab6721be6b63a3fc0605cf623d841d8",
+        "sha256": "7b182d368b049d60e6516ebaecfd4945268bc8b687381f06ca522826a8aa2e3b",
+        "size": 20892
       },
       "depends": "python3, python3-pil, python3-numpy",
       "permissions": {
@@ -2772,9 +2772,9 @@
         "github": "ChrisOr-Dev",
         "display_name": "ChrisOr-Dev"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "published_at": "2026-11-12T19:38:13+00:00",
-      "updated_at": "2026-11-12T19:38:13+00:00",
+      "updated_at": "2026-11-13T22:12:19+00:00",
       "review": {
         "status": "approved"
       },
@@ -2783,10 +2783,10 @@
       "download": {
         "type": "deb",
         "package": "zero-stocks",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-stocks_1.0.0_all.deb",
-        "md5": "fea7bd99da669d757bd9d13a95cfc420",
-        "sha256": "32d9f2cece714984eb6b4d09a0fdf65a690b83cb5cadf81752aef4abf0a47fc7",
-        "size": 15272
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-stocks_1.0.1_all.deb",
+        "md5": "338a77adbd4514d197da0b0fc787d354",
+        "sha256": "73b7000fbb8b7510aa4622348ff05261a128290ee359be86a97c3ab8429c1350",
+        "size": 15624
       },
       "depends": "python3, python3-pil, python3-numpy",
       "permissions": {
@@ -2829,9 +2829,9 @@
         "display_name": "ChrisOr-Dev",
         "github": "ChrisOr-Dev"
       },
-      "version": "1.0.1",
+      "version": "1.0.2",
       "published_at": "2026-11-12T15:30:29+00:00",
-      "updated_at": "2026-11-13T14:45:58+00:00",
+      "updated_at": "2026-11-13T22:12:35+00:00",
       "review": {
         "status": "approved"
       },
@@ -2840,10 +2840,10 @@
       "download": {
         "type": "deb",
         "package": "zero-weather",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-weather_1.0.1_all.deb",
-        "md5": "475da5b35f3e7dc8aa6c2a7eb3db8e88",
-        "sha256": "2324bd9efca6f6671ff953e91f7c8ed870d6934222eb929c09ce2c1b9840df14",
-        "size": 10584
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-weather_1.0.2_all.deb",
+        "md5": "2f0d9ea0cfe63abe68406da9d1d4e6b6",
+        "sha256": "5b742fff726087fdc9ed3bd530435e176ef36451ced49d0613a23c5fcb0487d4",
+        "size": 10896
       },
       "depends": "python3, python3-pil, python3-numpy",
       "permissions": {
