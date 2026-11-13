@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-13T22:55:38+08:00",
+  "generated_at": "2026-11-14T00:14:12+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -584,6 +584,70 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/02-idle.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/03-listening.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/04-speaking.png"
+      ]
+    },
+    {
+      "uuid": "257010ed-e97a-52cf-b6fb-e0b9f792cba9",
+      "share_code": "DOOD",
+      "title": "Doody Calls- Turd World War",
+      "summary": "Squad up and flush out the Doodies: a full family-friendly 3D shooter.",
+      "description": "Doody Calls – Turd World War is the full first-person 3D shooter from Software Amusements.\r\n\r\nThe Doodies have risen from the sewers and only your squad stands in their way. Fight across nine sectors, from the sewage works and the high street to a beach landing, a snowy mountain ridge and a container ship. Face Poo-copters, Doody Tanks, the Poonami, The Big Stinker and the Giga Poo, armed with the Plunger, the U-Bend .50 sniper, Air Freshener grenades and a trusty toilet brush.\r\n\r\nClimb 200 ranks, earn 30 medals and post your score on the online leaderboard, shared with\r\nthe web version. Family friendly, always.\r\n\r\nPlay it your way: on the built-in keyboard, with a mouse, or with a Bluetooth Xbox controller. Plug in an HDMI screen and the game moves to the big screen.\r\n\r\nSectors 1-3 are free. The Supporter Pack (sectors 4-6 plus perks) and the Expansion Pack (sectors 7-9) are US$1.99 each: scan the QR code in the game to buy on your phone and then type in your unlock code. Codes work on the web version too.\r\n\r\nCopyright © 2026 Software Amusements. All rights reserved.\r\n\r\nwww.softwareamusements.com",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games",
+        "Other"
+      ],
+      "author": {
+        "display_name": "Doody Calls - Turd World War",
+        "github": "FuzzyDweeb"
+      },
+      "version": "2.0.5",
+      "published_at": "2026-11-13T13:04:37+00:00",
+      "updated_at": "2026-11-13T13:04:37+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Proprietary",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "doodycalls",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/doodycalls_2.0.5_arm64.deb",
+        "md5": "16a6cb5ac60236b2217b143bd9422007",
+        "sha256": "f294c20cf9362c82f6a78bdf00db7071ca488efcb7226523067264dc418241b0",
+        "size": 11864048
+      },
+      "depends": "curl, alsa-utils",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": true,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doodycalls/doodycalls_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doodycalls/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doodycalls/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doodycalls/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doodycalls/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doodycalls/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doodycalls/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doodycalls/doodycalls_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doodycalls/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doodycalls/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doodycalls/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doodycalls/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doodycalls/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doodycalls/screenshots/screenshot-5.png"
       ]
     },
     {
