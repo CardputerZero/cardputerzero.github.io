@@ -1,0 +1,32 @@
+name: Notify App Developer
+
+on:
+  discussion_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  discussions: write
+
+# Serialize retries of the same comment without dropping other comments.
+concurrency:
+  group: notify-app-developer-${{ github.event.comment.node_id }}
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    if: >-
+      github.event.discussion.category.node_id == 'DIC_kwDOSWq5V84C8kA5' &&
+      github.event.comment.user.type != 'Bot'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const notify = require('./scripts/notify_app_developer.cjs');
+            const registry = require('./generated/registry.json');
+            await notify({ github, context, core, registry });
