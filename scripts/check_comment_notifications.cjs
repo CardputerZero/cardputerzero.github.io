@@ -70,6 +70,34 @@ test("new reply notifies under the root comment and links to that reply", async 
   assert.ok(state.writes[0].body.includes(state.live.url));
 });
 
+test("manual backfill reads and notifies only the requested older comment", async () => {
+  const state = fixture();
+  state.context.eventName = "workflow_dispatch";
+  state.context.payload = { inputs: { comment_id: "DC_1" } };
+  await state.run();
+  assert.deepEqual(state.reads[0], { id: "DC_1" });
+  assert.equal(state.writes.length, 1);
+  assert.equal(state.writes[0].replyToId, "DC_1");
+});
+
+test("manual backfill retains category, author and duplicate checks", async () => {
+  for (const change of [
+    (s) => { delete s.context.payload.inputs.comment_id; },
+    (s) => { s.live.discussion.category.id = "other"; },
+    (s) => { s.live.discussion.repository.nameWithOwner = "other/repo"; },
+    (s) => { s.live.author.login = "developer"; },
+    (s) => { s.live.author.__typename = "Bot"; },
+    (s) => { s.pages[0].nodes.push({ body: "<!-- app-developer-notification:DC_1 -->", author: { login: "github-actions[bot]" } }); }
+  ]) {
+    const state = fixture();
+    state.context.eventName = "workflow_dispatch";
+    state.context.payload = { inputs: { comment_id: "DC_1" } };
+    change(state);
+    await state.run();
+    assert.equal(state.writes.length, 0);
+  }
+});
+
 test("all current registry apps map to their own developer", async () => {
   for (const entry of registry.apps) {
     const state = fixture();

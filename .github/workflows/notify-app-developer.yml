@@ -3,6 +3,12 @@ name: Notify App Developer
 on:
   discussion_comment:
     types: [created]
+  workflow_dispatch:
+    inputs:
+      comment_id:
+        description: GitHub node ID of an existing app comment to notify
+        required: true
+        type: string
 
 permissions:
   contents: read
@@ -10,14 +16,15 @@ permissions:
 
 # Serialize retries of the same comment without dropping other comments.
 concurrency:
-  group: notify-app-developer-${{ github.event.comment.node_id }}
+  group: notify-app-developer-${{ inputs.comment_id || github.event.comment.node_id }}
   cancel-in-progress: false
 
 jobs:
   notify:
     if: >-
-      github.event.discussion.category.node_id == 'DIC_kwDOSWq5V84C8kA5' &&
-      github.event.comment.user.type != 'Bot'
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.discussion.category.node_id == 'DIC_kwDOSWq5V84C8kA5' &&
+      github.event.comment.user.type != 'Bot')
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:

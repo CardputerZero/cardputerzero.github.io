@@ -25,6 +25,10 @@ default branch and Actions is enabled. Existing comments are not backfilled.
 There may be a delay while GitHub schedules the job. Mention delivery and email
 depend on the developer's GitHub notification settings.
 
+To notify an older comment, manually run **Notify App Developer** with its GraphQL
+comment node ID as `comment_id`. The same category, app, developer, author and
+duplicate checks apply; no other existing comments are processed.
+
 Run the mocked checks without posting any comments:
 
 ```sh

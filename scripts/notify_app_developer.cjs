@@ -27,9 +27,12 @@ function findApp(apps, title) {
 module.exports = async function notifyAppDeveloper({ github, context, core, registry }) {
   const { action, discussion, comment } = context.payload;
   const skip = (reason) => core.info(`Developer notification skipped: ${reason}`);
-  if (context.eventName !== "discussion_comment" || action !== "created" ||
-      discussion?.category?.node_id !== CATEGORY_ID || !comment?.node_id ||
-      comment.user?.type === "Bot") return skip("not a new human app comment");
+  const manual = context.eventName === "workflow_dispatch";
+  const commentId = manual ? context.payload.inputs?.comment_id : comment?.node_id;
+  if (!commentId || (!manual && (context.eventName !== "discussion_comment" || action !== "created" ||
+      discussion?.category?.node_id !== CATEGORY_ID || comment.user?.type === "Bot"))) {
+    return skip("not a new human app comment or a manual notification request");
+  }
 
   // Read the live comment so a deleted, hidden or moved comment isn't notified
   // using stale webhook data. The query also finds the thread's top-level ID.
@@ -49,11 +52,11 @@ module.exports = async function notifyAppDeveloper({ github, context, core, regi
         }
       }
     }
-  `, { id: comment.node_id });
+  `, { id: commentId });
   const currentDiscussion = live?.discussion;
   const repository = `${context.repo.owner}/${context.repo.repo}`;
   if (!live?.id || live.deletedAt || live.isMinimized || currentDiscussion?.locked ||
-      currentDiscussion?.id !== discussion.node_id || currentDiscussion?.category?.id !== CATEGORY_ID ||
+      (!manual && currentDiscussion?.id !== discussion.node_id) || currentDiscussion?.category?.id !== CATEGORY_ID ||
       currentDiscussion?.repository?.nameWithOwner?.toLowerCase() !== repository.toLowerCase()) {
     return skip("comment no longer available in this app category");
   }
