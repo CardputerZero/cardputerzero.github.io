@@ -24,7 +24,7 @@ const GISCUS_CONFIG = {
   repoId: "R_kgDOSWq5Vw",
   category: "App Comments",
   categoryId: "DIC_kwDOSWq5V84C8kA5",
-  description: "这是 CardputerZero Store 应用的评论区。有新评论时，机器人会自动 @ 开发者。"
+  description: "This is the comment section for a CardputerZero Store app. New comments automatically notify the developer via @mention. Comments here are synced with the Store website, where bot replies are automatically hidden."
 };
 const DOCUMENTS = [
   {

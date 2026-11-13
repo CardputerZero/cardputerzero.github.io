@@ -5,7 +5,10 @@
 `author.github` account from `generated/registry.json` and linking to the new
 comment. This also covers comments posted directly on GitHub.
 
-New discussion bodies use the shared Chinese comment-area description and link
+New discussion bodies always use the shared English comment-area description,
+regardless of the first commenter's interface language. The description explains
+developer mentions, synchronization with the Store, and hidden bot replies on
+the Store website. Discussions link
 back to `https://cardputer.cc/#/apps/CODE` using the app's share code. The app view
 sets the page description and `giscus:backlink` metadata before loading Giscus;
 leaving the app view restores the normal site metadata. Existing discussion
