@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-14T00:34:23+08:00",
+  "generated_at": "2026-11-14T01:13:04+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2701,7 +2701,7 @@
       "share_code": "NEWS",
       "title": "News",
       "summary": "Rotating RSS headlines in large type: English and Chinese, tech, life, general.",
-      "description": "Shows the latest headlines from RSS feeds, one at a time in large type, rotating every few seconds, with a scrolling ticker of the next headlines. ENTER shows the full summary.\n\nSettings (S): choose English and/or Chinese, and Tech, Life and/or General news; each combination has its own sources (Hacker News, The Verge, BBC, NYT, CBC, RTHK, unwire.hk, iThome and more). Also sets how fast headlines rotate. My feeds adds your own RSS feeds: type a feed or website address on the keyboard.\n\nKeys: F/X previous/next (Z/C left/right), OK details, P pause, R refresh, S settings, hold ESC 3 seconds to exit. Headlines are cached for offline viewing.",
+      "description": "Shows the latest headlines from RSS feeds, one at a time in large type, rotating every few seconds, with a scrolling ticker of the next headlines. OK opens the full story: the feed text at once, then the whole article fetched from its web page.\n\nSettings (S): choose English and/or Chinese, and Tech, Life and/or General news; each combination has its own sources (Hacker News, The Verge, BBC, NYT, CBC, RTHK, unwire.hk, iThome and more). Also sets how fast headlines rotate. My feeds adds your own RSS feeds: type a feed or website address on the keyboard.\n\nKeys: F/X previous/next (Z/C left/right), OK details (up/down scroll a line, left/right a page), P pause, R refresh, S settings, hold ESC 3 seconds to exit. Headlines are cached for offline viewing.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -2711,9 +2711,9 @@
         "github": "ChrisOr-Dev",
         "display_name": "ChrisOr-Dev"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "published_at": "2026-11-12T17:18:33+00:00",
-      "updated_at": "2026-11-12T17:18:33+00:00",
+      "updated_at": "2026-11-13T17:04:22+00:00",
       "review": {
         "status": "approved"
       },
@@ -2722,10 +2722,10 @@
       "download": {
         "type": "deb",
         "package": "zero-news",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-news_1.0.0_all.deb",
-        "md5": "e311e35862974da133e65a399e2fc731",
-        "sha256": "f030066f2e443a66592e1abbcd2ac9607b4e44f9b777d5b33483be4faec21291",
-        "size": 17616
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-news_1.0.1_all.deb",
+        "md5": "e8542dda018c605b9ec33f63e0779677",
+        "sha256": "f634308baf52de598031569f29e0d58e24532c60ffb54ebb121a68ef869c14b2",
+        "size": 20576
       },
       "depends": "python3, python3-pil, python3-numpy",
       "permissions": {
