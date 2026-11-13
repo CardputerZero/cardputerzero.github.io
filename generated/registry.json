@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-13T06:54:07+08:00",
+  "generated_at": "2026-11-13T17:22:59+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -72,6 +72,60 @@
       ]
     },
     {
+      "uuid": "c84192db-86f8-52bd-bedb-d1f8a0278f99",
+      "share_code": "AMII",
+      "title": "amiibo_sim",
+      "summary": "Amiibo模拟器",
+      "description": "## 项目介绍\r\n使用Cap CC1101内置的 ST25R3916 NFC 芯片，模拟Amiibo，支持刷新随机UID\r\n.bin文件需由用户自行添加至~/amiibo_sim\r\n\r\n### 准备工作\r\n\r\n1. 关机装好 Cap CC1101，开机后在 `Settings → ExtPort` 中确认 EXT D+/D− 处于 GPIO 模式。\r\n2. 从 APPLaunch 打开 `amiibo_sim`。如果屏幕显示 `NFC SPI missing` 或 `SPI access denied`，需运行：\r\n\r\n   ```sh\r\n   sudo /usr/lib/amiibo_sim/cap-setup\r\n   ```\r\n\r\n应用只检测 SPI 状态。上面的命令由用户授权执行，负责加载 NFC SPI 配置并设置设备访问权限。应用会自动复查，也可以按 H 立即检查。看到 CAP ST25R3916 connected 即可选卡。临时加载的 SPI 配置在重启后需要重新启用。\r\n3. 应用会尝试自动开启 EXT 5V。如果显示 EXT 5V failed，需在 Settings → ExtPort 手动开启 EXT 5V，再按 H。\r\n\r\n### 导入文件和操作\r\n首次打开会自动创建 ~/amiibo_sim/。把自己的 540 字节 Amiibo .bin 备份放进这个目录，再按 T 刷新列表。支持中文文件名。\r\n- F / X 或方向键选文件，Enter 开始模拟。\r\n- 若要随机刷新 UID，把与备份匹配的 160 字节密钥放在同一目录。文件名可用 key_retail.bin 或 retail.bin，屏幕右上角会显示密钥状态。\r\n- 模拟时移开手柄，按 R 换 UID，按 O 恢复原始 UID。\r\n- Esc 停止模拟，再按一次退出。\r\n安装包不包含 Amiibo 备份或密钥，需自行导入。",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Radio & Comms",
+        "Emulators"
+      ],
+      "author": {
+        "display_name": "RiviaRammer",
+        "github": "RiviaRammer"
+      },
+      "version": "0.1.7",
+      "published_at": "2026-11-13T05:04:50+00:00",
+      "updated_at": "2026-11-13T05:04:50+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "amiibo-sim",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/amiibo-sim_0.1.7_arm64.deb",
+        "md5": "ed662f358de4477c5834bd856a41aa76",
+        "sha256": "7085786261d0f98013fc9615a14a41e6ac819c14d87fc2091bfd4b49c326dc23",
+        "size": 521160
+      },
+      "depends": "libc6 (>= 2.34), libstdc++6, python3, python3-cryptography, fonts-droid-fallback",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/amiibo-sim/amiibo-sim_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/amiibo-sim/screenshots/screenshot-0.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/amiibo-sim/amiibo-sim_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/amiibo-sim/screenshots/screenshot-0.png"
+      ]
+    },
+    {
       "uuid": "3e957833-e113-513b-8e4c-3650776680eb",
       "share_code": "BRCE",
       "title": "Bruce CardputerZero",
@@ -134,6 +188,61 @@
       ]
     },
     {
+      "uuid": "9bb0f4f7-3101-5fe2-9128-28deac89f98c",
+      "share_code": "CZGC",
+      "title": "Cardputer Zero Geiger Counter",
+      "summary": "通过 G22 读取盖格模块脉冲，显示实时计数、趋势图和 γ 剂量估算。",
+      "description": "适用于 M5Stack Cardputer Zero 的外接盖格计数器。通过顶部扩展口的 G22 接收脉冲，显示 CPS、滚动 60 秒 CPM、累计计数和趋势图。按 T 切换 J305 或 M4011 管型，按 U 切换 CPM 与多种 γ 剂量估算单位。\r\n\r\n实际计数需要外接盖格模块。剂量估算采用管型预设系数。截图为 App 的模拟模式。",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Hardware & IoT"
+      ],
+      "author": {
+        "display_name": "Kasiin",
+        "github": "Kasiin"
+      },
+      "version": "0.2.1-1",
+      "published_at": "2026-11-12T15:11:11+00:00",
+      "updated_at": "2026-11-12T15:11:11+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/Kasiin/Cardputer-Zero-Geiger-Counter",
+      "download": {
+        "type": "deb",
+        "package": "cardputer-zero-geiger",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-zero-geiger_0.2.1-1_all.deb",
+        "md5": "773cc36b8a14300a5afb6a6bd6369f2e",
+        "sha256": "5d4bc3729df5a45add71b9e88d557ef22a69245c4e3edec2e5dd4248fd537b53",
+        "size": 9004
+      },
+      "depends": "python3 (>= 3.10), python3-pil (>= 10.1)",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-geiger/cardputer-zero-geiger_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-geiger/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-geiger/screenshots/screenshot-1.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-geiger/cardputer-zero-geiger_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-geiger/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-geiger/screenshots/screenshot-1.png"
+      ]
+    },
+    {
       "uuid": "7fd7a685-3e5f-57d3-a8ec-a3c9dc16c1b9",
       "share_code": "CZTV",
       "title": "Cardputer TV",
@@ -188,6 +297,65 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-iptv/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-iptv/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-iptv/screenshots/screenshot-2.png"
+      ]
+    },
+    {
+      "uuid": "c8a053a5-f8b4-5d5b-9e34-3417d8b61fee",
+      "share_code": "WRAD",
+      "title": "WebRadio",
+      "summary": "Browse, save, and play internet radio stations on Cardputer Zero.",
+      "description": "WebRadio brings the Radio Browser directory to Cardputer Zero. Search and filter stations by country or region, language, and genre. Save your favorites, adjust volume with the keyboard, and switch between Simplified Chinese and English. WebRadio remembers favorites, volume, filters, and the interface language on your device.\r\n\r\nAn internet connection is required to stream radio. Stations provide their own programming. Follow the Radio Browser rules and applicable local laws.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Media"
+      ],
+      "author": {
+        "display_name": "xu-c",
+        "github": "xu-c"
+      },
+      "version": "1.0.5-1",
+      "published_at": "2026-11-12T15:59:02+00:00",
+      "updated_at": "2026-11-12T15:59:02+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Proprietary",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "cardputer-zero-radio",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-zero-radio_1.0.5-1_arm64.deb",
+        "md5": "98f50f6d65b714fc4cf62a53c1dc573a",
+        "sha256": "bc69e9249a42144f9f7eefb2efc430756d9748ebe2915a18c7324ba34c6e1c9c",
+        "size": 22638
+      },
+      "depends": "python3 (>= 3.9), python3-pil (>= 9.2), python3-evdev, fonts-noto-cjk, mpv, ca-certificates",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/cardputer-zero-radio_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/cardputer-zero-radio_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-3.png"
       ]
     },
     {
@@ -1408,6 +1576,70 @@
       ]
     },
     {
+      "uuid": "61cece49-d94f-5a81-a1de-f93c36eccf23",
+      "share_code": "OCTE",
+      "title": "Octet Desktop",
+      "summary": "Octet Desktop with windows, desktop, apps, voice and more!",
+      "description": "Octet is a windowed desktop made for the CardputerZero's 320x170 screen and its keyboard.\r\n\r\nThe desktop has your drives top left (the SD card, your home folder, USB sticks, the network), Files, and a folder for each kind of app that opens as a drawer. There are four virtual desktops, a Start menu that finds anything as you type, a clock and weather widget, notifications, screensavers, and snow on the desktop at Christmas.\r\n\r\n47 apps, including:\r\n- Office: Write, Sheets, Calendar with reminders, Tasks, Sticky Notes, and Vault for encrypted passwords\r\n- Internet: Web, Mail, Weather, Wi-Fi, FTP, File Server, and LoRa chat with GPS (with the Cap LoRa-1262)\r\n- Media: Music, Video, Photos, Paint and a NAS player\r\n- Music making: Tracker Player, Tracker Studio, a MIDI player and a sequencer\r\n- System: a real Linux terminal, Commander, Drives, Disk Doctor, Users, Backup, Task Manager and Software Update\r\n- Fun: Chess (seven levels), Solitaire, Mines, Boing and Robot City, BASIC, and a talking Assistant\r\n\r\nOctet speaks with its own new speech synthesiser: three voices, and about twice as clear as before.\r\n\r\nPlug in an HDMI screen and the desktop moves to it, bigger and sharp, with windows you can move, resize and maximize. Unplug it and it comes back to the built-in screen, which shows the time meanwhile.\r\n\r\nIt's one small program that needs nothing else installed. Everything works from the keyboard, and a USB mouse works too.\r\n\r\nFree to download. (c) 2026 Software Amusements. All rights reserved.\r\nwww.softwareamusements.com",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Creative & Office"
+      ],
+      "author": {
+        "display_name": "Software Amusements",
+        "github": "FuzzyDweeb"
+      },
+      "version": "4.7",
+      "published_at": "2026-11-13T08:02:58+00:00",
+      "updated_at": "2026-11-13T08:02:58+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Proprietary",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "octet",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/octet_4.7_arm64.deb",
+        "md5": "bf390135d8783b9f92a0e38c8e49c19f",
+        "sha256": "2e6f88697add11dc09de6e63a9fe2de7ecd369b596324e1f86fa85d274aa7fa9",
+        "size": 1386496
+      },
+      "depends": "",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": true,
+        "external_display": true,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/octet_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/octet_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-5.png"
+      ]
+    },
+    {
       "uuid": "9d4067bd-fc4d-5500-a427-92bff6179ce4",
       "share_code": "TOOL",
       "title": "Tools",
@@ -1772,6 +2004,60 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sudokuzero/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sudokuzero/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sudokuzero/screenshots/screenshot-2.png"
+      ]
+    },
+    {
+      "uuid": "ac33d7ec-380d-509a-9a64-216c6226cb79",
+      "share_code": "TLZ0",
+      "title": "TailZero",
+      "summary": "A manager application for Tailscale.",
+      "description": "This application is a management tool for the local Tailscale instance. It is not the Tailscale software itself, but rather a utility for viewing status and managing the service. Please refer to the official documentation for instructions on installing and running Tailscale.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Security"
+      ],
+      "author": {
+        "display_name": "xyfan",
+        "github": "fa1247"
+      },
+      "version": "0.1.0-1",
+      "published_at": "2026-11-12T14:45:45+00:00",
+      "updated_at": "2026-11-12T14:45:45+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/fa1247/TailZero",
+      "download": {
+        "type": "deb",
+        "package": "tailzero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/tailzero_0.1.0-1_arm64.deb",
+        "md5": "c1379f7e06e68f74a45a46f09ade4bf7",
+        "sha256": "06223786891cb6ade92c1704409eab2cfe67437e0ed2d8445548c83bd7761b42",
+        "size": 457896
+      },
+      "depends": "libc6 (>= 2.36), libstdc++6",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailzero/tailzero_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailzero/screenshots/screenshot-0.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailzero/tailzero_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailzero/screenshots/screenshot-0.png"
       ]
     },
     {
@@ -2221,6 +2507,179 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-music/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-music/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-music/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "c06ef16b-2272-5c10-81b0-4a562f8a2e14",
+      "share_code": "NEWS",
+      "title": "News",
+      "summary": "Rotating RSS headlines in large type: English and Chinese, tech, life, general.",
+      "description": "Shows the latest headlines from RSS feeds, one at a time in large type, rotating every few seconds, with a scrolling ticker of the next headlines. ENTER shows the full summary.\n\nSettings (S): choose English and/or Chinese, and Tech, Life and/or General news; each combination has its own sources (Hacker News, The Verge, BBC, NYT, CBC, RTHK, unwire.hk, iThome and more). Also sets how fast headlines rotate. My feeds adds your own RSS feeds: type a feed or website address on the keyboard.\n\nKeys: F/X previous/next (Z/C left/right), OK details, P pause, R refresh, S settings, hold ESC 3 seconds to exit. Headlines are cached for offline viewing.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Media"
+      ],
+      "author": {
+        "github": "ChrisOr-Dev",
+        "display_name": "ChrisOr-Dev"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-11-12T17:18:33+00:00",
+      "updated_at": "2026-11-12T17:18:33+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/ChrisOr-Dev/zero-news",
+      "download": {
+        "type": "deb",
+        "package": "zero-news",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-news_1.0.0_all.deb",
+        "md5": "e311e35862974da133e65a399e2fc731",
+        "sha256": "f030066f2e443a66592e1abbcd2ac9607b4e44f9b777d5b33483be4faec21291",
+        "size": 17616
+      },
+      "depends": "python3, python3-pil, python3-numpy",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-news/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-news/screenshots/main.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-news/screenshots/chinese.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-news/screenshots/detail.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-news/screenshots/settings.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-news/screenshots/my-feeds.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-news/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-news/screenshots/main.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-news/screenshots/chinese.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-news/screenshots/detail.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-news/screenshots/settings.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-news/screenshots/my-feeds.png"
+      ]
+    },
+    {
+      "uuid": "998e3f81-530a-5018-af4d-b3325ef03587",
+      "share_code": "STCK",
+      "title": "Stocks",
+      "summary": "Live watchlist with sparklines and candlestick charts for US, HK, TW and more.",
+      "description": "A watchlist of live prices with an intraday sparkline and the day's change for each stock. Press ENTER for a K-line (candlestick) chart with volume; switch the candle period between 1m, 5m, 15m, 30m, 1h, 1D, 1W and 1M with Z/C.\n\nAdd stocks from the US, Hong Kong, Taiwan, China and Japan markets, plus indices, ETFs and crypto, by name or code. Rising color can be green (US) or red (Taiwan/China). Data comes from Yahoo Finance (no API key); refreshes every 15 seconds while a market is open.\n\nKeys: F/X move, ENTER chart, A add, DEL remove, Shift+F/X reorder, S settings, R refresh, hold ESC 3 seconds to exit.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Lifestyle"
+      ],
+      "author": {
+        "github": "ChrisOr-Dev",
+        "display_name": "ChrisOr-Dev"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-11-12T19:38:13+00:00",
+      "updated_at": "2026-11-12T19:38:13+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/ChrisOr-Dev/zero-stocks",
+      "download": {
+        "type": "deb",
+        "package": "zero-stocks",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-stocks_1.0.0_all.deb",
+        "md5": "fea7bd99da669d757bd9d13a95cfc420",
+        "sha256": "32d9f2cece714984eb6b4d09a0fdf65a690b83cb5cadf81752aef4abf0a47fc7",
+        "size": 15272
+      },
+      "depends": "python3, python3-pil, python3-numpy",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-stocks/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-stocks/screenshots/main.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-stocks/screenshots/kline.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-stocks/screenshots/add.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-stocks/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-stocks/screenshots/main.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-stocks/screenshots/kline.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-stocks/screenshots/add.png"
+      ]
+    },
+    {
+      "uuid": "008ce4dc-453a-5404-9361-96a46678fb5c",
+      "share_code": "WTHR",
+      "title": "Weather",
+      "summary": "Current weather and 3-day forecast from Open-Meteo, with optional GPS location.",
+      "description": "Shows the current temperature, feels-like, humidity and wind, plus a 3-day forecast with rain chance. Data comes from Open-Meteo (no API key needed) and refreshes every 15 minutes.\r\n\r\nLocation: uses the Cap LoRa-1262 GPS when it has a fix; otherwise a fixed place you search for in Settings.\r\n\r\nKeys: S settings, R refresh, ESC exit. In Settings, F/X move up/down and ENTER selects.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Lifestyle"
+      ],
+      "author": {
+        "display_name": "ChrisOr-Dev",
+        "github": "ChrisOr-Dev"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-11-12T15:30:29+00:00",
+      "updated_at": "2026-11-12T15:30:29+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/ChrisOr-Dev/zero-weather",
+      "download": {
+        "type": "deb",
+        "package": "zero-weather",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-weather_1.0.0_all.deb",
+        "md5": "8dab8c5e18a304dd194b5d005c6ed22d",
+        "sha256": "ad62de71d94e92f8a447c5dedcb12cc11a46d3e0479eaa0b9dd424f3e07b93f0",
+        "size": 9812
+      },
+      "depends": "python3, python3-pil, python3-numpy",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/zero-weather_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/screenshots/screenshot-1.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/zero-weather_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-weather/screenshots/screenshot-1.png"
       ]
     },
     {
