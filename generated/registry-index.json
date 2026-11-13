@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-13T17:22:59+08:00",
+  "generated_at": "2026-11-13T18:04:07+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -584,6 +584,70 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/02-idle.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/03-listening.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-xiaozhi/screenshots/04-speaking.png"
+      ]
+    },
+    {
+      "uuid": "9c4c6677-9481-5e25-ba79-ead1f6c7c783",
+      "share_code": "DWEE",
+      "title": "Dweebs™ Pets",
+      "summary": "Hatch it. Hug it. Love it.",
+      "description": "Dweebs Pets is a virtual pet with a big fuzzy heart.\r\n\r\nPick one of three eggs, watch it wobble and crack, and name the little Dweeb that pops out. From then on it's yours to look after: feed it, wash it, tuck it into bed, and give it all the hugs and tickles it can take. Every Dweeb has its own fur, face and personality - some are cheeky, some are shy, all of them are loveable.\r\n\r\nTake your Dweeb out to the garden, the park, the beach, the forest, the snow, the rooftop - even the Moon. Play six games together, float around in bubbles, try on hats and glasses, and throw a party with balloons and birthday cake.\r\n\r\nFriends drop in to visit. Dweebs fall in love, lay an egg, and raise a brand-new baby Dweeb that nobody has ever seen before - and when it grows up it heads off to make its own life, sending postcards home. Every happy moment goes into a photo album to look back on when your Dweeb is old and wise. And every December, Christmas comes to Dweeb town, with decorations, presents and carols.\r\n\r\nGot a LoRa cap? Your Dweeb can meet other Dweebs nearby with no internet needed: wave hello, send gifts, invite friends to parties and go visiting. CardputerZeros on the same Wi-Fi find each other too, and everything else works with no radio at all. Plug in HDMI and your Dweeb moves onto the big screen.\r\n\r\nMade to be kind and safe for children: gentle life lessons, nothing scary, and a friendly-words filter on every name and message.\r\n\r\nFeatures\r\n\r\n* Hatch your own Dweeb from an egg and give it a name.\r\n* 10 breeds, each with its own fur, colours, face and personality.\r\n* Feed, wash, play, sleep, hugs and tickles - and it remembers who loves it.\r\n* 10 places to explore: from the bedroom and garden to the beach, snow and the Moon.\r\n* 6 games: Snack Catch, Find the Dweeb, Copy Me, Bubble Pop, Dweeb Dash, Dance Off.\r\n* Bubbles to float in and pop, hats, glasses and outfits.\r\n* Visitors, birthdays and parties with balloons and cake.\r\n* Dweebs fall in love and raise never-before-seen babies who grow up and leave home.\r\n* A photo album of happy memories for when your Dweeb grows old.\r\n* Christmas celebrations every December.\r\n* Meet other Dweebs nearby over LoRa (with a LoRa cap) or local Wi-Fi.\r\n* HDMI support for the big screen.\r\n* Original music, jingles and the real Dweeb voices.\r\n* Kind and safe for kids: no scary content, friendly-words filter.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games",
+        "Other"
+      ],
+      "author": {
+        "display_name": "Software Amusements",
+        "github": "FuzzyDweeb"
+      },
+      "version": "2.0.5-1",
+      "published_at": "2026-11-13T09:46:55+00:00",
+      "updated_at": "2026-11-13T09:46:55+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Proprietary",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "dweebs-pets",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/dweebs-pets_2.0.5-1_arm64.deb",
+        "md5": "098a0dea91ec0190b78b3cdc6507a145",
+        "sha256": "1216e3f6805d714969fe598111120f5e160be98085d6aeda4e2423f04971456f",
+        "size": 1220364
+      },
+      "depends": "libc6 (>= 2.34), alsa-utils",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": true,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dweebs-pets/dweebs-pets_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dweebs-pets/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dweebs-pets/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dweebs-pets/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dweebs-pets/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dweebs-pets/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dweebs-pets/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dweebs-pets/dweebs-pets_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dweebs-pets/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dweebs-pets/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dweebs-pets/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dweebs-pets/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dweebs-pets/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dweebs-pets/screenshots/screenshot-5.png"
       ]
     },
     {
