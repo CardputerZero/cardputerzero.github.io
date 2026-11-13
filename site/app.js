@@ -23,7 +23,8 @@ const GISCUS_CONFIG = {
   repo: "CardputerZero/cardputerzero.github.io",
   repoId: "R_kgDOSWq5Vw",
   category: "App Comments",
-  categoryId: "DIC_kwDOSWq5V84C8kA5"
+  categoryId: "DIC_kwDOSWq5V84C8kA5",
+  description: "这是 CardputerZero Store 应用的评论区。有新评论时，机器人会自动 @ 开发者。"
 };
 const DOCUMENTS = [
   {
@@ -727,6 +728,12 @@ function mountGiscus(app) {
   const container = document.querySelector(".giscus");
   if (!container) return;
   container.textContent = "";
+  // Giscus reads these meta tags when its client creates the iframe. Its
+  // default backlink drops the hash, which would point every app to the home page.
+  const description = document.querySelector('meta[name="description"]');
+  const backlink = document.querySelector('meta[name="giscus:backlink"]');
+  description?.setAttribute("content", GISCUS_CONFIG.description);
+  backlink?.setAttribute("content", new URL(appHref(app), "https://cardputer.cc/").href);
   const status = document.querySelector("[data-comments-status]");
   const retry = document.querySelector("[data-comments-retry]");
   const compose = document.querySelector("[data-comments-compose]");
@@ -772,6 +779,8 @@ function mountGiscus(app) {
   timer = setTimeout(showSlow, 15000);
   disposeGiscus = () => {
     active = false;
+    description?.setAttribute("content", t("meta.description"));
+    backlink?.setAttribute("content", "https://cardputer.cc/");
     clearTimeout(timer);
     window.removeEventListener("message", onMessage);
     retry.removeEventListener("click", onRetry);

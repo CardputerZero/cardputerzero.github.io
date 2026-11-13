@@ -5,6 +5,12 @@
 `author.github` account from `generated/registry.json` and linking to the new
 comment. This also covers comments posted directly on GitHub.
 
+New discussion bodies use the shared Chinese comment-area description and link
+back to `https://cardputer.cc/#/apps/CODE` using the app's share code. The app view
+sets the page description and `giscus:backlink` metadata before loading Giscus;
+leaving the app view restores the normal site metadata. Existing discussion
+bodies require a separate edit, preserving their Giscus SHA-1 mapping markers.
+
 The store's shared Giscus theme hides replies authored by the GitHub Actions app account.
 Threads containing only those replies also hide the reply area and reply count;
 human replies and pagination controls remain available. The notification replies
