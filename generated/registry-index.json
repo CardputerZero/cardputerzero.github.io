@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-14T22:13:27+08:00",
+  "generated_at": "2026-11-15T00:36:30+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2821,7 +2821,7 @@
       "share_code": "WTHR",
       "title": "Weather",
       "summary": "Current weather and 3-day forecast from Open-Meteo, with optional GPS location.",
-      "description": "Shows the current temperature, feels-like, humidity and wind, plus a 3-day forecast with rain chance. Data comes from Open-Meteo (no API key needed) and refreshes every 15 minutes.\n\nLocation: uses the Cap LoRa-1262 GPS when it has a fix; otherwise a fixed place you search for in Settings.\n\nKeys: S settings, R refresh, hold ESC 3 seconds to exit. In Settings, F/X move up/down and ENTER selects.",
+      "description": "Shows the current temperature, feels-like, humidity and wind, plus a 3-day forecast with rain chance. Data comes from Open-Meteo (no API key needed) and refreshes every 15 minutes.\n\nLocation: uses the Cap LoRa-1262 GPS when it has a fix; otherwise a fixed place you search for in Settings.\n\nTemperature can be shown in °C or °F (Settings).\n\nKeys: S settings, R refresh, hold ESC 3 seconds to exit. In Settings, F/X move up/down and ENTER selects.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -2831,9 +2831,9 @@
         "display_name": "ChrisOr-Dev",
         "github": "ChrisOr-Dev"
       },
-      "version": "1.0.2",
+      "version": "1.1.0",
       "published_at": "2026-11-12T15:30:29+00:00",
-      "updated_at": "2026-11-13T22:12:35+00:00",
+      "updated_at": "2026-11-14T16:27:51+00:00",
       "review": {
         "status": "approved"
       },
@@ -2842,10 +2842,10 @@
       "download": {
         "type": "deb",
         "package": "zero-weather",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-weather_1.0.2_all.deb",
-        "md5": "2f0d9ea0cfe63abe68406da9d1d4e6b6",
-        "sha256": "5b742fff726087fdc9ed3bd530435e176ef36451ced49d0613a23c5fcb0487d4",
-        "size": 10896
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-weather_1.1.0_all.deb",
+        "md5": "b3da5db5e310a7619ac9778774ef773d",
+        "sha256": "42a375571303ffb62dc5670aa5e2cba17ef37d9fb8a24292d78554da3cfa9b08",
+        "size": 12756
       },
       "depends": "python3, python3-pil, python3-numpy",
       "permissions": {
