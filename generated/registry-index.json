@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-14T06:25:00+08:00",
+  "generated_at": "2026-11-14T16:02:31+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1248,19 +1248,19 @@
       "share_code": "KIRC",
       "title": "KimiRC",
       "summary": "A native Kimi Code Remote Control client with keyboard and Chinese input.",
-      "description": "Control Kimi Code sessions from CardputerZero with a compact native interface. Sign in through official Kimi device authorization, browse remote folders, create and manage sessions, read history and streamed replies, and configure models, thinking and permissions. Includes local pinyin input, English/Chinese UI, light/dark themes and configurable send keys. Requires an online computer running kimi rc and the same Kimi account. This is an independent client, not an official Moonshot app. Attachments, voice input and complex interactive questions are not supported; use the computer for those actions.",
+      "description": "Control Kimi Code sessions from CardputerZero with a compact native interface. Sign in through official Kimi device authorization, browse remote folders, create and manage sessions, read history and streamed replies, and configure models, thinking, permissions and compact/detailed display modes. Includes local pinyin input, English/Chinese UI, light/dark themes, colored conversation roles and configurable send keys. Requires an online computer running kimi rc and the same Kimi account. This is an independent client, not an official Moonshot app. Attachments, voice input and complex interactive questions are not supported; use the computer for those actions.",
       "locales": {
         "zh-CN": {
           "title": "KimiRC",
           "summary": "在 CardputerZero 上管理 Kimi Code 会话，支持原生键盘界面与中文拼音。",
-          "description": "通过 Kimi 官方设备码授权登录，连接运行 kimi rc 的电脑，浏览远端目录、创建和管理会话、阅读历史与流式回复，并配置模型、思考强度和权限。支持本地拼音、中英文、白色/深灰主题与发送按键切换。需联网及同一 Kimi 账号。本应用由梦西游啊游独立开发，并非 Moonshot 官方应用。暂不支持附件、语音和复杂交互提问，这些操作请在电脑端完成。"
+          "description": "通过 Kimi 官方设备码授权登录，连接运行 kimi rc 的电脑，浏览远端目录、创建和管理会话、阅读历史与流式回复，并配置模型、思考强度、权限和精简/详细显示模式。支持本地拼音、中英文、白色/深灰主题、对话角色配色与发送按键切换。需联网及同一 Kimi 账号。本应用由梦西游啊游独立开发，并非 Moonshot 官方应用。暂不支持附件、语音和复杂交互提问，这些操作请在电脑端完成。"
         }
       },
       "i18n": {
         "zh-CN": {
           "title": "KimiRC",
           "summary": "在 CardputerZero 上管理 Kimi Code 会话，支持原生键盘界面与中文拼音。",
-          "description": "通过 Kimi 官方设备码授权登录，连接运行 kimi rc 的电脑，浏览远端目录、创建和管理会话、阅读历史与流式回复，并配置模型、思考强度和权限。支持本地拼音、中英文、白色/深灰主题与发送按键切换。需联网及同一 Kimi 账号。本应用由梦西游啊游独立开发，并非 Moonshot 官方应用。暂不支持附件、语音和复杂交互提问，这些操作请在电脑端完成。"
+          "description": "通过 Kimi 官方设备码授权登录，连接运行 kimi rc 的电脑，浏览远端目录、创建和管理会话、阅读历史与流式回复，并配置模型、思考强度、权限和精简/详细显示模式。支持本地拼音、中英文、白色/深灰主题、对话角色配色与发送按键切换。需联网及同一 Kimi 账号。本应用由梦西游啊游独立开发，并非 Moonshot 官方应用。暂不支持附件、语音和复杂交互提问，这些操作请在电脑端完成。"
         }
       },
       "categories": [
@@ -1272,9 +1272,9 @@
         "display_name": "mengxiyou",
         "email": "gzp16@163.com"
       },
-      "version": "1.0.0-1",
+      "version": "1.0.1-1",
       "published_at": "2026-11-08T02:34:43+00:00",
-      "updated_at": "2026-11-08T02:34:43+00:00",
+      "updated_at": "2026-11-14T07:49:03+00:00",
       "review": {
         "status": "approved"
       },
@@ -1283,10 +1283,10 @@
       "download": {
         "type": "deb",
         "package": "kimi-remote",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/kimi-remote_1.0.0-1_arm64.deb",
-        "md5": "859fb0842c5dada2d821b683ae97987e",
-        "sha256": "13d7c0e638de33fc27a11cc3607ea6217b663f3a2319b501fa5012d64b836fcd",
-        "size": 48052
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/kimi-remote_1.0.1-1_arm64.deb",
+        "md5": "ec7822f894155541b9e9e5b7a5c41ecb",
+        "sha256": "f740095ea5f4e532ff0fff7295400f47c61aa7d21ca4cab1f60a07f5c86c187c",
+        "size": 63092
       },
       "depends": "python3 (>= 3.11), python3-gi, python3-gi-cairo, gir1.2-gtk-3.0, python3-aiohttp, python3-qrcode, fonts-noto-cjk, libpinyin15 (>= 2.8), labwc, udev, libc6 (>= 2.34)",
       "permissions": {
@@ -1306,6 +1306,7 @@
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kimi-remote/screenshots/thread.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kimi-remote/screenshots/pinyin.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kimi-remote/screenshots/settings.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kimi-remote/screenshots/configuration.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kimi-remote/screenshots/about.png"
         ]
       },
@@ -1315,6 +1316,7 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kimi-remote/screenshots/thread.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kimi-remote/screenshots/pinyin.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kimi-remote/screenshots/settings.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kimi-remote/screenshots/configuration.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kimi-remote/screenshots/about.png"
       ]
     },
