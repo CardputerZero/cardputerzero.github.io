@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-14T20:58:35+08:00",
+  "generated_at": "2026-11-14T22:13:27+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1705,8 +1705,8 @@
       "uuid": "d2deebe9-8d52-5b8c-8573-f58807a2c1c4",
       "share_code": "NTKT",
       "title": "NET Toolkit",
-      "summary": "口袋网络运维工具箱:Ping/路由/端口扫描/DNS/ARP/局域网发现/SSH/Telnet/串口/接口配置/文件投送。",
-      "description": "NET Toolkit 是运行在 CardputerZero 主机上的随身网络运维工具,把现场调试与日常排障装进 320×170 小屏。\r\n· 接口配置:有线/无线/USB 网卡 IP/掩码/网关/DNS,支持 DHCP 与静态。\r\n· Ping / 路由追踪(到达即停)/ 端口扫描(多选+自定义端口)/ DNS(解析真实 IP+运营商地区)/ ARP(IP→MAC→厂家识别)。\r\n· 局域网扫描:自定义网段(掩码支持完整或缩写),ARP 发现存活设备并识别厂家。\r\n· SSH / Telnet / 串口控制台:会话书签、回滚滚动、Ctrl+S 保存、Ctrl+C 停止、长按回车连续输出。\r\n· 文件投送:局域网 HTTP 一次性 PIN 上传/下载。\r\n· 体验:中英切换、多套明暗配色一键循环、结果历史保存/导出、标题栏实时显示接入接口与 IP。\r\n单文件自包含安装,不依赖 root 服务,普通用户即可使用。\r\nNET Toolkit is a pocket network operations toolkit for the CardputerZero Debian handheld, fitting switch/router field work and everyday troubleshooting onto a 320×170 screen.\r\nFeatures:\r\n· Interfaces: view/edit IP, netmask, gateway and DNS for wired, wireless and USB adapters; DHCP or static.\r\n· Ping / Traceroute: ping any hostname or IP; hop-by-hop trace that stops automatically when the destination is reached.\r\n· Port scan: multi-select checklist of common ports plus custom ports.\r\n· DNS lookup: resolve a hostname to its real IP and show the ISP/region.\r\n· ARP resolve: IP to MAC with OUI vendor lookup; randomized MACs get a device-type hint.\r\n· LAN scan: custom network address and netmask (full or prefix length), discover live hosts and their vendors.\r\n· Remote console: SSH / Telnet / serial (port and baud selectable) with bookmarks, scrollback, Ctrl+S save, Ctrl+C stop and hold-Enter to keep output flowing.\r\n· File drop: LAN HTTP upload/download with a one-time PIN.\r\n· UX: Chinese/English switch, multiple light/dark color schemes cycled with one key, saved/exportable result history, live interface + IP in the title bar.\r\nSelf-contained single package; no root service; runs as a normal user.",
+      "summary": "NET Toolkit是给CardputerZero用的随身网络工具箱，把现场排障常用的命令做成一块小屏就能操作的界面。",
+      "description": "主要功能：\r\n• 接口配置：查看链路/IP/MAC/网关/DNS，支持 DHCP 或静态地址\r\n• Ping：逐包延迟、丢包率、min/avg/max/mdev 与抖动统计\r\n• 端口扫描：TCP 端口列表扫描，开放端口绿色高亮\r\n• 路由追踪：逐跳路径与每跳延迟，可设置最大跳数\r\n• 局域网扫描：发现同网段设备的 IP/MAC/厂家，并识别 Web 管理页\r\n• DNS / ARP：A/AAAA 与反向解析、IP→MAC 与厂家识别\r\n• SSH / Telnet / 串口：交互式终端，共享 39×10 字符屏幕\r\n• 子网计算器：IP 与掩码分开输入，输出网络/掩码/通配符/广播/可用范围/主机数\r\n• Wi-Fi 信号：实时信号强度与曲线、周边 AP 表格（信道/信号/dBm/加密）、信道占用图，选中项可上下翻页\r\n• Wi-Fi 连接：选中 AP 输入密码即可连接；系统里保存过的网络只需设备密码，并可按 P 查看已保存密码\r\n• 热点：开启 WPA2 热点；接有线回程时可共享上网，面板会显示上行状态\r\n• 网速测试：10 秒 HTTP 下载测速，显示平均 Mbps、耗时与 TTFB\r\n• 文件投送：局域网 HTTP 投递，一次性 PIN\r\n• 历史与设置：结果可保存、逐条删除；中英文、主题、Ping 次数、追踪跳数均可调整\r\n快捷键：\r\n• 全局：Ctrl+S 保存结果，Ctrl+L 中英文，Ctrl+T 主题，Ctrl+I 设置，Ctrl+C 停止任务\r\n• 菜单：F 上移，X 下移，Z 向左翻页，C 向右翻页，Enter 打开，Esc 退出\r\n• Wi-Fi：Enter 连接选中 AP，C 切换信道图，R 重新扫描，P 查看已保存密码\r\n• 历史：Enter 查看记录，DEL 删除；记录详情页按 Esc 返回历史列表\r\n• SSH 表单：Ctrl+S 保存书签，Ctrl+B 读取书签，Ctrl+K 清除 SSH 指纹\r\n说明：修改网络设置、连接 Wi-Fi 和开关热点需要输入设备密码，仅在用户主动操作时提权执行；应用不安装 sudoers 文件，也不包含常驻后台服务。\r\nFeatures:\r\n- Interfaces: link, IPv4, MAC, gateway, DNS; DHCP or static addressing\r\n- Ping: per-reply latency, loss, min/avg/max/mdev and jitter\r\n- Port scan: TCP port lists with open ports highlighted\r\n- Traceroute: hop-by-hop path and latency, configurable max hops\r\n- LAN scan: discover neighbours with IP/MAC/vendor and spot web admin pages\r\n- DNS / ARP: A/AAAA and reverse lookups, IP to MAC with OUI vendor\r\n- SSH / Telnet / Serial: interactive consoles on a shared 39x10 terminal\r\n- Subnet calculator: separate IP and mask fields; network, wildcard,\r\n  broadcast, usable range and host count\r\n- Wi-Fi: live RSSI and sparkline, nearby AP table (channel, signal, dBm,\r\n  encryption), channel-load chart, paged selection\r\n- Wi-Fi connect: tap an AP and enter its password; saved networks only ask\r\n  for the device password, and P reveals the saved password\r\n- Hotspot: WPA2 access point; shares a wired uplink and shows its state\r\n- Speed test: 10 second HTTP download with average Mbps, elapsed and TTFB\r\n- File drop: local HTTP upload page with a one-time PIN\r\n- History and settings: save results, delete entries, language, theme,\r\n  ping count and traceroute hops\r\nShortcuts:\r\n- Global: Ctrl+S save, Ctrl+L language, Ctrl+T theme, Ctrl+I settings,\r\n  Ctrl+C stop a running task\r\n- Menu: F up, X down, Z page left, C page right, Enter open, Esc exit\r\n- Wi-Fi: Enter connect the selected AP, C toggle channel chart, R rescan,\r\n  P reveal the saved password\r\n- History: Enter open a record, DEL delete, Esc returns to the list\r\n- SSH form: Ctrl+S save bookmark, Ctrl+B load bookmark, Ctrl+K clear host keys\r\nNetwork changes, Wi-Fi joins and hotspot switching ask for the device\r\npassword and run only on user action; the package installs no sudoers file\r\nand no background service.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -1716,9 +1716,9 @@
         "display_name": "ddddd",
         "github": "jiawud"
       },
-      "version": "0.4.40",
+      "version": "0.4.70",
       "published_at": "2026-11-12T08:43:10+00:00",
-      "updated_at": "2026-11-12T08:43:10+00:00",
+      "updated_at": "2026-11-14T14:03:00+00:00",
       "review": {
         "status": "approved"
       },
@@ -1727,10 +1727,10 @@
       "download": {
         "type": "deb",
         "package": "nettoolkit",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/nettoolkit_0.4.40_arm64.deb",
-        "md5": "a8ef01157f3f47385393b98d6c6352c2",
-        "sha256": "767684a64bd9a6def13c208f632f9d3d47e893fa2ecdd04add3a40a432442007",
-        "size": 2397262
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/nettoolkit_0.4.70_arm64.deb",
+        "md5": "c7e453e23e402885495c7725756a5e9b",
+        "sha256": "3ace002e9d316d29a9ff42ee1946d20eee5bf55ef7e68d27d341424e246a59f9",
+        "size": 2083864
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g",
       "permissions": {
