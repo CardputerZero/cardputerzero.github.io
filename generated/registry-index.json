@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-14T20:01:08+08:00",
+  "generated_at": "2026-11-14T20:13:42+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1780,9 +1780,9 @@
         "display_name": "Software Amusements",
         "github": "FuzzyDweeb"
       },
-      "version": "4.9",
+      "version": "5.0",
       "published_at": "2026-11-13T08:02:58+00:00",
-      "updated_at": "2026-11-14T10:52:35+00:00",
+      "updated_at": "2026-11-14T12:05:02+00:00",
       "review": {
         "status": "approved"
       },
@@ -1791,10 +1791,10 @@
       "download": {
         "type": "deb",
         "package": "octet",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/octet_4.9_arm64.deb",
-        "md5": "7487a7260b7b5e85d31fffb7255e7dbe",
-        "sha256": "421764e198b9afa4062b2fe93b6b0296abe465575904c45ff3afaa07e59d156a",
-        "size": 1396084
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/octet_5.0_arm64.deb",
+        "md5": "865e4ff13410782e550cc9f39f94080d",
+        "sha256": "95f4cf4ebef67f735a507a60b428776868481dbc3816a00442c66ab0c49e385e",
+        "size": 1397202
       },
       "depends": "",
       "permissions": {
