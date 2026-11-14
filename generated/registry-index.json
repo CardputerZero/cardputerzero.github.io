@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-14T19:48:11+08:00",
+  "generated_at": "2026-11-14T20:01:08+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -666,9 +666,9 @@
         "display_name": "Software Amusements",
         "github": "FuzzyDweeb"
       },
-      "version": "2.0.5-1",
+      "version": "2.0.9-1",
       "published_at": "2026-11-13T09:46:55+00:00",
-      "updated_at": "2026-11-13T09:46:55+00:00",
+      "updated_at": "2026-11-14T11:50:29+00:00",
       "review": {
         "status": "approved"
       },
@@ -677,10 +677,10 @@
       "download": {
         "type": "deb",
         "package": "dweebs-pets",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/dweebs-pets_2.0.5-1_arm64.deb",
-        "md5": "098a0dea91ec0190b78b3cdc6507a145",
-        "sha256": "1216e3f6805d714969fe598111120f5e160be98085d6aeda4e2423f04971456f",
-        "size": 1220364
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/dweebs-pets_2.0.9-1_arm64.deb",
+        "md5": "859022877c6b549b4f06b5f257dfbe80",
+        "sha256": "3e13dec5f8901287381740b32c2fe10507606cd5e7663b4f8c2dccb4ac9ee001",
+        "size": 1224224
       },
       "depends": "libc6 (>= 2.34), alsa-utils",
       "permissions": {
