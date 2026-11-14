@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-14T20:24:49+08:00",
+  "generated_at": "2026-11-14T20:58:35+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -591,7 +591,7 @@
       "share_code": "DOOD",
       "title": "Doody Calls - Turd World War",
       "summary": "Squad up and flush out the Doodies: a full family-friendly 3D shooter.",
-      "description": "Doody Calls – Turd World War is the full first-person 3D shooter from Software Amusements.\r\n\r\nThe Doodies have risen from the sewers and only your squad stands in their way. Fight across nine sectors, from the sewage works and the high street to a beach landing, a snowy mountain ridge and a container ship. Face Poo-copters, Doody Tanks, the Poonami, The Big Stinker and the Giga Poo, armed with the Plunger, the U-Bend .50 sniper, Air Freshener grenades and a trusty toilet brush.\r\n\r\nClimb 200 ranks, earn 30 medals and post your score on the online leaderboard, shared with\r\nthe web version. Family friendly, always.\r\n\r\nPlay it your way: on the built-in keyboard, with a mouse, or with a Bluetooth Xbox controller. Plug in an HDMI screen and the game moves to the big screen.\r\n\r\nSectors 1-3 are free. The Supporter Pack (sectors 4-6 plus perks) and the Expansion Pack (sectors 7-9) are US$1.99 each: scan the QR code in the game to buy on your phone and then type in your unlock code. Codes work on the web version too.\r\n\r\nCopyright © 2026 Software Amusements. All rights reserved.\r\n\r\nwww.softwareamusements.com",
+      "description": "*** Xbox Game Controller and HDMI output recommended ***\r\n\r\nDoody Calls – Turd World War is the full first-person 3D shooter from Software Amusements.\r\n\r\nThe Doodies have risen from the sewers and only your squad stands in their way. Fight across nine sectors, from the sewage works and the high street to a beach landing, a snowy mountain ridge and a container ship. Face Poo-copters, Doody Tanks, the Poonami, The Big Stinker and the Giga Poo, armed with the Plunger, the U-Bend .50 sniper, Air Freshener grenades and a trusty toilet brush.\r\n\r\nClimb 200 ranks, earn 30 medals and post your score on the online leaderboard, shared with\r\nthe web version. Family friendly, always.\r\n\r\nPlay it your way: on the built-in keyboard, with a mouse, or with a Bluetooth Xbox controller. Plug in an HDMI screen and the game moves to the big screen.\r\n\r\nSectors 1-3 are free. The Supporter Pack (sectors 4-6 plus perks) and the Expansion Pack (sectors 7-9) are US$1.99 each: scan the QR code in the game to buy on your phone and then type in your unlock code. Codes work on the web version too.\r\n\r\nCopyright © 2026 Software Amusements. All rights reserved.\r\n\r\nwww.softwareamusements.com",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -604,7 +604,7 @@
       },
       "version": "2.0.7",
       "published_at": "2026-11-13T13:04:37+00:00",
-      "updated_at": "2026-11-14T11:39:12+00:00",
+      "updated_at": "2026-11-14T12:48:37+00:00",
       "review": {
         "status": "approved"
       },
@@ -1769,7 +1769,7 @@
       "share_code": "OCTE",
       "title": "Octet Desktop",
       "summary": "Octet Desktop with windows, desktop, apps, voice and more!",
-      "description": "Octet Desktop is a windowed desktop made for the CardputerZero's 320x170 screen and its keyboard.\r\n\r\nThe desktop has your drives top left (the SD card, your home folder, USB sticks, the network), Files, and a folder for each kind of app that opens as a drawer. There are four virtual desktops, a Start menu that finds anything as you type, a clock and weather widget, notifications, screensavers, and snow on the desktop at Christmas.\r\n\r\n47 apps, including:\r\n- Office: Write, Sheets, Calendar with reminders, Tasks, Sticky Notes, and Vault for encrypted passwords\r\n- Internet: Web, Mail, Weather, Wi-Fi, FTP, File Server, and LoRa chat with GPS (with the Cap LoRa-1262)\r\n- Media: Music, Video, Photos, Paint and a NAS player\r\n- Music making: Tracker Player, Tracker Studio, a MIDI player and a sequencer\r\n- System: a real Linux terminal, Commander, Drives, Disk Doctor, Users, Backup, Task Manager and Software Update\r\n- Fun: Chess (seven levels), Solitaire, Mines, Boing and Robot City, BASIC, and a talking Assistant\r\n\r\nOctet speaks with its own new speech synthesiser: three voices, and about twice as clear as before.\r\n\r\nPlug in an HDMI screen and the desktop moves to it, bigger and sharp, with windows you can move, resize and maximize. Unplug it and it comes back to the built-in screen, which shows the time meanwhile.\r\n\r\nIt's one small program that needs nothing else installed. Everything works from the keyboard, and a USB mouse works too.\r\n\r\nFree to download. (c) 2026 Software Amusements. All rights reserved.\r\nwww.softwareamusements.com",
+      "description": "*** Mouse and HDMI output recommended ***\r\n\r\nOctet Desktop is a windowed desktop made for the CardputerZero's 320x170 screen and its keyboard.\r\n\r\nThe desktop has your drives top left (the SD card, your home folder, USB sticks, the network), Files, and a folder for each kind of app that opens as a drawer. There are four virtual desktops, a Start menu that finds anything as you type, a clock and weather widget, notifications, screensavers, and snow on the desktop at Christmas.\r\n\r\n47 apps, including:\r\n- Office: Write, Sheets, Calendar with reminders, Tasks, Sticky Notes, and Vault for encrypted passwords\r\n- Internet: Web, Mail, Weather, Wi-Fi, FTP, File Server, and LoRa chat with GPS (with the Cap LoRa-1262)\r\n- Media: Music, Video, Photos, Paint and a NAS player\r\n- Music making: Tracker Player, Tracker Studio, a MIDI player and a sequencer\r\n- System: a real Linux terminal, Commander, Drives, Disk Doctor, Users, Backup, Task Manager and Software Update\r\n- Fun: Chess (seven levels), Solitaire, Mines, Boing and Robot City, BASIC, and a talking Assistant\r\n\r\nOctet speaks with its own new speech synthesiser: three voices, and about twice as clear as before.\r\n\r\nPlug in an HDMI screen and the desktop moves to it, bigger and sharp, with windows you can move, resize and maximize. Unplug it and it comes back to the built-in screen, which shows the time meanwhile.\r\n\r\nIt's one small program that needs nothing else installed. Everything works from the keyboard, and a USB mouse works too.\r\n\r\nFree to download. (c) 2026 Software Amusements. All rights reserved.\r\nwww.softwareamusements.com",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -1782,7 +1782,7 @@
       },
       "version": "5.0",
       "published_at": "2026-11-13T08:02:58+00:00",
-      "updated_at": "2026-11-14T12:05:02+00:00",
+      "updated_at": "2026-11-14T12:47:43+00:00",
       "review": {
         "status": "approved"
       },
