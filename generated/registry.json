@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-15T00:36:30+08:00",
+  "generated_at": "2026-11-15T07:17:49+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2040,9 +2040,9 @@
         "display_name": "geo-tp",
         "github": "geo-tp"
       },
-      "version": "0.1.0-2",
+      "version": "0.1.0-3",
       "published_at": "2026-10-16T16:37:33+00:00",
-      "updated_at": "2026-10-20T07:19:32+00:00",
+      "updated_at": "2026-11-14T23:09:53+00:00",
       "review": {
         "status": "approved"
       },
@@ -2051,10 +2051,10 @@
       "download": {
         "type": "deb",
         "package": "retro-zero",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/retro-zero_0.1.0-2_arm64.deb",
-        "md5": "e885530e981d31d99ac1ba2162f530d6",
-        "sha256": "d5209a77a05f5e017e7c7e545cf8c7d6eb3de61693a828adca796af5794393af",
-        "size": 634402
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/retro-zero_0.1.0-3_arm64.deb",
+        "md5": "aad24d2f35f1aec1eb179b6ac2216114",
+        "sha256": "d335462d29145c4cdb69ad78b20643322fd546723d5106b47db475c5741f9e1b",
+        "size": 645430
       },
       "depends": "libc6 (>= 2.38), libstdc++6 (>= 13.1), libgcc-s1, libasound2t64 (>= 1.0.16) | libasound2 (>= 1.0.16), libpulse0, libegl1, libgles2, wget, unzip, ca-certificates",
       "permissions": {
