@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-15T23:55:27+08:00",
+  "generated_at": "2026-11-16T00:41:20+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -76,7 +76,7 @@
       "share_code": "AMII",
       "title": "amiibo_sim",
       "summary": "Amiibo模拟器",
-      "description": "## 项目介绍\r\n使用Cap CC1101内置的 ST25R3916 NFC 芯片，模拟Amiibo，支持刷新随机UID\r\n.bin文件需由用户自行添加至~/amiibo_sim\r\n\r\n### 准备工作\r\n\r\n1. 关机装好 Cap CC1101，开机后在 `Settings → ExtPort` 中确认 EXT D+/D− 处于 GPIO 模式。\r\n2. 从 APPLaunch 打开 `amiibo_sim`。如果屏幕显示 `NFC SPI missing` 或 `SPI access denied`，需运行：\r\n\r\n   ```sh\r\n   sudo /usr/lib/amiibo_sim/cap-setup\r\n   ```\r\n\r\n应用只检测 SPI 状态。上面的命令由用户授权执行，负责加载 NFC SPI 配置并设置设备访问权限。应用会自动复查，也可以按 H 立即检查。看到 CAP ST25R3916 connected 即可选卡。临时加载的 SPI 配置在重启后需要重新启用。\r\n3. 应用会尝试自动开启 EXT 5V。如果显示 EXT 5V failed，需在 Settings → ExtPort 手动开启 EXT 5V，再按 H。\r\n\r\n### 导入文件和操作\r\n首次打开会自动创建 ~/amiibo_sim/。把自己的 540 字节 Amiibo .bin 备份放进这个目录，再按 T 刷新列表。支持中文文件名。\r\n- F / X 或方向键选文件，Enter 开始模拟。\r\n- 若要随机刷新 UID，把与备份匹配的 160 字节密钥放在同一目录。文件名可用 key_retail.bin 或 retail.bin，屏幕右上角会显示密钥状态。\r\n- 模拟时移开手柄，按 R 换 UID，按 O 恢复原始 UID。\r\n- Esc 停止模拟，再按一次退出。\r\n安装包不包含 Amiibo 备份或密钥，需自行导入。",
+      "description": "1、项目介绍\r\n使用Cap CC1101内置的 ST25R3916 NFC 芯片，模拟Amiibo，支持刷新随机UID\r\n.bin文件需由用户自行添加至~/amiibo_sim\r\n\r\n2、准备工作\r\n\r\n- 关机装好 Cap CC1101，开机后在 `Settings → ExtPort` 中确认 EXT D+/D− 处于 GPIO 模式。\r\n- 从 APPLaunch 打开 `amiibo_sim`。如果屏幕显示 `NFC SPI missing` 或 `SPI access denied`，需运行：\r\nsudo /usr/lib/amiibo_sim/cap-setup\r\n\r\n应用只检测 SPI 状态。上面的命令由用户授权执行，负责加载 NFC SPI 配置并设置设备访问权限。应用会自动复查，也可以按 H 立即检查。看到 CAP ST25R3916 connected 即可选卡。临时加载的 SPI 配置在重启后需要重新启用。\r\n- 应用会尝试自动开启 EXT 5V。如果显示 EXT 5V failed，需在 Settings → ExtPort 手动开启 EXT 5V，再按 H。\r\n\r\n3、导入文件和操作\r\n首次打开会自动创建 ~/amiibo_sim/。把自己的 540 字节 Amiibo .bin 备份放进这个目录，再按 T 刷新列表。支持中文文件名。\r\n- F / X 或方向键选文件，Enter 开始模拟。\r\n- 若要随机刷新 UID，把与备份匹配的 160 字节密钥放在同一目录。文件名可用 key_retail.bin 或 retail.bin，屏幕右上角会显示密钥状态。\r\n- 模拟时移开手柄，按 R 换 UID，按 O 恢复原始 UID。\r\n- Esc 停止模拟，再按一次退出。\r\n安装包不包含 Amiibo 备份或密钥，需自行导入。\r\n\r\n4、更新\r\n- 已支持在 ~/amiibo_sim/ 中添加文件夹",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -87,21 +87,21 @@
         "display_name": "RiviaRammer",
         "github": "RiviaRammer"
       },
-      "version": "0.1.7",
+      "version": "0.1.8",
       "published_at": "2026-11-13T05:04:50+00:00",
-      "updated_at": "2026-11-13T21:45:23+00:00",
+      "updated_at": "2026-11-15T16:12:49+00:00",
       "review": {
         "status": "approved"
       },
       "license": "MIT",
-      "source_repo": "",
+      "source_repo": "https://github.com/RiviaRammer/CardputerZeroApps",
       "download": {
         "type": "deb",
         "package": "amiibo-sim",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/amiibo-sim_0.1.7_arm64.deb",
-        "md5": "ed662f358de4477c5834bd856a41aa76",
-        "sha256": "7085786261d0f98013fc9615a14a41e6ac819c14d87fc2091bfd4b49c326dc23",
-        "size": 521160
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/amiibo-sim_0.1.8_arm64.deb",
+        "md5": "16b66b5813bc00a22deba9ca2981a8b1",
+        "sha256": "074bc6c257d0ed82641a45d7396d2d7280d364fb400cb692edec1ffa0b5557b0",
+        "size": 514056
       },
       "depends": "libc6 (>= 2.34), libstdc++6, python3, python3-cryptography, fonts-droid-fallback",
       "permissions": {
@@ -123,6 +123,80 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/amiibo-sim/amiibo-sim_icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/amiibo-sim/screenshots/screenshot-0.png"
+      ]
+    },
+    {
+      "uuid": "8ad1e185-43a4-5870-80a0-b10559e40191",
+      "share_code": "APTL",
+      "title": "APTool",
+      "summary": "Turn the CardputerZero into a Wi-Fi diagnostic access point (NAT or bridge)",
+      "description": "APTool turns the CardputerZero into a Wi-Fi access point for network diagnostics, for example in a data center. Connect it to Ethernet (the built-in port or a USB-C gigabit adapter) and your laptop or phone joins the hotspot, either behind NAT (DHCP included) or in a transparent bridge to the wired network, optionally on a tagged VLAN. The screen shows uplink speed and duplex, IP and gateway ping, the LLDP neighbor (switch and port), the connected clients and more. Everything is operated with the built-in keyboard. The access point is stopped again when you leave the app (hold Esc for 2 seconds).",
+      "locales": {
+        "ja": {
+          "summary": "CardputerZero を Wi-Fi 診断用アクセスポイントにします(NAT/ブリッジ)"
+        },
+        "zh-CN": {
+          "summary": "将 CardputerZero 变成用于网络诊断的 Wi-Fi 热点(NAT/桥接)"
+        }
+      },
+      "i18n": {
+        "ja": {
+          "summary": "CardputerZero を Wi-Fi 診断用アクセスポイントにします(NAT/ブリッジ)"
+        },
+        "zh-CN": {
+          "summary": "将 CardputerZero 变成用于网络诊断的 Wi-Fi 热点(NAT/桥接)"
+        }
+      },
+      "categories": [
+        "Radio & Comms",
+        "System Tools"
+      ],
+      "author": {
+        "display_name": "FPVZaphod",
+        "github": "FPVZaphod"
+      },
+      "version": "1.0.0-3",
+      "published_at": "2026-11-14T19:49:14+00:00",
+      "updated_at": "2026-11-14T19:49:14+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/FPVZaphod/APTool",
+      "download": {
+        "type": "deb",
+        "package": "aptool",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/aptool_1.0.0-3_arm64.deb",
+        "md5": "441c802d1cddf43576d9b81a9704483b",
+        "sha256": "40a2a7dfb0ba899baf0ae2da4ae7646591b7e7d81203e038ded2d874cebd9f49",
+        "size": 27138
+      },
+      "depends": "python3 (>= 3.9), python3-pygame, python3-evdev, network-manager, iw, lldpd, sudo, iputils-ping",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aptool/store-icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aptool/screenshots/01-status.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aptool/screenshots/02-clients.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aptool/screenshots/03-uplink.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aptool/screenshots/04-settings.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aptool/store-icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aptool/screenshots/01-status.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aptool/screenshots/02-clients.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aptool/screenshots/03-uplink.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aptool/screenshots/04-settings.png"
       ]
     },
     {
@@ -245,6 +319,65 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/03-wifi-scan.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/04-terminal.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/05-theme.png"
+      ]
+    },
+    {
+      "uuid": "26604833-3e05-5f6b-b0ec-e07b11cd9efd",
+      "share_code": "BILI",
+      "title": "CardBili",
+      "summary": "适用于 CardputerZero 的非官方 BiliBili 客户端",
+      "description": "功能\r\n浏览推荐、热门、关注动态、历史记录与收藏\r\n查看视频详情、评论、作者作品与选集\r\n视频播放、弹幕、进度跳转与倍速控制\r\n键盘导航、多种列表布局与外观设置",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Media"
+      ],
+      "author": {
+        "display_name": "journey-ad",
+        "github": "journey-ad"
+      },
+      "version": "0.1.0",
+      "published_at": "2026-11-14T19:55:40+00:00",
+      "updated_at": "2026-11-14T19:55:40+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-3.0",
+      "source_repo": "https://github.com/journey-ad/M5CardputerZero-CardBili",
+      "download": {
+        "type": "deb",
+        "package": "cardbili",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardbili_0.1.0_arm64.deb",
+        "md5": "d1a72747bd5fce3c2eed6623ad7178a7",
+        "sha256": "87353917c40a9525fa8652b53f60a62f44deddfc02797e8b2377870411f34316",
+        "size": 5774616
+      },
+      "depends": "ca-certificates, pulseaudio-utils",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/cardbili_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/cardbili_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/screenshot-3.png"
       ]
     },
     {
@@ -1899,6 +2032,69 @@
       ]
     },
     {
+      "uuid": "c4eaa719-013b-5c84-a7b2-090054c6a308",
+      "share_code": "SMON",
+      "title": "SysMon",
+      "summary": "System monitor: CPU, processes, network speed, battery, level and sound meter",
+      "description": "SysMon shows what your CardputerZero is doing, across six pages.\r\n\r\nOverview: CPU with a 60-second graph, per-core load, RAM, temperature and battery.\r\nProcesses: the top 5 by CPU or memory; end one from the keyboard.\r\nNetwork: interfaces, Wi-Fi signal and a live download/upload speed graph.\r\nPower: 4-minute temperature history, battery time-left / time-to-full estimate, disk and uptime.\r\nLevel: a bubble level from the built-in motion sensor.\r\nSound: a live microphone loudness meter with one-key quiet calibration.\r\n\r\nLeft/Right or Tab switch pages, 1-6 jump, ESC quits. The microphone is only used while the Sound page is open, and nothing is recorded.\r\n\r\nSource and docs: https://github.com/duanesweazy1/pocket-sysmon",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "display_name": "Duane Sweazy",
+        "github": "duanesweazy1"
+      },
+      "version": "1.1.2",
+      "published_at": "2026-11-15T01:45:16+00:00",
+      "updated_at": "2026-11-15T01:45:16+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/duanesweazy1/pocket-sysmon",
+      "download": {
+        "type": "deb",
+        "package": "pocket-sysmon",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pocket-sysmon_1.1.2_arm64.deb",
+        "md5": "9726fef4f2d24067a95329f5c7d77587",
+        "sha256": "d5e240335ed3600dfd75944e8e685ac94031a779a4654b5e9b513fb106b6c4e7",
+        "size": 19774
+      },
+      "depends": "python3, python3-pil, python3-numpy, fonts-dejavu-core, pipewire-bin | pulseaudio-utils | alsa-utils",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": true,
+        "microphone": true,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/pocket-sysmon_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/pocket-sysmon_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-5.png"
+      ]
+    },
+    {
       "uuid": "9d4067bd-fc4d-5500-a427-92bff6179ce4",
       "share_code": "TOOL",
       "title": "Tools",
@@ -2603,6 +2799,65 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/screenshots/04-fire.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/screenshots/05-p3d.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tic80-c0/screenshots/06-car.png"
+      ]
+    },
+    {
+      "uuid": "af26fba3-d005-5357-9520-58023d9982c2",
+      "share_code": "TYVD",
+      "title": "Tyrell Video",
+      "summary": "Local video with subtitles, audio tracks and handheld or HDMI playback",
+      "description": "Play local videos on the CardputerZero's built-in display, or send the movie to a dedicated HDMI screen while keeping controls on the handheld.\n\nBrowse folders and mounted media without a full-card scan. Choose audio tracks and common text subtitles, including matching external SRT files. Subtitles start off. HDMI playback prefers TV audio and falls back to onboard sound when necessary.\n\nEnter opens a file. Space pauses or resumes. Left/Right seek 10 seconds; Up/Down change volume. O selects the display, T opens audio/subtitle tracks, V selects audio output, M mutes, Esc returns to the browser, and Q exits to APPLaunch. W/A/S/D provide navigation fallbacks.\n\nVersion 0.1.7 adds one software-decoder retry per file load for a specific HDMI buffer-pool activation failure after hardware decoding. The retry preserves playback position, selected tracks and play/pause intent. Software decoding may be slower, and demanding files may need computer-side conversion.\n\nRequires a CardputerZero running compatible Debian 13 ARM64 software with APPLaunch, GStreamer 1.26 and systemd 253 or newer. Dedicated HDMI playback temporarily releases the stock desktop and restores it on exit. The package installs a restricted nonroot console helper. Codec availability and smooth playback depend on the file. Streaming, playlists and saved playback positions are not included.\n\nThe screenshots are rendered UI previews. A tested 1920x816, 24 fps H.264/AAC source completed more than ten minutes of HDMI playback with captions, including recovery from one controlled startup allocation failure using software decoding. The tested TV output mode was 720p. Other file profiles can have different performance limits.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Media"
+      ],
+      "author": {
+        "display_name": "Tyrell contributors",
+        "github": "beatsforthemind"
+      },
+      "version": "0.1.7-1",
+      "published_at": "2026-11-15T05:52:23+00:00",
+      "updated_at": "2026-11-15T05:52:23+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "tyrell-video",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/tyrell-video_0.1.7-1_arm64.deb",
+        "md5": "68912cf85158c7163af039b79d8d1260",
+        "sha256": "7ddf4ead5f9d27e44d92ab510b8cca503847af36762d60b315fea62de4450d79",
+        "size": 686346
+      },
+      "depends": "gstreamer1.0-plugins-base (>= 1.26), gstreamer1.0-plugins-good (>= 1.26), gstreamer1.0-plugins-bad (>= 1.26), gstreamer1.0-libav (>= 1.26), gstreamer1.0-x (>= 1.26), fonts-dejavu-core, python3, systemd (>= 253), adduser, init-system-helpers (>= 1.56), libc6 (>= 2.38), libdrm2 (>= 2.4.61), libgcc-s1 (>= 3.0), libglib2.0-0t64 (>= 2.12.0), libgstreamer-plugins-base1.0-0 (>= 1.6.0), libgstreamer1.0-0 (>= 1.12.0), libpulse0 (>= 0.99.1), libstdc++6 (>= 13.1)",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": true,
+        "external_display": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tyrell-video/icon-256.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tyrell-video/screenshots/01-browser-preview.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tyrell-video/screenshots/02-lcd-player-preview.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tyrell-video/screenshots/03-tracks-preview.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tyrell-video/screenshots/04-hdmi-controller-preview.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tyrell-video/icon-256.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tyrell-video/screenshots/01-browser-preview.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tyrell-video/screenshots/02-lcd-player-preview.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tyrell-video/screenshots/03-tracks-preview.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tyrell-video/screenshots/04-hdmi-controller-preview.png"
       ]
     },
     {
