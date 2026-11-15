@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-16T02:24:59+08:00",
+  "generated_at": "2026-11-16T03:32:28+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2432,9 +2432,9 @@
         "display_name": "Software Amusements",
         "github": "FuzzyDweeb"
       },
-      "version": "6.2",
+      "version": "6.5",
       "published_at": "2026-11-14T14:38:26+00:00",
-      "updated_at": "2026-11-14T14:38:26+00:00",
+      "updated_at": "2026-11-15T19:21:33+00:00",
       "review": {
         "status": "approved"
       },
@@ -2443,10 +2443,10 @@
       "download": {
         "type": "deb",
         "package": "refract-pocket",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/refract-pocket_6.2_arm64.deb",
-        "md5": "59e2cd0ddc153d186a4940d9157dd617",
-        "sha256": "250ad870b474c64a58be6a53d0cb3ddd88d7c9de72ba707d90cc459841660db8",
-        "size": 875790
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/refract-pocket_6.5_arm64.deb",
+        "md5": "8b218643e52b51ab555cdd9f3bf5c6be",
+        "sha256": "0ab59eb4e00b5e1729f77cefd233746e1e9cd37e49603c17b8190be19b931c13",
+        "size": 884532
       },
       "depends": "libsdl2-2.0-0",
       "permissions": {
@@ -3458,9 +3458,9 @@
         "display_name": "Software Amusements",
         "github": "FuzzyDweeb"
       },
-      "version": "1.2.5-1",
+      "version": "1.2.7-1",
       "published_at": "2026-11-14T13:23:30+00:00",
-      "updated_at": "2026-11-14T13:23:30+00:00",
+      "updated_at": "2026-11-15T19:22:18+00:00",
       "review": {
         "status": "approved"
       },
@@ -3469,10 +3469,10 @@
       "download": {
         "type": "deb",
         "package": "zerodaw",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerodaw_1.2.5-1_arm64.deb",
-        "md5": "89b08185057b2b271998ef0fda57a048",
-        "sha256": "627922baa9ff1b6fc452794a7b3a2f54884c5a5639c025ec122a6d0dbc2d8a5f",
-        "size": 137872
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerodaw_1.2.7-1_arm64.deb",
+        "md5": "4792f4dcbc1624a6439b8b3442d82a4d",
+        "sha256": "3121bd60965a102a93b2cc78392cef5afec8db737e53bd01e91fe9883fa3eca4",
+        "size": 110540
       },
       "depends": "libc6 (>= 2.31), libasound2",
       "permissions": {
