@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-16T01:22:52+08:00",
+  "generated_at": "2026-11-16T02:24:59+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -76,7 +76,7 @@
       "share_code": "AMII",
       "title": "amiibo_sim",
       "summary": "Amiibo模拟器",
-      "description": "1、项目介绍\r\n使用Cap CC1101内置的 ST25R3916 NFC 芯片，模拟Amiibo，支持刷新随机UID\r\n.bin文件需由用户自行添加至~/amiibo_sim\r\n\r\n2、准备工作\r\n\r\n- 关机装好 Cap CC1101，开机后在 `Settings → ExtPort` 中确认 EXT D+/D− 处于 GPIO 模式。\r\n- 从 APPLaunch 打开 `amiibo_sim`。如果屏幕显示 `NFC SPI missing` 或 `SPI access denied`，需运行：\r\nsudo /usr/lib/amiibo_sim/cap-setup\r\n\r\n应用只检测 SPI 状态。上面的命令由用户授权执行，负责加载 NFC SPI 配置并设置设备访问权限。应用会自动复查，也可以按 H 立即检查。看到 CAP ST25R3916 connected 即可选卡。临时加载的 SPI 配置在重启后需要重新启用。\r\n- 应用会尝试自动开启 EXT 5V。如果显示 EXT 5V failed，需在 Settings → ExtPort 手动开启 EXT 5V，再按 H。\r\n\r\n3、导入文件和操作\r\n首次打开会自动创建 ~/amiibo_sim/。把自己的 540 字节 Amiibo .bin 备份放进这个目录，再按 T 刷新列表。支持中文文件名。\r\n- F / X 或方向键选文件，Enter 开始模拟。\r\n- 若要随机刷新 UID，把与备份匹配的 160 字节密钥放在同一目录。文件名可用 key_retail.bin 或 retail.bin，屏幕右上角会显示密钥状态。\r\n- 模拟时移开手柄，按 R 换 UID，按 O 恢复原始 UID。\r\n- Esc 停止模拟，再按一次退出。\r\n安装包不包含 Amiibo 备份或密钥，需自行导入。\r\n\r\n4、更新\r\n- 已支持在 ~/amiibo_sim/ 中添加文件夹",
+      "description": "1、项目介绍\r\n使用Cap CC1101内置的 ST25R3916 NFC 芯片，模拟Amiibo，支持刷新随机UID\r\n.bin文件需由用户自行添加至~/amiibo_sim\r\n\r\n2、准备工作\r\n\r\n- 关机装好 Cap CC1101，开机后在 `Settings → ExtPort` 中确认 EXT D+/D− 处于 GPIO 模式。\r\n- 从 APPLaunch 打开 `amiibo_sim`。如果屏幕显示 `NFC SPI missing` 或 `SPI access denied`，需运行：\r\nsudo /usr/lib/amiibo_sim/cap-setup\r\n\r\n应用只检测 SPI 状态。上面的命令由用户授权执行，负责加载 NFC SPI 配置并设置设备访问权限。应用会自动复查，也可以按 H 立即检查。看到 CAP ST25R3916 connected 即可选卡。临时加载的 SPI 配置在重启后需要重新启用。\r\n- 应用会尝试自动开启 EXT 5V。如果显示 EXT 5V failed，需在 Settings → ExtPort 手动开启 EXT 5V，再按 H。\r\n\r\n3、导入文件和操作\r\n首次打开会自动创建 ~/amiibo_sim/。把自己的 540 字节 Amiibo .bin 备份放进这个目录，再按 T 刷新列表。支持中文文件名。\r\n- F / X 或方向键选文件，Enter 开始模拟。\r\n- 若要随机刷新 UID，把与备份匹配的 160 字节密钥放在同一目录。文件名可用 key_retail.bin 或 retail.bin，屏幕右上角会显示密钥状态。\r\n- 模拟时移开手柄，按 R 换 UID，按 O 恢复原始 UID。\r\n- Esc 停止模拟，再按一次退出。\r\n安装包不包含 Amiibo 备份或密钥，需自行导入。\r\n\r\n4、更新\r\n- 0.18 存在bug，不可使用\r\n- 0.19 已支持在 ~/amiibo_sim/ 中添加文件夹",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -87,9 +87,9 @@
         "display_name": "RiviaRammer",
         "github": "RiviaRammer"
       },
-      "version": "0.1.8",
+      "version": "0.1.9-1",
       "published_at": "2026-11-13T05:04:50+00:00",
-      "updated_at": "2026-11-15T16:12:49+00:00",
+      "updated_at": "2026-11-15T18:09:02+00:00",
       "review": {
         "status": "approved"
       },
@@ -98,10 +98,10 @@
       "download": {
         "type": "deb",
         "package": "amiibo-sim",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/amiibo-sim_0.1.8_arm64.deb",
-        "md5": "16b66b5813bc00a22deba9ca2981a8b1",
-        "sha256": "074bc6c257d0ed82641a45d7396d2d7280d364fb400cb692edec1ffa0b5557b0",
-        "size": 514056
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/amiibo-sim_0.1.9-1_arm64.deb",
+        "md5": "85bd6de956e61384bf335f8af20b209c",
+        "sha256": "e1dc15478a03fb613cdbcf917156f7a9d08d8ba0852c71d82f99f5807260b931",
+        "size": 514960
       },
       "depends": "libc6 (>= 2.34), libstdc++6, python3, python3-cryptography, fonts-droid-fallback",
       "permissions": {
