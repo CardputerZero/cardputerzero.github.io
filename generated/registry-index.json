@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-15T16:29:29+08:00",
+  "generated_at": "2026-11-15T17:18:18+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -606,7 +606,7 @@
         "display_name": "Doody Calls - Turd World War",
         "github": "FuzzyDweeb"
       },
-      "version": "2.0.7",
+      "version": "2.0.11",
       "published_at": "2026-11-13T13:04:37+00:00",
       "updated_at": "2026-11-15T08:20:48+00:00",
       "review": {
@@ -617,10 +617,10 @@
       "download": {
         "type": "deb",
         "package": "doodycalls",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/doodycalls_2.0.7_arm64.deb",
-        "md5": "df014044c3c9acd07f5f16fac908714a",
-        "sha256": "3f870da6092e0d45002fc8a1be11442a59f30cebd8d055eae30d12410e01f93b",
-        "size": 11878852
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/doodycalls_2.0.11_arm64.deb",
+        "md5": "4a9057f6e592aef97f856b1bbe93fe26",
+        "sha256": "6cc7c256dbcc208e47b403dec6057ded4190b8b2196fe5701b68768090fddcf7",
+        "size": 11881748
       },
       "depends": "curl, alsa-utils",
       "permissions": {
@@ -672,7 +672,7 @@
       },
       "version": "2.0.9-1",
       "published_at": "2026-11-13T09:46:55+00:00",
-      "updated_at": "2026-11-14T11:50:29+00:00",
+      "updated_at": "2026-11-15T08:39:50+00:00",
       "review": {
         "status": "approved"
       },
@@ -723,7 +723,7 @@
       "share_code": "FIVE",
       "title": "Five",
       "summary": "离线五子棋，支持 Rapfi 人机和同机双人。 Offline Gomoku with Rapfi or local two-player.",
-      "description": "简体中文\r\n在 Cardputer Zero 上离线下五子棋。可与 Rapfi 对弈，选择简单、普通或困难，也可在同一台设备上双人对弈。支持 15×15 和 13×13 棋盘、自由规则和连珠禁手。设置中可查看规则说明，两种对局均支持悔棋和续局。界面支持简体中文和英文。\r\n\r\nFive 应用部分采用专有许可。Rapfi 是独立引擎，按 GPL-3.0-or-later 分发，官方模型权重采用 CC0-1.0。安装包内的 /usr/share/doc/five/ 提供 Rapfi 对应源码、构建脚本及许可证。\r\n\r\nEnglish\r\nPlay offline Gomoku on Cardputer Zero. Play Rapfi at three difficulty levels or share one device with a friend. Choose a 15×15 or 13×13 board and Freestyle or Renju fouls. A rules guide, undo and resume are available. The interface supports Simplified Chinese and English.\r\n\r\nFive is proprietary. The separate Rapfi engine is distributed under GPL-3.0-or-later and its official weights under CC0-1.0. Corresponding Rapfi source, build instructions and license texts are included in the package under /usr/share/doc/five/.",
+      "description": "简体中文\r\n在 Cardputer Zero 上离线下五子棋。与 Rapfi 对弈可选简单、普通或困难，也可在同一台设备上两人轮流落子。支持 15×15 和 13×13 棋盘，以及自由规则和连珠禁手。两种对局均支持悔棋和续局。界面和规则说明均支持简体中文和英文。\r\n\r\n最近改动（1.0.0-7）\r\nRapfi 落子失败后，Five 会自动重试。连续失败时，重试间隔从 0.5 秒逐步增加到 4 秒。重试期间仍可悔棋或返回菜单。\r\n\r\nFive 应用部分采用专有许可。Rapfi 是独立引擎，按 GPL-3.0-or-later 分发，官方模型权重采用 CC0-1.0。安装包内的 /usr/share/doc/five/ 提供 Rapfi 对应源码、构建脚本及许可证。\r\n\r\nEnglish\r\nPlay Gomoku offline on Cardputer Zero. Face Rapfi at one of three difficulty levels or take turns with a friend on the same device. Choose a 15×15 or 13×13 board and play with Freestyle or Renju fouls. Both modes support undo and resume. The interface and rules guide are available in Simplified Chinese and English.\r\n\r\nWhat’s new (1.0.0-7)\r\nFive automatically retries when Rapfi fails to return a move. For repeated failures, the delay grows from 0.5 seconds to 4 seconds. You can still undo or return to the menu while Five retries.\r\n\r\nFive is proprietary. The separate Rapfi engine is distributed under GPL-3.0-or-later and its official weights under CC0-1.0. Corresponding Rapfi source, build scripts and license texts are included in the package under /usr/share/doc/five/.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -733,9 +733,9 @@
         "display_name": "xu-c",
         "github": "xu-c"
       },
-      "version": "1.0.0-6",
+      "version": "1.0.0-7",
       "published_at": "2026-11-13T15:17:18+00:00",
-      "updated_at": "2026-11-13T15:17:18+00:00",
+      "updated_at": "2026-11-15T08:37:58+00:00",
       "review": {
         "status": "approved"
       },
@@ -744,10 +744,10 @@
       "download": {
         "type": "deb",
         "package": "five",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/five_1.0.0-6_arm64.deb",
-        "md5": "c58277b0173d7db41f25e4c35019eaa6",
-        "sha256": "bbf319e4c8937848ed05e3f3cb6c1659542413fc1207d3892ff54c130b601619",
-        "size": 1790618
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/five_1.0.0-7_arm64.deb",
+        "md5": "b5a4c8fb0abfc4a8bc6e6a8eb0a5c5f7",
+        "sha256": "dbe39513b0459ecc985d26bd8c5c5f069824b500f8c8392ae5de3f4c94a14f89",
+        "size": 1790944
       },
       "depends": "python3 (>= 3.9), python3-pil (>= 9.2), python3-evdev, fonts-noto-cjk, alsa-utils",
       "permissions": {
@@ -765,14 +765,20 @@
         "screenshots": [
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-0.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-1.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-2.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-5.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/five_icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-1.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-2.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-5.png"
       ]
     },
     {
@@ -1784,9 +1790,9 @@
         "display_name": "Software Amusements",
         "github": "FuzzyDweeb"
       },
-      "version": "5.0",
+      "version": "5.1",
       "published_at": "2026-11-13T08:02:58+00:00",
-      "updated_at": "2026-11-14T12:47:43+00:00",
+      "updated_at": "2026-11-15T09:07:22+00:00",
       "review": {
         "status": "approved"
       },
@@ -1795,10 +1801,10 @@
       "download": {
         "type": "deb",
         "package": "octet",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/octet_5.0_arm64.deb",
-        "md5": "865e4ff13410782e550cc9f39f94080d",
-        "sha256": "95f4cf4ebef67f735a507a60b428776868481dbc3816a00442c66ab0c49e385e",
-        "size": 1397202
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/octet_5.1_arm64.deb",
+        "md5": "796ac0a23cded3e459c5a69dea9711a9",
+        "sha256": "6418c5b5d81963e840df965dccb0391aa3f0aa487fdbee33734bd1178f4ae22a",
+        "size": 1399928
       },
       "depends": "",
       "permissions": {
