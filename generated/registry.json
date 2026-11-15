@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-16T00:41:20+08:00",
+  "generated_at": "2026-11-16T01:22:52+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -784,6 +784,70 @@
       ]
     },
     {
+      "uuid": "99a52e46-4649-5e7e-9fb8-e204006aab08",
+      "share_code": "COGS",
+      "title": "Crock O'Gold Slots",
+      "summary": "The lucky Irish themed casino slot machine!",
+      "description": "Spin for the crock at the end of the rainbow! Six reels, 25 paylines, WILDs and MEGA WINS, plus a bonus trail with two mini-games: pick boxes in Lucky Shamrock or grab a pot in Crock O’Gold. Every win moves you around Ireland for city bonuses, and the best cash-outs go into a Hall of Fame.\r\n\r\nNote: For Amusement Only.\r\nAll payouts are virtual credits. No real money in = no real money out.\r\nCredits cannot be bought, cashed out or exchanged for anything of value.\r\nSimulated gambling - not intended for minors (18+).\r\n\r\nCopyright © 2015-2026 Software Amusements. All rights reserved.\r\nwww.softwareamusements.com",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games",
+        "Other"
+      ],
+      "author": {
+        "display_name": "Software Amusements",
+        "github": "FuzzyDweeb"
+      },
+      "version": "1.0.9-1",
+      "published_at": "2026-11-15T11:06:42+00:00",
+      "updated_at": "2026-11-15T11:06:42+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Proprietary",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "crockogoldslots",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/crockogoldslots_1.0.9-1_arm64.deb",
+        "md5": "082b534e6457ecaa20e63d83a9438340",
+        "sha256": "d7443e94d19e2e30b422c7496851ad575a7cf962f78ac1c6b5f95f8cb75da4da",
+        "size": 7503488
+      },
+      "depends": "",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": true,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/crockogoldslots/crockogoldslots_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/crockogoldslots/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/crockogoldslots/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/crockogoldslots/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/crockogoldslots/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/crockogoldslots/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/crockogoldslots/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/crockogoldslots/crockogoldslots_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/crockogoldslots/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/crockogoldslots/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/crockogoldslots/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/crockogoldslots/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/crockogoldslots/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/crockogoldslots/screenshots/screenshot-5.png"
+      ]
+    },
+    {
       "uuid": "257010ed-e97a-52cf-b6fb-e0b9f792cba9",
       "share_code": "DOOD",
       "title": "Doody Calls - Turd World War",
@@ -1382,6 +1446,68 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/screenshots/settings.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/screenshots/apikey-qr.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/screenshots/editor.png"
+      ]
+    },
+    {
+      "uuid": "eb5b9a96-a9b1-57da-99e2-e10dacd5b04d",
+      "share_code": "KSTL",
+      "title": "KanSTL",
+      "summary": "STL 3D viewer for the Cardputer Zero",
+      "description": "KanSTL opens STL 3D models on the Cardputer Zero and lets you look at them from every side.\r\nPick a file from the built-in browser, then rotate and zoom with the keypad. One key cycles four looks: solid, edges, metallic and wireframe, and auto-rotate turns the model slowly when you want to see it all round. A small XYZ gizmo keeps you oriented.\r\n\r\nModels are read straight from the device: copy STL files over SSH or a USB stick, and the browser remembers the folder you were in. Binary and ASCII files both work.\r\n\r\nNo permissions, no network, no background service.Open source, GPL-3.0.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Development"
+      ],
+      "author": {
+        "display_name": "Weiming Feng",
+        "github": "nullbeing"
+      },
+      "version": "0.1.0",
+      "published_at": "2026-11-15T14:18:45+00:00",
+      "updated_at": "2026-11-15T14:18:45+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-3.0",
+      "source_repo": "https://github.com/nullbeing/KanSTL",
+      "download": {
+        "type": "deb",
+        "package": "kanstl",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/kanstl_0.1.0_arm64.deb",
+        "md5": "1198f3151e3af550465f67f9efe81631",
+        "sha256": "bef4e6c04b65730e806276fcd1519a356692c98aeac17d77edafaac1bed9da74",
+        "size": 101736
+      },
+      "depends": "libc6 (>= 2.34), libgcc-s1 (>= 4.0), libstdc++6 (>= 11)",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kanstl/kanstl_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kanstl/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kanstl/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kanstl/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kanstl/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kanstl/screenshots/screenshot-4.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kanstl/kanstl_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kanstl/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kanstl/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kanstl/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kanstl/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kanstl/screenshots/screenshot-4.png"
       ]
     },
     {
@@ -3221,9 +3347,9 @@
         "display_name": "geo-tp",
         "github": "geo-tp"
       },
-      "version": "1.0.10-21.gtk",
+      "version": "1.0.10-24.gtk",
       "published_at": "2026-11-13T22:19:23+00:00",
-      "updated_at": "2026-11-13T22:19:23+00:00",
+      "updated_at": "2026-11-15T17:13:18+00:00",
       "review": {
         "status": "approved"
       },
@@ -3232,10 +3358,10 @@
       "download": {
         "type": "deb",
         "package": "zero-usbimager",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-usbimager_1.0.10-21.gtk_arm64.deb",
-        "md5": "3df2996d0ec2e8955605dc9acc39ccdb",
-        "sha256": "b7cd83e89edd2321e29ba4baddf8c1bb198d3e63a7243601eabdd2e5dab22e4d",
-        "size": 249164
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-usbimager_1.0.10-24.gtk_arm64.deb",
+        "md5": "f2fd1c6fb1efdfccfbb1882d2d2c87bb",
+        "sha256": "9e293f682a34cfba8990476b8659ca6da4403d1263754c171fda8662d0fcdc88",
+        "size": 286930
       },
       "depends": "libc6, libstdc++6, libwayland-client0, libgtk-3-0t64, libudisks2-0, udisks2, polkitd, libpolkit-agent-1-0, python3, labwc, wlr-randr",
       "permissions": {
