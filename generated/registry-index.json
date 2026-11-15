@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-15T23:03:20+08:00",
+  "generated_at": "2026-11-15T23:35:26+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -123,6 +123,66 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/amiibo-sim/amiibo-sim_icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/amiibo-sim/screenshots/screenshot-0.png"
+      ]
+    },
+    {
+      "uuid": "bcca3916-3efb-5813-b38d-6491ab51e10d",
+      "share_code": "A2RM",
+      "title": "Aria2 Remote",
+      "summary": "Monitor and control a remote aria2 download server.",
+      "description": "Remote aria2 JSON-RPC client with task monitoring and download controls.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "display_name": "Jason-1993-code",
+        "email": "jason@kingwoods.win",
+        "github": "Jason-1993-code"
+      },
+      "version": "0.1.0-rev2",
+      "published_at": "2026-11-14T07:14:54+00:00",
+      "updated_at": "2026-11-14T07:14:54+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "aria2-remote",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/aria2-remote_0.1.0-rev2_arm64.deb",
+        "md5": "31384c67f8e06e17588baf187fee0e2d",
+        "sha256": "00092ed2d0e2d6019fc1a4404fa55d37873ceb802cf1985b846a409f7083f776",
+        "size": 2071720
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libcurl4t64",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aria2-remote/aria2-remote.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aria2-remote/screenshots/aria2-remote_20261114_150439_376.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aria2-remote/screenshots/aria2-remote_20261114_150509_358.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aria2-remote/screenshots/aria2-remote_20261114_150518_189.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aria2-remote/screenshots/aria2-remote_20261114_150539_539.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aria2-remote/aria2-remote.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aria2-remote/screenshots/aria2-remote_20261114_150439_376.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aria2-remote/screenshots/aria2-remote_20261114_150509_358.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aria2-remote/screenshots/aria2-remote_20261114_150518_189.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aria2-remote/screenshots/aria2-remote_20261114_150539_539.png"
       ]
     },
     {
@@ -2824,6 +2884,60 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-stocks/screenshots/main.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-stocks/screenshots/kline.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-stocks/screenshots/add.png"
+      ]
+    },
+    {
+      "uuid": "c1efd2ab-1f49-5459-9093-7a7b544aa90b",
+      "share_code": "USBI",
+      "title": "USB Imager",
+      "summary": "Burn disk images to USB drives and creates backups",
+      "description": "USBImager is a really really simple GUI application that writes compressed disk images to USB drives and creates backups. Available platforms: Windows, MacOS and Linux. Its interface is as simple as it gets, totally bloat-free",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Development"
+      ],
+      "author": {
+        "display_name": "geo-tp",
+        "github": "geo-tp"
+      },
+      "version": "1.0.10-21.gtk",
+      "published_at": "2026-11-13T22:19:23+00:00",
+      "updated_at": "2026-11-13T22:19:23+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/geo-tp/USBImager-Zero",
+      "download": {
+        "type": "deb",
+        "package": "zero-usbimager",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-usbimager_1.0.10-21.gtk_arm64.deb",
+        "md5": "3df2996d0ec2e8955605dc9acc39ccdb",
+        "sha256": "b7cd83e89edd2321e29ba4baddf8c1bb198d3e63a7243601eabdd2e5dab22e4d",
+        "size": 249164
+      },
+      "depends": "libc6, libstdc++6, libwayland-client0, libgtk-3-0t64, libudisks2-0, udisks2, polkitd, libpolkit-agent-1-0, python3, labwc, wlr-randr",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-usbimager/zero-usbimager_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-usbimager/screenshots/screenshot-0.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-usbimager/zero-usbimager_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-usbimager/screenshots/screenshot-0.png"
       ]
     },
     {
