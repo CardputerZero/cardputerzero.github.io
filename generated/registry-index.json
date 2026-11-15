@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-15T17:18:18+08:00",
+  "generated_at": "2026-11-15T17:54:54+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -257,9 +257,9 @@
         "display_name": "olp5735-sys",
         "github": "olp5735-sys"
       },
-      "version": "0.1.35",
+      "version": "0.1.36",
       "published_at": "2026-11-08T14:57:41+00:00",
-      "updated_at": "2026-11-10T14:56:18+00:00",
+      "updated_at": "2026-11-15T09:40:39+00:00",
       "review": {
         "status": "approved"
       },
@@ -268,10 +268,10 @@
       "download": {
         "type": "deb",
         "package": "cardputer-zero-iptv",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-zero-iptv_0.1.35_arm64.deb",
-        "md5": "d18ff50849cc026dfd775db2c9d8f165",
-        "sha256": "e31ded954f39bc3a73255fc2491180d69439b376d9dcc9ff0176d30667fcb07c",
-        "size": 1633004
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-zero-iptv_0.1.36_arm64.deb",
+        "md5": "27354032ccb7a032b1e840373f3184d4",
+        "sha256": "499ea55ea81d613f0962948fb803559fff499de595d9006cdb812b954bc43568",
+        "size": 1638196
       },
       "depends": "python3, python3-pil, python3-evdev, ffmpeg, pulseaudio-utils",
       "permissions": {
@@ -670,7 +670,7 @@
         "display_name": "Software Amusements",
         "github": "FuzzyDweeb"
       },
-      "version": "2.0.9-1",
+      "version": "2.0.10-1",
       "published_at": "2026-11-13T09:46:55+00:00",
       "updated_at": "2026-11-15T08:39:50+00:00",
       "review": {
@@ -681,10 +681,10 @@
       "download": {
         "type": "deb",
         "package": "dweebs-pets",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/dweebs-pets_2.0.9-1_arm64.deb",
-        "md5": "859022877c6b549b4f06b5f257dfbe80",
-        "sha256": "3e13dec5f8901287381740b32c2fe10507606cd5e7663b4f8c2dccb4ac9ee001",
-        "size": 1224224
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/dweebs-pets_2.0.10-1_arm64.deb",
+        "md5": "d90d2c82dd188c7347e3ba1b22bc1d76",
+        "sha256": "afc3ac2932fcc55f69df0d1880952f168cf9019f7131451505c8d2df7542d037",
+        "size": 1229208
       },
       "depends": "libc6 (>= 2.34), alsa-utils",
       "permissions": {
