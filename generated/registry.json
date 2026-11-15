@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-15T19:17:52+08:00",
+  "generated_at": "2026-11-15T22:02:27+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -304,7 +304,7 @@
       "share_code": "WRAD",
       "title": "WebRadio",
       "summary": "发现、收藏和收听网络电台 · Browse, save, and listen to internet radio",
-      "description": "简体中文\r\n用 Cardputer Zero 的内置键盘浏览全球网络电台。首次打开显示中国大陆电台，可按国家／地区、语言和类型筛选。支持英文台名、频率、呼号及中文全拼搜索，可在当前筛选范围内搜索，也可切换到全球。按 Q 即可继续收听上次成功播放的电台，播放栏会显示台名及电台流提供的节目或曲名。收藏、筛选、音量及简体中文／英文界面偏好均保存在设备上。\r\n\r\n收听需要联网。电台目录来自 Radio Browser。电台内容由各电台提供，WebRadio 作者不对其内容负责。请遵守 Radio Browser 的使用规则和当地适用法律。\r\n\r\nhttps://www.radio-browser.info/\r\n\r\n最近改动 · 1.0.9-1\r\n- 重做 320×170 界面，突出电台列表、播放状态和音量。播放栏可显示电台名及电台流提供的节目或曲名。\r\n- 新增全拼搜索，例如输入 zhongguozhisheng 查找「中国之声」。原有台名搜索可继续输入英文、频率或呼号。搜索默认沿用筛选条件，可切换到全球。\r\n- 搜索超过 10 秒后显示耗时和取消提示。短按 Esc 或按 8 可从搜索返回原列表和选中位置，长按 Esc 3 秒退出。\r\n- 按 Q 一键继续收听上次成功播放的电台。电台详情显示国家／地区、语言和类型。\r\n\r\nEnglish\r\nExplore internet radio with the Cardputer Zero keyboard. The first launch shows mainland China stations. Filter by country or region, language, and genre, or search the current selection or the worldwide directory. Search by English name, frequency, call sign, or full pinyin for Chinese station names. Press Q to resume your last successfully played station. The player displays the station and any program or track title supplied by the stream. Favorites, filters, volume, and the Simplified Chinese or English interface preference are saved on the device.\r\n\r\nStreaming requires an internet connection. Radio Browser provides the station directory. Stations supply their own programming, and the author of WebRadio is not responsible for their content. Follow Radio Browser’s usage rules and applicable local laws.\r\n\r\nhttps://www.radio-browser.info/\r\n\r\nWhat’s new · 1.0.9-1\r\n- Redesigned the 320×170 interface with clearer lists, playback status, and volume. The player shows the station and any program or track title supplied by the stream.\r\n- Added full-pinyin search for Chinese station names. Standard search still accepts English names, frequencies, and call signs. Search uses the current filters by default, with a global option.\r\n- Searches taking 10 seconds show elapsed time and an Esc cancel hint. Tap Esc or press 8 to return to the previous list and selection. Hold Esc for three seconds to quit.\r\n- Press Q to resume the last station that played successfully. Station details show country or region, language, and genres.",
+      "description": "简体中文\r\n在 Cardputer Zero 上发现、收藏和收听全球网络电台。首次打开显示中国大陆电台，可按国家／地区、语言和类型筛选。支持英文台名、频率、呼号及中文全拼搜索，可搜索当前范围或全球。按 Q 继续收听上次成功播放的电台。播放栏显示台名及电台流提供的节目或曲名。收藏、筛选、应用音量和中英文界面偏好均保存在设备上。\r\n\r\n主界面右上角显示电量。按 8 或 V 打开音量页，可分别调节应用音量和系统音量。\r\n\r\n收听需要联网。电台目录来自 Radio Browser，节目由各电台提供，WebRadio 作者不对电台内容负责。请遵守 Radio Browser 的使用规则和当地适用法律。\r\nhttps://www.radio-browser.info/\r\n\r\n最近改动 · 1.0.11-1\r\n- 主界面右上角显示剩余电量，低电量时变红。\r\n- 音量页同时显示应用音量和当前音频输出的系统音量。\r\n- 用上下键或 F / X 选择，左右键或 Z / C 调节。4 / 5 直接调应用音量，6 / 7 直接调系统音量。\r\n\r\nEnglish\r\nBrowse, save, and listen to internet radio on Cardputer Zero. The first launch shows mainland China stations. Filter by country or region, language, and genre. Search the current selection or the worldwide directory by English name, frequency, call sign, or full pinyin for Chinese station names. Press Q to resume the last station that played successfully. The player shows the station and any program or track title supplied by the stream. Favorites, filters, app volume, and the Simplified Chinese or English interface preference are saved on the device.\r\n\r\nThe main screen shows battery percentage. Press 8 or V to adjust WebRadio and system volume independently.\r\n\r\nStreaming requires internet access. Radio Browser provides the directory. Stations supply their programming, and the WebRadio author is not responsible for station content. Follow Radio Browser’s usage rules and applicable local laws.\r\nhttps://www.radio-browser.info/\r\n\r\nWhat’s new · 1.0.11-1\r\n- The top-right corner shows battery percentage and highlights low charge in red.\r\n- The volume screen shows WebRadio volume and system volume for the active output.\r\n- Use Up / Down or F / X to select, and Left / Right or Z / C to adjust. Use 4 / 5 for app volume and 6 / 7 for system volume directly.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -316,7 +316,7 @@
       },
       "version": "1.0.9-1",
       "published_at": "2026-11-12T15:59:02+00:00",
-      "updated_at": "2026-11-15T08:11:34+00:00",
+      "updated_at": "2026-11-15T13:37:05+00:00",
       "review": {
         "status": "approved"
       },
@@ -2993,8 +2993,8 @@
     {
       "uuid": "5d82b0b9-5a8a-5a5d-99fd-25bbeb42cfdd",
       "share_code": "0SDR",
-      "title": "zeroSDR",
-      "summary": "zeroSDR turns the Cardputer Zero into a pocket SDR receiver.",
+      "title": "ZeroSDR",
+      "summary": "ZeroSDR turns the Cardputer Zero into a pocket SDR receiver.",
       "description": "FEATURES\r\n- Real-time spectrum and waterfall on the 320x170 display\r\n- FM / NFM / AM / USB / LSB demodulation with squelch, audio AGC and\r\n  FM de-emphasis (50/75 us)\r\n- Adjustable tuning step, display zoom, FFT size and sample rate\r\n- On-screen key reference and settings panel (press H)\r\n- ADSB aircraft page: sortable list, detail view with a PFD, and a radar\r\n  view with a fading sweep, range rings and a large callsign plate\r\n- Runs as the normal user through the librtlsdr udev rule - no root,\r\n  no background service\r\n\r\nREQUIRED EXTRA HARDWARE\r\n- An RTL-SDR USB dongle (tested with RTL-SDR Blog V4 / RTL2832U).\r\n  The app has no built-in radio, so a dongle is mandatory.\r\n- An antenna: any VHF/UHF antenna for the SDR page; a 1090 MHz antenna\r\n  for the ADSB page.\r\n- The dongle plugs into the Cardputer Zero USB-A port and is powered by\r\n  the device.\r\n\r\nNOTES\r\n- ADSB decoding is done by the external \"readsb\" program, which must be\r\n  installed separately (a build with the RTL-SDR backend). Without it the\r\n  ADSB list stays empty; the SDR page still works.\r\n- Audio plays through the built-in speaker or the 3.5 mm jack.",
       "locales": {},
       "i18n": {},
@@ -3006,23 +3006,23 @@
         "display_name": "Weiming Feng",
         "github": "nullbeing"
       },
-      "version": "0.3.6",
+      "version": "0.3.7",
       "published_at": "2026-11-10T02:37:56+00:00",
-      "updated_at": "2026-11-10T14:06:03+00:00",
+      "updated_at": "2026-11-15T13:52:11+00:00",
       "review": {
         "status": "approved"
       },
       "license": "GPL-3.0",
-      "source_repo": "",
+      "source_repo": "https://github.com/nullbeing/zerosdr",
       "download": {
         "type": "deb",
         "package": "zerosdr",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosdr_0.3.6_arm64.deb",
-        "md5": "a3d9928571f713b8ddcea08073ab1aad",
-        "sha256": "2e723db686cdf9b263f8cbadfc1cdf5049e7737beed362fc5eb5b0e83354626a",
-        "size": 347720
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosdr_0.3.7_arm64.deb",
+        "md5": "4030092ee0348ab01543bca675df6ccb",
+        "sha256": "4360e67f44b0ff34e87d826d03c1f60305a4d2b24bccf9aaf630d86608806c92",
+        "size": 402396
       },
-      "depends": "libasound2 (>= 1.0.18), libc6 (>= 2.34), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 4.0), libncurses6 (>= 6), librtlsdr0 (>= 0.6.0), libstdc++6 (>= 11), libtinfo6 (>= 6), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.2.6), libasound2-plugins",
+      "depends": "libasound2 (>= 1.0.18), libc6 (>= 2.34), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 4.0), libncurses6 (>= 6), libpulse0 (>= 0.99.1), librtlsdr0 (>= 0.6.0), libstdc++6 (>= 11), libtinfo6 (>= 6), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.2.6), libasound2-plugins",
       "permissions": {
         "additional_hardware": true,
         "background_service": false,
@@ -3040,7 +3040,8 @@
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-1.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-2.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-3.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-4.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-5.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/zerosdr_icon.png",
@@ -3049,7 +3050,8 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-3.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-4.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-5.png"
       ]
     },
     {
