@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-15T07:17:49+08:00",
+  "generated_at": "2026-11-15T16:29:29+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -303,8 +303,8 @@
       "uuid": "c8a053a5-f8b4-5d5b-9e34-3417d8b61fee",
       "share_code": "WRAD",
       "title": "WebRadio",
-      "summary": "Browse, save, and play internet radio stations on Cardputer Zero.",
-      "description": "WebRadio brings the Radio Browser directory to Cardputer Zero. Search and filter stations by country or region, language, and genre. Save your favorites, adjust volume with the keyboard, and switch between Simplified Chinese and English. WebRadio remembers favorites, volume, filters, and the interface language on your device.\r\n\r\nAn internet connection is required to stream radio. Stations provide their own programming. Follow the Radio Browser rules and applicable local laws.",
+      "summary": "发现、收藏和收听网络电台 · Browse, save, and listen to internet radio",
+      "description": "简体中文\r\n用 Cardputer Zero 的内置键盘浏览全球网络电台。首次打开显示中国大陆电台，可按国家／地区、语言和类型筛选。支持英文台名、频率、呼号及中文全拼搜索，可在当前筛选范围内搜索，也可切换到全球。按 Q 即可继续收听上次成功播放的电台，播放栏会显示台名及电台流提供的节目或曲名。收藏、筛选、音量及简体中文／英文界面偏好均保存在设备上。\r\n\r\n收听需要联网。电台目录来自 Radio Browser。电台内容由各电台提供，WebRadio 作者不对其内容负责。请遵守 Radio Browser 的使用规则和当地适用法律。\r\n\r\nhttps://www.radio-browser.info/\r\n\r\n最近改动 · 1.0.9-1\r\n- 重做 320×170 界面，突出电台列表、播放状态和音量。播放栏可显示电台名及电台流提供的节目或曲名。\r\n- 新增全拼搜索，例如输入 zhongguozhisheng 查找「中国之声」。原有台名搜索可继续输入英文、频率或呼号。搜索默认沿用筛选条件，可切换到全球。\r\n- 搜索超过 10 秒后显示耗时和取消提示。短按 Esc 或按 8 可从搜索返回原列表和选中位置，长按 Esc 3 秒退出。\r\n- 按 Q 一键继续收听上次成功播放的电台。电台详情显示国家／地区、语言和类型。\r\n\r\nEnglish\r\nExplore internet radio with the Cardputer Zero keyboard. The first launch shows mainland China stations. Filter by country or region, language, and genre, or search the current selection or the worldwide directory. Search by English name, frequency, call sign, or full pinyin for Chinese station names. Press Q to resume your last successfully played station. The player displays the station and any program or track title supplied by the stream. Favorites, filters, volume, and the Simplified Chinese or English interface preference are saved on the device.\r\n\r\nStreaming requires an internet connection. Radio Browser provides the station directory. Stations supply their own programming, and the author of WebRadio is not responsible for their content. Follow Radio Browser’s usage rules and applicable local laws.\r\n\r\nhttps://www.radio-browser.info/\r\n\r\nWhat’s new · 1.0.9-1\r\n- Redesigned the 320×170 interface with clearer lists, playback status, and volume. The player shows the station and any program or track title supplied by the stream.\r\n- Added full-pinyin search for Chinese station names. Standard search still accepts English names, frequencies, and call signs. Search uses the current filters by default, with a global option.\r\n- Searches taking 10 seconds show elapsed time and an Esc cancel hint. Tap Esc or press 8 to return to the previous list and selection. Hold Esc for three seconds to quit.\r\n- Press Q to resume the last station that played successfully. Station details show country or region, language, and genres.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -314,9 +314,9 @@
         "display_name": "xu-c",
         "github": "xu-c"
       },
-      "version": "1.0.5-1",
+      "version": "1.0.9-1",
       "published_at": "2026-11-12T15:59:02+00:00",
-      "updated_at": "2026-11-12T15:59:02+00:00",
+      "updated_at": "2026-11-15T08:11:34+00:00",
       "review": {
         "status": "approved"
       },
@@ -325,12 +325,12 @@
       "download": {
         "type": "deb",
         "package": "cardputer-zero-radio",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-zero-radio_1.0.5-1_arm64.deb",
-        "md5": "98f50f6d65b714fc4cf62a53c1dc573a",
-        "sha256": "bc69e9249a42144f9f7eefb2efc430756d9748ebe2915a18c7324ba34c6e1c9c",
-        "size": 22638
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-zero-radio_1.0.9-1_arm64.deb",
+        "md5": "88188740cf481dbc770f4c3e23d9cd19",
+        "sha256": "cbbf00fd09b8422c85723d77e3303773ee428d43b9507db4598d3ebc946a2541",
+        "size": 27576
       },
-      "depends": "python3 (>= 3.9), python3-pil (>= 9.2), python3-evdev, fonts-noto-cjk, mpv, ca-certificates",
+      "depends": "python3 (>= 3.9), python3-pil (>= 9.2), python3-evdev, python3-pypinyin, fonts-noto-cjk, mpv, ca-certificates",
       "permissions": {
         "additional_hardware": false,
         "background_service": false,
@@ -347,7 +347,9 @@
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-0.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-1.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-2.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-3.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-5.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/cardputer-zero-radio_icon.png",
@@ -355,7 +357,9 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-2.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-3.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-5.png"
       ]
     },
     {
@@ -604,7 +608,7 @@
       },
       "version": "2.0.7",
       "published_at": "2026-11-13T13:04:37+00:00",
-      "updated_at": "2026-11-14T12:48:37+00:00",
+      "updated_at": "2026-11-15T08:20:48+00:00",
       "review": {
         "status": "approved"
       },
@@ -1051,9 +1055,9 @@
         "display_name": "imliubo",
         "github": "imliubo"
       },
-      "version": "1.0.1-m5stack1",
+      "version": "1.0.2-m5stack1",
       "published_at": "2026-10-21T14:34:44+00:00",
-      "updated_at": "2026-10-27T10:15:12+00:00",
+      "updated_at": "2026-11-15T08:03:46+00:00",
       "review": {
         "status": "approved"
       },
@@ -1062,12 +1066,12 @@
       "download": {
         "type": "deb",
         "package": "fxcam",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/fxcam_1.0.1-m5stack1_arm64.deb",
-        "md5": "a9be309c8b73398f9eb6623c6b677787",
-        "sha256": "6c790760098c3ebc307632a4a8ae2b98793534a6a02416cf81cfb07e403b9cb6",
-        "size": 979232
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/fxcam_1.0.2-m5stack1_arm64.deb",
+        "md5": "0c9d1fe9c01ac4023b004717fa614ea1",
+        "sha256": "201ab56d2c15885f6fe5298c7e75b122de893ab327c065026986d5cbb02c3b92",
+        "size": 1133136
       },
-      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libfmt10, libcamera0.7 | libcamera0.6 | libcamera0.5 | libcamera0.4 | libcamera0.3 | libcamera0.2 | libcamera0, libcamera-ipa, libasound2, libcjson1, libv4l-0",
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libfmt10, libcamera0.8 | libcamera0.7, libcamera-ipa, libasound2, libcjson1, libv4l-0",
       "permissions": {
         "additional_hardware": false,
         "background_service": false,
