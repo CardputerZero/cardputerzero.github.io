@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-16T13:54:17+08:00",
+  "generated_at": "2026-11-16T16:10:03+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -801,7 +801,7 @@
       },
       "version": "1.0.9-1",
       "published_at": "2026-11-15T11:06:42+00:00",
-      "updated_at": "2026-11-15T11:06:42+00:00",
+      "updated_at": "2026-11-16T07:45:22+00:00",
       "review": {
         "status": "approved"
       },
@@ -865,7 +865,7 @@
       },
       "version": "2.0.11",
       "published_at": "2026-11-13T13:04:37+00:00",
-      "updated_at": "2026-11-15T08:20:48+00:00",
+      "updated_at": "2026-11-16T07:57:53+00:00",
       "review": {
         "status": "approved"
       },
