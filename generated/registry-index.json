@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-17T02:03:20+08:00",
+  "generated_at": "2026-11-17T02:14:21+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2845,7 +2845,7 @@
         "display_name": "Duane Sweazy",
         "github": "duanesweazy1"
       },
-      "version": "1.0.3",
+      "version": "1.0.4",
       "published_at": "2026-11-16T03:56:21+00:00",
       "updated_at": "2026-11-16T17:48:10+00:00",
       "review": {
@@ -2856,10 +2856,10 @@
       "download": {
         "type": "deb",
         "package": "pocket-trail",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pocket-trail_1.0.3_arm64.deb",
-        "md5": "e8ce92cd41268bf7b70e3ce568cee966",
-        "sha256": "9ee2f770a53daf5ac27bf88966b577ab7e51943679f2445584e9c438ef001ac6",
-        "size": 19030
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pocket-trail_1.0.4_arm64.deb",
+        "md5": "2da7ac59ad0d1533a8c034e05579895e",
+        "sha256": "1fd4e93a86e80041ef50a11dc1ef6dba836660bafb816a0085c8017222cc0515",
+        "size": 19298
       },
       "depends": "python3, python3-pil, python3-numpy, fonts-dejavu-core",
       "permissions": {
