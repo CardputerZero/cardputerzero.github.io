@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-16T16:10:03+08:00",
+  "generated_at": "2026-11-16T20:00:42+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -325,10 +325,28 @@
       "uuid": "26604833-3e05-5f6b-b0ec-e07b11cd9efd",
       "share_code": "BILI",
       "title": "CardBili",
-      "summary": "适用于 CardputerZero 的非官方 BiliBili 客户端",
-      "description": "功能\r\n浏览推荐、热门、关注动态、历史记录与收藏\r\n查看视频详情、评论、作者作品与选集\r\n视频播放、弹幕、进度跳转与倍速控制\r\n键盘导航、多种列表布局与外观设置",
-      "locales": {},
-      "i18n": {},
+      "summary": "哔哩哔哩客户端，支持视频浏览与弹幕播放",
+      "description": "支持推荐、热门、动态、评论、作者作品、选集与扫码登录",
+      "locales": {
+        "zh-CN": {
+          "title": "CardBili",
+          "summary": "哔哩哔哩客户端，支持视频浏览与弹幕播放"
+        },
+        "en": {
+          "title": "CardBili",
+          "summary": "Bilibili client with video browsing and danmaku playback"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "CardBili",
+          "summary": "哔哩哔哩客户端，支持视频浏览与弹幕播放"
+        },
+        "en": {
+          "title": "CardBili",
+          "summary": "Bilibili client with video browsing and danmaku playback"
+        }
+      },
       "categories": [
         "Media"
       ],
@@ -338,11 +356,11 @@
       },
       "version": "0.1.0",
       "published_at": "2026-11-14T19:55:40+00:00",
-      "updated_at": "2026-11-14T19:55:40+00:00",
+      "updated_at": "2026-11-16T11:59:54+00:00",
       "review": {
         "status": "approved"
       },
-      "license": "GPL-3.0",
+      "license": "GPL-3.0-only",
       "source_repo": "https://github.com/journey-ad/M5CardputerZero-CardBili",
       "download": {
         "type": "deb",
@@ -354,30 +372,30 @@
       },
       "depends": "ca-certificates, pulseaudio-utils",
       "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
         "additional_hardware": false,
         "background_service": false,
-        "camera": false,
-        "external_display": false,
-        "imu": false,
-        "microphone": false,
-        "network": true
+        "external_display": false
       },
       "risk_flags": [],
       "assets": {
-        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/cardbili_icon.png",
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/store-icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/screenshot-0.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/screenshot-1.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/screenshot-2.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/screenshot-3.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/home.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/detail.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/player.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/author.png"
         ]
       },
-      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/cardbili_icon.png",
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/store-icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/screenshot-0.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/screenshot-1.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/screenshot-2.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/screenshot-3.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/home.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/detail.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/player.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/author.png"
       ]
     },
     {
@@ -848,6 +866,59 @@
       ]
     },
     {
+      "uuid": "0448ec2f-07c3-5159-b096-4e6e1aa55dc3",
+      "share_code": "CZPX",
+      "title": "CZProxy",
+      "summary": "轻量 mihomo 代理控制：节点切换、全节点测速、TUN 与后台服务管理",
+      "description": "原生 LVGL 单应用。专为 Cardputer Zero 设计的轻量化 Clash (mihomo Meta) 代理管理器。\r\n\r\n核心特性：\r\n- 核心瘦身：针对 512MB 内存精简，GOMEMLIMIT/GOGC 优化，稳定低功耗\r\n- 节点控制：支持 Clash/mihomo 配置与订阅，可视化节点切换、延迟测速与排序\r\n- 网络管理：支持 TUN 模式开关、实时流量统计与后台服务管理\r\n- 便捷操作：短按 ESC 返回主页，长按 ESC 停止后台代理，重新进入自动拉起",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "display_name": "king",
+        "github": "2001261"
+      },
+      "version": "0.2.0",
+      "published_at": "2026-11-14T02:58:10+00:00",
+      "updated_at": "2026-11-14T02:58:10+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "czproxy",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/czproxy_0.2.0_arm64.deb",
+        "md5": "479ef73b6402d98ac9498d4d4d64fb15",
+        "sha256": "5cfc5336d408454e2a4e91e37c1fd50aa58b0b9a72a18d813581ed95a713df9b",
+        "size": 22811374
+      },
+      "depends": "",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": true,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czproxy/czproxy_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czproxy/screenshots/screenshot-0.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czproxy/czproxy_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czproxy/screenshots/screenshot-0.png"
+      ]
+    },
+    {
       "uuid": "257010ed-e97a-52cf-b6fb-e0b9f792cba9",
       "share_code": "DOOD",
       "title": "Doody Calls - Turd World War",
@@ -1036,6 +1107,70 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-4.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/five/screenshots/screenshot-5.png"
+      ]
+    },
+    {
+      "uuid": "6b97d031-069f-5f9c-8c6b-978d8ad742d3",
+      "share_code": "FLTZ",
+      "title": "flightZero",
+      "summary": "专为 CardputerZero 打造的轻量级实时航空雷达与全球空域监视应用，支持本地雷达、全球全景下钻、航司识别与中英双语切换。",
+      "description": "**FlightZero** 是一款运行于 CardputerZero（`arm64` / `320×170` 屏幕）的实时 ADS-B 航班监视工具，集成本地机场雷达、全球空域全景与航班详情查询，全键盘即可流畅操作。\r\n\r\n#### 核心功能\r\n- **本地雷达视图（Local Radar）**\r\n  - 以选定机场或实时 GNSS / 北斗定位（`GPS`）为中心扫描周边空域，实时绘制航班航向机徽、运动尾迹、邻近机场及水系/海岸线底图。\r\n  - 底部状态栏实时显示选中航班的呼号、机型、高度、地速、距离与升降趋势。\r\n- **全球空域全景（Global Map）**\r\n  - 一屏俯瞰全球实时航班分布（`x1`），支持保形多级缩放（如 `x4` 聚焦东亚及中国空域）与山脉/盆地/海域地形标注。\r\n  - 移动光标并按 `Enter` 可直接下钻至对应位置的局部雷达视图。\r\n- **航班列表与航司识别**\r\n  - 列表视图按距离由近及远排序，方便快速定位最近航班。\r\n  - 按 `Enter` 打开详情弹窗，自动识别常见 ICAO 呼号前缀并显示航司名称，同时展示机型、注册号、应答机编码、高度、地速、升降率、航向、距离、方位及经纬度。\r\n- **81 座机场数据库与坐标参考**\r\n  - 内置覆盖国内省会枢纽及全球主要机场的 81 座机场基准点，按 `C` 键支持输入首字母/简码实时筛选，并支持切换至实时 GNSS 卫星定位。\r\n  - 按 `K` 键查看当前机场雷达详情，同步提供 **WGS84** 航空坐标与 **火星坐标系 GCJ-02（高德参考）**，以及标高、主跑道方向和邻近机场距离。\r\n- **双语界面与灵活设置**\r\n  - 支持简体中文 / English 一键即时切换（`L` 键），支持公制（`km / m`）与航空单位切换（`U` 键）。\r\n  - 系统设置中可自定义局部雷达半径、局部刷新周期、全球缓存周期与网络接口加速模式，修改后自动保存。\r\n\r\n#### 常用快捷键\r\n- `Tab` / `1-3`：切换本地雷达 / 全球地图 / 航班列表\r\n- `方向键` / `W A S D`：平移地图 / 移动光标或列表行\r\n- `I` / `O`（或 `+` / `-`）：缩放雷达半径或全球地图倍率\r\n- `N` / `P`（或 `.` / `,`）：切换上 / 下一架飞机\r\n- `Enter`：查看航班详情 / 全球视图下钻\r\n- `C` / `K`：切换基准机场或定位 / 查看机场坐标与跑道详情\r\n- `F` / `G`：回到机场中心 / 切换 GNSS 定位\r\n- `U` / `L` / `R`：切换单位 / 切换中英文 / 立即强制刷新\r\n- `M` / `H`（`?`）：打开系统设置 / 查看按键说明\r\n\r\n**Short Description:**\r\nReal-time local flight radar and global ADS-B airspace tracker for CardputerZero, featuring 81 airport beacons, airline lookup, GNSS support, and instant EN/CN switching.\r\n\r\n**Features:**\r\n- **Local Radar & Global Map:** Track nearby aircraft with heading sprites, trails, and coastlines, or zoom (`x1`–`x4`) across the global airspace and press `Enter` to drill down.\r\n- **Flight List & Detail:** Distance-sorted traffic list and detailed aircraft card with ICAO airline prefix lookup, squawk, altitude, groundspeed, vertical rate, bearing, and coordinates.\r\n- **81 Airports & Dual Coordinates:** Fast prefix search (`C`) plus instant GNSS mode, and airport info modal (`K`) showing both WGS84 and GCJ-02 reference coordinates, elevation, and primary runway headings.\r\n- **Full Keyboard Control & Bilingual UI:** Instant English/Chinese toggle (`L`), Metric/Aviation unit switch (`U`), and configurable refresh intervals (`M`).",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Radio & Comms",
+        "Other"
+      ],
+      "author": {
+        "display_name": "olp5735-sys",
+        "github": "olp5735-sys"
+      },
+      "version": "0.1.0",
+      "published_at": "2026-11-15T18:17:44+00:00",
+      "updated_at": "2026-11-15T18:17:44+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Proprietary",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "flightzero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/flightzero_0.1.0_arm64.deb",
+        "md5": "a1c49dabf86eb7ad1bcbd8c5115ad7d2",
+        "sha256": "cbf0329e4e5613408c53f3593fadfe72a738d96a6a745bc971ed299011f69848",
+        "size": 1370658
+      },
+      "depends": "libcurl4t64 | libcurl4",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flightzero/flightzero_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flightzero/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flightzero/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flightzero/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flightzero/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flightzero/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flightzero/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flightzero/flightzero_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flightzero/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flightzero/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flightzero/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flightzero/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flightzero/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flightzero/screenshots/screenshot-5.png"
       ]
     },
     {
