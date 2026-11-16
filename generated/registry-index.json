@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-16T21:56:31+08:00",
+  "generated_at": "2026-11-16T22:07:52+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1106,7 +1106,7 @@
       "share_code": "FIVE",
       "title": "Five",
       "summary": "五子棋，支持 Rapfi、同机双人和房间码联机。 Gomoku with Rapfi, local and LAN play.",
-      "description": "简体中文\n在 Cardputer Zero 上下五子棋。可与 Rapfi 对弈，选择三档难度，也可在同一台设备轮流落子。联机时，Zero 和浏览器都可创建房间，用 10 位房间码加入。同一局域网内可双 Zero、双网页或混合对战，电脑无需安装或运行额外程序。支持 15×15 和 13×13 棋盘、自由规则与连珠禁手，界面提供简体中文和英文。联机配对需要互联网连接，对局在局域网内直连。网页版：https://fivezero.vercel.app/\n\n最近改动（1.2.0-2）\n- 新增局域网联机。Zero 和网页统一用 10 位房间码创建或加入房间，无需填写 IP。房主可设置先手、规则、棋盘尺寸和联机悔棋。光标越过棋盘边缘时会从对侧出现，应用图标与首页棋子布局一致。\n\nEnglish\nPlay Gomoku against Rapfi at three difficulty levels, take turns on one Cardputer Zero, or play over your LAN. Either a Zero or a browser can host or join using a 10-digit room code. The browser needs no extra software. Choose a 15×15 or 13×13 board with Freestyle or Renju fouls. The interface supports Simplified Chinese and English. Pairing requires internet access. Moves travel directly between players on the LAN. Web app: https://fivezero.vercel.app/\n\nWhat’s new (1.2.0-2)\n- Added LAN play between Zero devices and browsers using a shared 10-digit room code workflow. The host can set who moves first, rules, board size, and undo. The cursor wraps around board edges, and the app icon matches the board on the home screen.\n\n许可 / Licenses\nFive 自有应用部分采用专有许可。独立 Rapfi 引擎按 GPL-3.0-or-later 分发，官方模型权重采用 CC0-1.0。对应源码、构建脚本和许可证随安装包提供。\nFive is proprietary. The separate Rapfi engine is distributed under GPL-3.0-or-later with CC0-1.0 official weights. Corresponding source, build scripts, and license texts are included in the package.",
+      "description": "简体中文\n在 Cardputer Zero 上下五子棋。可与 Rapfi 对弈，选择三档难度，也可在同一台设备轮流落子。联机时，Zero 和浏览器都可创建房间，用 10 位房间码加入。同一局域网内可双 Zero、双网页或混合对战，电脑无需安装或运行额外程序。支持 15×15 和 13×13 棋盘、自由规则与连珠禁手，界面提供简体中文和英文。联机配对需要互联网连接，对局在局域网内直连。网页版：https://fivezero.vercel.app/\n\n最近改动（1.2.0-3）\n对局结束后按 Enter 重新开始。联机双方确认后，在原房间沿用当前设置再来一局。\n\nEnglish\nPlay Gomoku against Rapfi at three difficulty levels, take turns on one Cardputer Zero, or play over your LAN. Either a Zero or a browser can host or join using a 10-digit room code. The browser needs no extra software. Choose a 15×15 or 13×13 board with Freestyle or Renju fouls. The interface supports Simplified Chinese and English. Pairing requires internet access. Moves travel directly between players on the LAN. Web app: https://fivezero.vercel.app/\n\nWhat’s new (1.2.0-3)\nPress Enter to play again after a game. When both players confirm an online rematch, it starts in the same room with the current settings.\n\n许可 / Licenses\nFive 自有应用部分采用专有许可。独立 Rapfi 引擎按 GPL-3.0-or-later 分发，官方模型权重采用 CC0-1.0。对应源码、构建脚本和许可证随安装包提供。\nFive is proprietary. The separate Rapfi engine is distributed under GPL-3.0-or-later with CC0-1.0 official weights. Corresponding source, build scripts, and license texts are included in the package.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -1118,7 +1118,7 @@
       },
       "version": "1.2.0-2",
       "published_at": "2026-11-13T15:17:18+00:00",
-      "updated_at": "2026-11-15T14:51:27.980Z",
+      "updated_at": "2026-11-16T14:03:07.616Z",
       "review": {
         "status": "approved"
       },
@@ -2405,7 +2405,7 @@
         "display_name": "Software Amusements",
         "github": "FuzzyDweeb"
       },
-      "version": "5.1",
+      "version": "5.3",
       "published_at": "2026-11-13T08:02:58+00:00",
       "updated_at": "2026-11-16T13:54:41+00:00",
       "review": {
@@ -2416,10 +2416,10 @@
       "download": {
         "type": "deb",
         "package": "octet",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/octet_5.1_arm64.deb",
-        "md5": "796ac0a23cded3e459c5a69dea9711a9",
-        "sha256": "6418c5b5d81963e840df965dccb0391aa3f0aa487fdbee33734bd1178f4ae22a",
-        "size": 1399928
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/octet_5.3_arm64.deb",
+        "md5": "b9da4a28236336aec83b52ddcfe11bf5",
+        "sha256": "65befcd9111115a1c225fb335ac91a27764839a6df924d915ebfb64857e8f9ac",
+        "size": 1423414
       },
       "depends": "",
       "permissions": {
