@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-16T23:19:21+08:00",
+  "generated_at": "2026-11-17T01:02:31+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -984,6 +984,70 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/controller/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/controller/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/controller/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "ff4a9fe2-7251-524c-83a7-cc3ace9b0a3b",
+      "share_code": "CRAP",
+      "title": "Craps",
+      "summary": "🎲 Craps lands on the CardputerZero! Real Las Vegas rules!",
+      "description": "Feel the heat of the Vegas table, anywhere. Craps for the M5Stack CardputerZero throws 3D dice off the rubber back wall, pays every classic bet at real casino odds, and teaches you as you play with LEARN TO PLAY. Plug in HDMI and the whole table fills your TV. For amusement only: virtual credits, no real money, 18+.\r\n\r\nEnjoy!\r\n\r\nwww.SoftwareAmusements.com",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games",
+        "Lifestyle"
+      ],
+      "author": {
+        "display_name": "Software Amusements",
+        "github": "FuzzyDweeb"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-11-16T14:22:10+00:00",
+      "updated_at": "2026-11-16T14:22:10+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Proprietary",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "craps",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/craps_1.0.0_arm64.deb",
+        "md5": "b2c4801d90eacde54e76d60d24f8121c",
+        "sha256": "f64f3b6e360595085c29b47448fb6d55c94997fc83ad147aaabc5bc2d964fa99",
+        "size": 836598
+      },
+      "depends": "libc6 (>= 2.27)",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": true,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/craps_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/craps_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-5.png"
       ]
     },
     {
