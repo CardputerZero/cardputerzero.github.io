@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-17T01:02:31+08:00",
+  "generated_at": "2026-11-17T02:03:20+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2847,7 +2847,7 @@
       },
       "version": "1.0.3",
       "published_at": "2026-11-16T03:56:21+00:00",
-      "updated_at": "2026-11-16T03:56:21+00:00",
+      "updated_at": "2026-11-16T17:48:10+00:00",
       "review": {
         "status": "approved"
       },
@@ -3263,6 +3263,70 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rfid/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rfid/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rfid/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "dd79418e-9951-58ff-9cf0-2cd298b38b3a",
+      "share_code": "SUBG",
+      "title": "SubGHz",
+      "summary": "A Flipper-zero inspired SubGHz app for the CardputerZero with the CC1101 Cap",
+      "description": "SubGHz turns your CardputerZero and Cap CC1101 into a portable Sub-GHz transceiver inspired by the Flipper Zero Sub-GHz app.\r\n\r\nBrowse, inspect, capture, and transmit .sub files, the same format used on the Flipper, across the 300–348 MHz, 387–464 MHz, and 779–928 MHz bands.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Hardware & IoT",
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "bfayers",
+        "github": "bfayers"
+      },
+      "version": "0.2.0-rev1",
+      "published_at": "2026-11-16T15:08:12+00:00",
+      "updated_at": "2026-11-16T15:08:12+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/bfayers/CardputerZero-SubGHz",
+      "download": {
+        "type": "deb",
+        "package": "subghz",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/subghz_0.2.0-rev1_arm64.deb",
+        "md5": "33f8a55d83e6e7fd7417fe5d8cc04237",
+        "sha256": "377ddfcde4a4ffa93eb2e6c09cacb4ac908b7ac6eb3d9b379035b79ea458d739",
+        "size": 2105014
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libgpiod2 | libgpiod3, raspi-utils-core",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/subghz/subghz_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/subghz/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/subghz/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/subghz/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/subghz/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/subghz/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/subghz/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/subghz/subghz_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/subghz/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/subghz/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/subghz/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/subghz/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/subghz/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/subghz/screenshots/screenshot-5.png"
       ]
     },
     {
@@ -4239,9 +4303,9 @@
         "display_name": "Ramchand",
         "github": "kakashi2018"
       },
-      "version": "1.5.6",
+      "version": "1.8.1",
       "published_at": "2026-11-16T01:56:20+00:00",
-      "updated_at": "2026-11-16T01:56:20+00:00",
+      "updated_at": "2026-11-16T17:28:11+00:00",
       "review": {
         "status": "approved"
       },
@@ -4250,12 +4314,12 @@
       "download": {
         "type": "deb",
         "package": "zeroamp",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zeroamp_1.5.6_all.deb",
-        "md5": "53a7d3df50a98c8d9ae1274c9f2d0bbb",
-        "sha256": "8cc5c6321c0e3b9903999d7d8f55ed78e942a156b663d7124520bb61c5dcdbfa",
-        "size": 20040
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zeroamp_1.8.1_all.deb",
+        "md5": "f8a468bd2de31f9c16c786810704b292",
+        "sha256": "f1e1903fd356ffae5e99ca93d92c03894e2e2563a16b672ed2e71f68d09be09a",
+        "size": 26248
       },
-      "depends": "python3, python3-pil, mpv, pulseaudio-utils, rfkill, sudo",
+      "depends": "python3, python3-pil, mpv, ffmpeg, pulseaudio-utils, rfkill, sudo",
       "permissions": {
         "additional_hardware": false,
         "background_service": false,
