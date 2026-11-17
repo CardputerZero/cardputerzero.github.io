@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-17T12:59:00+08:00",
+  "generated_at": "2026-11-17T14:28:07+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1006,9 +1006,9 @@
         "display_name": "Software Amusements",
         "github": "FuzzyDweeb"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "published_at": "2026-11-16T14:22:10+00:00",
-      "updated_at": "2026-11-16T14:22:10+00:00",
+      "updated_at": "2026-11-17T06:16:42+00:00",
       "review": {
         "status": "approved"
       },
@@ -1017,10 +1017,10 @@
       "download": {
         "type": "deb",
         "package": "craps",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/craps_1.0.0_arm64.deb",
-        "md5": "b2c4801d90eacde54e76d60d24f8121c",
-        "sha256": "f64f3b6e360595085c29b47448fb6d55c94997fc83ad147aaabc5bc2d964fa99",
-        "size": 836598
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/craps_1.0.1_arm64.deb",
+        "md5": "0cf75d18f5ee1d3293e87d83b5e16304",
+        "sha256": "310488bf11159a1b87f1b345a8f16d86f7ffcc69b8c052bd50c65451616d4071",
+        "size": 837832
       },
       "depends": "libc6 (>= 2.27)",
       "permissions": {
@@ -4550,7 +4550,7 @@
       },
       "version": "0.3.7",
       "published_at": "2026-11-10T02:37:56+00:00",
-      "updated_at": "2026-11-15T13:52:11+00:00",
+      "updated_at": "2026-11-17T06:23:04+00:00",
       "review": {
         "status": "approved"
       },
