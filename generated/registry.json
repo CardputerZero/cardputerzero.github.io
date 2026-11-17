@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-17T19:50:08+08:00",
+  "generated_at": "2026-11-18T00:53:22+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1378,7 +1378,7 @@
         "display_name": "Real",
         "github": "RealOuO"
       },
-      "version": "0.2-1",
+      "version": "0.2-2",
       "published_at": "2026-11-16T07:06:32+00:00",
       "updated_at": "2026-11-17T11:33:29+00:00",
       "review": {
@@ -1389,10 +1389,10 @@
       "download": {
         "type": "deb",
         "package": "flagpi",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/flagpi_0.2-1_arm64.deb",
-        "md5": "46d7462f22e30d28ca95d2bb8e3e1f64",
-        "sha256": "be9a8b0528465103fe2bc825f5bf037a013e15269d1a7a0d892cf7d600e25254",
-        "size": 19544
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/flagpi_0.2-2_arm64.deb",
+        "md5": "27f584b7e95266660176b76e5a13a426",
+        "sha256": "7bdab244ac9c445c54e6d3d39dc80150728be9894e4b5036c7546da3fc39a068",
+        "size": 60732
       },
       "depends": "python3 (>= 3.11), python3-pygame, python3-numpy, libsdl2-2.0-0, libdrm2",
       "permissions": {
@@ -4088,7 +4088,7 @@
         "display_name": "tongfei11",
         "github": "tongfei11"
       },
-      "version": "0.1.0+build0016",
+      "version": "0.1.1",
       "published_at": "2026-11-16T08:26:30+00:00",
       "updated_at": "2026-11-17T11:23:18+00:00",
       "review": {
@@ -4099,10 +4099,10 @@
       "download": {
         "type": "deb",
         "package": "zero-ssh",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-ssh_0.1.0+build0016_arm64.deb",
-        "md5": "815a2e319a10abb98b9a044aefc0215f",
-        "sha256": "6bb6356c2bdad88a97e91314105815eb4cff4d46cf6b7ae0153c3a4755ea6853",
-        "size": 191200
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-ssh_0.1.1_arm64.deb",
+        "md5": "7baf9aa34f40e68d01d39e957913b4df",
+        "sha256": "41a323594c9028756d87b05c109067b15cfd925d9a1632a8a5aa7dd6d2a4e0fe",
+        "size": 191892
       },
       "depends": "nodejs (>= 20), nodejs (<< 21), python3, python3-pil, python3-pyte, python3-websocket, fonts-dejavu-core, fonts-noto-cjk, openssh-client, systemd",
       "permissions": {
