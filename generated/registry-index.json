@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T16:45:57+08:00",
+  "generated_at": "2026-11-18T18:26:42+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -792,6 +792,62 @@
       ]
     },
     {
+      "uuid": "1d4ee2e6-1a3e-5c2e-9425-bc47f9b5f35a",
+      "share_code": "REA1",
+      "title": "Remote",
+      "summary": "让 CardputerZero 变成一台「开着就能远程操作」的小电脑：局域网里任何手机/电脑打开浏览器，就能实时看到它的屏幕、用键盘操控它",
+      "description": "## 它解决什么问题\r\nCardputerZero 屏幕小、键盘迷你，调试和演示都不方便。装上这个应用后，只要设备开着机，你在局域网里用手机扫个码（或电脑输个网址）就能：\r\n\r\n- 实时看屏幕 ：设备画面以 MJPEG 推流到浏览器（12fps、2 倍放大），页面以机身线稿为底图，屏幕内容和按键高亮直接叠在「机身」上，像看真机一样。\r\n- 远程敲键盘 ：守护进程创建 uinput 虚拟键盘并接管系统键盘设备，浏览器里敲的字（电脑物理键盘 / 手机软键盘）直接注入设备；真实机身键盘的事件同时转发，两边都能用、互不打断。\r\n- 带外壳录屏 ：网页端一键录制，可选「带外壳」模式把按键动效一起录进去，存到设备`/tmp/cardputer-rec/` 后随时下载；设备端 ffmpeg 方案保留作后备。\r\n## 设备端应用（启动器里的入口）\r\n启动器里的 Remote 应用是「入口 + 配置面板」：\r\n\r\n- 中英双语界面，显示设备 IP、端口、服务运行状态，并生成二维码，手机扫码即连。\r\n- IP 由`hostname -I` 动态获取，不是写死的。\r\n- 改端口 ：按数字键输入 1024–65535 之间的端口号，按 ENTER 保存——守护进程在进程内原地重绑端口，不重启服务、不杀当前应用。\r\n- 启动做了优化：先把上一帧缓存刷到屏幕（约 0.1s 出画面），再懒加载绘图库渲染完整界面。",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Development"
+      ],
+      "author": {
+        "display_name": "Real",
+        "github": "RealOuO"
+      },
+      "version": "0.2-3",
+      "published_at": "2026-11-18T06:07:39+00:00",
+      "updated_at": "2026-11-18T06:07:39+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Apache-2.0",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "cardputer-remote",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-remote_0.2-3_arm64.deb",
+        "md5": "0c3f6f20e53c9eb81c53556e4785c82f",
+        "sha256": "b371115dd6a8ee75863892bcef2266f407baede54085c1b79173fbd442f808c9",
+        "size": 155472
+      },
+      "depends": "python3 (>= 3.11), python3-pil, python3-numpy, python3-evdev, python3-qrcode, ffmpeg, i2c-tools, udev",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-remote/cardputer-remote_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-remote/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-remote/screenshots/screenshot-1.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-remote/cardputer-remote_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-remote/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-remote/screenshots/screenshot-1.png"
+      ]
+    },
+    {
       "uuid": "9bb0f4f7-3101-5fe2-9128-28deac89f98c",
       "share_code": "CZGC",
       "title": "Cardputer Zero Geiger Counter",
@@ -1524,9 +1580,9 @@
         "github": "InstantComet",
         "display_name": "InstantComet"
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "published_at": "2026-11-17T13:47:10+00:00",
-      "updated_at": "2026-11-17T13:47:10+00:00",
+      "updated_at": "2026-11-18T09:47:14+00:00",
       "review": {
         "status": "approved"
       },
@@ -1535,10 +1591,10 @@
       "download": {
         "type": "deb",
         "package": "cz-battery-saver",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cz-battery-saver_1.0.0_all.deb",
-        "md5": "b99b102f89f0f38518b3d51bb79a8191",
-        "sha256": "daef310703791c23b6e6ca1ae690cdb6c00e644168ac8c73027142daf21d65b1",
-        "size": 16520
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cz-battery-saver_1.1.0_all.deb",
+        "md5": "f98524bf27dd125adee56398681a7d72",
+        "sha256": "639580edf0387cab71c877d1a25ad0d4949ea08bfc1a5f6e8818cfc9c493cb98",
+        "size": 17292
       },
       "depends": "python3, python3-pil, pulseaudio-utils, fonts-dejavu-core, systemd, udev",
       "permissions": {
@@ -1562,6 +1618,73 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-battery-saver/screenshots/main.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-battery-saver/screenshots/info.png"
+      ]
+    },
+    {
+      "uuid": "798a2c0e-b5c1-5dd2-adfa-10a8f542868c",
+      "share_code": "DESK",
+      "title": "Desk Mode",
+      "summary": "Plug in HDMI, get the Pi desktop, type on the Cardputer's own keyboard",
+      "description": "Desk Mode turns the CardputerZero into a small desktop computer: plug in an HDMI display and the Raspberry Pi desktop starts on it, while the built-in screen and the launcher keep working.\n\n**HDMI desktop**\n- Starts automatically when HDMI is plugged in (can be switched off), or from the app.\n- Runs as your user, without LightDM and without root. LightDM's login screen starts a second audio server that takes the sound card from the launcher and can freeze it; Desk Mode avoids that.\n- Nothing runs while HDMI is unplugged. Close the desktop from the app (frees ~55 MB of RAM), or let Battery Saver close it 1 min after HDMI is unplugged (its default).\n\n**Built-in keyboard on the HDMI display**\n- Each time HDMI is plugged in, the built-in screen lights up and asks whether the keyboard should go to the HDMI display (or set it to always / never).\n- Symbols typed with Sym come out right on the desktop (the keyboard sends non-standard codes for them; Desk Mode translates).\n- Ctrl+Alt+Esc gives the keyboard back to the Cardputer. Unplugging HDMI or closing the desktop does too, and the built-in screen wakes up.\n- While the keyboard is on the HDMI display, the built-in screen turns off to save power.\n\nKeys: F/X move, Enter change, I info, Esc back.",
+      "locales": {
+        "zh-CN": {
+          "title": "桌面模式",
+          "summary": "插上 HDMI 就有树莓派桌面，用 Cardputer 自带键盘打字"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "桌面模式",
+          "summary": "插上 HDMI 就有树莓派桌面，用 Cardputer 自带键盘打字"
+        }
+      },
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "github": "InstantComet",
+        "display_name": "InstantComet"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-11-17T20:00:33+00:00",
+      "updated_at": "2026-11-17T20:00:33+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/InstantComet/cz-desk-mode",
+      "download": {
+        "type": "deb",
+        "package": "cz-desk-mode",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cz-desk-mode_1.0.0_all.deb",
+        "md5": "3c74056a02602aa6b75ca7c2342758cc",
+        "sha256": "d94593fa5fe118af75230fa5d498c3e5577ae2899f50100ede7bb387ab80e85d",
+        "size": 19312
+      },
+      "depends": "python3, python3-pil, fonts-dejavu-core, systemd, udev, labwc",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": true,
+        "external_display": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-desk-mode/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-desk-mode/screenshots/main.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-desk-mode/screenshots/ask.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-desk-mode/screenshots/handover.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-desk-mode/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-desk-mode/screenshots/main.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-desk-mode/screenshots/ask.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-desk-mode/screenshots/handover.png"
       ]
     },
     {
@@ -3257,6 +3380,70 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/screenshots/app-simulator-dark-darwin.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/screenshots/app-simulator-light-darwin.png"
+      ]
+    },
+    {
+      "uuid": "e414a122-9ec0-5fa4-9d33-b8404faf1268",
+      "share_code": "MTBL",
+      "title": "Mountable",
+      "summary": "Turn your Cardputer into a dynamic and bootable USB or CD drive",
+      "description": "Whenever you need to install an OS or boot a live CD, you need to image a USB drive (or burn a disk). With Mountable, you turn your Cardputer Zero into a bootable dynamic USB or CD-ROM drive with the image of your choice. Put your own images on the SD card or download through the provided list of OSes and disk images.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Media"
+      ],
+      "author": {
+        "display_name": "s0liton",
+        "github": "s0liton"
+      },
+      "version": "0.1.0",
+      "published_at": "2026-11-18T05:28:50+00:00",
+      "updated_at": "2026-11-18T05:28:50+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-3.0",
+      "source_repo": "https://github.com/s0liton/Mountable",
+      "download": {
+        "type": "deb",
+        "package": "mountable",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/mountable_0.1.0_arm64.deb",
+        "md5": "42baa4ad4919fd42634ec9210e522d2d",
+        "sha256": "1dba8b1f36627764de6f4ff12e3b518fe0b98dd5c9822d9a5e5e9d469ab82a0d",
+        "size": 44752
+      },
+      "depends": "python3 (>= 3.9), python3-pygame, python3-evdev, fonts-dejavu-core, dosfstools, kmod, systemd, sudo",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": true,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mountable/mountable_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mountable/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mountable/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mountable/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mountable/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mountable/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mountable/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mountable/mountable_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mountable/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mountable/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mountable/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mountable/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mountable/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mountable/screenshots/screenshot-5.png"
       ]
     },
     {
@@ -5260,9 +5447,9 @@
         "display_name": "tongfei11",
         "github": "tongfei11"
       },
-      "version": "0.1.0",
+      "version": "0.1.1",
       "published_at": "2026-11-17T09:11:46+00:00",
-      "updated_at": "2026-11-17T09:11:46+00:00",
+      "updated_at": "2026-11-18T09:22:38+00:00",
       "review": {
         "status": "approved"
       },
@@ -5271,12 +5458,12 @@
       "download": {
         "type": "deb",
         "package": "zero-music163",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-music163_0.1.0_arm64.deb",
-        "md5": "33166f99e5be36dd610f5025fa9460bc",
-        "sha256": "6331a7d8beddfe10b0532c2535b42c68bf84c77b568123c4fa1c256dfd2977a1",
-        "size": 3480960
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-music163_0.1.1_arm64.deb",
+        "md5": "e9d7d2c9b7438a237bd87d8e71d9a587",
+        "sha256": "53116225efddb61e397350c6b7a665c3b171d1ac270bf2464c2e7d59c915582a",
+        "size": 3481212
       },
-      "depends": "nodejs (>= 20), mpv, python3 (>= 3.10), python3-pil, python3-qrcode, fonts-noto-cjk",
+      "depends": "nodejs (>= 20), mpv, wireplumber, python3 (>= 3.10), python3-pil, python3-qrcode, fonts-noto-cjk",
       "permissions": {
         "additional_hardware": false,
         "background_service": false,
@@ -6116,6 +6303,64 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosky/screenshots/sky-day.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosky/screenshots/calibration.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosky/screenshots/find.png"
+      ]
+    },
+    {
+      "uuid": "86e194dd-4bd0-5cd7-a30a-ab675e2f4436",
+      "share_code": "ZSUB",
+      "title": "ZeroSub",
+      "summary": "Sub-GHz, infrared, NFC and IMU toolkit for the Cap CC1101, Flipper compatible",
+      "description": "ZeroSub turns the CardputerZero and the M5Stack Cap CC1101 into a pocket radio and sensor tool.\\n\\nSub-GHz (CC1101): frequency analyzer, signal meter, Read and Read RAW captures on the 17 Flipper Zero default channels with AM270/AM650/FM238/FM476 presets, a saved-signal library, manual key entry, and Send limited to the EU licence-free bands.\\n\\nInfrared: learn remotes, save them and send them again.\\n\\nNFC (ST25R3916): read NFC-A, NFC-B, FeliCa and NFC-V (ISO 15693) tags and show the URL or text they hold; write saved NTAG and MIFARE Ultralight tags to blank ones and emulate them to a reader. NFC support is new and still being tested on hardware.\\n\\nIMU: live motion readings from the BMI270 (acceleration, rotation, tilt, temperature), a compass with heading dial from the BMM150, and a bubble level.\\n\\nWeb Files: a small web file manager for your home folder, running while its page is open. Open the address shown on the device from a browser on the same network, log in with the PIN on screen, then browse, download, upload, rename and delete files, or install a .deb package.\\n\\nSignals, remotes and tags are stored as Flipper Zero .sub, .ir and .nfc files, so they can be copied between ZeroSub and a Flipper in either direction. Requires the M5Stack Cap CC1101.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Hardware & IoT",
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "Csaboka",
+        "github": "csaboka21"
+      },
+      "version": "0.18.18-rev1",
+      "published_at": "2026-11-17T22:02:53+00:00",
+      "updated_at": "2026-11-17T22:02:53+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/csaboka21/ZeroSub",
+      "download": {
+        "type": "deb",
+        "package": "zerosub",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosub_0.18.18-rev1_arm64.deb",
+        "md5": "c8aae983573fbb6085691626accdf331",
+        "sha256": "5c6be85ac940c109881bb91ce42b237b0ccfba0529518655e03f6321eafd84ed",
+        "size": 2665042
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, raspi-utils-core",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": true,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosub/zerosub_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosub/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosub/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosub/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosub/zerosub_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosub/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosub/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosub/screenshots/screenshot-2.png"
       ]
     },
     {
