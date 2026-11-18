@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T00:19:36+08:00",
+  "generated_at": "2026-11-19T02:54:42+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4517,9 +4517,35 @@
       "share_code": "SPRW",
       "title": "Sparrow",
       "summary": "An illuminated almanac of the real sky, your chart and your time.",
-      "description": "Sparrow is a book of illuminated pages for the CardputerZero, drawn live as vector art in the manner of a medieval manuscript.\n\nThe pages:\n- The Flight: a flight along the roads of a country where America and Britain meet, in the light of the hour (dawn, day, dusk, night).\n- Moon & Stars: the real sky over your horizon, with the Moon in its true phase, 1,600 stars, the planets and the Sun.\n- Zodiac Chart: the sky now as a Western chart, or as a Vedic one with your current periods.\n- Date of Birth: enter it once in a candle-lit book; the pages below read it.\n- Life Orrery: where you stand in a life of eighty years, by life, decade and year.\n- Time Garden: the week as a morning glory, sown on Monday and in flower on Sunday.\n- Biorhythm: your rhythms as an alchemist's stone and flask.\n- Mark of Eros: ten kinds of love as circles that draw your own mark.\n- Polarity: Sun and Moon qualities in five pairs on an alchemist's balance.\n- Tree of Life: an apple tree in the season of the date, the garden's life about it, and seven stations in glyph and verse.\n- Triptych: past, present and future from your date of birth, in three panels of your numbers.\n- I Ching: the day's figure from the Book of Changes, cast by the yarrow stalks from your date of birth.\n- Seal of the Day: your number for the day as a sign to learn, a solid in its colour inside its halo.\n- Tarot: the seventy-eight cards of the Waite-Smith deck, to turn through and to take apart.\n- Resonance and Tuner: what is vibrating around you, as a figure of sand and as a named tone, from the microphone and the motion sensor.\n- Body Chord, Attunement, Wild Pendulum and Stillness: biofeedback pages that find your breath, heartbeat and tremor, sound them as a chord, and lead the breath down with tones.\n\nNavigation is the same everywhere, and it follows the signs printed on the keyboard: the arrow keys (Z, X, C and F, no FN needed) steer every page and OK acts, N opens the contents, H opens the help screen for the page in view, a page's own key opens it from anywhere, and DEL or ESC goes back. A steps the sound through silence, a quiet background score on the solfeggio tones and an offline narrator that reads the pages; S and D make it quieter and louder.\n\nSparrow opens with a hand. Choose five numbers, one on each fingertip, and they lock your profile: your date of birth and your choices are sealed in an encrypted file on the device and open only with those numbers. If you forget them there is no way back in, only a fresh start.\n\nEverything is computed on the device. Sound from the microphone is analysed in memory and never stored. Sparrow needs no network and no account. Set your latitude and longitude in sparrow.conf for a true horizon.\n\nSparrow is an almanac and a biofeedback tool, not a medical device. It does not give medical advice, diagnose, treat or prevent any condition, or make health suggestions. For anything about your health, ask a qualified professional.",
-      "locales": {},
-      "i18n": {},
+      "description": "Sparrow is a book of illuminated pages for the CardputerZero, drawn live as vector art in the manner of a medieval manuscript.\n\nThe pages:\n- The Flight: a flight along the roads of a country where America and Britain meet, in the light of the hour (dawn, day, dusk, night).\n- Moon & Stars: the real sky over your horizon, with the Moon in its true phase, 1,600 stars, the planets and the Sun.\n- Zodiac Chart: the sky now as a Western chart, or as a Vedic one with your current periods.\n- Date of Birth: enter it once in a candle-lit book; the pages below read it.\n- Life Orrery: where you stand in a life of eighty years, by life, decade and year.\n- Time Garden: the week as a morning glory, sown on Monday and in flower on Sunday.\n- Biorhythm: your rhythms as an alchemist's stone and flask.\n- Love: ten kinds of love as circles that draw your own mark.\n- Polarity: Sun and Moon qualities in five pairs on an alchemist's balance.\n- Tree of Life: an apple tree in the season of the date, the garden's life about it, and seven stations in glyph and verse.\n- Triptych: past, present and future from your date of birth, in three panels of your numbers.\n- I Ching: the day's figure from the Book of Changes, cast by the yarrow stalks from your date of birth.\n- Seal of the Day: your number for the day as a sign to learn, a solid in its colour inside its halo.\n- Tarot: the seventy-eight cards of the Waite-Smith deck, to turn through and to take apart.\n- Pentagram Ritual: the Lesser Banishing Ritual of the Pentagram, to learn its words, to be guided through it as you turn with the device in your hand, and to recall.\n- Resonance, Tuner and Vesica: what is vibrating around you, as a figure of sand, as a named tone, and as two waves that meet, from the microphone and the motion sensor.\n- Body Chord, Attunement, Wild Pendulum and Stillness: biofeedback pages that find your breath, heartbeat and tremor, sound them as a chord, and lead the breath down with tones.\n\nNavigation is the same everywhere, and it follows the signs printed on the keyboard: the arrow keys (Z, X, C and F, no FN needed) steer every page and OK acts, N opens the contents, H opens the help screen for the page in view, a page's own key opens it from anywhere, and DEL or ESC goes back. A steps the sound through silence, a quiet background score on the solfeggio tones and an offline narrator that reads the pages; S and D make it quieter and louder.\n\nSparrow opens with a hand. Choose five numbers, one on each fingertip, and they lock your profile: your date of birth and your choices are sealed in an encrypted file on the device and open only with those numbers. If you forget them there is no way back in, only a fresh start.\n\nEverything is computed on the device. Sound from the microphone is analysed in memory and never stored. Sparrow needs no network and no account. Set your latitude and longitude in sparrow.conf for a true horizon.\n\nSparrow is an almanac and a biofeedback tool, not a medical device. It does not give medical advice, diagnose, treat or prevent any condition, or make health suggestions. For anything about your health, ask a qualified professional.",
+      "locales": {
+        "en": {
+          "title": "Sparrow",
+          "summary": "An illuminated almanac of the real sky, your chart and your time."
+        },
+        "zh-CN": {
+          "title": "Sparrow",
+          "summary": "一本彩绘年历：真实的星空、你的星盘与你的时光。"
+        },
+        "ja": {
+          "title": "Sparrow",
+          "summary": "彩飾写本の暦：本物の空、あなたの星図、あなたの時間。"
+        }
+      },
+      "i18n": {
+        "en": {
+          "title": "Sparrow",
+          "summary": "An illuminated almanac of the real sky, your chart and your time."
+        },
+        "zh-CN": {
+          "title": "Sparrow",
+          "summary": "一本彩绘年历：真实的星空、你的星盘与你的时光。"
+        },
+        "ja": {
+          "title": "Sparrow",
+          "summary": "彩飾写本の暦：本物の空、あなたの星図、あなたの時間。"
+        }
+      },
       "categories": [
         "Lifestyle",
         "Education"
@@ -4528,9 +4554,9 @@
         "github": "gabe-harris-modernfold",
         "display_name": "G. Harris"
       },
-      "version": "1.0.0-rev1",
+      "version": "1.1.0-rev1",
       "published_at": "2026-11-16T23:51:03+00:00",
-      "updated_at": "2026-11-16T23:51:03+00:00",
+      "updated_at": "2026-11-18T18:39:33+00:00",
       "review": {
         "status": "approved"
       },
@@ -4539,10 +4565,10 @@
       "download": {
         "type": "deb",
         "package": "sparrow",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/sparrow_1.0.0-rev1_arm64.deb",
-        "md5": "2503b3eb2eb5d504959b8e4a4c282684",
-        "sha256": "f67bfc695f00d138f53c0c6cab2cebde8f9398ca69aa5739fa45cbe4a1473518",
-        "size": 88474660
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/sparrow_1.1.0-rev1_arm64.deb",
+        "md5": "6d00af35a89b4e9f2df64a4caec80265",
+        "sha256": "5736c2226944d93105ee799f579b39149267c95507bd7254a6766c88fd0e7855",
+        "size": 88687762
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, alsa-utils",
       "permissions": {
