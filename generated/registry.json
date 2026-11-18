@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T23:10:22+08:00",
+  "generated_at": "2026-11-19T00:19:36+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -5860,9 +5860,9 @@
         "display_name": "Ramchand",
         "github": "kakashi2018"
       },
-      "version": "1.8.2",
+      "version": "1.8.6",
       "published_at": "2026-11-16T01:56:20+00:00",
-      "updated_at": "2026-11-18T04:03:53+00:00",
+      "updated_at": "2026-11-18T15:50:33+00:00",
       "review": {
         "status": "approved"
       },
@@ -5871,10 +5871,10 @@
       "download": {
         "type": "deb",
         "package": "zeroamp",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zeroamp_1.8.2_all.deb",
-        "md5": "c5415e363639215cf3fce53c2ace7551",
-        "sha256": "9fb4afa6fa6fd9307e1f172637bffce262e724d496feb3e60f5d5ab4838f3728",
-        "size": 26516
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zeroamp_1.8.6_all.deb",
+        "md5": "6bf506a1cc0fbf28dabd216d4816bc44",
+        "sha256": "3b4d7dd6b55ac002c3e762cf272eea25ba1c88d73eca95295c5584ac69a7d5cc",
+        "size": 25476
       },
       "depends": "python3, python3-pil, mpv, ffmpeg, pulseaudio-utils, rfkill, sudo",
       "permissions": {
