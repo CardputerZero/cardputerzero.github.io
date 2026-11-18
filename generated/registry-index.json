@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T06:54:10+08:00",
+  "generated_at": "2026-11-18T13:37:59+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -468,6 +468,59 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/detail.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/player.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/author.png"
+      ]
+    },
+    {
+      "uuid": "a2f08c6d-a125-599f-8c80-0e911bc071f3",
+      "share_code": "8008",
+      "title": "Cardplayer",
+      "summary": "Minimalistic MP3 / Webradio player. Winamp style.",
+      "description": "Cardputer Player is a compact, Winamp-inspired music player built specifically for the M5Stack CardputerZero’s 320×170 display. It supports MP3, FLAC, and WAV playback, Dutch internet radio, library filtering, PipeWire audio output selection, persistent color themes, and interactive spectrum visualizations. It integrates with the CardputerZero APPLaunch launcher and includes Docker-based ARM64 builds plus Debian package support.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Media"
+      ],
+      "author": {
+        "display_name": "Michiel Biersteker",
+        "github": "Biersteker"
+      },
+      "version": "0.1.0",
+      "published_at": "2026-11-14T14:52:42+00:00",
+      "updated_at": "2026-11-14T14:52:42+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/Biersteker/cardplayer",
+      "download": {
+        "type": "deb",
+        "package": "cardputer-player",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-player_0.1.0_arm64.deb",
+        "md5": "3d25cf1c9d2b16cda11627ff45564121",
+        "sha256": "de95de22f21346856f3080857327f5e6c4b42daaed5ad94aea07fef755cca101",
+        "size": 738108
+      },
+      "depends": "ffmpeg, curl, pulseaudio-utils, pipewire-pulse",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": true,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-player/cardputer-player_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-player/screenshots/screenshot-0.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-player/cardputer-player_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-player/screenshots/screenshot-0.png"
       ]
     },
     {
@@ -2779,7 +2832,7 @@
       "share_code": "SMON",
       "title": "SysMon",
       "summary": "System monitor: CPU, processes, network speed, battery, level and sound meter",
-      "description": "SysMon shows what your CardputerZero is doing, across six pages.\r\n\r\nOverview: CPU with a 60-second graph, per-core load, RAM, temperature and battery.\r\nProcesses: the top 5 by CPU or memory; end one from the keyboard.\r\nNetwork: interfaces, Wi-Fi signal and a live download/upload speed graph.\r\nPower: 4-minute temperature history, battery time-left / time-to-full estimate, disk and uptime.\r\nLevel: a bubble level from the built-in motion sensor.\r\nSound: a live microphone loudness meter with one-key quiet calibration.\r\n\r\nLeft/Right or Tab switch pages, 1-6 jump, ESC quits. The microphone is only used while the Sound page is open, and nothing is recorded.\r\n\r\nSource and docs: https://github.com/duanesweazy1/pocket-sysmon",
+      "description": "SysMon shows what your CardputerZero is doing, across six pages.\r\n\r\nOverview: CPU with a 60-second graph, per-core load, RAM, temperature and battery.\r\nProcesses: the top 20 by CPU or memory in a scrolling list; end one from the keyboard.\r\nNetwork: interfaces, Wi-Fi signal and a live download/upload speed graph.\r\nPower: 4-minute temperature history, battery time-left / time-to-full estimate, disk and uptime.\r\nLevel: a bubble level from the built-in motion sensor.\r\nSound: a live microphone loudness meter with one-key quiet calibration.\r\n\r\nLeft/Right or Tab switch pages, 1-6 jump, ESC quits. The microphone is only used while the Sound page is open, and nothing is recorded.\r\n\r\nSource and docs: https://github.com/duanesweazy1/pocket-sysmon",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -2789,9 +2842,9 @@
         "display_name": "Duane Sweazy",
         "github": "duanesweazy1"
       },
-      "version": "1.1.4",
+      "version": "1.1.5",
       "published_at": "2026-11-15T01:45:16+00:00",
-      "updated_at": "2026-11-16T05:43:20+00:00",
+      "updated_at": "2026-11-18T00:38:47+00:00",
       "review": {
         "status": "approved"
       },
@@ -2800,10 +2853,10 @@
       "download": {
         "type": "deb",
         "package": "pocket-sysmon",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pocket-sysmon_1.1.4_arm64.deb",
-        "md5": "5aded2106f3710ab7dfe8aa026292462",
-        "sha256": "7ce6a276987dee68657ff7c195889c2f071088bd8091000d7333ca250d310381",
-        "size": 20026
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pocket-sysmon_1.1.5_arm64.deb",
+        "md5": "18ada2f9929918699645f98f8f831825",
+        "sha256": "ead5ea5d6c21562fd72abbc59fad6ad1ff5deae03308b5a77ecb80a9d14417d2",
+        "size": 20812
       },
       "depends": "python3, python3-pil, python3-numpy, fonts-dejavu-core, pipewire-bin | pulseaudio-utils | alsa-utils",
       "permissions": {
@@ -2999,12 +3052,12 @@
       },
       "version": "0.1.0",
       "published_at": "2026-11-08T17:35:15+00:00",
-      "updated_at": "2026-11-08T17:35:15+00:00",
+      "updated_at": "2026-11-18T04:55:56+00:00",
       "review": {
         "status": "approved"
       },
       "license": "Apache-2.0",
-      "source_repo": "",
+      "source_repo": "https://github.com/tcchen2026/r86",
       "download": {
         "type": "deb",
         "package": "r86",
@@ -3027,12 +3080,18 @@
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/r86_icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-0.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-3.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/r86_icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-0.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-3.png"
       ]
     },
     {
@@ -4315,7 +4374,7 @@
       },
       "version": "1.8.1",
       "published_at": "2026-11-16T01:56:20+00:00",
-      "updated_at": "2026-11-16T17:28:11+00:00",
+      "updated_at": "2026-11-18T04:03:53+00:00",
       "review": {
         "status": "approved"
       },
