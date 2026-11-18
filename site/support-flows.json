@@ -1,0 +1,1005 @@
+{
+  "schemaVersion": 1,
+  "version": "2026-11-18-preview-8",
+  "product": {
+    "zh-CN": "CardputerZero / CardputerZero-OS",
+    "en": "CardputerZero / CardputerZero-OS",
+    "ja": "CardputerZero / CardputerZero-OS"
+  },
+  "status": {
+    "zh-CN": "本地测试流程；发布前需按硬件和系统版本复测",
+    "en": "Local test flow; retest on target hardware and OS before publishing",
+    "ja": "ローカルテスト用。公開前に対象ハードウェアとOSで再検証"
+  },
+  "topics": [
+    {
+      "id": "boot",
+      "title": {
+        "zh-CN": "开机启动卡住，屏幕无任何显示",
+        "en": "Boot hangs with no display",
+        "ja": "起動で止まり画面が表示されない"
+      },
+      "description": {
+        "zh-CN": "检查电池、右侧 USB 供电、SD 卡和启动画面",
+        "en": "Check battery, right-side USB power, SD card, and boot screen",
+        "ja": "バッテリー、右側USB、SDカード、起動画面を確認"
+      },
+      "entry": "boot-start"
+    },
+    {
+      "id": "display",
+      "title": {
+        "zh-CN": "屏幕损坏、装配问题",
+        "en": "Screen damage or assembly problem",
+        "ja": "画面の破損・組立て問題"
+      },
+      "description": {
+        "zh-CN": "记录面板损伤、亮点和明显装配问题",
+        "en": "Record panel damage, pixels, and obvious assembly problems",
+        "ja": "パネル破損、輝点、明らかな組立て不良を記録"
+      },
+      "entry": "display-start"
+    },
+    {
+      "id": "keyboard",
+      "title": {
+        "zh-CN": "按键失效问题",
+        "en": "Keys do not work",
+        "ja": "キーが効かない"
+      },
+      "description": {
+        "zh-CN": "区分物理按键、内置 App 组合键、教程和偶发失效",
+        "en": "Separate physical keys, built-in app combinations, tutorial, and intermittent failures",
+        "ja": "物理キー、内蔵アプリのコンボ、チュートリアル、断続的な失敗を切り分ける"
+      },
+      "entry": "keyboard-start"
+    },
+    {
+      "id": "cap",
+      "title": {
+        "zh-CN": "CAP 接口问题",
+        "en": "CAP connector problem",
+        "ja": "CAPコネクタの問題"
+      },
+      "description": {
+        "zh-CN": "处理按压通信、接口识别和排针损伤",
+        "en": "Handle pressure-dependent communication, detection, and bent pins",
+        "ja": "押すと通信する、認識、ピン損傷を確認"
+      },
+      "entry": "cap-start"
+    },
+    {
+      "id": "sdcard",
+      "title": {
+        "zh-CN": "SD 卡相关问题",
+        "en": "SD card problem",
+        "ja": "SDカードの問題"
+      },
+      "description": {
+        "zh-CN": "处理 SD 卡固定、镜像写入和换卡后启动",
+        "en": "Handle SD card retention, image writing, and boot after changing cards",
+        "ja": "SDカードの固定、書き込み、交換後の起動を確認"
+      },
+      "entry": "sd-start"
+    },
+    {
+      "id": "charging",
+      "title": {
+        "zh-CN": "充电问题",
+        "en": "Charging problem",
+        "ja": "充電の問題"
+      },
+      "description": {
+        "zh-CN": "检查线材、电源和右侧 USB 充电接口",
+        "en": "Check cable, power supply, and the right-side USB charging port",
+        "ja": "ケーブル、電源、右側USB充電ポートを確認"
+      },
+      "entry": "charging-start"
+    },
+    {
+      "id": "camera",
+      "title": {
+        "zh-CN": "相机拍照问题",
+        "en": "Camera photo problem",
+        "ja": "カメラ撮影の問題"
+      },
+      "description": {
+        "zh-CN": "区分 Lite 规格和实际拍照失败",
+        "en": "Separate the Lite specification from capture failure",
+        "ja": "Lite仕様と撮影失敗を切り分ける"
+      },
+      "entry": "camera-start"
+    },
+    {
+      "id": "system",
+      "title": {
+        "zh-CN": "系统卡顿问题",
+        "en": "System is slow or stuck",
+        "ja": "システムが重い・固まる"
+      },
+      "description": {
+        "zh-CN": "当前正在内部优化，近期会发布优化镜像",
+        "en": "Internal optimization is in progress; an improved image will be released soon",
+        "ja": "内部最適化中。近日、改善版イメージを公開予定"
+      },
+      "entry": "system-start"
+    }
+  ],
+  "nodes": {
+    "boot-start": {
+      "title": {
+        "zh-CN": "开机启动卡住，屏幕无任何显示",
+        "en": "Boot hangs with no display",
+        "ja": "起動で止まり画面が表示されない"
+      },
+      "body": {
+        "zh-CN": "先观察电池、右侧 USB 供电、三个键盘指示灯和是否显示 M5Stack Logo。",
+        "en": "First check the battery, right-side USB power, the three keyboard indicators, and whether the M5Stack logo appears.",
+        "ja": "まずバッテリー、右側USB電源、3つのキーボードLED、M5Stackロゴの表示を確認します。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "屏幕完全无显示（黑屏无背光）、键盘三个指示灯不亮",
+            "en": "No display (black screen/no backlight); all three keyboard indicators are off",
+            "ja": "画面が完全に表示されない（黒画面・バックライトなし）、3つのキーボードLEDが消灯"
+          },
+          "next": "boot-no-display"
+        },
+        {
+          "label": {
+            "zh-CN": "键盘灯在闪，但卡在 M5Stack Logo",
+            "en": "Keyboard indicators blink but it stops at the M5Stack logo",
+            "ja": "キーボードLEDは点滅するがM5Stackロゴで停止"
+          },
+          "next": "boot-logo"
+        },
+        {
+          "label": {
+            "zh-CN": "偶尔能启动",
+            "en": "It boots only sometimes",
+            "ja": "時々起動する"
+          },
+          "next": "boot-intermittent"
+        }
+      ]
+    },
+    "boot-no-display": {
+      "title": {
+        "zh-CN": "屏幕完全无显示（黑屏无背光）、键盘三个指示灯不亮",
+        "en": "No display (black screen/no backlight); all three keyboard indicators are off",
+        "ja": "画面が完全に表示されない（黒画面・バックライトなし）、3つのキーボードLEDが消灯"
+      },
+      "body": {
+        "zh-CN": "检查电池是否有电，可以先充电，或者右侧 USB 接口插有电源的数据线。",
+        "en": "Check whether the battery has charge. Charge it first if needed, or connect a powered data cable to the right-side USB port.",
+        "ja": "バッテリー残量を確認し、必要なら先に充電します。電源供給できるデータケーブルを右側USBへ接続します。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "恢复显示",
+            "en": "The display returns",
+            "ja": "表示が戻る"
+          },
+          "next": "$solved"
+        },
+        {
+          "label": {
+            "zh-CN": "屏幕仍无显示（黑屏无背光）→ 检查是否有 SD 卡",
+            "en": "Still no display (black screen/no backlight) → check for an SD card",
+            "ja": "まだ表示なし（黒画面・バックライトなし）→ SDカードを確認"
+          },
+          "next": "boot-sd"
+        }
+      ]
+    },
+    "boot-sd": {
+      "title": {
+        "zh-CN": "检查是否有 SD 卡",
+        "en": "Check for an SD card",
+        "ja": "SDカードの有無を確認"
+      },
+      "body": {
+        "zh-CN": "屏幕仍无显示（黑屏无背光）时检查是否有 SD 卡。如果是 Lite 版本没有 SD 卡，需要自己准备 SD 卡。",
+        "en": "If the screen is still black with no backlight, check for an SD card. A Lite model without one needs a card prepared separately.",
+        "ja": "画面が黒くバックライトもない場合はSDカードを確認します。Liteでカードがなければ自分で用意します。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "Lite：准备 SD 卡并写入镜像",
+            "en": "Lite: prepare an SD card and write the image",
+            "ja": "Lite：SDカードを用意しイメージを書き込む"
+          },
+          "next": "boot-sd-ready"
+        },
+        {
+          "label": {
+            "zh-CN": "不是 Lite 版本但无 SD 卡，以及有 SD 卡时键盘灯也不闪烁 → 联系售后",
+            "en": "Non-Lite has no SD card, or the indicators stay off with a card → contact support",
+            "ja": "Lite以外でSDカードがない、またはカードがあってもLEDが点滅しない → サポートへ連絡"
+          },
+          "next": "$solved"
+        },
+        {
+          "label": {
+            "zh-CN": "非 Lite 无 SD 卡，或有卡但灯不闪烁",
+            "en": "Non-Lite has no card, or indicators stay off",
+            "ja": "Lite以外でカードなし・LEDが点滅しない"
+          },
+          "next": "$support"
+        }
+      ]
+    },
+    "boot-sd-ready": {
+      "title": {
+        "zh-CN": "准备 SD 卡并重新启动",
+        "en": "Prepare the SD card and retry boot",
+        "ja": "SDカードを用意して再起動"
+      },
+      "body": {
+        "zh-CN": "准备兼容的 SD 卡，按机型写入镜像后再开机；记录 SD 卡、镜像版本和启动结果。",
+        "en": "Prepare a compatible SD card, write the image for the correct model, and try booting again. Record the SD card, image version, and result.",
+        "ja": "対応するSDカードに機種用イメージを書き込み、再起動します。SDカード、イメージ版、結果を記録します。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "可以启动",
+            "en": "It boots",
+            "ja": "起動する"
+          },
+          "next": "$solved"
+        },
+        {
+          "label": {
+            "zh-CN": "仍无显示或无法启动",
+            "en": "Still no display or boot",
+            "ja": "まだ表示なし・起動しない"
+          },
+          "next": "$support"
+        }
+      ]
+    },
+    "boot-logo": {
+      "title": {
+        "zh-CN": "关闭电源后等待再试",
+        "en": "Power off, wait, and retry",
+        "ja": "電源を切り待って再試行"
+      },
+      "body": {
+        "zh-CN": "按电源键关闭设备，等待约 1 分钟，再开机尝试一次。",
+        "en": "Press the power button to turn it off, wait about one minute, and try booting once more.",
+        "ja": "電源ボタンで電源を切り、約1分待ってからもう一度起動します。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "可以进入系统",
+            "en": "The system opens",
+            "ja": "システムに入れる"
+          },
+          "next": "$solved"
+        },
+        {
+          "label": {
+            "zh-CN": "仍卡在 M5Stack Logo，尝试重新烧录",
+            "en": "Still at the M5Stack logo; reflash",
+            "ja": "まだM5Stackロゴで停止・再書き込みへ"
+          },
+          "next": "boot-reflash"
+        }
+      ]
+    },
+    "boot-reflash": {
+      "title": {
+        "zh-CN": "使用 M5 Imager 重新烧录",
+        "en": "Reflash with M5 Imager",
+        "ja": "M5 Imagerで再書き込み"
+      },
+      "body": {
+        "zh-CN": "使用与机型匹配的官方镜像和 M5 Imager 重新烧录一次，记录镜像版本和结果。",
+        "en": "Reflash once with the official image for the correct model using M5 Imager. Record the image version and result.",
+        "ja": "機種に合う公式イメージをM5 Imagerで1回だけ書き込み、版と結果を記録します。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "可以启动",
+            "en": "It boots",
+            "ja": "起動する"
+          },
+          "next": "$solved"
+        },
+        {
+          "label": {
+            "zh-CN": "仍然卡住",
+            "en": "It still hangs",
+            "ja": "まだ停止する"
+          },
+          "next": "$support"
+        }
+      ]
+    },
+    "boot-intermittent": {
+      "title": {
+        "zh-CN": "记录偶发启动问题",
+        "en": "Record the intermittent boot issue",
+        "ja": "断続的な起動問題を記録"
+      },
+      "body": {
+        "zh-CN": "记录成功/失败次数、SD 卡和镜像版本；问题仍复现时把记录和视频提供给售后。",
+        "en": "Record successful/failed boots, SD card, and image version. If it recurs, provide the record and video to support.",
+        "ja": "起動成功・失敗回数、SDカード、イメージ版を記録し、再発時は記録と動画をサポートへ渡します。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "之后稳定启动",
+            "en": "It becomes stable",
+            "ja": "安定して起動する"
+          },
+          "next": "$solved"
+        },
+        {
+          "label": {
+            "zh-CN": "仍然复现",
+            "en": "It still recurs",
+            "ja": "まだ再現する"
+          },
+          "next": "$support"
+        }
+      ]
+    },
+    "display-start": {
+      "title": {
+        "zh-CN": "屏幕是哪一种问题？",
+        "en": "Which screen problem do you see?",
+        "ja": "画面のどの問題ですか？"
+      },
+      "body": {
+        "zh-CN": "不要按压、擦拭或拆屏；从正面和侧面拍照，保留设备现状。",
+        "en": "Do not press, rub, or open the display. Take front and side photos and preserve the device state.",
+        "ja": "画面を押す・こする・分解せず、正面と側面を撮影して状態を保ちます。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "面板破裂或明显损伤",
+            "en": "Cracked or visibly damaged panel",
+            "ja": "パネルが割れた・明らかに破損"
+          },
+          "next": "display-damage"
+        },
+        {
+          "label": {
+            "zh-CN": "固定绿点/亮点",
+            "en": "Fixed green or bright pixel",
+            "ja": "固定した緑点・輝点"
+          },
+          "next": "display-pixel"
+        },
+        {
+          "label": {
+            "zh-CN": "屏幕歪斜、间隙或装配不平",
+            "en": "Skew, gap, or uneven assembly",
+            "ja": "画面の傾き・隙間・組立て不良"
+          },
+          "next": "display-fit"
+        }
+      ]
+    },
+    "display-damage": {
+      "title": {
+        "zh-CN": "记录面板损伤",
+        "en": "Record panel damage",
+        "ja": "パネル破損を記録"
+      },
+      "body": {
+        "zh-CN": "拍摄正面、侧面和开机状态，不拆屏。",
+        "en": "Take front/side photos and a boot-state photo. Do not open the display.",
+        "ja": "正面・側面と起動状態を撮影し、画面を分解しないでください。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "确认是面板损伤",
+            "en": "The panel is damaged",
+            "ja": "パネルが破損している"
+          },
+          "next": "$support"
+        }
+      ]
+    },
+    "display-pixel": {
+      "title": {
+        "zh-CN": "确认亮点是否固定",
+        "en": "Check whether the pixel is fixed",
+        "ja": "輝点が固定か確認"
+      },
+      "body": {
+        "zh-CN": "显示纯色画面并拍摄异常像素，不要按压屏幕。",
+        "en": "Show solid colors and photograph the abnormal pixel. Do not press the display.",
+        "ja": "単色画面を表示して異常画素を撮影し、画面を押さないでください。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "没有固定异常",
+            "en": "No fixed abnormal pixel",
+            "ja": "固定した異常がない"
+          },
+          "next": "$solved"
+        },
+        {
+          "label": {
+            "zh-CN": "持续存在",
+            "en": "The pixel persists",
+            "ja": "異常が続く"
+          },
+          "next": "$support"
+        }
+      ]
+    },
+    "display-fit": {
+      "title": {
+        "zh-CN": "确认装配问题",
+        "en": "Confirm the assembly problem",
+        "ja": "組立て問題を確認"
+      },
+      "body": {
+        "zh-CN": "如果是非常明显的装配问题，拍摄正面和侧面，不自行掰正或拆壳。",
+        "en": "For an obvious assembly problem, take front and side photos. Do not bend or open the case yourself.",
+        "ja": "明らかな組立て不良なら正面・側面を撮影し、自分で曲げ直したり分解したりしないでください。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "没有明显装配问题",
+            "en": "No obvious assembly problem",
+            "ja": "明らかな組立て不良はない"
+          },
+          "next": "$solved"
+        },
+        {
+          "label": {
+            "zh-CN": "非常明显的装配问题",
+            "en": "An obvious assembly problem",
+            "ja": "明らかな組立て不良がある"
+          },
+          "next": "$support"
+        }
+      ]
+    },
+    "keyboard-start": {
+      "title": {
+        "zh-CN": "按键是哪一种失效？",
+        "en": "Which key failure do you see?",
+        "ja": "どのキーが効きませんか？"
+      },
+      "body": {
+        "zh-CN": "先区分物理按键、内置 App 组合键、开机教程和偶发失效。",
+        "en": "Separate physical keys, built-in app combinations, the boot tutorial, and intermittent failures.",
+        "ja": "物理キー、内蔵アプリのコンボ、起動チュートリアル、断続的な失敗を切り分けます。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "某个物理键全部失效",
+            "en": "One physical key fails everywhere",
+            "ja": "特定の物理キーがどこでも失敗"
+          },
+          "next": "keyboard-physical"
+        },
+        {
+          "label": {
+            "zh-CN": "Sym/组合键在某个内置 App 失效",
+            "en": "Sym/combination fails in a built-in app",
+            "ja": "Sym・コンボが内蔵アプリで失敗"
+          },
+          "next": "keyboard-app"
+        },
+        {
+          "label": {
+            "zh-CN": "只在开机教程阶段失效",
+            "en": "Fails only in the boot tutorial",
+            "ja": "起動チュートリアルだけ失敗"
+          },
+          "next": "keyboard-tutorial"
+        },
+        {
+          "label": {
+            "zh-CN": "部分按键偶发失效，例如 X 键",
+            "en": "Some keys fail intermittently, such as X",
+            "ja": "一部キーが断続的に失敗、例：Xキー"
+          },
+          "next": "keyboard-intermittent"
+        }
+      ]
+    },
+    "keyboard-physical": {
+      "title": {
+        "zh-CN": "执行物理按键测试",
+        "en": "Run the physical key test",
+        "ja": "物理キーをテスト"
+      },
+      "body": {
+        "zh-CN": "使用 FactoryTest 测试并记录失效键位。",
+        "en": "Run FactoryTest and record the failed key.",
+        "ja": "FactoryTestでテストし、失敗するキーを記録します。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "测试通过",
+            "en": "The test passes",
+            "ja": "テストに合格"
+          },
+          "next": "$solved"
+        },
+        {
+          "label": {
+            "zh-CN": "测试失败",
+            "en": "The test fails",
+            "ja": "テストに失敗"
+          },
+          "next": "$support"
+        }
+      ]
+    },
+    "keyboard-app": {
+      "title": {
+        "zh-CN": "记录内置 App 组合键问题",
+        "en": "Record the built-in app combination issue",
+        "ja": "内蔵アプリのコンボ問題を記録"
+      },
+      "body": {
+        "zh-CN": "记录实际输出、期望输出和内置 App 版本反馈给售后；后续通过镜像更新或 App 更新解决。",
+        "en": "Record actual output, expected output, and built-in app version for support. A later image or app update will address it.",
+        "ja": "実際の出力、期待する出力、内蔵アプリ版をサポートへ伝えます。今後のイメージまたはアプリ更新で対応します。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "提交记录给售后",
+            "en": "Send the record to support",
+            "ja": "記録をサポートへ送る"
+          },
+          "next": "$support"
+        }
+      ]
+    },
+    "keyboard-tutorial": {
+      "title": {
+        "zh-CN": "区分开机教程流程",
+        "en": "Separate the boot tutorial flow",
+        "ja": "起動チュートリアルを切り分け"
+      },
+      "body": {
+        "zh-CN": "进入系统后重新测试并记录教程步骤。",
+        "en": "After entering the system, test again and record the tutorial step.",
+        "ja": "システム起動後に再テストし、チュートリアルの手順を記録します。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "进入系统后正常",
+            "en": "Works after entering the system",
+            "ja": "システムでは正常"
+          },
+          "next": "$solved"
+        },
+        {
+          "label": {
+            "zh-CN": "仍然失效",
+            "en": "Still fails",
+            "ja": "まだ失敗する"
+          },
+          "next": "$support"
+        }
+      ]
+    },
+    "keyboard-intermittent": {
+      "title": {
+        "zh-CN": "等待软件修复与文档",
+        "en": "Wait for the software fix and documentation",
+        "ja": "ソフトウェア修正と文書を待つ"
+      },
+      "body": {
+        "zh-CN": "我们正在积极内部测试和推动软件修复，请耐心等待后续相关文档。",
+        "en": "We are actively testing and working on a software fix. Please wait for the related documentation.",
+        "ja": "内部テストとソフトウェア修正を進めています。関連文書の公開をお待ちください。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "记录现象并等待更新",
+            "en": "Record the symptom and wait for an update",
+            "ja": "症状を記録して更新を待つ"
+          },
+          "next": "$support"
+        }
+      ]
+    },
+    "cap-start": {
+      "title": {
+        "zh-CN": "CAP 接口是哪一种问题？",
+        "en": "Which CAP connector problem do you see?",
+        "ja": "CAPコネクタのどの問題ですか？"
+      },
+      "body": {
+        "zh-CN": "关机断电后再检查接口；不要带电插拔。",
+        "en": "Power off before checking the connector; do not plug or unplug while powered.",
+        "ja": "電源を切ってから確認し、通電中の抜き差しはしないでください。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "只有使劲按住 CAP 才能初始化和通信",
+            "en": "It initializes and communicates only when CAP is pressed firmly",
+            "ja": "CAPを強く押すと初期化・通信できる"
+          },
+          "next": "cap-contact"
+        },
+        {
+          "label": {
+            "zh-CN": "CAP 模块排针弯曲/损伤",
+            "en": "CAP pins are bent or damaged",
+            "ja": "CAPのピンが曲がる・損傷"
+          },
+          "next": "cap-damage"
+        }
+      ]
+    },
+    "cap-contact": {
+      "title": {
+        "zh-CN": "重新固定 CAP 接口",
+        "en": "Reseat and secure the CAP connector",
+        "ja": "CAPコネクタを差し直し固定"
+      },
+      "body": {
+        "zh-CN": "断电检查 2×7 接口，重新插拔并使用螺丝固定后再开始测试。",
+        "en": "With power off, check the 2×7 connector, reseat it, secure it with screws, and then test.",
+        "ja": "電源オフで2×7コネクタを確認し、差し直してネジで固定してからテストします。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "不再需要按压",
+            "en": "It no longer needs pressure",
+            "ja": "押さえなくても動作する"
+          },
+          "next": "$solved"
+        },
+        {
+          "label": {
+            "zh-CN": "仍需按压",
+            "en": "It still needs pressure",
+            "ja": "まだ押す必要がある"
+          },
+          "next": "$support"
+        }
+      ],
+      "note": {
+        "zh-CN": "仍需按压时更换 CAP 模块并联系售后。",
+        "en": "If pressure is still required, replace the CAP module and contact support.",
+        "ja": "まだ押す必要があればCAPモジュールを交換し、サポートへ連絡します。"
+      }
+    },
+    "cap-damage": {
+      "title": {
+        "zh-CN": "处理 CAP 排针弯曲/损伤",
+        "en": "Handle bent or damaged CAP pins",
+        "ja": "CAPピンの曲がり・損傷を確認"
+      },
+      "body": {
+        "zh-CN": "停止通电，尝试自行使用工具恢复；如果无工具或无法恢复，联系售后。",
+        "en": "Stop powered operation and try to restore it with a tool. If you have no tool or cannot restore it, contact support.",
+        "ja": "通電を止め、工具での復旧を試みます。工具がない、または復旧できない場合はサポートへ連絡します。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "恢复后功能正常",
+            "en": "It works after restoration",
+            "ja": "復旧後に正常動作する"
+          },
+          "next": "$solved"
+        },
+        {
+          "label": {
+            "zh-CN": "无工具、无法恢复或仍异常",
+            "en": "No tool, cannot restore, or still fails",
+            "ja": "工具なし・復旧不可・まだ異常"
+          },
+          "next": "$support"
+        }
+      ]
+    },
+    "sd-start": {
+      "title": {
+        "zh-CN": "SD 卡是哪一种问题？",
+        "en": "Which SD card problem do you see?",
+        "ja": "SDカードのどの問題ですか？"
+      },
+      "body": {
+        "zh-CN": "不要强插；记录SD 卡、卡槽、读卡器和错误提示。",
+        "en": "Do not force the card. Record the card, slot, reader, and error text.",
+        "ja": "無理に挿入せず、カード、スロット、リーダー、エラーを記録します。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "SD 卡无法固定",
+            "en": "Card will not stay seated",
+            "ja": "カードが固定できない"
+          },
+          "next": "sd-slot"
+        },
+        {
+          "label": {
+            "zh-CN": "镜像写入失败",
+            "en": "Image writing fails",
+            "ja": "イメージ書き込みに失敗"
+          },
+          "next": "sd-write"
+        },
+        {
+          "label": {
+            "zh-CN": "换卡后仍无法启动",
+            "en": "Still will not boot after changing cards",
+            "ja": "カード交換後も起動しない"
+          },
+          "next": "sd-boot"
+        }
+      ]
+    },
+    "sd-slot": {
+      "title": {
+        "zh-CN": "尝试固定 SD 卡",
+        "en": "Try to seat the SD card",
+        "ja": "SDカードを固定する"
+      },
+      "body": {
+        "zh-CN": "关机断电，使用确认正常的 SD 卡，尝试使用手指甲推到底部。",
+        "en": "Power off, use a known-good SD card, and try pushing it fully to the bottom with a fingernail.",
+        "ja": "電源を切り、正常なSDカードを使い、爪で奥まで押し込みます。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "可以固定",
+            "en": "It stays seated",
+            "ja": "固定できる"
+          },
+          "next": "$solved"
+        },
+        {
+          "label": {
+            "zh-CN": "仍卡不住",
+            "en": "It still will not stay seated",
+            "ja": "まだ固定できない"
+          },
+          "next": "$support"
+        }
+      ]
+    },
+    "sd-write": {
+      "title": {
+        "zh-CN": "重新尝试镜像写入",
+        "en": "Retry image writing",
+        "ja": "イメージ書き込みを再試行"
+      },
+      "body": {
+        "zh-CN": "使用官方镜像、M5 Imager 和独立读卡器；尝试对 SD 卡进行一次格式化，并记录失败百分比。",
+        "en": "Use the official image, M5 Imager, and a separate reader. Format the SD card once and record the failure percentage.",
+        "ja": "公式イメージ、M5 Imager、外付けリーダーを使い、SDカードを1回フォーマットして失敗率を記録します。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "写入完成并能启动",
+            "en": "Writing completes and it boots",
+            "ja": "書き込み完了・起動する"
+          },
+          "next": "$solved"
+        },
+        {
+          "label": {
+            "zh-CN": "仍失败",
+            "en": "It still fails",
+            "ja": "まだ失敗する"
+          },
+          "next": "$support"
+        }
+      ]
+    },
+    "sd-boot": {
+      "title": {
+        "zh-CN": "确认镜像和冷启动",
+        "en": "Check the image and cold boot",
+        "ja": "イメージとコールドブートを確認"
+      },
+      "body": {
+        "zh-CN": "确认镜像对应机型并做一次冷启动，记录 SD 卡和镜像版本。",
+        "en": "Confirm the image matches the model and do one cold boot. Record the SD card and image version.",
+        "ja": "機種に合うイメージを確認し、コールドブートを1回行います。SDカードとイメージ版を記録します。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "可以启动",
+            "en": "It boots",
+            "ja": "起動する"
+          },
+          "next": "$solved"
+        },
+        {
+          "label": {
+            "zh-CN": "仍无法启动",
+            "en": "It still will not boot",
+            "ja": "まだ起動しない"
+          },
+          "next": "$support"
+        }
+      ]
+    },
+    "charging-start": {
+      "title": {
+        "zh-CN": "检查充电问题",
+        "en": "Check the charging problem",
+        "ja": "充電問題を確認"
+      },
+      "body": {
+        "zh-CN": "先区分线材、电源和接口；优先使用右侧 USB 口充电。",
+        "en": "Separate cable, power supply, and connector. Prefer the right-side USB port for charging.",
+        "ja": "ケーブル、電源、コネクタを切り分け、充電は右側USBポートを優先します。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "无法充电或充电不稳",
+            "en": "Will not charge or charging is unstable",
+            "ja": "充電できない・不安定"
+          },
+          "next": "charging-check"
+        }
+      ]
+    },
+    "charging-check": {
+      "title": {
+        "zh-CN": "更换线材和电源测试",
+        "en": "Test with another cable and power supply",
+        "ja": "別のケーブルと電源でテスト"
+      },
+      "body": {
+        "zh-CN": "更换确认正常的线和电源，确认是否使用右侧 USB 口充电。",
+        "en": "Use a known-good cable and power supply and confirm whether the right-side USB port is used.",
+        "ja": "正常なケーブルと電源に替え、右側USBポートを使っているか確認します。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "可以稳定充电",
+            "en": "Charging is stable",
+            "ja": "安定して充電できる"
+          },
+          "next": "$solved"
+        },
+        {
+          "label": {
+            "zh-CN": "仍然异常",
+            "en": "Still abnormal",
+            "ja": "まだ異常"
+          },
+          "next": "$support"
+        }
+      ]
+    },
+    "camera-start": {
+      "title": {
+        "zh-CN": "相机是哪一种问题？",
+        "en": "Which camera problem do you see?",
+        "ja": "カメラのどの問題ですか？"
+      },
+      "body": {
+        "zh-CN": "先确认机型；Lite 没有内置相机，属于产品规格。",
+        "en": "Confirm the model first. Lite has no built-in camera; this is a product specification.",
+        "ja": "まず機種を確認します。Liteには内蔵カメラがなく、これは仕様です。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "Lite 没有相机",
+            "en": "Lite has no camera",
+            "ja": "Liteにはカメラがない"
+          },
+          "next": "camera-lite"
+        },
+        {
+          "label": {
+            "zh-CN": "预览黑屏或拍照失败",
+            "en": "Preview is black or capture fails",
+            "ja": "プレビュー黒画面・撮影失敗"
+          },
+          "next": "camera-capture"
+        }
+      ]
+    },
+    "camera-lite": {
+      "title": {
+        "zh-CN": "确认 Lite 规格",
+        "en": "Confirm the Lite specification",
+        "ja": "Liteの仕様を確認"
+      },
+      "body": {
+        "zh-CN": "Lite 没有相机，属于产品规格，不是故障。",
+        "en": "Lite has no camera; this is a specification, not a fault.",
+        "ja": "Liteにはカメラがなく、仕様であって故障ではありません。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "已确认是产品规格",
+            "en": "I confirmed the product specification",
+            "ja": "仕様だと確認した"
+          },
+          "next": "$solved"
+        }
+      ]
+    },
+    "camera-capture": {
+      "title": {
+        "zh-CN": "检查镜头和 FactoryTest",
+        "en": "Check the lens and FactoryTest",
+        "ja": "レンズとFactoryTestを確認"
+      },
+      "body": {
+        "zh-CN": "检查镜头并运行 FactoryTest 一次，记录错误提示和版本。",
+        "en": "Check the lens and run FactoryTest once. Record the error and versions.",
+        "ja": "レンズを確認し、FactoryTestを1回実行してエラーと版を記録します。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "预览和拍照正常",
+            "en": "Preview and capture work",
+            "ja": "プレビュー・撮影が正常"
+          },
+          "next": "$solved"
+        },
+        {
+          "label": {
+            "zh-CN": "仍然黑屏或失败",
+            "en": "Still black or failing",
+            "ja": "まだ黒画面・失敗"
+          },
+          "next": "$support"
+        }
+      ]
+    },
+    "system-start": {
+      "title": {
+        "zh-CN": "系统卡顿问题",
+        "en": "System is slow or stuck",
+        "ja": "システムが重い・固まる"
+      },
+      "body": {
+        "zh-CN": "我们正在积极进行内部优化，近期会释放优化过的镜像。请记录卡顿现象、OS/镜像版本和复现步骤。",
+        "en": "We are actively optimizing the system and will release an improved image soon. Record the symptom, OS/image version, and reproduction steps.",
+        "ja": "内部最適化を進めており、近日改善版イメージを公開します。症状、OS・イメージ版、再現手順を記録してください。"
+      },
+      "choices": [
+        {
+          "label": {
+            "zh-CN": "等待优化镜像和后续文档",
+            "en": "Wait for the improved image and documentation",
+            "ja": "改善版イメージと文書を待つ"
+          },
+          "next": "$support"
+        }
+      ]
+    }
+  }
+}

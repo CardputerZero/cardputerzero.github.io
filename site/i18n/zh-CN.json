@@ -9,13 +9,15 @@
     "apps": "应用",
     "tutorial": "教程",
     "documents": "文档",
-    "portal": "开发者门户"
+    "portal": "开发者门户",
+    "support": "帮助与自查"
   },
   "language": {
     "label": "语言"
   },
   "loading": {
-    "registry": "正在加载 registry..."
+    "registry": "正在加载 registry...",
+    "registryUnavailable": "应用目录暂时无法加载；你仍可以使用帮助与自查。"
   },
   "actions": {
     "backToApps": "返回应用列表",

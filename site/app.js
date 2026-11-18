@@ -61,6 +61,7 @@ const DOCUMENTS = [
 
 const state = {
   registry: null,
+  registryError: null,
   apps: [],
   dict: {},
   locale: resolveInitialLocale(),
@@ -86,9 +87,19 @@ const navToggle = document.querySelector("#nav-toggle");
 
 document.addEventListener("DOMContentLoaded", init);
 window.addEventListener("hashchange", () => {
+  const supportRoute = parseRoute().name === "support";
+  const previousScroll = supportRoute ? { left: window.scrollX, top: window.scrollY } : null;
   state.page = 1;
   render();
-  window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  if (supportRoute && previousScroll && typeof window.scrollTo === "function") {
+    // The browser may apply the hash navigation scroll after this handler.
+    // Restore one frame later so Support choices keep the reading position.
+    const restoreScroll = () => window.scrollTo({ ...previousScroll, behavior: "instant" });
+    if (typeof window.requestAnimationFrame === "function") window.requestAnimationFrame(restoreScroll);
+    else setTimeout(restoreScroll, 0);
+  } else if (!supportRoute) {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }
 });
 
 async function init() {
@@ -108,19 +119,25 @@ async function init() {
   });
 
   try {
-    const [registry, dict] = await Promise.all([
-      fetchJson(REGISTRY_LOADED_URL),
-      loadLocale(state.locale)
-    ]);
-    state.registry = registry;
-    state.apps = registry.apps.map(normalizeApp);
-    state.dict = dict;
+    state.dict = await loadLocale(state.locale);
     document.documentElement.lang = state.locale;
     updateStaticChrome();
     render();
   } catch (error) {
     appRoot.innerHTML = `<div class="error">${escapeHtml(error.message)}</div>`;
+    return;
   }
+
+  // Help and documents remain usable while the independent catalog request runs.
+  try {
+    const registry = await fetchJson(REGISTRY_LOADED_URL);
+    const apps = registry.apps.map(normalizeApp);
+    state.registry = registry;
+    state.apps = apps;
+  } catch (error) {
+    state.registryError = error.message;
+  }
+  if (!["support", "documents", "document"].includes(parseRoute().name)) render();
 }
 
 function updateStaticChrome() {
@@ -207,10 +224,18 @@ function resolveInitialLocale() {
 
 function render() {
   disposeGiscus();
+  if (window.CardputerSupport) window.CardputerSupport.cancel();
+  if (window.CardputerSupportEditor) window.CardputerSupportEditor.cancel();
   const route = parseRoute();
   updateNav(route.name);
 
-  if (route.name === "detail") {
+  if (route.name === "support") {
+    window.CardputerSupport.render(appRoot, state.locale, route);
+  } else if (route.name === "support-editor") {
+    window.CardputerSupportEditor.render(appRoot, state.locale);
+  } else if (!state.registry && !["documents", "document", "registry", "support-editor"].includes(route.name)) {
+    appRoot.innerHTML = `<section class="route-panel"><p role="status">${escapeHtml(t(state.registryError ? "loading.registryUnavailable" : "loading.registry"))}</p><a class="button secondary" href="#/support">${escapeHtml(t("nav.support"))}</a></section>`;
+  } else if (route.name === "detail") {
     renderDetail(route.id);
   } else if (route.name === "share") {
     renderDetail(route.code);
@@ -231,7 +256,7 @@ function render() {
     renderHome();
   }
 
-  if (!["home", "apps", "detail", "share", "documents"].includes(route.name)) {
+  if (!["home", "apps", "detail", "share", "documents", "support", "support-editor"].includes(route.name)) {
     appRoot.insertAdjacentHTML("afterbegin", renderWipBanner());
   }
   nav.classList.remove("open");
@@ -252,6 +277,8 @@ function parseRoute() {
   const hash = location.hash || "#/";
   const path = hash.replace(/^#\/?/, "");
   const parts = path.split("/").filter(Boolean);
+  if (parts[0] === "support-editor") return { name: "support-editor" };
+  if (parts[0] === "support") return { name: "support", topic: parts[1] || "", trail: parts[2] || "", invalid: parts.length > 3 };
   if (parts[0] === "apps" && parts[1]) return { name: "detail", id: parts[1] };
   if (parts[0] === "apps") return { name: "apps" };
   if (parts[0] === "s" && parts[1]) return { name: "share", code: parts[1] };

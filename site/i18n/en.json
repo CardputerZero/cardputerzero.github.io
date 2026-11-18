@@ -9,13 +9,15 @@
     "apps": "Apps",
     "tutorial": "Tutorial",
     "documents": "Documents",
-    "portal": "Developer Portal"
+    "portal": "Developer Portal",
+    "support": "Support"
   },
   "language": {
     "label": "Language"
   },
   "loading": {
-    "registry": "Loading registry..."
+    "registry": "Loading registry...",
+    "registryUnavailable": "The app catalog is temporarily unavailable; Support is still available."
   },
   "actions": {
     "backToApps": "Back to apps",

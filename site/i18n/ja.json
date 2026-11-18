@@ -9,13 +9,15 @@
     "apps": "アプリ",
     "tutorial": "チュートリアル",
     "documents": "ドキュメント",
-    "portal": "開発者ポータル"
+    "portal": "開発者ポータル",
+    "support": "サポート"
   },
   "language": {
     "label": "言語"
   },
   "loading": {
-    "registry": "registry を読み込み中..."
+    "registry": "registry を読み込み中...",
+    "registryUnavailable": "アプリカタログを読み込めません。サポートは利用できます。"
   },
   "actions": {
     "backToApps": "アプリ一覧へ戻る",
