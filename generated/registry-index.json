@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T13:37:59+08:00",
+  "generated_at": "2026-11-18T14:24:22+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -69,6 +69,75 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/advancewebui/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/advancewebui/screenshots/screenshot-1.png"
+      ]
+    },
+    {
+      "uuid": "8ff6b8af-c09b-5506-b59a-6d3f72719a20",
+      "share_code": "ASCP",
+      "title": "AirSIM Cardputer",
+      "summary": "Calls, SMS and two-way audio through an Android phone over Wi-Fi or Bluetooth.",
+      "description": "Independent AirSIM client for Cardputer Zero. Connect to an Android phone running AirSIM using Wi-Fi discovery/manual pairing or VoBLE Bluetooth, or to a compatible MU-300 running the AirSIM MU-300 plugin over Wi-Fi. Make and answer calls, send and receive SMS, use two-way call audio, and view device battery, unread messages and missed-call numbers. Includes local contacts, call records, SIM selection and DTMF. Version 0.3.13 adds PipeWire/WebRTC echo cancellation, bounded playback and microphone gain, and authenticated receive-only carrier early audio for MU-300 Wi-Fi outgoing calls. Runs as the ordinary pi user. The app must remain open for incoming calls. No cloud/Relay mode. Wi-Fi pairing uses the Android local-mode protocol and asks before replacing its cloud registration. SMS uses the existing shared delivery queue: other clients acknowledging messages first can remove them before this client reads them. For reliable Wi-Fi reception, avoid simultaneous local SMS synchronization by other clients. Store screenshots and the older UI recording use synthetic data; the separately attached physical-device video was supplied and approved for publication by the user. An Android phone with AirSIM and its required permissions is needed. This is not an official AirSIM release.",
+      "locales": {
+        "zh-CN": {
+          "title": "AirSIM Cardputer",
+          "summary": "通过 Wi-Fi 或蓝牙连接安卓手机，拨打接听电话、收发短信和双向通话。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "AirSIM Cardputer",
+          "summary": "通过 Wi-Fi 或蓝牙连接安卓手机，拨打接听电话、收发短信和双向通话。"
+        }
+      },
+      "categories": [
+        "Radio & Comms"
+      ],
+      "author": {
+        "github": "kai-wu-cortex",
+        "display_name": "Kyle"
+      },
+      "version": "0.3.13-1",
+      "published_at": "2026-11-15T06:28:47+00:00",
+      "updated_at": "2026-11-17T15:07:24+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "PolyForm-Noncommercial-1.0.0",
+      "source_repo": "https://github.com/kai-wu-cortex/airsim-cardputer",
+      "download": {
+        "type": "deb",
+        "package": "airsim-cardputer",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/airsim-cardputer_0.3.13-1_arm64.deb",
+        "md5": "c06b7afc41266e0fc33e1e762b3a38b9",
+        "sha256": "d22fc47e8516eb0bed33d9f12e7e270a7a0261c104a148597dc4cca835467030",
+        "size": 72656
+      },
+      "depends": "python3 (>= 3.11), python3-pil, python3-zeroconf, python3-cryptography, python3-evdev, python3-bleak (>= 0.22), pipewire-bin, libpipewire-0.3-modules, libspa-0.2-modules, wireplumber, fonts-noto-cjk",
+      "permissions": {
+        "camera": false,
+        "microphone": true,
+        "imu": false,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airsim-cardputer/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airsim-cardputer/screenshots/home.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airsim-cardputer/screenshots/messages.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airsim-cardputer/screenshots/connection-modes.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airsim-cardputer/screenshots/dial.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airsim-cardputer/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airsim-cardputer/screenshots/home.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airsim-cardputer/screenshots/messages.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airsim-cardputer/screenshots/connection-modes.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airsim-cardputer/screenshots/dial.png"
       ]
     },
     {
@@ -984,6 +1053,66 @@
       ]
     },
     {
+      "uuid": "554ce8d3-9f1e-5d48-90c5-523576337fc1",
+      "share_code": "CRTR",
+      "title": "CardRouter",
+      "summary": "把CardputerZero 变成一台口袋卡片路由器：开热点、共享上网、管理设备。",
+      "description": "Card Router 把你的 CardputerZero 变成一台小巧的卡片路由器。插上网线，或无线中继家里的 Wi-Fi，它就能开出热点，让手机、电脑共享上网，并提供一套完整的路由管理功能。\r\n主要功能：\r\n· 开机引导向导：首次使用一步步配好语言、上网方式、热点名称密码、局域网网段，几分钟即可上手。\r\n· 状态首页：实时显示运行状态、上联地址、路由地址、上下行速率曲线和在线客户端数。\r\n· 客户端管理：查看已连接设备，给它起备注名，一键拉黑，按需查看信号强度。\r\n· 路由设置：名称、密码、网段、DHCP 范围、上行方式，点哪项直接改哪项，无需重走向导。\r\n· 端口转发：把外部端口映射到内网设备（TCP/UDP）。\r\n· DNS 覆盖：自定义域名解析，把域名指向指定 IP（如内网 NAS），或屏蔽广告域名。\r\n· 设备黑名单：从已连接设备里直接选择拉黑，不用手输 MAC。\r\n· 静态租约：给指定设备固定 IP，同样从已连接设备选择。\r\n· QoS 限速：选择档位限制带宽（关闭/2/5/10/20/50 Mbps）。\r\n· WireGuard：放入配置即可一键连接 VPN。\r\n· 无线中继：单射频以 wlan1 连接上级 Wi-Fi、热点跟随同信道；也支持有线上行。\r\n· 开放热点：密码留空即为无密码开放网络。\r\n· 中英文界面随时切换。\r\n快捷键：\r\n· 首页：F/X 上下移动，M 总菜单，T 启动/停止（需输入设备密码确认），S 路由设置，C 客户端，A 高级功能，W 配置向导，ESC 退出。\r\n· 客户端页：R 改名，B 拉黑，S 查看信号。\r\n· 规则页（转发/DNS/黑名单/租约）：Enter 添加，DEL 删除。\r\n· 向导/编辑：Enter 下一步或保存，ESC 返回。\r\n· Ctrl+L：切换中英文。\r\n说明：无线中继与热点共用一块射频，速率约为单独使用的一半，热点信道会跟随上级路由。路由由系统服务托管，退出应用后仍继续运行；按 T 停止后设备自身仍可联网。\r\n\r\nCard Router turns your CardputerZero into a compact card-sized router. Plug in Ethernet, or wirelessly relay your home Wi-Fi, and it opens a hotspot so phones and computers can share the connection — with a full set of router management tools.\r\nFeatures:\r\n· First-boot wizard: step-by-step setup of language, uplink, hotspot name/password, and LAN subnet.\r\n· Live dashboard: running state, uplink/router addresses, real-time up/down rate chart, and online client count.\r\n· Client management: see connected devices, add note names, block with one tap, view signal on demand.\r\n· Router settings: edit name, password, subnet, DHCP range, or uplink directly — jump straight to the item you want.\r\n· Port forwarding: map external ports to LAN devices (TCP/UDP).\r\n· DNS overrides: custom domain-to-IP mapping (e.g. a LAN NAS) or ad-domain blocking.\r\n· Device blocklist: pick a connected device to block — no manual MAC entry.\r\n· Static leases: assign a fixed IP to a chosen device.\r\n· QoS limit: pick a bandwidth tier (Off/2/5/10/20/50 Mbps).\r\n· WireGuard: drop in a config and connect with one tap.\r\n· Wireless repeater: a single radio joins the upstream Wi-Fi via wlan1 with the hotspot on the same channel; wired uplink also supported.\r\n· Open hotspot: leave the password blank for an open network.\r\n· Chinese/English UI switching.\r\nShortcuts:\r\n· Home: F/X move, M menu, T start/stop (device password required), S router settings, C clients, A advanced, W wizard, ESC exit.\r\n· Clients: R rename, B block, S signal.\r\n· Rule pages: Enter add, DEL delete.\r\n· Wizard/edit: Enter next/save, ESC back.\r\n· Ctrl+L: toggle language.\r\nNote: wireless repeater and hotspot share one radio (about half throughput); the hotspot follows the upstream channel. Routing is hosted by system services and keeps running after you exit the app; after T-stop the device itself stays online.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "ddddd",
+        "github": "jiawud"
+      },
+      "version": "0.1.0",
+      "published_at": "2026-11-16T15:24:00+00:00",
+      "updated_at": "2026-11-16T15:24:00+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "cardrouter",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardrouter_0.1.0_arm64.deb",
+        "md5": "105b490cfe103a0c5ccdcf5e76fdad71",
+        "sha256": "b692436676c5ba50600d5a915459b73e07c15bdf167fa5fcc75c79abba49f9c0",
+        "size": 2505968
+      },
+      "depends": "network-manager, iproute2",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardrouter/cardrouter_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardrouter/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardrouter/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardrouter/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardrouter/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardrouter/cardrouter_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardrouter/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardrouter/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardrouter/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardrouter/screenshots/screenshot-3.png"
+      ]
+    },
+    {
       "uuid": "e02e4546-18c9-55c6-a471-05d423d70a1c",
       "share_code": "KUKA",
       "title": "Controller",
@@ -1350,6 +1479,64 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dweebs-pets/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dweebs-pets/screenshots/screenshot-4.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dweebs-pets/screenshots/screenshot-5.png"
+      ]
+    },
+    {
+      "uuid": "afc827da-10df-55ab-a4f6-652465928508",
+      "share_code": "C5SP",
+      "title": "ESP32-C5 Spectrum",
+      "summary": "2.4 & 5 GHz Wi-Fi and RF spectrum analyser for an ESP32-C5 on the side USB port",
+      "description": "Your Wi-Fi scanner tells you which networks are around. It doesn't tell you about the microwave in the kitchen, the video sender in the corner, or the cheap camera hammering channel 6. This does.\n\nPlug an ESP32-C5 board (LilyGO T-Dongle-C5, Seeed XIAO ESP32-C5, or Waveshare ESP32-C5) running esp32c5-spectrum into the CardputerZero's side USB port to see all the radio energy across 2.4 and 5 GHz — with a live trace, peak hold, scrolling waterfall, spectral density view, Chanalyzer-style Wi-Fi channel masks, and a channel busy scorecard that names your quietest channel. Includes a built-in Demo Mode (press D) so you can explore the views without hardware attached.\n\nMade by JJ (James Julier). Radio backend powered by ESP-SDR by Florian Euchner (ESPARGOS), licensed under GPL-3.0.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Radio & Comms",
+        "Hardware & IoT"
+      ],
+      "author": {
+        "github": "jamesjulier",
+        "display_name": "JJ (James Julier)"
+      },
+      "version": "0.1.0",
+      "published_at": "2026-11-16T18:21:23+00:00",
+      "updated_at": "2026-11-16T18:21:23+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-3.0-or-later",
+      "source_repo": "https://github.com/jamesjulier/esp32c5-spectrum-cardputer",
+      "download": {
+        "type": "deb",
+        "package": "esp32c5-spectrum",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/esp32c5-spectrum_0.1.0_arm64.deb",
+        "md5": "0a258a8e8904d538766c22c9c299f5c2",
+        "sha256": "41eac4583411ab0066d7a1f658ce43dcfad52f739f66423a2edcba7b761801a1",
+        "size": 50116
+      },
+      "depends": "",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/esp32c5-spectrum/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/esp32c5-spectrum/screenshots/main.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/esp32c5-spectrum/screenshots/density.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/esp32c5-spectrum/screenshots/channels.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/esp32c5-spectrum/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/esp32c5-spectrum/screenshots/main.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/esp32c5-spectrum/screenshots/density.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/esp32c5-spectrum/screenshots/channels.png"
       ]
     },
     {
@@ -1946,6 +2133,62 @@
       ]
     },
     {
+      "uuid": "c9e1bbe6-8a7f-51cf-9ccf-a0748d9b8fb4",
+      "share_code": "WAKE",
+      "title": "Jiggler",
+      "summary": "Keeps a connected computer awake by simulating mouse or keyboard activity over U",
+      "description": "Jiggler turns your CardputerZero into a tiny USB mouse/keyboard that keeps a connected computer from going idle, sleeping or locking. No software or drivers are needed on the computer. It works with Windows and macOS.                                                                                                                                      \r\n                                                                                                                                                                                                                                                                                                                                                                 How to use                                                                                                                                                                                                                                                                                                                                                     \r\n  1. Set the USB switch to Device.                                                                                                                                                                                                                                                                                                                               \r\n  2. Plug the right-side USB-C port into the computer (it charges the Cardputer at the same time).                                                                                                                                                                                                                                                               \r\n  3. Open Jiggler and press 4 to start.                                                                                                                                                                                                                                                                                                                          \r\n\r\nControls (the five keys under the screen)\r\n  4  Start / stop\r\n  5  Mode: Mouse → Keyboard → Mouse + Keyboard\r\n  6 / 7  Shorter / longer interval\r\n  8  Info\r\n  ESC (hold)  Exit\r\n\r\nDetails\r\n  - Mouse mode nudges the pointer a few pixels and moves it straight back, so it never drifts away.\r\n  - Keyboard mode only taps Shift, so nothing is ever typed.\r\n  - Moves happen at random times inside a window you set (default 5–15 s) instead of a fixed beat.\r\n  - While jiggling, the screen turns off after 30 s to save battery and heat. Any key wakes it without triggering an action.\r\n  - Your mode and interval are remembered between sessions.\r\n  - Light and dark themes.\r\n\r\nInstalls a small boot-time service (jiggler-hid-gadget) that sets up the USB keyboard/mouse. It runs without root and does nothing else.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Hardware & IoT"
+      ],
+      "author": {
+        "display_name": "intGus",
+        "github": "intGus"
+      },
+      "version": "0.1.0-m5stack1",
+      "published_at": "2026-11-16T20:28:16+00:00",
+      "updated_at": "2026-11-16T20:28:16+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/intGus/jiggler",
+      "download": {
+        "type": "deb",
+        "package": "jiggler",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/jiggler_0.1.0-m5stack1_arm64.deb",
+        "md5": "f9bfa717a0ce13e8dae2ecd562410143",
+        "sha256": "a84859c0cb9a18bb705b9d1dd2cb0c84f812f4c9aba014ef3f73bb4feaa0afc1",
+        "size": 1959286
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": true,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/jiggler/jiggler_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/jiggler/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/jiggler/screenshots/screenshot-1.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/jiggler/jiggler_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/jiggler/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/jiggler/screenshots/screenshot-1.png"
+      ]
+    },
+    {
       "uuid": "eb5b9a96-a9b1-57da-99e2-e10dacd5b04d",
       "share_code": "KSTL",
       "title": "KanSTL",
@@ -2005,6 +2248,64 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kanstl/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kanstl/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kanstl/screenshots/screenshot-4.png"
+      ]
+    },
+    {
+      "uuid": "89c5a210-7b94-5277-8be4-fda808061bf6",
+      "share_code": "KESH",
+      "title": "Kesha Code LLM",
+      "summary": "On-device LLM that writes & runs scripts, with chat and camera recognition",
+      "description": "Kesha Code LLM runs small language models entirely on the M5Stack Cardputer Zero with llama.cpp — no account, no cloud.\r\n\r\nCode: each project has a file manager, a tiny sh/Python editor and a console. A local model writes, names and edits scripts for you from the project chat, using built-in skills for common tasks (wifi, web server, Python snippets, battery and more). Pick the model per task: a 90M for speed, a 350M for better code, or a 0.5B coder to leave thinking.\r\n\r\nPower mode frees RAM so the bigger models fit (it lowers gpu_mem and turns the camera off; reversible, needs a restart).\r\n\r\nChat: talk to a small model offline.\r\nVision: live object detection (YOLOX) with boxes and percentages, text recognition (OCR), photos and annotated video.\r\nModels: download, switch and delete models, or drop in your own .gguf / .onnx files.\r\n\r\nAlways review a script before you run it.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Development",
+        "AI"
+      ],
+      "author": {
+        "display_name": "Eduardo Moraton",
+        "github": "EduardoMoraton"
+      },
+      "version": "1.4.0",
+      "published_at": "2026-11-16T19:23:43+00:00",
+      "updated_at": "2026-11-16T19:23:43+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/EduardoMoraton/kesha-llm",
+      "download": {
+        "type": "deb",
+        "package": "kesha-llm",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/kesha-llm_1.4.0_arm64.deb",
+        "md5": "38c965b38c37b85323368facedc8833a",
+        "sha256": "fc43a69f04b8b71b10eb9ac3f23ef08e6dfed57f4d95d9e15117908e6c76e105",
+        "size": 19360412
+      },
+      "depends": "python3 (>= 3.13), python3 (<< 3.14), python3-pygame, python3-numpy, python3-picamera2, ffmpeg, tesseract-ocr, fonts-dejavu-core, libc6 (>= 2.38), libstdc++6, libgomp1, libssl3t64 | libssl3, zlib1g, libzstd1",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": true,
+        "external_display": false,
+        "imu": true,
+        "microphone": true,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kesha-llm/kesha-llm_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kesha-llm/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kesha-llm/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kesha-llm/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kesha-llm/kesha-llm_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kesha-llm/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kesha-llm/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kesha-llm/screenshots/screenshot-2.png"
       ]
     },
     {
@@ -2529,6 +2830,87 @@
       ]
     },
     {
+      "uuid": "ff934602-264f-515e-a5cc-f5ade233acf7",
+      "share_code": "MODP",
+      "title": "Mod Player",
+      "summary": "Play tracker modules with live, PCM-driven visualizers.",
+      "description": "Browse and play tracker modules in your Music folder or its subfolders. Supports the formats reported by the installed libopenmpt build, including classic MOD, S3M, XM, and IT modules. Skip tracks, seek, adjust volume or mute, and switch between spectrum, oscilloscope, and waterfall visualizers. No music is bundled.",
+      "locales": {
+        "ja": {
+          "title": "Mod Player",
+          "summary": "トラッカーモジュールを再生し、PCM駆動のビジュアライザーを楽しめます。"
+        },
+        "zh-CN": {
+          "title": "Mod Player",
+          "summary": "播放 Tracker 音乐模块，并体验 PCM 实时驱动的可视化效果。"
+        },
+        "es": {
+          "title": "Mod Player",
+          "summary": "Reproduce módulos tracker con visualizadores en tiempo real basados en PCM."
+        }
+      },
+      "i18n": {
+        "ja": {
+          "title": "Mod Player",
+          "summary": "トラッカーモジュールを再生し、PCM駆動のビジュアライザーを楽しめます。"
+        },
+        "zh-CN": {
+          "title": "Mod Player",
+          "summary": "播放 Tracker 音乐模块，并体验 PCM 实时驱动的可视化效果。"
+        },
+        "es": {
+          "title": "Mod Player",
+          "summary": "Reproduce módulos tracker con visualizadores en tiempo real basados en PCM."
+        }
+      },
+      "categories": [
+        "Media"
+      ],
+      "author": {
+        "github": "MrJoshMurray",
+        "display_name": "MrJoshua"
+      },
+      "version": "0.2.1-rev1",
+      "published_at": "2026-11-16T19:40:04+00:00",
+      "updated_at": "2026-11-16T19:40:04+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/MrJoshMurray/mod-player",
+      "download": {
+        "type": "deb",
+        "package": "mod-player",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/mod-player_0.2.1-rev1_arm64.deb",
+        "md5": "12201e2406d8645d48da0f14d78b70c6",
+        "sha256": "35e8da9dc9f7401bd38255159701edfc23b2108d92273d4856969f6b5b9de593",
+        "size": 2039466
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libopenmpt0t64, libasound2t64",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/mod-player-store.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/screenshots/app-simulator-dark-darwin.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/screenshots/app-simulator-light-darwin.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/mod-player-store.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/screenshots/app-simulator-dark-darwin.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/screenshots/app-simulator-light-darwin.png"
+      ]
+    },
+    {
       "uuid": "2be641dc-2458-5528-9bcd-1e0ac2774611",
       "share_code": "MUSE",
       "title": "Muser",
@@ -2828,6 +3210,70 @@
       ]
     },
     {
+      "uuid": "ab1abf9e-a65e-5926-aeea-25b7f34877bd",
+      "share_code": "LSCN",
+      "title": "LoRa Scanner",
+      "summary": "LoRa spectrum + Meshtastic & LoRaWAN packet decoder + GPS coverage map",
+      "description": "LoRa Scanner shows and decodes what is on the air in the US 902-928 MHz band using the Cap LoRa-1262. Spectrum with max-hold and a waterfall show activity across the band. The Meshtastic Finder listens on each preset's default frequency and decodes the public default channel: text messages, node names, telemetry, positions and traceroutes (private channels stay encrypted). The LoRaWAN page hops the US915 channels of any sub-band (or the gateway downlink channels) and decodes frame headers: device address, network (The Things Network, Helium...), frame counter, port, and join requests with the device's EUI. Every packet is listed with full details and a hex dump, logged to ~/LoRaScan/packets.csv, and - with the Cap's GPS - plotted on a coverage map you can export as a Google Earth KML file. Receive only: it never transmits. Requires the Cap LoRa-1262.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Hardware & IoT",
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "Duane Sweazy",
+        "github": "duanesweazy1"
+      },
+      "version": "1.1.1",
+      "published_at": "2026-11-16T18:57:04+00:00",
+      "updated_at": "2026-11-16T18:57:04+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/duanesweazy1/pocket-lorascan",
+      "download": {
+        "type": "deb",
+        "package": "pocket-lorascan",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pocket-lorascan_1.1.1_arm64.deb",
+        "md5": "df3b2c0017ce7841330b544ce0495a45",
+        "sha256": "98a6ab7f7e10d9b27f2ad2288a91520f13a22fe5e8e3abe66e10e34c9966e08c",
+        "size": 28242
+      },
+      "depends": "python3, python3-pil, python3-numpy, fonts-dejavu-core",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-lorascan/pocket-lorascan_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-lorascan/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-lorascan/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-lorascan/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-lorascan/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-lorascan/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-lorascan/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-lorascan/pocket-lorascan_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-lorascan/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-lorascan/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-lorascan/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-lorascan/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-lorascan/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-lorascan/screenshots/screenshot-5.png"
+      ]
+    },
+    {
       "uuid": "c4eaa719-013b-5c84-a7b2-090054c6a308",
       "share_code": "SMON",
       "title": "SysMon",
@@ -3050,7 +3496,7 @@
         "display_name": "t",
         "github": "tcchen2026"
       },
-      "version": "0.1.0",
+      "version": "2026.11.18+gita807f0",
       "published_at": "2026-11-08T17:35:15+00:00",
       "updated_at": "2026-11-18T04:55:56+00:00",
       "review": {
@@ -3061,10 +3507,10 @@
       "download": {
         "type": "deb",
         "package": "r86",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/r86_0.1.0_arm64.deb",
-        "md5": "707a2848e75114c6ccc6507864f7635e",
-        "sha256": "79d6e42fcc33f3925c58368361099576ba9c656e561e856f9aa9e10629049307",
-        "size": 22453060
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/r86_2026.11.18+gita807f0_arm64.deb",
+        "md5": "82da406953f83ea78b52c5c6cd8dc736",
+        "sha256": "18c33456e8859856b864d0f0952f7a3070a0bea93339636142162b57f6b58579",
+        "size": 22840652
       },
       "depends": "curl, coreutils",
       "permissions": {
@@ -4372,7 +4818,7 @@
         "display_name": "Ramchand",
         "github": "kakashi2018"
       },
-      "version": "1.8.1",
+      "version": "1.8.2",
       "published_at": "2026-11-16T01:56:20+00:00",
       "updated_at": "2026-11-18T04:03:53+00:00",
       "review": {
@@ -4383,10 +4829,10 @@
       "download": {
         "type": "deb",
         "package": "zeroamp",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zeroamp_1.8.1_all.deb",
-        "md5": "f8a468bd2de31f9c16c786810704b292",
-        "sha256": "f1e1903fd356ffae5e99ca93d92c03894e2e2563a16b672ed2e71f68d09be09a",
-        "size": 26248
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zeroamp_1.8.2_all.deb",
+        "md5": "c5415e363639215cf3fce53c2ace7551",
+        "sha256": "9fb4afa6fa6fd9307e1f172637bffce262e724d496feb3e60f5d5ab4838f3728",
+        "size": 26516
       },
       "depends": "python3, python3-pil, mpv, ffmpeg, pulseaudio-utils, rfkill, sudo",
       "permissions": {
