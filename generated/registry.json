@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T15:36:23+08:00",
+  "generated_at": "2026-11-18T16:04:34+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -69,6 +69,70 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/advancewebui/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/advancewebui/screenshots/screenshot-1.png"
+      ]
+    },
+    {
+      "uuid": "4936f9a1-9e32-5d4c-b5aa-1ac781eb3dc6",
+      "share_code": "AIRF",
+      "title": "Airfiles",
+      "summary": "Network files transfer tool on the CardputerZero from SmartPhones & PC's.",
+      "description": "Network file transfer tool on the M5Stack CardputerZero from SmartPhone or any computer.\r\n\r\nAirfiles puts a QR code and a PIN on the CardputerZero's 320x170 screen. Scan the code with a phone, pick files in the browser, and they land in ~/Airfiles on the device. No app is needed on the phone, and it works the same for iPhone, Android, Windows, macOS, Linux and curl with API supported.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "JackyC",
+        "github": "JC3GDEV"
+      },
+      "version": "0.4.0",
+      "published_at": "2026-11-17T03:56:20+00:00",
+      "updated_at": "2026-11-17T03:56:20+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/JC3GDEV/Airfiles",
+      "download": {
+        "type": "deb",
+        "package": "airfiles",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/airfiles_0.4.0_arm64.deb",
+        "md5": "f550815262315726f9100123c61cec5e",
+        "sha256": "285619a39541abb2d58d819e0e6fd3476cf2bc563e87a786eadaac0d891e3d44",
+        "size": 24292
+      },
+      "depends": "python3, python3-pil, python3-numpy, python3-evdev, python3-qrcode, fonts-dejavu-core",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": true,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airfiles/airfiles_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airfiles/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airfiles/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airfiles/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airfiles/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airfiles/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airfiles/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airfiles/airfiles_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airfiles/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airfiles/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airfiles/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airfiles/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airfiles/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/airfiles/screenshots/screenshot-5.png"
       ]
     },
     {
@@ -618,6 +682,60 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardflash/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardflash/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardflash/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "9dda9a91-77d4-5282-a2dd-e7d39e1c6605",
+      "share_code": "CMSH",
+      "title": "CardMesh",
+      "summary": "Pocket client for Meshtastic and MeshCore LoRa Mesh and MeshMonitor remotely.",
+      "description": "CardMesh is a keyboard-first pocket client for Meshtastic and MeshCore LoRa mesh networks, and MeshMonitor remotely -- the first CardputerZero app for Meshtastic and MeshCore. It talks directly to Meshtastic and MeshCore over the onboard LoRa hat (one at a time -- they share the single physical radio, switched with a tap), and to MeshMonitor over REST. An icon-grid Home screen gets you into any of the three; each has its own channel picker and chat view.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Hardware & IoT",
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "Max Hayim",
+        "github": "maxhayim"
+      },
+      "version": "0.3.1",
+      "published_at": "2026-11-17T04:15:57+00:00",
+      "updated_at": "2026-11-17T04:15:57+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/maxhayim/CardMesh",
+      "download": {
+        "type": "deb",
+        "package": "cardmesh",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardmesh_0.3.1_arm64.deb",
+        "md5": "445397964a65ab22339a03645d723041",
+        "sha256": "7925b531023299e64540fd0ebbcbea479f15e65ec7c0dbb8e28daeb116ae925e",
+        "size": 11177452
+      },
+      "depends": "libc6",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/cardmesh_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/screenshots/screenshot-0.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/cardmesh_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/screenshots/screenshot-0.png"
       ]
     },
     {
