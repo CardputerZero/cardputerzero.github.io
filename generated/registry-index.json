@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T16:04:34+08:00",
+  "generated_at": "2026-11-18T16:30:47+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3550,6 +3550,66 @@
       ]
     },
     {
+      "uuid": "5dd589b0-485b-5b1e-9a59-824c6fdc382e",
+      "share_code": "SATS",
+      "title": "Sat Tracker",
+      "summary": "When the ISS and satellites fly over, where to look, and if you can see them",
+      "description": "Sat Tracker predicts satellite passes over your location for the next 24 hours: when each one rises, how high it gets, which direction it travels, and whether you can see it with your own eyes (a star marks passes where the satellite is sunlit while your sky is dark). Open a pass to see its path on a sky chart, a countdown, rise/peak/set times with compass directions, and its live position while it is overhead. The Sky page shows every tracked satellite above the horizon right now.\r\n\r\nGroups: space stations (ISS, Tiangong), the brightest satellites, amateur radio satellites and weather satellites. Orbit data comes from CelesTrak over Wi-Fi (cached, refreshed at most every 2 hours); the SGP4 orbit model is built in. Your location comes from the Cap LoRa-1262's GPS, or type it in; it is only stored on the device.\r\n\r\nKeys: F / X move, Z / C change pages, Enter opens a pass, V shows naked-eye passes only, U updates orbit data, L types your location.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Radio & Comms",
+        "Education"
+      ],
+      "author": {
+        "display_name": "Duane Sweazy",
+        "github": "duanesweazy1"
+      },
+      "version": "1.0.3",
+      "published_at": "2026-11-17T04:24:35+00:00",
+      "updated_at": "2026-11-17T04:24:35+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/duanesweazy1/pocket-sattrack",
+      "download": {
+        "type": "deb",
+        "package": "pocket-sattrack",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pocket-sattrack_1.0.3_arm64.deb",
+        "md5": "d93ba7c6e1676227e46c870992828213",
+        "sha256": "11e15080e863b04ec0e8783921ede279f8064351bd7fb666ff4251c729c2990a",
+        "size": 22456
+      },
+      "depends": "python3, python3-pil, python3-numpy, fonts-dejavu-core",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/pocket-sattrack_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/pocket-sattrack_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/screenshots/screenshot-3.png"
+      ]
+    },
+    {
       "uuid": "c4eaa719-013b-5c84-a7b2-090054c6a308",
       "share_code": "SMON",
       "title": "SysMon",
@@ -4971,6 +5031,64 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-music/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-music/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-music/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "f45ddb9c-c5ca-53ad-a869-2f6f86bdee27",
+      "share_code": "M163",
+      "title": "ZeroMusic163",
+      "summary": "网易云音乐播放器，支持拼音搜歌、歌单浏览和键盘播放控制",
+      "description": "ZeroMusic163 是面向 Cardputer Zero 的独立网易云音乐客户端。用实体键盘输入拼音就能找歌，也可以浏览喜欢的音乐、我的歌单和每日推荐，把整张歌单加入播放队列。\r\n\r\n播放页采用黑胶唱片界面，支持同步歌词、收藏、快进和快退。开启后台播放后，退出界面也能继续听。再次打开应用，可以从上次的播放位置继续。\r\n\r\n首次使用需要自己的网易云音乐开放平台 App ID 和 Private Key。在同一局域网内用手机或电脑打开 Zero 显示的配置网页，保存凭据后扫码登录。",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Media",
+        "Lifestyle"
+      ],
+      "author": {
+        "display_name": "tongfei11",
+        "github": "tongfei11"
+      },
+      "version": "0.1.0",
+      "published_at": "2026-11-17T09:11:46+00:00",
+      "updated_at": "2026-11-17T09:11:46+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/tongfei11/ZeroMusic163",
+      "download": {
+        "type": "deb",
+        "package": "zero-music163",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-music163_0.1.0_arm64.deb",
+        "md5": "33166f99e5be36dd610f5025fa9460bc",
+        "sha256": "6331a7d8beddfe10b0532c2535b42c68bf84c77b568123c4fa1c256dfd2977a1",
+        "size": 3480960
+      },
+      "depends": "nodejs (>= 20), mpv, python3 (>= 3.10), python3-pil, python3-qrcode, fonts-noto-cjk",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-music163/zero-music163_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-music163/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-music163/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-music163/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-music163/zero-music163_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-music163/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-music163/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-music163/screenshots/screenshot-2.png"
       ]
     },
     {
