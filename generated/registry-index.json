@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T15:14:08+08:00",
+  "generated_at": "2026-11-18T15:36:23+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2992,6 +2992,83 @@
       ]
     },
     {
+      "uuid": "f1049d89-e253-5b60-a485-ec0995169987",
+      "share_code": "MOUS",
+      "title": "Mouse Jiggler",
+      "summary": "Bluetooth mouse that nudges the pointer to keep a host awake",
+      "description": "Turns the CardputerZero into a real Bluetooth HID mouse and nudges the host pointer in one of three rhythms: Slow (2 px every 30 s), Fast (5 px every 10 s) and Jiggle (20-30 px every 100 ms).\n\nPair once from the device itself, then start or stop the movement from the carousel UI. Stop always releases every button, so the pointer never sticks. The device name can be edited on the device keyboard, and the chosen mode is remembered across restarts.\n\nAlternating movement vectors keep the pointer around its starting point instead of dragging it across the screen. No dongle, no cable, no host-side software: Windows, macOS and Linux see an ordinary Bluetooth mouse.",
+      "locales": {
+        "zh-CN": {
+          "summary": "蓝牙鼠标：轻微移动指针，让电脑保持唤醒",
+          "description": "把 CardputerZero 变成真正的蓝牙 HID 鼠标，按三种节奏轻推指针：慢速（每 30 秒 2 像素）、快速（每 10 秒 5 像素）、抖动（每 100 毫秒 20-30 像素）。在设备上完成配对，用转盘界面开始或停止。"
+        },
+        "ja": {
+          "summary": "Bluetooth マウスでポインタを微移動し、PC をスリープさせない",
+          "description": "CardputerZero を本物の Bluetooth HID マウスにします。遅い（30 秒ごとに 2 px）、速い（10 秒ごとに 5 px）、ジグル（100 ms ごとに 20〜30 px）の 3 つのモードでポインタを動かします。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "summary": "蓝牙鼠标：轻微移动指针，让电脑保持唤醒",
+          "description": "把 CardputerZero 变成真正的蓝牙 HID 鼠标，按三种节奏轻推指针：慢速（每 30 秒 2 像素）、快速（每 10 秒 5 像素）、抖动（每 100 毫秒 20-30 像素）。在设备上完成配对，用转盘界面开始或停止。"
+        },
+        "ja": {
+          "summary": "Bluetooth マウスでポインタを微移動し、PC をスリープさせない",
+          "description": "CardputerZero を本物の Bluetooth HID マウスにします。遅い（30 秒ごとに 2 px）、速い（10 秒ごとに 5 px）、ジグル（100 ms ごとに 20〜30 px）の 3 つのモードでポインタを動かします。"
+        }
+      },
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "github": "kkazakov",
+        "display_name": "Krasimir Kazakov"
+      },
+      "version": "0.2.7",
+      "published_at": "2026-11-17T08:52:09+00:00",
+      "updated_at": "2026-11-17T08:52:09+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/kkazakov/cardputer-zero-mouse-emu",
+      "download": {
+        "type": "deb",
+        "package": "mouse-jiggler",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/mouse-jiggler_0.2.7_arm64.deb",
+        "md5": "47c6fceb88be59240e62a08373c760af",
+        "sha256": "7cbb8cddedecb19d3f15ee3aa4e341c4f51c0ae189a806b945dfa9094673f608",
+        "size": 29688
+      },
+      "depends": "python3, python3-pil, python3-dbus, python3-gi, bluez, libcap2-bin",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mouse-jiggler/icon-256.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mouse-jiggler/screenshots/01-home.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mouse-jiggler/screenshots/02-running.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mouse-jiggler/screenshots/03-mode.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mouse-jiggler/screenshots/04-rename.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mouse-jiggler/icon-256.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mouse-jiggler/screenshots/01-home.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mouse-jiggler/screenshots/02-running.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mouse-jiggler/screenshots/03-mode.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mouse-jiggler/screenshots/04-rename.png"
+      ]
+    },
+    {
       "uuid": "2be641dc-2458-5528-9bcd-1e0ac2774611",
       "share_code": "MUSE",
       "title": "Muser",
@@ -3860,6 +3937,70 @@
       ]
     },
     {
+      "uuid": "c45825a7-5c7a-5691-8999-f99fad0f6abd",
+      "share_code": "SPRW",
+      "title": "Sparrow",
+      "summary": "An illuminated almanac of the real sky, your chart and your time.",
+      "description": "Sparrow is a book of illuminated pages for the CardputerZero, drawn live as vector art in the manner of a medieval manuscript.\n\nThe pages:\n- The Flight: a flight along the roads of a country where America and Britain meet, in the light of the hour (dawn, day, dusk, night).\n- Moon & Stars: the real sky over your horizon, with the Moon in its true phase, 1,600 stars, the planets and the Sun.\n- Zodiac Chart: the sky now as a Western chart, or as a Vedic one with your current periods.\n- Date of Birth: enter it once in a candle-lit book; the pages below read it.\n- Life Orrery: where you stand in a life of eighty years, by life, decade and year.\n- Time Garden: the week as a morning glory, sown on Monday and in flower on Sunday.\n- Biorhythm: your rhythms as an alchemist's stone and flask.\n- Mark of Eros: ten kinds of love as circles that draw your own mark.\n- Polarity: Sun and Moon qualities in five pairs on an alchemist's balance.\n- Tree of Life: an apple tree in the season of the date, the garden's life about it, and seven stations in glyph and verse.\n- Triptych: past, present and future from your date of birth, in three panels of your numbers.\n- I Ching: the day's figure from the Book of Changes, cast by the yarrow stalks from your date of birth.\n- Seal of the Day: your number for the day as a sign to learn, a solid in its colour inside its halo.\n- Tarot: the seventy-eight cards of the Waite-Smith deck, to turn through and to take apart.\n- Resonance and Tuner: what is vibrating around you, as a figure of sand and as a named tone, from the microphone and the motion sensor.\n- Body Chord, Attunement, Wild Pendulum and Stillness: biofeedback pages that find your breath, heartbeat and tremor, sound them as a chord, and lead the breath down with tones.\n\nNavigation is the same everywhere, and it follows the signs printed on the keyboard: the arrow keys (Z, X, C and F, no FN needed) steer every page and OK acts, N opens the contents, H opens the help screen for the page in view, a page's own key opens it from anywhere, and DEL or ESC goes back. A steps the sound through silence, a quiet background score on the solfeggio tones and an offline narrator that reads the pages; S and D make it quieter and louder.\n\nSparrow opens with a hand. Choose five numbers, one on each fingertip, and they lock your profile: your date of birth and your choices are sealed in an encrypted file on the device and open only with those numbers. If you forget them there is no way back in, only a fresh start.\n\nEverything is computed on the device. Sound from the microphone is analysed in memory and never stored. Sparrow needs no network and no account. Set your latitude and longitude in sparrow.conf for a true horizon.\n\nSparrow is an almanac and a biofeedback tool, not a medical device. It does not give medical advice, diagnose, treat or prevent any condition, or make health suggestions. For anything about your health, ask a qualified professional.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Lifestyle",
+        "Education"
+      ],
+      "author": {
+        "github": "gabe-harris-modernfold",
+        "display_name": "G. Harris"
+      },
+      "version": "1.0.0-rev1",
+      "published_at": "2026-11-16T23:51:03+00:00",
+      "updated_at": "2026-11-16T23:51:03+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "sparrow",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/sparrow_1.0.0-rev1_arm64.deb",
+        "md5": "2503b3eb2eb5d504959b8e4a4c282684",
+        "sha256": "f67bfc695f00d138f53c0c6cab2cebde8f9398ca69aa5739fa45cbe4a1473518",
+        "size": 88474660
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, alsa-utils",
+      "permissions": {
+        "camera": false,
+        "microphone": true,
+        "imu": true,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-contents.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-day.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-sky-crescent.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-zodiac.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-life.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-eros.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-contents.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-day.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-sky-crescent.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-zodiac.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-life.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-eros.png"
+      ]
+    },
+    {
       "uuid": "dd79418e-9951-58ff-9cf0-2cd298b38b3a",
       "share_code": "SUBG",
       "title": "SubGHz",
@@ -4537,6 +4678,68 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wifi-manager/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wifi-manager/screenshots/screenshot-1.png"
+      ]
+    },
+    {
+      "uuid": "e8a8c23a-e93a-5022-b904-fad16509017c",
+      "share_code": "WGZ0",
+      "title": "WireZero",
+      "summary": "WireGuard VPN client: import by file or QR code, connect from the keyboard",
+      "description": "Import a WireGuard tunnel from a .conf file or by scanning its QR code with the camera, then connect with one key. Shows tunnel address, DNS and traffic, and can connect at boot. Never runs as root; private keys stay root-only. Adding or deleting tunnels asks for your password. Needs NetworkManager (default on the official image). WireGuard is a registered trademark of Jason A. Donenfeld.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Security"
+      ],
+      "author": {
+        "display_name": "Roger Morato",
+        "github": "r-morato"
+      },
+      "version": "0.4.1-1",
+      "published_at": "2026-11-16T23:28:25+00:00",
+      "updated_at": "2026-11-16T23:28:25+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/r-morato/wirezero",
+      "download": {
+        "type": "deb",
+        "package": "wirezero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/wirezero_0.4.1-1_arm64.deb",
+        "md5": "161d4323cb33fb54a4d14a3c1352eed6",
+        "sha256": "982096b2436aaf4c8abe8d44cdad7f16b775227e3bd310ebe220e8ffe761b699",
+        "size": 31532
+      },
+      "depends": "python3 (>= 3.11), python3-pil, python3-evdev, sudo",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": true,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wirezero/wirezero_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wirezero/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wirezero/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wirezero/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wirezero/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wirezero/screenshots/screenshot-4.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wirezero/wirezero_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wirezero/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wirezero/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wirezero/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wirezero/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wirezero/screenshots/screenshot-4.png"
       ]
     },
     {
