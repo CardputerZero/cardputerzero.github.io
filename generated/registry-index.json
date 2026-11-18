@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T20:06:52+08:00",
+  "generated_at": "2026-11-18T21:09:52+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -424,9 +424,9 @@
         "github": "jrdntnnr",
         "display_name": "jrdntnnr"
       },
-      "version": "0.3.0",
+      "version": "0.3.1",
       "published_at": "2026-11-16T09:57:15+00:00",
-      "updated_at": "2026-11-16T09:57:15+00:00",
+      "updated_at": "2026-11-18T12:48:04+00:00",
       "review": {
         "status": "approved"
       },
@@ -435,10 +435,10 @@
       "download": {
         "type": "deb",
         "package": "auracam",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/auracam_0.3.0_arm64.deb",
-        "md5": "46a2b4f0fc985168dd479343a4f9ed55",
-        "sha256": "1d4a14b8641fce1d2efb71418a73409d9b0f889c63f3c05cf1cb1192ba0e588c",
-        "size": 414060
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/auracam_0.3.1_arm64.deb",
+        "md5": "98f889e463449051af51af342db39753",
+        "sha256": "99a7db7d6c82257302966fba090547a21f3a6df83e9fb4a41f2d92f154e3ccc2",
+        "size": 415164
       },
       "depends": "python3 (>= 3.10), python3-numpy, python3-opencv, python3-picamera2, python3-pil, ffmpeg, libc6",
       "permissions": {
