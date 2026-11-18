@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T14:57:07+08:00",
+  "generated_at": "2026-11-18T15:14:08+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -537,6 +537,87 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/detail.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/player.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/author.png"
+      ]
+    },
+    {
+      "uuid": "9dc8f4da-16ed-5292-9013-ddd35102a844",
+      "share_code": "FLSH",
+      "title": "CardFlash",
+      "summary": "Download Linux distros and flash them to a USB drive, no PC needed",
+      "description": "Pick an OS on the Cardputer, plug a USB flash drive into the USB-A port, and CardFlash downloads the image (BitTorrent first, the project's own mirrors as backup), writes it to the drive and reads it back to verify it. Sources include Fedora, Ubuntu, Debian, Arch Linux, Manjaro, Pop!_OS, Universal Blue, FydeOS, SteamOS, Armbian, the Raspberry Pi Imager list, fosstorrents and linuxtracker. Raspberry Pi and Armbian images can be set up for first boot, and it can make Windows LTSC evaluation install sticks. Press Space on a distro to pin it to the home screen. Set the side switch to Host before plugging in the drive. Made with Claude Code.",
+      "locales": {
+        "zh-CN": {
+          "title": "CardFlash",
+          "summary": "下载 Linux 发行版并写入 U 盘，无需电脑",
+          "description": "在 Cardputer 上选择一个系统，把 U 盘插入 USB-A 接口，CardFlash 会下载镜像（优先 BitTorrent，项目官方镜像站作为备用），写入 U 盘并回读校验。来源包括 Fedora、Ubuntu、Debian、Arch Linux、Manjaro、Pop!_OS、Universal Blue、FydeOS、SteamOS、Armbian、Raspberry Pi Imager 列表、fosstorrents 和 linuxtracker。Raspberry Pi 和 Armbian 镜像可预先配置首次启动，也可以制作 Windows LTSC 评估版安装盘。在发行版上按空格键可将其固定到主屏幕。插入 U 盘前请把侧边开关拨到 Host。使用 Claude Code 制作。"
+        },
+        "ja": {
+          "title": "CardFlash",
+          "summary": "Linux ディストリビューションをダウンロードして USB メモリに書き込み。PC 不要",
+          "description": "Cardputer で OS を選び、USB-A ポートに USB メモリを挿すと、CardFlash がイメージをダウンロード（BitTorrent を優先し、公式ミラーを予備に使用）、USB メモリに書き込み、読み戻して検証します。対応ソースは Fedora、Ubuntu、Debian、Arch Linux、Manjaro、Pop!_OS、Universal Blue、FydeOS、SteamOS、Armbian、Raspberry Pi Imager のリスト、fosstorrents、linuxtracker など。Raspberry Pi と Armbian のイメージは初回起動の設定ができ、Windows LTSC 評価版のインストール USB も作成できます。ディストリビューション上でスペースキーを押すとホーム画面に固定されます。USB メモリを挿す前に側面スイッチを Host にしてください。Claude Code で作成。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "CardFlash",
+          "summary": "下载 Linux 发行版并写入 U 盘，无需电脑",
+          "description": "在 Cardputer 上选择一个系统，把 U 盘插入 USB-A 接口，CardFlash 会下载镜像（优先 BitTorrent，项目官方镜像站作为备用），写入 U 盘并回读校验。来源包括 Fedora、Ubuntu、Debian、Arch Linux、Manjaro、Pop!_OS、Universal Blue、FydeOS、SteamOS、Armbian、Raspberry Pi Imager 列表、fosstorrents 和 linuxtracker。Raspberry Pi 和 Armbian 镜像可预先配置首次启动，也可以制作 Windows LTSC 评估版安装盘。在发行版上按空格键可将其固定到主屏幕。插入 U 盘前请把侧边开关拨到 Host。使用 Claude Code 制作。"
+        },
+        "ja": {
+          "title": "CardFlash",
+          "summary": "Linux ディストリビューションをダウンロードして USB メモリに書き込み。PC 不要",
+          "description": "Cardputer で OS を選び、USB-A ポートに USB メモリを挿すと、CardFlash がイメージをダウンロード（BitTorrent を優先し、公式ミラーを予備に使用）、USB メモリに書き込み、読み戻して検証します。対応ソースは Fedora、Ubuntu、Debian、Arch Linux、Manjaro、Pop!_OS、Universal Blue、FydeOS、SteamOS、Armbian、Raspberry Pi Imager のリスト、fosstorrents、linuxtracker など。Raspberry Pi と Armbian のイメージは初回起動の設定ができ、Windows LTSC 評価版のインストール USB も作成できます。ディストリビューション上でスペースキーを押すとホーム画面に固定されます。USB メモリを挿す前に側面スイッチを Host にしてください。Claude Code で作成。"
+        }
+      },
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "display_name": "ScarletPachyderm",
+        "github": "ScarletPachydermDev"
+      },
+      "version": "0.1.4-1",
+      "published_at": "2026-11-16T22:17:20+00:00",
+      "updated_at": "2026-11-17T11:39:47Z",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://gitlab.com/ScarletPachyderm/cardflash",
+      "download": {
+        "type": "deb",
+        "package": "cardflash",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardflash_0.1.4-1_all.deb",
+        "md5": "92b8ea6cb64c02ef3e737bc59d7c242c",
+        "sha256": "6985b8b2da645306e262ac97ad218418b22985dce6b2feed3b6daff1b0e83171",
+        "size": 66592
+      },
+      "depends": "python3, python3-pil, python3-numpy, python3-evdev, python3-libtorrent, fonts-dejavu-core, sudo, util-linux, alsa-utils, openssl, dosfstools, wimtools",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardflash/cardflash_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardflash/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardflash/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardflash/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardflash/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardflash/cardflash_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardflash/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardflash/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardflash/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardflash/screenshots/screenshot-3.png"
       ]
     },
     {
