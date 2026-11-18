@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T16:30:47+08:00",
+  "generated_at": "2026-11-18T16:45:57+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1500,6 +1500,71 @@
       ]
     },
     {
+      "uuid": "9ebb2663-4e69-5286-a2ee-a24c3f2c62f8",
+      "share_code": "BATT",
+      "title": "Battery Saver",
+      "summary": "Longer battery life: USB autosuspend, screen-off idle, low-battery shutdown",
+      "description": "Battery Saver cuts the CardputerZero's battery drain by about a quarter with the screen on and about 40% with it off, so the 1750 mAh cell lasts roughly 5.6 h instead of 4.2 h on screen, and 7.5 h instead of 4.4 h off screen.\n\n**Always on**\n- Lets the internal USB Ethernet chip autosuspend. The kernel keeps it awake, which keeps the whole USB bus busy at ~8000 interrupts/s (~105 mA). USB devices and Ethernet cables still work when plugged in.\n- Optional: silence the launcher's key sounds so the sound card can sleep (~35 mA).\n\n**While the screen is off**\n- Parks the launcher's audio stream so the sound card sleeps (~40 mA).\n- Pauses the launcher, which keeps redrawing the LCD with the backlight off (~30 mA).\n- Any key wakes everything up instantly.\n\n**Low battery**\n- Shuts down cleanly at 8% (5–20% or never).\n\nWiFi, SSH and Tailscale keep working. Each measure can be switched off in the app, which also shows the live battery current. The service runs as the desktop user, not root.\n\nKeys: F/X move, Z/C or Enter change, I info, Esc back.",
+      "locales": {
+        "zh-CN": {
+          "title": "省电助手",
+          "summary": "延长续航：USB 自动休眠、熄屏深度空闲、低电量自动关机"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "省电助手",
+          "summary": "延长续航：USB 自动休眠、熄屏深度空闲、低电量自动关机"
+        }
+      },
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "github": "InstantComet",
+        "display_name": "InstantComet"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-11-17T13:47:10+00:00",
+      "updated_at": "2026-11-17T13:47:10+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/InstantComet/cz-battery-saver",
+      "download": {
+        "type": "deb",
+        "package": "cz-battery-saver",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cz-battery-saver_1.0.0_all.deb",
+        "md5": "b99b102f89f0f38518b3d51bb79a8191",
+        "sha256": "daef310703791c23b6e6ca1ae690cdb6c00e644168ac8c73027142daf21d65b1",
+        "size": 16520
+      },
+      "depends": "python3, python3-pil, pulseaudio-utils, fonts-dejavu-core, systemd, udev",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": true,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-battery-saver/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-battery-saver/screenshots/main.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-battery-saver/screenshots/info.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-battery-saver/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-battery-saver/screenshots/main.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-battery-saver/screenshots/info.png"
+      ]
+    },
+    {
       "uuid": "0448ec2f-07c3-5159-b096-4e6e1aa55dc3",
       "share_code": "CZPX",
       "title": "CZProxy",
@@ -2647,6 +2712,91 @@
       ]
     },
     {
+      "uuid": "154ad8d7-8907-5ee7-a37b-ea5fba72a05c",
+      "share_code": "KDZ0",
+      "title": "KlipperDeckZero",
+      "summary": "Check and control a Klipper 3D printer from the CardputerZero keyboard.",
+      "description": "Shows print progress, temperatures and a thumbnail of the file being printed. You can set heater targets, extrude or retract filament, jog and home the axes, start a print from the file list, and pause, resume, cancel or emergency-stop a print. Connects to Moonraker running on the CardputerZero itself (Unix socket) or on another machine on your network (WebSocket).",
+      "locales": {
+        "ja": {
+          "title": "KlipperDeckZero",
+          "summary": "Klipper の 3D プリンターを CardputerZero のキーボードで確認・操作します。",
+          "description": "印刷の進み具合、温度、印刷中のファイルのサムネイルを表示します。ヒーターの温度設定、フィラメントの押し出しと引き戻し、軸の移動とホーミング、ファイルを選んでの印刷開始、一時停止・再開・中止・非常停止ができます。接続先は、CardputerZero 自体で動く Moonraker(Unix ソケット)か、ネットワーク上の別の機械の Moonraker(WebSocket)です。"
+        },
+        "zh-CN": {
+          "title": "KlipperDeckZero",
+          "summary": "用 CardputerZero 的键盘查看和操作 Klipper 3D 打印机。",
+          "description": "显示打印进度、温度和正在打印的文件的缩略图。可以设置加热目标温度、挤出和回抽耗材、移动各轴和归零、从文件列表开始打印，以及暂停、继续、取消和紧急停止打印。可以连接运行在 CardputerZero 本机上的 Moonraker（Unix 套接字），也可以连接局域网中其他设备上的 Moonraker（WebSocket）。"
+        }
+      },
+      "i18n": {
+        "ja": {
+          "title": "KlipperDeckZero",
+          "summary": "Klipper の 3D プリンターを CardputerZero のキーボードで確認・操作します。",
+          "description": "印刷の進み具合、温度、印刷中のファイルのサムネイルを表示します。ヒーターの温度設定、フィラメントの押し出しと引き戻し、軸の移動とホーミング、ファイルを選んでの印刷開始、一時停止・再開・中止・非常停止ができます。接続先は、CardputerZero 自体で動く Moonraker(Unix ソケット)か、ネットワーク上の別の機械の Moonraker(WebSocket)です。"
+        },
+        "zh-CN": {
+          "title": "KlipperDeckZero",
+          "summary": "用 CardputerZero 的键盘查看和操作 Klipper 3D 打印机。",
+          "description": "显示打印进度、温度和正在打印的文件的缩略图。可以设置加热目标温度、挤出和回抽耗材、移动各轴和归零、从文件列表开始打印，以及暂停、继续、取消和紧急停止打印。可以连接运行在 CardputerZero 本机上的 Moonraker（Unix 套接字），也可以连接局域网中其他设备上的 Moonraker（WebSocket）。"
+        }
+      },
+      "categories": [
+        "Hardware & IoT"
+      ],
+      "author": {
+        "github": "denchi-45",
+        "display_name": "denchi-45"
+      },
+      "version": "0.1.0-rev1",
+      "published_at": "2026-11-17T17:20:02+00:00",
+      "updated_at": "2026-11-17T17:20:02+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/denchi-45/KlipperDeckZero",
+      "download": {
+        "type": "deb",
+        "package": "klipper-deck-zero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/klipper-deck-zero_0.1.0-rev1_arm64.deb",
+        "md5": "adeb86e77a73e862c34bace157d2db19",
+        "sha256": "79d76d7ecb910a2755be28f955916aef6d2052f6cdac9ef5d421e208486f509f",
+        "size": 2362924
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/klipper-deck-zero/klipperdeck_256.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/klipper-deck-zero/screenshots/screen-status-printing.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/klipper-deck-zero/screenshots/screen-status-printing-dark.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/klipper-deck-zero/screenshots/screen-temperature.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/klipper-deck-zero/screenshots/screen-files-detail.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/klipper-deck-zero/screenshots/screen-control.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/klipper-deck-zero/screenshots/screen-move.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/klipper-deck-zero/klipperdeck_256.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/klipper-deck-zero/screenshots/screen-status-printing.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/klipper-deck-zero/screenshots/screen-status-printing-dark.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/klipper-deck-zero/screenshots/screen-temperature.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/klipper-deck-zero/screenshots/screen-files-detail.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/klipper-deck-zero/screenshots/screen-control.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/klipper-deck-zero/screenshots/screen-move.png"
+      ]
+    },
+    {
       "uuid": "c3575908-bcd5-5f6e-9b56-9ea5b304fa7f",
       "share_code": "LESP",
       "title": "Launcher ESP Flasher",
@@ -3483,6 +3633,67 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-4.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-5.png"
+      ]
+    },
+    {
+      "uuid": "0b73f1fd-0db4-59c9-8ae9-50a1b3409bbb",
+      "share_code": "PLAI",
+      "title": "Plai",
+      "summary": "Standalone Meshtastic messaging and mesh tools for Cardputer Zero",
+      "description": "Turn Cardputer Zero into a standalone Meshtastic node with a compatible SX1262 LoRa CAP. Exchange channel and direct messages, browse mesh nodes, inspect radio packets, and check device and network statistics.\n\nPlai includes local message history, channel and radio settings, traceroute tools, node maps, and compass navigation. Optional spoken notifications use an installed TalkToMe package.\n\nLoRa messaging does not require an internet connection. Downloading map tiles requires internet access; downloaded tiles are cached locally. GPS and compass features depend on available hardware. Configure the radio region and frequency for your location before transmitting.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Radio & Comms"
+      ],
+      "author": {
+        "github": "d4rkmen",
+        "display_name": "d4rkmen"
+      },
+      "version": "3.0.0-1",
+      "published_at": "2026-11-17T11:48:47+00:00",
+      "updated_at": "2026-11-17T11:48:47+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-3.0-or-later",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "plai",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/plai_3.0.0-1_arm64.deb",
+        "md5": "014d2542f4ee767c7d9a9abef6a97d62",
+        "sha256": "e72e7b5a39f1c234164affc2107de2e3f57842099714e8be09ed9dae9601b3ba",
+        "size": 6142080
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libpng16-16t64 | libpng16-16, zlib1g, libjpeg62-turbo, libcurl4t64 | libcurl4, ca-certificates",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": true,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/plai/plai_256.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/plai/screenshots/menu.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/plai/screenshots/nodes.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/plai/screenshots/channels.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/plai/screenshots/stats.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/plai/screenshots/monitor.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/plai/plai_256.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/plai/screenshots/menu.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/plai/screenshots/nodes.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/plai/screenshots/channels.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/plai/screenshots/stats.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/plai/screenshots/monitor.png"
       ]
     },
     {
@@ -5319,6 +5530,75 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-usbimager/zero-usbimager_icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-usbimager/screenshots/screenshot-0.png"
+      ]
+    },
+    {
+      "uuid": "28974194-9820-5ec4-8f8d-4008b8c31c77",
+      "share_code": "ZWAT",
+      "title": "Zero Watt",
+      "summary": "Battery power monitor for Cardputer Zero with a live watt curve and history",
+      "description": "Reads BQ27220 voltage, current, capacity and temperature every second, showing signed charge/discharge watts, net average, a 60-second live curve and a zoomable full-screen history.",
+      "locales": {
+        "zh-CN": {
+          "summary": "适用于 Cardputer Zero 的电池功率监视器，带实时功率曲线和全屏历史页",
+          "description": "每秒读取 BQ27220 的电压、电流、电量和温度，显示带符号的充放电功率、净平均值、60 秒实时曲线和可缩放的全屏历史页。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "summary": "适用于 Cardputer Zero 的电池功率监视器，带实时功率曲线和全屏历史页",
+          "description": "每秒读取 BQ27220 的电压、电流、电量和温度，显示带符号的充放电功率、净平均值、60 秒实时曲线和可缩放的全屏历史页。"
+        }
+      },
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "github": "hhzzzyy",
+        "display_name": "hhzzzyy"
+      },
+      "version": "0.1.0-rev1",
+      "published_at": "2026-11-17T12:00:16+00:00",
+      "updated_at": "2026-11-17T12:00:16+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/hhzzzyy/zero-watt",
+      "download": {
+        "type": "deb",
+        "package": "zero-watt",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-watt_0.1.0-rev1_arm64.deb",
+        "md5": "6d8639880fe5ae643318e99e31a17867",
+        "sha256": "dee8d52bf67c2f29e44caa6ec97fa14ded44976b78b20e9b66916c5ec8051a40",
+        "size": 529814
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": true,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/zero-watt.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-compact-home.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-h-help.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-history.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-settings.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/zero-watt.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-compact-home.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-h-help.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-history.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-settings.png"
       ]
     },
     {
