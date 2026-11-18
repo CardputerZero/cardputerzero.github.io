@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T19:52:52+08:00",
+  "generated_at": "2026-11-18T20:06:52+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1580,7 +1580,7 @@
         "github": "InstantComet",
         "display_name": "InstantComet"
       },
-      "version": "1.1.0",
+      "version": "1.1.1",
       "published_at": "2026-11-17T13:47:10+00:00",
       "updated_at": "2026-11-18T11:36:47+00:00",
       "review": {
@@ -1591,10 +1591,10 @@
       "download": {
         "type": "deb",
         "package": "cz-battery-saver",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cz-battery-saver_1.1.0_all.deb",
-        "md5": "f98524bf27dd125adee56398681a7d72",
-        "sha256": "639580edf0387cab71c877d1a25ad0d4949ea08bfc1a5f6e8818cfc9c493cb98",
-        "size": 17292
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cz-battery-saver_1.1.1_all.deb",
+        "md5": "458c893758f0a510748fe5532ce36ccc",
+        "sha256": "9057d65c16e2718ee9c1da946ca99f2c301e41a4664514bc187734fdb89cfec8",
+        "size": 17348
       },
       "depends": "python3, python3-pil, pulseaudio-utils, fonts-dejavu-core, systemd, udev",
       "permissions": {
@@ -1645,7 +1645,7 @@
         "github": "InstantComet",
         "display_name": "InstantComet"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "published_at": "2026-11-17T20:00:33+00:00",
       "updated_at": "2026-11-18T11:36:59+00:00",
       "review": {
@@ -1656,10 +1656,10 @@
       "download": {
         "type": "deb",
         "package": "cz-desk-mode",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cz-desk-mode_1.0.0_all.deb",
-        "md5": "3c74056a02602aa6b75ca7c2342758cc",
-        "sha256": "d94593fa5fe118af75230fa5d498c3e5577ae2899f50100ede7bb387ab80e85d",
-        "size": 19312
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cz-desk-mode_1.0.1_all.deb",
+        "md5": "f7dc8c089646862e9b793e73dfcba4ea",
+        "sha256": "2c44d3766f9a7492d5361ab143709e2ef5824a14223f783c46e19b90a8ab348a",
+        "size": 19376
       },
       "depends": "python3, python3-pil, fonts-dejavu-core, systemd, udev, labwc",
       "permissions": {
