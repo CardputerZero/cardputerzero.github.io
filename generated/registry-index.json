@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T20:04:28+08:00",
+  "generated_at": "2026-11-19T20:07:04+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1436,6 +1436,63 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardrouter/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardrouter/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardrouter/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "ed143abd-fdf5-5340-b6ab-5ad1c4cc9d46",
+      "share_code": "DZ01",
+      "title": "Coinflip",
+      "summary": "抛硬币，帮你做决定 Flip a coin, make your decision",
+      "description": "相信很多人会遇到难以抉择的时候，这款软件能帮你做出选择，跟纠结说拜拜！\r\nWe all run into moments when choosing feels impossible. This app makes the call for you — say goodbye to second-guessing!",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games"
+      ],
+      "author": {
+        "display_name": "dave2enith",
+        "github": "dave2enith"
+      },
+      "version": "1.0.0-rev1",
+      "published_at": "2026-11-19T04:54:23+00:00",
+      "updated_at": "2026-11-19T04:54:23+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "coinflip",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/coinflip_1.0.0-rev1_arm64.deb",
+        "md5": "6ecfcdb2b017d3373eee00867042d67a",
+        "sha256": "0014ee9e3de7bd03561efd040cd2ad0ebcc45bb240fd65c9ebd0852e4a290ad3",
+        "size": 2003766
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libsdl2-2.0-0, libsdl2-mixer-2.0-0",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/coinflip/coinflip_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/coinflip/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/coinflip/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/coinflip/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/coinflip/coinflip_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/coinflip/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/coinflip/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/coinflip/screenshots/screenshot-2.png"
       ]
     },
     {
