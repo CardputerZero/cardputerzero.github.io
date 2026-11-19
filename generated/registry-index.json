@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T21:01:39+08:00",
+  "generated_at": "2026-11-19T21:05:01+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -6165,6 +6165,71 @@
       ]
     },
     {
+      "uuid": "2c065e5f-2754-52ba-913b-cf065340d786",
+      "share_code": "WUSB",
+      "title": "USB Screen",
+      "summary": "Turn a tiny MSU2 USB screen into a live dashboard for your CardputerZero",
+      "description": "Plug a small MSU2 / MSU2_MINI USB screen (160x80) into the CardputerZero and this app turns it into an always-on dashboard. A background service keeps it updated; the on-device settings app (open it from the launcher) picks what it shows and previews each page live on the built-in LCD.\n\nPages you can switch on: system stats (CPU, memory, temperature), a clock, network/WiFi status, home BLE sensors (reads the Wireless Toolbox sensor cache if you run it), your own custom text, the output of a shell command, an image, a live mirror of the CardputerZero's own screen, any program on its own virtual screen (via cage), and the Raspberry Pi desktop. Tap the screen's touch button to flip pages, or auto-rotate them. Brightness, 180-degree flip and frame rate are all adjustable.\n\nThe background service runs as you (never root) and only ever talks to its own CH32X035 screen by USB id, so it never grabs other USB serial gadgets.",
+      "locales": {
+        "zh-CN": {
+          "title": "USB 小屏",
+          "summary": "把一块 MSU2 USB 小屏变成 CardputerZero 的实时仪表盘",
+          "description": "给 CardputerZero 插上一块 MSU2 / MSU2_MINI USB 小屏(160x80),这个 app 就把它变成一块常亮的仪表盘。后台服务持续刷新小屏;机上的设置 app(从启动器打开)用来选显示哪些页面,并在内置 LCD 上实时预览每一页。\n\n可开关的页面:系统状态(CPU、内存、温度)、时钟、网络/WiFi 状态、家里 BLE 传感器(装了「无线工具箱」时会读它的传感器缓存)、自定义文字、某条 shell 命令的输出、图片、本机屏幕实时镜像、在独立虚拟屏上运行的任意程序(用 cage)、以及树莓派桌面。点一下小屏上的触摸按钮翻页,也可以自动轮播。亮度、画面 180 度倒转、帧率都能调。\n\n后台服务以你的身份运行(绝不用 root),而且只按 USB id 认自己那块 CH32X035 小屏,绝不会去抢占别的 USB 串口设备。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "USB 小屏",
+          "summary": "把一块 MSU2 USB 小屏变成 CardputerZero 的实时仪表盘",
+          "description": "给 CardputerZero 插上一块 MSU2 / MSU2_MINI USB 小屏(160x80),这个 app 就把它变成一块常亮的仪表盘。后台服务持续刷新小屏;机上的设置 app(从启动器打开)用来选显示哪些页面,并在内置 LCD 上实时预览每一页。\n\n可开关的页面:系统状态(CPU、内存、温度)、时钟、网络/WiFi 状态、家里 BLE 传感器(装了「无线工具箱」时会读它的传感器缓存)、自定义文字、某条 shell 命令的输出、图片、本机屏幕实时镜像、在独立虚拟屏上运行的任意程序(用 cage)、以及树莓派桌面。点一下小屏上的触摸按钮翻页,也可以自动轮播。亮度、画面 180 度倒转、帧率都能调。\n\n后台服务以你的身份运行(绝不用 root),而且只按 USB id 认自己那块 CH32X035 小屏,绝不会去抢占别的 USB 串口设备。"
+        }
+      },
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "github": "datianda",
+        "display_name": "WanWuLab"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-11-19T12:28:27+00:00",
+      "updated_at": "2026-11-19T12:28:27+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "wanwu-usbscreen",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/wanwu-usbscreen_1.0.0_arm64.deb",
+        "md5": "408ad699a765926ad83c299929a15371",
+        "sha256": "45e575384376ac09b35dd966c1c12e307f329bd3fbf9e78dd4d7693d152f7af4",
+        "size": 18692
+      },
+      "depends": "python3, python3-pil, python3-numpy, python3-evdev, python3-serial, fonts-noto-cjk, grim, cage, wlr-randr, foot, htop, network-manager",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": true,
+        "background_service": true,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wanwu-usbscreen/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wanwu-usbscreen/screenshots/main.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wanwu-usbscreen/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wanwu-usbscreen/screenshots/main.png"
+      ]
+    },
+    {
       "uuid": "ecfdfe46-454a-5d55-a8c3-07438eb48846",
       "share_code": "WLTX",
       "title": "Wireless Toolbox",
@@ -7340,6 +7405,75 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-4.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosdr/screenshots/screenshot-5.png"
+      ]
+    },
+    {
+      "uuid": "9ea34795-0dc2-520d-a73e-7d5c1b604ec0",
+      "share_code": "ZSND",
+      "title": "ZeroSend",
+      "summary": "ZeroSend: share files and text with LocalSend apps nearby (unofficial client)",
+      "description": "ZeroSend is a file sharing app for the CardputerZero that speaks the open LocalSend protocol, so it works with the free LocalSend app on Android, iOS, Windows, macOS and Linux. No cloud, no account: files go straight over your Wi-Fi, encrypted (HTTPS).\n\n**Receive**\n- Open ZeroSend and it shows up in LocalSend on your phone or computer under the Cardputer's name.\n- When someone sends files, ZeroSend shows who is sending, the file names and sizes; Y accepts, N declines. Or set it to accept everything.\n- Files and folders are saved to ~/Downloads, with progress and speed on screen.\n- Text messages from LocalSend pop up on the screen; S saves one as a file.\n\n**Send**\n- Nearby devices running LocalSend appear in the list. Pick one, then send files and folders (Space marks several) or type a text message.\n- A adds a device by IP address or name, for networks without multicast, such as Tailscale. Added devices are remembered.\n\n**Setup** (S): the name other devices see, ask first or accept all, address and certificate fingerprint.\n\nZeroSend only runs while it is open: close it and nothing listens on the network.\n\nKeys: F/X move, Enter send/open, Space mark, Y send marked, A add IP, R rescan, S setup, Esc back.\n\nUnofficial: ZeroSend is an independent implementation of the LocalSend protocol and is not affiliated with or endorsed by the LocalSend project.",
+      "locales": {
+        "zh-CN": {
+          "title": "ZeroSend",
+          "summary": "ZeroSend：与附近的 LocalSend 应用互传文件和文字（非官方客户端）"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "ZeroSend",
+          "summary": "ZeroSend：与附近的 LocalSend 应用互传文件和文字（非官方客户端）"
+        }
+      },
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "github": "InstantComet",
+        "display_name": "InstantComet"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-11-19T12:51:31+00:00",
+      "updated_at": "2026-11-19T12:51:31+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/InstantComet/zerosend",
+      "download": {
+        "type": "deb",
+        "package": "zerosend",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosend_1.0.0_all.deb",
+        "md5": "060b70a351169671fb9f7b548be46d8a",
+        "sha256": "4216fb43fcbfd12d6eb54c107f15b61e313f073dd1d0789ff54c25e8c2e55ccb",
+        "size": 30816
+      },
+      "depends": "python3 (>= 3.11), python3-pil (>= 9.4), python3-cryptography, iproute2, fonts-dejavu-core",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosend/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosend/screenshots/home.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosend/screenshots/incoming.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosend/screenshots/transfer.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosend/screenshots/browser.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosend/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosend/screenshots/home.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosend/screenshots/incoming.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosend/screenshots/transfer.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosend/screenshots/browser.png"
       ]
     },
     {
