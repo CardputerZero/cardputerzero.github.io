@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T10:57:05+08:00",
+  "generated_at": "2026-11-19T11:02:30+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -974,7 +974,7 @@
         "display_name": "xu-c",
         "github": "xu-c"
       },
-      "version": "1.0.9-1",
+      "version": "1.0.11-1",
       "published_at": "2026-11-12T15:59:02+00:00",
       "updated_at": "2026-11-15T13:37:05+00:00",
       "review": {
@@ -985,12 +985,12 @@
       "download": {
         "type": "deb",
         "package": "cardputer-zero-radio",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-zero-radio_1.0.9-1_arm64.deb",
-        "md5": "88188740cf481dbc770f4c3e23d9cd19",
-        "sha256": "cbbf00fd09b8422c85723d77e3303773ee428d43b9507db4598d3ebc946a2541",
-        "size": 27576
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-zero-radio_1.0.11-1_arm64.deb",
+        "md5": "b7fe8b834f95b27ffdfaa1a3b9ff708b",
+        "sha256": "82c0ee303997c51571a0403df89b793f11325b61dc68b8bffd44035c3e136320",
+        "size": 29062
       },
-      "depends": "python3 (>= 3.9), python3-pil (>= 9.2), python3-evdev, python3-pypinyin, fonts-noto-cjk, mpv, ca-certificates",
+      "depends": "python3 (>= 3.9), python3-pil (>= 9.2), python3-evdev, python3-pypinyin, fonts-noto-cjk, mpv, pulseaudio-utils, ca-certificates",
       "permissions": {
         "additional_hardware": false,
         "background_service": false,
