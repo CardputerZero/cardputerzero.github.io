@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T00:29:14+08:00",
+  "generated_at": "2026-11-20T01:13:29+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -864,7 +864,7 @@
     },
     {
       "uuid": "1d4ee2e6-1a3e-5c2e-9425-bc47f9b5f35a",
-      "share_code": "REA1",
+      "share_code": "REMO",
       "title": "Remote",
       "summary": "让 CardputerZero 变成一台「开着就能远程操作」的小电脑：局域网里任何手机/电脑打开浏览器，就能实时看到它的屏幕、用键盘操控它",
       "description": "## 它解决什么问题\r\nCardputerZero 屏幕小、键盘迷你，调试和演示都不方便。装上这个应用后，只要设备开着机，你在局域网里用手机扫个码（或电脑输个网址）就能：\r\n\r\n- 实时看屏幕 ：设备画面以 MJPEG 推流到浏览器（12fps、2 倍放大），页面以机身线稿为底图，屏幕内容和按键高亮直接叠在「机身」上，像看真机一样。\r\n- 远程敲键盘 ：守护进程创建 uinput 虚拟键盘并接管系统键盘设备，浏览器里敲的字（电脑物理键盘 / 手机软键盘）直接注入设备；真实机身键盘的事件同时转发，两边都能用、互不打断。\r\n- 带外壳录屏 ：网页端一键录制，可选「带外壳」模式把按键动效一起录进去，存到设备`/tmp/cardputer-rec/` 后随时下载；设备端 ffmpeg 方案保留作后备。\r\n## 设备端应用（启动器里的入口）\r\n启动器里的 Remote 应用是「入口 + 配置面板」：\r\n\r\n- 中英双语界面，显示设备 IP、端口、服务运行状态，并生成二维码，手机扫码即连。\r\n- IP 由`hostname -I` 动态获取，不是写死的。\r\n- 改端口 ：按数字键输入 1024–65535 之间的端口号，按 ENTER 保存——守护进程在进程内原地重绑端口，不重启服务、不杀当前应用。\r\n- 启动做了优化：先把上一帧缓存刷到屏幕（约 0.1s 出画面），再懒加载绘图库渲染完整界面。",
@@ -878,9 +878,9 @@
         "display_name": "Real",
         "github": "RealOuO"
       },
-      "version": "0.2-4",
+      "version": "0.2-5",
       "published_at": "2026-11-18T06:07:39+00:00",
-      "updated_at": "2026-11-18T14:41:16+00:00",
+      "updated_at": "2026-11-19T17:10:17+00:00",
       "review": {
         "status": "approved"
       },
@@ -889,10 +889,10 @@
       "download": {
         "type": "deb",
         "package": "cardputer-remote",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-remote_0.2-4_arm64.deb",
-        "md5": "ba385029780d8f04f76163dddda5c59a",
-        "sha256": "29384c388ab7593bf324d7f302b06f447f87fe61c3628d96aa840a29582e1dda",
-        "size": 157476
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-remote_0.2-5_arm64.deb",
+        "md5": "63db7596ad3ad0c9b7cafb93a026e436",
+        "sha256": "33600ecda1e90402b8d46b5ed3a227643f5fc7ad240e5c63a315e00de1055cdd",
+        "size": 161896
       },
       "depends": "python3 (>= 3.11), python3-pil, python3-numpy, python3-evdev, python3-qrcode, ffmpeg, i2c-tools, udev",
       "permissions": {
