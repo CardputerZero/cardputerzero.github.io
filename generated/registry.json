@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T22:17:01+08:00",
+  "generated_at": "2026-11-19T23:04:29+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -6831,9 +6831,9 @@
         "github": "ChrisOr-Dev",
         "display_name": "ChrisOr-Dev"
       },
-      "version": "1.0.1",
+      "version": "1.0.2",
       "published_at": "2026-11-12T19:38:13+00:00",
-      "updated_at": "2026-11-13T22:12:19+00:00",
+      "updated_at": "2026-11-19T15:00:35+00:00",
       "review": {
         "status": "approved"
       },
@@ -6842,10 +6842,10 @@
       "download": {
         "type": "deb",
         "package": "zero-stocks",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-stocks_1.0.1_all.deb",
-        "md5": "338a77adbd4514d197da0b0fc787d354",
-        "sha256": "73b7000fbb8b7510aa4622348ff05261a128290ee359be86a97c3ab8429c1350",
-        "size": 15624
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-stocks_1.0.2_all.deb",
+        "md5": "8fb13c9faf8bdd6b356fcde7a9c5c56e",
+        "sha256": "1ba4e7f760673cf34a689fc8e4b476894f4c362ec1923d59e9fdff18593414b1",
+        "size": 16048
       },
       "depends": "python3, python3-pil, python3-numpy",
       "permissions": {
