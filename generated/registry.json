@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T11:02:30+08:00",
+  "generated_at": "2026-11-19T17:58:00+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -524,6 +524,77 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/03-wifi-scan.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/04-terminal.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/05-theme.png"
+      ]
+    },
+    {
+      "uuid": "328710b1-a36e-515f-a84e-b426fe062ae6",
+      "share_code": "CMLA",
+      "title": "Camillia for Meshtastic",
+      "summary": "Meshtastic chat, DMs, nodes and GPS over the Cap LoRa-1262",
+      "description": "Camillia brings the Camillia-MT Meshtastic firmware to the CardputerZero. Chat on channels, send encrypted direct messages, browse nodes and their positions, and manage channels and radio settings, all from the keyboard. Talks to any Meshtastic network. Requires the M5Stack Cap LoRa-1262 (SX1262 + GPS). Uses the device's Wi-Fi for the clock, weather and an optional web config on port 18765. The radio runs while the app is open.",
+      "locales": {
+        "zh-CN": {
+          "title": "Camillia for Meshtastic",
+          "summary": "通过 Cap LoRa-1262 使用 Meshtastic 聊天、私信、节点与 GPS"
+        },
+        "ja": {
+          "title": "Camillia for Meshtastic",
+          "summary": "Cap LoRa-1262 で Meshtastic のチャット、DM、ノード、GPS"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "Camillia for Meshtastic",
+          "summary": "通过 Cap LoRa-1262 使用 Meshtastic 聊天、私信、节点与 GPS"
+        },
+        "ja": {
+          "title": "Camillia for Meshtastic",
+          "summary": "Cap LoRa-1262 で Meshtastic のチャット、DM、ノード、GPS"
+        }
+      },
+      "categories": [
+        "Radio & Comms"
+      ],
+      "author": {
+        "github": "oumike",
+        "display_name": "oumike"
+      },
+      "version": "6.5.0",
+      "published_at": "2026-11-18T02:09:02+00:00",
+      "updated_at": "2026-11-18T02:09:02+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-3.0-or-later",
+      "source_repo": "https://github.com/oumike/camillia-mt",
+      "download": {
+        "type": "deb",
+        "package": "camillia",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/camillia_6.5.0_arm64.deb",
+        "md5": "35669885f04a40cb6f04eed8caf9fe1a",
+        "sha256": "d18cacb9fe4beaf9d0953c2b50542943b5d2dd2ce662dbb092f2c5f852b22444",
+        "size": 38175332
+      },
+      "depends": "libc6 (>= 2.38), libgcc-s1 (>= 3.0), libstdc++6 (>= 14)",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/camillia/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/camillia/screenshots/1-home.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/camillia/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/camillia/screenshots/1-home.png"
       ]
     },
     {
