@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T19:49:42+08:00",
+  "generated_at": "2026-11-19T19:54:48+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3376,6 +3376,66 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/library.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/timers.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/power.png"
+      ]
+    },
+    {
+      "uuid": "bd7944c9-d704-55d0-9d29-8966177f3b85",
+      "share_code": "MPKT",
+      "title": "M-Pocket",
+      "summary": "A Mastodon client for Cardputer Zero.",
+      "description": "M-Pocket is an open-source Mastodon client made for the Cardputer Zero. Choose your Mastodon server, scan a QR code with your phone, and approve access to sign in. M-Pocket can remember your login for the next time you open it.\r\n\r\nBrowse your home and local timelines one post at a time, scroll through longer posts, and search for posts on your server. Write and review posts and replies, boost posts, and choose when to reveal content warnings. Light and dark purple themes and adjustable text sizes help you make the small screen your own.\r\n\r\nM-Pocket is designed around the Cardputer Zero’s keyboard and 320 × 170 display. The beta 3 device build has been tested on a physical Cardputer Zero. Search results depend on your server’s support and settings.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Radio & Comms",
+        "Media"
+      ],
+      "author": {
+        "display_name": "DavisW9",
+        "github": "DavisW9"
+      },
+      "version": "0.2.0~beta3",
+      "published_at": "2026-11-18T21:05:31+00:00",
+      "updated_at": "2026-11-18T21:05:31+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/DavisW9/m-pocket",
+      "download": {
+        "type": "deb",
+        "package": "m-pocket",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/m-pocket_0.2.0.beta3_arm64.deb",
+        "md5": "03e8536293d59aae1bdf4742d130146b",
+        "sha256": "4aee17bbb3206471fa3da6023902e5872f39f9fc8a2b4e19fab392b5b2f44018",
+        "size": 625328
+      },
+      "depends": "libc6 (>= 2.38), libstdc++6 (>= 11), libgcc-s1, python3 (>= 3.9), ca-certificates",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/m-pocket/m-pocket_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/m-pocket/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/m-pocket/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/m-pocket/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/m-pocket/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/m-pocket/m-pocket_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/m-pocket/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/m-pocket/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/m-pocket/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/m-pocket/screenshots/screenshot-3.png"
       ]
     },
     {
