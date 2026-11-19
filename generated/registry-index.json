@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T01:13:29+08:00",
+  "generated_at": "2026-11-20T01:38:31+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -5305,20 +5305,30 @@
       "share_code": "SNDE",
       "title": "SondeChase",
       "summary": "Receive, decode and chase RS41 weather balloons with an RTL-SDR and GPS",
-      "description": "SondeChase turns the CardputerZero into a handheld radiosonde tracker. Plug in an RTL-SDR and it sweeps 400-406 MHz like an SDR app: tune with the arrow keys, listen to the channel (NFM, AM, USB, LSB), and press Enter to decode the Vaisala RS41 there. While chasing it shows distance, bearing and elevation to the balloon on a compass, its track on an OpenStreetMap map, a Skew-T log-P diagram of the sounding, and the landing point predicted from the wind profile measured during ascent. It alerts when the balloon bursts and beeps faster as you get within 10 km. The RS41 decoders are included; a GPS receiver (gpsd) is needed for distance, bearing and the beeper.",
-      "locales": {},
-      "i18n": {},
+      "description": "SondeChase turns the CardputerZero into a handheld radiosonde tracker. Plug in an RTL-SDR and it opens on the radio like an SDR app: tune with the arrow keys, listen to the channel (NFM, AM, USB, LSB, broadcast FM) and press Enter to decode the Vaisala RS41 there, or press S to scan 400-406 MHz and lock onto the first RS41 it finds. While chasing it shows distance, bearing and elevation to the balloon on a compass, its track on an OpenStreetMap map, a Skew-T log-P diagram of the sounding, and the landing point predicted from the wind profile measured during ascent. Each frame ticks and blinks the LED, it alerts when the balloon bursts, beeps faster as you get within 10 km, and logs every sonde in radiosonde_auto_rx's format. The RS41 decoders are included; a GPS receiver (gpsd) is needed for distance, bearing and the beeper.",
+      "locales": {
+        "vi": {
+          "title": "SondeChase",
+          "summary": "Thu, giải mã và bám theo bóng thám không RS41 bằng RTL-SDR và GPS"
+        }
+      },
+      "i18n": {
+        "vi": {
+          "title": "SondeChase",
+          "summary": "Thu, giải mã và bám theo bóng thám không RS41 bằng RTL-SDR và GPS"
+        }
+      },
       "categories": [
-        "Hardware & IoT",
-        "Radio & Comms"
+        "Radio & Comms",
+        "Hardware & IoT"
       ],
       "author": {
         "display_name": "hieuha",
         "github": "hieuha"
       },
-      "version": "0.4.1-rev1",
+      "version": "0.5.1-rev1",
       "published_at": "2026-11-19T04:15:47+00:00",
-      "updated_at": "2026-11-19T13:29:43+00:00",
+      "updated_at": "2026-11-19T17:34:19+00:00",
       "review": {
         "status": "approved"
       },
@@ -5327,41 +5337,41 @@
       "download": {
         "type": "deb",
         "package": "sondechase",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/sondechase_0.4.1-rev1_arm64.deb",
-        "md5": "8709ff81882d0c2a6db426867317b18e",
-        "sha256": "74d24348cafa657a149fc2b49515df0f90e5af0cfb52f812475ad8939161d339",
-        "size": 949302
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/sondechase_0.5.1-rev1_arm64.deb",
+        "md5": "fee43d9c0c8a3a89734d657b4fce7bdb",
+        "sha256": "b593d6b694f5835595949007bc1c04fef3e9234196ea6eb69bcb7fbadebefa1f",
+        "size": 948948
       },
       "depends": "libc6, curl, librtlsdr0 (>= 2.0.2)",
       "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": true,
+        "network": true,
         "additional_hardware": true,
         "background_service": false,
-        "camera": false,
-        "external_display": false,
-        "imu": true,
-        "microphone": false,
-        "network": true
+        "external_display": false
       },
       "risk_flags": [],
       "assets": {
-        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/sondechase_icon.png",
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/sondechase_256.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/screenshot-0.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/screenshot-1.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/screenshot-2.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/screenshot-3.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/screenshot-4.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/screenshot-5.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/01_track.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/02_map.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/04_radio_decode.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/03_graph_skewt.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/03_graph_flight.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/07_burst.png"
         ]
       },
-      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/sondechase_icon.png",
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/sondechase_256.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/screenshot-0.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/screenshot-1.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/screenshot-2.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/screenshot-3.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/screenshot-4.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/screenshot-5.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/01_track.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/02_map.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/04_radio_decode.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/03_graph_skewt.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/03_graph_flight.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/07_burst.png"
       ]
     },
     {
