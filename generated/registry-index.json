@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T20:52:18+08:00",
+  "generated_at": "2026-11-19T21:01:39+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -6351,8 +6351,8 @@
       "uuid": "438b76b1-3319-5a14-ad34-f807bd4e8042",
       "share_code": "PZRO",
       "title": "仙剑1· Zero",
-      "summary": "本应用不含游戏数据，需自行导入。演示所用的单屏 Linux 资源包来自 B 站 UP 主「大光圈先森」。",
-      "description": "为 CardputerZero 适配的非官方 SDLPAL 移植版。应用不包含游戏数据；可从应用内导入你合法持有的单屏 Linux 资源 ZIP，无需提前解压。对应源码：https://github.com/n1zjqo/pal1-zero-source/blob/main/xianjian1-zero-source-v1.0.zip",
+      "summary": "在 CardputerZero 上玩《仙剑奇侠传1柔情典藏版》。不含游戏数据，支持直接资源 ZIP，无需解压。",
+      "description": "《仙剑1· Zero》是基于 SDLPAL 为 CardputerZero 适配的《仙剑奇侠传》初代非官方移植版，支持单屏显示和机身键盘操作。安装包不含游戏数据。首次打开应用，选择导入你合法持有的《仙剑奇侠传98 柔情典藏版》单屏 Linux 资源 ZIP，直接选原压缩包即可，不用改名或提前解压。导入完成后，选择该资源即可启动游戏。\r\n商城截图演示所用的单屏 Linux 资源包来自 B 站 UP 主「大光圈先森」。",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -6364,7 +6364,7 @@
       },
       "version": "1.0",
       "published_at": "2026-11-19T11:10:26+00:00",
-      "updated_at": "2026-11-19T11:10:26+00:00",
+      "updated_at": "2026-11-19T12:57:16+00:00",
       "review": {
         "status": "approved"
       },
@@ -6393,13 +6393,15 @@
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/xianjian1-zero/xianjian1-zero_icon.png",
         "screenshots": [
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/xianjian1-zero/screenshots/screenshot-0.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/xianjian1-zero/screenshots/screenshot-1.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/xianjian1-zero/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/xianjian1-zero/screenshots/screenshot-2.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/xianjian1-zero/xianjian1-zero_icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/xianjian1-zero/screenshots/screenshot-0.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/xianjian1-zero/screenshots/screenshot-1.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/xianjian1-zero/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/xianjian1-zero/screenshots/screenshot-2.png"
       ]
     },
     {
