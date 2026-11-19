@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T19:01:11+08:00",
+  "generated_at": "2026-11-19T19:17:13+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -5348,6 +5348,83 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tyrell-video/screenshots/02-lcd-player-preview.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tyrell-video/screenshots/03-tracks-preview.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tyrell-video/screenshots/04-hdmi-controller-preview.png"
+      ]
+    },
+    {
+      "uuid": "8bbaa513-2b84-574a-b29f-88a137c08493",
+      "share_code": "LAB5",
+      "title": "Ultimate Flasher",
+      "summary": "Flash LAB5 Gear and supported M5Stack devices directly over USB.",
+      "description": "Turn your Cardputer Zero into a portable flashing station for LAB5 Gear and supported M5Stack devices.\n\nFlash LAB5 hardware and compatible platforms from the Tab5, Cardputer, Cardputer ADV, and CoreS3 families—without using a computer. Ultimate Flasher detects the connected device, checks chip compatibility, downloads and caches firmware, writes the correct images and offsets, and verifies the result.\n\nThe app also includes Flipper Zero .fap installation and a live serial console. Targets without a verified flashing configuration remain safely locked.\n\nInternet access, USB Host mode, and a data-capable cable are required. Some devices may need external power or a powered USB hub.",
+      "locales": {
+        "ja": {
+          "summary": "LAB5 GearとM5StackデバイスをUSBで直接フラッシュ。"
+        },
+        "zh-CN": {
+          "summary": "通过 USB 直接为 LAB5 Gear 和 M5Stack 设备烧录固件。"
+        }
+      },
+      "i18n": {
+        "ja": {
+          "summary": "LAB5 GearとM5StackデバイスをUSBで直接フラッシュ。"
+        },
+        "zh-CN": {
+          "summary": "通过 USB 直接为 LAB5 Gear 和 M5Stack 设备烧录固件。"
+        }
+      },
+      "categories": [
+        "System Tools",
+        "Hardware & IoT"
+      ],
+      "author": {
+        "github": "D3h420",
+        "display_name": "D3h420",
+        "website": "https://github.com/D3h420"
+      },
+      "version": "0.3.0",
+      "published_at": "2026-11-18T15:08:04+00:00",
+      "updated_at": "2026-11-18T15:08:04+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/C5Lab/Ultimate-Flasher",
+      "download": {
+        "type": "deb",
+        "package": "ultimate-flasher-cardputerzero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/ultimate-flasher-cardputerzero_0.3.0_arm64.deb",
+        "md5": "18f4e8fa01bd78450aedff5f099bac7e",
+        "sha256": "3cf299df878e892646e0c8e02eddb70e9c58cbb3d4419ceb5331ea7f3ea5c323",
+        "size": 9005376
+      },
+      "depends": "python3 (>= 3.10), python3-numpy, python3-pil, python3-qrcode",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ultimate-flasher-cardputerzero/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ultimate-flasher-cardputerzero/screenshots/main-menu.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ultimate-flasher-cardputerzero/screenshots/lab5-gear.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ultimate-flasher-cardputerzero/screenshots/device-confirmation.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ultimate-flasher-cardputerzero/screenshots/flashing.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ultimate-flasher-cardputerzero/screenshots/serial-console.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ultimate-flasher-cardputerzero/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ultimate-flasher-cardputerzero/screenshots/main-menu.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ultimate-flasher-cardputerzero/screenshots/lab5-gear.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ultimate-flasher-cardputerzero/screenshots/device-confirmation.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ultimate-flasher-cardputerzero/screenshots/flashing.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ultimate-flasher-cardputerzero/screenshots/serial-console.png"
       ]
     },
     {
