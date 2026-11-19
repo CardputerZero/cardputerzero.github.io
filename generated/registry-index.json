@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T20:49:28+08:00",
+  "generated_at": "2026-11-19T20:52:18+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2799,6 +2799,70 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/screenshots/settings.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/screenshots/apikey-qr.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/screenshots/editor.png"
+      ]
+    },
+    {
+      "uuid": "0ff1aa66-1b40-5b36-be9f-6a995797da2b",
+      "share_code": "HERD",
+      "title": "herdr-zero",
+      "summary": "内置 tailscale 的 herdr 客户侧",
+      "description": "Herdr Zero 是专为 CardputerZero 打造的 Herdr 客户端。\r\n\r\n主要能力：\r\n- Space 视图与 Agent 视图：与桌面端 Herdr 共享 Machine -> Space -> Pane 三列布局，按 Tab 可切换到跨机器的 Agent 视图（支持按最新动态、状态或名称排序及按机器筛选）。\r\n- Agent 会话视图：在 Codex、Claude Code 或 pi 的 Agent 上按 Enter，按时间顺序浏览对话消息，查看当前动作，直接通过卡片响应权限审批或 AskUserQuestion 提问；底部回复框自动保存草稿，按 Enter 确认后才发送。\r\n- 交互终端与只读历史：通过 libghostty-vt 直接接管普通 Shell、TUI 菜单与 Vim（Ctrl+Tab 返回概览且不中断远端任务），也可按 r 以只读模式浏览历史输出而不改变远端终端尺寸。\r\n- 掌上输入与中英双语界面：设置中可随时切换简体中文与英文界面；内置本地 Rime 简体拼音输入（Ctrl+Space），并支持 ElevenLabs 语音听写（Ctrl+R 按住或点按，转写结果作为可编辑文本插入，不会自动回车发送）。\r\n\r\n使用前提：\r\n- Wi-Fi 网络与 Tailscale 账号（扫码或打开链接在浏览器中授权）。\r\n- 同一 tailnet 内开启 SSH 的开发主机（支持 Tailscale SSH、密钥、密码及交互式认证）。若远端尚未安装或需更新 Herdr Core（hc），应用会在征得你明确确认后将其安装到远端用户主目录。\r\n- 可选：如需使用语音听写，需自备 ElevenLabs API Key（可在本机输入，也可通过同 tailnet 的本地网页暂存并在掌机上按键确认导入）。\r\n\r\n数据与隐私说明：\r\n- 终端文本、会话日志与回复通过 Tailscale 与 SSH 在掌机与你自己的开发主机之间传输；内置 Tailscale 节点按常规方式连接 Tailscale 协调与中继服务。\r\n- 仅在触发语音听写（Ctrl+R）期间，麦克风音频经校验证书的 TLS 流式发送至 ElevenLabs（使用你自己的 API Key）；应用仅在内存中处理音频，不写入磁盘或日志，云端留存策略由你的 ElevenLabs 账号设置及服务条款决定。\r\n- 本地状态（settings.json、drafts.json、presets.json、machines.json、ssh/、tailnet /）以仅属主可读写权限保存在 ~/.local/state/herdr-zero/，升级或卸载安装包后默认保留 ，如需彻底清除请手动删除该目录。应用不安装 root 或开机后台服务，退出时自动清理本地辅助进程，远端任务继续运行。",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Development",
+        "AI"
+      ],
+      "author": {
+        "display_name": "cdpath",
+        "github": "cdpath"
+      },
+      "version": "0.1.0-rev12",
+      "published_at": "2026-11-17T14:05:44+00:00",
+      "updated_at": "2026-11-17T14:05:44+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "herdr-zero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/herdr-zero_0.1.0-rev12_arm64.deb",
+        "md5": "3806da9b70a584b969d39a33b8d2b1c8",
+        "sha256": "e08fd52656f959b8c8dae143616a9b9cf684d92e8d5ecfe4dfb86751f7f0d499",
+        "size": 27913184
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libfmt10, librime1t64, libopencc-data, libcurl4t64, ca-certificates, libasound2t64, systemd (>= 240)",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/herdr-zero/herdr-zero_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/herdr-zero/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/herdr-zero/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/herdr-zero/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/herdr-zero/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/herdr-zero/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/herdr-zero/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/herdr-zero/herdr-zero_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/herdr-zero/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/herdr-zero/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/herdr-zero/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/herdr-zero/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/herdr-zero/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/herdr-zero/screenshots/screenshot-5.png"
       ]
     },
     {
