@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T19:34:38+08:00",
+  "generated_at": "2026-11-19T19:46:56+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2742,6 +2742,81 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/screenshots/settings.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/screenshots/apikey-qr.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/geminilive/screenshots/editor.png"
+      ]
+    },
+    {
+      "uuid": "341fb244-511c-54d3-8c04-22a6adc428a8",
+      "share_code": "ICMZ",
+      "title": "ICOMzero",
+      "summary": "Listen, tune, and view a live IC-7300MK2 waterfall over LAN.",
+      "description": "Connect a Cardputer Zero to an Icom IC-7300MK2 on the same LAN for receive audio, a live spectrum and waterfall, and 1 kHz tuning. Select amateur-band presets with automatic LSB/USB mode selection, toggle noise reduction, adjust or mute volume, and start the antenna tuner. Requires a network-enabled IC-7300MK2 and its LAN account. T starts the antenna tuner and briefly transmits a tuning carrier. Radio credentials and volume settings are stored locally with user-only file permissions.",
+      "locales": {
+        "ja": {
+          "title": "ICOMzero",
+          "summary": "IC-7300MK2 の LAN 音声受信、周波数調整、ウォーターフォール表示。"
+        },
+        "zh-CN": {
+          "title": "ICOMzero",
+          "summary": "通过局域网收听 IC-7300MK2，调节频率并查看实时瀑布图。"
+        }
+      },
+      "i18n": {
+        "ja": {
+          "title": "ICOMzero",
+          "summary": "IC-7300MK2 の LAN 音声受信、周波数調整、ウォーターフォール表示。"
+        },
+        "zh-CN": {
+          "title": "ICOMzero",
+          "summary": "通过局域网收听 IC-7300MK2，调节频率并查看实时瀑布图。"
+        }
+      },
+      "categories": [
+        "Radio & Comms"
+      ],
+      "author": {
+        "github": "unagisan69",
+        "display_name": "unagisan69"
+      },
+      "version": "0.3.1",
+      "published_at": "2026-11-18T18:40:23+00:00",
+      "updated_at": "2026-11-18T18:49:54+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-3.0-only",
+      "source_repo": "https://github.com/unagisan69/ICOMzero",
+      "download": {
+        "type": "deb",
+        "package": "icomzero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/icomzero_0.3.1_all.deb",
+        "md5": "713fe1be106a2a39e29ac19b09bc1ec4",
+        "sha256": "3aa070df75ffde432ba5b023cb6d6531dec5ab6c7f72fbaf28f6acd2480c05f3",
+        "size": 24632
+      },
+      "depends": "python3, python3-pil, fonts-dejavu-core, alsa-utils, libasound2-plugins, pipewire-pulse",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/waterfall.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/bands.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/help.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/waterfall.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/bands.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/help.png"
       ]
     },
     {
