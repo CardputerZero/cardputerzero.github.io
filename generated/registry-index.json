@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T21:05:01+08:00",
+  "generated_at": "2026-11-19T21:24:54+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3338,6 +3338,62 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/klipper-deck-zero/screenshots/screen-files-detail.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/klipper-deck-zero/screenshots/screen-control.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/klipper-deck-zero/screenshots/screen-move.png"
+      ]
+    },
+    {
+      "uuid": "f2ad1377-f94b-5c82-9fb6-918bc825f0fa",
+      "share_code": "KVXP",
+      "title": "kvxputerzero",
+      "summary": "kvxputerzero is a port of kvxputer, now on the zero!",
+      "description": "kvxputer Zero is a port of kvxputer to the M5Stack Cardputer Zero. It brings the same pocket toolkit for wireless research, network analysis and hardware experimentation to M5Stack’s Linux-based keyboard handheld. The Wii-style channel menu, on-device customization (remappable shortcuts, SD themes, boot animations, UI and brightness options, configurable startup app) and the modular tool layout all carry over from the original firmware.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Security"
+      ],
+      "author": {
+        "display_name": "kvx17",
+        "github": "kvx17"
+      },
+      "version": "0.1.0-rev1",
+      "published_at": "2026-11-18T15:15:31+00:00",
+      "updated_at": "2026-11-18T15:15:31+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "AGPL-3.0",
+      "source_repo": "https://github.com/kvx17/kvxputer",
+      "download": {
+        "type": "deb",
+        "package": "kvxputerzero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/kvxputerzero_0.1.0-rev1_arm64.deb",
+        "md5": "d34ce1fefbc1aed1b1fcc1fc8485c87f",
+        "sha256": "764369f6b6322553a7a06912fa9e10c03a796f1ea00ef771ea036ffa547a9260",
+        "size": 2996322
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kvxputerzero/kvxputerzero_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kvxputerzero/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kvxputerzero/screenshots/screenshot-1.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kvxputerzero/kvxputerzero_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kvxputerzero/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/kvxputerzero/screenshots/screenshot-1.png"
       ]
     },
     {
