@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T18:01:20+08:00",
+  "generated_at": "2026-11-19T18:12:55+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2114,6 +2114,91 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flagpi/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flagpi/screenshots/screenshot-1.png"
+      ]
+    },
+    {
+      "uuid": "996bb1e6-f735-5cdc-b2de-2bca14505db2",
+      "share_code": "FLYT",
+      "title": "Flight Club",
+      "summary": "驾驶战机穿越虫洞，从地表飞向宇宙",
+      "description": "驾驶战机穿越虫洞，到达世界的另一端，从地表飞向宇宙，再驶向星球降落。自由探索、竞速、金币冲刺与空战，支持 Cardputer Zero 体感操控。\n创意来源：https://remix.ui8.ai/fly\n\nPilot a fighter through wormholes to the other side of the world. Fly from the surface into space, then head toward a planet and land. Explore freely, race, collect coins, and fight aerial battles with Cardputer Zero motion controls.\nCreative inspiration: https://remix.ui8.ai/fly",
+      "locales": {
+        "zh-CN": {
+          "title": "Flight Club",
+          "summary": "驾驶战机穿越虫洞，从地表飞向宇宙",
+          "description": "驾驶战机穿越虫洞，到达世界的另一端，从地表飞向宇宙，再驶向星球降落。自由探索、竞速、金币冲刺与空战，支持 Cardputer Zero 体感操控。\n创意来源：https://remix.ui8.ai/fly"
+        },
+        "en": {
+          "title": "Flight Club",
+          "summary": "Fly through portals and seamlessly into space",
+          "description": "Pilot a fighter through wormholes to the other side of the world. Fly from the surface into space, then head toward a planet and land. Explore freely, race, collect coins, and fight aerial battles with Cardputer Zero motion controls.\nCreative inspiration: https://remix.ui8.ai/fly"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "Flight Club",
+          "summary": "驾驶战机穿越虫洞，从地表飞向宇宙",
+          "description": "驾驶战机穿越虫洞，到达世界的另一端，从地表飞向宇宙，再驶向星球降落。自由探索、竞速、金币冲刺与空战，支持 Cardputer Zero 体感操控。\n创意来源：https://remix.ui8.ai/fly"
+        },
+        "en": {
+          "title": "Flight Club",
+          "summary": "Fly through portals and seamlessly into space",
+          "description": "Pilot a fighter through wormholes to the other side of the world. Fly from the surface into space, then head toward a planet and land. Explore freely, race, collect coins, and fight aerial battles with Cardputer Zero motion controls.\nCreative inspiration: https://remix.ui8.ai/fly"
+        }
+      },
+      "categories": [
+        "Games"
+      ],
+      "author": {
+        "github": "journey-ad",
+        "display_name": "journey-ad"
+      },
+      "version": "0.19.2",
+      "published_at": "2026-11-18T09:42:57+00:00",
+      "updated_at": "2026-11-18T09:42:57+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/journey-ad/M5CardputerZero-FlightClub",
+      "download": {
+        "type": "deb",
+        "package": "flight-club",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/flight-club_0.19.2_arm64.deb",
+        "md5": "36b6dbac480b2c91d5a0ee060815e06a",
+        "sha256": "505a3c71d94f885580646feab765c9bc1f6f5071b7a239b333499cb1050e32c3",
+        "size": 759566
+      },
+      "depends": "pulseaudio-utils",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": true,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flight-club/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flight-club/screenshots/free-flight.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flight-club/screenshots/portal.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flight-club/screenshots/race.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flight-club/screenshots/combat.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flight-club/screenshots/space-cockpit.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flight-club/screenshots/moon-approach.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flight-club/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flight-club/screenshots/free-flight.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flight-club/screenshots/portal.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flight-club/screenshots/race.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flight-club/screenshots/combat.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flight-club/screenshots/space-cockpit.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/flight-club/screenshots/moon-approach.png"
       ]
     },
     {
