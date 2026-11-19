@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T18:48:15+08:00",
+  "generated_at": "2026-11-19T19:01:11+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4055,6 +4055,63 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-4.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-5.png"
+      ]
+    },
+    {
+      "uuid": "e2b1ce5f-8a6d-5928-a85e-a79318ca9efb",
+      "share_code": "PLAS",
+      "title": "Pixel Aces",
+      "summary": "Pixel Aces is a software-rendered pixel-3D combat flight game",
+      "description": "基于原作者@creativedash作品进行迁移开发，并针对CP0特性优化各项功能。(https://x.com/creativedash/status/2122000830895386680)\r\n驾驶战机在程序化生成的岛屿、海洋与云层上空作战，支持俯视视角和尾随视角。按住 J 键使用机炮，将敌机保持在瞄准框内完成锁定，按 K 发射制导导弹。三名敌方王牌会巡航、转向攻击你、扫射并发射导弹；敌机逼近时威胁环会收缩。危急时刻按 R 键翻滚规避导弹：导弹擦身而过时时间会变慢，此时发射导弹可以打出三连反击。命中目标会迸出火花、冒出浓烟并伴随屏幕震动；被击落的敌机拖着火焰坠入海中。战机损毁时，你会乘坐弹射火箭升空：看着座舱盖炸开，在最后一刻脱离，然后登上前来接应的救援战机，全程配有无线电语音。内置扬声器可以播放合成的引擎、机炮和爆炸音效。仅键盘操作：方向键 或 Z/C/F/X 控制飞行，Enter 加速，J 机炮，K 导弹，R 翻滚，Tab 切换视角，Esc 退出。\r\nPorted from the original work by @creativedash, all features optimized for CardputerZero (CP0).\r\n(https://x.com/creativedash/status/2122000830895386680)\r\nFly a fighter over procedural islands, sea and clouds in top-down or chase view. Hold J for the cannon, hold an enemy in the sights to lock, K to loose a guided missile. Three enemy aces wander, turn on you, fire bursts and launch missiles of their own; the threat rings close as one comes in. Roll with R at the last moment to throw a missile off: time slows as it goes by, and a missile fired in that moment becomes a three-shot counter-attack.. Hits spark, smoke and shake the screen; shot-down foes fall burning into the sea. Lose your jet and you go out through the sky on the seat rocket: watch the canopy bloom, cut loose at the last moment and drop into the cockpit of the jet coming to pick you up, radio chatter and all. Synthesized engine, gun and explosion audio through the built-in speaker. Keyboard only: arrows or Z/C/F/X to fly, Enter boost, J gun, K missile, R roll, Tab view, Esc quit.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games"
+      ],
+      "author": {
+        "display_name": "ddddd",
+        "github": "jiawud"
+      },
+      "version": "0.3.0",
+      "published_at": "2026-11-18T14:23:07+00:00",
+      "updated_at": "2026-11-18T14:23:07+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "pixelaces",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pixelaces_0.3.0_arm64.deb",
+        "md5": "c4cae79c989ce8a7f015937f343fa401",
+        "sha256": "fb2d8c3d677633ad14a91bc6313f5307dca63e994c8965a9c09a6e6d29ea75ce",
+        "size": 531152
+      },
+      "depends": "libasound2t64, libpulse0",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pixelaces/pixelaces_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pixelaces/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pixelaces/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pixelaces/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pixelaces/pixelaces_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pixelaces/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pixelaces/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pixelaces/screenshots/screenshot-2.png"
       ]
     },
     {
