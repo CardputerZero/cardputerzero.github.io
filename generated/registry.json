@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T18:46:03+08:00",
+  "generated_at": "2026-11-20T18:51:34+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -6483,6 +6483,67 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wanwu-wireless/icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wanwu-wireless/screenshots/main.png"
+      ]
+    },
+    {
+      "uuid": "03290904-34cb-5e2b-bfc6-7a4c8ac53c6d",
+      "share_code": "WSTL",
+      "title": "Wasteland",
+      "summary": "Host a co-op wasteland hex crawl for up to five phones on your Wi-Fi.",
+      "description": "Wasteland turns the CardputerZero into the server for a co-op survival crawl across a hex map of ruins, ash dunes, rust forests and glass fields. Up to five players join from their own phones: each opens the address shown on the screen in a phone browser, claims a survivor and plays from there. No app to install on the phones and no account.\n\nThe survivors scavenge, trade, craft and keep each other alive against hunger, thirst, radiation, weather and a threat clock that runs down every day. Encounters, caravans, quakes, floods and the Creeping Doom come and go while the day turns.\n\nThe CardputerZero's own screen is the table: it shows each of the game's six pages (Road, Chronicle, Stash, Odds, Waste, Admired) at full size, and beside it a column with the day, the weather, the threat clock and a dog tag with a life bar for every seated player. While nobody is seated it shows the address to join.\n\nKeys follow the signs printed on the keyboard: C (or Enter, Space, PG DN) goes to the next page, A, S and D set the speaker volume, F and X move between a page's picture and its text, V zooms, K goes home, H shows the address and the keys, and ESC held saves and quits.\n\nThe game is served over your local network on port 80 (8080 if 80 cannot be opened), so the CardputerZero and the phones must be on the same network. The world is saved on the device. Nothing is sent to the internet.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games"
+      ],
+      "author": {
+        "github": "gabe-harris-modernfold",
+        "display_name": "G. Harris"
+      },
+      "version": "0.1.0",
+      "published_at": "2026-11-19T22:36:47+00:00",
+      "updated_at": "2026-11-19T22:36:47+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "wasteland",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/wasteland_0.1.0_arm64.deb",
+        "md5": "feaba82f4bbdf35a96fe1ca992d8e46d",
+        "sha256": "2076a8fa9b456a18b3e3e0a7d35b25529e47f114cd9c9b8efe327fa2e971992c",
+        "size": 8876742
+      },
+      "depends": "",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wasteland/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wasteland/screenshots/wasteland-join.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wasteland/screenshots/wasteland-road.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wasteland/screenshots/wasteland-stash.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wasteland/screenshots/wasteland-odds.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wasteland/screenshots/wasteland-admired.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wasteland/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wasteland/screenshots/wasteland-join.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wasteland/screenshots/wasteland-road.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wasteland/screenshots/wasteland-stash.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wasteland/screenshots/wasteland-odds.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wasteland/screenshots/wasteland-admired.png"
       ]
     },
     {
