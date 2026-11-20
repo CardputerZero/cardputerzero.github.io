@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T18:27:16+08:00",
+  "generated_at": "2026-11-20T18:46:03+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1884,6 +1884,67 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-peers/screenshots/login.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-peers/screenshots/menu.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-peers/screenshots/ssh.png"
+      ]
+    },
+    {
+      "uuid": "f584d139-f0c5-5742-96e3-98741d9f5693",
+      "share_code": "MAIL",
+      "title": "Email",
+      "summary": "Read and send email from your Cardputer Zero. Works with Gmail, Outlook and more",
+      "description": "Check your inbox, read, reply, forward, and write new emails right on the Cardputer.\r\n\r\nWorks with any IMAP account. Gmail, Outlook, Yahoo, iCloud, and Fastmail settings fill in by themselves when you type your address. Gmail and most big providers need an app password.\r\n\r\nWhat it can do:\r\n- Inbox, folders, and search\\n- Reply, reply all, forward\r\n- Contact suggestions from people you've emailed\r\n- Text only or full view with pictures\r\n- Save attachments and pictures to Downloads\r\n- Open links in a simple text browser, or as a QR code for your phone\r\n- Optional voice typing that works offline\r\n\r\nPress Fn+H on any screen for the keys.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Creative & Office"
+      ],
+      "author": {
+        "display_name": "H4W9",
+        "github": "H4W9"
+      },
+      "version": "0.3.4",
+      "published_at": "2026-11-19T19:57:03+00:00",
+      "updated_at": "2026-11-19T19:57:03+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/H4W9/CardputerZero_Mail",
+      "download": {
+        "type": "deb",
+        "package": "czmail",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/czmail_0.3.4_all.deb",
+        "md5": "5c5581182fafc14e57a7e384d409603f",
+        "sha256": "39692d71f15f7585b979fe8bed671daf5e204305a304f2d99a2d809f491a90e9",
+        "size": 53630
+      },
+      "depends": "python3 (>= 3.9), python3-pil, fonts-dejavu-core",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": true,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/czmail_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-4.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/czmail_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-4.png"
       ]
     },
     {
