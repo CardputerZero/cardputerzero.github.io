@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T16:58:16+08:00",
+  "generated_at": "2026-11-20T17:22:59+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -7734,6 +7734,88 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosub/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosub/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerosub/screenshots/screenshot-2.png"
+      ]
+    },
+    {
+      "uuid": "cbece453-45cb-5417-83de-5b4fd15f3088",
+      "share_code": "ZTAG",
+      "title": "ZeroTag",
+      "summary": "Amiibo library and emulator for the CardputerZero with the NFC Cap",
+      "description": "ZeroTag turns the CardputerZero and its Cap CC1101 (ST25R3916) into an amiibo library and emulator.\n\n- Library of your own 540-byte backups (put them in ~/amiibo), recognised automatically, with signature check.\n- Catalogue of 954 characters: create blank, correctly signed amiibo.\n- NTAG215 emulation, verified with a Flipper Zero and a Nintendo Switch 2. What the game writes is saved to the file (autosave), signatures stay valid.\n- Optional UID rotation after each read, keeping the data.\n- Famicom-style interface in French, English and Japanese, with in-app help (Fn+H).\n\nSetup: copy your own key_retail.bin to ~/.zerotag/. After each boot the app offers to enable the Cap (it loads the SPI overlay with sudo: type your password on the keyboard, it is never stored); you can also run sudo /usr/lib/zerotag/cap-setup yourself. Amiibo thumbnails (artwork owned by Nintendo, from AmiiboAPI) are included for display only; your key_retail.bin is not.",
+      "locales": {
+        "fr": {
+          "title": "ZeroTag",
+          "summary": "Bibliothèque et émulateur d'amiibo pour le CardputerZero avec le Cap NFC"
+        },
+        "ja": {
+          "title": "ZeroTag",
+          "summary": "CardputerZero用amiiboライブラリ＆エミュレーター(NFC Cap対応)"
+        }
+      },
+      "i18n": {
+        "fr": {
+          "title": "ZeroTag",
+          "summary": "Bibliothèque et émulateur d'amiibo pour le CardputerZero avec le Cap NFC"
+        },
+        "ja": {
+          "title": "ZeroTag",
+          "summary": "CardputerZero用amiiboライブラリ＆エミュレーター(NFC Cap対応)"
+        }
+      },
+      "categories": [
+        "Emulators",
+        "Hardware & IoT"
+      ],
+      "author": {
+        "github": "sukoshi1507",
+        "display_name": "sukoshi1507"
+      },
+      "version": "0.3.4-rev1",
+      "published_at": "2026-11-19T13:51:34+00:00",
+      "updated_at": "2026-11-19T13:51:34+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/sukoshi1507/zerotag",
+      "download": {
+        "type": "deb",
+        "package": "zerotag",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerotag_0.3.4-rev1_arm64.deb",
+        "md5": "7311774080bc008d25b2ea069ae9a5ba",
+        "sha256": "7afced4fdb4a6e19ce6c8f485f1d9957e2c0a76527ac33bae5888cbbbfb7f67c",
+        "size": 15393372
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/library.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/catalogue.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/detail.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/emulation.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/settings-fr.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/settings-ja.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/library.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/catalogue.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/detail.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/emulation.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/settings-fr.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/settings-ja.png"
       ]
     },
     {
