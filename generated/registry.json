@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T22:58:14+08:00",
+  "generated_at": "2026-11-20T23:05:12+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8675,9 +8675,9 @@
         "github": "sukoshi1507",
         "display_name": "sukoshi1507"
       },
-      "version": "0.3.4-rev1",
+      "version": "0.4.0-rev1",
       "published_at": "2026-11-19T13:51:34+00:00",
-      "updated_at": "2026-11-19T13:51:34+00:00",
+      "updated_at": "2026-11-20T15:02:21+00:00",
       "review": {
         "status": "approved"
       },
@@ -8686,10 +8686,10 @@
       "download": {
         "type": "deb",
         "package": "zerotag",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerotag_0.3.4-rev1_arm64.deb",
-        "md5": "7311774080bc008d25b2ea069ae9a5ba",
-        "sha256": "7afced4fdb4a6e19ce6c8f485f1d9957e2c0a76527ac33bae5888cbbbfb7f67c",
-        "size": 15393372
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerotag_0.4.0-rev1_arm64.deb",
+        "md5": "9a09603c430fccd7b329482bf2faf2bb",
+        "sha256": "8a18483d484f3df434f7a6df4527f6e797556685ad72ac3724dae70855db99bf",
+        "size": 15421514
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g",
       "permissions": {
