@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-21T05:00:52+08:00",
+  "generated_at": "2026-11-21T05:10:30+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -5215,9 +5215,9 @@
         "github": "d4rkmen",
         "display_name": "d4rkmen"
       },
-      "version": "3.0.0-1",
+      "version": "3.0.1-1",
       "published_at": "2026-11-17T11:48:47+00:00",
-      "updated_at": "2026-11-17T11:48:47+00:00",
+      "updated_at": "2026-11-20T21:08:02+00:00",
       "review": {
         "status": "approved"
       },
@@ -5226,10 +5226,10 @@
       "download": {
         "type": "deb",
         "package": "plai",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/plai_3.0.0-1_arm64.deb",
-        "md5": "014d2542f4ee767c7d9a9abef6a97d62",
-        "sha256": "e72e7b5a39f1c234164affc2107de2e3f57842099714e8be09ed9dae9601b3ba",
-        "size": 6142080
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/plai_3.0.1-1_arm64.deb",
+        "md5": "98860321775040042154c7130aafdf3b",
+        "sha256": "c88a56f9328e500e3c3dda58f3e5071e1e9620ebd7ec4a91cc81ef59254053f4",
+        "size": 6143984
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libpng16-16t64 | libpng16-16, zlib1g, libjpeg62-turbo, libcurl4t64 | libcurl4, ca-certificates",
       "permissions": {
