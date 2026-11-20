@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T19:47:15+08:00",
+  "generated_at": "2026-11-20T19:55:58+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -5827,6 +5827,66 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rfid/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rfid/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rfid/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "d5d2a20c-8504-5006-bb9d-344dde55b630",
+      "share_code": "RBK2",
+      "title": "Rubiks 2x2x2",
+      "summary": "Interactive 3D Rubik's cube 2x2x2 with BFS (optimal) and DFS auto-solver",
+      "description": "Play with a 2x2x2 Rubik's cube rendered in 3D on the CardputerZero screen. Turn the faces with the keyboard, orbit the camera by holding the arrow keys, scramble it and let the app find the shortest solution (breadth-first search, at most 14 moves) or any solution with a depth-first search. Press S to watch the solution being played step by step, and H to hide the interface and see the cube alone. A port from my university project: https://github.com/SlendyGamer/Rubiks2x2Solver",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games",
+        "Education"
+      ],
+      "author": {
+        "display_name": "SlendyGamer",
+        "github": "SlendyGamer"
+      },
+      "version": "0.2.1-rev1",
+      "published_at": "2026-11-20T02:45:01+00:00",
+      "updated_at": "2026-11-20T02:45:01+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/SlendyGamer/rubiks2x2x2-autosolver-M5StackCardputerZero.git",
+      "download": {
+        "type": "deb",
+        "package": "rubiks2x2x2-autosolver",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/rubiks2x2x2-autosolver_0.2.1-rev1_arm64.deb",
+        "md5": "2e05441736069ab09c7745530ed8c170",
+        "sha256": "f4a9cdb3a8b5e79b319b59ae839312f5b1e029bde406e540f9dc0b4d679fc236",
+        "size": 1964732
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rubiks2x2x2-autosolver/rubiks2x2x2-autosolver_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rubiks2x2x2-autosolver/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rubiks2x2x2-autosolver/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rubiks2x2x2-autosolver/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rubiks2x2x2-autosolver/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rubiks2x2x2-autosolver/rubiks2x2x2-autosolver_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rubiks2x2x2-autosolver/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rubiks2x2x2-autosolver/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rubiks2x2x2-autosolver/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rubiks2x2x2-autosolver/screenshots/screenshot-3.png"
       ]
     },
     {
