@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T19:33:46+08:00",
+  "generated_at": "2026-11-20T19:47:15+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1595,6 +1595,98 @@
       ]
     },
     {
+      "uuid": "e21bc7e8-181d-5462-a5a2-c2252566f6ed",
+      "share_code": "CLED",
+      "title": "ChainLED",
+      "summary": "Create 8x8 LED animations and drive a real Chain Mono/RGB matrix.",
+      "description": "An 8x8 pixel-animation editor and LED-matrix simulator built for CardputerZero. Draw up to 10 frames with a keyboard-only editor (with automatic remaining-frame generation from a single seed frame), preview in RGB or Mono mode on-screen, and optionally drive a real Chain Mono / Chain RGB (M5Stack Chain series) 8x8 LED matrix live over the Grove UART port — the matrix is not required; the on-screen simulator works on its own. Send and receive animations with another CardputerZero over built-in Bluetooth (BLE). The UI switches between English, Japanese, and Simplified Chinese instantly from Settings.",
+      "locales": {
+        "zh-CN": {
+          "title": "链式LED模拟器",
+          "summary": "创建8x8 LED动画，并驱动真实的Chain Mono/RGB矩阵。",
+          "description": "为CardputerZero打造的8x8像素动画编辑器与LED矩阵模拟器。使用键盘绘制最多10帧的动画（支持从第一帧自动生成剩余帧），在屏幕上以RGB或单色模式预览，还可选择通过Grove UART实时驱动真实的Chain Mono / Chain RGB（M5Stack Chain系列）8x8 LED矩阵（非必需，仅用屏幕模拟器也能完整使用）。可通过内置蓝牙（BLE）与另一台CardputerZero互相发送/接收动画。界面支持简体中文/英语/日语三语切换，随时可在设置中更改并即时生效。"
+        },
+        "en": {
+          "title": "ChainLED",
+          "summary": "Create 8x8 LED animations and drive a real Chain Mono/RGB matrix.",
+          "description": "An 8x8 pixel-animation editor and LED-matrix simulator built for CardputerZero. Draw up to 10 frames with a keyboard-only editor (with automatic remaining-frame generation from a single seed frame), preview in RGB or Mono mode on-screen, and optionally drive a real Chain Mono / Chain RGB (M5Stack Chain series) 8x8 LED matrix live over the Grove UART port — the matrix is not required; the on-screen simulator works on its own. Send and receive animations with another CardputerZero over built-in Bluetooth (BLE). The UI switches between English, Japanese, and Simplified Chinese instantly from Settings."
+        },
+        "ja": {
+          "title": "チェーンLEDシミュレーション",
+          "summary": "8x8のLEDアニメーションを作成し、実機のChain Mono/RGBを駆動。",
+          "description": "CardputerZero向けに作られた、8x8ドットアニメーションエディタ兼LEDマトリクスシミュレータです。キーボード操作のみで最大10コマのアニメーションを作成でき（1枚目のコマから残りを自動生成する機能付き）、画面上でRGB/Monoモードのプレビュー再生ができるほか、実際のChain Mono / Chain RGB（M5Stack Chainシリーズ）8x8 LEDマトリクスにGrove UART経由でリアルタイム出力することもできます（マトリクスは必須ではなく、画面上のシミュレータだけでも全機能を使えます）。内蔵Bluetooth（BLE）で、もう1台のCardputerZeroとアニメーションを送受信できます。UIは英語・日本語・簡体字中国語を設定画面から即座に切り替え可能です。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "链式LED模拟器",
+          "summary": "创建8x8 LED动画，并驱动真实的Chain Mono/RGB矩阵。",
+          "description": "为CardputerZero打造的8x8像素动画编辑器与LED矩阵模拟器。使用键盘绘制最多10帧的动画（支持从第一帧自动生成剩余帧），在屏幕上以RGB或单色模式预览，还可选择通过Grove UART实时驱动真实的Chain Mono / Chain RGB（M5Stack Chain系列）8x8 LED矩阵（非必需，仅用屏幕模拟器也能完整使用）。可通过内置蓝牙（BLE）与另一台CardputerZero互相发送/接收动画。界面支持简体中文/英语/日语三语切换，随时可在设置中更改并即时生效。"
+        },
+        "en": {
+          "title": "ChainLED",
+          "summary": "Create 8x8 LED animations and drive a real Chain Mono/RGB matrix.",
+          "description": "An 8x8 pixel-animation editor and LED-matrix simulator built for CardputerZero. Draw up to 10 frames with a keyboard-only editor (with automatic remaining-frame generation from a single seed frame), preview in RGB or Mono mode on-screen, and optionally drive a real Chain Mono / Chain RGB (M5Stack Chain series) 8x8 LED matrix live over the Grove UART port — the matrix is not required; the on-screen simulator works on its own. Send and receive animations with another CardputerZero over built-in Bluetooth (BLE). The UI switches between English, Japanese, and Simplified Chinese instantly from Settings."
+        },
+        "ja": {
+          "title": "チェーンLEDシミュレーション",
+          "summary": "8x8のLEDアニメーションを作成し、実機のChain Mono/RGBを駆動。",
+          "description": "CardputerZero向けに作られた、8x8ドットアニメーションエディタ兼LEDマトリクスシミュレータです。キーボード操作のみで最大10コマのアニメーションを作成でき（1枚目のコマから残りを自動生成する機能付き）、画面上でRGB/Monoモードのプレビュー再生ができるほか、実際のChain Mono / Chain RGB（M5Stack Chainシリーズ）8x8 LEDマトリクスにGrove UART経由でリアルタイム出力することもできます（マトリクスは必須ではなく、画面上のシミュレータだけでも全機能を使えます）。内蔵Bluetooth（BLE）で、もう1台のCardputerZeroとアニメーションを送受信できます。UIは英語・日本語・簡体字中国語を設定画面から即座に切り替え可能です。"
+        }
+      },
+      "categories": [
+        "Creative & Office",
+        "Hardware & IoT"
+      ],
+      "author": {
+        "display_name": "yutacar",
+        "github": "yutacar"
+      },
+      "version": "1.0.0-2",
+      "published_at": "2026-11-20T02:27:47+00:00",
+      "updated_at": "2026-11-20T02:27:47+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/yutacar/chain-led-simulation",
+      "download": {
+        "type": "deb",
+        "package": "chainled",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/chainled_1.0.0-2_arm64.deb",
+        "md5": "e04b477e8275f6c8eb1f7a216a949c24",
+        "sha256": "64ca1d92f51994aa33a125bca282a53c383fee4588c7329823a6387e44a22767",
+        "size": 790548
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libsystemd0",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/chainled.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/screenshots/title.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/screenshots/editor.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/screenshots/simulator.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/screenshots/settings.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/chainled.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/screenshots/title.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/screenshots/editor.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/screenshots/simulator.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/screenshots/settings.png"
+      ]
+    },
+    {
       "uuid": "ed143abd-fdf5-5340-b6ab-5ad1c4cc9d46",
       "share_code": "DZ01",
       "title": "Coinflip",
@@ -1709,6 +1801,70 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/controller/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/controller/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/controller/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "ff4a9fe2-7251-524c-83a7-cc3ace9b0a3b",
+      "share_code": "CRAP",
+      "title": "Craps",
+      "summary": "🎲 Craps lands on the CardputerZero! Real Las Vegas rules!",
+      "description": "Feel the heat of the Vegas table, anywhere. Craps for the M5Stack CardputerZero throws 3D dice off the rubber back wall, pays every classic bet at real casino odds, and teaches you as you play with LEARN TO PLAY. Plug in HDMI and the whole table fills your TV. For amusement only: virtual credits, no real money, 18+.\r\n\r\nEnjoy!\r\n\r\nwww.SoftwareAmusements.com",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games",
+        "Lifestyle"
+      ],
+      "author": {
+        "display_name": "Software Amusements",
+        "github": "FuzzyDweeb"
+      },
+      "version": "1.0.1",
+      "published_at": "2026-11-16T14:22:10+00:00",
+      "updated_at": "2026-11-17T06:16:42+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Proprietary",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "craps",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/craps_1.0.1_arm64.deb",
+        "md5": "0cf75d18f5ee1d3293e87d83b5e16304",
+        "sha256": "310488bf11159a1b87f1b345a8f16d86f7ffcc69b8c052bd50c65451616d4071",
+        "size": 837832
+      },
+      "depends": "libc6 (>= 2.27)",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": true,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/craps_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/craps_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/craps/screenshots/screenshot-5.png"
       ]
     },
     {
@@ -1974,6 +2130,67 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-peers/screenshots/login.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-peers/screenshots/menu.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-peers/screenshots/ssh.png"
+      ]
+    },
+    {
+      "uuid": "f584d139-f0c5-5742-96e3-98741d9f5693",
+      "share_code": "MAIL",
+      "title": "Email",
+      "summary": "Read and send email from your Cardputer Zero. Works with Gmail, Outlook and more",
+      "description": "Check your inbox, read, reply, forward, and write new emails right on the Cardputer.\r\n\r\nWorks with any IMAP account. Gmail, Outlook, Yahoo, iCloud, and Fastmail settings fill in by themselves when you type your address. Gmail and most big providers need an app password.\r\n\r\nWhat it can do:\r\n- Inbox, folders, and search\\n- Reply, reply all, forward\r\n- Contact suggestions from people you've emailed\r\n- Text only or full view with pictures\r\n- Save attachments and pictures to Downloads\r\n- Open links in a simple text browser, or as a QR code for your phone\r\n- Optional voice typing that works offline\r\n\r\nPress Fn+H on any screen for the keys.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Creative & Office"
+      ],
+      "author": {
+        "display_name": "H4W9",
+        "github": "H4W9"
+      },
+      "version": "0.3.4",
+      "published_at": "2026-11-19T19:57:03+00:00",
+      "updated_at": "2026-11-19T19:57:03+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/H4W9/CardputerZero_Mail",
+      "download": {
+        "type": "deb",
+        "package": "czmail",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/czmail_0.3.4_all.deb",
+        "md5": "5c5581182fafc14e57a7e384d409603f",
+        "sha256": "39692d71f15f7585b979fe8bed671daf5e204305a304f2d99a2d809f491a90e9",
+        "size": 53630
+      },
+      "depends": "python3 (>= 3.9), python3-pil, fonts-dejavu-core",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": true,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/czmail_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-4.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/czmail_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-4.png"
       ]
     },
     {
@@ -3288,6 +3505,68 @@
       ]
     },
     {
+      "uuid": "3a1b86b5-8fe0-5597-b776-c7fd8414a81f",
+      "share_code": "M5ZT",
+      "title": "taM5CZTyping",
+      "summary": "Type, improve, and compete in a 30-second English typing challenge.",
+      "description": "Type short English or programming words in 30-second, 60-second or untimed ten-word rounds. Live WPM, accuracy, strict letter matching, automatic word advancement, miss counts and local personal bests. Optional English-only 30-second online challenges share your player name and server-verified score on public leaderboards. Offline play does not connect. A mascot inspired by the official M5Stack StackChan K151 accompanies your rounds. Optional private contact email can be managed on your phone using a short-lived QR code. This is an independent community app, not an official M5Stack application. Contact email is optional, private, unverified, and used only by the organizer for event result notifications; no automatic emails are sent.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games",
+        "Education"
+      ],
+      "author": {
+        "display_name": "yuk1-kondo",
+        "github": "yuk1-kondo"
+      },
+      "version": "0.4.2-rev1",
+      "published_at": "2026-10-24T12:34:57+00:00",
+      "updated_at": "2026-10-24T12:34:57+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/yuk1-kondo/key-dash",
+      "download": {
+        "type": "deb",
+        "package": "key-dash",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/key-dash_0.4.2-rev1_arm64.deb",
+        "md5": "e7f0e107fb759b85b29a1d38b41029eb",
+        "sha256": "e30e80a4c016a1af21c9e907a6d2ef9a240edf3fd1854858662ca23e8f8b1521",
+        "size": 2609204
+      },
+      "depends": "libc6 (>= 2.34), libstdc++6 (>= 11), libgcc-s1, libfreetype6, libpng16-16t64 | libpng16-16, libjpeg62-turbo, zlib1g, libcurl4t64 | libcurl4, ca-certificates",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/key-dash/key-dash_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/key-dash/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/key-dash/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/key-dash/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/key-dash/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/key-dash/screenshots/screenshot-4.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/key-dash/key-dash_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/key-dash/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/key-dash/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/key-dash/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/key-dash/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/key-dash/screenshots/screenshot-4.png"
+      ]
+    },
+    {
       "uuid": "ea32ac74-428f-5394-a7e7-b60f2a7b5a7c",
       "share_code": "KIRC",
       "title": "KimiRC",
@@ -3945,6 +4224,69 @@
       ]
     },
     {
+      "uuid": "018b3637-eaea-5345-b901-a2ea4221f34c",
+      "share_code": "MSH0",
+      "title": "MeshZero",
+      "summary": "A fully-featured Meshtastic client",
+      "description": "MeshZero is a fully-featured Meshtastic client for use with your Cap LoRa 1262 module. It implements all the features of meshtasticd, including remote management via the mobile app or other apps like Meshmonitor. It features a background service which keeps your meshtastic node working even when you're in order apps.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "Soliton",
+        "github": "s0liton"
+      },
+      "version": "0.2.1",
+      "published_at": "2026-11-16T03:59:17+00:00",
+      "updated_at": "2026-11-20T06:01:06+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-3.0",
+      "source_repo": "https://github.com/s0liton/MeshZero",
+      "download": {
+        "type": "deb",
+        "package": "meshzero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/meshzero_0.2.1_arm64.deb",
+        "md5": "76ba0a8855351e9f211d3aa593c04ed7",
+        "sha256": "ffb17e8cc94d654dea3adfe64295863cb2bd630431390e81a7de66dc85ba3eb6",
+        "size": 3506014
+      },
+      "depends": "libc6 (>= 2.38), libstdc++6 (>= 11), libgcc-s1, adduser, libgpiod3 (>= 2.1), libi2c0 (>= 4.0), libinput10, liborcania2.3, libsdl2-2.0-0, libssl3t64, libulfius2.7t64, libusb-1.0-0, libuv1t64, libx11-6, libxkbcommon0, libyaml-cpp0.8",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": true,
+        "camera": true,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshzero/meshzero_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshzero/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshzero/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshzero/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshzero/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshzero/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshzero/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshzero/meshzero_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshzero/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshzero/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshzero/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshzero/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshzero/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshzero/screenshots/screenshot-5.png"
+      ]
+    },
+    {
       "uuid": "1eae96ba-becd-55b9-bcb5-b2fd008015f5",
       "share_code": "MIMO",
       "title": "MiMo Talk",
@@ -4536,6 +4878,70 @@
       ]
     },
     {
+      "uuid": "61cece49-d94f-5a81-a1de-f93c36eccf23",
+      "share_code": "OCTE",
+      "title": "Octet Desktop",
+      "summary": "Octet Desktop with windows, desktop, apps, voice and more!",
+      "description": "*** Mouse and HDMI output recommended ***\r\n\r\nOctet Desktop is a windowed desktop made for the CardputerZero's 320x170 screen and its keyboard.\r\n\r\nThe desktop has your drives top left (the SD card, your home folder, USB sticks, the network), Files, and a folder for each kind of app that opens as a drawer. There are four virtual desktops, a Start menu that finds anything as you type, a clock and weather widget, notifications, screensavers, and snow on the desktop at Christmas.\r\n\r\n47 apps, including:\r\n- Office: Write, Sheets, Calendar with reminders, Tasks, Sticky Notes, and Vault for encrypted passwords\r\n- Internet: Web, Mail, Weather, Wi-Fi, FTP, File Server, and LoRa chat with GPS (with the Cap LoRa-1262)\r\n- Media: Music, Video, Photos, Paint and a NAS player\r\n- Music making: Tracker Player, Tracker Studio, a MIDI player and a sequencer\r\n- System: a real Linux terminal, Commander, Drives, Disk Doctor, Users, Backup, Task Manager and Software Update\r\n- Fun: Chess (seven levels), Solitaire, Mines, Boing and Robot City, BASIC, and a talking Assistant\r\n\r\nOctet speaks with its own new speech synthesiser: three voices, and about twice as clear as before.\r\n\r\nPlug in an HDMI screen and the desktop moves to it, bigger and sharp, with windows you can move, resize and maximize. Unplug it and it comes back to the built-in screen, which shows the time meanwhile.\r\n\r\nIt's one small program that needs nothing else installed. Everything works from the keyboard, and a USB mouse works too.\r\n\r\nFree to download. (c) 2026 Software Amusements. All rights reserved.\r\nwww.softwareamusements.com",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Creative & Office"
+      ],
+      "author": {
+        "display_name": "Software Amusements",
+        "github": "FuzzyDweeb"
+      },
+      "version": "5.3",
+      "published_at": "2026-11-13T08:02:58+00:00",
+      "updated_at": "2026-11-16T13:54:41+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Proprietary",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "octet",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/octet_5.3_arm64.deb",
+        "md5": "b9da4a28236336aec83b52ddcfe11bf5",
+        "sha256": "65befcd9111115a1c225fb335ac91a27764839a6df924d915ebfb64857e8f9ac",
+        "size": 1423414
+      },
+      "depends": "",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": true,
+        "external_display": true,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/octet_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/octet_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/octet/screenshots/screenshot-5.png"
+      ]
+    },
+    {
       "uuid": "87fac0a1-fc98-5cf7-90d5-8857c6f78b1a",
       "share_code": "OCZ0",
       "title": "OpenCartaZero",
@@ -4612,6 +5018,63 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/opencartazero/screenshots/home.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/opencartazero/screenshots/curves.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/opencartazero/screenshots/device.png"
+      ]
+    },
+    {
+      "uuid": "e2b1ce5f-8a6d-5928-a85e-a79318ca9efb",
+      "share_code": "PLAS",
+      "title": "Pixel Aces",
+      "summary": "Pixel Aces is a software-rendered pixel-3D combat flight game",
+      "description": "基于原作者@creativedash作品进行迁移开发，并针对CP0特性优化各项功能。(https://x.com/creativedash/status/2122000830895386680)\r\n驾驶战机在程序化生成的岛屿、海洋与云层上空作战，支持俯视视角和尾随视角。按住 J 键使用机炮，将敌机保持在瞄准框内完成锁定，按 K 发射制导导弹。三名敌方王牌会巡航、转向攻击你、扫射并发射导弹；敌机逼近时威胁环会收缩。危急时刻按 R 键翻滚规避导弹：导弹擦身而过时时间会变慢，此时发射导弹可以打出三连反击。命中目标会迸出火花、冒出浓烟并伴随屏幕震动；被击落的敌机拖着火焰坠入海中。战机损毁时，你会乘坐弹射火箭升空：看着座舱盖炸开，在最后一刻脱离，然后登上前来接应的救援战机，全程配有无线电语音。内置扬声器可以播放合成的引擎、机炮和爆炸音效。仅键盘操作：方向键 或 Z/C/F/X 控制飞行，Enter 加速，J 机炮，K 导弹，R 翻滚，Tab 切换视角，Esc 退出。\r\nPorted from the original work by @creativedash, all features optimized for CardputerZero (CP0).\r\n(https://x.com/creativedash/status/2122000830895386680)\r\nFly a fighter over procedural islands, sea and clouds in top-down or chase view. Hold J for the cannon, hold an enemy in the sights to lock, K to loose a guided missile. Three enemy aces wander, turn on you, fire bursts and launch missiles of their own; the threat rings close as one comes in. Roll with R at the last moment to throw a missile off: time slows as it goes by, and a missile fired in that moment becomes a three-shot counter-attack.. Hits spark, smoke and shake the screen; shot-down foes fall burning into the sea. Lose your jet and you go out through the sky on the seat rocket: watch the canopy bloom, cut loose at the last moment and drop into the cockpit of the jet coming to pick you up, radio chatter and all. Synthesized engine, gun and explosion audio through the built-in speaker. Keyboard only: arrows or Z/C/F/X to fly, Enter boost, J gun, K missile, R roll, Tab view, Esc quit.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games"
+      ],
+      "author": {
+        "display_name": "ddddd",
+        "github": "jiawud"
+      },
+      "version": "0.3.0",
+      "published_at": "2026-11-18T14:23:07+00:00",
+      "updated_at": "2026-11-18T14:23:07+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "pixelaces",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pixelaces_0.3.0_arm64.deb",
+        "md5": "c4cae79c989ce8a7f015937f343fa401",
+        "sha256": "fb2d8c3d677633ad14a91bc6313f5307dca63e994c8965a9c09a6e6d29ea75ce",
+        "size": 531152
+      },
+      "depends": "libasound2t64, libpulse0",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pixelaces/pixelaces_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pixelaces/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pixelaces/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pixelaces/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pixelaces/pixelaces_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pixelaces/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pixelaces/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pixelaces/screenshots/screenshot-2.png"
       ]
     },
     {
@@ -4737,6 +5200,129 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-lorascan/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-lorascan/screenshots/screenshot-4.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-lorascan/screenshots/screenshot-5.png"
+      ]
+    },
+    {
+      "uuid": "5dd589b0-485b-5b1e-9a59-824c6fdc382e",
+      "share_code": "SATS",
+      "title": "Sat Tracker",
+      "summary": "When the ISS and satellites fly over, where to look, and if you can see them",
+      "description": "Sat Tracker predicts satellite passes over your location for the next 24 hours: when each one rises, how high it gets, which direction it travels, and whether you can see it with your own eyes (a star marks passes where the satellite is sunlit while your sky is dark). Open a pass to see its path on a sky chart, a countdown, rise/peak/set times with compass directions, and its live position while it is overhead. The Sky page shows every tracked satellite above the horizon right now.\r\n\r\nGroups: space stations (ISS, Tiangong), the brightest satellites, amateur radio satellites and weather satellites. Orbit data comes from CelesTrak over Wi-Fi (cached, refreshed at most every 2 hours); the SGP4 orbit model is built in. Your location comes from the Cap LoRa-1262's GPS, or type it in; it is only stored on the device.\r\n\r\nKeys: F / X move, Z / C change pages, Enter opens a pass, V shows naked-eye passes only, U updates orbit data, L types your location.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Radio & Comms",
+        "Education"
+      ],
+      "author": {
+        "display_name": "Duane Sweazy",
+        "github": "duanesweazy1"
+      },
+      "version": "1.0.3",
+      "published_at": "2026-11-17T04:24:35+00:00",
+      "updated_at": "2026-11-17T04:24:35+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/duanesweazy1/pocket-sattrack",
+      "download": {
+        "type": "deb",
+        "package": "pocket-sattrack",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pocket-sattrack_1.0.3_arm64.deb",
+        "md5": "d93ba7c6e1676227e46c870992828213",
+        "sha256": "11e15080e863b04ec0e8783921ede279f8064351bd7fb666ff4251c729c2990a",
+        "size": 22456
+      },
+      "depends": "python3, python3-pil, python3-numpy, fonts-dejavu-core",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/pocket-sattrack_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/pocket-sattrack_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sattrack/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "c4eaa719-013b-5c84-a7b2-090054c6a308",
+      "share_code": "SMON",
+      "title": "SysMon",
+      "summary": "System monitor: CPU, processes, network speed, battery, level and sound meter",
+      "description": "SysMon shows what your CardputerZero is doing, across six pages.\r\n\r\nOverview: CPU with a 60-second graph, per-core load, RAM, temperature and battery.\r\nProcesses: the top 20 by CPU or memory in a scrolling list; end one from the keyboard.\r\nNetwork: interfaces, Wi-Fi signal and a live download/upload speed graph.\r\nPower: 4-minute temperature history, battery time-left / time-to-full estimate, disk and uptime.\r\nLevel: a bubble level from the built-in motion sensor.\r\nSound: a live microphone loudness meter with one-key quiet calibration.\r\n\r\nLeft/Right or Tab switch pages, 1-6 jump, ESC quits. The microphone is only used while the Sound page is open, and nothing is recorded.\r\n\r\nSource and docs: https://github.com/duanesweazy1/pocket-sysmon",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "display_name": "Duane Sweazy",
+        "github": "duanesweazy1"
+      },
+      "version": "1.1.5",
+      "published_at": "2026-11-15T01:45:16+00:00",
+      "updated_at": "2026-11-18T00:38:47+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/duanesweazy1/pocket-sysmon",
+      "download": {
+        "type": "deb",
+        "package": "pocket-sysmon",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pocket-sysmon_1.1.5_arm64.deb",
+        "md5": "18ada2f9929918699645f98f8f831825",
+        "sha256": "ead5ea5d6c21562fd72abbc59fad6ad1ff5deae03308b5a77ecb80a9d14417d2",
+        "size": 20812
+      },
+      "depends": "python3, python3-pil, python3-numpy, fonts-dejavu-core, pipewire-bin | pulseaudio-utils | alsa-utils",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": true,
+        "microphone": true,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/pocket-sysmon_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/pocket-sysmon_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-sysmon/screenshots/screenshot-5.png"
       ]
     },
     {
@@ -4881,6 +5467,66 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/04-radio.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/05-calculator.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/06-small-grid.png"
+      ]
+    },
+    {
+      "uuid": "b094a837-24c4-5d1c-bef4-8d4e9da3a7ff",
+      "share_code": "RR86",
+      "title": "r86",
+      "summary": "Fast x86 emulator, it runs windows!",
+      "description": "Fast x86 emulator written in Rust, with heavily optimized ARM64 JIT engine.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Emulators"
+      ],
+      "author": {
+        "display_name": "t",
+        "github": "tcchen2026"
+      },
+      "version": "2026.11.18+gita807f0",
+      "published_at": "2026-11-08T17:35:15+00:00",
+      "updated_at": "2026-11-18T04:55:56+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Apache-2.0",
+      "source_repo": "https://github.com/tcchen2026/r86",
+      "download": {
+        "type": "deb",
+        "package": "r86",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/r86_2026.11.18+gita807f0_arm64.deb",
+        "md5": "82da406953f83ea78b52c5c6cd8dc736",
+        "sha256": "18c33456e8859856b864d0f0952f7a3070a0bea93339636142162b57f6b58579",
+        "size": 22840652
+      },
+      "depends": "curl, coreutils",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": true,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/r86_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/r86_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-3.png"
       ]
     },
     {
@@ -6367,6 +7013,61 @@
       ]
     },
     {
+      "uuid": "738d8204-2a37-5bf9-804f-f460f25f61dd",
+      "share_code": "WFUB",
+      "title": "WiFi USB",
+      "summary": "Cyberpunk-styled  utility for M5Stack CardputerZero to manage Wi-Fi adapters",
+      "description": "CardputerZero Wi-Fi USB Manager (WiFi USB in APPLaunch) provides a native, fast 320 × 170 graphical interface designed specifically for the CardputerZero's physical TCA8418 keyboard and MIPI/ST7789 LCD (/dev/fb_lcd) so you can:\r\n\r\nAuto-detect & prioritize USB Wi-Fi adapters ([USB] vs [INT] badges, reading real USB vendor/product strings and kernel drivers via sysfs).\r\nSwitch interfaces on the fly (wlan1 ↔ wlan0) and inspect per-adapter state, active SSID, and IPv4 address.\r\nScan 2.4 GHz & 5 GHz networks on the selected adapter with live signal bars, security badges (OPN / LCK), channel info, and circular marquee scrolling for long SSIDs and adapter names.\r\nConnect with per-adapter NetworkManager profiles (<ifname>-<ssid>) so your USB adapter and built-in Wi-Fi can connect independently to the same or different networks without colliding.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "display_name": "Adriano Moraes",
+        "github": "adrianomoraes"
+      },
+      "version": "0.1.0-m5stack1",
+      "published_at": "2026-11-16T21:23:57+00:00",
+      "updated_at": "2026-11-16T21:23:57+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/adrianomoraes/CardputerZero-WiFiManager",
+      "download": {
+        "type": "deb",
+        "package": "wifi-manager",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/wifi-manager_0.1.0-m5stack1_arm64.deb",
+        "md5": "fff0e36879288ce27f454101c4f8cf27",
+        "sha256": "40ddbdc6430a870c455ecdc2c6e6e8a43505619eb16ba6f85354d7d0e18a3c22",
+        "size": 583488
+      },
+      "depends": "libc6, libstdc++6, libinput10, libxkbcommon0, libudev1, network-manager",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wifi-manager/wifi-manager_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wifi-manager/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wifi-manager/screenshots/screenshot-1.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wifi-manager/wifi-manager_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wifi-manager/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wifi-manager/screenshots/screenshot-1.png"
+      ]
+    },
+    {
       "uuid": "e8a8c23a-e93a-5022-b904-fad16509017c",
       "share_code": "WGZ0",
       "title": "WireZero",
@@ -6830,6 +7531,129 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-stocks/screenshots/main.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-stocks/screenshots/kline.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-stocks/screenshots/add.png"
+      ]
+    },
+    {
+      "uuid": "c1efd2ab-1f49-5459-9093-7a7b544aa90b",
+      "share_code": "USBI",
+      "title": "USB Imager",
+      "summary": "Burn disk images to USB drives and creates backups",
+      "description": "USBImager is a really really simple GUI application that writes compressed disk images to USB drives and creates backups. Available platforms: Windows, MacOS and Linux. Its interface is as simple as it gets, totally bloat-free",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Development"
+      ],
+      "author": {
+        "display_name": "geo-tp",
+        "github": "geo-tp"
+      },
+      "version": "1.0.10-24.gtk",
+      "published_at": "2026-11-13T22:19:23+00:00",
+      "updated_at": "2026-11-15T17:13:18+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/geo-tp/USBImager-Zero",
+      "download": {
+        "type": "deb",
+        "package": "zero-usbimager",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-usbimager_1.0.10-24.gtk_arm64.deb",
+        "md5": "f2fd1c6fb1efdfccfbb1882d2d2c87bb",
+        "sha256": "9e293f682a34cfba8990476b8659ca6da4403d1263754c171fda8662d0fcdc88",
+        "size": 286930
+      },
+      "depends": "libc6, libstdc++6, libwayland-client0, libgtk-3-0t64, libudisks2-0, udisks2, polkitd, libpolkit-agent-1-0, python3, labwc, wlr-randr",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-usbimager/zero-usbimager_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-usbimager/screenshots/screenshot-0.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-usbimager/zero-usbimager_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-usbimager/screenshots/screenshot-0.png"
+      ]
+    },
+    {
+      "uuid": "28974194-9820-5ec4-8f8d-4008b8c31c77",
+      "share_code": "ZWAT",
+      "title": "Zero Watt",
+      "summary": "Battery power monitor for Cardputer Zero with a live watt curve and history",
+      "description": "Reads BQ27220 voltage, current, capacity and temperature every second, showing signed charge/discharge watts, net average, a 60-second live curve and a zoomable full-screen history.",
+      "locales": {
+        "zh-CN": {
+          "summary": "适用于 Cardputer Zero 的电池功率监视器，带实时功率曲线和全屏历史页",
+          "description": "每秒读取 BQ27220 的电压、电流、电量和温度，显示带符号的充放电功率、净平均值、60 秒实时曲线和可缩放的全屏历史页。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "summary": "适用于 Cardputer Zero 的电池功率监视器，带实时功率曲线和全屏历史页",
+          "description": "每秒读取 BQ27220 的电压、电流、电量和温度，显示带符号的充放电功率、净平均值、60 秒实时曲线和可缩放的全屏历史页。"
+        }
+      },
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "github": "hhzzzyy",
+        "display_name": "hhzzzyy"
+      },
+      "version": "0.1.0-rev1",
+      "published_at": "2026-11-17T12:00:16+00:00",
+      "updated_at": "2026-11-17T12:00:16+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/hhzzzyy/zero-watt",
+      "download": {
+        "type": "deb",
+        "package": "zero-watt",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-watt_0.1.0-rev1_arm64.deb",
+        "md5": "6d8639880fe5ae643318e99e31a17867",
+        "sha256": "dee8d52bf67c2f29e44caa6ec97fa14ded44976b78b20e9b66916c5ec8051a40",
+        "size": 529814
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": true,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/zero-watt.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-compact-home.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-h-help.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-history.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-settings.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/zero-watt.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-compact-home.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-h-help.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-history.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-settings.png"
       ]
     },
     {
@@ -7714,6 +8538,252 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/emulation.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/settings-fr.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/settings-ja.png"
+      ]
+    },
+    {
+      "uuid": "4d339b7d-1e4a-5f12-a0b2-857b7fbd515c",
+      "share_code": "ZTRK",
+      "title": "ZeroTracker",
+      "summary": "Pocket music tracker that reads and writes M8 songs and instruments",
+      "description": "ZeroTracker is a music tracker for the CardputerZero, inspired by the M8 tracker and compatible with its song (.m8s) and instrument (.m8i) files.\n\n- Eight tracks of songs, chains, phrases, instruments and tables.\n- FM, WAV, MACRO (Braids models), HYPER and SAMPLER engines, with modulators, EQ and a sample editor that records from the microphone.\n- Mixer with chorus, delay, reverb, master limiter and oscilloscopes.\n- RENDER the song to WAV: the mix and a stem per track.\n- LIBRARY: download packs of songs, instruments and samples on the device.\n- Seven languages, themes, and a tooltip for every key (SYM + 4..8).\n\nAt the first start it creates ~/ZeroTracker with a demo song, instruments and a CC0 sample kit. APP > MANUAL shows a QR code to the getting-started guide. Not affiliated with Dirtywave.",
+      "locales": {
+        "en": {
+          "summary": "Pocket music tracker that reads and writes M8 songs and instruments"
+        },
+        "it": {
+          "summary": "Tracker musicale tascabile che legge e scrive canzoni e strumenti M8"
+        },
+        "fr": {
+          "summary": "Tracker musical de poche qui lit et écrit les morceaux et instruments M8"
+        },
+        "de": {
+          "summary": "Musiktracker im Taschenformat, der M8-Songs und -Instrumente liest und schreibt"
+        },
+        "es": {
+          "summary": "Tracker musical de bolsillo que lee y escribe canciones e instrumentos M8"
+        },
+        "ja": {
+          "summary": "M8 のソングと音色を読み書きできるポケット音楽トラッカー"
+        },
+        "zh-CN": {
+          "summary": "可读写 M8 歌曲与乐器文件的口袋音乐音序器"
+        }
+      },
+      "i18n": {
+        "en": {
+          "summary": "Pocket music tracker that reads and writes M8 songs and instruments"
+        },
+        "it": {
+          "summary": "Tracker musicale tascabile che legge e scrive canzoni e strumenti M8"
+        },
+        "fr": {
+          "summary": "Tracker musical de poche qui lit et écrit les morceaux et instruments M8"
+        },
+        "de": {
+          "summary": "Musiktracker im Taschenformat, der M8-Songs und -Instrumente liest und schreibt"
+        },
+        "es": {
+          "summary": "Tracker musical de bolsillo que lee y escribe canciones e instrumentos M8"
+        },
+        "ja": {
+          "summary": "M8 のソングと音色を読み書きできるポケット音楽トラッカー"
+        },
+        "zh-CN": {
+          "summary": "可读写 M8 歌曲与乐器文件的口袋音乐音序器"
+        }
+      },
+      "categories": [
+        "Creative & Office",
+        "Media"
+      ],
+      "author": {
+        "github": "andreahaku",
+        "display_name": "Andrea Salvatore (IU4APC)"
+      },
+      "version": "0.1.0-rev1",
+      "published_at": "2026-10-18T13:37:21+00:00",
+      "updated_at": "2026-10-18T13:37:21+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-3.0-or-later",
+      "source_repo": "https://github.com/andreahaku/zerotracker",
+      "download": {
+        "type": "deb",
+        "package": "zerotracker",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerotracker_0.1.0-rev1_arm64.deb",
+        "md5": "2546f2a2448b313bf37398bdb592eaec",
+        "sha256": "9f52618d9b374901eb1dc8ac83a436bf41be4fb9ed3016b5719b95bd945a4c34",
+        "size": 15846436
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libasound2t64, pipewire-alsa, libfmt10",
+      "permissions": {
+        "camera": false,
+        "microphone": true,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/zerotracker.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/screenshots/02-time.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/screenshots/06-mix.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/screenshots/04-instrument-fm.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/screenshots/08-osc-columns.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/screenshots/14-library.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/screenshots/01-home.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/zerotracker.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/screenshots/02-time.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/screenshots/06-mix.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/screenshots/04-instrument-fm.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/screenshots/08-osc-columns.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/screenshots/14-library.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/screenshots/01-home.png"
+      ]
+    },
+    {
+      "uuid": "b3325ce0-ff85-51da-94a4-70b39f485476",
+      "share_code": "TVBG",
+      "title": "ZeroTVBGone",
+      "summary": "Turn off almost any TV: sends every known power-off code over IR",
+      "description": "A port of TV-B-Gone, by Mitch Altman and Limor Fried, to the CardputerZero. Pick Europe or Americas / Asia, point at the TV and press ENTER: it sends about 140 power-off codes in under a minute, most popular brands first, through the built-in infrared LED. ENTER or ESC stops, hold ESC to exit.",
+      "locales": {
+        "es": {
+          "title": "ZeroTVBGone",
+          "summary": "Apaga casi cualquier tele: envía por infrarrojos todos los códigos de apagado"
+        },
+        "zh-CN": {
+          "title": "ZeroTVBGone",
+          "summary": "关闭几乎任何电视：通过红外发送所有已知的关机码"
+        },
+        "ja": {
+          "title": "ZeroTVBGone",
+          "summary": "ほぼすべてのテレビを消す：既知の電源オフコードを赤外線で送信"
+        }
+      },
+      "i18n": {
+        "es": {
+          "title": "ZeroTVBGone",
+          "summary": "Apaga casi cualquier tele: envía por infrarrojos todos los códigos de apagado"
+        },
+        "zh-CN": {
+          "title": "ZeroTVBGone",
+          "summary": "关闭几乎任何电视：通过红外发送所有已知的关机码"
+        },
+        "ja": {
+          "title": "ZeroTVBGone",
+          "summary": "ほぼすべてのテレビを消す：既知の電源オフコードを赤外線で送信"
+        }
+      },
+      "categories": [
+        "Hardware & IoT"
+      ],
+      "author": {
+        "github": "baltamir1978",
+        "display_name": "baltamir1978"
+      },
+      "version": "0.1.0-rev1",
+      "published_at": "2026-11-16T22:16:56+00:00",
+      "updated_at": "2026-11-20T07:34:41+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT AND CC-BY-SA-3.0",
+      "source_repo": "https://github.com/baltamir1978/ZeroTVBGone",
+      "download": {
+        "type": "deb",
+        "package": "zerotvbgone",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerotvbgone_0.1.0-rev1_arm64.deb",
+        "md5": "c7f8eeda026ccf814d91142f2871c6c1",
+        "sha256": "fbc4ce145d7db76f5658cec051f62f12dbc1dc66706284edeffa6f7edd3f9059",
+        "size": 975194
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotvbgone/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotvbgone/screenshots/ready.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotvbgone/screenshots/sending.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotvbgone/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotvbgone/screenshots/ready.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotvbgone/screenshots/sending.png"
+      ]
+    },
+    {
+      "uuid": "4b8fef88-d3f8-5358-85c1-17cb6f927872",
+      "share_code": "ZIRO",
+      "title": "Ziiro",
+      "summary": "Browse your amiibo catalog and local backups on Cardputer Zero.",
+      "description": "Browse amiibo by series, game franchise, or console and see their recorded in-game effects. Download the catalog once to browse offline, and add your own backups to build a local library. Artwork downloads are optional. Presenting a saved backup over NFC requires the U219 CC1101 + NFC Cap.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games"
+      ],
+      "author": {
+        "display_name": "Marcin Szydłowski",
+        "github": "marcinsz89"
+      },
+      "version": "1.0.0-1",
+      "published_at": "2026-11-19T13:10:33+00:00",
+      "updated_at": "2026-11-19T13:10:33+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/marcinsz89/ziiro",
+      "download": {
+        "type": "deb",
+        "package": "ziiro",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/ziiro_1.0.0-1_arm64.deb",
+        "md5": "05e99a286a1079e04e6309f95e72005f",
+        "sha256": "5d25cd18b48314d54f72a3563964d06b55d6e2743fc1d8f556fc1ac1642c438d",
+        "size": 4063570
+      },
+      "depends": "libc6 (>= 2.34), libstdc++6, python3 (>= 3.9), ca-certificates",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ziiro/ziiro_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ziiro/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ziiro/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ziiro/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ziiro/ziiro_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ziiro/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ziiro/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ziiro/screenshots/screenshot-2.png"
       ]
     },
     {
