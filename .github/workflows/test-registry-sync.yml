@@ -1,0 +1,17 @@
+name: Test Registry Synchronization
+
+on:
+  pull_request:
+    paths: ['scripts/**', 'tests/**', '.github/workflows/sync-registry.yml', '.github/workflows/test-registry-sync.yml']
+  push:
+    paths: ['scripts/**', 'tests/**', '.github/workflows/sync-registry.yml', '.github/workflows/test-registry-sync.yml']
+
+permissions:
+  contents: read
+
+jobs:
+  regressions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -m unittest discover -s tests -v

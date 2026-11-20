@@ -8,6 +8,7 @@ import copy
 import datetime as dt
 import json
 import re
+import subprocess
 import uuid
 from pathlib import Path
 from typing import Any
@@ -33,6 +34,16 @@ def make_uuid(pkg_name: str) -> str:
     return str(uuid.uuid5(NAMESPACE_CZ, pkg_name))
 
 
+def compare_versions(left: str, right: str) -> int:
+    for relation, value in (("gt", 1), ("lt", -1)):
+        result = subprocess.run(["dpkg", "--compare-versions", left, relation, right])
+        if result.returncode == 0:
+            return value
+        if result.returncode != 1:
+            raise ValueError(f"invalid Debian versions: {left!r}, {right!r}")
+    return 0
+
+
 def parse_packages(path: Path) -> dict[str, dict[str, str]]:
     packages: dict[str, dict[str, str]] = {}
     current: dict[str, str] = {}
@@ -42,7 +53,10 @@ def parse_packages(path: Path) -> dict[str, dict[str, str]]:
         if "Package" not in current:
             return
         pkg = current["Package"]
-        if pkg not in packages or current.get("Version", "") > packages[pkg].get("Version", ""):
+        version = current.get("Version")
+        if not re.fullmatch(r"[a-z0-9][a-z0-9.+-]+", pkg) or not version:
+            raise ValueError(f"invalid Packages entry: {pkg!r}")
+        if pkg not in packages or compare_versions(version, packages[pkg]["Version"]) > 0:
             packages[pkg] = dict(current)
 
     for raw_line in path.read_text(encoding="utf-8").splitlines():
@@ -217,11 +231,11 @@ def build_registry(packages_path: Path, meta_dir: Path, overrides_path: Path) ->
     apps = []
     for pkg_name, pkg_info in sorted(packages.items()):
         meta_path = meta_dir / f"{pkg_name}.json"
-        if not meta_path.exists():
-            continue
+        if not meta_path.is_file():
+            raise ValueError(f"missing meta.json for {pkg_name}; refusing to publish a partial registry")
         meta = read_json(meta_path, {})
-        if not isinstance(meta, dict):
-            continue
+        if not isinstance(meta, dict) or not meta:
+            raise ValueError(f"invalid meta.json for {pkg_name}; refusing to publish a partial registry")
         override = overrides.get(pkg_name, {}) if isinstance(overrides, dict) else {}
         if isinstance(override, dict):
             meta = deep_merge(meta, override)

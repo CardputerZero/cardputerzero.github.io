@@ -5,6 +5,10 @@ on:
     types: [packages-updated]
   workflow_dispatch:
 
+concurrency:
+  group: sync-store-registry
+  cancel-in-progress: false
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -16,17 +20,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch Packages index and meta.json files
-        run: |
-          # Download APT Packages index
-          curl -fsSL "https://cardputerzero.github.io/packages/dists/stable/main/binary-arm64/Packages" -o /tmp/Packages
+      - name: Checkout the exact package publication snapshot
+        uses: actions/checkout@v4
+        with:
+          repository: CardputerZero/packages
+          ref: ${{ github.event.client_payload.packages_sha || 'main' }}
+          path: packages-source
+          persist-credentials: false
+          sparse-checkout: pool/main
 
-          # Download all meta.json files by parsing package names from index
-          mkdir -p /tmp/meta
-          grep '^Package: ' /tmp/Packages | awk '{print $2}' | sort -u | while read pkg; do
-            url="https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/${pkg}/meta.json"
-            curl -fsSL "$url" -o "/tmp/meta/${pkg}.json" 2>/dev/null || true
-          done
+      - name: Fetch and verify Packages against the source snapshot
+        env:
+          EXPECTED_INDEX_SHA256: ${{ github.event.client_payload.index_sha256 || '' }}
+        run: |
+          python3 scripts/prepare_registry_inputs.py \
+            --pool packages-source/pool/main \
+            --packages /tmp/Packages \
+            --meta-dir /tmp/meta \
+            --expected-sha256 "$EXPECTED_INDEX_SHA256"
 
       - name: Generate registry JSON
         run: |
