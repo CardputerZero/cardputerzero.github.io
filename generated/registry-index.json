@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T20:05:59+08:00",
+  "generated_at": "2026-11-20T20:16:16+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4938,6 +4938,66 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/nfcqsl/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/nfcqsl/screenshots/screenshot-1.png"
+      ]
+    },
+    {
+      "uuid": "9eb9bef4-92e1-5294-ac7a-b281fc735af4",
+      "share_code": "JOYC",
+      "title": "NS-Con",
+      "summary": "Nintendo Switch手柄模拟器",
+      "description": "# NS-Con\r\n\r\nNS-Con 通过 Cardputer Zero 的 USB-C2 接口模拟 HORI Pokkén Tournament DX Pro Pad 有线手柄，产品名为 `POKKEN CONTROLLER`，VID:PID 为 `0F0D:0092`。\r\n\r\n1. 将机身左侧的 USB Host/Slave 拨码开关切到 `Slave`。\r\n2. 从 APPLaunch 打开 NS-Con，每次开机首次使用时，在 LCD 上按 Enter 启用 USB。也可在网页点击「请求启用 USB」，再回到板上按 **Enter** 确认。\r\n3. 在 Switch 上打开「手柄 → 更改握法／顺序」。 LCD 显示 `USB READY` 后，在板上同时按 `L` 和 `R`，再按 `A`。网页「虚拟键盘」也提供「L + R」和「A 确认」按钮。\r\n\r\n## 网页与宏\r\n\r\n从 APPLaunch 启动时，网页服务默认开启，端口为 8080。",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games",
+        "Emulators"
+      ],
+      "author": {
+        "display_name": "RiviaRammer",
+        "github": "RiviaRammer"
+      },
+      "version": "0.2.6",
+      "published_at": "2026-11-20T09:03:30+00:00",
+      "updated_at": "2026-11-20T09:03:30+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/RiviaRammer/CardputerZeroApps",
+      "download": {
+        "type": "deb",
+        "package": "ns-con",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/ns-con_0.2.6_arm64.deb",
+        "md5": "99e23dce31bd1c8214d43692d6261d2e",
+        "sha256": "60c425f7a6921ebf8a6b76af263888d9d0c1e48877167ceeec95e3ee5b4d9d4b",
+        "size": 21624
+      },
+      "depends": "python3 (>= 3.10), python3-pil (>= 10), fonts-dejavu-core, kmod, sudo, iproute2",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ns-con/ns-con_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ns-con/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ns-con/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ns-con/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ns-con/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ns-con/ns-con_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ns-con/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ns-con/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ns-con/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ns-con/screenshots/screenshot-3.png"
       ]
     },
     {
