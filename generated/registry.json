@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-21T02:50:11+08:00",
+  "generated_at": "2026-11-21T03:17:31+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -6128,9 +6128,9 @@
         "github": "gabe-harris-modernfold",
         "display_name": "G. Harris"
       },
-      "version": "1.1.0-rev1",
+      "version": "1.2.0-rev1",
       "published_at": "2026-11-16T23:51:03+00:00",
-      "updated_at": "2026-11-18T18:39:33+00:00",
+      "updated_at": "2026-11-20T19:14:21+00:00",
       "review": {
         "status": "approved"
       },
@@ -6139,10 +6139,10 @@
       "download": {
         "type": "deb",
         "package": "sparrow",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/sparrow_1.1.0-rev1_arm64.deb",
-        "md5": "6d00af35a89b4e9f2df64a4caec80265",
-        "sha256": "5736c2226944d93105ee799f579b39149267c95507bd7254a6766c88fd0e7855",
-        "size": 88687762
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/sparrow_1.2.0-rev1_arm64.deb",
+        "md5": "52102f682b9da6c41ca04b87b2ab4fb5",
+        "sha256": "c90d4716f9a3e359e945c945505783e35ddc9c0edd716c7cf40122c638546d06",
+        "size": 88728104
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, alsa-utils",
       "permissions": {
