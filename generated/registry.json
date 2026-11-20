@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T18:56:20+08:00",
+  "generated_at": "2026-11-20T19:03:01+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -5364,6 +5364,68 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/retro-zero/retro-zero_icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/retro-zero/screenshots/screenshot-0.png"
+      ]
+    },
+    {
+      "uuid": "40cadf4e-b2d2-5901-905c-5d53f8df9995",
+      "share_code": "RFHM",
+      "title": "RF Heatmap",
+      "summary": "CC1101 Sub-GHz thermal waterfall, RSSI scope, OOK decoder and .sub studio",
+      "description": "RF Heatmap turns your CardputerZero with Cap CC1101 into a fast, intuitive Sub-GHz spectrum lab. Sweep 315, 433, 868, 915 MHz or all ISM bands with a live peak-hold bar graph and Inferno thermal waterfall, lock onto active bursts with one key, inspect pulses with an adjustable squelch oscilloscope, decode Princeton/CAME/Linear OOK frames, and manage Flipper-compatible .sub captures.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Radio & Comms",
+        "Hardware & IoT"
+      ],
+      "author": {
+        "display_name": "Zhenya",
+        "github": "igenexxx"
+      },
+      "version": "0.1.0-1",
+      "published_at": "2026-11-19T23:21:16+00:00",
+      "updated_at": "2026-11-19T23:21:16+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/igenexxx/rf-heatmap",
+      "download": {
+        "type": "deb",
+        "package": "rf-heatmap",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/rf-heatmap_0.1.0-1_arm64.deb",
+        "md5": "2b928823f0ec81886780c996cc5835ba",
+        "sha256": "adea11f65392d6d7c27983343f40050b3076687888c517d3bd9f2b20219cf1f3",
+        "size": 764982
+      },
+      "depends": "",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/rf-heatmap-icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/heatmap.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/pulse.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/decode.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/saved.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/help.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/rf-heatmap-icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/heatmap.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/pulse.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/decode.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/saved.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/help.png"
       ]
     },
     {
