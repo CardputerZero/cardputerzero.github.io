@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-21T06:14:27+08:00",
+  "generated_at": "2026-11-21T06:43:13+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3206,11 +3206,11 @@
       ],
       "author": {
         "github": "stefexec",
-        "display_name": "Stefan"
+        "display_name": "Gurkenwerfer"
       },
       "version": "0.1.1",
       "published_at": "2026-11-19T23:54:06+00:00",
-      "updated_at": "2026-11-19T23:54:06+00:00",
+      "updated_at": "2026-11-20T22:40:50+00:00",
       "review": {
         "status": "approved"
       },
@@ -5097,11 +5097,11 @@
       ],
       "author": {
         "github": "stefexec",
-        "display_name": "Stefan"
+        "display_name": "Gurkenwerfer"
       },
       "version": "1.1.0",
       "published_at": "2026-11-19T23:58:54+00:00",
-      "updated_at": "2026-11-19T23:58:54+00:00",
+      "updated_at": "2026-11-20T22:40:50+00:00",
       "review": {
         "status": "approved"
       },
