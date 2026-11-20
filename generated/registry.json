@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T18:11:10+08:00",
+  "generated_at": "2026-11-20T18:27:16+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -7389,6 +7389,80 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogallery/screenshots/folders.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogallery/screenshots/photo.png"
+      ]
+    },
+    {
+      "uuid": "cd15f1b2-798d-5cd2-a314-10371bae26ff",
+      "share_code": "ZGOT",
+      "title": "Zerogotchi",
+      "summary": "Wi-Fi lab auditing, GPS wardriving, and MeshCore mapping for the Cardputer Zero.",
+      "description": "Use Auto WiFi Attack or Manual WiFi Attack for authorized lab auditing with a compatible USB Wi-Fi adapter. Save WPA capture results locally or submit usable hashes to OnlineHashCrack. Wardriving uses a GNSS HAT for GPS-tagged Wi-Fi and Bluetooth LE observations, with optional WiGLE or WDG Wars upload. Meshmapping listens for MeshCore advertisements through the SX1262 cap and can export mapped nodes to WDG Wars. The foreground app opens from the stock launcher. Privileged radio access requires the Cardputer user's password.",
+      "locales": {
+        "zh-CN": {
+          "title": "Zerogotchi",
+          "summary": "面向 Cardputer Zero 的 Wi-Fi 实验室审计与 GPS 无线勘测工具。"
+        },
+        "ja": {
+          "title": "Zerogotchi",
+          "summary": "Cardputer Zero 用の Wi-Fi ラボ監査と GPS 付き電波調査ツール。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "Zerogotchi",
+          "summary": "面向 Cardputer Zero 的 Wi-Fi 实验室审计与 GPS 无线勘测工具。"
+        },
+        "ja": {
+          "title": "Zerogotchi",
+          "summary": "Cardputer Zero 用の Wi-Fi ラボ監査と GPS 付き電波調査ツール。"
+        }
+      },
+      "categories": [
+        "Security",
+        "Radio & Comms"
+      ],
+      "author": {
+        "github": "unagisan69",
+        "display_name": "unagisan69"
+      },
+      "version": "0.4.18",
+      "published_at": "2026-11-18T03:55:03+00:00",
+      "updated_at": "2026-11-18T16:57:41+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/unagisan69/Zerogotchi",
+      "download": {
+        "type": "deb",
+        "package": "zerogotchi",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerogotchi_0.4.18_all.deb",
+        "md5": "5dd1d1465ac761c2c6140ad79c9516ce",
+        "sha256": "48de8a7d6008e1bf4a9f9bc82672f8154e36af8fe4536f347be9a6562b49e8c6",
+        "size": 641620
+      },
+      "depends": "python3, python3-pil, fonts-dejavu-core, network-manager, bluez, python3-libgpiod (>= 2.0), python3-spidev, python3-cryptography, sudo, iw, iproute2, tcpdump, aircrack-ng, hcxtools, curl, ca-certificates",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogotchi/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogotchi/screenshots/auto-acidburn.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogotchi/screenshots/wardriving-zero-cool.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogotchi/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogotchi/screenshots/auto-acidburn.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogotchi/screenshots/wardriving-zero-cool.png"
       ]
     },
     {
