@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T20:16:16+08:00",
+  "generated_at": "2026-11-20T21:10:00+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8927,9 +8927,9 @@
         "display_name": "Marcin Szydłowski",
         "github": "marcinsz89"
       },
-      "version": "1.0.0-1",
+      "version": "1.1.0-1",
       "published_at": "2026-11-19T13:10:33+00:00",
-      "updated_at": "2026-11-19T13:10:33+00:00",
+      "updated_at": "2026-11-20T13:06:52+00:00",
       "review": {
         "status": "approved"
       },
@@ -8938,10 +8938,10 @@
       "download": {
         "type": "deb",
         "package": "ziiro",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/ziiro_1.0.0-1_arm64.deb",
-        "md5": "05e99a286a1079e04e6309f95e72005f",
-        "sha256": "5d25cd18b48314d54f72a3563964d06b55d6e2743fc1d8f556fc1ac1642c438d",
-        "size": 4063570
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/ziiro_1.1.0-1_arm64.deb",
+        "md5": "35c75d36e902744e69f4f8f0a9d349a2",
+        "sha256": "e3180341540bf1dfbc67ce4db18dab6b3f5e2ec6cb8c7b389c1125020fa66a63",
+        "size": 4131462
       },
       "depends": "libc6 (>= 2.34), libstdc++6, python3 (>= 3.9), ca-certificates",
       "permissions": {
