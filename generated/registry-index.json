@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T16:03:40+08:00",
+  "generated_at": "2026-11-20T16:58:16+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -7923,6 +7923,63 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotvbgone/screenshots/ready.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotvbgone/screenshots/sending.png"
+      ]
+    },
+    {
+      "uuid": "4b8fef88-d3f8-5358-85c1-17cb6f927872",
+      "share_code": "ZIRO",
+      "title": "Ziiro",
+      "summary": "Browse your amiibo catalog and local backups on Cardputer Zero.",
+      "description": "Browse amiibo by series, game franchise, or console and see their recorded in-game effects. Download the catalog once to browse offline, and add your own backups to build a local library. Artwork downloads are optional. Presenting a saved backup over NFC requires the U219 CC1101 + NFC Cap.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games"
+      ],
+      "author": {
+        "display_name": "Marcin Szydłowski",
+        "github": "marcinsz89"
+      },
+      "version": "1.0.0-1",
+      "published_at": "2026-11-19T13:10:33+00:00",
+      "updated_at": "2026-11-19T13:10:33+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/marcinsz89/ziiro",
+      "download": {
+        "type": "deb",
+        "package": "ziiro",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/ziiro_1.0.0-1_arm64.deb",
+        "md5": "05e99a286a1079e04e6309f95e72005f",
+        "sha256": "5d25cd18b48314d54f72a3563964d06b55d6e2743fc1d8f556fc1ac1642c438d",
+        "size": 4063570
+      },
+      "depends": "libc6 (>= 2.34), libstdc++6, python3 (>= 3.9), ca-certificates",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ziiro/ziiro_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ziiro/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ziiro/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ziiro/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ziiro/ziiro_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ziiro/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ziiro/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ziiro/screenshots/screenshot-2.png"
       ]
     },
     {
