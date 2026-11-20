@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T20:00:58+08:00",
+  "generated_at": "2026-11-20T20:05:59+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -618,6 +618,69 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/battleship/screenshots/placement.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/battleship/screenshots/battle.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/battleship/screenshots/network.png"
+      ]
+    },
+    {
+      "uuid": "6bedf8d4-89c3-5dca-a3ff-55190e13f8b0",
+      "share_code": "16DX",
+      "title": "BitMap16 DX",
+      "summary": "A tiny pixel art sketchbook",
+      "description": "BitMap16 DX is a tiny pixel-art sketchbook for Cardputer ADV and Cardputer Zero, channeling the vibe of 2000s handheld game consoles. \r\n\r\nCreate pixel art on 8×8, 16×16, or 32×32 canvases. Draw, erase, and fill, with zoom, a pixel-accurate minimap, and 16-step undo and redo. Choose built-in palettes, swap colors, or browse the daily Lospec feed and import by name or URL. Preview your sketches in a slideshow, and export PNGs at 128×128 or their original size.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Creative & Office"
+      ],
+      "author": {
+        "display_name": "beepbot",
+        "github": "bradmcnally"
+      },
+      "version": "0.9.0-1",
+      "published_at": "2026-11-20T06:09:15+00:00",
+      "updated_at": "2026-11-20T06:09:15+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/bradmcnally/bitmap16dx/",
+      "download": {
+        "type": "deb",
+        "package": "bitmap16dx",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/bitmap16dx_0.9.0-1_arm64.deb",
+        "md5": "af41573f8e1117a2eee5f8ae3015e505",
+        "sha256": "c4bd9cf4453c0740d28c66fef6bd568fdaa5dd840cad3c38c96a5885c612b84a",
+        "size": 218864
+      },
+      "depends": "libsdl2-2.0-0, libcurl4 | libcurl4t64, ca-certificates",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": true,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/bitmap16dx/bitmap16dx_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/bitmap16dx/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/bitmap16dx/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/bitmap16dx/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/bitmap16dx/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/bitmap16dx/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/bitmap16dx/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/bitmap16dx/bitmap16dx_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/bitmap16dx/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/bitmap16dx/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/bitmap16dx/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/bitmap16dx/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/bitmap16dx/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/bitmap16dx/screenshots/screenshot-5.png"
       ]
     },
     {
