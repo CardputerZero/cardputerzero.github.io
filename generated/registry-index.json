@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T13:48:43+08:00",
+  "generated_at": "2026-11-20T14:06:09+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2279,7 +2279,7 @@
         "github": "journey-ad",
         "display_name": "journey-ad"
       },
-      "version": "0.31.1",
+      "version": "0.31.6",
       "published_at": "2026-11-18T09:42:57+00:00",
       "updated_at": "2026-11-20T05:33:44+00:00",
       "review": {
@@ -2290,10 +2290,10 @@
       "download": {
         "type": "deb",
         "package": "flight-club",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/flight-club_0.31.1_arm64.deb",
-        "md5": "83b10c01e638cb59a5085734bd7b40f8",
-        "sha256": "884d558c137cf5da57dd45c1b4a6b7f39103787caabb3791f6371f2808122581",
-        "size": 844568
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/flight-club_0.31.6_arm64.deb",
+        "md5": "a9272afc55a7dd551868cb4e8608cef0",
+        "sha256": "35d49ef549f8a67105fceadfadcb79df29887eafc92966e6c175da2e66cec1a9",
+        "size": 844868
       },
       "depends": "pulseaudio-utils",
       "permissions": {
@@ -3850,9 +3850,9 @@
         "display_name": "Soliton",
         "github": "s0liton"
       },
-      "version": "0.2.0",
+      "version": "0.2.1",
       "published_at": "2026-11-16T03:59:17+00:00",
-      "updated_at": "2026-11-17T22:43:00+00:00",
+      "updated_at": "2026-11-20T06:01:06+00:00",
       "review": {
         "status": "approved"
       },
@@ -3861,10 +3861,10 @@
       "download": {
         "type": "deb",
         "package": "meshzero",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/meshzero_0.2.0_arm64.deb",
-        "md5": "75aa06692ee9683af2152c93dcbada0d",
-        "sha256": "9464d6a9c0cfc6066a58ba8cc1dd53b6904a49f8f72c41a7070be0ad68a91a2d",
-        "size": 3448034
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/meshzero_0.2.1_arm64.deb",
+        "md5": "76ba0a8855351e9f211d3aa593c04ed7",
+        "sha256": "ffb17e8cc94d654dea3adfe64295863cb2bd630431390e81a7de66dc85ba3eb6",
+        "size": 3506014
       },
       "depends": "libc6 (>= 2.38), libstdc++6 (>= 11), libgcc-s1, adduser, libgpiod3 (>= 2.1), libi2c0 (>= 4.0), libinput10, liborcania2.3, libsdl2-2.0-0, libssl3t64, libulfius2.7t64, libusb-1.0-0, libuv1t64, libx11-6, libxkbcommon0, libyaml-cpp0.8",
       "permissions": {
