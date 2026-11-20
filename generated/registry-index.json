@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T14:06:09+08:00",
+  "generated_at": "2026-11-20T14:51:40+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -5326,9 +5326,9 @@
         "display_name": "hieuha",
         "github": "hieuha"
       },
-      "version": "0.5.1-rev1",
+      "version": "0.6.0-rev1",
       "published_at": "2026-11-19T04:15:47+00:00",
-      "updated_at": "2026-11-19T17:34:19+00:00",
+      "updated_at": "2026-11-20T06:47:30+00:00",
       "review": {
         "status": "approved"
       },
@@ -5337,10 +5337,10 @@
       "download": {
         "type": "deb",
         "package": "sondechase",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/sondechase_0.5.1-rev1_arm64.deb",
-        "md5": "fee43d9c0c8a3a89734d657b4fce7bdb",
-        "sha256": "b593d6b694f5835595949007bc1c04fef3e9234196ea6eb69bcb7fbadebefa1f",
-        "size": 948948
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/sondechase_0.6.0-rev1_arm64.deb",
+        "md5": "953850b6a52e9c0bf5300503f3f3cf0f",
+        "sha256": "b8a313d3cda37d9b87d60b30308e4b58b4b5c113e66f4b81ff38213243c376d4",
+        "size": 955490
       },
       "depends": "libc6, curl, librtlsdr0 (>= 2.0.2)",
       "permissions": {
