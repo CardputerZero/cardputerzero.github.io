@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T14:51:40+08:00",
+  "generated_at": "2026-11-20T15:38:25+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -7254,8 +7254,34 @@
       "title": "ZeroGallery",
       "summary": "Browse folders and view photos and videos with the arrow keys",
       "description": "Pick a folder and flip through its photos and videos full screen with the arrow keys (F/X/Z/C work with or without Fn). JPEG photos open natively with EXIF rotation; every other image format, animated GIFs and all videos are decoded by the system ffmpeg, with sound through PipeWire. In a video the arrows skip 10 or 30 seconds back and forth. Turn the device and the photo or video turns with it. ESC goes back, hold ESC to exit.",
-      "locales": {},
-      "i18n": {},
+      "locales": {
+        "es": {
+          "title": "ZeroGallery",
+          "summary": "Recorre carpetas y mira fotos y vídeos con las flechas"
+        },
+        "zh-CN": {
+          "title": "ZeroGallery",
+          "summary": "浏览文件夹，用方向键查看照片和视频"
+        },
+        "ja": {
+          "title": "ZeroGallery",
+          "summary": "フォルダを開き、矢印キーで写真と動画を見る"
+        }
+      },
+      "i18n": {
+        "es": {
+          "title": "ZeroGallery",
+          "summary": "Recorre carpetas y mira fotos y vídeos con las flechas"
+        },
+        "zh-CN": {
+          "title": "ZeroGallery",
+          "summary": "浏览文件夹，用方向键查看照片和视频"
+        },
+        "ja": {
+          "title": "ZeroGallery",
+          "summary": "フォルダを開き、矢印キーで写真と動画を見る"
+        }
+      },
       "categories": [
         "Media"
       ],
@@ -7265,7 +7291,7 @@
       },
       "version": "0.3.0-rev1",
       "published_at": "2026-11-16T22:16:28+00:00",
-      "updated_at": "2026-11-16T22:16:28+00:00",
+      "updated_at": "2026-11-20T07:34:20+00:00",
       "review": {
         "status": "approved"
       },
@@ -7426,9 +7452,9 @@
         "display_name": "Weiming Feng",
         "github": "nullbeing"
       },
-      "version": "0.3.8",
+      "version": "0.3.9",
       "published_at": "2026-11-10T02:37:56+00:00",
-      "updated_at": "2026-11-17T06:23:04+00:00",
+      "updated_at": "2026-11-20T07:19:06+00:00",
       "review": {
         "status": "approved"
       },
@@ -7437,12 +7463,12 @@
       "download": {
         "type": "deb",
         "package": "zerosdr",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosdr_0.3.8_arm64.deb",
-        "md5": "7d82052f75915d3980aff99012867790",
-        "sha256": "13f1182b9141c4948767a1244a53bc5430906a32668db61a550dafbb047bfc9d",
-        "size": 420372
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosdr_0.3.9_arm64.deb",
+        "md5": "17038466857aba0e1ae33f863e89108f",
+        "sha256": "f444b644e2543d51d060e2142ed3fea960b9643beaef57104d4d1c6e44dd9494",
+        "size": 506068
       },
-      "depends": "libasound2 (>= 1.0.18), libc6 (>= 2.34), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 4.0), libncurses6 (>= 6), libpulse0 (>= 0.99.1), librtlsdr0 (>= 0.6.0), libstdc++6 (>= 11), libtinfo6 (>= 6), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.2.6), libasound2-plugins",
+      "depends": "libasound2 (>= 1.0.18), libc6 (>= 2.34), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 4.0), libncurses6 (>= 6), libpulse0 (>= 0.99.1), librtlsdr0 (>= 0.6.0), libstdc++6 (>= 12), libtinfo6 (>= 6), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.2.6), libasound2-plugins, curl",
       "permissions": {
         "additional_hardware": true,
         "background_service": false,
@@ -7822,8 +7848,34 @@
       "title": "ZeroTVBGone",
       "summary": "Turn off almost any TV: sends every known power-off code over IR",
       "description": "A port of TV-B-Gone, by Mitch Altman and Limor Fried, to the CardputerZero. Pick Europe or Americas / Asia, point at the TV and press ENTER: it sends about 140 power-off codes in under a minute, most popular brands first, through the built-in infrared LED. ENTER or ESC stops, hold ESC to exit.",
-      "locales": {},
-      "i18n": {},
+      "locales": {
+        "es": {
+          "title": "ZeroTVBGone",
+          "summary": "Apaga casi cualquier tele: envía por infrarrojos todos los códigos de apagado"
+        },
+        "zh-CN": {
+          "title": "ZeroTVBGone",
+          "summary": "关闭几乎任何电视：通过红外发送所有已知的关机码"
+        },
+        "ja": {
+          "title": "ZeroTVBGone",
+          "summary": "ほぼすべてのテレビを消す：既知の電源オフコードを赤外線で送信"
+        }
+      },
+      "i18n": {
+        "es": {
+          "title": "ZeroTVBGone",
+          "summary": "Apaga casi cualquier tele: envía por infrarrojos todos los códigos de apagado"
+        },
+        "zh-CN": {
+          "title": "ZeroTVBGone",
+          "summary": "关闭几乎任何电视：通过红外发送所有已知的关机码"
+        },
+        "ja": {
+          "title": "ZeroTVBGone",
+          "summary": "ほぼすべてのテレビを消す：既知の電源オフコードを赤外線で送信"
+        }
+      },
       "categories": [
         "Hardware & IoT"
       ],
@@ -7833,7 +7885,7 @@
       },
       "version": "0.1.0-rev1",
       "published_at": "2026-11-16T22:16:56+00:00",
-      "updated_at": "2026-11-16T22:16:56+00:00",
+      "updated_at": "2026-11-20T07:34:41+00:00",
       "review": {
         "status": "approved"
       },
