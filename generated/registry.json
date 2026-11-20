@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T21:10:00+08:00",
+  "generated_at": "2026-11-20T22:18:55+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1197,7 +1197,7 @@
       "share_code": "CZTV",
       "title": "Cardputer TV",
       "summary": "Cardputer Zero 轻量视频播放器，支持自定义源及帧率设置；订阅兼容性仅做有限样本测试。",
-      "description": "Cardputer TV 是面向 M5Stack Cardputer Zero 的轻量视频播放器，适配设备自带 320×170 屏幕、键盘和扬声器。\r\n\r\n【功能】\r\n• 自定义播放源：支持 M3U/M3U8 频道列表、频道 JSON、兼容的 HTTP(S)/HLS 媒体地址，以及部分 TVBox 配置中的直播列表。\r\n• 单路播放：切换频道时先结束旧播放，再加载新频道；等待时保留最后一帧并显示“正在加载”，不进行双路预加载。\r\n• 音量控制：播放中每次增减 5%，屏幕显示实际音量百分比。\r\n• 帧率设置：20 / 30 / 60 帧可选，默认 20 帧；保存后下次开始播放生效，重启应用后保留。\r\n\r\n【订阅源兼容性说明｜测试范围有限】\r\n订阅源尚未经过充分测试。目前仅做了有限样本验证，真机实播以少量直播频道为主，尚未对各家订阅服务、不同格式变体和 TVBox 配置开展广泛兼容性测试。不能保证所有订阅源都能解析、列出频道或正常播放；部分源可能需要特定请求头、访问条件或不受支持的解析方式。请以自己的实际测试结果为准。\r\n\r\n【从电脑导入源文件】\r\n可先在电脑上编辑 UTF-8 的 sources.json，再通过 SFTP 或 ADB 传到运行应用用户的 ~/.config/cardputer-zero-iptv/sources.json，重新打开应用读取。请先退出应用并备份原配置；覆盖文件会替换整个源列表，不会自动合并。~ 指应用用户的主目录，实际用户名以设备为准，配置文件建议权限 600。\r\n也可以上传 M3U 频道列表或频道 JSON，在 Tab 源管理中按 N 新增，将 URL 填为设备上的绝对路径，保存后选中该源并回车切换。文件内容修改后按 R 刷新。含私人 Token 的配置仅保存在自己的设备，请勿公开。\r\n\r\n【按键】\r\n频道列表：F/X 或上下选择频道，长按可加速连续选台，Z/C 或左右翻页，回车播放，Tab 管理源，S 打开播放设置。\r\n播放中：F/X 切换频道，Z/C 调整音量，Esc 停止并返回列表。\r\n播放设置：F/X 或方向键选择帧率，回车保存，Esc 取消。\r\n\r\n【片源与隐私】\r\n本应用不附带私人订阅、付费账号或商业频道聚合源，仅提供 Big Buck Bunny 公开测试流。请自行添加有权访问和播放的源。第三方源的内容、可用性和访问条件由其提供者决定；播放时会连接所选源及媒体服务器并消耗网络流量。源配置和帧率偏好保存在设备当前用户目录，升级不会覆盖已有源配置。\r\n不支持 DRM 加密节目、加密订阅解密或需要 jar/spider 执行的点播接口。\r\n\r\n【运行要求与性能】\r\n适用于 Cardputer Zero 的原生 Linux/APPLaunch 环境，使用内置屏幕和音频输出，需要读取设备键盘和写入 framebuffer 的权限。依赖 Python 3、Pillow、python3-evdev、FFmpeg 和 pulseaudio-utils，由软件包声明；网络播放需要联网。无需相机、麦克风、额外硬件或应用专属后台服务。\r\n当前使用软件解码。设置帧率是视频输出目标，不保证每个源都达到该帧率，也不代表 LCD 的物理刷新率；高分辨率、高复杂度编码或网络波动会影响连续性。高于片源原始帧率时包含重复帧。\r\n安装脚本仅将本应用启动脚本设为 0755，不修改系统网络或显示模式。\r\n\r\n【许可证】\r\n应用代码尚未声明标准开源许可证（NOASSERTION），不新增开源授权。随包文泉驿微米黑字体按 Apache-2.0 分发，许可与署名文件位于 fonts 目录。\r\n\r\n【版本 0.1.22】\r\n频道列表支持长按 F/X 快速连续选台。改善嵌套明文订阅列表识别，保留同名频道和分组；订阅兼容性仍只做有限样本测试。\r\n\r\n【版本 0.1.20】\r\n将设备启动器菜单名称统一为 Cardputer TV，与商店展示名一致；内部包名仍为 cardputer-zero-iptv，升级保留已有源配置和帧率偏好。继续提供 20 / 30 / 60 帧设置、音量百分比、单路切台及加载提示。",
+      "description": "Cardputer TV 是面向 M5Stack Cardputer Zero 的原生 C++20 轻量直播与视频播放器，适配 320×170 屏幕、机身键盘、音频输出及外接 HDMI 大屏。\r\n\r\n【核心功能】\r\n• 自定义播放源：支持 M3U/M3U8、频道 JSON（含注释）、HTTP(S)/HLS 及部分 TVBox 明文直播列表；HLS 弱网时可自动切换低码率。\r\n• 原生单路播放：内置屏幕直调 FFmpeg C API（libav*）与 PulseAudio（libpulse），以音频为主时钟同步画音并支持欠载保护；切台保留最后一帧并提示状态，不双路预加载。\r\n• 音量与偏好记忆：播放中每次增减 5%（0–100%），左下角带音量进度条；退出自动恢复进入前的系统音量，升级保留源和设置。\r\n• 播放设置：20 / 30 / 60 fps、内置屏幕 / HDMI 大屏（mpv wlshm）、内屏 H.264 硬解开关（失败自动回退软解）、中/英文实时切换。\r\n\r\n【快速按键】\r\n• 列表：F/X（或上下/K/J）选台（长按加速），Z/C（或左右）翻页，回车播放，Tab 源管理（N 新增 / E 编辑 / 退格删 / R 刷新），S 设置，Esc/Q 退出。\r\n• 播放中：F/X 切台，Z/C 调音量，Esc 停止返回。\r\n\r\n【源导入与说明】\r\n• 可用 SFTP/ADB 将 UTF-8 格式的 sources.json 传至 ~/.config/cardputer-zero-iptv/sources.json（建议权限 600，覆盖前请先退出应用并备份），或在源管理按 N 新增本地路径并按 R 刷新。\r\n• 仅自带 Big Buck Bunny 公开测试流，不附带私人/商业源；不支持 DRM 解密及 jar/spider 点播脚本。第三方源与复杂订阅仅做有限样本验证，兼容性与流畅度以实际环境为准。\r\n\r\n【运行与许可】\r\n依赖 libav* / libpulse0 / libcurl4t64 / libidn2-0 / libfreetype6 / libpng16-16t64 / libevdev2（HDMI 可选 mpv、wlr-randr）；需读取键盘与写 framebuffer 权限，安装脚本仅设为 0755。源码未声明开源协议（NOASSERTION），内置文泉驿微米黑字体遵循 Apache-2.0。\r\n\r\n【版本 0.3.0 更新】\r\n• 全栈重构为原生 C++20 + LVGL v9 + FFmpeg/PulseAudio 单二进制应用（运行约 39 MiB 内存）。\r\n• 全新「深曜石橙影」界面与 256×256 微拟物桌面图标，OSD 新增音量进度条，长分组自动单行省略，长频道名跑马灯。\r\n• 新增内屏 V4L2 硬解开关与回退、HDMI 输出、中英文实时切换、退出恢复系统音量，并修复虚拟键盘重复触发导致的选台跳跃问题。\r\n\r\n---\r\n\r\nCardputer TV is a lightweight native C++20 live stream and video player for M5Stack Cardputer Zero, built for the 320×170 panel, keypad, speaker, and external HDMI output.\r\n\r\n[Features]\r\n• Custom Sources: Supports M3U/M3U8, JSON channel lists (with comments), HTTP(S)/HLS streams, and select plaintext TVBox live lists, with automatic lower-bitrate HLS fallback on slow networks.\r\n• Native Single-Stream Playback: Built-in panel playback directly uses FFmpeg C API (libav*) and PulseAudio (libpulse) with an audio-master A/V clock and underrun freeze protection. Channel zapping stops the old stream first and keeps the last frame cleanly without dual-stream preloading.\r\n• Volume & Persistence: Adjusts volume in 5% steps (0–100%) with a bottom progress OSD and automatically restores your pre-launch system volume on exit. Existing sources and preferences are preserved across upgrades.\r\n• Settings (press S): 20 / 30 / 60 fps target, Built-in Screen / HDMI (via mpv wlshm), Hardware H.264 Decode toggle (auto-falls back to software if unavailable), and instant 中文 / English switching.\r\n\r\n[Controls]\r\n• List: F/X (or Up/Down/K/J) move (hold to accelerate), Z/C (or Left/Right) page, Enter/Space play, Tab Sources (N add / E edit / Bksp delete / R refresh), S Settings, Esc/Q quit.\r\n• Playback: F/X zap channel, Z/C adjust volume, Esc stop and return.\r\n\r\n[Sources & Notes]\r\n• Import custom lists by copying UTF-8 sources.json to ~/.config/cardputer-zero-iptv/sources.json (chmod 600 recommended; close the app and back up first), or add local list paths in the Sources screen.\r\n• Ships only with the public Big Buck Bunny demo stream—no private or paid playlists included. DRM streams and jar/spider VOD scripts are not supported. Third-party playlists and TVBox variants have limited sample coverage.\r\n\r\n[Requirements & License]\r\nRequires framebuffer/evdev permissions and PulseAudio/PipeWire-Pulse; dependencies are declared in the .deb package (optional mpv and wlr-randr for HDMI). Post-install script only sets 0755 permissions. Source code carries NOASSERTION; bundled WenQuanYi Micro Hei font is licensed under Apache-2.0 (see fonts/).\r\n\r\n[What's New in 0.3.0]\r\n• Rewritten from Python into native C++20 + LVGL v9 + FFmpeg C API + libpulse (~39 MiB RSS).\r\n• New \"Obsidian Amber\" rounded-card UI, redesigned 256×256 icon, volume progress OSD, single-line group truncation, and marquee titles.\r\n• Added V4L2 H.264 hardware decode option, HDMI mode, instant Chinese/English UI toggle, automatic system volume restore, and fixed duplicate input event skipping on keypad zapping.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -1207,9 +1207,9 @@
         "display_name": "olp5735-sys",
         "github": "olp5735-sys"
       },
-      "version": "0.1.36",
+      "version": "0.3.0",
       "published_at": "2026-11-08T14:57:41+00:00",
-      "updated_at": "2026-11-15T09:40:39+00:00",
+      "updated_at": "2026-11-20T14:13:08+00:00",
       "review": {
         "status": "approved"
       },
@@ -1218,12 +1218,12 @@
       "download": {
         "type": "deb",
         "package": "cardputer-zero-iptv",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-zero-iptv_0.1.36_arm64.deb",
-        "md5": "27354032ccb7a032b1e840373f3184d4",
-        "sha256": "499ea55ea81d613f0962948fb803559fff499de595d9006cdb812b954bc43568",
-        "size": 1638196
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-zero-iptv_0.3.0_arm64.deb",
+        "md5": "22199722c9294a90c5c6b7834b05c376",
+        "sha256": "dd9c5657bcba6e65cecb3504ecb339dc6f04b7ad919390078025cb6c4bdce146",
+        "size": 2009220
       },
-      "depends": "python3, python3-pil, python3-evdev, ffmpeg, pulseaudio-utils",
+      "depends": "libavformat61, libavcodec61, libswscale8, libswresample5, libavutil59, libpulse0, libcurl4t64, libidn2-0, libfreetype6, libpng16-16t64, libevdev2",
       "permissions": {
         "additional_hardware": false,
         "background_service": false,
