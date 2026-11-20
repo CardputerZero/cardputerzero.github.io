@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T18:07:11+08:00",
+  "generated_at": "2026-11-20T18:11:10+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -5585,6 +5585,66 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sudokuzero/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sudokuzero/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sudokuzero/screenshots/screenshot-2.png"
+      ]
+    },
+    {
+      "uuid": "58f7e86e-e109-57ad-afe8-34f14ea17833",
+      "share_code": "TLPZ",
+      "title": "Tailputer Zero",
+      "summary": "Join your tailnet with one tap, just like the phone app",
+      "description": "Tailputer Zero gives the CardputerZero a single, big Connect/Disconnect button for Tailscale -- the same one-tap experience as the Android/iOS Tailscale app. When Tailscale needs you to sign in, it renders the login link as a QR code so you can approve it from your phone's camera instead of fighting the device's keyboard. Shows your tailnet IP and peer count once connected, plus a Devices page listing every tailnet peer with online status, and a Network Check page for diagnosing connectivity. Requires Tailscale to already be installed and a small helper script authorized via SSH first -- see the project README for the one-time setup (the app itself never runs as root).",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "ASHPAS",
+        "github": "ashpas"
+      },
+      "version": "1.0.0-rev1",
+      "published_at": "2026-11-19T15:16:17+00:00",
+      "updated_at": "2026-11-19T15:16:17+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/ashpas/tailputer-zero",
+      "download": {
+        "type": "deb",
+        "package": "tailputerzero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/tailputerzero_1.0.0-rev1_arm64.deb",
+        "md5": "02de37daf8be3785e1e9223abf08a6b1",
+        "sha256": "41c2d539e7397f2e44f5ba1c3cac5c0f6a8699b1710301fe562042df1f48cf95",
+        "size": 2018458
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailputerzero/tailputerzero_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailputerzero/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailputerzero/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailputerzero/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailputerzero/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailputerzero/tailputerzero_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailputerzero/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailputerzero/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailputerzero/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailputerzero/screenshots/screenshot-3.png"
       ]
     },
     {
