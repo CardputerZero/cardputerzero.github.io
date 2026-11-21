@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-22T02:36:20+08:00",
+  "generated_at": "2026-11-22T02:40:33+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4147,9 +4147,9 @@
         "github": "unagisan69",
         "display_name": "unagisan69"
       },
-      "version": "0.1.26",
+      "version": "0.1.27",
       "published_at": "2026-11-19T07:43:18+00:00",
-      "updated_at": "2026-11-21T18:34:01+00:00",
+      "updated_at": "2026-11-21T18:38:17+00:00",
       "review": {
         "status": "approved"
       },
@@ -4158,10 +4158,10 @@
       "download": {
         "type": "deb",
         "package": "meshcore-zero",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/meshcore-zero_0.1.26_arm64.deb",
-        "md5": "458675d2f5c07159da3764592ac66118",
-        "sha256": "8d3f8a3b4a0572dc468d11539994ea66cc0ce87e2f0052aec0854bc356076796",
-        "size": 14847990
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/meshcore-zero_0.1.27_arm64.deb",
+        "md5": "92aae58f05e9a8378e1f03a6fdb1bf54",
+        "sha256": "e66855c13db8c24ae1bfcad8362fa38228f50eea37458f916d778c86d6c32cb9",
+        "size": 14848128
       },
       "depends": "python3 (>= 3.13), python3 (<< 3.14), python3-pil, python3-numpy, python3-spidev (>= 3.6), fonts-dejavu-core, pulseaudio-utils",
       "permissions": {
