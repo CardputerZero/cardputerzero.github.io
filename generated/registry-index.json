@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-21T16:46:46+08:00",
+  "generated_at": "2026-11-21T16:56:25+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3349,9 +3349,9 @@
         "github": "unagisan69",
         "display_name": "unagisan69"
       },
-      "version": "0.7.2",
+      "version": "0.7.3",
       "published_at": "2026-11-18T18:40:23+00:00",
-      "updated_at": "2026-11-21T08:44:31+00:00",
+      "updated_at": "2026-11-21T08:53:33+00:00",
       "review": {
         "status": "approved"
       },
@@ -3360,10 +3360,10 @@
       "download": {
         "type": "deb",
         "package": "icomzero",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/icomzero_0.7.2_arm64.deb",
-        "md5": "f21d509dbf3ac41fcc007201a2241ea8",
-        "sha256": "21376a7d67e48188ffdac2ac2198650d974b31d234cfe3237ab3a33258250b49",
-        "size": 85008
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/icomzero_0.7.3_arm64.deb",
+        "md5": "45711762d83dbb93e4edd491e7713f3d",
+        "sha256": "3e585f4cd90ccd6325eed11d11f07c79c6c59e8f983c96988f124d5d070fda0b",
+        "size": 85208
       },
       "depends": "libc6, python3, python3-pil, python3-numpy, fonts-dejavu-core, alsa-utils, libasound2-plugins, pipewire-pulse",
       "permissions": {
