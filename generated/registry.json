@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-21T21:02:42+08:00",
+  "generated_at": "2026-11-22T01:11:36+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4451,9 +4451,9 @@
         "github": "MrJoshMurray",
         "display_name": "MrJoshua"
       },
-      "version": "0.2.1-rev1",
+      "version": "0.2.2-rev1",
       "published_at": "2026-11-16T19:40:04+00:00",
-      "updated_at": "2026-11-16T19:40:04+00:00",
+      "updated_at": "2026-11-21T17:09:20+00:00",
       "review": {
         "status": "approved"
       },
@@ -4462,10 +4462,10 @@
       "download": {
         "type": "deb",
         "package": "mod-player",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/mod-player_0.2.1-rev1_arm64.deb",
-        "md5": "12201e2406d8645d48da0f14d78b70c6",
-        "sha256": "35e8da9dc9f7401bd38255159701edfc23b2108d92273d4856969f6b5b9de593",
-        "size": 2039466
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/mod-player_0.2.2-rev1_arm64.deb",
+        "md5": "2db46e5c79a2a5041ed1925b00868d50",
+        "sha256": "5f12d19a762346d7d3fb871e2fccf19bcd902f9fed4901cc8d874bb6e417762b",
+        "size": 2175824
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libopenmpt0t64, libasound2t64",
       "permissions": {
