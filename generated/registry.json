@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-21T13:28:45+08:00",
+  "generated_at": "2026-11-21T13:35:50+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3321,7 +3321,7 @@
       "share_code": "ICMZ",
       "title": "ICOMzero",
       "summary": "Direct radio audio, waterfall, tuning and local FT8 receive decoding.",
-      "description": "Choose Radio for listening and tuning, or FT8 for local receive-only message decoding. FT8 starts on 40m at 7.074 MHz USB, with band presets and UTC history. Requires synchronized device time; no FT8 transmission. Connect directly to supported network radios from a Cardputer Zero for receive audio, live spectrum and waterfall, and tuning. Icom profiles cover IC-705, IC-7300MK2, IC-7610, IC-7760, IC-7850/7851, IC-905, IC-9700 and IC-R8600. Kenwood TS-890S uses native KNS TCP/RTP. Select the radio in Setup; band presets and controls follow model capabilities. Noise reduction and antenna tuning are available where supported. T starts the antenna tuner and briefly transmits. Requires a radio network account. IC-7300MK2 is hardware-tested; added models have protocol/emulator coverage and await physical validation. Credentials and volume settings are stored locally with user-only permissions.",
+      "description": "Choose Radio for listening and tuning, or FT8 for local receive-only message decoding. FT8 starts on 40m at 7.074 MHz USB, with band presets, nine alternating-color message rows and silent reception. Requires synchronized device time; no FT8 transmission. Connect directly to supported network radios from a Cardputer Zero for receive audio, live spectrum and waterfall, and tuning. Icom profiles cover IC-705, IC-7300MK2, IC-7610, IC-7760, IC-7850/7851, IC-905, IC-9700 and IC-R8600. Kenwood TS-890S uses native KNS TCP/RTP. Select the radio in Setup; band presets and controls follow model capabilities. Noise reduction and antenna tuning are available where supported. T starts the antenna tuner and briefly transmits. Requires a radio network account. IC-7300MK2 is hardware-tested; added models have protocol/emulator coverage and await physical validation. Credentials and volume settings are stored locally with user-only permissions.",
       "locales": {
         "ja": {
           "title": "ICOMzero",
@@ -3349,9 +3349,9 @@
         "github": "unagisan69",
         "display_name": "unagisan69"
       },
-      "version": "0.5.0",
+      "version": "0.5.1",
       "published_at": "2026-11-18T18:40:23+00:00",
-      "updated_at": "2026-11-21T05:25:31+00:00",
+      "updated_at": "2026-11-21T05:33:17+00:00",
       "review": {
         "status": "approved"
       },
@@ -3360,10 +3360,10 @@
       "download": {
         "type": "deb",
         "package": "icomzero",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/icomzero_0.5.0_arm64.deb",
-        "md5": "01c71dcb180cffc24282fb7501d63210",
-        "sha256": "0bdcd8baf8af9abdcf4de68da95ce9fc287e15cb9ddbae86aa577a17bc9524cc",
-        "size": 60148
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/icomzero_0.5.1_arm64.deb",
+        "md5": "627a38af84b8c50cb382fb0d7a427c37",
+        "sha256": "9173a24797c1eefa7c4c26426c4882e3e67c3884e1c5fb9b7d832bcca425c87d",
+        "size": 60204
       },
       "depends": "libc6, python3, python3-pil, python3-numpy, fonts-dejavu-core, alsa-utils, libasound2-plugins, pipewire-pulse",
       "permissions": {
