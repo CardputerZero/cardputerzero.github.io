@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-22T01:52:12+08:00",
+  "generated_at": "2026-11-22T02:13:17+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1097,9 +1097,9 @@
         "display_name": "Real",
         "github": "RealOuO"
       },
-      "version": "0.2-5",
+      "version": "0.2-6",
       "published_at": "2026-11-18T06:07:39+00:00",
-      "updated_at": "2026-11-19T17:10:17+00:00",
+      "updated_at": "2026-11-21T18:11:34+00:00",
       "review": {
         "status": "approved"
       },
@@ -1108,10 +1108,10 @@
       "download": {
         "type": "deb",
         "package": "cardputer-remote",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-remote_0.2-5_arm64.deb",
-        "md5": "63db7596ad3ad0c9b7cafb93a026e436",
-        "sha256": "33600ecda1e90402b8d46b5ed3a227643f5fc7ad240e5c63a315e00de1055cdd",
-        "size": 161896
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-remote_0.2-6_arm64.deb",
+        "md5": "6db03b92068c8038765b900199fa91a0",
+        "sha256": "81636d044ff12561d2a542eced6505f883fd1013fb2e0ffc1d23853a258b507c",
+        "size": 162140
       },
       "depends": "python3 (>= 3.11), python3-pil, python3-numpy, python3-evdev, python3-qrcode, ffmpeg, i2c-tools, udev",
       "permissions": {
