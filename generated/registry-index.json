@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-22T01:11:36+08:00",
+  "generated_at": "2026-11-22T01:52:12+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4415,7 +4415,7 @@
       "share_code": "MODP",
       "title": "Mod Player",
       "summary": "Play tracker modules with live, PCM-driven visualizers.",
-      "description": "Browse and play tracker modules in your Music folder or its subfolders. Supports the formats reported by the installed libopenmpt build, including classic MOD, S3M, XM, and IT modules. Skip tracks, seek, adjust volume or mute, and switch between spectrum, oscilloscope, and waterfall visualizers. No music is bundled.",
+      "description": "Browse and play tracker modules in your Music folder or its subfolders. \r\n\r\nSupports the formats reported by the installed libopenmpt build, including classic MOD, S3M, XM, and IT modules. \r\n\r\nSkip tracks, seek, adjust volume or mute, and switch between spectrum, oscilloscope, and waterfall visualisers. \r\n\r\nNo music is bundled, but you can legally download loads here:  https://modarchive.org",
       "locales": {
         "ja": {
           "title": "Mod Player",
@@ -4453,7 +4453,7 @@
       },
       "version": "0.2.2-rev1",
       "published_at": "2026-11-16T19:40:04+00:00",
-      "updated_at": "2026-11-21T17:09:20+00:00",
+      "updated_at": "2026-11-21T17:50:43+00:00",
       "review": {
         "status": "approved"
       },
@@ -4469,26 +4469,26 @@
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libopenmpt0t64, libasound2t64",
       "permissions": {
-        "camera": false,
-        "microphone": false,
-        "imu": false,
-        "network": false,
         "additional_hardware": false,
         "background_service": false,
-        "external_display": false
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
       },
       "risk_flags": [],
       "assets": {
-        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/mod-player-store.png",
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/mod-player_icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/screenshots/app-simulator-dark-darwin.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/screenshots/app-simulator-light-darwin.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/screenshots/screenshot-1.png"
         ]
       },
-      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/mod-player-store.png",
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/mod-player_icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/screenshots/app-simulator-dark-darwin.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/screenshots/app-simulator-light-darwin.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/mod-player/screenshots/screenshot-1.png"
       ]
     },
     {
