@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-21T09:19:21+08:00",
+  "generated_at": "2026-11-21T10:21:24+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4130,7 +4130,7 @@
       "share_code": "MCZR",
       "title": "MeshCore",
       "summary": "Standalone mesh messaging on your Cardputer Zero. No companion needed.",
-      "description": "Channels and direct messages in one simple inbox, with previews, unread counts and saved history. Offline GPS-centred radar map with node distances, bearings and optional GPS location sharing. Channel options for muting, scope overrides, clearing history and leaving; password-encrypted full backup and restore. Join hashtag channels, import/export firmware-compatible private keys, discover nodes, and select regional radio presets including Scotland / ScotMesh (sco scope, 3-byte paths), Slovakia and experimental Japan. Uses the attached SX1262 LoRa CAP directly. One flood advert after startup checks, instant Tab navigation, authenticated repeater status with optional locally saved passwords, offline color emoji, radio echo indicators, optional message chimes, and display sleep following system DarkTime. Checks for GitHub updates at startup and offers Update or Later, with staged download progress and timing logs. Early access; supports legacy and current SX1262 CAPs; regional field testing pending outside the US.",
+      "description": "Channels and direct messages in one simple inbox, with previews, unread counts and saved history. Offline GPS-centred radar map with node distances, bearings and optional GPS location sharing. Channel options for muting, scope overrides, clearing history and leaving; password-encrypted full backup and restore. Join Public, hashtag or encrypted private channels with a shared key, import/export firmware-compatible private keys, discover nodes, and select regional radio presets including Scotland / ScotMesh (sco scope, 3-byte paths), Slovakia and experimental Japan. Uses the attached SX1262 LoRa CAP directly. One flood advert after startup checks, instant Tab navigation, authenticated repeater status with optional locally saved passwords, offline color emoji, radio echo indicators, optional message chimes, and display sleep following system DarkTime. Checks for GitHub updates at startup and offers Update or Later, with staged download progress and timing logs. Early access; supports legacy and current SX1262 CAPs; regional field testing pending outside the US.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -4141,9 +4141,9 @@
         "github": "unagisan69",
         "display_name": "unagisan69"
       },
-      "version": "0.1.23",
+      "version": "0.1.24",
       "published_at": "2026-11-19T07:43:18+00:00",
-      "updated_at": "2026-11-20T22:12:04+00:00",
+      "updated_at": "2026-11-21T02:19:14+00:00",
       "review": {
         "status": "approved"
       },
@@ -4152,10 +4152,10 @@
       "download": {
         "type": "deb",
         "package": "meshcore-zero",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/meshcore-zero_0.1.23_arm64.deb",
-        "md5": "5daa992cb03949f87131e083bc9e48f1",
-        "sha256": "1992c06f9a8762acca2eaa4174282f9cab7e3bc9bfeefc0d16828dfe7e6499ed",
-        "size": 14844836
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/meshcore-zero_0.1.24_arm64.deb",
+        "md5": "7fe8e0eef1940c391440dbb44fd5aa6e",
+        "sha256": "4287b95f80f4cb6671f4f57fd3f2b8694d54de19bf07c519ca16973a3c3bc4a8",
+        "size": 14846978
       },
       "depends": "python3 (>= 3.13), python3 (<< 3.14), python3-pil, python3-numpy, python3-spidev (>= 3.6), fonts-dejavu-core, pulseaudio-utils",
       "permissions": {
