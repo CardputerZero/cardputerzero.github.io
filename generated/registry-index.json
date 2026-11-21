@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-22T04:51:20+08:00",
+  "generated_at": "2026-11-22T05:11:13+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3813,9 +3813,9 @@
         "display_name": "kvx17",
         "github": "kvx17"
       },
-      "version": "0.1.0-rev9",
+      "version": "0.1.0-rev10",
       "published_at": "2026-11-18T15:15:31+00:00",
-      "updated_at": "2026-11-19T20:01:56+00:00",
+      "updated_at": "2026-11-21T21:09:35+00:00",
       "review": {
         "status": "approved"
       },
@@ -3824,12 +3824,12 @@
       "download": {
         "type": "deb",
         "package": "kvxputerzero",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/kvxputerzero_0.1.0-rev9_arm64.deb",
-        "md5": "e2da4e22ada471e776509e64a1329623",
-        "sha256": "8593f3ce22425ffe059355b79b58fb81dac0bdd2185ba300fb34028a89d51d06",
-        "size": 3679822
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/kvxputerzero_0.1.0-rev10_arm64.deb",
+        "md5": "51be1fc85e6d3fde795aad6333d7a9b7",
+        "sha256": "e74bed621916488b106c968e9f5d79a3ca9b11b6ac8a96c32b1804fadc684329",
+        "size": 5038402
       },
-      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g",
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, iw, iproute2, libcap2-bin, libcamera0.8 | libcamera0.7 | libcamera0.6 | libcamera0.5 | libcamera0.4 | libcamera0.3 | libcamera0.2 | libcamera0, libcamera-ipa",
       "permissions": {
         "additional_hardware": false,
         "background_service": false,
