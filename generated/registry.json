@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-21T09:13:26+08:00",
+  "generated_at": "2026-11-21T09:19:21+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8196,9 +8196,9 @@
         "github": "unagisan69",
         "display_name": "unagisan69"
       },
-      "version": "0.4.24",
+      "version": "0.4.25",
       "published_at": "2026-11-18T03:55:03+00:00",
-      "updated_at": "2026-11-21T01:10:42+00:00",
+      "updated_at": "2026-11-21T01:16:38+00:00",
       "review": {
         "status": "approved"
       },
@@ -8207,10 +8207,10 @@
       "download": {
         "type": "deb",
         "package": "zerogotchi",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerogotchi_0.4.24_all.deb",
-        "md5": "155ae845a4cf56db189c21f2b1b8de66",
-        "sha256": "299f9d624e3d80a0de3a3778295a588dbe4101b2f3613250d1c5766f94a87caa",
-        "size": 656464
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerogotchi_0.4.25_all.deb",
+        "md5": "249016a850243e893516b6f4d0871490",
+        "sha256": "2113b4a90c643e9e8af883785a888710e77ff29e2668ed545215854c29ad4ac9",
+        "size": 656616
       },
       "depends": "python3, python3-pil, fonts-dejavu-core, network-manager, bluez, python3-libgpiod (>= 2.0), python3-spidev, raspi-utils-core, python3-cryptography, sudo, iw, iproute2, tcpdump, aircrack-ng, hcxtools, curl, ca-certificates",
       "permissions": {
