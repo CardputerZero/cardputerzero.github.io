@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-21T15:21:55+08:00",
+  "generated_at": "2026-11-21T16:05:45+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3321,7 +3321,7 @@
       "share_code": "ICMZ",
       "title": "ICOMzero",
       "summary": "Direct radio audio, waterfall and FT8 contacts with Wavelog/QRZ logging.",
-      "description": "Choose Radio for network listening, waterfall and receive tuning, or FT8 for silent local decoding and explicitly initiated contacts. FT8 starts on 40m, shows CQ calls and your own conversations with estimated dB reports, and supports line selection with F/X or Fn+F/Fn+X. Enter answers the selected CQ. Tab opens Bands, Call CQ, station Settings, Stop Transmit, Logging and Help. Standard contacts use RRR and are saved locally before independent Wavelog/QRZ uploads. Requires configured callsign/grid, a synchronized device clock and radio network TX permission. QRZ API subscription may be required. Radio mode includes noise reduction and antenna tuning where supported; T briefly transmits a tuning carrier. Direct Icom profiles cover IC-705, IC-7300MK2, IC-7610, IC-7760, IC-7850/7851, IC-905, IC-9700 and IC-R8600 (receive only). TS-890S uses native KNS. IC-7300MK2 is hardware-tested; other radio models have protocol/emulator coverage and await physical validation. Credentials and station settings are stored privately on the device.",
+      "description": "Choose Radio for network listening, waterfall and receive tuning, or FT8 for silent local decoding and explicitly initiated contacts. FT8 starts on 40m, shows CQ calls and your own conversations with estimated dB reports, and supports line selection with F/X or Fn+F/Fn+X. Enter answers the selected CQ. Tab opens Bands, Call CQ, station Settings, Stop Transmit, Logging and Help. Standard contacts use RRR and are saved locally before independent Wavelog/QRZ uploads. Requires configured callsign/grid, a synchronized device clock and radio network TX permission. QRZ API subscription may be required. FT8 automatically starts antenna tuning on entry and band changes, briefly transmitting a carrier. Configurable nominal RF watts, live SWR/power, TX-armed status and local TX rows are included. SWR above 2.0, excessive ALC or missing telemetry stop TX with a latched warning. Radio mode includes noise reduction and antenna tuning where supported; T briefly transmits a tuning carrier. Direct Icom profiles cover IC-705, IC-7300MK2, IC-7610, IC-7760, IC-7850/7851, IC-905, IC-9700 and IC-R8600 (receive only). TS-890S uses native KNS. IC-7300MK2 is hardware-tested; other radio models have protocol/emulator coverage and await physical validation. Credentials and station settings are stored privately on the device.",
       "locales": {
         "ja": {
           "title": "ICOMzero",
@@ -3349,9 +3349,9 @@
         "github": "unagisan69",
         "display_name": "unagisan69"
       },
-      "version": "0.6.0",
+      "version": "0.7.0",
       "published_at": "2026-11-18T18:40:23+00:00",
-      "updated_at": "2026-11-21T07:19:37+00:00",
+      "updated_at": "2026-11-21T08:03:33+00:00",
       "review": {
         "status": "approved"
       },
@@ -3360,10 +3360,10 @@
       "download": {
         "type": "deb",
         "package": "icomzero",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/icomzero_0.6.0_arm64.deb",
-        "md5": "8b67abb456240e69276fed02937fd244",
-        "sha256": "f4fba563a07ca48d4579ac2b766ea47a43ef7a4d9556d7949a9fbfdb7770f0b7",
-        "size": 79264
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/icomzero_0.7.0_arm64.deb",
+        "md5": "c0613205c491fccc68e22642fa78ca05",
+        "sha256": "c5ce3a91e8b7ccdb00b622796ccd082db03c663aa083231e99f1197d7fe804f8",
+        "size": 83248
       },
       "depends": "libc6, python3, python3-pil, python3-numpy, fonts-dejavu-core, alsa-utils, libasound2-plugins, pipewire-pulse",
       "permissions": {
