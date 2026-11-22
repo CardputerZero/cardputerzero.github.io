@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-22T05:42:02+08:00",
+  "generated_at": "2026-11-22T09:28:01+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4076,7 +4076,7 @@
       "share_code": "MPKT",
       "title": "M-Pocket",
       "summary": "A Mastodon client for Cardputer Zero.",
-      "description": "M-Pocket is an open-source Mastodon client made for the Cardputer Zero. Choose your Mastodon server, scan a QR code with your phone, and approve access to sign in. M-Pocket can remember your login for the next time you open it.\r\n\r\nBrowse your home and local timelines one post at a time, scroll through longer posts, and search for posts on your server. Write and review posts and replies, boost posts, and choose when to reveal content warnings. Light and dark purple themes and adjustable text sizes help you make the small screen your own.\r\n\r\nM-Pocket is designed around the Cardputer Zero’s keyboard and 320 × 170 display. The beta 3 device build has been tested on a physical Cardputer Zero. Search results depend on your server’s support and settings.",
+      "description": "M-Pocket brings Mastodon to the M5Stack Cardputer Zero. Browse your home timeline and interact with posts in an interface designed for the Cardputer’s compact 320 × 170 screen and keyboard.\r\n\r\nChoose a Mastodon server and sign in by scanning a QR code with your phone or by entering an access token. Save your login on the device to return to your account without signing in again.\r\n\r\nRead and scroll through posts, like them, boost them, or write replies. Content warnings keep sensitive posts hidden until you choose to reveal them. Search for posts on servers that support Mastodon search. Choose a light or dark theme and adjust the text size in settings.\r\n\r\nM-Pocket is open source and available through the Cardputer app store. It requires a network connection and a Mastodon account.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -4089,7 +4089,7 @@
       },
       "version": "0.2.1",
       "published_at": "2026-11-18T21:05:31+00:00",
-      "updated_at": "2026-11-20T03:57:56+00:00",
+      "updated_at": "2026-11-22T01:26:22+00:00",
       "review": {
         "status": "approved"
       },
