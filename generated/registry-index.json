@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-22T18:07:27+08:00",
+  "generated_at": "2026-11-22T19:16:31+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2652,9 +2652,9 @@
         "github": "journey-ad",
         "display_name": "journey-ad"
       },
-      "version": "0.31.6",
+      "version": "0.42.3",
       "published_at": "2026-11-18T09:42:57+00:00",
-      "updated_at": "2026-11-20T05:33:44+00:00",
+      "updated_at": "2026-11-22T11:14:25+00:00",
       "review": {
         "status": "approved"
       },
@@ -2663,10 +2663,10 @@
       "download": {
         "type": "deb",
         "package": "flight-club",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/flight-club_0.31.6_arm64.deb",
-        "md5": "a9272afc55a7dd551868cb4e8608cef0",
-        "sha256": "35d49ef549f8a67105fceadfadcb79df29887eafc92966e6c175da2e66cec1a9",
-        "size": 844868
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/flight-club_0.42.3_arm64.deb",
+        "md5": "2e14c8d6075fcc6d490f29fa5a801b44",
+        "sha256": "4ea9e7010b282ba81e6b29c4e465e6d0666c05878cc5c7a3d68aa28a9e675d8e",
+        "size": 751132
       },
       "depends": "pulseaudio-utils",
       "permissions": {
