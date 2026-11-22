@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-22T19:16:31+08:00",
+  "generated_at": "2026-11-22T21:02:08+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1254,7 +1254,7 @@
       "share_code": "WRAD",
       "title": "WebRadio",
       "summary": "发现、收藏和收听网络电台 · Browse, save, and listen to internet radio",
-      "description": "简体中文\r\n在 Cardputer Zero 上发现、收藏和收听网络电台。首次打开显示中国大陆电台，支持按国家／地区、语言和类型筛选，以及英文台名、频率、呼号和中文全拼搜索。可搜索当前范围或全球。收藏、筛选、应用音量和界面语言会保存到设备。按 Q 续听上次成功播放的电台。\r\n主界面显示剩余电量。按 8 或 V 调整应用和系统音量。操作音效默认开启，按 H、4 可开关，设置自动保存。\r\n\r\n最近改动 · 1.0.12-1\r\n- 新增导航、确认、返回操作音效。\r\n- 帮助页按 4 开关音效，重启后保留选择。\r\n- 代码以 MIT 协议开源，安装包附带许可证。\r\n\r\nEnglish\r\nDiscover, save, and listen to internet radio on Cardputer Zero. The first launch shows mainland China stations. Filter by country or region, language, and genre. Search by English station name, frequency, call sign, or full pinyin for Chinese names, within current filters or globally. Favorites, filters, app volume, and interface language are saved on the device. Press Q to resume your last successfully played station.\r\nThe main screen shows battery percentage. Press 8 or V to adjust app and system volume. Operation sounds are enabled by default. Press H, then 4 to toggle sounds. The preference is saved.\r\n\r\nWhat’s new · 1.0.12-1\r\n- Added short navigation, confirmation, and back sounds.\r\n- Press 4 on the Controls screen to toggle sounds. The preference survives restarts.\r\n- Released the source under MIT and included the license in the package.\r\n\r\nLicense / 许可证 · MIT\r\nSource / 源码 · https://github.com/xu-c/WebRadio\r\n\r\n电台目录来自 Radio Browser，节目由各电台提供，WebRadio 作者不对电台内容负责。请遵守 Radio Browser 使用规则和当地适用法律。收听需要联网。\r\nRadio Browser provides the station directory. Stations supply their own programming. The WebRadio author is not responsible for station content. Follow Radio Browser’s usage rules and applicable local laws. Streaming requires internet access.\r\nhttps://www.radio-browser.info/",
+      "description": "简体中文\r\n切换界面语言：主界面按 H、6，再按 4 选简体中文，或按 5 选 English。设置会自动保存。\r\n\r\n在 Cardputer Zero 上发现、收藏和收听网络电台。首次打开显示中国大陆电台，支持按国家／地区、语言和类型筛选，以及英文台名、频率、呼号和中文全拼搜索。可搜索当前范围或全球。收藏、筛选、应用音量和界面语言会保存到设备。按 Q 续听上次成功播放的电台。\r\n主界面显示剩余电量。按 8 或 V 调整应用和系统音量。操作音效默认开启，按 H、4 可开关，设置自动保存。\r\n\r\n最近改动 · 1.0.13-1\r\n- 商店和 GitHub 介绍补充中英文界面切换步骤。\r\n\r\n1.0.12-1\r\n- 新增导航、确认、返回操作音效。\r\n- 帮助页按 4 开关音效，重启后保留选择。\r\n- 代码以 MIT 协议开源，安装包附带许可证。\r\n\r\nEnglish\r\nSwitch interface language from the main screen. Press H, then 6, then 4 for Simplified Chinese or 5 for English. Your choice is saved automatically.\r\n\r\nDiscover, save, and listen to internet radio on Cardputer Zero. The first launch shows mainland China stations. Filter by country or region, language, and genre. Search by English station name, frequency, call sign, or full pinyin for Chinese names, within current filters or globally. Favorites, filters, app volume, and interface language are saved on the device. Press Q to resume your last successfully played station.\r\nThe main screen shows battery percentage. Press 8 or V to adjust app and system volume. Operation sounds are enabled by default. Press H, then 4 to toggle sounds. The preference is saved.\r\n\r\nWhat’s new · 1.0.13-1\r\n- Added instructions for switching interface language to the AppStore listing and GitHub.\r\n\r\n1.0.12-1\r\n- Added short navigation, confirmation, and back sounds.\r\n- Press 4 on the Controls screen to toggle sounds. The preference survives restarts.\r\n- Released the source under MIT and included the license in the package.\r\n\r\nLicense / 许可证 · MIT\r\nSource / 源码 · https://github.com/xu-c/WebRadio\r\n\r\n电台目录来自 Radio Browser，节目由各电台提供，WebRadio 作者不对电台内容负责。请遵守 Radio Browser 使用规则和当地适用法律。收听需要联网。\r\nRadio Browser provides the station directory. Stations supply their own programming. The WebRadio author is not responsible for station content. Follow Radio Browser’s usage rules and applicable local laws. Streaming requires internet access.\r\nhttps://www.radio-browser.info/",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -1265,9 +1265,9 @@
         "display_name": "xu-c",
         "github": "xu-c"
       },
-      "version": "1.0.12-1",
+      "version": "1.0.13-1",
       "published_at": "2026-11-12T15:59:02+00:00",
-      "updated_at": "2026-11-22T03:49:55+00:00",
+      "updated_at": "2026-11-22T13:00:25+00:00",
       "review": {
         "status": "approved"
       },
@@ -1276,10 +1276,10 @@
       "download": {
         "type": "deb",
         "package": "cardputer-zero-radio",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-zero-radio_1.0.12-1_arm64.deb",
-        "md5": "e856c3fe4d09466cb9b14678ca837546",
-        "sha256": "9b8e0c2c59949a8a7642c11cf6470898734b78e39a1a70f23f6673e6b4d86164",
-        "size": 30944
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-zero-radio_1.0.13-1_arm64.deb",
+        "md5": "5c0ea33466d5c7af72547b7d57f04244",
+        "sha256": "0569802db867645448ea1bd3c3fa7c2070936abce87eeea994ea9544de7255f4",
+        "size": 31068
       },
       "depends": "python3 (>= 3.9), python3-pil (>= 9.2), python3-evdev, python3-pypinyin, fonts-noto-cjk, mpv, pulseaudio-utils, ca-certificates",
       "permissions": {
