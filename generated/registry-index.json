@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T20:26:00+08:00",
+  "generated_at": "2026-11-23T20:36:29+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2845,6 +2845,60 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czweather/czweather_icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czweather/screenshots/screenshot-0.png"
+      ]
+    },
+    {
+      "uuid": "e2e3ce33-3b7a-52b6-b591-c5a1fdc30d62",
+      "share_code": "DLCM",
+      "title": "DaliCam",
+      "summary": "Gemini/OpenAI powered capture, gallery, edit/generate with preset artist",
+      "description": "DaliCam is a device-first CardputerZero app for capturing photos, uploading test \r\n images, browsing galleries, and generating new images with Gemini and OpenAI     \r\n image models. It includes an on-device prompt workflow, a browser-based WebUI on \r\n port 8080, remote capture, day-grouped galleries, per-image management tools,    \r\n and a custom preset workflow for testing and everyday use. To access the WebUI   \r\n from a PC or phone on the same network, open a browser and go to                 \r\n http://<device-ip>:8080, replacing <device-ip> with the CardputerZero’s local IP \r\n address. Found in IP PANEL.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "AI",
+        "Creative & Office"
+      ],
+      "author": {
+        "display_name": "coreymillia",
+        "github": "Coreymillia"
+      },
+      "version": "0.1.0-rev1",
+      "published_at": "2026-11-23T08:44:38+00:00",
+      "updated_at": "2026-11-23T08:44:38+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/Coreymillia/DaliCam",
+      "download": {
+        "type": "deb",
+        "package": "dalicam",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/dalicam_0.1.0-rev1_arm64.deb",
+        "md5": "c8894c8708d0a14dd49e873be948b5ee",
+        "sha256": "75f8b032a1e2d3814c7385b4870f2ff87443f681de8adc9599f18da21cacaeaa",
+        "size": 1798020
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": true,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dalicam/dalicam_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dalicam/screenshots/screenshot-0.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dalicam/dalicam_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dalicam/screenshots/screenshot-0.png"
       ]
     },
     {
