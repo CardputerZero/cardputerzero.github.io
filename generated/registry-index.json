@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T20:58:12+08:00",
+  "generated_at": "2026-11-23T21:00:31+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2422,6 +2422,66 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cwtrainerzero/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cwtrainerzero/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cwtrainerzero/screenshots/screenshot-4.png"
+      ]
+    },
+    {
+      "uuid": "867aae33-a95b-5775-8032-b37e5a61a563",
+      "share_code": "CYND",
+      "title": "CyberCam",
+      "summary": "8MP retro camera with GIFs, MP4, timelapse, stop-motion & Wi-Fi gallery",
+      "description": "CyberCam is an open-source camera application for the M5Stack Cardputer Zero, developed by Cybern0mads.\r\n\r\nTransform your Cardputer Zero into a creative handheld camera featuring full-resolution 8MP photography, retro filters, animated GIFs, and MP4 video recording.\r\n\r\nFeatures:\r\n\r\n8MP Photography: Capture full-resolution JPEG images.\r\n\r\n16 Retro & Cyberpunk Filters: Game Boy-inspired, VHS, C64, neon, pixel-art, and other creative looks.\r\n\r\nGIF & Boomerang: Create animated clips directly on your device.\r\n\r\nMP4 Video: Record videos using the Cardputer Zero camera.\r\n\r\nTimelapse: Capture images automatically and export them to MP4.\r\n\r\nStop Motion: Create animations with onion-skin preview and GIF/MP4 export.\r\n\r\nOn-Device Gallery: Browse and view captured media.\r\n\r\nWi-Fi Gallery: Access and download your creations through a token-protected browser interface.\r\n\r\nKeyboard Controls: Designed for the Cardputer Zero's compact display and keyboard.\r\n\r\nNew in v0.5.3: Improved timelapse export reliability, encoding progress, and Gallery access after recording.\r\n\r\nCyberCam is an independent community project by Cybern0mads.\r\n\r\nSource: https://github.com/cybern0mads/CyberCam",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Creative & Office",
+        "Media"
+      ],
+      "author": {
+        "display_name": "CyberN0mads",
+        "github": "cybern0mads"
+      },
+      "version": "0.5.3",
+      "published_at": "2026-11-20T12:47:07+00:00",
+      "updated_at": "2026-11-20T12:47:07+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/cybern0mads/CyberCam",
+      "download": {
+        "type": "deb",
+        "package": "cybercam",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cybercam_0.5.3_all.deb",
+        "md5": "dce4a49b30bc911e331d771e492b31ea",
+        "sha256": "87d155af11380939693319cd9f05ace958a97a54c70b997ca0bd7981f636ac8a",
+        "size": 57496
+      },
+      "depends": "python3, python3-pil, python3-evdev, python3-numpy, alsa-utils, ffmpeg",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": true,
+        "camera": true,
+        "external_display": false,
+        "imu": false,
+        "microphone": true,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cybercam/cybercam_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cybercam/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cybercam/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cybercam/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cybercam/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cybercam/cybercam_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cybercam/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cybercam/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cybercam/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cybercam/screenshots/screenshot-3.png"
       ]
     },
     {
