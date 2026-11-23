@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T19:15:12+08:00",
+  "generated_at": "2026-11-23T19:17:37+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4948,6 +4948,88 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lokicz/icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lokicz/screenshots/menu.png"
+      ]
+    },
+    {
+      "uuid": "7b05aca5-b568-5b2a-b7a6-9afcc70455c8",
+      "share_code": "LORA",
+      "title": "LORA Tunnel",
+      "summary": "All-in-one LoRa + Wi-Fi/BLE wardriver: full mesh decode, WiGLE logs, Recon",
+      "description": "LORA Tunnel turns the CardputerZero and Cap LoRa-1262 into an all-in-one LoRa, Wi-Fi and Bluetooth wardriver. One press starts all three. It listens for Meshtastic and MeshCore on every preset in your region and decrypts the default channels and any keys you add. It decodes text, positions, node info, all telemetry, traceroutes with per-hop SNR, neighbor lists, map reports, waypoints, MeshCore adverts, group messages, traces and discovery, and maps every node it hears. Every Wi-Fi network and BLE device is logged with GPS into a WiGLE-ready CSV. Recon flags ALPR and Flock cameras, body cameras, Ring and other cameras, trackers like AirTag and SmartTag, Remote ID drones and more, warns you, and tells you if something seems to follow you. Messages lets you chat on Meshtastic and MeshCore channels. Transmit is off until you turn it on, and it keeps to your region's limits. Logs are LoRaTAP PCAP (Wireshark), JSONL and SQLite, with CSV and Google Earth KML export. Same channel plan as Kismet's LoRaPipe. MIT open source.",
+      "locales": {
+        "zh-CN": {
+          "title": "LORA Tunnel",
+          "summary": "LoRa+Wi-Fi/BLE 一体化扫描：Mesh 全解码、WiGLE 记录、侦察"
+        },
+        "ja": {
+          "title": "LORA Tunnel",
+          "summary": "LoRa+Wi-Fi/BLE統合ウォードライブ：メッシュ完全解読、WiGLE記録、偵察"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "LORA Tunnel",
+          "summary": "LoRa+Wi-Fi/BLE 一体化扫描：Mesh 全解码、WiGLE 记录、侦察"
+        },
+        "ja": {
+          "title": "LORA Tunnel",
+          "summary": "LoRa+Wi-Fi/BLE統合ウォードライブ：メッシュ完全解読、WiGLE記録、偵察"
+        }
+      },
+      "categories": [
+        "Radio & Comms",
+        "Security"
+      ],
+      "author": {
+        "github": "valleytechsolutions",
+        "display_name": "Valleytech Solutions"
+      },
+      "version": "1.1.1",
+      "published_at": "2026-11-22T15:38:03+00:00",
+      "updated_at": "2026-11-22T15:38:03+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/valleytechsolutions/LORA-Tunnel",
+      "download": {
+        "type": "deb",
+        "package": "lora-tunnel",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/lora-tunnel_1.1.1_all.deb",
+        "md5": "35c8bd0bc6ff0018ad902be7131e0344",
+        "sha256": "a3806e72f4645b57a951c62a3a12b97e738eb2320093b29f9cb799613f5bec84",
+        "size": 834188
+      },
+      "depends": "python3 (>= 3.9), python3-pil, python3-numpy, python3-serial, python3-spidev, python3-smbus | python3-smbus2, python3-libgpiod, python3-cryptography, python3-dbus",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lora-tunnel/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lora-tunnel/screenshots/wardrive-live.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lora-tunnel/screenshots/recon-live.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lora-tunnel/screenshots/node-mesh.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lora-tunnel/screenshots/packet-traceroute.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lora-tunnel/screenshots/messages.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lora-tunnel/screenshots/home.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lora-tunnel/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lora-tunnel/screenshots/wardrive-live.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lora-tunnel/screenshots/recon-live.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lora-tunnel/screenshots/node-mesh.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lora-tunnel/screenshots/packet-traceroute.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lora-tunnel/screenshots/messages.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lora-tunnel/screenshots/home.png"
       ]
     },
     {
