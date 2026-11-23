@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T21:48:00+08:00",
+  "generated_at": "2026-11-23T21:52:47+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -5376,7 +5376,7 @@
       "uuid": "73fa19e8-3307-5fae-b288-f13319a00e0a",
       "share_code": "LOOK",
       "title": "Lookout",
-      "summary": "See and hear through the camera from your phone: scan the QR, no app.",
+      "summary": "Portable security camera or inspection camera, view on any browser in network.",
       "description": "Turn the Cardputer Zero into a portable security camera or an inspection camera for hard-to-see places. Open Lookout, scan the QR code with your phone, and your phone's browser shows the live camera - no app, no account, nothing leaves your Wi-Fi network.\r\n\r\n- Live video in any phone or computer browser (480p, 720p or 1080p)\r\n- Listen through the microphone with adjustable boost (+12/+24/+36 dB); the mic only runs while someone is listening\r\n- Snapshots, rotate and full-screen on the phone; change quality from the phone\r\n- Live preview on the Cardputer for aiming, plus a full-screen view\r\n- Sleep mode turns the screen off; the camera only runs while someone is watching\r\n- The Cardputer always shows when someone is watching or listening\r\n- Private link: the QR code carries a secret key, and N makes a new one (and disconnects everyone)\r\n\r\nKeys: Enter big QR, V full-screen view, Q quality, M mic on/off, G mic boost, R rotate 180, S sleep, N new link, hold Esc to exit.",
       "locales": {},
       "i18n": {},
@@ -5390,7 +5390,7 @@
       },
       "version": "0.1.0",
       "published_at": "2026-11-23T03:01:52+00:00",
-      "updated_at": "2026-11-23T03:01:52+00:00",
+      "updated_at": "2026-11-23T13:51:07+00:00",
       "review": {
         "status": "approved"
       },
