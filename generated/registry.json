@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T14:51:44+08:00",
+  "generated_at": "2026-11-23T14:55:06+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -6375,6 +6375,59 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rubiks2x2x2-autosolver/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rubiks2x2x2-autosolver/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rubiks2x2x2-autosolver/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "ee5c6ce1-8678-5e46-b2d3-a833edc02e35",
+      "share_code": "SCZE",
+      "title": "Scheff Zello",
+      "summary": "Zello push-to-talk: hold Space to talk on your Zello channels",
+      "description": "A Zello push-to-talk client. Sign in to zello.io or a Zello Work network, pick a channel, and hold Space to talk; incoming voice plays as it arrives, and channel text messages can be read and sent. Set it up on the device or from a browser on the same network (port 8960). Uses the system's default audio devices, so a USB headset with a microphone works and can be plugged in while it runs. fn+S/D sets the volume, fn+U/I the brightness; hold Esc for 3 seconds to quit.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Radio & Comms"
+      ],
+      "author": {
+        "github": "oumike",
+        "display_name": "oumike"
+      },
+      "version": "2.0.0",
+      "published_at": "2026-11-20T23:25:01+00:00",
+      "updated_at": "2026-11-20T23:25:01+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-3.0-only",
+      "source_repo": "https://github.com/oumike/scheff-zello",
+      "download": {
+        "type": "deb",
+        "package": "scheff-zello",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/scheff-zello_2.0.0_arm64.deb",
+        "md5": "263595f9911404df13ce956edf9bd0b8",
+        "sha256": "ee5d1eae44c389e4d2fcbaac21ec8821649aeda9fecbe8d27270eeebb101f034",
+        "size": 573746
+      },
+      "depends": "libcurl4t64 | libcurl4, libsdl2-2.0-0 (>= 2.26), libopus0, libcjson1",
+      "permissions": {
+        "camera": false,
+        "microphone": true,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/scheff-zello/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/scheff-zello/screenshots/main.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/scheff-zello/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/scheff-zello/screenshots/main.png"
       ]
     },
     {
