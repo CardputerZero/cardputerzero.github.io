@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T15:57:27+08:00",
+  "generated_at": "2026-11-23T15:59:38+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -6826,9 +6826,9 @@
         "github": "dave-taylor-7654",
         "display_name": "dave-taylor-7654"
       },
-      "version": "2.3.3",
+      "version": "2.7.10",
       "published_at": "2026-11-21T06:44:40+00:00",
-      "updated_at": "2026-11-21T18:40:43+00:00",
+      "updated_at": "2026-11-23T07:56:31+00:00",
       "review": {
         "status": "approved"
       },
@@ -6837,10 +6837,10 @@
       "download": {
         "type": "deb",
         "package": "strawberry-video-player",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/strawberry-video-player_2.3.3_all.deb",
-        "md5": "6ce289d4955afc591c8e9b57965272c7",
-        "sha256": "65c9ebeac321e80bf71fbbdab90ede94ac0721b8ab206db49be5848d997b9fef",
-        "size": 25604
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/strawberry-video-player_2.7.10_all.deb",
+        "md5": "90b6b4ee32a5c86035b42c6984f0fd02",
+        "sha256": "150ee85d8d67e4df5277c55d9fd0cabc102d851287e93284ee1439c0cc3b7c1d",
+        "size": 133948
       },
       "depends": "mpv, ffmpeg, vlc-bin, vlc-plugin-base, python3 (>= 3.9), python3-evdev, python3-pil, pulseaudio-utils | pipewire-pulse",
       "permissions": {
