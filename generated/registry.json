@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T19:56:08+08:00",
+  "generated_at": "2026-11-23T19:58:24+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2787,6 +2787,69 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doodycalls/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doodycalls/screenshots/screenshot-4.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doodycalls/screenshots/screenshot-5.png"
+      ]
+    },
+    {
+      "uuid": "9dcde184-6d8c-5f0c-96ee-bc33dbff2871",
+      "share_code": "KGDM",
+      "title": "DOOM Zero",
+      "summary": "🔥 DOOM Zero: pocket-sized Hell, custom controls & a bloody secret! 😈",
+      "description": "# 🔥 WELCOME TO HELL. IT FITS IN YOUR POCKET! 😈💀\n\n## 320 × 170 PIXELS OF ABSOLUTE DISRESPECT! 🩸🔥\n\n**DOOM Zero** turns your **Cardputer Zero** into a tiny doorway to pixelated Hell! 🎮🔥 One gritty, blood-red launcher. Multiple classic DOOM entries. A suspicious UAC terminal. And a demon with absolutely zero customer-service training. 😂👹\n\n### 🎮 ONE LAUNCHER. MANY WAYS TO FIND TROUBLE.\nBrowse classic DOOM entries and supported WAD-based adventures from a single hellish menu. **DOOM (1993)** gets past the *name-check* without a riddle — because legends don't queue. 😎 You still need the game files you're entitled to use.\n\n### 🔐 A SECRET ONLY A TRUE MARINE SHOULD KNOW...\nThe other protected doors are guarded by a UAC security question. Your mission: **know your Marine's name**. Here's a hint: *even the old DOOM novels have something to say about him*. 🤫📖\n\nGet it wrong? **HELL REJECTED YOU!** 💥🩸 A flying fireball, a screen full of animated blood, and an unforgettable personal review from Hell's least-qualified receptionist:\n\n**“WRONG NAME, ROOKIE! EVEN AN IMP KNOWS THAT!”** 🤣💀\n\nNo spoilers. Study the lore, Marine. 🔥\n\n### ⌨️ YOUR KEYS. YOUR RULES.\nThe mandatory **UAC MARINE TRAINING** guides first-time players through assigning their own movement, turning, firing and door-use keys, one step at a time. Save your choices and adjust them later in **Settings > Controls**. Your keyboard, your battlefield! 🫡🎯\n\n### 🩸 TINY SCREEN. BIG DOOM ENERGY.\nDark industrial metal, infernal pixels, KG branding and a lovingly overdramatic rejection animation — all designed for the real **320×170 Cardputer Zero** display. 🦾🔥\n\n### ⚠️ BEFORE YOU ENTER THE PORTAL\n- **DOOM Zero is a launcher, not a bundle of commercial DOOM games.** Commercial WAD/game files are **not included**; provide game data you are legally entitled to use. 📂\n- Game entries require compatible engines and the appropriate data files. The launcher reports missing data.\n- Classic Chocolate Doom **does not support jumping**. 🚫🦘\n- **DOOM 64 is not supported** in this version.\n- This is an **unofficial community-made project**, not affiliated with or endorsed by id Software, Bethesda or the DOOM rights holders.\n\n**CREATED BY KiloGramowy 🔥**\n\n**RIP AND TEAR — AND TRY TO REMEMBER YOUR OWN NAME!** 😈🔥🎮\n\n## Source & Notices\nLauncher code: MIT. Chocolate Doom 3.1.0-1 and Crispy Doom 7.0-1: GPL-2.0-or-later, with retained subsidiary notices. SDL2_net 2.2.0+dfsg-3: Zlib. Xorg/Xvfb 2:21.1.16-1.3+rpt1+deb13u4: X11/MIT and other retained permissive notices.\nComplete corresponding runtime sources, distribution patches/build rules and full licences/notices: https://github.com/KiloGramowy/packages/releases/download/czdev-buffer/DoomZero-runtime-corresponding-sources-3.1.0-7.0.zip. SHA256: fabbcfda2a7ad24931b932d88a9c6b10db89f8778439d144de084d83014c1d07. Full GPL text: https://github.com/KiloGramowy/packages/releases/download/czdev-buffer/GPL-2.0-aef8b4222b79.md. Checksums: https://github.com/KiloGramowy/packages/releases/download/czdev-buffer/SHA256SUMS. Component notices and source-delivery details: https://github.com/KiloGramowy/packages/releases/download/czdev-buffer/SOURCE-AND-NOTICES.md. Source downloads require no sign-in or payment. These links remain available alongside this binary distribution, including after Store promotion; private launcher repository access is not required.\nArtwork was supplied by the author for this application and is separate from the runtime licences. This is unofficial software; no endorsement or rights-holder permission for the DOOM name or UAC presentation is claimed. The unresolved branding question is disclosed to Store reviewers.\n",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games"
+      ],
+      "author": {
+        "display_name": "KiloGramowy",
+        "github": "KiloGramowy"
+      },
+      "version": "0.0.1~dev0",
+      "published_at": "2026-11-22T22:40:25+00:00",
+      "updated_at": "2026-11-22T22:40:25+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT (launcher code); GPL-2.0-or-later (Chocolate/Crispy engines); Zlib (SDL2_net); X11/MIT and other retained permissive notices (Xorg/Xvfb); owner-supplied artwork; see Source & Notices and branding review.",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "doom-zero-dev0",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/doom-zero-dev0_0.0.1.dev0_arm64.deb",
+        "md5": "6d1a45a89c65663db646fc4a1e59ed7a",
+        "sha256": "926eaeab163a8d7771f2356cdfecfc7a6679bb565334223fc4a711c09f9efc2f",
+        "size": 14642544
+      },
+      "depends": "python3 (>= 3.11), python3-pil, ffmpeg, libx11-6, libxtst6, libsdl2-2.0-0, libsdl2-mixer-2.0-0, libsamplerate0, libfluidsynth3, libpng16-16t64, libxfont2, libunwind8, libgl1, libpixman-1-0",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doom-zero-dev0/doom_zero_store_icon_256_from_original.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doom-zero-dev0/screenshots/01-launcher.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doom-zero-dev0/screenshots/02-uac-security.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doom-zero-dev0/screenshots/03-training-welcome.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doom-zero-dev0/screenshots/04-controls-reset-draft.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doom-zero-dev0/screenshots/05-rejection-skull.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doom-zero-dev0/screenshots/06-training-first-capture.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doom-zero-dev0/doom_zero_store_icon_256_from_original.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doom-zero-dev0/screenshots/01-launcher.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doom-zero-dev0/screenshots/02-uac-security.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doom-zero-dev0/screenshots/03-training-welcome.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doom-zero-dev0/screenshots/04-controls-reset-draft.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doom-zero-dev0/screenshots/05-rejection-skull.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doom-zero-dev0/screenshots/06-training-first-capture.png"
       ]
     },
     {
