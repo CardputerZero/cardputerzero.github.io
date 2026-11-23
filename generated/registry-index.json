@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-24T01:35:18+08:00",
+  "generated_at": "2026-11-24T01:44:16+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1379,9 +1379,9 @@
         "display_name": "olp5735-sys",
         "github": "olp5735-sys"
       },
-      "version": "0.3.4",
+      "version": "0.3.5-m5stack1",
       "published_at": "2026-11-08T14:57:41+00:00",
-      "updated_at": "2026-11-23T16:10:35+00:00",
+      "updated_at": "2026-11-23T17:41:25+00:00",
       "review": {
         "status": "approved"
       },
@@ -1390,10 +1390,10 @@
       "download": {
         "type": "deb",
         "package": "cardputer-zero-iptv",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-zero-iptv_0.3.4_arm64.deb",
-        "md5": "2efda61900b368aba18737f29c13a0ca",
-        "sha256": "7f5099de233b47235ed98613d7196187712d8acbec513ead28a0625b98008f63",
-        "size": 2017532
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-zero-iptv_0.3.5-m5stack1_arm64.deb",
+        "md5": "a2b999944beded17d51758ed8b8670cf",
+        "sha256": "5409822aa16cebb95bcb9d69a8ca81527ec8a58a4c4dd25d318f2d93336959b0",
+        "size": 2035192
       },
       "depends": "libavformat61, libavcodec61, libswscale8, libswresample5, libavutil59, libpulse0, libcurl4t64, libidn2-0, libfreetype6, libpng16-16t64, libevdev2",
       "permissions": {
