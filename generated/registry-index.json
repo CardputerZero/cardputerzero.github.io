@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T20:01:51+08:00",
+  "generated_at": "2026-11-23T20:05:10+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4101,6 +4101,70 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/hamlog/screenshots/2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/hamlog/screenshots/3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/hamlog/screenshots/4.png"
+      ]
+    },
+    {
+      "uuid": "4e48bc3b-cf73-56c7-9a3c-bee9caef2e45",
+      "share_code": "HAS0",
+      "title": "Hass Zero",
+      "summary": "Control your Home Assistant favourites from the CardputerZero",
+      "description": "Hass Zero is an unofficial Home Assistant client: your favourite entities with live state, one key to toggle lights and switches, run scenes and scripts, open and close covers, lock and unlock, play and pause media; a detail screen to set brightness, target temperature, cover position and volume; and a searchable list of every entity grouped by domain and area. Sign in by scanning one QR with your Home Assistant URL and a long-lived access token (tools/ha2qr.py makes it offline on your PC). Italian and English.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Hardware & IoT",
+        "Lifestyle"
+      ],
+      "author": {
+        "display_name": "nerdosity",
+        "github": "nerdosity"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-11-23T00:52:05+00:00",
+      "updated_at": "2026-11-23T00:52:05+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "CC0-1.0",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "hass-zero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/hass-zero_1.0.0_arm64.deb",
+        "md5": "3f77e9710886d0ce0f1718a185ef8844",
+        "sha256": "c39ce9a0209ff8c5789d638691126d7877928fe0ef03ac8904e8289e14b3c33a",
+        "size": 1052412
+      },
+      "depends": "python3, python3-pil, python3-websocket, cardputer-qr",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": true,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/hass-zero/hass-zero_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/hass-zero/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/hass-zero/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/hass-zero/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/hass-zero/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/hass-zero/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/hass-zero/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/hass-zero/hass-zero_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/hass-zero/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/hass-zero/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/hass-zero/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/hass-zero/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/hass-zero/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/hass-zero/screenshots/screenshot-5.png"
       ]
     },
     {
