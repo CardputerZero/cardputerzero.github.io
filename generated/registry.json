@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T15:59:38+08:00",
+  "generated_at": "2026-11-23T16:05:40+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -6808,6 +6808,95 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-zodiac.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-life.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-eros.png"
+      ]
+    },
+    {
+      "uuid": "0724161f-c5fd-5c02-a8e2-34c692b69eac",
+      "share_code": "SQSD",
+      "title": "Square SDR",
+      "summary": "Tune, listen and transmit with a Square SDR 2 or Hermes-Lite 2 radio.",
+      "description": "Square SDR turns your Cardputer Zero into a pocket controller for a Square SDR 2 (or other Hermes-Lite 2 style) radio. You'll need the radio, connected to the Cardputer by Ethernet, as this app doesn't pick up signals on its own.\n\nListen from 0 to 30 MHz in USB, LSB, AM or CW, with a live spectrum and waterfall, an S meter, an auto notch to zap whistles, and RIT to nudge the receive pitch. Hold Tab or Space to talk (built-in or USB mic) or send CW. Press H any time for a key guide.\n\nYou need an amateur radio licence to transmit. Transmit is kept to UK amateur bands, cuts out after 3 minutes or if you retune, and backs off on high SWR. Please test on a dummy load first.",
+      "locales": {
+        "ja": {
+          "summary": "Square SDR 2 / Hermes-Lite 2 系の無線機を操作するアプリ。",
+          "description": "Cardputer Zero から Ethernet 経由で無線機を操作します。使用には Square SDR 2 などの Hermes-Lite 2 系無線機が必要です。ライブ受信、USB/LSB/AM/CW、スペクトラムとウォーターフォール、Sメーター、オートノッチ、RIT、音声/CW送信に対応。送信にはアマチュア無線の免許が必要です。送信は英国のアマチュア帯に制限されます。ダミーロードで試験し、免許をお持ちの場合のみ送信してください。"
+        },
+        "zh-CN": {
+          "summary": "用于 Square SDR 2 / Hermes-Lite 2 电台的控制应用。",
+          "description": "通过以太网在 Cardputer Zero 上控制电台。需要 Square SDR 2 或其他 Hermes-Lite 2 类电台。支持实时接收、USB/LSB/AM/CW、频谱瀑布图、S 表、自动陷波、RIT 以及语音/CW 发射。发射需要业余无线电执照。发射仅限英国业余频段；请先用假负载测试，并仅在持有业余执照时发射。"
+        },
+        "es": {
+          "summary": "Controla una radio Square SDR 2 / Hermes-Lite 2 desde tu Cardputer.",
+          "description": "Controla tu radio por Ethernet desde Cardputer Zero. Necesitas un Square SDR 2 u otra radio tipo Hermes-Lite 2. Recepción en directo, USB/LSB/AM/CW, espectro y cascada, S-meter, notch automático, RIT y transmisión de voz/CW. Necesitas licencia de radioaficionado para transmitir. La transmisión se limita a las bandas de aficionado del Reino Unido; prueba antes con una carga ficticia y transmite solo con licencia."
+        }
+      },
+      "i18n": {
+        "ja": {
+          "summary": "Square SDR 2 / Hermes-Lite 2 系の無線機を操作するアプリ。",
+          "description": "Cardputer Zero から Ethernet 経由で無線機を操作します。使用には Square SDR 2 などの Hermes-Lite 2 系無線機が必要です。ライブ受信、USB/LSB/AM/CW、スペクトラムとウォーターフォール、Sメーター、オートノッチ、RIT、音声/CW送信に対応。送信にはアマチュア無線の免許が必要です。送信は英国のアマチュア帯に制限されます。ダミーロードで試験し、免許をお持ちの場合のみ送信してください。"
+        },
+        "zh-CN": {
+          "summary": "用于 Square SDR 2 / Hermes-Lite 2 电台的控制应用。",
+          "description": "通过以太网在 Cardputer Zero 上控制电台。需要 Square SDR 2 或其他 Hermes-Lite 2 类电台。支持实时接收、USB/LSB/AM/CW、频谱瀑布图、S 表、自动陷波、RIT 以及语音/CW 发射。发射需要业余无线电执照。发射仅限英国业余频段；请先用假负载测试，并仅在持有业余执照时发射。"
+        },
+        "es": {
+          "summary": "Controla una radio Square SDR 2 / Hermes-Lite 2 desde tu Cardputer.",
+          "description": "Controla tu radio por Ethernet desde Cardputer Zero. Necesitas un Square SDR 2 u otra radio tipo Hermes-Lite 2. Recepción en directo, USB/LSB/AM/CW, espectro y cascada, S-meter, notch automático, RIT y transmisión de voz/CW. Necesitas licencia de radioaficionado para transmitir. La transmisión se limita a las bandas de aficionado del Reino Unido; prueba antes con una carga ficticia y transmite solo con licencia."
+        }
+      },
+      "categories": [
+        "Radio & Comms"
+      ],
+      "author": {
+        "github": "MrJoshMurray",
+        "display_name": "MrJoshua"
+      },
+      "version": "0.3.1",
+      "published_at": "2026-11-21T17:00:05+00:00",
+      "updated_at": "2026-11-21T17:00:05+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/MrJoshMurray/square-sdr",
+      "download": {
+        "type": "deb",
+        "package": "square-sdr",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/square-sdr_0.3.1_arm64.deb",
+        "md5": "01176be9f31c5c64ce0154bd3bc066a0",
+        "sha256": "ff8645a56ec0ef20dcf5c4eb911b745632abf9161916706f1c60e95741da13f8",
+        "size": 2196570
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libasound2t64 | libasound2, libasound2-plugins",
+      "permissions": {
+        "camera": false,
+        "microphone": true,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/square-sdr.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-receiver.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-settings.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-help.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-receiver-light.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-settings-light.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-help-light.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/square-sdr.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-receiver.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-settings.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-help.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-receiver-light.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-settings-light.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-help-light.png"
       ]
     },
     {
