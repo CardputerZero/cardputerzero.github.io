@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T19:58:24+08:00",
+  "generated_at": "2026-11-23T20:01:51+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2300,6 +2300,68 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/crockogoldslots/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/crockogoldslots/screenshots/screenshot-4.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/crockogoldslots/screenshots/screenshot-5.png"
+      ]
+    },
+    {
+      "uuid": "f3e52fc3-1a63-5e57-89e5-1e18ef84affd",
+      "share_code": "CWTZ",
+      "title": "CWTrainerZero",
+      "summary": "Offline Morse code practice for Cardputer Zero.",
+      "description": "Listen to a short Morse group, type what you heard and check your answer character by character. Start with K and M, work through 25 letter lessons or jump to all of A–Z. Separate Numbers and Punctuation sets give you more to practise, with groups of one to four characters.\r\n\r\nReplay any prompt or preview the newest letter. Characters play at 18 WPM, with adjustable Farnsworth spacing so you can practise at a slower overall pace without stretching the dots and dashes. Your settings and scores stay on the device. No account or internet connection is required.\r\n\r\nDeveloped for Tartanleaf.com by Greg Weir VA1GW",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Radio & Comms",
+        "Education"
+      ],
+      "author": {
+        "display_name": "Greg Weir VA1GW",
+        "github": "gregweir"
+      },
+      "version": "0.3.0-1",
+      "published_at": "2026-11-22T23:45:38+00:00",
+      "updated_at": "2026-11-22T23:45:38+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/gregweir/CWTrainerZero",
+      "download": {
+        "type": "deb",
+        "package": "cwtrainerzero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cwtrainerzero_0.3.0-1_arm64.deb",
+        "md5": "b7d4130d48e39554b514180d3f19870b",
+        "sha256": "eef6b0bf3ab25831f9fd4d80b86a7b43896f597f988528ac20efad284ee965b5",
+        "size": 710696
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libpulse0",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cwtrainerzero/cwtrainerzero_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cwtrainerzero/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cwtrainerzero/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cwtrainerzero/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cwtrainerzero/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cwtrainerzero/screenshots/screenshot-4.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cwtrainerzero/cwtrainerzero_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cwtrainerzero/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cwtrainerzero/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cwtrainerzero/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cwtrainerzero/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cwtrainerzero/screenshots/screenshot-4.png"
       ]
     },
     {
