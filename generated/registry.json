@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T07:06:26+08:00",
+  "generated_at": "2026-11-23T08:11:12+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3321,26 +3321,26 @@
       "uuid": "341fb244-511c-54d3-8c04-22a6adc428a8",
       "share_code": "ICMZ",
       "title": "ICOMzero",
-      "summary": "Direct radio audio, waterfall and FT8 contacts with Wavelog/QRZ logging.",
-      "description": "Choose Radio for direct network audio, waterfall and receive tuning, or FT8 for silent decoding and explicitly initiated contacts. FT8 preserves an existing designated dial frequency or requires a band choice before beginning, and shows CQ calls, your conversations and local TX records after their 15-second period ends. F/X selects lines; Enter or the selected-decode menu continues a contact from its current grid/report/acknowledgment stage. Auto audio frequency follows the selected station and replies use the opposite UTC period. Settings also allow a fixed audio frequency and nominal RF power. IC-7300MK2 FT8 uses USB-D/FIL1 with DATA MOD/LAN and readback gating. Network address changes reconnect without restarting TX. Auto CQ queues callers heard during exchanges. It sends one own CQ, then calls up to five strong recent CQ stations twice each before stopping if unanswered. Queued callers have priority after a contact; advancing exchanges retain four attempts per stage. POTA Hunt monitors tagged POTA/SOTA CQs and starts with a direct R-report, retries three unanswered transmissions per stage, then rests and resumes monitoring. QSOs require actual exchanged reports. Centered pop-ups show notices and RF warnings; Enter requests safe warning clearance. POTA/SOTA CQ rows are green. Bundled offline data estimates countries/territories and shows USA-XX registered states from a minimized FCC callsign/state snapshot. States describe registered license addresses, not live portable locations. Local CTY.DAT replacement is supported. FT8 uses a continuous audio packet stream, buffered transmission, full packet-range repair and bounded control recovery. Auto CQ writes private session journals on the device. Saved QSOs have an optional speaker beep and Auto CQ ending without responses has a distinct beep. Tab includes Bands, Call CQ, Auto CQ, POTA Hunt, Settings, Record QSO, Logging, antenna tuning and Help. Record QSO reviews exchanged reports for an explicitly confirmed manual log. Sync Log downloads incremental Wavelog or QRZ worked history into a private local index. Hide previous contacts applies only to FT8 on the current band; Auto CQ still answers or queues previously worked callers addressing you. Completed contacts use RRR, save locally and upload independently to Wavelog/QRZ; a green popup confirms local saving. QRZ may require an API subscription. FT8 automatically starts antenna tuning on entry and band changes, briefly transmitting a carrier. SWR above 2.0, excessive ALC or missing active-TX telemetry stop TX with a latched warning. Requires configured callsign/grid, synchronized device time and radio TX permission. Direct Icom profiles cover IC-705, IC-7300MK2, IC-7610, IC-7760, IC-7850/7851, IC-905, IC-9700 and IC-R8600 (RX only). TS-890S uses native KNS. IC-7300MK2 is hardware-tested; other models await physical validation. Credentials stay private on the device.",
+      "summary": "Direct radio listening, waterfall, CW decoding and FT8 with QSO logging.",
+      "description": "Turn your Cardputer Zero into a direct network radio companion. Choose Radio, FT8 or Settings from the icon menu; no computer bridge is needed for the supported network radios.\n\nRADIO — Listen through the speaker with a live spectrum/waterfall. Hold Z/C to tune, select bands and USB/LSB/CW/CW-R modes, and save a 1000/500/100 Hz step per radio. Volume and mute are saved. Noise reduction and antenna-tuner controls are available where supported; starting the tuner briefly transmits.\n\nCW — Receive-only Morse decoding with automatic or manual tone selection, detected pitch and estimated speed. W enables decoding without changing the radio mode, dial or filter. F/X or Fn+F/Fn+X scrolls history; hold to repeat and return to the bottom to follow new text. Up to 16,384 characters stay in memory during a Radio session. Retunes and resynchronization start a new line instead of clearing the history. Crowded signals and irregular sending can still cause errors.\n\nFT8 — Silent reception, SNR-prefixed messages, highlighted CQ/POTA/SOTA calls and conversations involving you, offline country/territory estimates and USA state labels. Enter replies to a selected decode or continues its current exchange. Auto audio frequency follows the other station and replies use the opposite UTC period. Standard contacts use RRR and finish with 73. Local TX rows appear after the transmit period.\n\nAUTOMATION — Auto CQ sends one own CQ, then tries up to five fresh strong CQ stations twice each if unanswered. Callers heard during another exchange enter a queue. POTA Hunt monitors POTA/SOTA CQs, starts with a direct R-report and allows three unanswered attempts per stage before resting and monitoring again. Both modes must be started explicitly and stop on faults.\n\nLOGGING — Save completed contacts locally with ADIF data and independently upload to Wavelog and QRZ. Retry pending uploads, review a manual Record QSO entry, and import worked history with Sync Log. Hide previous contacts applies to FT8 on the current band; Auto CQ still answers or queues worked stations addressing you. Green QSO notifications and optional speaker beeps confirm local saves. QRZ API access may require a subscription.\n\nSETTINGS — Name, edit and clone multiple radio profiles. Check GitHub updates at launch or manually, with download progress and SHA-256 verification. Credentials and private diagnostic/session journals remain on the device and are not bundled publicly.\n\nFT8 requires configured station identity, synchronized device time and radio TX permission. Automatic antenna tuning briefly transmits after selecting a band. SWR above 2.0, excessive ALC, stale active-TX telemetry, clock/PTT failures and disconnects stop transmission. Press Enter to request warning clearance; faults do not restart TX automatically. Network-polled protection supplements the radio's protection.\n\nDirect profiles: IC-705, IC-7300MK2, IC-7610, IC-7760, IC-7850/7851, IC-905, IC-9700, IC-R8600 (RX only), and native KNS for TS-890S. IC-7300MK2 is physically tested; other profiles await hardware validation. USB/serial-only radios and the original IC-7300 are outside this direct-network release.",
       "locales": {
         "ja": {
           "title": "ICOMzero",
-          "summary": "Icom・Kenwood 無線機の直接ネットワーク受信、周波数調整、瀑布表示。"
+          "summary": "Icom・Kenwood 無線機に直接接続。受信・ウォーターフォール・CW解読・FT8・交信ログ。"
         },
         "zh-CN": {
           "title": "ICOMzero",
-          "summary": "直连 Icom 和 Kenwood 网络电台，收听音频、调谐并查看实时瀑布图。"
+          "summary": "直连 Icom/Kenwood 网络电台：收听、瀑布图、CW 解码、FT8 通联与日志。"
         }
       },
       "i18n": {
         "ja": {
           "title": "ICOMzero",
-          "summary": "Icom・Kenwood 無線機の直接ネットワーク受信、周波数調整、瀑布表示。"
+          "summary": "Icom・Kenwood 無線機に直接接続。受信・ウォーターフォール・CW解読・FT8・交信ログ。"
         },
         "zh-CN": {
           "title": "ICOMzero",
-          "summary": "直连 Icom 和 Kenwood 网络电台，收听音频、调谐并查看实时瀑布图。"
+          "summary": "直连 Icom/Kenwood 网络电台：收听、瀑布图、CW 解码、FT8 通联与日志。"
         }
       },
       "categories": [
@@ -3350,9 +3350,9 @@
         "github": "unagisan69",
         "display_name": "unagisan69"
       },
-      "version": "0.14.2",
+      "version": "0.16.4",
       "published_at": "2026-11-18T18:40:23+00:00",
-      "updated_at": "2026-11-22T18:22:26+00:00",
+      "updated_at": "2026-11-23T00:07:20+00:00",
       "review": {
         "status": "approved"
       },
@@ -3361,10 +3361,10 @@
       "download": {
         "type": "deb",
         "package": "icomzero",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/icomzero_0.14.2_arm64.deb",
-        "md5": "affebc09afba5a0b45d34ecd1e4c5b0f",
-        "sha256": "fee14d2fcf43c9195ac403a0bf96d5150c738739873645c28f222dea9a11dba2",
-        "size": 1744564
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/icomzero_0.16.4_arm64.deb",
+        "md5": "09c005aaa7bd5c5ab30acf2da0558752",
+        "sha256": "c7f522b6cd52eebb5f5c85a36f85148ee0c41e4eb726847a374c771e41161cb0",
+        "size": 1758808
       },
       "depends": "libc6, python3, python3-pil, python3-numpy, fonts-dejavu-core, alsa-utils, libasound2-plugins, pipewire-pulse",
       "permissions": {
@@ -3381,21 +3381,21 @@
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/icon.png",
         "screenshots": [
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/home.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/ft8.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/ft8-menu.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/waterfall.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/ft8-band.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/setup.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/cw.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/cw-history.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/ft8.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/ft8-menu.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/home.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/ft8.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/ft8-menu.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/waterfall.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/ft8-band.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/setup.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/cw.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/cw-history.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/ft8.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/ft8-menu.png"
       ]
     },
     {
