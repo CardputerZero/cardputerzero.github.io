@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T14:22:58+08:00",
+  "generated_at": "2026-11-23T14:27:17+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1768,6 +1768,68 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardrouter/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardrouter/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardrouter/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "e8b573cf-ee41-5279-a74d-e629a4cc0c64",
+      "share_code": "CTUB",
+      "title": "CardTube",
+      "summary": "A pocket version of YouTube in your Cardputer Zero!",
+      "description": "This is a local Youtube media player that works 100% on your CardputerZero, no api needed, just internet connection, it features bluetooth connectivity for audio streaming and a video player for the Youtube vids, also it offer a video/audio queue",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Media",
+        "Lifestyle"
+      ],
+      "author": {
+        "display_name": "LoreBul",
+        "github": "Lore-Bul"
+      },
+      "version": "0.4.5-rev1",
+      "published_at": "2026-11-20T14:26:06+00:00",
+      "updated_at": "2026-11-20T14:26:06+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "cardtube",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardtube_0.4.5-rev1_arm64.deb",
+        "md5": "da07aa8eac3310b71ff814acb9ed7f04",
+        "sha256": "52093fd34e297045c991bd5b445eac4da3fbfb59577e2372b3cc46036d6fa6be",
+        "size": 1134160
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, mpv, yt-dlp, curl, python3",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardtube/cardtube_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardtube/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardtube/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardtube/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardtube/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardtube/screenshots/screenshot-4.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardtube/cardtube_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardtube/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardtube/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardtube/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardtube/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardtube/screenshots/screenshot-4.png"
       ]
     },
     {
