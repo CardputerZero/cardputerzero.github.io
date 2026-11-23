@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T20:36:29+08:00",
+  "generated_at": "2026-11-23T20:41:13+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8195,6 +8195,65 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/screenshot-4.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/screenshot-5.png"
+      ]
+    },
+    {
+      "uuid": "cf6c374c-4a1d-5522-a6c4-4c0066ffb692",
+      "share_code": "STK0",
+      "title": "StickZero",
+      "summary": "Tinywhoop drone simulator.",
+      "description": "I ported StickTime Lua to Rust for the CardputerZero which runs surprisingly well I figured I should share the experience if anyone else is wanting to practice with their flying with their CardputerZero! \r\n\r\nMainly built around using a BetaFPV Air75 II & Meteor75 Pro II with Lava II 580mAh/680mAh batteries and a RadioMaster Pocket or EdgeTX radio controller. It has some realism built in like prop wash, battery sag, etc.\r\n\r\nI also added sounds, an analog video filter and tried my best to make it as stable as possible but feel free to let me know any issues, pull request or fork it on GitHub.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games"
+      ],
+      "author": {
+        "display_name": "omghax",
+        "github": "TacoDelPaco"
+      },
+      "version": "0.1.0",
+      "published_at": "2026-11-23T11:17:58+00:00",
+      "updated_at": "2026-11-23T11:17:58+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-3.0-or-later",
+      "source_repo": "https://github.com/TacoDelPaco/stickzero",
+      "download": {
+        "type": "deb",
+        "package": "stickzero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/stickzero_0.1.0_arm64.deb",
+        "md5": "6137d6650b2d5d7d5fa701322cdfe302",
+        "sha256": "fe1cbc18341ec167888fa15d9f7430c75f5afb1d63df16914933edf76479bcaf",
+        "size": 328356
+      },
+      "depends": "",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/stickzero/stickzero_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/stickzero/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/stickzero/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/stickzero/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/stickzero/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/stickzero/stickzero_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/stickzero/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/stickzero/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/stickzero/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/stickzero/screenshots/screenshot-3.png"
       ]
     },
     {
