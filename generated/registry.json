@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T20:41:13+08:00",
+  "generated_at": "2026-11-23T20:44:22+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -10348,7 +10348,7 @@
       "share_code": "CHRD",
       "title": "ZeroChord",
       "summary": "A pocket chord-and-harp instrument for CardputerZero.",
-      "description": "Make music with your CardputerZero keyboard. Play chords, pick individual notes, strum, or add rhythmic arpeggios. Explore nine editable presets with separate Front, Chord, and Pad sounds, adjustable envelopes, tempo, and patterns. Customize key mappings, shape your sound with three-band EQ, and import SoundFont packs from a TF card.\r\n\r\nInspired by minichord and Omnichord. Open source: https://github.com/momo20261121/ZeroChord",
+      "description": "Make music with your CardputerZero keyboard. Play a chord with one hand and pick or strum its notes with the other. Combine Chord, Arp, and Pad backing layers, or play Front only. Nine editable presets let you choose sounds for Front, Chord/Arp, and Pad and adjust envelopes, tempo, and patterns. Customize key mappings, shape the mix with three-band EQ and Echo, or import SoundFont packs from a TF card.\n\nMake your first sound\n1. Press 8 for a C major chord. The app starts silently until you play.\n2. Play Z X C V B N M to pick its notes. L strums up. K strums down.\n3. Try 8 → 5 → T → 4 for C → G → Am → F in the default key of C.\n4. Press O to choose backing layers (Chord, Arp, Pad, or none for Front only). I toggles Hold.\n5. Press Space to stop sound. Hold Esc to return to the launcher.\n\nInspired by minichord (https://minichord.com/) and the Suzuki Omnichord (https://www.suzuki-music.co.jp/special/omnichord_om-108/en/).\nUser guide (https://github.com/momo20261121/ZeroChord/blob/main/docs/USER_GUIDE.md)\nSource on GitHub (https://github.com/momo20261121/ZeroChord)",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -10359,21 +10359,21 @@
         "display_name": "momo",
         "github": "momo20261121"
       },
-      "version": "1.0.0",
+      "version": "1.2.0",
       "published_at": "2026-11-22T04:36:49+00:00",
-      "updated_at": "2026-11-22T04:36:49+00:00",
+      "updated_at": "2026-11-23T11:53:13+00:00",
       "review": {
         "status": "approved"
       },
       "license": "MIT",
-      "source_repo": "",
+      "source_repo": "https://github.com/momo20261121/ZeroChord",
       "download": {
         "type": "deb",
         "package": "zerochord",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerochord_1.0.0_arm64.deb",
-        "md5": "8c4cd4e997f2400ecd536afa940d41c4",
-        "sha256": "de2d9795097b85b4cd0be0a461a7597f64df14f767dc7648b32979e5e3f89d1a",
-        "size": 784212
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerochord_1.2.0_arm64.deb",
+        "md5": "83341d01d163e4556f2f85ccf88eba84",
+        "sha256": "0268cad6bf624b4a69e55486200923150ca1687385c70cb0d37aa89ba68b48ec",
+        "size": 723192
       },
       "depends": "libc6 (>= 2.36), libpulse0, timgm6mb-soundfont",
       "permissions": {
@@ -10389,12 +10389,20 @@
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/zerochord_icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/screenshot-0.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/performance.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/style.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/volume-effects.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/sounds.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/chord-config.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/zerochord_icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/screenshot-0.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/performance.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/style.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/volume-effects.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/sounds.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/chord-config.png"
       ]
     },
     {
