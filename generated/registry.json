@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T14:29:42+08:00",
+  "generated_at": "2026-11-23T14:44:01+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3263,6 +3263,70 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frame/screenshots/store-1-320x170.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frame/screenshots/store-2-320x170.png"
+      ]
+    },
+    {
+      "uuid": "0d4e2d9b-1df8-5236-b702-2b198903ed77",
+      "share_code": "FRTZ",
+      "title": "Frotz Zero",
+      "summary": "Play Z-machine adventures with saves, readable text and an online library.",
+      "description": "A graphical Frotz frontend for v3-v8 Z-machine adventures on Cardputer Zero. No playable stories or game media are bundled with the installer. The original CC0 test/demo stories are supplied as rebuildable source and can be installed separately. Use the built-in Downloads menu to get stories from Andrew Plotkin's Infocom catalogue (https://eblong.com/infocom/) and the IF Archive Z-code collection (https://www.ifarchive.org/indexes/if-archive/games/zcode/), including supported ZIP bundles, or copy your own story files to the device. Home shows Continue with the last played title, Library, Downloads, Settings, Help and Exit. Story pages offer covers, summaries, play/save actions and confirmed deletion that keeps saved games and shared media. All four arrows and visible number shortcuts navigate menus. Ctrl+V offers Reader, Fit Screen, Fill Screen, Fit Width, Actual Pixels, Reading Zoom, Frame + Text Zoom and Automatic. Ctrl+U/D changes size; Ctrl+P/N recalls commands. Reader includes untimed opening title pauses and keeps your place during resizing. Automatic is the default for every supported V3-V8 story. It wraps text at the chosen size, including timed prompts; Tab shows the original artwork, maps and status without advancing the game. Existing stories switch once, and later manual choices persist. Continue retains the readable page and text/original-view selection. Framed zoom fills the screen with a V6 border while enlarging its main text window at untimed command prompts; original wide lines may need panning. Catalogue notes are cached offline; manual links have QR codes. Includes named-save Load, Rename and confirmed Delete with automatic Continue protected, Quetzal saves, history, scrollback, mute/volume, dark/light themes, offline credits and Continue at supported untimed v3-v5/v7/v8 prompts. V6 automatic resume is unavailable; use story SAVE/RESTORE. No commercial stories or covers are included. Screenshots use the original CC0 demonstration stories.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games",
+        "Emulators"
+      ],
+      "author": {
+        "display_name": "Ahazi",
+        "github": "Ahazii"
+      },
+      "version": "0.8.1-1",
+      "published_at": "2026-11-20T18:59:32+00:00",
+      "updated_at": "2026-11-20T18:59:32+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-3.0-or-later",
+      "source_repo": "https://github.com/Ahazii/frotz-zero",
+      "download": {
+        "type": "deb",
+        "package": "frotz-zero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/frotz-zero_0.8.1-1_arm64.deb",
+        "md5": "a2245787cced300fe986a9b086bbd7f9",
+        "sha256": "1f04058e9268c6b479d1a4943a105fa1793f02adc6e66c15c64842c4849dd995",
+        "size": 433068
+      },
+      "depends": "libc6 (>= 2.41), libgcc-s1, libstdc++6 (>= 13), libsdl2-2.0-0 (>= 2.32.4), libsdl2-mixer-2.0-0 (>= 2.8.1), libsdl2-ttf-2.0-0 (>= 2.24.0), libfreetype6, libpng16-16t64, libjpeg62-turbo, zlib1g, libxkbcommon0, libssl3t64, fonts-dejavu-core, xkb-data, libcurl4t64, libarchive13t64, libxml2, ca-certificates",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frotz-zero/frotz-zero_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frotz-zero/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frotz-zero/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frotz-zero/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frotz-zero/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frotz-zero/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frotz-zero/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frotz-zero/frotz-zero_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frotz-zero/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frotz-zero/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frotz-zero/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frotz-zero/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frotz-zero/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/frotz-zero/screenshots/screenshot-5.png"
       ]
     },
     {
