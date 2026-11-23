@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T10:44:36+08:00",
+  "generated_at": "2026-11-23T11:57:17+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -15,6 +15,61 @@
     ]
   },
   "apps": [
+    {
+      "uuid": "e1f44376-9b30-5ef9-943f-d5008c478ba8",
+      "share_code": "ACID",
+      "title": "AcidZero",
+      "summary": "Acid bass synth with a 16-step sequencer and MIDI CC control",
+      "description": "AcidZero is an acid bass synthesizer for the Cardputer Zero. Enter notes on the keyboard, set slide, accent and rests per step, and shape the sound with cutoff, resonance, envelope mod, decay and accent. Press P for settings: MIDI input with channel selection, CC learn for every knob, MIDI notes and start/stop, and output volume.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Creative & Office"
+      ],
+      "author": {
+        "display_name": "kurogedelic",
+        "github": "kurogedelic"
+      },
+      "version": "0.2.0",
+      "published_at": "2026-11-16T01:22:22+00:00",
+      "updated_at": "2026-11-16T01:22:22+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/kurogedelic/AcidZero",
+      "download": {
+        "type": "deb",
+        "package": "acidzero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/acidzero_0.2.0_arm64.deb",
+        "md5": "8b8cc165d42868b6eb99dc7f4e286626",
+        "sha256": "e17716a8d0087332ddeb09029f22d995a7f3e89dde929996247c4f24c1195996",
+        "size": 58940
+      },
+      "depends": "libc6, libstdc++6, libsdl2-2.0-0, libasound2",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/acidzero/acidzero_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/acidzero/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/acidzero/screenshots/screenshot-1.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/acidzero/acidzero_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/acidzero/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/acidzero/screenshots/screenshot-1.png"
+      ]
+    },
     {
       "uuid": "7ac45573-63fb-5873-abcb-0b379291f43f",
       "share_code": "AWUI",
