@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T11:57:17+08:00",
+  "generated_at": "2026-11-23T12:05:23+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8410,7 +8410,7 @@
       "share_code": "0SDR",
       "title": "ZeroSDR",
       "summary": "ZeroSDR turns the Cardputer Zero into a pocket SDR receiver.",
-      "description": "FEATURES\r\n- Real-time spectrum and waterfall on the 320x170 display\r\n- FM / NFM / AM / USB / LSB demodulation with squelch, audio AGC and\r\n  FM de-emphasis (50/75 us)\r\n- Adjustable tuning step, display zoom, FFT size and sample rate\r\n- On-screen key reference and settings panel (press H)\r\n- ADSB aircraft page: sortable list, detail view with a PFD, and a radar\r\n  view with a fading sweep, range rings and a large callsign plate\r\n- Runs as the normal user through the librtlsdr udev rule - no root,\r\n  no background service\r\n\r\nREQUIRED EXTRA HARDWARE\r\n- An RTL-SDR USB dongle (tested with RTL-SDR Blog V4 / RTL2832U).\r\n  The app has no built-in radio, so a dongle is mandatory.\r\n- An antenna: any VHF/UHF antenna for the SDR page; a 1090 MHz antenna\r\n  for the ADSB page.\r\n- The dongle plugs into the Cardputer Zero USB-A port and is powered by\r\n  the device.\r\n\r\nNOTES\r\n- ADSB decoding is done by the external \"readsb\" program, which must be\r\n  installed separately (a build with the RTL-SDR backend). Without it the\r\n  ADSB list stays empty; the SDR page still works.\r\n- Audio plays through the built-in speaker or the 3.5 mm jack.",
+      "description": "Features\r\n- Real-time spectrum and waterfall on the 320×170 display\r\n- FM / NFM / AM / USB / LSB audio with squelch, AGC and de-emphasis\r\n- Wideband swept spectrum page (custom range, pan/zoom, max hold)\r\n- RFI survey: compare HF noise with equipment on/off (10m–80m)\r\n- ADSB: nearest-first list, PFD detail view and map radar\r\n- AIS: list, map with CPA guard ring, porthole ship dossier, NMEA UDP output\r\n- ACARS: aircraft message list and wrapped detail view\r\n- Fn+P screenshot on every page; Fn+D/Fn+S system volume\r\n- Runs as a normal user; no root, no background service\r\n\r\nRequirements\r\n\r\n- RTL-SDR USB dongle (tested with RTL-SDR Blog V4)\r\n- VHF/UHF antenna for SDR and AIS; 1090 MHz antenna for ADSB",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -8421,9 +8421,9 @@
         "display_name": "Weiming Feng",
         "github": "nullbeing"
       },
-      "version": "0.4.0",
+      "version": "0.5.0",
       "published_at": "2026-11-10T02:37:56+00:00",
-      "updated_at": "2026-11-22T08:07:22+00:00",
+      "updated_at": "2026-11-23T04:03:41+00:00",
       "review": {
         "status": "approved"
       },
@@ -8432,10 +8432,10 @@
       "download": {
         "type": "deb",
         "package": "zerosdr",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosdr_0.4.0_arm64.deb",
-        "md5": "01778cbfdabfb61353060e4fb25e09b1",
-        "sha256": "ce3eaaf783cd6179f8038dde44dff279acf7174bcdab551e6c501cff1a8bf799",
-        "size": 572832
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosdr_0.5.0_arm64.deb",
+        "md5": "bf0c07f174e00aa608812062d025d0eb",
+        "sha256": "9f071c6a04ead4f0c3d62c20cd530a270e22956d1854a3010745cbba87c260f3",
+        "size": 644768
       },
       "depends": "libasound2 (>= 1.0.18), libc6 (>= 2.35), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 4.0), libncurses6 (>= 6), libpulse0 (>= 0.99.1), librtlsdr0 (>= 0.6.0), libstdc++6 (>= 12), libtinfo6 (>= 6), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.2.6), libasound2-plugins, curl",
       "permissions": {
