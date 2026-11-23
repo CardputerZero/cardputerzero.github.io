@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T22:53:32+08:00",
+  "generated_at": "2026-11-23T23:11:54+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -7229,7 +7229,7 @@
       "share_code": "WARD",
       "title": "Quartermaster",
       "summary": "Tri-band Wi-Fi + Bluetooth wardriver: WiGLE logs, auto uploads and Recon",
-      "description": "Quartermaster turns the CardputerZero into a complete Wi-Fi and Bluetooth wardriver. Plug in any USB Wi-Fi adapter, single, dual or tri-band, and it is recognised by itself. Every adapter scans at once across 2.4, 5 and 6 GHz, next to the built-in radio and Bluetooth, and it still wardrives with no adapter at all. GPS comes from a USB receiver, the Cap LoRa-1262 or a Grove GPS unit. Each network and device is counted once, and both its strongest and its weakest sighting are written with their positions. Logs are WigleWifi-1.6 CSV files, and finished logs are sent by themselves to WiGLE, WDGWars and Wardrift whenever the Cardputer is online. Add your keys by scanning a QR code with your phone or by typing them on the keyboard, and test each one from the device. Recon is a separate mode that watches for ALPR and Flock cameras, body cameras, doorbell and security cameras, camera glasses, trackers such as AirTag and SmartTag, Remote ID drones and more. It grades the evidence, warns you, tells you if a device seems to follow you, and has a signal finder to walk it down. Recon and a wardrive never run at the same time. Large live counters, a log browser with the upload state of every site, hardware checks that warn when an adapter is not starting, and a full settings screen. MIT open source.",
+      "description": "Quartermaster turns the CardputerZero into a complete Wi-Fi and Bluetooth wardriver. Plug in any USB Wi-Fi adapter, single, dual or tri-band, and it is recognised by itself. Every adapter scans at once across 2.4, 5 and 6 GHz, next to the built-in radio and Bluetooth, and it still wardrives with no adapter at all. GPS comes from a USB receiver, the Cap LoRa-1262 or a Grove GPS unit. Each network and device is counted once, and by default only its strongest and its weakest sighting are written, each with its position. Logs are WigleWifi-1.6 CSV files, and finished logs are sent by themselves to WiGLE, WDGWars and Wardrift whenever the Cardputer is online. Add your keys by scanning a QR code with your phone or by typing them on the keyboard, and test each one from the device. Recon is a separate mode that watches for ALPR and Flock cameras, body cameras, doorbell and security cameras, camera glasses, trackers such as AirTag and SmartTag, Remote ID drones and more. It grades the evidence, warns you, tells you if a device seems to follow you, and has a signal finder to walk it down. Recon and a wardrive never run at the same time. Large live counters, a log browser with the upload state of every site, hardware checks that warn when an adapter is not starting, and a full settings screen. MIT open source.",
       "locales": {
         "zh-CN": {
           "title": "Quartermaster",
@@ -7258,9 +7258,9 @@
         "github": "valleytechsolutions",
         "display_name": "Valleytech Solutions"
       },
-      "version": "1.0.4",
+      "version": "1.2.0",
       "published_at": "2026-11-22T15:32:35+00:00",
-      "updated_at": "2026-11-22T15:32:35+00:00",
+      "updated_at": "2026-11-23T15:09:04+00:00",
       "review": {
         "status": "approved"
       },
@@ -7269,12 +7269,12 @@
       "download": {
         "type": "deb",
         "package": "quartermaster",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/quartermaster_1.0.4_all.deb",
-        "md5": "99cfcf7488eabfad175a7c790eb935d8",
-        "sha256": "e4e309e441895f448d792457443355fd69a40c43a9ba5a712dcf87641425ce8d",
-        "size": 808332
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/quartermaster_1.2.0_all.deb",
+        "md5": "dc7216b6762f5a4ba852efd6b31ebd20",
+        "sha256": "fcaced83f5b819351e5f71e0a164de5521c8f668c03eff4e708a501da92af9d3",
+        "size": 1424496
       },
-      "depends": "python3 (>= 3.9), python3-pil, python3-numpy, python3-serial, python3-dbus, iw, iproute2, ca-certificates",
+      "depends": "python3 (>= 3.9), python3-pil, python3-numpy, python3-serial, python3-dbus, iw, iproute2, ca-certificates, network-manager, bluez, alsa-utils, rtl-sdr, python3-spidev, python3-smbus | python3-smbus2, python3-libgpiod, python3-cryptography",
       "permissions": {
         "camera": false,
         "microphone": false,
