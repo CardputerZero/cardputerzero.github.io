@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T15:51:05+08:00",
+  "generated_at": "2026-11-23T15:57:27+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -6808,6 +6808,70 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-zodiac.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-life.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sparrow/screenshots/sparrow-eros.png"
+      ]
+    },
+    {
+      "uuid": "501d8637-54d3-518b-aa67-898f82231234",
+      "share_code": "SBVP",
+      "title": "Strawberry Video Player",
+      "summary": "Offline video player, HDMI diagnostics and test patterns for AV professionals",
+      "description": "Strawberry Video Player turns the CardputerZero into a tool for AV professionals. It works completely offline: no network is needed.\n\nOffline video player: plays every video in ~/Videos in alphabetical order and loops, on HDMI at up to 1080p (hardware decoding where the Pi supports it) or on the built-in LCD, with sound following the picture.\n\nHDMI diagnostic tool: press i to see what the connected display reports, on the LCD: its name, maker and product code, the active mode, color range and bit depth, audio formats, link status, CEC address, and native and supported modes. The page also appears for a few seconds whenever HDMI is connected.\n\nTest pattern generator: press t for color bars, gray steps, a 1:1 geometry pattern (square and circle), a convergence grid, and an audio and sync test with left, right and both-channel tones. Keys z, x, c and f choose the pattern. Keys 1 to 8 set the display's aspect ratio (16:9, 16:10, 4:3, 5:4, 1:1, 2.35:1, 2.21:1, 21:9) for displays that stretch the picture. Patterns work even when there are no videos on the card.\n\nKeys: Tab LCD/HDMI, q/Space play-pause, z/x previous, c/f next, w/e skip 30 s, s/d volume, a mute, l loop one/all, 1-8 aspect ratio, i HDMI diagnostics, t test patterns, h help, Esc quit.\n\nSmooth 1080p on HDMI needs a one-time setup described in the README (a polkit rule); without it HDMI plays in a desktop window.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Media",
+        "System Tools"
+      ],
+      "author": {
+        "github": "dave-taylor-7654",
+        "display_name": "dave-taylor-7654"
+      },
+      "version": "2.3.3",
+      "published_at": "2026-11-21T06:44:40+00:00",
+      "updated_at": "2026-11-21T18:40:43+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/dave-taylor-7654/strawberry-video-player",
+      "download": {
+        "type": "deb",
+        "package": "strawberry-video-player",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/strawberry-video-player_2.3.3_all.deb",
+        "md5": "6ce289d4955afc591c8e9b57965272c7",
+        "sha256": "65c9ebeac321e80bf71fbbdab90ede94ac0721b8ab206db49be5848d997b9fef",
+        "size": 25604
+      },
+      "depends": "mpv, ffmpeg, vlc-bin, vlc-plugin-base, python3 (>= 3.9), python3-evdev, python3-pil, pulseaudio-utils | pipewire-pulse",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/strawberry-video-player/strawberry-video-player-256.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/strawberry-video-player/screenshots/1-splash.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/strawberry-video-player/screenshots/2-player.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/strawberry-video-player/screenshots/3-diagnostics.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/strawberry-video-player/screenshots/4-test-pattern.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/strawberry-video-player/screenshots/5-no-videos.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/strawberry-video-player/screenshots/6-help.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/strawberry-video-player/strawberry-video-player-256.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/strawberry-video-player/screenshots/1-splash.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/strawberry-video-player/screenshots/2-player.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/strawberry-video-player/screenshots/3-diagnostics.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/strawberry-video-player/screenshots/4-test-pattern.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/strawberry-video-player/screenshots/5-no-videos.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/strawberry-video-player/screenshots/6-help.png"
       ]
     },
     {
