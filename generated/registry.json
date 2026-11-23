@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T17:13:27+08:00",
+  "generated_at": "2026-11-23T17:15:52+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -6672,7 +6672,7 @@
       "share_code": "RSDR",
       "title": "RTL SDR",
       "summary": "Listen to FM, airband, shortwave and ham radio with an RTL-SDR dongle.",
-      "description": "RTL SDR turns your Cardputer Zero into a pocket radio receiver. You'll need an RTL-SDR USB dongle (plugged into the USB port) and an antenna, as the Cardputer can't pick up radio on its own. It only receives, it never transmits.\n\nTune broadcast FM, AM and shortwave, airband and military airband, marine and ham bands from 2 m to 23 cm, and anything else from 0.1 MHz to 1.7 GHz. Pick a band, mode (FMW, FMN, AM, USB, LSB, CW), filter width and step, or type an exact frequency. There's a live spectrum and waterfall, an S meter, squelch, an auto notch to zap whistles, and RIT. Press H any time for a key guide.",
+      "description": "RTL SDR turns your Cardputer Zero into a pocket radio receiver. \r\n\r\nYou'll need an RTL-SDR USB dongle (plugged into the USB port) and an antenna, as the Cardputer can't pick up radio on its own. \r\n\r\nTune broadcast FM, medium wave and shortwave AM, airband and military airband, marine and ham bands from 160m up to 23cm, and anything else from 0.1 MHz to 1.7 GHz. \r\n\r\nPick a band, mode (FMW, FMN, AM, USB, LSB, CW), filter width and step, or type an exact frequency. \r\n\r\nThere's a live spectrum and waterfall, an uncalibrated S meter, squelch, an auto notch filter, and RIT. \r\n\r\nPress H any time for a key guide.",
       "locales": {
         "ja": {
           "summary": "RTL-SDR ドングルで FM、航空無線、短波、アマチュア無線を受信。",
@@ -6710,7 +6710,7 @@
       },
       "version": "0.1.3",
       "published_at": "2026-11-21T16:54:59+00:00",
-      "updated_at": "2026-11-21T16:54:59+00:00",
+      "updated_at": "2026-11-23T09:13:17+00:00",
       "review": {
         "status": "approved"
       },
@@ -6726,34 +6726,34 @@
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, librtlsdr0, libasound2t64 | libasound2, libasound2-plugins",
       "permissions": {
-        "camera": false,
-        "microphone": false,
-        "imu": false,
-        "network": false,
         "additional_hardware": true,
         "background_service": false,
-        "external_display": false
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
       },
       "risk_flags": [],
       "assets": {
-        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/rtl-sdr-receiver.png",
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/rtl-sdr-receiver_icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/rtl-sdr-receiver.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/rtl-sdr-frequency.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/rtl-sdr-help.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/rtl-sdr-receiver-light.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/rtl-sdr-frequency-light.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/rtl-sdr-help-light.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/screenshot-5.png"
         ]
       },
-      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/rtl-sdr-receiver.png",
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/rtl-sdr-receiver_icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/rtl-sdr-receiver.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/rtl-sdr-frequency.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/rtl-sdr-help.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/rtl-sdr-receiver-light.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/rtl-sdr-frequency-light.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/rtl-sdr-help-light.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rtl-sdr-receiver/screenshots/screenshot-5.png"
       ]
     },
     {
