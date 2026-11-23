@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T16:24:01+08:00",
+  "generated_at": "2026-11-23T16:33:25+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4456,6 +4456,79 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/library.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/timers.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/power.png"
+      ]
+    },
+    {
+      "uuid": "f58e24d1-5d77-54d5-8ba7-3c2ac3465c19",
+      "share_code": "loki",
+      "title": "Loki",
+      "summary": "Autonomous LAN recon — scan, brute-force, exfiltrate.",
+      "description": "Loki (LAN Orchestrated Key Infiltrator) is an autonomous network-recon tool: ARP/host discovery, nmap port + vuln scans, credential brute force (FTP/SSH/Telnet/SMB/MySQL/RDP), and file/SQL exfiltration, with an animated themed character on the CardputerZero LCD and a web UI/JSON API over Wi-Fi. On-device menus (F/X navigate, Z/C change, Enter select, Esc back) let you pick a theme, start/pause scanning, and reset hosts/loot/counters. Authorized-use only.",
+      "locales": {
+        "zh-CN": {
+          "title": "Loki",
+          "summary": "自主局域网侦察 — 扫描、暴力破解、数据窃取。"
+        },
+        "ja": {
+          "title": "Loki",
+          "summary": "自律型LAN偵察 — スキャン・総当たり・データ抽出。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "Loki",
+          "summary": "自主局域网侦察 — 扫描、暴力破解、数据窃取。"
+        },
+        "ja": {
+          "title": "Loki",
+          "summary": "自律型LAN偵察 — スキャン・総当たり・データ抽出。"
+        }
+      },
+      "categories": [
+        "Security"
+      ],
+      "author": {
+        "display_name": "brAinphreAk",
+        "github": "brainphreak"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-11-21T13:48:24+00:00",
+      "updated_at": "2026-11-21T13:48:24+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/brainphreak/loki-recon",
+      "download": {
+        "type": "deb",
+        "package": "loki",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/loki_1.0.0_arm64.deb",
+        "md5": "aa1dae68b954f4cff17a19fa3f30d016",
+        "sha256": "887e190578291cd2a0609ebe4835fca34be0e398d90c2ce65a51ba58ac371b11",
+        "size": 23862444
+      },
+      "depends": "python3, python3-venv, python3-pip, python3-pil, python3-numpy, nmap, smbclient",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": true,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loki/loki.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loki/screenshots/01-scene.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loki/screenshots/02-menu.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loki/loki.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loki/screenshots/01-scene.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loki/screenshots/02-menu.png"
       ]
     },
     {
