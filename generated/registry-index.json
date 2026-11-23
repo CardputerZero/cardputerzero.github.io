@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T13:57:41+08:00",
+  "generated_at": "2026-11-23T13:59:55+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8349,7 +8349,7 @@
       "share_code": "ZGOT",
       "title": "Zerogotchi",
       "summary": "Wi-Fi lab auditing and GPS Wi-Fi and BLE wardriving for the Cardputer Zero.",
-      "description": "Use Auto WiFi Attack or Manual WiFi Attack for authorized lab auditing with a compatible USB Wi-Fi adapter. Save WPA capture results locally or submit usable hashes to OnlineHashCrack. Wardriving uses a GNSS HAT for GPS-tagged Wi-Fi and Bluetooth LE observations, with optional WiGLE or WDG Wars upload. Meshmapping listens for MeshCore advertisements through the SX1262 cap and can export mapped nodes to WDG Wars. Sub-Ghz supports CC1101 RSSI monitoring and raw OOK recording, saved transmissions, and confirmed single-shot or repeated replay; third-party hats require the documented kernel SPI setup. The optional Sub-Ghz Library imports compatible raw OOK files from GitHub after user consent, with visible progress, cancellation, and an SSH-manageable folder browser. No third-party signal files are bundled. The foreground app opens from the stock launcher. Privileged radio access requires the Cardputer user's password.",
+      "description": "Use Auto WiFi Attack or Manual WiFi Attack for authorized lab auditing with a compatible USB Wi-Fi adapter. Save WPA capture results locally or submit usable hashes to OnlineHashCrack. Wardriving uses a GNSS HAT or M5Stack GPS/BDS Unit v1.1 on Grove for GPS-tagged Wi-Fi and Bluetooth LE observations, with optional WiGLE or WDG Wars upload. Meshmapping listens for MeshCore advertisements through the SX1262 cap and can export mapped nodes to WDG Wars. Sub-Ghz supports CC1101 RSSI monitoring and raw OOK recording, saved transmissions, and confirmed single-shot or repeated replay; third-party hats require the documented kernel SPI setup. The optional Sub-Ghz Library imports compatible raw OOK files from GitHub after user consent, with visible progress, cancellation, and an SSH-manageable folder browser. No third-party signal files are bundled. The foreground app opens from the stock launcher. Privileged radio access requires the Cardputer user's password.",
       "locales": {
         "zh-CN": {
           "title": "Zerogotchi",
@@ -8378,9 +8378,9 @@
         "github": "unagisan69",
         "display_name": "unagisan69"
       },
-      "version": "0.4.25",
+      "version": "0.4.26",
       "published_at": "2026-11-18T03:55:03+00:00",
-      "updated_at": "2026-11-21T01:16:38+00:00",
+      "updated_at": "2026-11-23T05:56:56+00:00",
       "review": {
         "status": "approved"
       },
@@ -8389,10 +8389,10 @@
       "download": {
         "type": "deb",
         "package": "zerogotchi",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerogotchi_0.4.25_all.deb",
-        "md5": "249016a850243e893516b6f4d0871490",
-        "sha256": "2113b4a90c643e9e8af883785a888710e77ff29e2668ed545215854c29ad4ac9",
-        "size": 656616
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerogotchi_0.4.26_all.deb",
+        "md5": "86170b86a1e0c1f349aed5b483ddc712",
+        "sha256": "8e8fa4c51a2512f6267914a962e689757ac8bdf2e73b32624134828055633cc8",
+        "size": 657760
       },
       "depends": "python3, python3-pil, fonts-dejavu-core, network-manager, bluez, python3-libgpiod (>= 2.0), python3-spidev, raspi-utils-core, python3-cryptography, sudo, iw, iproute2, tcpdump, aircrack-ng, hcxtools, curl, ca-certificates",
       "permissions": {
