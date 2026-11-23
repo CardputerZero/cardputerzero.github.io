@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T14:27:17+08:00",
+  "generated_at": "2026-11-23T14:29:42+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8535,6 +8535,96 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogotchi/screenshots/auto-acidburn.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogotchi/screenshots/wardriving-zero-cool.png"
+      ]
+    },
+    {
+      "uuid": "76a8c0b8-1609-5d80-b18d-42c93927b04a",
+      "share_code": "ZGPS",
+      "title": "IGN GPS",
+      "summary": "GPS with Spain's IGN maps: live position, satellites, GPX tracks, offline",
+      "description": "For the Cap LoRa-1262 (LoRa + GNSS). Spain only: the maps come from Spain's Instituto Geográfico Nacional (IGN), and the interface is in Spanish.\n\n- Map: your position on the IGN topographic map, PNOA aerial imagery or IGN Base (key M), with the track you are recording and any track you open. Q/A zoom, arrows pan, ENTER centres on you. It remembers where you were and shows your last known position while the GNSS gets a fix (~13 s).\n- Satellites: sky plot with every satellite by constellation (GPS, Galileo, GLONASS, BeiDou, QZSS, SBAS), fix type, latitude, longitude, altitude, approximate accuracy, HDOP/VDOP and UTC time.\n- Tracks: record GPX (keeps recording on other screens), list, open on the map, delete.\n- Offline maps: download an area (radius or ready-made mountain ranges) for the three maps at once, with tile count, size and free space shown before starting. Online mode (key O) fetches only the missing tiles over Wi-Fi.\n\nBattery friendly: the GNSS is only powered while the map or the satellites are open (or while recording), and the map refresh rate depends on the zoom. Ships with Sierra de Guadarrama tiles.\n\nMap data © Instituto Geográfico Nacional de España (CC-BY 4.0).",
+      "locales": {
+        "es": {
+          "title": "IGN GPS",
+          "summary": "GPS con mapas del IGN: posición, satélites, tracks GPX y mapas offline"
+        },
+        "zh-CN": {
+          "title": "IGN GPS",
+          "summary": "西班牙 IGN 地图 GPS：实时位置、卫星、GPX 轨迹、离线地图"
+        },
+        "ja": {
+          "title": "IGN GPS",
+          "summary": "スペインIGN地図のGPS：現在地・衛星・GPXトラック・オフライン地図"
+        }
+      },
+      "i18n": {
+        "es": {
+          "title": "IGN GPS",
+          "summary": "GPS con mapas del IGN: posición, satélites, tracks GPX y mapas offline"
+        },
+        "zh-CN": {
+          "title": "IGN GPS",
+          "summary": "西班牙 IGN 地图 GPS：实时位置、卫星、GPX 轨迹、离线地图"
+        },
+        "ja": {
+          "title": "IGN GPS",
+          "summary": "スペインIGN地図のGPS：現在地・衛星・GPXトラック・オフライン地図"
+        }
+      },
+      "categories": [
+        "Hardware & IoT",
+        "Lifestyle"
+      ],
+      "author": {
+        "github": "baltamir1978",
+        "display_name": "baltamir1978"
+      },
+      "version": "0.5.0-rev1",
+      "published_at": "2026-11-20T16:44:53+00:00",
+      "updated_at": "2026-11-20T16:44:53+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/baltamir1978/ZeroGPS",
+      "download": {
+        "type": "deb",
+        "package": "zerogps",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerogps_0.5.0-rev1_arm64.deb",
+        "md5": "0b2adf15e74bc1e6ed289aaed04eabb8",
+        "sha256": "536e2c431859d6ae95b0c65fcfd903db7e2ae5f32989ca734de5024b73a6d1e2",
+        "size": 9375904
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, curl",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/map.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/satellite.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/sky.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/download.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/tracks.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/home.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/map.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/satellite.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/sky.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/download.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/tracks.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/home.png"
       ]
     },
     {
