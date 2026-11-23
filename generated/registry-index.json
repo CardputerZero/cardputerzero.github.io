@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T16:33:25+08:00",
+  "generated_at": "2026-11-23T16:37:41+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2731,6 +2731,70 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/esp32c5-spectrum/screenshots/main.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/esp32c5-spectrum/screenshots/density.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/esp32c5-spectrum/screenshots/channels.png"
+      ]
+    },
+    {
+      "uuid": "76a30bb9-791c-58e0-8fd0-be1d11775721",
+      "share_code": "eth0",
+      "title": "Ethernet Tester",
+      "summary": "Read-only Ethernet diagnostics, gateway checks and local device discovery.",
+      "description": "Ethernet Tester provides read-only diagnostics for eth0: link state, speed and duplex, available interface counters, IPv4/MAC/gateway and DNS configuration, driver metadata, and current systemd-networkd DHCP lease details where supported. It can send one ping to the configured gateway and show a snapshot of cumulative interface counters; this is not a throughput test. On explicit user action, it can scan the local IPv4 subnet with arp-scan, browse mDNS/DNS-SD services, or make one PTR lookup for the gateway. Separate passive views listen for LLDP/CDP switch announcements and ARP, DHCP and STP frames; no packet capture is saved. The package grants cap_net_raw to the executable for passive listening. The app does not configure the interface, renew DHCP, or request CAP_NET_ADMIN.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Hardware & IoT"
+      ],
+      "author": {
+        "github": "LBreda",
+        "display_name": "Lorenzo Breda"
+      },
+      "version": "1.0.0-rev1",
+      "published_at": "2026-11-21T14:30:51+00:00",
+      "updated_at": "2026-11-21T14:30:51+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/LBreda/cp0-ethernet-tester",
+      "download": {
+        "type": "deb",
+        "package": "ethernet-tester",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/ethernet-tester_1.0.0-rev1_arm64.deb",
+        "md5": "003250d466c319d251d1323208496c3a",
+        "sha256": "c0ab648347281aefd7fa3f59cebe6f53eee564a5dc158bcfbfdeaedea0520812",
+        "size": 2093314
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, iputils-ping, arp-scan, libcap2-bin",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ethernet-tester/ethernet-tester.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ethernet-tester/screenshots/summary.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ethernet-tester/screenshots/link.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ethernet-tester/screenshots/ping.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ethernet-tester/screenshots/peers.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ethernet-tester/screenshots/mdns.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ethernet-tester/screenshots/dhcp.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ethernet-tester/ethernet-tester.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ethernet-tester/screenshots/summary.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ethernet-tester/screenshots/link.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ethernet-tester/screenshots/ping.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ethernet-tester/screenshots/peers.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ethernet-tester/screenshots/mdns.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ethernet-tester/screenshots/dhcp.png"
       ]
     },
     {
