@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T21:52:47+08:00",
+  "generated_at": "2026-11-23T22:04:39+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2688,8 +2688,8 @@
     {
       "uuid": "ac50f2e0-f46d-5aff-80fc-fcbc670e5e36",
       "share_code": "CZXJ",
-      "title": "CZ cam最新版本增加了15种胶片滤镜",
-      "summary": "拍照小app",
+      "title": "CZ cam",
+      "summary": "增加14种胶片滤镜",
       "description": "把 CardputerZero 的 8MP 相机变成一台\"能看见参数\"的相机。\r\n\r\n【为什么做这个】\r\nCardputerZero 的曝光全在 libcamera 里：自动曝光会自己挑快门和增益，你按了快门却不知道刚才那张是 1/30 还是 1/4 秒、ISO 是 100 还是 1600。CZ 相机把这三件事变成屏幕上的常驻读数，并且让 EV 真正生效。\r\n\r\n【界面】\r\n左侧 216×162 取景（4:3，与静态照片同构图），右侧 104px 仪表栏固定不动，一眼扫完：ISO（等效 100 × 模拟增益，吸附到 400 / 800 等标准档）、快门（1/4000 … 1s，显示成 1/125、0.5S）、EV 数值 + ±3 档刻度条、亮度直方图（过曝堆在右端）、电量与实测帧率。读数来自每一帧的 libcamera 元数据，显示的就是传感器此刻真的在做什么。\r\n\r\n【怎么用】\r\n◀ ▶  自动模式 1/3 档曝光补偿；手动模式切快门\r\n▲ ▼  自动模式 ±1 档；手动模式切 ISO\r\nM     自动 / 手动切换（手动时以当前测光值为基准，EV 显示偏离多少档）\r\nA     锁定曝光 AE-L，可再偏移快门，适合先测光再构图\r\nB     一键黑白（压 ISP 饱和度，取景和 JPEG 一起变灰）\r\nQ     画幅 2MP ↔ 8MP\r\nO     画面方向：0° / 镜像 / 180° / 翻转，选好自动记住\r\nG     三分构图线    L  中/英界面    H  帮助    ESC  退出\r\n\r\n【拍照】\r\nENTER 拍 JPEG 到 ~/Pictures/CZCam/，旁边写一个同名 .json 记录这张的 ISO / 快门 / 增益 / 照度。默认 2MP（1640×1232，IMX219 原生 4:3/30fps 模式），按下到写完通常几百毫秒；按 Q 可切 8MP。保存有三级回退：配置画幅 → 较小画幅 → 取景流，失败原因会显示在屏幕上并写入 ~/.cache/czcam/czcam.log。\r\n\r\n【适合谁】\r\n· 想拿 CardputerZero 当随身测光表 / 取景器的人\r\n· 想学曝光三要素、需要看得见 ISO 和快门的人\r\n· 想要一台\"按下就有 2MP 照片 + 曝光记录\"的口袋机的人\r\n\r\n【说明】\r\n原生 Linux 程序，直接写 framebuffer，走 libcamera / picamera2，不依赖 X、不依赖任何 pip 包。需要系统里的 python3-picamera2 与 python3-numpy（镜像通常已自带）。固定焦距，无自动对焦、无录像、无闪光灯。",
       "locales": {},
       "i18n": {},
@@ -2703,7 +2703,7 @@
       },
       "version": "1.4.0",
       "published_at": "2026-11-22T11:26:35+00:00",
-      "updated_at": "2026-11-23T13:44:52+00:00",
+      "updated_at": "2026-11-23T14:02:40+00:00",
       "review": {
         "status": "approved"
       },
