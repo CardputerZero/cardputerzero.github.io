@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-24T02:26:41+08:00",
+  "generated_at": "2026-11-24T02:40:44+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8321,7 +8321,7 @@
       "share_code": "SBVP",
       "title": "Strawberry Video Player",
       "summary": "Offline video player, HDMI diagnostics and test patterns for AV professionals",
-      "description": "Strawberry Video Player turns the CardputerZero into a tool for AV professionals. It works completely offline: no network is needed.\n\nOffline video player: plays every video in ~/Videos in alphabetical order and loops, on HDMI at up to 1080p (hardware decoding where the Pi supports it) or on the built-in LCD, with sound following the picture.\n\nHDMI diagnostic tool: press i to see what the connected display reports, on the LCD: its name, maker and product code, the active mode, color range and bit depth, audio formats, link status, CEC address, and native and supported modes. The page also appears for a few seconds whenever HDMI is connected.\n\nTest pattern generator: press t for color bars, gray steps, a 1:1 geometry pattern (square and circle), a convergence grid, and an audio and sync test with left, right and both-channel tones. Keys z, x, c and f choose the pattern. Keys 1 to 8 set the display's aspect ratio (16:9, 16:10, 4:3, 5:4, 1:1, 2.35:1, 2.21:1, 21:9) for displays that stretch the picture. Patterns work even when there are no videos on the card.\n\nKeys: Tab LCD/HDMI, q/Space play-pause, z/x previous, c/f next, w/e skip 30 s, s/d volume, a mute, l loop one/all, 1-8 aspect ratio, i HDMI diagnostics, t test patterns, h help, Esc quit.\n\nSmooth full-screen 1080p on HDMI works out of the box on the stock image: the player briefly stops the desktop while it plays, using the device's passwordless sudo for that one purpose.",
+      "description": "Strawberry Video Player turns the CardputerZero into a tool for AV professionals. It works completely offline: no network is needed.\n\nOffline video player: plays every video in ~/Videos in alphabetical order and loops, on HDMI at up to 1080p (hardware decoding where the Pi supports it) or on the built-in LCD, with sound following the picture.\n\nHDMI diagnostic tool: press i to see what the connected display reports, on the LCD: its name, maker and product code, the active mode, color range and bit depth, audio formats, link status, CEC address, and native and supported modes. The page also appears for a few seconds whenever HDMI is connected.\n\nTest pattern generator: press t for color bars, gray steps, a 1:1 geometry pattern (square and circle), a convergence grid, and an audio and sync test with left, right and both-channel tones. Keys z, x, c and f choose the pattern. Keys 1 to 8 set the display's aspect ratio (16:9, 16:10, 4:3, 5:4, 1:1, 2.35:1, 2.21:1, 21:9) for displays that stretch the picture. Patterns work even when there are no videos on the card.\n\nUSB drives: plug in a drive (FAT32, exFAT, NTFS or ext4) and the videos on it play, read-only; remove it and playback returns to ~/Videos.\n\nKeys: Tab LCD/HDMI, q/Space play-pause, z/x previous, c/f next, w/e skip 30 s, s/d volume, a mute, l loop one/all, p subtitles (HDMI), 1-8 aspect ratio, i HDMI diagnostics, t test patterns, h help, Esc quit.\n\nSmooth full-screen 1080p on HDMI works out of the box on the stock image: the player briefly stops the desktop while it plays, using the device's passwordless sudo for that one purpose.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -8332,9 +8332,9 @@
         "github": "dave-taylor-7654",
         "display_name": "dave-taylor-7654"
       },
-      "version": "2.7.11",
+      "version": "2.7.14",
       "published_at": "2026-11-21T06:44:40+00:00",
-      "updated_at": "2026-11-23T17:25:02+00:00",
+      "updated_at": "2026-11-23T18:38:08+00:00",
       "review": {
         "status": "approved"
       },
@@ -8343,10 +8343,10 @@
       "download": {
         "type": "deb",
         "package": "strawberry-video-player",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/strawberry-video-player_2.7.11_all.deb",
-        "md5": "e49b3576aa06f9ff90fb805c51ac9c2b",
-        "sha256": "755435e9968090b349541c34875078c193da92f963a7a6775066027a9b337c0e",
-        "size": 135108
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/strawberry-video-player_2.7.14_all.deb",
+        "md5": "7bd25a2fa67e554cc8cff304f95f52ac",
+        "sha256": "9be60b9fae7b4b1788e66ed368ee804961c5fe9b5cc5af1ad0d42d0600454e24",
+        "size": 138440
       },
       "depends": "mpv, ffmpeg, vlc-bin, vlc-plugin-base, python3 (>= 3.9), python3-evdev, python3-pil, pulseaudio-utils | pipewire-pulse",
       "permissions": {
