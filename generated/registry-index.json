@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T13:31:47+08:00",
+  "generated_at": "2026-11-23T13:35:12+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4363,9 +4363,9 @@
         "display_name": "Soliton",
         "github": "s0liton"
       },
-      "version": "0.2.1",
+      "version": "0.3.0",
       "published_at": "2026-11-16T03:59:17+00:00",
-      "updated_at": "2026-11-20T06:01:06+00:00",
+      "updated_at": "2026-11-23T05:33:28+00:00",
       "review": {
         "status": "approved"
       },
@@ -4374,18 +4374,18 @@
       "download": {
         "type": "deb",
         "package": "meshzero",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/meshzero_0.2.1_arm64.deb",
-        "md5": "76ba0a8855351e9f211d3aa593c04ed7",
-        "sha256": "ffb17e8cc94d654dea3adfe64295863cb2bd630431390e81a7de66dc85ba3eb6",
-        "size": 3506014
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/meshzero_0.3.0_arm64.deb",
+        "md5": "fc7db97b6ecbd64e3aaa1a38e934e8f6",
+        "sha256": "7cf12615ac73f8f4985932d66a8fb6228ad72212c77357ba91665b12eb046f9a",
+        "size": 3689974
       },
-      "depends": "libc6 (>= 2.38), libstdc++6 (>= 11), libgcc-s1, adduser, libgpiod3 (>= 2.1), libi2c0 (>= 4.0), libinput10, liborcania2.3, libsdl2-2.0-0, libssl3t64, libulfius2.7t64, libusb-1.0-0, libuv1t64, libx11-6, libxkbcommon0, libyaml-cpp0.8",
+      "depends": "libc6 (>= 2.38), libstdc++6 (>= 11), libgcc-s1, libsystemd0, adduser, libgpiod3 (>= 2.1), libi2c0 (>= 4.0), libinput10, liborcania2.3, libsdl2-2.0-0, libssl3t64, libulfius2.7t64, libusb-1.0-0, libuv1t64, libx11-6, libxkbcommon0, libyaml-cpp0.8",
       "permissions": {
         "additional_hardware": true,
         "background_service": true,
         "camera": true,
         "external_display": false,
-        "imu": false,
+        "imu": true,
         "microphone": false,
         "network": true
       },
