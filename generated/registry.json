@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T17:00:39+08:00",
+  "generated_at": "2026-11-23T17:13:27+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2039,6 +2039,80 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/controller/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/controller/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/controller/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "95228722-8e2a-5e71-a0d5-223b2fed506f",
+      "share_code": "CZIR",
+      "title": "Universal IR",
+      "summary": "Universal IR remote for TV, AC and more, using the Mi Home code database",
+      "description": "Turns the CardputerZero into a universal infrared remote, following the same pairing flow as the Mi Home app: pick a device type, pick a brand, fire the power key of a code set until the appliance reacts, and control it.\n\n- Framebuffer native: draws straight to /dev/fb0, no browser or compositor, about 6% CPU when idle.\n- Brand search by pinyin initials: type xm for Xiaomi or md for Midea instead of scrolling 1800+ brands; hot brands for the current device type are pinned on top.\n- Stateful AC control: power, temperature, mode and fan speed go out as one complete state frame, the way Mi Home does it.\n- Trial then keep: the last working remote is cached and restored on the next launch, so a configured remote keeps working offline.\n- Keyboard first: the eight cells map to the eight letter keys on the device, and F/X/Z/C double as arrow keys.\n\nThe code data comes from Xiaomi's own IR database and is cached on disk. Nothing is uploaded anywhere.",
+      "locales": {
+        "zh-CN": {
+          "title": "万能红外遥控",
+          "summary": "用小米码库把 CardputerZero 变成万能红外遥控器，支持电视、空调等",
+          "description": "把 CardputerZero 变成万能红外遥控器，配遥控的流程和米家一致：选设备类型 → 选品牌 → 试发电源键选中方案组 → 遥控。\n\n- 原生渲染：直写 /dev/fb0，不经过浏览器或合成器，静态页约 6% CPU\n- 拼音首字母搜品牌：打 xm 找小米、md 找美的，不用在 1800+ 个品牌里翻\n- 空调状态型控制：电源/温度/模式/风速合成一帧完整状态发出去，和米家一致\n- 试发即记：配好的遥控器落盘缓存，断网也能继续用\n- 键盘优先：八个格子对应键盘上印的八个字母键，F/X/Z/C 兼作方向键\n\n码数据来自小米自己的红外码库，本地缓存，不上传任何内容。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "万能红外遥控",
+          "summary": "用小米码库把 CardputerZero 变成万能红外遥控器，支持电视、空调等",
+          "description": "把 CardputerZero 变成万能红外遥控器，配遥控的流程和米家一致：选设备类型 → 选品牌 → 试发电源键选中方案组 → 遥控。\n\n- 原生渲染：直写 /dev/fb0，不经过浏览器或合成器，静态页约 6% CPU\n- 拼音首字母搜品牌：打 xm 找小米、md 找美的，不用在 1800+ 个品牌里翻\n- 空调状态型控制：电源/温度/模式/风速合成一帧完整状态发出去，和米家一致\n- 试发即记：配好的遥控器落盘缓存，断网也能继续用\n- 键盘优先：八个格子对应键盘上印的八个字母键，F/X/Z/C 兼作方向键\n\n码数据来自小米自己的红外码库，本地缓存，不上传任何内容。"
+        }
+      },
+      "categories": [
+        "Radio & Comms",
+        "Hardware & IoT"
+      ],
+      "author": {
+        "github": "RealOuO",
+        "display_name": "RealOuO"
+      },
+      "version": "1.1.2",
+      "published_at": "2026-11-22T02:49:05+00:00",
+      "updated_at": "2026-11-22T02:49:05+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Apache-2.0",
+      "source_repo": "https://github.com/RealOuO/czirremote",
+      "download": {
+        "type": "deb",
+        "package": "cp0-ir-remote",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cp0-ir-remote_1.1.2_arm64.deb",
+        "md5": "4daed423e92ebe7b5d190d3aa83d4996",
+        "sha256": "ffa19cc97cb43f073487407f95aaf6429830593ed22d6bc2658e97d9b2c3bea0",
+        "size": 42560
+      },
+      "depends": "python3 (>= 3.11), python3-pil, python3-numpy, fonts-noto-cjk, v4l-utils, openssl, luajit",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-ir-remote/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-ir-remote/screenshots/01-types.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-ir-remote/screenshots/03b-brands-search.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-ir-remote/screenshots/04-groups.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-ir-remote/screenshots/06-remote.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-ir-remote/screenshots/09-ac.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-ir-remote/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-ir-remote/screenshots/01-types.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-ir-remote/screenshots/03b-brands-search.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-ir-remote/screenshots/04-groups.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-ir-remote/screenshots/06-remote.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-ir-remote/screenshots/09-ac.png"
       ]
     },
     {
