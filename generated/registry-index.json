@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T15:09:35+08:00",
+  "generated_at": "2026-11-23T15:16:10+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3697,6 +3697,91 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/cw-history.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/ft8.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/icomzero/screenshots/ft8-menu.png"
+      ]
+    },
+    {
+      "uuid": "8544202d-09fd-5952-a3a1-ff9c231d34ce",
+      "share_code": "IPDO",
+      "title": "Ipdoit",
+      "summary": "An Uncomplicated Firewall (UFW) Helper",
+      "description": "Uncomplicated Firewall (UFW) improves your security by controlling which ports accept incoming connections, and from which networks. Ipdoit helps you set it up on the device: turn the firewall on, add rules, and limit services like SSH to networks you trust.",
+      "locales": {
+        "zh-CN": {
+          "title": "Ipdoit",
+          "summary": "简单防火墙（UFW）配置助手",
+          "description": "简单防火墙（UFW）通过控制哪些端口接受传入连接、以及接受来自哪些网络的连接来提升安全性。Ipdoit 帮你在设备上完成设置：开启防火墙、添加规则，并将 SSH 等服务限制在你信任的网络中。"
+        },
+        "ja": {
+          "title": "Ipdoit",
+          "summary": "Uncomplicated Firewall（UFW）設定ヘルパー",
+          "description": "Uncomplicated Firewall（UFW）は、どのポートが外部からの接続を受け付けるか、どのネットワークからの接続を許可するかを制御して、セキュリティを高めます。Ipdoit はデバイス上での設定を手助けします。ファイアウォールの有効化、ルールの追加、SSH などのサービスを信頼できるネットワークだけに限定することができます。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "Ipdoit",
+          "summary": "简单防火墙（UFW）配置助手",
+          "description": "简单防火墙（UFW）通过控制哪些端口接受传入连接、以及接受来自哪些网络的连接来提升安全性。Ipdoit 帮你在设备上完成设置：开启防火墙、添加规则，并将 SSH 等服务限制在你信任的网络中。"
+        },
+        "ja": {
+          "title": "Ipdoit",
+          "summary": "Uncomplicated Firewall（UFW）設定ヘルパー",
+          "description": "Uncomplicated Firewall（UFW）は、どのポートが外部からの接続を受け付けるか、どのネットワークからの接続を許可するかを制御して、セキュリティを高めます。Ipdoit はデバイス上での設定を手助けします。ファイアウォールの有効化、ルールの追加、SSH などのサービスを信頼できるネットワークだけに限定することができます。"
+        }
+      },
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "github": "Sudrien",
+        "display_name": "Sudrien"
+      },
+      "version": "0.2.9",
+      "published_at": "2026-11-21T02:47:48+00:00",
+      "updated_at": "2026-11-21T02:47:48+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/Sudrien/ipdoit-for-cardputer-zero",
+      "download": {
+        "type": "deb",
+        "package": "ipdoit-for-cardputer-zero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/ipdoit-for-cardputer-zero_0.2.9_arm64.deb",
+        "md5": "6946d3d9146175b6268881dfc5fc8971",
+        "sha256": "ee64c02be55a0909bc8df7d29607ff128de998882270409ea29723d15765f3ec",
+        "size": 2262782
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, ufw, sudo, iproute2",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": true,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ipdoit-for-cardputer-zero/ipdoit-store-icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ipdoit-for-cardputer-zero/screenshots/ipdoit-launcher-mockup.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ipdoit-for-cardputer-zero/screenshots/ipdoit-status.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ipdoit-for-cardputer-zero/screenshots/ipdoit-rules.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ipdoit-for-cardputer-zero/screenshots/ipdoit-ports.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ipdoit-for-cardputer-zero/screenshots/ipdoit-networks.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ipdoit-for-cardputer-zero/screenshots/ipdoit-form.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ipdoit-for-cardputer-zero/ipdoit-store-icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ipdoit-for-cardputer-zero/screenshots/ipdoit-launcher-mockup.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ipdoit-for-cardputer-zero/screenshots/ipdoit-status.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ipdoit-for-cardputer-zero/screenshots/ipdoit-rules.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ipdoit-for-cardputer-zero/screenshots/ipdoit-ports.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ipdoit-for-cardputer-zero/screenshots/ipdoit-networks.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ipdoit-for-cardputer-zero/screenshots/ipdoit-form.png"
       ]
     },
     {
