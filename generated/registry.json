@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T23:11:54+08:00",
+  "generated_at": "2026-11-23T23:28:53+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -5466,9 +5466,9 @@
         "github": "valleytechsolutions",
         "display_name": "Valleytech Solutions"
       },
-      "version": "1.1.1",
+      "version": "1.2.0",
       "published_at": "2026-11-22T15:38:03+00:00",
-      "updated_at": "2026-11-22T15:38:03+00:00",
+      "updated_at": "2026-11-23T15:23:57+00:00",
       "review": {
         "status": "approved"
       },
@@ -5477,10 +5477,10 @@
       "download": {
         "type": "deb",
         "package": "lora-tunnel",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/lora-tunnel_1.1.1_all.deb",
-        "md5": "35c8bd0bc6ff0018ad902be7131e0344",
-        "sha256": "a3806e72f4645b57a951c62a3a12b97e738eb2320093b29f9cb799613f5bec84",
-        "size": 834188
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/lora-tunnel_1.2.0_all.deb",
+        "md5": "326b2c2d2e16a80cd1d3cb80dfabe8ea",
+        "sha256": "0d9b66628c03e9fcf0214962d43100e78738a2e82f3a31164cb550d107bd6c47",
+        "size": 835756
       },
       "depends": "python3 (>= 3.9), python3-pil, python3-numpy, python3-serial, python3-spidev, python3-smbus | python3-smbus2, python3-libgpiod, python3-cryptography, python3-dbus",
       "permissions": {
