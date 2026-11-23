@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T18:57:03+08:00",
+  "generated_at": "2026-11-23T19:01:08+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8644,7 +8644,7 @@
         "display_name": "Adriano Moraes",
         "github": "adrianomoraes"
       },
-      "version": "0.1.0-m5stack1",
+      "version": "0.1.1-m5stack1",
       "published_at": "2026-11-16T21:23:57+00:00",
       "updated_at": "2026-11-16T21:23:57+00:00",
       "review": {
@@ -8655,12 +8655,12 @@
       "download": {
         "type": "deb",
         "package": "wifi-manager",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/wifi-manager_0.1.0-m5stack1_arm64.deb",
-        "md5": "fff0e36879288ce27f454101c4f8cf27",
-        "sha256": "40ddbdc6430a870c455ecdc2c6e6e8a43505619eb16ba6f85354d7d0e18a3c22",
-        "size": 583488
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/wifi-manager_0.1.1-m5stack1_arm64.deb",
+        "md5": "91504c0170625ddb2f079734fc192708",
+        "sha256": "d016ee6edd81f510a592835824eb1b8fc15cf9cb40f4349dd8681d2f05821440",
+        "size": 583464
       },
-      "depends": "libc6, libstdc++6, libinput10, libxkbcommon0, libudev1, network-manager",
+      "depends": "",
       "permissions": {
         "additional_hardware": false,
         "background_service": false,
