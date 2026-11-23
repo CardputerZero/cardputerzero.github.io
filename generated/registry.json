@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T19:23:24+08:00",
+  "generated_at": "2026-11-23T19:32:46+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8605,6 +8605,70 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/vibeoffice/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/vibeoffice/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/vibeoffice/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "fdfc77e2-bb06-5555-b55e-6eaa79f32bd4",
+      "share_code": "CV09",
+      "title": "Cardputer Voice Input",
+      "summary": "Press Fn + V to transcribe speech into supported apps.",
+      "description": "Use Fn + V to start and stop recording, then insert the transcribed text into the focused input field. Choose DeepSeek or OpenAI (English) and switch configured providers with Shift + Fn + V. The settings app provides API key management, service controls and a shortcut guide. REC and ASR badges show progress; recording is canceled if the input target changes. Compatible with supported APPLaunch, ZClaw and CLI/ST builds; other apps may require adaptation. Requires an API key and network access. Audio is sent to the selected provider, whose pricing and data policies apply.",
+      "locales": {
+        "en-US": {
+          "title": "Cardputer Voice Input",
+          "summary": "Press Fn + V to transcribe speech into supported apps."
+        }
+      },
+      "i18n": {
+        "en-US": {
+          "title": "Cardputer Voice Input",
+          "summary": "Press Fn + V to transcribe speech into supported apps."
+        }
+      },
+      "categories": [
+        "AI",
+        "System Tools"
+      ],
+      "author": {
+        "github": "hellomsg",
+        "display_name": "HELLOMSG"
+      },
+      "version": "0.2.0",
+      "published_at": "2026-11-22T17:57:52+00:00",
+      "updated_at": "2026-11-22T17:57:52+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/hellomsg/cardputer-zero-voice-input",
+      "download": {
+        "type": "deb",
+        "package": "voice-input",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/voice-input_0.2.0_arm64.deb",
+        "md5": "83f055db6aa3afab17bcbae1a0318bee",
+        "sha256": "220326579cd12229a4c94692bc8bedc0eac5aa04a83d46f2b9e91e740fb35442",
+        "size": 2007378
+      },
+      "depends": "applaunch, alsa-utils, curl, pulseaudio-utils, libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libfmt10",
+      "permissions": {
+        "camera": false,
+        "microphone": true,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": true,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/voice-input/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/voice-input/screenshots/settings.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/voice-input/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/voice-input/screenshots/settings.png"
       ]
     },
     {
