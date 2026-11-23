@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T16:05:40+08:00",
+  "generated_at": "2026-11-23T16:24:01+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -6644,6 +6644,65 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/scheff-zello/icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/scheff-zello/screenshots/main.png"
+      ]
+    },
+    {
+      "uuid": "9fd82f9a-98b7-50f8-89f5-3f890e37560b",
+      "share_code": "SEES",
+      "title": "SeeSay",
+      "summary": "Point, shoot, hear what's around you",
+      "description": "SeeSay is a completely offline visual assistant for blind and low-vision users. Point the camera, press one button, and hear what is in front of you plus any text you are facing. No account, no internet, no recording. Just point, shoot, and listen.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "AI",
+        "Hardware & IoT"
+      ],
+      "author": {
+        "github": "xnppnx",
+        "display_name": "xnppnx",
+        "email": "xnppnx@126.com"
+      },
+      "version": "1.0.0-rev1",
+      "published_at": "2026-11-21T11:54:55+00:00",
+      "updated_at": "2026-11-21T11:54:55+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Apache-2.0",
+      "source_repo": "https://github.com/xnppnx/seesay",
+      "download": {
+        "type": "deb",
+        "package": "seesay",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/seesay_1.0.0-rev1_arm64.deb",
+        "md5": "c199b1f9eca25a1dc52853deb6a92938",
+        "sha256": "4029b9ae158a51765affbd6f5719182bd30c367a0824fa696f03dfb5b6f26bfc",
+        "size": 175495978
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, espeak-ng",
+      "permissions": {
+        "camera": true,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/seesay/seesay.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/seesay/screenshots/seesay-main.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/seesay/screenshots/seesay-result.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/seesay/screenshots/seesay-keys.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/seesay/seesay.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/seesay/screenshots/seesay-main.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/seesay/screenshots/seesay-result.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/seesay/screenshots/seesay-keys.png"
       ]
     },
     {
