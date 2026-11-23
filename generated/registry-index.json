@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T14:16:55+08:00",
+  "generated_at": "2026-11-23T14:22:58+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4361,6 +4361,63 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshcore-zero/screenshots/inbox.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshcore-zero/screenshots/chat.png"
+      ]
+    },
+    {
+      "uuid": "f9d1b561-f6ba-5f12-8648-9c581558cfc1",
+      "share_code": "MESH",
+      "title": "MeshTandem",
+      "summary": "This is Meshtastic client that works on both bluetooth and the lora cap",
+      "description": "Thanks to soliton for the meshzero app, I have referenced from this original app and remade this meshtandem to support the bluetooth client. the original project can be found here https://github.com/s0liton/MeshZero. With this app we can toggle between lora cap and bluetooth node if it is already connected, have the ability to save the chat in sd card and be able to clear the chat.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "Ramchand",
+        "github": "kakashi2018"
+      },
+      "version": "1",
+      "published_at": "2026-11-20T13:15:42+00:00",
+      "updated_at": "2026-11-20T13:15:42+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "Unlicense",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "meshtandem",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/meshtandem_1_arm64.deb",
+        "md5": "53732f752ec60f822cf8c07733444bc2",
+        "sha256": "08e2459244e7559c8b286c4457322bc894b5bed2495d9a1e303cce0e7db7533a",
+        "size": 2737652
+      },
+      "depends": "libc6 (>= 2.38), libstdc++6 (>= 11), libgcc-s1, libgpiod3 (>= 2.1), libi2c0 (>= 4.0), libinput10, liborcania2.3, libsdl2-2.0-0, libssl3t64, libulfius2.7t64, libusb-1.0-0, libuv1t64, libx11-6, libxkbcommon0, libyaml-cpp0.8, python3 (>= 3.11), python3-bleak, bluez",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshtandem/meshtandem_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshtandem/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshtandem/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshtandem/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshtandem/meshtandem_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshtandem/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshtandem/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/meshtandem/screenshots/screenshot-2.png"
       ]
     },
     {
