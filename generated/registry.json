@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T19:20:30+08:00",
+  "generated_at": "2026-11-23T19:23:24+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9198,6 +9198,68 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-browser/zero-browser_icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-browser/screenshots/screenshot-0.png"
+      ]
+    },
+    {
+      "uuid": "9951908c-58b8-5139-83fe-99d7faaafd59",
+      "share_code": "CELL",
+      "title": "Zero Cellular",
+      "summary": "4G LTE Phone, SMS & Data client for Cardputer Zero with DJI(QDC507) 4G module",
+      "description": "Zero Cellular is a standalone native CardputerZero application for DJI(QDC507) 4G LTE cellular modules. Built directly on the Linux framebuffer (/dev/fb_lcd) and evdev with FreeType-hinted system fonts (DejaVu Sans + Noto Sans CJK SC Medium), it runs completely unprivileged with low memory footprint.\r\nFeatures:\r\n  - VoLTE Voice Calls: Dialer, recent call log, incoming ringtone & alert, live call timer, DTMF keypad, instant mic mute, and live speaker volume / mic gain controls via software Blackman-sinc RateBridge and PipeWire audio routing.\r\n  - SMS Messaging: Conversation list with unread indicators, multi-part GSM-7 & UCS-2 (CJK) send/receive, wrapped chat bubbles, and inline reply composer.\r\n  - Mobile Data & Telemetry: Live operator, LTE band, RSRP signal bars, battery, and clock; toggle usb0 mobile data cleanly without interrupting VoLTE or SMS.\r\n  - Modem Debug & Factory Setup (Dbg tab): 7-point readiness checklist (USB ID, AT/SIM, IMS/VoLTE, ECM, Root ADB, UAC, Voice PCM), interactive AT command console with presets, and one-click provisioning for new QDC507-GL modules.\r\nZero Cellular 是专为 CardputerZero 打造的独立原生 4G LTE 蜂窝通信应用（适配 DJI(QDC507) 模组），基于原生 /dev/fb_lcd 帧缓冲与 evdev 键盘构建，使用FreeType 像素微调系统字体（DejaVu Sans + Noto Sans CJK SC Medium），全程以普通用户权限低内存运行。\r\n主要功能：\r\n  - VoLTE 高清语音通话：支持拨号盘、通话记录、来电振铃与提醒、通话计时、DTMF 按键、实时静音及扬声器音量/麦克风增益调节，内置 16-tap Blackman-sinc 重采样与 PipeWire 音频路由。\r\n  - 短信收发：支持中英文长短信（GSM-7 / UCS-2）收发与自动重组、未读提醒、自动换行气泡对话与快捷回复。\r\n  - 移动数据与状态监测：顶栏实时显示运营商、LTE 频段、RSRP 信号格数、电量与时间，支持在不中断 VoLTE 与短信的情况下开关 usb0 移动数据。\r\n  - 模组调试与出厂配置（Dbg 页面）：内置 7 项就绪状态诊断、交互式 AT 指令控制台（含常用预设）以及面向未初始化的 DJI(QDC507-GL) 模组的一键/分步初始化工具",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Hardware & IoT",
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "hexbyte42",
+        "github": "hexbyte42-bot"
+      },
+      "version": "1.0.0-1",
+      "published_at": "2026-11-22T16:07:08+00:00",
+      "updated_at": "2026-11-22T16:07:08+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MPL-2.0",
+      "source_repo": "https://github.com/hexbyte42-bot/zero-cellular/",
+      "download": {
+        "type": "deb",
+        "package": "zero-cellular",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-cellular_1.0.0-1_arm64.deb",
+        "md5": "11b8295b7cd24ee3d2b7f85fbff8426e",
+        "sha256": "35e8bdcf9f1b8da416ff37507e38393285dfc38430464ef5aeea9396b0bf2517",
+        "size": 1503024
+      },
+      "depends": "libc6, fonts-dejavu-core",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": true,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": true,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-cellular/zero-cellular_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-cellular/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-cellular/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-cellular/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-cellular/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-cellular/screenshots/screenshot-4.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-cellular/zero-cellular_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-cellular/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-cellular/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-cellular/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-cellular/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-cellular/screenshots/screenshot-4.png"
       ]
     },
     {
