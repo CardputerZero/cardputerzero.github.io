@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T19:32:46+08:00",
+  "generated_at": "2026-11-23T19:36:21+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1616,6 +1616,65 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-pwnagotchi/pwnagotchi.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-pwnagotchi/screenshots/01-home.png"
+      ]
+    },
+    {
+      "uuid": "d6746d32-6802-5a1c-940d-445802897d12",
+      "share_code": "SDPR",
+      "title": "Superduper",
+      "summary": "Drift, boost and battle through eight offline racing circuits.",
+      "description": "Race three rivals over two laps, or take the same grid through an eight-round tournament. Dodge tractors in Rolling Pastures, chase the beat through Neon Borough and steer around elephants on Savanna Crossing. Drifts build boost, pickups arm your car, and race points change your finish time. Designed for the built-in keyboard, screen and speaker.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games"
+      ],
+      "author": {
+        "display_name": "strax-hacks",
+        "github": "strax-hacks"
+      },
+      "version": "1.1.0-10",
+      "published_at": "2026-11-22T19:01:30+00:00",
+      "updated_at": "2026-11-22T19:01:30+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "LicenseRef-Proprietary",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "cardputerzero-superduper",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputerzero-superduper_1.1.0-10_arm64.deb",
+        "md5": "e993cfc30638c3a8448d2c0139f5dc9a",
+        "sha256": "18a8088754cac40c9dd3932638914ba68258e991ba3b6d9380d24e64f6c82d0f",
+        "size": 6924686
+      },
+      "depends": "libc6 (>= 2.35), libdrm2 (>= 2.4.99), libgcc-s1 (>= 3.0), libsdl2-2.0-0 (>= 2.0.18), libstdc++6 (>= 11)",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/cardputerzero-superduper_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/cardputerzero-superduper_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-3.png"
       ]
     },
     {
