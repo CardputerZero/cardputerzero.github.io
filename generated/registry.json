@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T17:57:23+08:00",
+  "generated_at": "2026-11-23T18:08:12+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9164,6 +9164,60 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroamp/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroamp/screenshots/screenshot-4.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroamp/screenshots/screenshot-5.png"
+      ]
+    },
+    {
+      "uuid": "0f51fca6-fb16-5f61-b3fc-5f396455a48f",
+      "share_code": "CHRD",
+      "title": "ZeroChord",
+      "summary": "A pocket chord-and-harp instrument for CardputerZero.",
+      "description": "Make music with your CardputerZero keyboard. Play chords, pick individual notes, strum, or add rhythmic arpeggios. Explore nine editable presets with separate Front, Chord, and Pad sounds, adjustable envelopes, tempo, and patterns. Customize key mappings, shape your sound with three-band EQ, and import SoundFont packs from a TF card.\r\n\r\nInspired by minichord and Omnichord. Open source: https://github.com/momo20261121/ZeroChord",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Creative & Office",
+        "Media"
+      ],
+      "author": {
+        "display_name": "momo",
+        "github": "momo20261121"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-11-22T04:36:49+00:00",
+      "updated_at": "2026-11-22T04:36:49+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "zerochord",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerochord_1.0.0_arm64.deb",
+        "md5": "8c4cd4e997f2400ecd536afa940d41c4",
+        "sha256": "de2d9795097b85b4cd0be0a461a7597f64df14f767dc7648b32979e5e3f89d1a",
+        "size": 784212
+      },
+      "depends": "libc6 (>= 2.36), libpulse0, timgm6mb-soundfont",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/zerochord_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/screenshot-0.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/zerochord_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/screenshot-0.png"
       ]
     },
     {
