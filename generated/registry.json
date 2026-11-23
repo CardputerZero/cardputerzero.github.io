@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T15:16:10+08:00",
+  "generated_at": "2026-11-23T15:18:25+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4456,6 +4456,60 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/library.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/timers.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lofibox-cardputer-zero/screenshots/power.png"
+      ]
+    },
+    {
+      "uuid": "7964a94b-1863-5350-84ac-168e829e2e9b",
+      "share_code": "LKCZ",
+      "title": "LokiCZ",
+      "summary": "Pocket security toolkit: capture, wardrive, audit, radar, mesh — Loki levels up",
+      "description": "LokiCZ turns a Cardputer Zero and its radio caps into a pocket security lab. With a supported USB Wi-Fi dongle it captures WPA handshakes (passive, deauth-free), wardrives to WiGLE-format CSV, and runs a Bjorn-style network audit — host discovery, port and service scans, CVE correlation with NVD links — from the device or its built-in LAN web portal; the CC1101 cap sweeps 433/915 MHz, records raw OOK remote signals to Flipper .sub files, and probes the cap's ST25R3916 NFC frontend; a passive sniffer flags drone Remote ID and known surveillance-device fingerprints over Wi-Fi and BLE; the sniffer also decodes OpenDroneID Wi-Fi broadcasts (drone + operator positions); a nightly watchdog diffs audits and flags new hosts, ports and CVEs; the LoRa cap runs Meshtastic or MeshCore under one supervisor — one radio, one owner — and records GPS tracks; radar screens plot live air traffic (ADS-B) and nearby BLE devices; a tracker watch listens for AirTag/SmartTag/Tile followers and a probe logger maps the network names nearby devices ask for. Everything feeds the Loki avatar: captures, audits, wardrives and sniffs earn XP, levels unlock titles (Mortal to All-Father's Problem) and gear — horns, armor, capes, gems, a scepter — worn by the character on the home screen and in the portal wardrobe. Built for your own lab gear and networks you are authorized to test. USB WI-FI DONGLES (Debian 13 / kernel 6.12, in-kernel drivers): recommended — ALFA AWUS036ACM (MT7612U, dual-band, full monitor + injection). Also plug-and-play: ALFA AWUS036ACHM, Panda PAU0B, ASUS USB-AC51 (MT7610U); ALFA AWUS036NHA (AR9271, 2.4 GHz); Panda PAU09 (RT5572) and PAU06 (RT5372); RTL8822BU adapters (capture works, injection limited). RTL8812AU/8811AU adapters (e.g. Archer T2U Nano) also work on the lokicz image — its Raspberry Pi 6.18 kernel carries their in-kernel driver, though a stock Debian 13 install is too old for them. Full supported-dongle list: docs/DONGLES.md in the source repo. Community, build logs and support: the Loki Discord — https://discord.gg/xm54g9UsvF. Disclaimer: LokiCZ is an educational security-research tool intended for your own devices, your own lab, and networks and systems you own or are explicitly authorized to test. Unauthorized interception or testing of other people's systems may be illegal; the responsibility for lawful use rests with the operator.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Security",
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "Justin Jackson",
+        "github": "justincredibles"
+      },
+      "version": "0.42",
+      "published_at": "2026-11-21T04:58:59+00:00",
+      "updated_at": "2026-11-21T04:58:59+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/justincredibles/Loki",
+      "download": {
+        "type": "deb",
+        "package": "lokicz",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/lokicz_0.42_arm64.deb",
+        "md5": "f89f0f301b8fab99ef0f4f877c926787",
+        "sha256": "7fce9fc2b13f52f8966d9d7438d902249080b6f385944b50f09a38d39510edac",
+        "size": 1011834
+      },
+      "depends": "python3, python3-evdev, python3-gpiozero, python3-spidev, python3-numpy, python3-pil, python3-scapy, hcxdumptool, hcxtools, bluez, iw, nmap, tshark",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lokicz/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lokicz/screenshots/menu.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lokicz/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lokicz/screenshots/menu.png"
       ]
     },
     {
