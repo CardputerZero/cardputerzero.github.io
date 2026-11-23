@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T18:20:57+08:00",
+  "generated_at": "2026-11-23T18:42:53+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8636,6 +8636,59 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wirezero/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wirezero/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/wirezero/screenshots/screenshot-4.png"
+      ]
+    },
+    {
+      "uuid": "cc8e91c3-f928-5c36-b621-298b4e950883",
+      "share_code": "ZGXQ",
+      "title": "XIANG",
+      "summary": "中国象棋 · 三档开源 AI 与六位码联机 / Chinese chess with AI and LAN play",
+      "description": "在 Cardputer Zero 下中国象棋。支持三档离线人机、同机双人和局域网联机。局域网对局使用 6 位数字房间码，网页与 Zero 可以互相建房和加入。配对需要联网，走棋通过 WebRTC 直连。简体中文和英文界面可切换，按 Esc 或 Backspace 取消选棋。\r\n\r\nPlay Chinese chess on Cardputer Zero against the offline engine, with a friend on one device, or over LAN. Pair over the internet with a six-digit code, then play directly over WebRTC. Supports Simplified Chinese and English.\r\n\r\n联机网页 / Web app: https://xiangzero.vercel.app/\r\n源码 / Source: https://github.com/xu-c/XIANG\r\n许可证 / License: GPL-3.0-or-later. Bundled XQWLight by Morning Yellow (xqbase) is GPL-2.0-or-later, with its original source, copyright notices and license included. https://github.com/xqbase/xqwlight",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games"
+      ],
+      "author": {
+        "display_name": "xu-c",
+        "github": "xu-c"
+      },
+      "version": "1.0.2-1",
+      "published_at": "2026-11-22T10:04:53+00:00",
+      "updated_at": "2026-11-22T10:04:53+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-3.0-or-later",
+      "source_repo": "https://github.com/xu-c/XIANG",
+      "download": {
+        "type": "deb",
+        "package": "xiang",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/xiang_1.0.2-1_arm64.deb",
+        "md5": "f722a9086ed54b2304451d4a043619d2",
+        "sha256": "51048ebabf54390dd351d5428ee06f4eebd90cce5f08ef8c2427c655d21e8afe",
+        "size": 175256
+      },
+      "depends": "python3 (>= 3.9), python3-pil (>= 9.2), python3-evdev, python3-aiortc, ca-certificates, fonts-noto-cjk, alsa-utils, nodejs (>= 18)",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/xiang/xiang_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/xiang/screenshots/screenshot-0.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/xiang/xiang_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/xiang/screenshots/screenshot-0.png"
       ]
     },
     {
