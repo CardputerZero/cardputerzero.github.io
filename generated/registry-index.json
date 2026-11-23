@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-24T04:42:55+08:00",
+  "generated_at": "2026-11-24T05:46:42+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4293,9 +4293,9 @@
         "display_name": "nerdosity",
         "github": "nerdosity"
       },
-      "version": "1.0.1",
+      "version": "1.0.2",
       "published_at": "2026-11-23T00:52:05+00:00",
-      "updated_at": "2026-11-23T16:29:08+00:00",
+      "updated_at": "2026-11-23T21:44:48+00:00",
       "review": {
         "status": "approved"
       },
@@ -4304,10 +4304,10 @@
       "download": {
         "type": "deb",
         "package": "hass-zero",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/hass-zero_1.0.1_arm64.deb",
-        "md5": "15293c65e5077ff6f8564b0b1af7464a",
-        "sha256": "2a25e5e4bf98706b400e031dcb78d5692f9dec159d00c23906c1dd34b1f9350a",
-        "size": 1062350
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/hass-zero_1.0.2_arm64.deb",
+        "md5": "e4c7f7da238cd507881ef77507704a59",
+        "sha256": "ca04e66a812dd68abd5c44d7fe87eedb86d9d3627415c5f5b83853aac663c2b3",
+        "size": 1062500
       },
       "depends": "python3 (>= 3.11), python3-pil, python3-websocket, python3-numpy, python3-picamera2, python3-zbar, fonts-dejavu-core, pipewire-bin | pulseaudio-utils | alsa-utils",
       "permissions": {
