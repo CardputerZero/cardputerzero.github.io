@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T18:42:53+08:00",
+  "generated_at": "2026-11-23T18:52:06+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2556,6 +2556,60 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czproxy/czproxy_icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czproxy/screenshots/screenshot-0.png"
+      ]
+    },
+    {
+      "uuid": "ce592169-bf37-50dc-aea2-1e5aea6aba17",
+      "share_code": "CZWE",
+      "title": "czweather",
+      "summary": "像素天气",
+      "description": "1. 最高/最低温同字号\r\n卡片里两个温度现在都是同样大小（2× 字号），一上一下排列：\r\n\r\n上排（暖色）= 最高温，下排（冷蓝）= 最低温\r\n颜色区分 + 同字号，横向扫一眼就能对比\r\n详情面板也统一了：右侧「最高 17° / 最低 6°」同样字号，不再是大号配小字\r\n2. 空气质量（表情反馈）\r\n接入 Open-Meteo 空气质量接口（US AQI，同样免费无 key），在详情面板右侧新增第三行：\r\n\r\nAQI\t等级\t表情\t颜色\r\n0–50\t优\t😄 大笑脸\t青绿\r\n51–100\t良\t🙂 微笑\t青\r\n101–150\t轻度\t😐 中性\t琥珀\r\n151–200\t中度\t☹ 沮丧\t橙\r\n201–300\t重度\t😭 哭脸（带泪）\t红\r\n300+\t严重\t😭 哭脸\t品红\r\n表情是用画布图元实时画的（圆脸 + 眼睛 + 嘴弧线 + 泪痕），不是字体符号，所以和大字体风格一致。显示成 😄 42 优 这种形式，等级文字和表情同色。\r\n\r\n验证\r\n新增中文字（空/气/优/良/轻/严/最/高）已重新生成进字库，228 个用字全覆盖、无缺失\r\n逐像素 ASCII 核对过：卡片两行温度确实同尺寸，详情右侧「最高/最低/表情+AQI」位置正确不重叠\r\n全部 5 个自检脚本通过，.deb 结构校验通过\r\n空气质量接口失败时自动显示 空气 --，不影响天气显示",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Lifestyle",
+        "Other"
+      ],
+      "author": {
+        "display_name": "wensang",
+        "github": "zjg622"
+      },
+      "version": "1.2.1",
+      "published_at": "2026-11-22T11:04:04+00:00",
+      "updated_at": "2026-11-22T11:04:04+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/users/zjg622/projects/1",
+      "download": {
+        "type": "deb",
+        "package": "czweather",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/czweather_1.2.1_arm64.deb",
+        "md5": "14f815a6dbd703b8022af57ef1ea991e",
+        "sha256": "e6fd863e3fa753ff064d9eeabd6ab76c36d807dae472bc95245feb4a9687a905",
+        "size": 131852
+      },
+      "depends": "python3 (>= 3.9)",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czweather/czweather_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czweather/screenshots/screenshot-0.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czweather/czweather_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czweather/screenshots/screenshot-0.png"
       ]
     },
     {
