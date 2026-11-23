@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T13:29:35+08:00",
+  "generated_at": "2026-11-23T13:31:47+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2327,9 +2327,9 @@
         "display_name": "king",
         "github": "2001261"
       },
-      "version": "0.2.0",
+      "version": "0.3.1",
       "published_at": "2026-11-14T02:58:10+00:00",
-      "updated_at": "2026-11-14T02:58:10+00:00",
+      "updated_at": "2026-11-23T05:28:17+00:00",
       "review": {
         "status": "approved"
       },
@@ -2338,10 +2338,10 @@
       "download": {
         "type": "deb",
         "package": "czproxy",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/czproxy_0.2.0_arm64.deb",
-        "md5": "479ef73b6402d98ac9498d4d4d64fb15",
-        "sha256": "5cfc5336d408454e2a4e91e37c1fd50aa58b0b9a72a18d813581ed95a713df9b",
-        "size": 22811374
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/czproxy_0.3.1_arm64.deb",
+        "md5": "ecb25df7e58544d67308b47fb2506e14",
+        "sha256": "e35e9d2ecd4b9f84981f905fd2f86ada0425994d6800e0671efe6d175543c5f7",
+        "size": 24630974
       },
       "depends": "",
       "permissions": {
