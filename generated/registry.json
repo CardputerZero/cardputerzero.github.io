@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T14:49:18+08:00",
+  "generated_at": "2026-11-23T14:51:44+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9365,6 +9365,86 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotvbgone/screenshots/ready.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotvbgone/screenshots/sending.png"
+      ]
+    },
+    {
+      "uuid": "6fa8dd85-58c3-59d7-8a1a-82b24299dc31",
+      "share_code": "ZWAV",
+      "title": "ZeroWave",
+      "summary": "2m/70cm All-Mode RTL-SDR DMR/YSF/FM/Pager/APRS/433/Sonde scanner",
+      "description": "Native 2m/70cm all-mode RTL-SDR receiver and auto-scanner for M5Stack Cardputer Zero. Features wideband FFT spectrum sweeping with peak detection, Cortex-A53 optimized dsd-fme digital voice decoding (DMR 2-slot, YSF, D-STAR, M17, dPMR, NXDN, P25), offline RadioID callsign & BrandMeister talkgroup database downloader, analog NFM/AM/WFM scanner, POCSAG/FLEX pager, APRS, rtl_433 sensors, RS41 weather balloons, per-mode logs, and zero-drop PipeWire WAV recording & playback.",
+      "locales": {
+        "de": {
+          "summary": "2m/70cm All-Mode RTL-SDR Scanner für DMR, YSF, FM, Pager, APRS & 433 MHz"
+        },
+        "ja": {
+          "summary": "CardputerZero用 2m/70cm RTL-SDR オールモードスキャナー (DMR/YSF/FM/APRS)"
+        },
+        "zh-CN": {
+          "summary": "CardputerZero 2m/70cm 全模式 RTL-SDR 扫描与数字语音解码器"
+        }
+      },
+      "i18n": {
+        "de": {
+          "summary": "2m/70cm All-Mode RTL-SDR Scanner für DMR, YSF, FM, Pager, APRS & 433 MHz"
+        },
+        "ja": {
+          "summary": "CardputerZero用 2m/70cm RTL-SDR オールモードスキャナー (DMR/YSF/FM/APRS)"
+        },
+        "zh-CN": {
+          "summary": "CardputerZero 2m/70cm 全模式 RTL-SDR 扫描与数字语音解码器"
+        }
+      },
+      "categories": [
+        "Radio & Comms",
+        "Hardware & IoT"
+      ],
+      "author": {
+        "github": "stefexec",
+        "display_name": "Gurkenwerfer"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-11-20T22:35:38+00:00",
+      "updated_at": "2026-11-20T22:35:38+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-3.0-or-later",
+      "source_repo": "https://github.com/stefexec/ZeroWave",
+      "download": {
+        "type": "deb",
+        "package": "zerowave",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerowave_1.0.0_arm64.deb",
+        "md5": "ac7e85e3cf4a43628dd66c3591d88c19",
+        "sha256": "e4b4ba38525dbc997f4dfd43f24670c6244a5f3cddc418ca1c1b9def64a4a91d",
+        "size": 598600
+      },
+      "depends": "python3, python3-pygame, python3-numpy, rtl-sdr, librtlsdr0, multimon-ng, rtl-433, sox, pulseaudio-utils, pipewire-bin, alsa-utils, libcodec2-1.2, libsndfile1, libpulse0, libncursesw6",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerowave/zerowave.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerowave/screenshots/dmr_live.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerowave/screenshots/spectrum.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerowave/screenshots/modes.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerowave/screenshots/config.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerowave/zerowave.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerowave/screenshots/dmr_live.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerowave/screenshots/spectrum.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerowave/screenshots/modes.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerowave/screenshots/config.png"
       ]
     },
     {
