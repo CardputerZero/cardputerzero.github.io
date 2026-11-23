@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T16:37:41+08:00",
+  "generated_at": "2026-11-23T16:41:24+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -7011,7 +7011,7 @@
       "share_code": "SQSD",
       "title": "Square SDR",
       "summary": "Tune, listen and transmit with a Square SDR 2 or Hermes-Lite 2 radio.",
-      "description": "Square SDR turns your Cardputer Zero into a pocket controller for a Square SDR 2 (or other Hermes-Lite 2 style) radio. You'll need the radio, connected to the Cardputer by Ethernet, as this app doesn't pick up signals on its own.\n\nListen from 0 to 30 MHz in USB, LSB, AM or CW, with a live spectrum and waterfall, an S meter, an auto notch to zap whistles, and RIT to nudge the receive pitch. Hold Tab or Space to talk (built-in or USB mic) or send CW. Press H any time for a key guide.\n\nYou need an amateur radio licence to transmit. Transmit is kept to UK amateur bands, cuts out after 3 minutes or if you retune, and backs off on high SWR. Please test on a dummy load first.",
+      "description": "Square SDR turns your Cardputer Zero into a pocket controller for a Square SDR 2 (or other Hermes-Lite 2 style) radio. \r\n\r\nYou'll need the radio, connected to the Cardputer by Ethernet, as this app doesn't pick up signals on its own.\r\n\r\nListen from 0 to 30 MHz in USB, LSB, AM or CW, with a live spectrum and waterfall, an S meter, an auto notch to zap whistles, and RIT to nudge the receive pitch. \r\n\r\nHold Tab to transmit (built-in or USB mic) or tap to send CW when CW Mode is selected.\r\n\r\nPress H any time for a key guide.\r\n\r\nYou need a valid amateur radio licence to transmit! \r\n\r\nTransmit is kept to UK amateur bands, cuts out after 3 minutes or if you retune, and backs off on high SWR. \r\n\r\nPlease test on a dummy load first.",
       "locales": {
         "ja": {
           "summary": "Square SDR 2 / Hermes-Lite 2 系の無線機を操作するアプリ。",
@@ -7049,7 +7049,7 @@
       },
       "version": "0.3.1",
       "published_at": "2026-11-21T17:00:05+00:00",
-      "updated_at": "2026-11-21T17:00:05+00:00",
+      "updated_at": "2026-11-23T08:39:43+00:00",
       "review": {
         "status": "approved"
       },
@@ -7065,34 +7065,34 @@
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libasound2t64 | libasound2, libasound2-plugins",
       "permissions": {
-        "camera": false,
-        "microphone": true,
-        "imu": false,
-        "network": true,
-        "additional_hardware": false,
+        "additional_hardware": true,
         "background_service": false,
-        "external_display": false
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": true,
+        "network": true
       },
       "risk_flags": [],
       "assets": {
-        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/square-sdr.png",
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/square-sdr_icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-receiver.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-settings.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-help.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-receiver-light.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-settings-light.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-help-light.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/screenshot-5.png"
         ]
       },
-      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/square-sdr.png",
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/square-sdr_icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-receiver.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-settings.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-help.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-receiver-light.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-settings-light.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/square-sdr-help-light.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/square-sdr/screenshots/screenshot-5.png"
       ]
     },
     {
