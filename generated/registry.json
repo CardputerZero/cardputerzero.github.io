@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T15:18:25+08:00",
+  "generated_at": "2026-11-23T15:51:05+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -876,7 +876,7 @@
       "share_code": "MHY2",
       "title": "Card HY2",
       "summary": "面向 CardputerZero 的 Hysteria 2 客户端，支持节点管理、SOCKS5 和本机 TUN。",
-      "description": "Card HY2 是面向 CardputerZero（ARM64）的 Hysteria 2 客户端，支持在设备上添加、编辑和切换节点。配备摄像头的机型可以扫描 Hysteria 2 节点二维码，也可生成二维码分享节点。\r\n\r\n支持 SOCKS5 和本机 TUN。SOCKS5 默认仅监听本机，可按需开启局域网共享；TUN 可代理本机 TCP 和 UDP 流量。代理以非 root 账号在后台运行，退出界面后已启动的代理会继续工作。可选开机启动，也可使用「恢复网络」停止代理并清除已应用的代理配置。\r\n\r\n安装包包含 Hysteria 2.14.0 官方核心，可在应用内检查核心更新。支持简体中文与英语。",
+      "description": "Card HY2 是面向 CardputerZero（ARM64）的 Hysteria 2 客户端，支持在设备上添加、编辑和切换节点。配备摄像头的机型可以扫描 Hysteria 2 节点二维码，也可生成二维码分享节点。\r\n\r\n支持 SOCKS5 和本机 TUN。SOCKS5 默认仅监听本机，可按需开启局域网共享；TUN 可代理本机 TCP 和 UDP 流量。代理以非 root 账号在后台运行，退出界面后已启动的代理会继续工作。可选开机启动，也可使用「恢复网络」停止代理并清除已应用的代理配置。\r\n\r\n安装包包含 Hysteria 2.14.0 官方核心，可在应用内检查核心更新。支持简体中文与英语。\r\n\r\n本应用非Hysteria官方制作，如有涉及版权问题请联系我 感谢！\r\n\r\nCard HY2 is a Hysteria 2 client designed for CardputerZero (ARM64), allowing you to add, edit, and switch between nodes directly on the device. On models equipped with a camera, you can scan QR codes to import Hysteria 2 nodes or generate QR codes to share them.\r\n\r\nThe app supports SOCKS5 and native TUN. SOCKS5 listens only on the local host by default, with an option to enable LAN sharing if needed; the TUN mode can proxy TCP and UDP traffic for the entire device. The proxy runs in the background under a non-root account, meaning it continues to operate even after you exit the app interface. You can configure it to launch automatically at startup, or use the \"Restore Network\" function to stop the proxy and clear any applied network configurations.\r\n\r\nThe installation package includes the official Hysteria 2.14.0 core, and you can check for core updates directly within the app. It supports both Simplified Chinese and English.\r\n\r\nThis application is not created by the official Hysteria team. Please contact me if there is any copyright infringement—thank you!",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -886,9 +886,9 @@
         "display_name": "Moeyuuko",
         "github": "Moeyuuko"
       },
-      "version": "0.0.1-1",
+      "version": "0.0.2",
       "published_at": "2026-11-20T07:59:59+00:00",
-      "updated_at": "2026-11-20T07:59:59+00:00",
+      "updated_at": "2026-11-23T07:49:21+00:00",
       "review": {
         "status": "approved"
       },
@@ -897,10 +897,10 @@
       "download": {
         "type": "deb",
         "package": "card-hy2",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/card-hy2_0.0.1-1_arm64.deb",
-        "md5": "72973ae7f887d355bb8dca02c2fa8dd2",
-        "sha256": "0a0f439e3cc75b28d7524bc9f0ff78fea05d0027dd23a2ac912f6eb6fe2a6569",
-        "size": 8369292
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/card-hy2_0.0.2_arm64.deb",
+        "md5": "52a1f153d0a2444b350d2f68ea8a412f",
+        "sha256": "8fcb08a3d4455ef65bb141b4b48b1c6c068eea93409d1363ee69cedbec01eb2b",
+        "size": 8369364
       },
       "depends": "python3 (>= 3.11), python3-yaml, python3-pil, python3-qrcode, fonts-noto-cjk, ca-certificates, curl, iproute2, systemd, adduser, acl",
       "permissions": {
