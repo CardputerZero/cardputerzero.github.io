@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T14:58:16+08:00",
+  "generated_at": "2026-11-23T15:09:35+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -7316,6 +7316,67 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ultimate-remote/ultimate-remote_icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ultimate-remote/screenshots/screenshot-0.png"
+      ]
+    },
+    {
+      "uuid": "83d92414-12e7-5328-aa6b-5171ea5dc60a",
+      "share_code": "UPDO",
+      "title": "Updoit",
+      "summary": "Reminder to update your Raspberry Pi OS packages",
+      "description": "A reminder to update your Raspberry Pi OS packages, an helpers to do so. Can also configure your system for daily package update checks.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "github": "Sudrien",
+        "display_name": "Sudrien"
+      },
+      "version": "0.2.8",
+      "published_at": "2026-11-21T01:00:20+00:00",
+      "updated_at": "2026-11-21T01:00:20+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/Sudrien/updoit-for-cardputer-zero",
+      "download": {
+        "type": "deb",
+        "package": "updoit-for-cardputer-zero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/updoit-for-cardputer-zero_0.2.8_arm64.deb",
+        "md5": "42e0a9afe0ded083324acf16ae931386",
+        "sha256": "01b28fcb1040222c1e4f3bc7f5991e90c66196e29d7349109bcd5cfb0a237e60",
+        "size": 2270560
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, apt, aria2, sudo, adduser",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": true,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/updoit-for-cardputer-zero/updoit-store-icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/updoit-for-cardputer-zero/screenshots/updoit-launcher-mockup.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/updoit-for-cardputer-zero/screenshots/updoit-menu.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/updoit-for-cardputer-zero/screenshots/updoit-confirm.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/updoit-for-cardputer-zero/screenshots/updoit-download.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/updoit-for-cardputer-zero/screenshots/updoit-done.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/updoit-for-cardputer-zero/updoit-store-icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/updoit-for-cardputer-zero/screenshots/updoit-launcher-mockup.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/updoit-for-cardputer-zero/screenshots/updoit-menu.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/updoit-for-cardputer-zero/screenshots/updoit-confirm.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/updoit-for-cardputer-zero/screenshots/updoit-download.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/updoit-for-cardputer-zero/screenshots/updoit-done.png"
       ]
     },
     {
