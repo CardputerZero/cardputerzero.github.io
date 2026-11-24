@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-24T16:52:32+08:00",
+  "generated_at": "2026-11-24T17:34:37+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8579,9 +8579,9 @@
         "display_name": "xyfan",
         "github": "fa1247"
       },
-      "version": "0.1.0-1",
+      "version": "0.2.0-1",
       "published_at": "2026-11-12T14:45:45+00:00",
-      "updated_at": "2026-11-12T14:45:45+00:00",
+      "updated_at": "2026-11-24T09:32:23+00:00",
       "review": {
         "status": "approved"
       },
@@ -8590,10 +8590,10 @@
       "download": {
         "type": "deb",
         "package": "tailzero",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/tailzero_0.1.0-1_arm64.deb",
-        "md5": "c1379f7e06e68f74a45a46f09ade4bf7",
-        "sha256": "06223786891cb6ade92c1704409eab2cfe67437e0ed2d8445548c83bd7761b42",
-        "size": 457896
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/tailzero_0.2.0-1_arm64.deb",
+        "md5": "76938873065f2581b3dc6ccbc44e4604",
+        "sha256": "053159a98b3578d104e00f2ce2c9271b297c8e1b93438aaafc78d07bd0f3938d",
+        "size": 676566
       },
       "depends": "libc6 (>= 2.36), libstdc++6",
       "permissions": {
@@ -8609,12 +8609,14 @@
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailzero/tailzero_icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailzero/screenshots/screenshot-0.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailzero/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailzero/screenshots/screenshot-1.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailzero/tailzero_icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailzero/screenshots/screenshot-0.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailzero/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/tailzero/screenshots/screenshot-1.png"
       ]
     },
     {
