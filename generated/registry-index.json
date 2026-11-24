@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-24T17:34:37+08:00",
+  "generated_at": "2026-11-24T19:31:02+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -11363,7 +11363,7 @@
       "share_code": "ZTAG",
       "title": "ZeroTag",
       "summary": "Amiibo library and emulator for the CardputerZero with the NFC Cap",
-      "description": "ZeroTag turns the CardputerZero and its Cap CC1101 (ST25R3916) into an amiibo library and emulator.\n\n- Library of your own 540-byte backups (put them in ~/amiibo), recognised automatically, with signature check.\n- Catalogue of 954 characters: create blank, correctly signed amiibo.\n- NTAG215 emulation, verified with a Flipper Zero and a Nintendo Switch 2. What the game writes is saved to the file (autosave), signatures stay valid.\n- Optional UID rotation after each read, keeping the data.\n- Text search (names, series, ids; accents ignored), favourites, recent list and a scan of your real figures.\n- Optional online update (off by default): Settings > Online downloads the public amiiboapi.org list so newly announced amiibo appear marked NEW or SOON. Nothing about you or the device is sent.\n- Famicom-style interface in French, English and Japanese, with in-app help (Fn+H).\n\nSetup: copy your own key_retail.bin to ~/.zerotag/. After each boot the app offers to enable the Cap (it loads the SPI overlay with sudo: type your password on the keyboard, it is never stored); you can also run sudo /usr/lib/zerotag/cap-setup yourself. The app works fully offline. Amiibo thumbnails (artwork owned by Nintendo, from AmiiboAPI) are included for display only; your key_retail.bin is not.",
+      "description": "ZeroTag turns the CardputerZero and its Cap CC1101 (ST25R3916) into an amiibo library and emulator.\n\n- Library of your own 540-byte backups (put them in ~/amiibo), recognised automatically, with signature check.\n- Catalogue of 954 characters: create blank, correctly signed amiibo.\n- NTAG215 emulation, verified with a Flipper Zero and a Nintendo Switch 2. What the game writes is saved to the file (autosave), signatures stay valid.\n- Optional UID rotation after each read, keeping the data.\n- Text search (names, series, ids; accents ignored), favourites, recent list and a scan of your real figures.\n- Optional online update (off by default): Settings > Online downloads the public amiiboapi.org list so newly announced amiibo appear marked NEW or SOON. Nothing about you or the device is sent.\n- Famicom-style interface in French, English, Japanese and Simplified Chinese, with in-app help (Fn+H).\n\nSetup: copy your own key_retail.bin to ~/.zerotag/. After each boot the app offers to enable the Cap (it loads the SPI overlay with sudo: type your password on the keyboard, it is never stored); you can also run sudo /usr/lib/zerotag/cap-setup yourself. The app works fully offline. Amiibo thumbnails (artwork owned by Nintendo, from AmiiboAPI) are included for display only; your key_retail.bin is not.\n\nVersion 1.0 is a complete rewrite in Rust: statically linked, light on CPU and memory, with a demoscene manual in the settings.",
       "locales": {
         "fr": {
           "title": "ZeroTag",
@@ -11372,6 +11372,10 @@
         "ja": {
           "title": "ZeroTag",
           "summary": "CardputerZero用amiiboライブラリ＆エミュレーター(NFC Cap対応)"
+        },
+        "zh-CN": {
+          "title": "ZeroTag",
+          "summary": "CardputerZero 的 amiibo 资料库与模拟器（配合 NFC Cap）"
         }
       },
       "i18n": {
@@ -11382,6 +11386,10 @@
         "ja": {
           "title": "ZeroTag",
           "summary": "CardputerZero用amiiboライブラリ＆エミュレーター(NFC Cap対応)"
+        },
+        "zh-CN": {
+          "title": "ZeroTag",
+          "summary": "CardputerZero 的 amiibo 资料库与模拟器（配合 NFC Cap）"
         }
       },
       "categories": [
@@ -11392,9 +11400,9 @@
         "github": "sukoshi1507",
         "display_name": "sukoshi1507"
       },
-      "version": "0.5.0-rev1",
+      "version": "1.0.0-rev1",
       "published_at": "2026-11-19T13:51:34+00:00",
-      "updated_at": "2026-11-22T18:04:16+00:00",
+      "updated_at": "2026-11-24T11:27:13+00:00",
       "review": {
         "status": "approved"
       },
@@ -11403,12 +11411,12 @@
       "download": {
         "type": "deb",
         "package": "zerotag",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerotag_0.5.0-rev1_arm64.deb",
-        "md5": "850ba056aabac3b145294603cb43f7f4",
-        "sha256": "3e27d3c8efd66c4cbda2d319c04f242a8824a36d5f2d9b8a3ee86793c38d1098",
-        "size": 15437158
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerotag_1.0.0-rev1_arm64.deb",
+        "md5": "141d316e071f9f942469a454ba5b6632",
+        "sha256": "ab14311b308f2ef8a1ec44c3b44359d07fd11bb7fce2424966b03b19290d4c17",
+        "size": 14045392
       },
-      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g",
+      "depends": "fonts-noto-cjk",
       "permissions": {
         "camera": false,
         "microphone": false,
