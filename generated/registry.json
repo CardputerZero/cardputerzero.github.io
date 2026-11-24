@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-24T11:50:12+08:00",
+  "generated_at": "2026-11-24T13:10:28+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -7228,26 +7228,26 @@
       "uuid": "ca103ad4-c977-5434-a1b9-de5d3975eabd",
       "share_code": "WARD",
       "title": "Quartermaster",
-      "summary": "Tri-band Wi-Fi + Bluetooth wardriver: WiGLE logs, auto uploads and Recon",
-      "description": "Quartermaster turns the CardputerZero into a complete Wi-Fi and Bluetooth wardriver. Plug in any USB Wi-Fi adapter, single, dual or tri-band, and it is recognised by itself. Every adapter scans at once across 2.4, 5 and 6 GHz, next to the built-in radio and Bluetooth, and it still wardrives with no adapter at all. GPS comes from a USB receiver, the Cap LoRa-1262 or a Grove GPS unit. Each network and device is counted once, and by default only its strongest and its weakest sighting are written, each with its position. Logs are WigleWifi-1.6 CSV files, and finished logs are sent by themselves to WiGLE, WDGWars and Wardrift whenever the Cardputer is online. Add your keys by scanning a QR code with your phone or by typing them on the keyboard, and test each one from the device. Recon is a separate mode that watches for ALPR and Flock cameras, body cameras, doorbell and security cameras, camera glasses, trackers such as AirTag and SmartTag, Remote ID drones and more. It grades the evidence, warns you, tells you if a device seems to follow you, and has a signal finder to walk it down. Recon and a wardrive never run at the same time. Large live counters, a log browser with the upload state of every site, hardware checks that warn when an adapter is not starting, and a full settings screen. MIT open source.",
+      "summary": "Wi-Fi, Bluetooth, aircraft and LoRa mesh wardriver: WiGLE logs, auto uploads",
+      "description": "Quartermaster turns the CardputerZero into a wardriver for every supported radio you plug in. Every supported USB Wi-Fi adapter scans at once across 2.4, 5 and 6 GHz, next to the built-in radio and Bluetooth, and it still wardrives with no adapter at all. Add ESP32-C5 boards as Quartermaster Nodes, on USB or wireless through one hub node, and the channels are shared out between them. Flash a node from the Cardputer itself. With an RTL-SDR stick it logs the aircraft around you, and with the Cap LoRa-1262 it logs the Meshtastic and MeshCore nodes it hears. It only listens. GPS comes from a USB receiver, the Cap LoRa-1262, a Grove GPS unit or gpsd, found by itself. Each device is counted once, with only its closest and its furthest sighting. Logs are WigleWifi-1.6 CSV files, and finished logs go by themselves to WiGLE, WDGWars and Wardrift whenever the Cardputer is online. Aircraft and mesh nodes go to WDGWars and Wardrift only. Add your keys by scanning a QR code with your phone or by typing them, and test each one from the device. While you wardrive, Drive Alerts can warn you with a banner and a tone of your choice about Flock cameras, body cameras, camera glasses and the other kinds you pick, from what the scan already hears and without slowing it, and a Dragon Detector on USB adds its own detections. Recon is a separate mode that watches for ALPR and Flock cameras, body cameras, doorbell and security cameras, camera glasses, trackers such as AirTag and SmartTag, Remote ID drones and more, warns you, tells you if a device seems to follow you, and has a signal finder. Deep scan, off by default, lets a spare USB adapter listen in monitor mode during a wardrive or Recon: it only listens, adds every network it hears to the log, and finds Flock cameras from their probes, disconnect floods and evil twins. Large live counters, a log browser with the upload state of every site, a hardware screen for every radio, and Check for updates. GPL-3.0 open source.",
       "locales": {
         "zh-CN": {
           "title": "Quartermaster",
-          "summary": "三频 Wi-Fi + 蓝牙战争驾驶：WiGLE 日志、自动上传、侦察"
+          "summary": "Wi-Fi、蓝牙、飞机和 LoRa Mesh 战争驾驶：WiGLE 日志、自动上传"
         },
         "ja": {
           "title": "Quartermaster",
-          "summary": "トライバンドWi-Fi＋Bluetoothウォードライブ：WiGLEログ、自動アップロード、偵察"
+          "summary": "Wi-Fi・Bluetooth・航空機・LoRaメッシュのウォードライブ：WiGLEログ、自動アップロード"
         }
       },
       "i18n": {
         "zh-CN": {
           "title": "Quartermaster",
-          "summary": "三频 Wi-Fi + 蓝牙战争驾驶：WiGLE 日志、自动上传、侦察"
+          "summary": "Wi-Fi、蓝牙、飞机和 LoRa Mesh 战争驾驶：WiGLE 日志、自动上传"
         },
         "ja": {
           "title": "Quartermaster",
-          "summary": "トライバンドWi-Fi＋Bluetoothウォードライブ：WiGLEログ、自動アップロード、偵察"
+          "summary": "Wi-Fi・Bluetooth・航空機・LoRaメッシュのウォードライブ：WiGLEログ、自動アップロード"
         }
       },
       "categories": [
@@ -7258,51 +7258,51 @@
         "github": "valleytechsolutions",
         "display_name": "Valleytech Solutions"
       },
-      "version": "1.2.0",
+      "version": "1.2.5",
       "published_at": "2026-11-22T15:32:35+00:00",
-      "updated_at": "2026-11-23T15:09:04+00:00",
+      "updated_at": "2026-11-24T05:07:32+00:00",
       "review": {
         "status": "approved"
       },
-      "license": "MIT",
+      "license": "GPL-3.0-only",
       "source_repo": "https://github.com/valleytechsolutions/Quartermaster",
       "download": {
         "type": "deb",
         "package": "quartermaster",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/quartermaster_1.2.0_all.deb",
-        "md5": "dc7216b6762f5a4ba852efd6b31ebd20",
-        "sha256": "fcaced83f5b819351e5f71e0a164de5521c8f668c03eff4e708a501da92af9d3",
-        "size": 1424496
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/quartermaster_1.2.5_all.deb",
+        "md5": "31a77fd663a185e1df1ef2f41ea6aca2",
+        "sha256": "f91c8571aacfc6c3d93ee94c907198cba61c474698233b287cd7c3330291e1a8",
+        "size": 1470644
       },
-      "depends": "python3 (>= 3.9), python3-pil, python3-numpy, python3-serial, python3-dbus, iw, iproute2, ca-certificates, network-manager, bluez, alsa-utils, rtl-sdr, python3-spidev, python3-smbus | python3-smbus2, python3-libgpiod, python3-cryptography",
+      "depends": "python3 (>= 3.9), python3-pil, python3-numpy, python3-serial, python3-dbus, iw, iproute2, ca-certificates, network-manager, bluez, alsa-utils, rtl-sdr, python3-spidev, python3-smbus | python3-smbus2, python3-libgpiod, python3-cryptography, usb-modeswitch, firmware-realtek, firmware-mediatek, firmware-atheros",
       "permissions": {
         "camera": false,
         "microphone": false,
         "imu": false,
         "network": true,
         "additional_hardware": true,
-        "background_service": false,
+        "background_service": true,
         "external_display": false
       },
       "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/wardrive.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/wardrive-mesh.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/home.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/hardware.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/logs.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/phone-setup.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/hardware-mesh.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/nodes.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/logs-mesh.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/recon.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/wardrive.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/wardrive-mesh.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/home.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/hardware.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/logs.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/phone-setup.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/hardware-mesh.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/nodes.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/logs-mesh.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/quartermaster/screenshots/recon.png"
       ]
     },
