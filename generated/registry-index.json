@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-24T10:57:10+08:00",
+  "generated_at": "2026-11-24T11:50:12+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9154,18 +9154,38 @@
       "uuid": "fdfc77e2-bb06-5555-b55e-6eaa79f32bd4",
       "share_code": "CV09",
       "title": "Voice Input",
-      "summary": "Press Fn + V to transcribe speech into supported apps.",
-      "description": "Use Fn + V to start and stop recording, then insert the transcribed text into the focused input field. Choose DeepSeek or OpenAI (English) and switch configured providers with Shift + Fn + V. The settings app provides API key management, service controls and a shortcut guide. REC and ASR badges show progress; recording is canceled if the input target changes. Compatible with supported APPLaunch, ZClaw and CLI/ST builds; other apps may require adaptation. Requires an API key and network access. Audio is sent to the selected provider, whose pricing and data policies apply.",
+      "summary": "Use your voice to enter text on Cardputer Zero.",
+      "description": "Use your voice to enter text on Cardputer Zero. Press Fn + V to start recording, speak, then press it again to insert the transcription into the current input field. Text is not sent or executed automatically.\n\nChoose DeepSeek or OpenAI, and switch between providers with configured keys using Shift + Fn + V. Manage keys, start or stop the service, and open the shortcut guide in the settings app. REC and ASR indicators show recording and transcription progress. Recording is canceled if the original input target changes or closes.\n\nTested with ZClaw and the CLI/ST terminal. Compatibility may vary across apps and system versions. Requires an internet connection and an API key. Audio is sent to the selected provider, whose pricing and data policies apply. OpenAI is currently configured for English.",
       "locales": {
         "en-US": {
           "title": "Voice Input",
-          "summary": "Press Fn + V to transcribe speech into supported apps."
+          "summary": "Use your voice to enter text on Cardputer Zero."
+        },
+        "zh-CN": {
+          "title": "语音输入",
+          "summary": "在 Cardputer Zero 上使用语音输入文字。",
+          "description": "在 Cardputer Zero 上使用语音输入文字。按 Fn + V 开始录音，说话后再次按下，将识别结果插入当前输入框。文字不会自动发送或执行。\n\n支持 DeepSeek 和 OpenAI，可按 Shift + Fn + V 在已配置密钥的服务商之间切换。在设置页面管理密钥、启停服务或查看快捷键指南。屏幕上的 REC 和 ASR 标记分别表示录音与识别状态。如果原输入目标发生变化或关闭，录音会取消。\n\n已在 ZClaw 和 CLI/ST 终端测试；兼容性可能因应用和系统版本而异。需要网络连接及服务商 API Key。音频会发送给所选服务商，其收费标准和数据政策适用。目前 OpenAI 配置为英语识别。"
+        },
+        "ja": {
+          "title": "音声入力",
+          "summary": "Cardputer Zero で音声をテキストに変換して入力。",
+          "description": "Cardputer Zero で音声をテキストに変換して入力できます。Fn + V を押して録音を始め、話し終えたらもう一度押すと、認識結果が現在の入力欄に挿入されます。テキストが自動で送信・実行されることはありません。\n\nDeepSeek と OpenAI に対応し、Shift + Fn + V でキーを設定済みのサービスを切り替えられます。設定画面では API キーの管理、サービスの開始・停止、ショートカットの確認ができます。REC と ASR の表示で録音中と認識中を確認できます。元の入力先が変わるか閉じられると、録音はキャンセルされます。\n\nZClaw と CLI/ST ターミナルで動作を確認しています。アプリやシステムのバージョンによって互換性は異なります。インターネット接続と API キーが必要です。音声は選択したサービスに送信され、その料金とデータポリシーが適用されます。OpenAI は現在、英語認識に設定されています。"
         }
       },
       "i18n": {
         "en-US": {
           "title": "Voice Input",
-          "summary": "Press Fn + V to transcribe speech into supported apps."
+          "summary": "Use your voice to enter text on Cardputer Zero."
+        },
+        "zh-CN": {
+          "title": "语音输入",
+          "summary": "在 Cardputer Zero 上使用语音输入文字。",
+          "description": "在 Cardputer Zero 上使用语音输入文字。按 Fn + V 开始录音，说话后再次按下，将识别结果插入当前输入框。文字不会自动发送或执行。\n\n支持 DeepSeek 和 OpenAI，可按 Shift + Fn + V 在已配置密钥的服务商之间切换。在设置页面管理密钥、启停服务或查看快捷键指南。屏幕上的 REC 和 ASR 标记分别表示录音与识别状态。如果原输入目标发生变化或关闭，录音会取消。\n\n已在 ZClaw 和 CLI/ST 终端测试；兼容性可能因应用和系统版本而异。需要网络连接及服务商 API Key。音频会发送给所选服务商，其收费标准和数据政策适用。目前 OpenAI 配置为英语识别。"
+        },
+        "ja": {
+          "title": "音声入力",
+          "summary": "Cardputer Zero で音声をテキストに変換して入力。",
+          "description": "Cardputer Zero で音声をテキストに変換して入力できます。Fn + V を押して録音を始め、話し終えたらもう一度押すと、認識結果が現在の入力欄に挿入されます。テキストが自動で送信・実行されることはありません。\n\nDeepSeek と OpenAI に対応し、Shift + Fn + V でキーを設定済みのサービスを切り替えられます。設定画面では API キーの管理、サービスの開始・停止、ショートカットの確認ができます。REC と ASR の表示で録音中と認識中を確認できます。元の入力先が変わるか閉じられると、録音はキャンセルされます。\n\nZClaw と CLI/ST ターミナルで動作を確認しています。アプリやシステムのバージョンによって互換性は異なります。インターネット接続と API キーが必要です。音声は選択したサービスに送信され、その料金とデータポリシーが適用されます。OpenAI は現在、英語認識に設定されています。"
         }
       },
       "categories": [
@@ -9178,7 +9198,7 @@
       },
       "version": "0.2.0",
       "published_at": "2026-11-22T17:57:52+00:00",
-      "updated_at": "2026-11-24T02:54:32+00:00",
+      "updated_at": "2026-11-24T03:46:56+00:00",
       "review": {
         "status": "approved"
       },
@@ -9206,12 +9226,14 @@
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/voice-input/icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/voice-input/screenshots/settings.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/voice-input/screenshots/settings.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/voice-input/screenshots/help.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/voice-input/icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/voice-input/screenshots/settings.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/voice-input/screenshots/settings.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/voice-input/screenshots/help.png"
       ]
     },
     {
