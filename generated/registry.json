@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-24T20:18:37+08:00",
+  "generated_at": "2026-11-24T21:16:20+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1695,7 +1695,7 @@
       },
       "version": "1.1.0-10",
       "published_at": "2026-11-22T19:01:30+00:00",
-      "updated_at": "2026-11-22T19:01:30+00:00",
+      "updated_at": "2026-11-24T13:14:33+00:00",
       "review": {
         "status": "approved"
       },
@@ -1725,16 +1725,14 @@
         "screenshots": [
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-0.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-1.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-2.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-3.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-2.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/cardputerzero-superduper_icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-1.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-2.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-3.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputerzero-superduper/screenshots/screenshot-2.png"
       ]
     },
     {
