@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-24T10:05:15+08:00",
+  "generated_at": "2026-11-24T10:57:10+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9153,18 +9153,18 @@
     {
       "uuid": "fdfc77e2-bb06-5555-b55e-6eaa79f32bd4",
       "share_code": "CV09",
-      "title": "Cardputer Voice Input",
+      "title": "Voice Input",
       "summary": "Press Fn + V to transcribe speech into supported apps.",
       "description": "Use Fn + V to start and stop recording, then insert the transcribed text into the focused input field. Choose DeepSeek or OpenAI (English) and switch configured providers with Shift + Fn + V. The settings app provides API key management, service controls and a shortcut guide. REC and ASR badges show progress; recording is canceled if the input target changes. Compatible with supported APPLaunch, ZClaw and CLI/ST builds; other apps may require adaptation. Requires an API key and network access. Audio is sent to the selected provider, whose pricing and data policies apply.",
       "locales": {
         "en-US": {
-          "title": "Cardputer Voice Input",
+          "title": "Voice Input",
           "summary": "Press Fn + V to transcribe speech into supported apps."
         }
       },
       "i18n": {
         "en-US": {
-          "title": "Cardputer Voice Input",
+          "title": "Voice Input",
           "summary": "Press Fn + V to transcribe speech into supported apps."
         }
       },
@@ -9178,7 +9178,7 @@
       },
       "version": "0.2.0",
       "published_at": "2026-11-22T17:57:52+00:00",
-      "updated_at": "2026-11-22T17:57:52+00:00",
+      "updated_at": "2026-11-24T02:54:32+00:00",
       "review": {
         "status": "approved"
       },
