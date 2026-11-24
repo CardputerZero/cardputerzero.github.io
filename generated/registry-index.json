@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-24T09:22:13+08:00",
+  "generated_at": "2026-11-24T09:57:38+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1021,9 +1021,9 @@
         "display_name": "journey-ad",
         "github": "journey-ad"
       },
-      "version": "0.2.2",
+      "version": "0.2.4",
       "published_at": "2026-11-14T19:55:40+00:00",
-      "updated_at": "2026-11-20T11:56:35+00:00",
+      "updated_at": "2026-11-24T01:55:07+00:00",
       "review": {
         "status": "approved"
       },
@@ -1032,10 +1032,10 @@
       "download": {
         "type": "deb",
         "package": "cardbili",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardbili_0.2.2_arm64.deb",
-        "md5": "0702a319088e8ba0cc760b70a46e3d86",
-        "sha256": "153dbcedd3f713564d1145d4f27933bf2a0b99cbd32c048163806450e538f64f",
-        "size": 6392816
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardbili_0.2.4_arm64.deb",
+        "md5": "d186799c4bbf30b6bc9df7e8ab95220f",
+        "sha256": "becf74a93bffda08e6406c83be541c7b2160d42910da481dd9b77bf47aaa63a7",
+        "size": 6424408
       },
       "depends": "ca-certificates, pulseaudio-utils",
       "permissions": {
