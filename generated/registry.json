@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-24T16:20:24+08:00",
+  "generated_at": "2026-11-24T16:52:32+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9170,6 +9170,11 @@
           "title": "音声入力",
           "summary": "Cardputer Zero で音声をテキストに変換して入力。",
           "description": "Cardputer Zero で音声をテキストに変換して入力できます。Fn + V を押して録音を始め、話し終えたらもう一度押すと、認識結果が現在の入力欄に挿入されます。テキストが自動で送信・実行されることはありません。\n\nDeepSeek と OpenAI に対応し、Shift + Fn + V でキーを設定済みのサービスを切り替えられます。設定画面では API キーの管理、サービスの開始・停止、ショートカットの確認ができます。REC と ASR は録音・認識中、OK と FAIL は結果を示します。録音は最大 15 秒で、入力先が変わるか閉じられるとキャンセルされます。認識リクエストのタイムアウトは 10 秒です。\n\nZClaw と CLI/ST ターミナルで動作を確認しています。アプリやシステムのバージョンによって互換性は異なります。インターネット接続と API キーが必要です。音声は選択したサービスに送信され、その料金とデータポリシーが適用されます。OpenAI は話された言語を自動検出します。"
+        },
+        "en": {
+          "title": "Voice Input",
+          "summary": "Use your voice to enter text on Cardputer Zero.",
+          "description": "Use your voice to enter text on Cardputer Zero. Press Fn + V to start recording, speak, then press it again to insert the transcription into the current input field. Text is not sent or executed automatically.\n\nChoose DeepSeek or OpenAI, and switch between providers with configured keys using Shift + Fn + V. Manage keys, start or stop the service, and open the shortcut guide in the settings app. REC and ASR indicators show recording and transcription progress; OK and FAIL show the outcome. Recording stops automatically after 15 seconds and is canceled if the original input target changes or closes. Transcription requests time out after 10 seconds.\n\nTested with ZClaw and the CLI/ST terminal. Compatibility may vary across apps and system versions. Requires an internet connection and an API key. Audio is sent to the selected provider, whose pricing and data policies apply. OpenAI automatically detects the spoken language."
         }
       },
       "i18n": {
@@ -9186,6 +9191,11 @@
           "title": "音声入力",
           "summary": "Cardputer Zero で音声をテキストに変換して入力。",
           "description": "Cardputer Zero で音声をテキストに変換して入力できます。Fn + V を押して録音を始め、話し終えたらもう一度押すと、認識結果が現在の入力欄に挿入されます。テキストが自動で送信・実行されることはありません。\n\nDeepSeek と OpenAI に対応し、Shift + Fn + V でキーを設定済みのサービスを切り替えられます。設定画面では API キーの管理、サービスの開始・停止、ショートカットの確認ができます。REC と ASR は録音・認識中、OK と FAIL は結果を示します。録音は最大 15 秒で、入力先が変わるか閉じられるとキャンセルされます。認識リクエストのタイムアウトは 10 秒です。\n\nZClaw と CLI/ST ターミナルで動作を確認しています。アプリやシステムのバージョンによって互換性は異なります。インターネット接続と API キーが必要です。音声は選択したサービスに送信され、その料金とデータポリシーが適用されます。OpenAI は話された言語を自動検出します。"
+        },
+        "en": {
+          "title": "Voice Input",
+          "summary": "Use your voice to enter text on Cardputer Zero.",
+          "description": "Use your voice to enter text on Cardputer Zero. Press Fn + V to start recording, speak, then press it again to insert the transcription into the current input field. Text is not sent or executed automatically.\n\nChoose DeepSeek or OpenAI, and switch between providers with configured keys using Shift + Fn + V. Manage keys, start or stop the service, and open the shortcut guide in the settings app. REC and ASR indicators show recording and transcription progress; OK and FAIL show the outcome. Recording stops automatically after 15 seconds and is canceled if the original input target changes or closes. Transcription requests time out after 10 seconds.\n\nTested with ZClaw and the CLI/ST terminal. Compatibility may vary across apps and system versions. Requires an internet connection and an API key. Audio is sent to the selected provider, whose pricing and data policies apply. OpenAI automatically detects the spoken language."
         }
       },
       "categories": [
@@ -9198,7 +9208,7 @@
       },
       "version": "0.2.1",
       "published_at": "2026-11-22T17:57:52+00:00",
-      "updated_at": "2026-11-24T06:40:03+00:00",
+      "updated_at": "2026-11-24T08:47:38+00:00",
       "review": {
         "status": "approved"
       },
