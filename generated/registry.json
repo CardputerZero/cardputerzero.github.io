@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T03:01:30+08:00",
+  "generated_at": "2026-11-26T03:08:56+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2903,9 +2903,9 @@
         "display_name": "H4W9",
         "github": "H4W9"
       },
-      "version": "0.3.4",
+      "version": "0.4.1",
       "published_at": "2026-11-19T19:57:03+00:00",
-      "updated_at": "2026-11-19T19:57:03+00:00",
+      "updated_at": "2026-11-25T19:07:02+00:00",
       "review": {
         "status": "approved"
       },
@@ -2914,10 +2914,10 @@
       "download": {
         "type": "deb",
         "package": "czmail",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/czmail_0.3.4_all.deb",
-        "md5": "5c5581182fafc14e57a7e384d409603f",
-        "sha256": "39692d71f15f7585b979fe8bed671daf5e204305a304f2d99a2d809f491a90e9",
-        "size": 53630
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/czmail_0.4.1_all.deb",
+        "md5": "46acb5aa1af7cf7f722e84f63e5afc8d",
+        "sha256": "5acbe7ee3a5a0a53497a67bed514e3afbe2da22af1db9b59f1ad6fc615a9df58",
+        "size": 56246
       },
       "depends": "python3 (>= 3.9), python3-pil, fonts-dejavu-core",
       "permissions": {
