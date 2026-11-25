@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T22:35:12+08:00",
+  "generated_at": "2026-11-25T22:43:51+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -7758,8 +7758,8 @@
       "uuid": "42f3aea6-492a-5553-8c15-b659b491cc08",
       "share_code": "FISH",
       "title": "PocketFish",
-      "summary": "A quiet pocket aquarium for CardputerZero.",
-      "description": "A quiet pocket aquarium. One fish, a little water, and you.\r\n\r\nTap a key to drop a crumb at the matching spot in the water:\r\n\r\n    4 5 6 7 8\r\n    E R T Y U\r\n    D F G H J\r\n    Z X C V B\r\n\r\nYour fish takes a moment to notice, then swims over to eat.\r\nFeed your fish at least every 5 days! Otherwise...\r\n\r\nPress tab to meet your fish in MyFish and look around.\r\nThe longer you stay, the more you'll find :).",
+      "summary": "A quiet pocket aquarium for CardputerZero (beta).",
+      "description": "A quiet pocket aquarium. One fish, a little water, and you.\r\n\r\nTap a key to drop a crumb at the matching spot in the water:\r\n\r\n    4 5 6 7 8\r\n    E R T Y U\r\n    D F G H J\r\n    Z X C V B\r\n\r\nYour fish takes a moment to notice, then swims over to eat.\r\nFeed your fish at least every 5 days! Otherwise...\r\n\r\nPress tab to meet your fish in MyFish and look around.\r\nThe longer you stay, the more you'll find :).\r\n\r\nPocketFish is in beta, still growing, like your fish.\r\nThings may change. From 0.3.0 on, your fish and days are kept along the way.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -7772,7 +7772,7 @@
       },
       "version": "0.3.1",
       "published_at": "2026-11-23T11:52:29+00:00",
-      "updated_at": "2026-11-25T13:12:32+00:00",
+      "updated_at": "2026-11-25T14:41:16+00:00",
       "review": {
         "status": "approved"
       },
