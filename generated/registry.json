@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T20:04:58+08:00",
+  "generated_at": "2026-11-25T20:08:25+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1004,9 +1004,9 @@
         "display_name": "Moeyuuko",
         "github": "Moeyuuko"
       },
-      "version": "0.0.3",
+      "version": "0.0.5",
       "published_at": "2026-11-23T15:07:38+00:00",
-      "updated_at": "2026-11-23T15:07:38+00:00",
+      "updated_at": "2026-11-25T12:06:25+00:00",
       "review": {
         "status": "approved"
       },
@@ -1015,10 +1015,10 @@
       "download": {
         "type": "deb",
         "package": "card-pi",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/card-pi_0.0.3_arm64.deb",
-        "md5": "f59bc47bcda1d70273d6eea4697319f9",
-        "sha256": "7d0c255dbf1da57537f89c573e5514b8ee5c9d0a1a723269e99fe1728607fc1a",
-        "size": 35888
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/card-pi_0.0.5_arm64.deb",
+        "md5": "3289f1086ef4aa848740f89cf74ce819",
+        "sha256": "344765ba780753341bc164be478f5d0f2bc5651449769e910ca1405259cf690a",
+        "size": 37376
       },
       "depends": "python3 (>= 3.11), python3-pil, python3-pyte, python3-markdown-it, fonts-dejavu-mono | fonts-dejavu-core, ca-certificates, curl, fonts-noto-cjk, librime1t64 | librime1, rime-prelude, rime-essay, rime-data-pinyin-simp, rime-data-luna-pinyin, rime-data-double-pinyin",
       "permissions": {
