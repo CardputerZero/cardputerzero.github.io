@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T22:43:51+08:00",
+  "generated_at": "2026-11-26T01:04:04+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -5933,9 +5933,9 @@
         "display_name": "DavisW9",
         "github": "DavisW9"
       },
-      "version": "0.2.1",
+      "version": "0.2.2~symbeta1",
       "published_at": "2026-11-18T21:05:31+00:00",
-      "updated_at": "2026-11-22T01:26:22+00:00",
+      "updated_at": "2026-11-25T17:01:57+00:00",
       "review": {
         "status": "approved"
       },
@@ -5944,10 +5944,10 @@
       "download": {
         "type": "deb",
         "package": "m-pocket",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/m-pocket_0.2.1_arm64.deb",
-        "md5": "07205c40524919a7fb98abe21c0be46c",
-        "sha256": "16c694e3838c86bc429594e59cd195adb9a11f89b19c5cc79eeec090b5d0d614",
-        "size": 688058
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/m-pocket_0.2.2.symbeta1_arm64.deb",
+        "md5": "bdc4a3d3627cbbb8224e3f4597423862",
+        "sha256": "43be16fe75307335282f0d8c919b543c7a66584b8c73ee89db8ab12c229571e6",
+        "size": 624722
       },
       "depends": "libc6 (>= 2.38), libstdc++6 (>= 11), libgcc-s1, python3 (>= 3.9), ca-certificates",
       "permissions": {
