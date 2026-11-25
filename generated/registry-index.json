@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T04:09:37+08:00",
+  "generated_at": "2026-11-26T04:26:31+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -5739,9 +5739,9 @@
         "display_name": "Justin Jackson",
         "github": "justincredibles"
       },
-      "version": "0.43",
+      "version": "0.44",
       "published_at": "2026-11-21T04:58:59+00:00",
-      "updated_at": "2026-11-23T23:38:44+00:00",
+      "updated_at": "2026-11-25T20:22:40+00:00",
       "review": {
         "status": "approved"
       },
@@ -5750,10 +5750,10 @@
       "download": {
         "type": "deb",
         "package": "lokicz",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/lokicz_0.43_arm64.deb",
-        "md5": "5498a7e4ff83fa21a41ddd6ffa246c8c",
-        "sha256": "e328f87d03526622b65e3e67d860f34adb5124ff459461785144385cd9aab2ed",
-        "size": 1013070
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/lokicz_0.44_arm64.deb",
+        "md5": "bb8076acbeddf755a37a2b1214f948ba",
+        "sha256": "726256b37d8e89d5df0919511d115fd6353220d0ff25e7636667e3cd880ba55e",
+        "size": 1013332
       },
       "depends": "python3, python3-evdev, python3-gpiozero, python3-spidev, python3-numpy, python3-pil, python3-scapy, hcxdumptool, hcxtools, bluez, iw, nmap, tshark",
       "permissions": {
