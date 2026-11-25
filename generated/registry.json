@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T20:30:37+08:00",
+  "generated_at": "2026-11-25T20:34:19+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -5281,6 +5281,66 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lan-proxy/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lan-proxy/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lan-proxy/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "5a83f026-6ffd-55d7-a229-7d326349ed55",
+      "share_code": "LDVL",
+      "title": "LAN Devil",
+      "summary": "Plug into a switch port: see switch, port, VLAN and mgmt IP",
+      "description": "LAN Devil turns the CardputerZero's Ethernet port into a pocket network ID tool. Plug into any switch port and the home screen shows link speed and flaps, your DHCP lease and the switch's name, port, VLAN, voice VLAN, PoE class/wattage and management IP from LLDP/CDP, with an alert on speed/duplex mismatch. Tabs: DHCP probe that flags rogue servers; trunk VLAN discovery with one-key join (DHCP on the VLAN, then every tool runs there); ping with a live latency graph; ARP sweep with MAC vendors; a TCP port grid; and a CSV log of every port you plug into, with notes. DHCP probe, ARP sweep and port scan send traffic; use them only on networks you are authorized to test.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Security"
+      ],
+      "author": {
+        "github": "x22j",
+        "display_name": "LAN Devil"
+      },
+      "version": "0.2.0",
+      "published_at": "2026-11-23T19:56:50+00:00",
+      "updated_at": "2026-11-23T19:56:50+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/x22j/landevil-cardputer-zero",
+      "download": {
+        "type": "deb",
+        "package": "landevil",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/landevil_0.2.0_all.deb",
+        "md5": "1382b63ca5ef4abd5ec8d8bc86c1e377",
+        "sha256": "e443f0fe4c7b211299d8c573571b5dab31cd5400ae5b8ab4574c05e206b3ecf6",
+        "size": 72172
+      },
+      "depends": "python3 (>= 3.9), python3-pil, python3-numpy, fonts-dejavu-core, iputils-ping, iproute2",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/landevil/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/landevil/screenshots/status.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/landevil/screenshots/dhcp.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/landevil/screenshots/vlan.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/landevil/screenshots/ping.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/landevil/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/landevil/screenshots/status.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/landevil/screenshots/dhcp.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/landevil/screenshots/vlan.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/landevil/screenshots/ping.png"
       ]
     },
     {
