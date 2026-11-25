@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T21:27:23+08:00",
+  "generated_at": "2026-11-25T21:50:29+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1054,26 +1054,26 @@
       "uuid": "26604833-3e05-5f6b-b0ec-e07b11cd9efd",
       "share_code": "BILI",
       "title": "CardBili",
-      "summary": "哔哩哔哩客户端，支持视频浏览与弹幕播放",
-      "description": "支持推荐、热门、动态、评论、作者作品、选集与扫码登录",
+      "summary": "哔哩哔哩第三方客户端，支持视频、直播、评论与弹幕互动",
+      "description": "支持推荐、热门、关注动态、历史与收藏；视频详情、评论、作者作品与选集；点播播放、弹幕、进度跳转与倍速；直播观看、分区筛选、实时弹幕与醒目留言；语音输入弹幕、扫码登录、Emoji 像素表情；键盘导航、多种列表布局与外观设置；中英文界面切换",
       "locales": {
         "zh-CN": {
           "title": "CardBili",
-          "summary": "哔哩哔哩客户端，支持视频浏览与弹幕播放"
+          "summary": "哔哩哔哩第三方客户端，支持视频、直播、评论与弹幕互动"
         },
         "en": {
           "title": "CardBili",
-          "summary": "Bilibili client with video browsing and danmaku playback"
+          "summary": "Third-party Bilibili client with video, live streaming, comments and danmaku"
         }
       },
       "i18n": {
         "zh-CN": {
           "title": "CardBili",
-          "summary": "哔哩哔哩客户端，支持视频浏览与弹幕播放"
+          "summary": "哔哩哔哩第三方客户端，支持视频、直播、评论与弹幕互动"
         },
         "en": {
           "title": "CardBili",
-          "summary": "Bilibili client with video browsing and danmaku playback"
+          "summary": "Third-party Bilibili client with video, live streaming, comments and danmaku"
         }
       },
       "categories": [
@@ -1083,9 +1083,9 @@
         "display_name": "journey-ad",
         "github": "journey-ad"
       },
-      "version": "0.2.4",
+      "version": "0.2.5",
       "published_at": "2026-11-14T19:55:40+00:00",
-      "updated_at": "2026-11-24T01:55:07+00:00",
+      "updated_at": "2026-11-25T13:48:07+00:00",
       "review": {
         "status": "approved"
       },
@@ -1094,15 +1094,15 @@
       "download": {
         "type": "deb",
         "package": "cardbili",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardbili_0.2.4_arm64.deb",
-        "md5": "d186799c4bbf30b6bc9df7e8ab95220f",
-        "sha256": "becf74a93bffda08e6406c83be541c7b2160d42910da481dd9b77bf47aaa63a7",
-        "size": 6424408
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardbili_0.2.5_arm64.deb",
+        "md5": "ff9aa8a3c24cff68a73f4810eaa17ad7",
+        "sha256": "9bf9cef29a02714d69895dd5e9390bcee45447540f41e0c18f0718adcd357a3f",
+        "size": 6870472
       },
-      "depends": "ca-certificates, pulseaudio-utils",
+      "depends": "ca-certificates, pulseaudio-utils, alsa-utils, libc6 (>= 2.41), libgcc-s1, libcurl4t64, libopus0, libssl3t64",
       "permissions": {
         "camera": false,
-        "microphone": false,
+        "microphone": true,
         "imu": false,
         "network": true,
         "additional_hardware": false,
@@ -1116,7 +1116,9 @@
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/home.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/detail.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/player.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/author.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/live.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/comments.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/voice.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/store-icon.png",
@@ -1124,7 +1126,9 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/home.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/detail.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/player.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/author.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/live.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/comments.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/voice.png"
       ]
     },
     {
