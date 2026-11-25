@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T20:49:27+08:00",
+  "generated_at": "2026-11-25T20:55:18+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -7549,7 +7549,7 @@
       "share_code": "FISH",
       "title": "PocketFish",
       "summary": "A quiet pocket aquarium for CardputerZero.",
-      "description": "A quiet pocket aquarium. One fish, a little water, and you.\n\nTap a key to drop a crumb at the matching spot in the water:\n\n    4 5 6 7 8\n    E R T Y U\n    D F G H J\n    Z X C V B\n\nYour fish takes a moment to notice, then swims over to eat.\nFeed your fish at least every 5 days! Otherwise...\n\nPress tab to meet your fish in MyFish and look around.\nThe longer you stay, the more you'll find :).",
+      "description": "A quiet pocket aquarium. One fish, a little water, and you.\r\n\r\nTap a key to drop a crumb at the matching spot in the water:\r\n\r\n    4 5 6 7 8\r\n    E R T Y U\r\n    D F G H J\r\n    Z X C V B\r\n\r\nYour fish takes a moment to notice, then swims over to eat.\r\nFeed your fish at least every 5 days! Otherwise...\r\n\r\nPress tab to meet your fish in MyFish and look around.\r\nThe longer you stay, the more you'll find :).",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -7558,11 +7558,11 @@
       ],
       "author": {
         "github": "momo20261121",
-        "display_name": "momo"
+        "display_name": "PocketFish"
       },
       "version": "0.3.1",
       "published_at": "2026-11-23T11:52:29+00:00",
-      "updated_at": "2026-11-25T12:46:32+00:00",
+      "updated_at": "2026-11-25T12:53:37+00:00",
       "review": {
         "status": "approved"
       },
@@ -7578,32 +7578,32 @@
       },
       "depends": "libc6 (>= 2.36), libsqlite3-0 (>= 3.40), libpulse0, pulseaudio-utils, ca-certificates",
       "permissions": {
-        "camera": false,
-        "microphone": false,
-        "imu": false,
-        "network": true,
         "additional_hardware": false,
         "background_service": false,
-        "external_display": false
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
       },
       "risk_flags": [],
       "assets": {
-        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/pocketfish-source.png",
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/pocketfish_icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/1-tank.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/2-myfish.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/3-congratulations.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/4-customize.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/5-all-fishes.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-4.png"
         ]
       },
-      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/pocketfish-source.png",
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/pocketfish_icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/1-tank.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/2-myfish.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/3-congratulations.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/4-customize.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/5-all-fishes.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-4.png"
       ]
     },
     {
