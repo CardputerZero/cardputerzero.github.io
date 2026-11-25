@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T17:50:05+08:00",
+  "generated_at": "2026-11-25T18:39:19+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2681,6 +2681,83 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-peers/screenshots/login.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-peers/screenshots/menu.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-peers/screenshots/ssh.png"
+      ]
+    },
+    {
+      "uuid": "b74f91f4-0150-5297-8ff6-600965937333",
+      "share_code": "TUNE",
+      "title": "TV",
+      "summary": "Live TV from any M3U playlist, on the card or on a TV.",
+      "description": "A tiny, fast TV guide. Point it at any M3U playlist - your Jellyfin or Plex, your IPTV provider, an iptv-org list, or a file of URLs you wrote yourself - browse it by group or type any letter to search, press ENTER and it plays. On the Cardputer Zero's own 320x170 screen, or fullscreen on a TV the moment an HDMI cable is plugged in, and it follows the cable live. Hardware-decoded by the card's VideoCore, so the CPU barely moves, and it picks the smallest rendition for the little screen and the biggest for the TV. Ships with 27 free live channels built in - news, world, sport and classic TV, straight from the broadcasters' own CDNs - so it works the moment you install it, with no account and no config file. Adding more needs no terminal: Add channels is a row on the home screen, and it lists the packs the app ships with and any playlist already on the card - a USB stick, a file you copied over - so a channel is usually two keypresses. An address can be typed in as well, and the app checks a stream actually plays before it writes it down. Channels add up rather than replace. A static Rust binary, two crates, instant start, under 600 kB resident while playing.",
+      "locales": {
+        "zh-CN": {
+          "title": "TV",
+          "summary": "用任意 M3U 播放列表看直播，可在卡片自带屏幕上播放，也可接电视。"
+        },
+        "ja": {
+          "title": "TV",
+          "summary": "任意の M3U プレイリストでライブ TV。本体画面でも、テレビでも再生。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "TV",
+          "summary": "用任意 M3U 播放列表看直播，可在卡片自带屏幕上播放，也可接电视。"
+        },
+        "ja": {
+          "title": "TV",
+          "summary": "任意の M3U プレイリストでライブ TV。本体画面でも、テレビでも再生。"
+        }
+      },
+      "categories": [
+        "Media"
+      ],
+      "author": {
+        "github": "argosautomation",
+        "display_name": "Phil Portman"
+      },
+      "version": "1.4",
+      "published_at": "2026-11-22T03:04:12+00:00",
+      "updated_at": "2026-11-24T01:55:43+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/argosautomation/cz-tv",
+      "download": {
+        "type": "deb",
+        "package": "cz-tv",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cz-tv_1.4_arm64.deb",
+        "md5": "1338c76ff8ea05e8359e54cb976657f8",
+        "sha256": "2fb4b3eef381826067f7616cc9bd3869ea64e06bb9c7e35e3174867643cde231",
+        "size": 274440
+      },
+      "depends": "vlc, ffmpeg, curl, pulseaudio-utils",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-tv/icon-256.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-tv/screenshots/guide.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-tv/screenshots/groups.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-tv/screenshots/add.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-tv/screenshots/playing.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-tv/icon-256.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-tv/screenshots/guide.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-tv/screenshots/groups.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-tv/screenshots/add.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-tv/screenshots/playing.png"
       ]
     },
     {
