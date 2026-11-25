@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T15:37:28+08:00",
+  "generated_at": "2026-11-25T15:41:49+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3154,7 +3154,7 @@
       "uuid": "539b8eae-dcc5-5162-b6be-e8b599e4ba32",
       "share_code": "DXZ0",
       "title": "DX Zero",
-      "summary": "6-Operator DX7 FM Synthesizer & 4-Track Groovebox Sequencer for CardputerZero",
+      "summary": "100% Small Display DX7 FM Synthesizer & 4-Track Sequencer for CardputerZero",
       "description": "CardputerZero DX Zero turns the pocket-sized M5Stack CardputerZero (320×170 IPS display, 56-key matrix keyboard, ARM64 Linux) into a standalone Yamaha DX7-compatible 6-operator FM synthesizer and 4-track groovebox.\r\n\r\nPlay it 100% standalone right out of your pocket using the CardputerZero's built-in speaker/headphones and keyboard, or expand it into a full studio rig by plugging in any class-compliant USB MIDI controller and/or any USB audio interface.",
       "locales": {},
       "i18n": {},
@@ -3167,7 +3167,7 @@
       },
       "version": "0.3.1-m5stack1",
       "published_at": "2026-11-22T07:18:06+00:00",
-      "updated_at": "2026-11-25T07:35:07+00:00",
+      "updated_at": "2026-11-25T07:40:01+00:00",
       "review": {
         "status": "approved"
       },
