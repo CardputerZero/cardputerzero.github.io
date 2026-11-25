@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T20:08:25+08:00",
+  "generated_at": "2026-11-25T20:27:58+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3223,6 +3223,66 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doom-zero-dev0/screenshots/04-controls-reset-draft.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doom-zero-dev0/screenshots/05-rejection-skull.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/doom-zero-dev0/screenshots/06-training-first-capture.png"
+      ]
+    },
+    {
+      "uuid": "5bbc4494-db71-52f4-a215-dcd3540ebfb3",
+      "share_code": "RIAL",
+      "title": "DualRadio",
+      "summary": "Built-in + USB Wi-Fi/Bluetooth manager: monitor survey, hotspot, BT pairing",
+      "description": "Manage the CardputerZero's built-in radio and a USB Wi-Fi/Bluetooth dongle side by side.\r\n\r\nWi-Fi\r\n- Connect, disconnect or forget networks on each radio separately, or disconnect both at once. Saved passwords work on both radios.\r\n- Scan with a 2.4/5 GHz filter and full network details: channel, width, 802.11 standard, WPA2/WPA3/PMF, clients, channel load, router model and every access point with its maker.\r\n- Choose the main network other apps use; the built-in radio takes over when the dongle drops.\r\n- Duplicate guard: the dongle never joins the same network and band as the built-in radio.\r\n- Monitor-mode survey on 2.4 and 5 GHz: access points, clients, channel lock and pcap recording for Wireshark. Realtek RTL8821CU/RTL8811CU dongles are reset automatically so 2.4 GHz monitor mode works every time.\r\n- Hidden networks: names revealed when a device joins, otherwise labelled with their router or maker.\r\n- Hotspot from the built-in radio, plus ping and download speed test per radio.\r\n\r\nBluetooth (built-in and dongle separately)\r\n- Classic + BLE scan with live signal; device class, services, manufacturer, iBeacon/Apple/Microsoft adverts and distance estimate.\r\n- Pair (passkey or PIN on screen), connect, trust, remove, and a signal \"hunt\" view to find a device.\r\n\r\nThree themes (Slate, Neon, Daylight) and a Large text size. Arrows without Fn: F/X/Z/C. Esc = back, hold Esc = exit.\r\nTested with the TP-Link Archer T2UB Nano and BrosTrend AC650. Source and full key map: github.com/RIAL0/DualRadio",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "Ricardo (RIAL0)",
+        "github": "RIAL0"
+      },
+      "version": "1.4.1",
+      "published_at": "2026-11-23T18:04:31+00:00",
+      "updated_at": "2026-11-23T18:04:31+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/RIAL0/DualRadio",
+      "download": {
+        "type": "deb",
+        "package": "dualradio",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/dualradio_1.4.1_arm64.deb",
+        "md5": "63f957c50a5367bb6b3db7eb7f0e68a4",
+        "sha256": "6a42d34d7177667e168418d17071d66d685795be5430768a5813faf23060219a",
+        "size": 261860
+      },
+      "depends": "python3, python3-pil, python3-numpy, python3-dbus, python3-gi, bluez, iw, network-manager, iproute2, iputils-ping, fonts-dejavu-core",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dualradio/dualradio_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dualradio/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dualradio/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dualradio/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dualradio/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dualradio/dualradio_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dualradio/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dualradio/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dualradio/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/dualradio/screenshots/screenshot-3.png"
       ]
     },
     {
@@ -10940,6 +11000,87 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk/screenshots/screenshot-2.png"
+      ]
+    },
+    {
+      "uuid": "01c292f7-6973-5424-80ff-cc1e71add8cc",
+      "share_code": "ZDCP",
+      "title": "ZeroDesk CP0",
+      "summary": "Your CardputerZero on a big screen: a desktop and App Store in any browser",
+      "description": "Your CardputerZero, on a big screen.\n\nOpen it in your laptop's browser and you get a full desktop: windows, a Dock, Finder and Terminal. On your phone it becomes a home screen that sits right next to your other apps.\n\nEvery app in the store is one click away. Install it, update it, done.\n\nCompass, GPS, camera, IR, LoRa and NFC run in their own windows, live.\n\nScan the code on the Zero's screen and you're in. Nothing to install on your computer or phone.\n\nBuilding an app? Give it a ZeroDesk window: github.com/richardhxwang/ZeroDesk",
+      "locales": {
+        "zh-CN": {
+          "summary": "电脑、手机打开浏览器，就能操作你的 CardputerZero",
+          "description": "小屏幕不够用？ZeroDesk 把 CardputerZero 搬到电脑和手机上。\n\n在电脑上，浏览器里就是一整套桌面，拖窗口、翻文件、开终端都行。手机上添加到主屏幕，用起来和普通 App 一样。\n\n商店里的 App 点一下就装好，出了新版本也是一键更新。\n\n指南针、GPS、摄像头、红外、LoRa、NFC 都能在大屏上直接用，数据实时刷新。\n\n扫一下 Zero 屏幕上的二维码就能登录，电脑和手机都不用装软件。\n\n开发者想让自己的 App 在 ZeroDesk 里用窗口打开，可以看 github.com/richardhxwang/ZeroDesk"
+        },
+        "ja": {
+          "summary": "CardputerZero を大きな画面で。ブラウザで使えるデスクトップと App Store",
+          "description": "CardputerZero を、大きな画面で。\n\nパソコンのブラウザで開けば、ウインドウ、Dock、Finder、ターミナルがそろったデスクトップに。スマートフォンでは、ほかのアプリと並べて置けるホーム画面になります。\n\nStore のアプリは、クリックひとつでインストール。アップデートもワンクリック。\n\nコンパス、GPS、カメラ、赤外線、LoRa、NFC を、ウインドウの中でリアルタイムに操作できます。\n\nZero の画面のコードを読み取るだけでつながります。パソコンにもスマートフォンにも、何もインストールしなくて大丈夫。\n\nアプリを作っている方へ：ZeroDesk のウインドウに対応できます。github.com/richardhxwang/ZeroDesk"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "summary": "电脑、手机打开浏览器，就能操作你的 CardputerZero",
+          "description": "小屏幕不够用？ZeroDesk 把 CardputerZero 搬到电脑和手机上。\n\n在电脑上，浏览器里就是一整套桌面，拖窗口、翻文件、开终端都行。手机上添加到主屏幕，用起来和普通 App 一样。\n\n商店里的 App 点一下就装好，出了新版本也是一键更新。\n\n指南针、GPS、摄像头、红外、LoRa、NFC 都能在大屏上直接用，数据实时刷新。\n\n扫一下 Zero 屏幕上的二维码就能登录，电脑和手机都不用装软件。\n\n开发者想让自己的 App 在 ZeroDesk 里用窗口打开，可以看 github.com/richardhxwang/ZeroDesk"
+        },
+        "ja": {
+          "summary": "CardputerZero を大きな画面で。ブラウザで使えるデスクトップと App Store",
+          "description": "CardputerZero を、大きな画面で。\n\nパソコンのブラウザで開けば、ウインドウ、Dock、Finder、ターミナルがそろったデスクトップに。スマートフォンでは、ほかのアプリと並べて置けるホーム画面になります。\n\nStore のアプリは、クリックひとつでインストール。アップデートもワンクリック。\n\nコンパス、GPS、カメラ、赤外線、LoRa、NFC を、ウインドウの中でリアルタイムに操作できます。\n\nZero の画面のコードを読み取るだけでつながります。パソコンにもスマートフォンにも、何もインストールしなくて大丈夫。\n\nアプリを作っている方へ：ZeroDesk のウインドウに対応できます。github.com/richardhxwang/ZeroDesk"
+        }
+      },
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "display_name": "richardhxwang",
+        "github": "richardhxwang"
+      },
+      "version": "0.3.1-1",
+      "published_at": "2026-11-23T17:04:40+00:00",
+      "updated_at": "2026-11-23T17:04:40+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/richardhxwang/ZeroDesk",
+      "download": {
+        "type": "deb",
+        "package": "zerodesk-cp0",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerodesk-cp0_0.3.1-1_arm64.deb",
+        "md5": "7ed07526e5c8214cb705db21529424e6",
+        "sha256": "11b45ba21ab994020e2ece540d13eec63f755e06cbdc05e156528c525535a228",
+        "size": 5716246
+      },
+      "depends": "libcap2-bin",
+      "permissions": {
+        "camera": true,
+        "microphone": true,
+        "imu": true,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": true,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/01-desktop.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/02-appstore.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/03-phone.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/04-install.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/05-hardware.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/06-status.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/01-desktop.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/02-appstore.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/03-phone.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/04-install.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/05-hardware.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/06-status.png"
       ]
     },
     {
