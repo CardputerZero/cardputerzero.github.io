@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T20:44:29+08:00",
+  "generated_at": "2026-11-25T20:47:15+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -7549,7 +7549,7 @@
       "share_code": "FISH",
       "title": "PocketFish",
       "summary": "A quiet pocket aquarium for CardputerZero (beta).",
-      "description": "A quiet pocket aquarium. One fish, a little water, and you.\n\nTap a key to drop a crumb at the matching spot in the water:\n\n    4 5 6 7 8\n    E R T Y U\n    D F G H J\n    Z X C V B\n\nYour fish takes a moment to notice, then swims over to eat.\nFeed your fish at least once a week! Otherwise...\n\nPress tab to meet your fish in MyFish and look around.\nThe longer you stay, the more you'll find :).\n\nPocketFish is in beta, still growing, like your fish.\nThings may change, and your fish and days are kept along the way.",
+      "description": "A quiet pocket aquarium. One fish, a little water, and you.\n\nTap a key to drop a crumb at the matching spot in the water:\n\n    4 5 6 7 8\n    E R T Y U\n    D F G H J\n    Z X C V B\n\nYour fish takes a moment to notice, then swims over to eat.\nFeed your fish at least every 5 days! Otherwise...\n\nPress tab to meet your fish in MyFish and look around.\nThe longer you stay, the more you'll find :).\n\nPocketFish is in beta, still growing, like your fish.\nThings may change. From 0.3.0 on, your fish and days are kept along the way.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -7560,9 +7560,9 @@
         "github": "momo20261121",
         "display_name": "momo"
       },
-      "version": "0.1.1",
+      "version": "0.3.1",
       "published_at": "2026-11-23T11:52:29+00:00",
-      "updated_at": "2026-11-23T11:52:29+00:00",
+      "updated_at": "2026-11-25T12:44:33+00:00",
       "review": {
         "status": "approved"
       },
@@ -7571,12 +7571,12 @@
       "download": {
         "type": "deb",
         "package": "pocketfish",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pocketfish_0.1.1_arm64.deb",
-        "md5": "b97c675402903b9137e9a14922557821",
-        "sha256": "ef032b66371b083a8024122130a7c73a01e69436e11424a298eacbfad54bab75",
-        "size": 836772
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pocketfish_0.3.1_arm64.deb",
+        "md5": "3914bdc1522513c636d89f951988ad19",
+        "sha256": "95b398a7cb1c29eb1a4e4190d1b155fa228f1a16c78d875055ec7df8256fd6d6",
+        "size": 558736
       },
-      "depends": "libc6 (>= 2.36), libpulse0, ca-certificates",
+      "depends": "libc6 (>= 2.36), libsqlite3-0 (>= 3.40), libpulse0, pulseaudio-utils, ca-certificates",
       "permissions": {
         "camera": false,
         "microphone": false,
