@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T20:55:18+08:00",
+  "generated_at": "2026-11-25T21:07:50+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1212,8 +1212,8 @@
       "uuid": "9dda9a91-77d4-5282-a2dd-e7d39e1c6605",
       "share_code": "CMSH",
       "title": "CardMesh",
-      "summary": "Pocket client for Meshtastic and MeshCore LoRa Mesh and MeshMonitor remotely.",
-      "description": "CardMesh is a keyboard-first pocket client for Meshtastic and MeshCore LoRa mesh networks, and MeshMonitor remotely -- the first CardputerZero app for Meshtastic and MeshCore. It talks directly to Meshtastic and MeshCore over the onboard LoRa hat (one at a time -- they share the single physical radio, switched with a tap), and to MeshMonitor over REST. An icon-grid Home screen gets you into any of the three; each has its own channel picker and chat view.",
+      "summary": "The first Cardputer Zero app for Meshtastic, MeshCore, and remote MeshMonitor co",
+      "description": "CardMesh is the first application developed specifically for the M5Stack Cardputer Zero, bringing Meshtastic, MeshCore, and remote MeshMonitor connectivity together in a unified, keyboard-first pocket client.\r\n\r\nIt communicates directly with Meshtastic and MeshCore LoRa mesh networks through the onboard LoRa HAT, operating one protocol at a time on the shared physical radio, with seamless switching at the tap of a button. Remote MeshMonitor connectivity is provided through its REST API.\r\n\r\nAn intuitive icon-grid home screen provides quick access to all three platforms, each featuring its own channel picker and chat interface, delivering a dedicated, portable mesh communications experience.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -1226,7 +1226,7 @@
       },
       "version": "0.3.1",
       "published_at": "2026-11-17T04:15:57+00:00",
-      "updated_at": "2026-11-17T04:15:57+00:00",
+      "updated_at": "2026-11-25T13:05:58+00:00",
       "review": {
         "status": "approved"
       },
@@ -1254,12 +1254,20 @@
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/cardmesh_icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/screenshots/screenshot-0.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/screenshots/screenshot-4.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/cardmesh_icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/screenshots/screenshot-0.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/screenshots/screenshot-4.png"
       ]
     },
     {
