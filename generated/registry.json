@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T19:57:11+08:00",
+  "generated_at": "2026-11-25T20:04:58+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -986,6 +986,68 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/card-hy2/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/card-hy2/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/card-hy2/screenshots/screenshot-2.png"
+      ]
+    },
+    {
+      "uuid": "a09de272-08f6-5d0e-85f5-b621f5ba5772",
+      "share_code": "MPIC",
+      "title": "Card Pi",
+      "summary": "适合 CardputerZero 小屏幕的 Pi 编程助手界面，支持离线拼音和会话管理。",
+      "description": "Card Pi 是面向 CardputerZero（ARM64）的第三方 Pi 客户端，非 Pi 官方出品。它直接调用原版 Pi CLI，沿用已有的模型、登录和配置。可以在内置终端进入 Pi 原生界面，使用 /login、`/settings` 等命令。设备未安装 Pi 时，应用会打开 Pi 官方安装器。\r\n\r\nCard Pi 针对 320×170 屏幕和实体键盘设计，支持选择项目目录、管理会话、切换模型，以及全屏浏览 Markdown 聊天记录。应用集成 Rime 中州韵输入法，支持离线中文拼音和简繁切换，界面支持简体中文和英语。\r\n\r\nCard Pi is an independent client for the Pi coding agent on CardputerZero (ARM64). It runs the original Pi CLI directly and uses your existing Pi settings, provider logins, and sessions. The built-in terminal lets you open Pi’s native interface and run commands such as `/login` and `/settings`. If Pi is missing, Card Pi opens the official Pi installer.\r\n\r\nDesigned for the 320 × 170 display and physical keyboard, Card Pi lets you choose project folders, manage sessions, switch models, and browse Markdown chat history in full screen. It integrates the Rime input method for offline Chinese Pinyin, with both Simplified and Traditional Chinese output. The app interface is available in Simplified Chinese and English.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "AI"
+      ],
+      "author": {
+        "display_name": "Moeyuuko",
+        "github": "Moeyuuko"
+      },
+      "version": "0.0.3",
+      "published_at": "2026-11-23T15:07:38+00:00",
+      "updated_at": "2026-11-23T15:07:38+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/Moeyuuko/Card-Pi",
+      "download": {
+        "type": "deb",
+        "package": "card-pi",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/card-pi_0.0.3_arm64.deb",
+        "md5": "f59bc47bcda1d70273d6eea4697319f9",
+        "sha256": "7d0c255dbf1da57537f89c573e5514b8ee5c9d0a1a723269e99fe1728607fc1a",
+        "size": 35888
+      },
+      "depends": "python3 (>= 3.11), python3-pil, python3-pyte, python3-markdown-it, fonts-dejavu-mono | fonts-dejavu-core, ca-certificates, curl, fonts-noto-cjk, librime1t64 | librime1, rime-prelude, rime-essay, rime-data-pinyin-simp, rime-data-luna-pinyin, rime-data-double-pinyin",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/card-pi/card-pi_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/card-pi/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/card-pi/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/card-pi/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/card-pi/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/card-pi/screenshots/screenshot-4.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/card-pi/card-pi_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/card-pi/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/card-pi/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/card-pi/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/card-pi/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/card-pi/screenshots/screenshot-4.png"
       ]
     },
     {
