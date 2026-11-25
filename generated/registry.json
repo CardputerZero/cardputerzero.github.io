@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T21:12:03+08:00",
+  "generated_at": "2026-11-25T21:27:23+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1224,9 +1224,9 @@
         "display_name": "Max Hayim",
         "github": "maxhayim"
       },
-      "version": "0.3.1",
+      "version": "0.3.5",
       "published_at": "2026-11-17T04:15:57+00:00",
-      "updated_at": "2026-11-25T13:05:58+00:00",
+      "updated_at": "2026-11-25T13:13:32+00:00",
       "review": {
         "status": "approved"
       },
@@ -1235,10 +1235,10 @@
       "download": {
         "type": "deb",
         "package": "cardmesh",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardmesh_0.3.1_arm64.deb",
-        "md5": "445397964a65ab22339a03645d723041",
-        "sha256": "7925b531023299e64540fd0ebbcbea479f15e65ec7c0dbb8e28daeb116ae925e",
-        "size": 11177452
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardmesh_0.3.5_arm64.deb",
+        "md5": "6bbdb23f215f8580e65562178bf9f398",
+        "sha256": "467db31f5d32c11c9956f203b01789594151790644d49157cdcb31ef99a6cb3e",
+        "size": 11270188
       },
       "depends": "libc6",
       "permissions": {
@@ -3107,6 +3107,68 @@
       ]
     },
     {
+      "uuid": "c98506b8-0fd7-5e18-a5c1-19fed68fc3c4",
+      "share_code": "DMOD",
+      "title": "DisplayMOD",
+      "summary": "Manage a 2.8 inch SPI display as a second screen, with a full-size terminal.",
+      "description": "Adds a 2.8\" ILI9341 SPI display (240x320) to the EXT header and mirrors the built-in screen on it. Manage the external display's settings from the app. Full screen CLI also included.\r\n\r\n- 1:1 mirror with a status bar (clock, battery, IP, RAM, CPU) in the spare rows, or stretch to fill\r\n- BigTermCLI: a full-size terminal on the EXT display, with the same keys and colors as the CLI app and saved command history\r\n- Brightness follows the built-in screen, or set it from 10 to 100%\r\n- Can keep the built-in screen off while mirroring, with a sleep timer\r\n- Checks for the display at boot and leaves the 5V output off if nothing is connected\r\n\r\nSettings are in the DisplayMOD app or the displaymod command over SSH. Wiring is shown in the app under Wiring help.\r\n\r\nTested with the red \"2.8 TFT SPI 240x320 V1.2\" board. Touch and SD on that board are not used.\r\n\r\nA service loads the display driver. It runs as a systemd dynamic user with a few added capabilities (not root), and the apps send it settings over a local socket.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Hardware & IoT"
+      ],
+      "author": {
+        "display_name": "H4W9",
+        "github": "H4W9"
+      },
+      "version": "3.1.4",
+      "published_at": "2026-11-23T21:24:47+00:00",
+      "updated_at": "2026-11-23T21:24:47+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/H4W9/CardputerZero_DisplayMOD",
+      "download": {
+        "type": "deb",
+        "package": "displaymod",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/displaymod_3.1.4_arm64.deb",
+        "md5": "7a41065ced0cbe875e6723d924e14550",
+        "sha256": "2bec78499b6c3cfece7318b2d19b88ee2e51b5e6d2556d877ab0e7ca31c02e80",
+        "size": 635956
+      },
+      "depends": "tmux, fbset, kbd, device-tree-compiler",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": true,
+        "camera": false,
+        "external_display": true,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/displaymod/displaymod_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/displaymod/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/displaymod/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/displaymod/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/displaymod/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/displaymod/screenshots/screenshot-4.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/displaymod/displaymod_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/displaymod/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/displaymod/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/displaymod/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/displaymod/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/displaymod/screenshots/screenshot-4.png"
+      ]
+    },
+    {
       "uuid": "257010ed-e97a-52cf-b6fb-e0b9f792cba9",
       "share_code": "DOOD",
       "title": "Doody Calls - Turd World War",
@@ -4080,6 +4142,78 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fontpreview/fontpreview.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fontpreview/screenshots/fontpreview.png"
+      ]
+    },
+    {
+      "uuid": "2de583f9-3540-5589-b301-078ba4e36542",
+      "share_code": "FPVC",
+      "title": "FPV Toolkit",
+      "summary": "FPV pilot toolkit: checklists, LiPo charging, channels, props, battery log",
+      "description": "Pocket field tool for FPV pilots. Checklists: bench, field, post-flight and crash inspection. Battery: charger settings for LiPo / LiHV / Li-ion (end voltage, current at 0.5-2C), per-cell voltage check with charge estimate and land/storage status, voltage reference. Channels: 5.8 GHz spectrum of analog bands, DJI V1/Avatar, O3, O4 and HDZero with overlap view, group presets for 2-6 pilots and IMD check. Props: 31 mm to 20 inch in millimetres with typical motor, KV and battery. Battery log: pack IDs matching your labels, cycle counter and condition. Offline, keyboard only, English and Ukrainian. Reference data from Oscar Liang (oscarliang.com) and the DJI O4 manual.",
+      "locales": {
+        "uk": {
+          "summary": "Помічник FPV-пілота: чеклісти, зарядка, канали, пропи, журнал батарей"
+        }
+      },
+      "i18n": {
+        "uk": {
+          "summary": "Помічник FPV-пілота: чеклісти, зарядка, канали, пропи, журнал батарей"
+        }
+      },
+      "categories": [
+        "Lifestyle",
+        "Hardware & IoT"
+      ],
+      "author": {
+        "github": "DOKUA",
+        "display_name": "Andrusevych"
+      },
+      "version": "0.2.2-rev1",
+      "published_at": "2026-11-23T22:29:33+00:00",
+      "updated_at": "2026-11-23T22:29:33+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/DOKUA/fpv-checklist",
+      "download": {
+        "type": "deb",
+        "package": "fpv-checklist",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/fpv-checklist_0.2.2-rev1_arm64.deb",
+        "md5": "fa71c7caef880fbcea14d4e63ba9d19a",
+        "sha256": "c6bdf2cff812ba6658fdc7a9112278afab7a24826adbdb6d3d2737349ba8fd9d",
+        "size": 1946684
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libfmt10",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fpv-checklist/fpv-checklist_256.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fpv-checklist/screenshots/menu.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fpv-checklist/screenshots/checklist.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fpv-checklist/screenshots/battery-charge.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fpv-checklist/screenshots/channels.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fpv-checklist/screenshots/props.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fpv-checklist/screenshots/battery-log.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fpv-checklist/fpv-checklist_256.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fpv-checklist/screenshots/menu.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fpv-checklist/screenshots/checklist.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fpv-checklist/screenshots/battery-charge.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fpv-checklist/screenshots/channels.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fpv-checklist/screenshots/props.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/fpv-checklist/screenshots/battery-log.png"
       ]
     },
     {
@@ -5840,6 +5974,70 @@
       ]
     },
     {
+      "uuid": "67845006-ed2d-5550-8ca6-64d85f7382f2",
+      "share_code": "MAGS",
+      "title": "MagScan",
+      "summary": "Metal detector for CardputerZero C154/C154-B (needs the BMM150 magnetometer)",
+      "description": "MagScan turns the CardputerZero's BMM150 magnetometer into a metal detector. It tracks deviations of the local magnetic field, shows live field strength and warns about AC interference.\r\n\r\nHardware: works only on the CardputerZero Kickstarter edition (SKU C154 / C154-B), the only model with the BMM150 magnetometer. CardputerZero-Lite (C155 / C155-B) and CardputerZero v1.0 (C154-V1) have no magnetometer: on those the app only shows a \"sensor not found\" screen.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Lifestyle",
+        "Other"
+      ],
+      "author": {
+        "display_name": "nerdosity",
+        "github": "nerdosity"
+      },
+      "version": "1.0.2",
+      "published_at": "2026-11-23T22:22:08+00:00",
+      "updated_at": "2026-11-23T22:22:08+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "CC-BY-NC-ND-4.0",
+      "source_repo": "https://github.com/nerdosity/magscan",
+      "download": {
+        "type": "deb",
+        "package": "magscan",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/magscan_1.0.2_arm64.deb",
+        "md5": "a1c2f26ca9d4bf627ca4b592f8528e64",
+        "sha256": "388ac5538c185c6de3a9ab679e4fb19074a8dca32491cf70edc07e1e96a96881",
+        "size": 63362
+      },
+      "depends": "python3, python3-pil, python3-numpy, fonts-dejavu-core, pipewire-bin | pulseaudio-utils | alsa-utils",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": true,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/magscan/magscan_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/magscan/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/magscan/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/magscan/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/magscan/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/magscan/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/magscan/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/magscan/magscan_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/magscan/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/magscan/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/magscan/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/magscan/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/magscan/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/magscan/screenshots/screenshot-5.png"
+      ]
+    },
+    {
       "uuid": "4bccc178-4a41-5f8e-bf65-d65b29810073",
       "share_code": "MTRX",
       "title": "MatrixZero",
@@ -7570,7 +7768,7 @@
       },
       "version": "0.3.1",
       "published_at": "2026-11-23T11:52:29+00:00",
-      "updated_at": "2026-11-25T12:53:37+00:00",
+      "updated_at": "2026-11-25T13:12:32+00:00",
       "review": {
         "status": "approved"
       },
@@ -7586,32 +7784,34 @@
       },
       "depends": "libc6 (>= 2.36), libsqlite3-0 (>= 3.40), libpulse0, pulseaudio-utils, ca-certificates",
       "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
         "additional_hardware": false,
         "background_service": false,
-        "camera": false,
-        "external_display": false,
-        "imu": false,
-        "microphone": false,
-        "network": true
+        "external_display": false
       },
       "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/pocketfish_icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-0.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-1.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-2.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-3.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-4.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/1-tank.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/6-ocean-moonlight.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/2-myfish.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/4-customize.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/5-all-fishes.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/7-background-music.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/pocketfish_icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-0.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-1.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-2.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-3.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/screenshot-4.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/1-tank.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/6-ocean-moonlight.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/2-myfish.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/4-customize.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/5-all-fishes.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/7-background-music.png"
       ]
     },
     {
