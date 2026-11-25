@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T21:07:50+08:00",
+  "generated_at": "2026-11-25T21:12:03+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -11661,9 +11661,9 @@
         "display_name": "Weiming Feng",
         "github": "nullbeing"
       },
-      "version": "0.5.0",
+      "version": "0.5.1",
       "published_at": "2026-11-10T02:37:56+00:00",
-      "updated_at": "2026-11-23T04:03:41+00:00",
+      "updated_at": "2026-11-25T13:07:27+00:00",
       "review": {
         "status": "approved"
       },
@@ -11672,10 +11672,10 @@
       "download": {
         "type": "deb",
         "package": "zerosdr",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosdr_0.5.0_arm64.deb",
-        "md5": "bf0c07f174e00aa608812062d025d0eb",
-        "sha256": "9f071c6a04ead4f0c3d62c20cd530a270e22956d1854a3010745cbba87c260f3",
-        "size": 644768
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosdr_0.5.1_arm64.deb",
+        "md5": "d9d7daa583a529edf68ff6d87b5f79a1",
+        "sha256": "85d174461628f5cccf929e67ead18595d40fc1e2f462b27b3533c27c67209ace",
+        "size": 669304
       },
       "depends": "libasound2 (>= 1.0.18), libc6 (>= 2.35), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 4.0), libncurses6 (>= 6), libpulse0 (>= 0.99.1), librtlsdr0 (>= 0.6.0), libstdc++6 (>= 12), libtinfo6 (>= 6), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.2.6), libasound2-plugins, curl",
       "permissions": {
