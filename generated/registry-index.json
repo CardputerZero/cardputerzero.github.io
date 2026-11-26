@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T17:54:45+08:00",
+  "generated_at": "2026-11-26T17:57:43+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2812,6 +2812,83 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cybercam/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cybercam/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cybercam/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "d759cf8d-dfe4-567c-94c1-ab4aca9e0dba",
+      "share_code": "ATXT",
+      "title": "Android Texter",
+      "summary": "Your phone's SMS on the card. Pair by scanning a QR.",
+      "description": "A head for Android Texter: your own Android handset stays the modem, the card reads and sends. Conversations, threads, replies and new messages, all over the Android Texter API, refreshed every 20 seconds. Pairing is one scan of a QR code with the 8MP camera, so the API key is never typed on the keypad and never stored anywhere but the card. N starts a new message; numbers are checked against the North American plan before anything is sent, and a short number is refused rather than guessed into a stranger's phone. Needs an Android phone running the free Android Texter app and the two on the same network or the open internet; no SIM, no modem and no extra hardware on the card itself.",
+      "locales": {
+        "zh-CN": {
+          "title": "Android Texter",
+          "summary": "在卡片上收发手机短信，扫描二维码即可配对。"
+        },
+        "ja": {
+          "title": "Android Texter",
+          "summary": "スマホのSMSをカードで送受信。QRコードを読むだけでペアリング。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "Android Texter",
+          "summary": "在卡片上收发手机短信，扫描二维码即可配对。"
+        },
+        "ja": {
+          "title": "Android Texter",
+          "summary": "スマホのSMSをカードで送受信。QRコードを読むだけでペアリング。"
+        }
+      },
+      "categories": [
+        "Radio & Comms"
+      ],
+      "author": {
+        "github": "argosautomation",
+        "display_name": "Phil Portman"
+      },
+      "version": "1.0",
+      "published_at": "2026-11-25T02:10:29+00:00",
+      "updated_at": "2026-11-25T02:10:29+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "cz-atext",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cz-atext_1.0_arm64.deb",
+        "md5": "8700f56503a6660aa856725ea372abce",
+        "sha256": "1873b7f415ae5dd28f66b7b7a92eea5c53049ebcb0f201958cbb6cf629d1eed5",
+        "size": 15404
+      },
+      "depends": "python3, python3-pil, python3-numpy, zbar-tools, rpicam-apps",
+      "permissions": {
+        "camera": true,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-atext/icon-256.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-atext/screenshots/01-conversations.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-atext/screenshots/02-thread.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-atext/screenshots/03-new-message.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-atext/screenshots/04-keys.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-atext/icon-256.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-atext/screenshots/01-conversations.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-atext/screenshots/02-thread.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-atext/screenshots/03-new-message.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-atext/screenshots/04-keys.png"
       ]
     },
     {
