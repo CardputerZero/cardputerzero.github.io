@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T17:43:41+08:00",
+  "generated_at": "2026-11-26T17:45:48+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1188,6 +1188,65 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/live.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/comments.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardbili/screenshots/voice.png"
+      ]
+    },
+    {
+      "uuid": "8da2d98d-34bc-5af0-abec-a2fbb39a6113",
+      "share_code": "CZA0",
+      "title": "Cardenza Synth Zero",
+      "summary": "鸣片移植版，四轨 Groovebox 合成器：808 鼓机、JUNO/DX7 合成器、采样器、步进音序与磁带编曲。",
+      "description": "鸣片（Cardenza Synth）是一台便携式四轨合成器工作站，内置四种音源引擎（808 鼓机、Juno 模拟合成器、DX7 FM 合成器、采样器），支持分轨音序器、歌曲编排、混音、轨道与总线效果器，以及 SD 卡工程存储。\r\n\r\n本版为 CardenzaSynth 上游项目的 CardputerZero 移植版：忠实还原原作的四种音源引擎、分轨音序与歌曲编排，并针对 CP0 的 320×170 屏幕与 46 键键盘重新适配界面与操作，支持USB MIDI键盘。鼓机与合成器为内置；采样器播放你自己的采样，可以通过麦克风采样，或者把 16-bit/44.1kHz 单声道 WAV 放进 ~/.local/share/cardenza/sdcard/CardenzaSynth/Samples/ 即可（配置存于 ~/.config/Cardenza/）。\r\n键位映射图：https://raw.githubusercontent.com/jszsj/CardenzaSynth/cp0/docs/cp0-keymap-vs-original.jpg\r\n（PS: 1区按键长按时，可直接按3区的按键而不需要按sym）",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Media"
+      ],
+      "author": {
+        "display_name": "LeonZhu",
+        "github": "jszsj"
+      },
+      "version": "0.2.3",
+      "published_at": "2026-11-24T15:23:23+00:00",
+      "updated_at": "2026-11-24T15:23:23+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/jszsj/CardenzaSynth",
+      "download": {
+        "type": "deb",
+        "package": "cardenza-zero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardenza-zero_0.2.3_arm64.deb",
+        "md5": "e6679f06ee1ac2b1eb96644ff10ec832",
+        "sha256": "b523c7d6cd0fee441495610fd8d5438fd281338d46167d03ee10076036e08265",
+        "size": 1135720
+      },
+      "depends": "libasound2, libpulse0",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardenza-zero/cardenza-zero_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardenza-zero/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardenza-zero/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardenza-zero/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardenza-zero/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardenza-zero/cardenza-zero_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardenza-zero/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardenza-zero/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardenza-zero/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardenza-zero/screenshots/screenshot-3.png"
       ]
     },
     {
