@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T20:54:50+08:00",
+  "generated_at": "2026-11-26T20:57:27+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -435,6 +435,65 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/amiibo-sim/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/amiibo-sim/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/amiibo-sim/screenshots/screenshot-2.png"
+      ]
+    },
+    {
+      "uuid": "a62cf688-492c-51e1-aab2-d63e0400e7c7",
+      "share_code": "APRZ",
+      "title": "APRSZero",
+      "summary": "APRS beacon, station list and messaging over LoRa for Cardputer Zero.",
+      "description": "APRSZero is a pocket LoRa APRS tool for the Linux-based M5Stack Cardputer Zero with a Cap LoRa-1262. Beacon your position from a live GNSS fix or a saved Maidenhead grid. See stations heard on your channel, with distance and bearing when a position is available. Compose messages and see whether they’re still awaiting an acknowledgment.\r\n\r\nSet your callsign, channel, position source and beacon interval on the device. The app runs only while open and does not connect to the internet. Use a channel and settings permitted by your licence. This release has been tested on the Cardputer Zero; two-station over-the-air interoperability has not yet been verified.\r\n\r\nDeveloped for Tartanleaf.com by Greg Weir VA1GW.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "Greg Weir VA1GW",
+        "github": "gregweir"
+      },
+      "version": "0.1.0-1",
+      "published_at": "2026-11-25T20:37:03+00:00",
+      "updated_at": "2026-11-25T20:37:03+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/gregweir/APRSZero",
+      "download": {
+        "type": "deb",
+        "package": "aprszero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/aprszero_0.1.0-1_arm64.deb",
+        "md5": "1a99dc9e7fde9c076d5fa4ce3adf3dc7",
+        "sha256": "8444fdd6bdf2d8d9af08ae33ae4e2af7c8ee622608e5a49d100b0b4ced277d1d",
+        "size": 737982
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aprszero/aprszero_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aprszero/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aprszero/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aprszero/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aprszero/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aprszero/aprszero_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aprszero/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aprszero/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aprszero/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aprszero/screenshots/screenshot-3.png"
       ]
     },
     {
