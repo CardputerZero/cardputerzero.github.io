@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T18:28:32+08:00",
+  "generated_at": "2026-11-26T18:31:00+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3173,6 +3173,80 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-battery-saver/screenshots/main.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-battery-saver/screenshots/info.png"
+      ]
+    },
+    {
+      "uuid": "658d6164-c81f-5494-b1b7-2363373473ba",
+      "share_code": "CALC",
+      "title": "CalcPuter",
+      "summary": "Engineering calculator: functions, variables, calculus and graphs",
+      "description": "CalcPuter is a keyboard-first engineering calculator for the CardputerZero.\n\n- Expressions with implicit multiplication (2pi, 3(x+1)), hex/binary literals, n!, DEG/RAD trig, logs, gcd/lcm, nCr/nPr and more\n- Variables and your own functions: r = 4.7e3, f(x) = x^3 - 2x\n- Calculus: der(f(x), 2), integ(sin(x), 0, pi), solve(x^2-2, 1), sum(1/x^2, 1, 100)\n- Fast input: Space completes names (sq -> sqrt()), automatic paired parentheses, a leading operator continues from ans\n- Graphs of up to four functions with pan/zoom, trace with y and y', root and min/max search\n- AUTO/SCI/ENG number formats, dark and light theme; history, variables, functions and plots are kept between runs\n\nTab switches CALC / Y= / GRAPH, Fn+H shows help for the current page.",
+      "locales": {
+        "uk": {
+          "title": "CalcPuter",
+          "summary": "Інженерний калькулятор: функції, змінні, похідні, інтеграли та графіки"
+        }
+      },
+      "i18n": {
+        "uk": {
+          "title": "CalcPuter",
+          "summary": "Інженерний калькулятор: функції, змінні, похідні, інтеграли та графіки"
+        }
+      },
+      "categories": [
+        "System Tools",
+        "Education"
+      ],
+      "author": {
+        "github": "heartpolik",
+        "display_name": "heartpolik"
+      },
+      "version": "0.3.0-1",
+      "published_at": "2026-11-25T07:32:39+00:00",
+      "updated_at": "2026-11-25T07:32:39+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/heartpolik/cardputer-zero-tools",
+      "download": {
+        "type": "deb",
+        "package": "cz-calcputer",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cz-calcputer_0.3.0-1_arm64.deb",
+        "md5": "1b137cc42e76f7632ba0bbdf12f03ebf",
+        "sha256": "db6cd013bd63887898c4827f070fa8a793bfa8f74d21910efe4b4424d8fb169d",
+        "size": 1252538
+      },
+      "depends": "libc6 (>= 2.38), libfmt10 (>= 10.1.1+ds1), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.0), libpng16-16t64 (>= 1.6.46), libstdc++6 (>= 11)",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-calcputer/store-icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-calcputer/screenshots/calc.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-calcputer/screenshots/graph.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-calcputer/screenshots/trace.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-calcputer/screenshots/functions.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-calcputer/screenshots/history.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-calcputer/screenshots/help.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-calcputer/store-icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-calcputer/screenshots/calc.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-calcputer/screenshots/graph.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-calcputer/screenshots/trace.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-calcputer/screenshots/functions.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-calcputer/screenshots/history.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-calcputer/screenshots/help.png"
       ]
     },
     {
