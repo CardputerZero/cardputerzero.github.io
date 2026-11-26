@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T09:37:06+08:00",
+  "generated_at": "2026-11-26T09:55:40+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -11856,7 +11856,7 @@
       "share_code": "0SDR",
       "title": "ZeroSDR",
       "summary": "ZeroSDR turns the Cardputer Zero into a pocket SDR receiver.",
-      "description": "Features\r\n- Real-time spectrum and waterfall on the 320×170 display\r\n- FM / NFM / AM / USB / LSB audio with squelch, AGC and de-emphasis\r\n- Wideband swept spectrum page (custom range, pan/zoom, max hold)\r\n- RFI survey: compare HF noise with equipment on/off (10m–80m)\r\n- ADSB: nearest-first list, PFD detail view and map radar\r\n- AIS: list, map with CPA guard ring, porthole ship dossier, NMEA UDP output\r\n- ACARS: aircraft message list and wrapped detail view\r\n- Fn+P screenshot on every page; Fn+D/Fn+S system volume\r\n- Runs as a normal user; no root, no background service\r\n\r\nRequirements\r\n\r\n- RTL-SDR USB dongle (tested with RTL-SDR Blog V4)\r\n- VHF/UHF antenna for SDR and AIS; 1090 MHz antenna for ADSB",
+      "description": "Features\r\n- FM / NFM / AM / USB / LSB audio with squelch, AGC and de-emphasis\r\n- Wideband swept spectrum analyzer (custom range, pan/zoom, max hold)\r\n- RFI survey: compare HF noise with equipment on/off (10m–80m)\r\n- ADSB: nearest-first list, PFD detail view and map radar\r\n- AIS: list, map with CPA guard ring, porthole ship dossier, NMEA UDP output\r\n- ACARS: aircraft message list and wrapped detail view\r\n- Runs as a normal user; no root, no background service\r\n\r\nRequirements\r\n\r\n- RTL-SDR USB dongle\r\n- VHF/UHF antenna for SDR and AIS; 1090 MHz antenna for ADSB",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -11867,9 +11867,9 @@
         "display_name": "Weiming Feng",
         "github": "nullbeing"
       },
-      "version": "0.5.1",
+      "version": "0.5.2",
       "published_at": "2026-11-10T02:37:56+00:00",
-      "updated_at": "2026-11-25T13:07:27+00:00",
+      "updated_at": "2026-11-26T01:53:47+00:00",
       "review": {
         "status": "approved"
       },
@@ -11878,10 +11878,10 @@
       "download": {
         "type": "deb",
         "package": "zerosdr",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosdr_0.5.1_arm64.deb",
-        "md5": "d9d7daa583a529edf68ff6d87b5f79a1",
-        "sha256": "85d174461628f5cccf929e67ead18595d40fc1e2f462b27b3533c27c67209ace",
-        "size": 669304
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosdr_0.5.2_arm64.deb",
+        "md5": "6164a231cfda7a4a3765d5212d1326bb",
+        "sha256": "f79ebd1419246bb156d62b37ea93672906e451d6586dc4b6ff64f902fdcc965c",
+        "size": 682316
       },
       "depends": "libasound2 (>= 1.0.18), libc6 (>= 2.35), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 4.0), libncurses6 (>= 6), libpulse0 (>= 0.99.1), librtlsdr0 (>= 0.6.0), libstdc++6 (>= 12), libtinfo6 (>= 6), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.2.6), libasound2-plugins, curl",
       "permissions": {
