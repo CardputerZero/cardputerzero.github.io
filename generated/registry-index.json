@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T02:57:03+08:00",
+  "generated_at": "2026-11-27T03:22:06+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8164,9 +8164,9 @@
         "display_name": "maximvd",
         "github": "maximvd"
       },
-      "version": "0.1.0-rev1",
+      "version": "0.2.0-rev1",
       "published_at": "2026-11-25T17:11:16+00:00",
-      "updated_at": "2026-11-25T17:11:16+00:00",
+      "updated_at": "2026-11-26T19:20:08+00:00",
       "review": {
         "status": "approved"
       },
@@ -8175,10 +8175,10 @@
       "download": {
         "type": "deb",
         "package": "nettest",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/nettest_0.1.0-rev1_arm64.deb",
-        "md5": "e8dbcc587c2564bb4afdbb31cba1fd6e",
-        "sha256": "f679e94f991aacbf25cd0ef8307288669094f397b40720608ae2c741d58f0f45",
-        "size": 1986646
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/nettest_0.2.0-rev1_arm64.deb",
+        "md5": "00b98d1c64dbcdcd1c0de85d4a4c78ab",
+        "sha256": "1c94b6f2324a765b6b427ea918c9e9d012fc7fcb4e27d05897a1b67479e6c9ff",
+        "size": 2009004
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libcap2-bin",
       "permissions": {
