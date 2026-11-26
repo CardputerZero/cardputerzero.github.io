@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T19:03:35+08:00",
+  "generated_at": "2026-11-26T19:11:58+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -5713,6 +5713,69 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/herdr-zero/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/herdr-zero/screenshots/screenshot-4.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/herdr-zero/screenshots/screenshot-5.png"
+      ]
+    },
+    {
+      "uuid": "14c7eae3-7c8d-5af7-bdfc-cdd97e530455",
+      "share_code": "HBUG",
+      "title": "Humbug",
+      "summary": "Keep unwanted tracks off your Sonos speakers and Google Cast receivers.",
+      "description": "Don't want to get Whammed? Humbug is a pocket-sized CardputerZero bouncer for Sonos speakers and Google Cast receivers. Including an optional built-in Christmas blocklist or customise your own blocked tracks and artists all year round.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Media"
+      ],
+      "author": {
+        "github": "workeffortwaste",
+        "display_name": "Chris Johnson"
+      },
+      "version": "1.0.0-rev1",
+      "published_at": "2026-11-25T12:48:25+00:00",
+      "updated_at": "2026-11-25T12:48:25+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "humbug",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/humbug_1.0.0-rev1_arm64.deb",
+        "md5": "9f2f7763599f54ddd0a457f87cccbb7c",
+        "sha256": "345fbf4ebc452de6ebcec32bf87220f3bbf76d1472136e2716fbf6c7155be658",
+        "size": 1957998
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libssl3 | libssl3t64",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/humbug/humbug-store-icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/humbug/screenshots/dashboard-side-a.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/humbug/screenshots/playing-sonos.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/humbug/screenshots/blocked.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/humbug/screenshots/dashboard-side-b.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/humbug/screenshots/dashboard-blank-tape.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/humbug/screenshots/dashboard-bootleg.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/humbug/humbug-store-icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/humbug/screenshots/dashboard-side-a.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/humbug/screenshots/playing-sonos.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/humbug/screenshots/blocked.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/humbug/screenshots/dashboard-side-b.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/humbug/screenshots/dashboard-blank-tape.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/humbug/screenshots/dashboard-bootleg.png"
       ]
     },
     {
