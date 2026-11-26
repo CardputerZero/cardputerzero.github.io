@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T17:57:43+08:00",
+  "generated_at": "2026-11-26T18:00:35+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4064,6 +4064,80 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ethernet-tester/screenshots/peers.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ethernet-tester/screenshots/mdns.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ethernet-tester/screenshots/dhcp.png"
+      ]
+    },
+    {
+      "uuid": "be0d78ad-f895-5498-8742-2f5964167bbd",
+      "share_code": "CYBK",
+      "title": "FilmBox",
+      "summary": "Film camera for Cardputer Zero: 18 film looks, 8MP, zoom and QR Wi-Fi export",
+      "description": "FilmBox turns the Cardputer Zero into a pocket film camera. 8 MP photos on the full IMX219 sensor, 18 switchable film looks (Provia, Velvia, Classic Chrome, ACROS, Portra, Ektar, Ektachrome, HP5 and more), 1x/1.5x/2x/3x zoom, GIF, silent 720p video, timelapse and stop-motion. A full-bleed viewfinder with a see-through side panel, or a slim pure-framing mode. Press W to start a token-protected Wi-Fi gallery and scan the QR code: photos open in any phone browser. Photos are saved with the film look baked in, plus halation and grain. Film copies render on the GPU (EGL/GLES2) in about 1.6 s for a full 8 MP frame. Screenshots are rendered from the app's own drawing code; no photograph is bundled.",
+      "locales": {
+        "zh-CN": {
+          "title": "FilmBox 胶片盒子",
+          "summary": "给 Cardputer Zero 的胶片相机：18 支胶片 LUT、8MP、变焦、扫码取图"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "FilmBox 胶片盒子",
+          "summary": "给 Cardputer Zero 的胶片相机：18 支胶片 LUT、8MP、变焦、扫码取图"
+        }
+      },
+      "categories": [
+        "Media",
+        "Creative & Office"
+      ],
+      "author": {
+        "github": "DD-HIBIKI",
+        "display_name": "HIBIKI"
+      },
+      "version": "0.9.0",
+      "published_at": "2026-11-25T04:50:20+00:00",
+      "updated_at": "2026-11-25T04:50:20+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/DD-HIBIKI/filmbox",
+      "download": {
+        "type": "deb",
+        "package": "filmbox",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/filmbox_0.9.0_all.deb",
+        "md5": "a53d94b407532d2dfcb8f24afa7c1268",
+        "sha256": "15d8c7523e0d911d6ba01527363506e06ad39b4c5db44b2b17a1128a07afe85b",
+        "size": 1655764
+      },
+      "depends": "python3, python3-pil, python3-evdev, python3-numpy, python3-picamera2, alsa-utils, ffmpeg",
+      "permissions": {
+        "camera": true,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/filmbox/icon-256.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/filmbox/screenshots/01-viewfinder.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/filmbox/screenshots/02-still-portra.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/filmbox/screenshots/03-city-acros.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/filmbox/screenshots/04-clean.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/filmbox/screenshots/05-looks.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/filmbox/screenshots/06-gallery.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/filmbox/icon-256.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/filmbox/screenshots/01-viewfinder.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/filmbox/screenshots/02-still-portra.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/filmbox/screenshots/03-city-acros.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/filmbox/screenshots/04-clean.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/filmbox/screenshots/05-looks.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/filmbox/screenshots/06-gallery.png"
       ]
     },
     {
