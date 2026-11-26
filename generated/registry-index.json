@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T22:40:02+08:00",
+  "generated_at": "2026-11-26T22:56:10+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2348,26 +2348,26 @@
       "uuid": "2101fe89-4fcd-5834-9f92-f52b997d12ca",
       "share_code": "TERM",
       "title": "cardterm",
-      "summary": "功能丰富的全屏终端模拟器：高性能和低内存占用、多窗口、后台会话、xterm/TUI 兼容、自定义外观和背景图",
-      "description": "cardterm 是 M5Stack CardputerZero（320×170）上的全屏终端模拟器：运行 bash/ssh/codex 等任意程序，是设备上的命令行工作台。\n\n功能亮点：\n· 极高性能和极低内存占用：稳态约 6MB，12 窗口多开会话可控，直驱 /dev/fb0，秒启动，字符渲染更快速；\n· 自定义终端主题颜色和 PNG/JPG 背景图；\n· TUI 兼容性：codex / opencode / crush / vim / htop / nano 等 TUI 实测渲染与交互正常，备用屏、滚动域、重绘节拍良好；\n· 复杂协议支持：kitty 键盘协议 (KKP)、DA1/DA2/DECXCPR/DSR/DECRQM、DECSCUSR、DECSTR/RIS、OSC 4/10/11/12/52/110-112；\n· USB/蓝牙外接键盘接管：板载 + 最多 4 个外接并行、标准 US 键位、热插拔；\n· 多窗口（Ctrl+Alt+F1~F12）、回滚/翻页、三档终端大小（80×24 / 53×17 / 40×12）、toast 事件通知；\n· 支持将会话和程序挂载至后台运行，退出 cardterm 后可恢复。\n· 单 config.ini 配置文件，可用于配置主题配色方案、初始命令和工作目录、回滚行数、窗口数、启动横幅文本等多个配置项。",
+      "summary": "更好的CLI终端模拟器，高性能和低内存占用、多窗口、后台会话、xterm/TUI 兼容、自定义主题和背景图",
+      "description": "cardterm 是 M5Stack CardputerZero（320×170）上的全屏终端模拟器：运行 bash/ssh/codex 等任意程序，是设备上的命令行工作台。\n\n比 APPLaunch 的 CLI 更强性能、更低内存和更多功能。对于依赖 CLI 和终端会话的用户，请尝试 cardterm 终端模拟器，而不是 APPLaunch 的 CLI。\nStronger performance, lower memory and more features than the stock APPLaunch CLI. If your work depends on the CLI and terminal sessions, try the cardterm terminal emulator instead of the APPLaunch CLI.\n\n功能亮点：\n· 极高性能和极低内存占用：稳态约 6MB，12 窗口多开会话可控，直驱 /dev/fb0，秒启动，字符渲染更快速；\n· 自定义终端主题颜色和 PNG/JPG 背景图；\n· TUI 兼容性：codex / opencode / crush / vim / htop / nano 等 TUI 实测渲染与交互正常，备用屏、滚动域、重绘节拍良好；\n· 复杂协议支持：kitty 键盘协议 (KKP)、DA1/DA2/DECXCPR/DSR/DECRQM、DECSCUSR、DECSTR/RIS、OSC 4/10/11/12/52/110-112；\n· USB/蓝牙外接键盘接管：板载 + 最多 4 个外接并行、标准 US 键位、热插拔；\n· 多窗口（Ctrl+Alt+F1~F12）、回滚/翻页、三档终端大小（80×24 / 53×17 / 40×12）、toast 事件通知；\n· 支持将会话和程序挂载至后台运行，退出 cardterm 后可恢复。\n· 单 config.ini 配置文件，可用于配置主题配色方案、初始命令和工作目录、回滚行数、窗口数、启动横幅文本等多个配置项。",
       "locales": {
         "zh-CN": {
           "title": "cardterm",
-          "summary": "功能丰富的全屏终端模拟器：高性能和低内存占用、多窗口、后台会话、xterm/TUI 兼容、自定义外观和背景图"
+          "summary": "更好的CLI终端模拟器，高性能和低内存占用、多窗口、后台会话、xterm/TUI 兼容、自定义主题和背景图"
         },
         "en": {
           "title": "cardterm",
-          "summary": "Feature-rich fullscreen terminal emulator: high performance and low memory, multi-window, background sessions, xterm/TUI compatible, customizable theme and wallpaper"
+          "summary": "A better CLI terminal emulator: high performance and low memory, multi-window, background sessions, xterm/TUI compatible, customizable theme and wallpaper"
         }
       },
       "i18n": {
         "zh-CN": {
           "title": "cardterm",
-          "summary": "功能丰富的全屏终端模拟器：高性能和低内存占用、多窗口、后台会话、xterm/TUI 兼容、自定义外观和背景图"
+          "summary": "更好的CLI终端模拟器，高性能和低内存占用、多窗口、后台会话、xterm/TUI 兼容、自定义主题和背景图"
         },
         "en": {
           "title": "cardterm",
-          "summary": "Feature-rich fullscreen terminal emulator: high performance and low memory, multi-window, background sessions, xterm/TUI compatible, customizable theme and wallpaper"
+          "summary": "A better CLI terminal emulator: high performance and low memory, multi-window, background sessions, xterm/TUI compatible, customizable theme and wallpaper"
         }
       },
       "categories": [
@@ -2378,9 +2378,9 @@
         "github": "fsender",
         "display_name": "fsender"
       },
-      "version": "1.2.0",
+      "version": "1.2.1",
       "published_at": "2026-11-24T15:13:30+00:00",
-      "updated_at": "2026-11-26T13:23:36+00:00",
+      "updated_at": "2026-11-26T14:52:34+00:00",
       "review": {
         "status": "approved"
       },
@@ -2389,10 +2389,10 @@
       "download": {
         "type": "deb",
         "package": "cardterm",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardterm_1.2.0_arm64.deb",
-        "md5": "b0bf853d4088698459a522d725a3ffb1",
-        "sha256": "19041ee39ec4623fdf443bf86e7317eb2867c667cebdef7250f3c16ff6eecc17",
-        "size": 1866408
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardterm_1.2.1_arm64.deb",
+        "md5": "d4c0f69be6ba7d19b3cd8dbca0bae51e",
+        "sha256": "d8a27af2e6482c6ceccb2684c3c7e4d165ec68a279b41d49f67a8cbe9dd9e9ca",
+        "size": 1867022
       },
       "depends": "tmux",
       "permissions": {
