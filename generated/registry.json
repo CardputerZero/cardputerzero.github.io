@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T14:32:10+08:00",
+  "generated_at": "2026-11-26T15:26:48+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -11664,7 +11664,7 @@
       "share_code": "ZPWR",
       "title": "ZeroPower",
       "summary": "Battery saver: live power draw, turn off Ethernet, HDMI, BT, services",
-      "description": "Make the Cardputer Zero last longer. See the live power draw from the battery gauge, then turn off for good what a handheld does not need, and undo it just as easily.\n\n- Battery: average draw over the last 30 s, charge, voltage and time left, with the last minute as bars. R restarts the average, so you can see what each setting saves.\n- Hardware: internal USB Ethernet (On / Auto-suspend / Off, ~90 mA less), Wi-Fi, Bluetooth, the HDMI desktop (lightdm) and the GPU memory split (16 MB is enough for the built-in screen: 48 MB more RAM).\n- Services: Tailscale, background extras (NFS, rpcbind, avahi, apt timers) and system logs in RAM.\n- Power saving (zeropowerd, a service running as the device user, not root): screen off pauses the launcher and parks its audio (a key wakes it), quiet launcher (no key sounds), a clean power-off at low battery, and a screen timeout that turns the screen off after a few minutes without a key, as a safety net for when the launcher or an app leaves it on.\n\nSettings stay in the system itself and survive reboots. Uninstalling ZeroPower puts every changed setting back. System changes go through a small helper that accepts a fixed list of settings, run with the device user's passwordless sudo (as set up by Raspberry Pi Imager); no sudoers file is installed.\n\nMeasured on a Cardputer Zero with the screen off: 301 mA -> 209 mA just with Ethernet auto-suspend. Ideas and first measurements from cz-battery-saver by InstantComet (MIT).",
+      "description": "Make the Cardputer Zero last longer. See the live power draw from the battery gauge, then turn off for good what a handheld does not need, and undo it just as easily.\n\n- Battery: average draw over the last 30 s, charge, voltage and time left, with the last minute as bars. R restarts the average, so you can see what each setting saves.\n- Hardware: internal USB Ethernet (On / Auto-suspend / Off, ~90 mA less), Wi-Fi, Bluetooth, the HDMI desktop (lightdm), the GPU memory split (16 MB is enough for the built-in screen: 48 MB more RAM), a CPU speed cap, the status LED and the 5 V outputs of the Grove port and the GPIO header. With Desk Mode, its HDMI desktop can close itself once HDMI is unplugged.\n- Services, each on its own switch: Tailscale, NFS client (rpcbind), Avahi (.local names), daily apt updates, the man page index, the disk scrub timer and system logs in RAM.\n- Power saving (zeropowerd, a service running as the device user, not root): screen off sleeps the sound card and pauses the launcher (each one on its own switch) after a delay you choose (a key wakes it), quiet launcher (no key sounds), a clean power-off at low battery (with an on-screen warning first; plugging in the charger cancels it), and a screen timeout that turns the screen off after a few minutes without a key, as a safety net for when the launcher or an app leaves it on.\n\nSettings stay in the system itself and survive reboots. Uninstalling ZeroPower puts every changed setting back. System changes go through a small helper that accepts a fixed list of settings, run with the device user's sudo: passwordless as set up by Raspberry Pi Imager, or ZeroPower asks for the password on screen (never stored); no sudoers file is installed.\n\nMeasured on a Cardputer Zero with the screen off: 301 mA -> 209 mA just with Ethernet auto-suspend. Ideas and first measurements from cz-battery-saver by InstantComet (MIT).",
       "locales": {
         "es": {
           "title": "ZeroPower",
@@ -11700,9 +11700,9 @@
         "github": "baltamir1978",
         "display_name": "baltamir1978"
       },
-      "version": "0.1.4-rev1",
+      "version": "0.1.5-rev1",
       "published_at": "2026-11-22T19:16:36+00:00",
-      "updated_at": "2026-11-24T22:03:28+00:00",
+      "updated_at": "2026-11-26T07:24:07+00:00",
       "review": {
         "status": "approved"
       },
@@ -11711,10 +11711,10 @@
       "download": {
         "type": "deb",
         "package": "zeropower",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zeropower_0.1.4-rev1_arm64.deb",
-        "md5": "6aa3a704ac17820f879acf34e4c1dfa3",
-        "sha256": "f6239c99eb925946ef493693524a94941afebc04070012f4a51bc1742ca8f279",
-        "size": 1043896
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zeropower_0.1.5-rev1_arm64.deb",
+        "md5": "e7c326eaf9ebd729d2d630b9b1ec9ade",
+        "sha256": "e429eb1aa31f23d703b52d46db685a97e184ab79d44f6187f24c777132ae94b7",
+        "size": 1075314
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, sudo, pulseaudio-utils",
       "permissions": {
