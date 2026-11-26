@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T06:13:39+08:00",
+  "generated_at": "2026-11-27T06:25:52+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4157,9 +4157,9 @@
         "display_name": "H4W9",
         "github": "H4W9"
       },
-      "version": "3.1.7",
+      "version": "3.2.0",
       "published_at": "2026-11-23T21:24:47+00:00",
-      "updated_at": "2026-11-25T19:07:59+00:00",
+      "updated_at": "2026-11-26T22:23:56+00:00",
       "review": {
         "status": "approved"
       },
@@ -4168,10 +4168,10 @@
       "download": {
         "type": "deb",
         "package": "displaymod",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/displaymod_3.1.7_arm64.deb",
-        "md5": "590b51a5b52a903a935ed97226385871",
-        "sha256": "74af649000eeefe40e2c7d467da3556987489b640b6ed0b481f7c9d4fc823e6e",
-        "size": 636690
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/displaymod_3.2.0_arm64.deb",
+        "md5": "66c34186eec97c2309366a765c3e296f",
+        "sha256": "e7d166d5e03e45a02de1ac836ca769a51ae94ddcd92122a4ae2e675ba587e52d",
+        "size": 654270
       },
       "depends": "tmux, fbset, kbd, device-tree-compiler",
       "permissions": {
