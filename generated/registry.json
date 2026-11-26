@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T19:24:14+08:00",
+  "generated_at": "2026-11-26T19:29:31+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9343,70 +9343,6 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/retro-zero/retro-zero_icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/retro-zero/screenshots/screenshot-0.png"
-      ]
-    },
-    {
-      "uuid": "40cadf4e-b2d2-5901-905c-5d53f8df9995",
-      "share_code": "RFHM",
-      "title": "RF Heatmap",
-      "summary": "CC1101 Sub-GHz waterfall, PulseNet-RF & SpectrumNet-2D ML & .sub studio",
-      "description": "RF Heatmap turns your CardputerZero with Cap CC1101 into an on-device Sub-GHz spectrum and ML lab. Sweep 315/433/868/915 MHz with an Inferno thermal waterfall, EMI room diff, and real-time SpectrumNet-2D scene/RollJam alerts; classify 28 RF protocols and 32D transmitter fingerprints with Pure-Go INT8 PulseNet-RF; rescue distorted captures with 3-pass OOK + 1D-UNet AGC denoising; decode fixed/rolling codes, TPMS and weather sensors; run Foxhunt Geiger mode, RAW Trimmer, Auto-Probe, DB sync, and an opt-in stdio MCP server.",
-      "locales": {},
-      "i18n": {},
-      "categories": [
-        "Radio & Comms",
-        "Hardware & IoT"
-      ],
-      "author": {
-        "display_name": "Zhenya",
-        "github": "igenexxx"
-      },
-      "version": "0.3.10-1",
-      "published_at": "2026-11-19T23:21:16+00:00",
-      "updated_at": "2026-11-25T20:46:11+00:00",
-      "review": {
-        "status": "approved"
-      },
-      "license": "MIT",
-      "source_repo": "https://github.com/igenexxx/rf-heatmap",
-      "download": {
-        "type": "deb",
-        "package": "rf-heatmap",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/rf-heatmap_0.3.10-1_arm64.deb",
-        "md5": "fdc455a2477b32f3f1fc3d8670eced67",
-        "sha256": "e19c89e0150cfbd27bd328d38cb84f0759311e2f879271bc5e2a26d586d312cc",
-        "size": 2616864
-      },
-      "depends": "",
-      "permissions": {
-        "camera": false,
-        "microphone": false,
-        "imu": false,
-        "network": true,
-        "additional_hardware": true,
-        "background_service": false,
-        "external_display": false
-      },
-      "risk_flags": [],
-      "assets": {
-        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/rf-heatmap-icon.png",
-        "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/home.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/read.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/heatmap.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/saved.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/sensors.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/probe.png"
-        ]
-      },
-      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/rf-heatmap-icon.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/home.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/read.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/heatmap.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/saved.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/sensors.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/rf-heatmap/screenshots/probe.png"
       ]
     },
     {
