@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T21:26:06+08:00",
+  "generated_at": "2026-11-26T21:38:17+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3953,7 +3953,7 @@
       "share_code": "CZX0",
       "title": "CZX",
       "summary": "Retro computer multi-emulator (Apple II, C64, PC-88/98, MSX, MZ, FM-7, X68k)",
-      "description": "CZX is a lightweight C++20 multi-emulator frontend tailored for the M5Stack Cardputer Zero (320x170 SPI LCD and TCA8418 I2C keyboard, plus automatic fullscreen GLES2 HDMI output when connected).\n\nSupported targets:\n- Apple II (applewin)\n- Commodore 64 (VICE x64sc / x64, PAL/NTSC selectable)\n- NEC PC-8801 (QUASI88)\n- NEC PC-9801 (NP2kai)\n- MSX / MSX2 / MSX2+ (blueMSX with bundled open-source C-BIOS)\n- SHARP PC-G850 / G815 / E200 (g800 with built-in compat BASIC)\n- SHARP MZ-700 (EmuZ-700)\n- Fujitsu FM-7 / FM77AV / FM77AV40 (eFM7)\n- SHARP X68000 (msx68k, GLES2 VICON GPU compositor, CZ-6BM1 MIDI)\n\nKey features:\n- Startup carousel launcher with pixel-art hardware icons and Alt+4..8 quick controls\n- 1:1 Pan, Axis Fit, Aspect Fit scaling plus PAR / 4:3 CRT / Full HDMI aspect selection\n- Zero-dependency Linux evdev USB gamepad support (hotplug + menu/launcher navigation)\n- Built-in background-threaded munt Roland MT-32 / CM-32L synthesizer (bring your own ROMs in ~/czx/roms/mt32/)\n- Pitch-preserving audio sync pacing with HUD FPS% readout\n- No copyrighted ROMs bundled (put optional/required dumps under ~/czx/roms/)",
+      "description": "CZX is a lightweight C++20 multi-emulator frontend tailored for the M5Stack Cardputer Zero (320x170 SPI LCD and TCA8418 I2C keyboard, plus automatic fullscreen GLES2 HDMI output when connected).\n\nSupported targets:\n- Apple II (applewin)\n- Commodore 64 (VICE x64sc / x64, PAL/NTSC selectable)\n- NEC PC-8801 (QUASI88)\n- NEC PC-9801 (NP2kai, MPU-PC98II MIDI)\n- MSX / MSX2 / MSX2+ (blueMSX with bundled open-source C-BIOS)\n- SHARP PC-G850 / G815 / E200 (g800 with built-in compat BASIC)\n- SHARP MZ-700 (EmuZ-700)\n- Fujitsu FM-7 / FM77AV / FM77AV40 (eFM7)\n- SHARP X68000 (msx68k, GLES2 VICON GPU compositor, CZ-6BM1 MIDI)\n- IBM PC / DOS (DOSBox Pure, MPU-401 MIDI, direct .zip boot)\n\nKey features:\n- Startup carousel launcher with pixel-art hardware icons and Alt+4..8 quick controls\n- 1:1 Pan, Axis Fit, Aspect Fit scaling plus PAR / 4:3 CRT / Full HDMI aspect selection\n- Zero-dependency Linux evdev USB gamepad support (hotplug + menu/launcher navigation)\n- Built-in background-threaded munt Roland MT-32 / CM-32L synthesizer (bring your own ROMs in ~/czx/roms/mt32/)\n- Pitch-preserving audio sync pacing with HUD FPS% readout\n- No copyrighted ROMs bundled (put optional/required dumps under ~/czx/roms/)",
       "locales": {
         "en": {
           "title": "CZX",
@@ -3982,9 +3982,9 @@
         "github": "toyoshim",
         "display_name": "Takashi Toyoshima"
       },
-      "version": "0.9.0",
+      "version": "0.9.1",
       "published_at": "2026-11-25T16:40:00+00:00",
-      "updated_at": "2026-11-25T16:40:00+00:00",
+      "updated_at": "2026-11-26T13:35:48+00:00",
       "review": {
         "status": "approved"
       },
@@ -3993,10 +3993,10 @@
       "download": {
         "type": "deb",
         "package": "czx",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/czx_0.9.0_arm64.deb",
-        "md5": "8c5b0d1290b2ad7dc0bc0deb45a82f89",
-        "sha256": "ce71f60385f55574325447e4f15ef082e25a58e1ad4a017ca89447c4b6e32c04",
-        "size": 6220220
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/czx_0.9.1_arm64.deb",
+        "md5": "496c62b61af1820beb59ccacb0d4b57c",
+        "sha256": "8e69d2ec24e4dfd143b9eb094f4cd5828920ada7879bff02fada7b9b5c268441",
+        "size": 7449240
       },
       "depends": "libc6",
       "permissions": {
