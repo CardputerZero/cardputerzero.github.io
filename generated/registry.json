@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T17:36:22+08:00",
+  "generated_at": "2026-11-26T17:38:48+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -11353,7 +11353,7 @@
       "share_code": "CHRD",
       "title": "ZeroChord",
       "summary": "Play chords and strum on your CardputerZero.",
-      "description": "Inspired by minichord and the Suzuki Omnichord, ZeroChord turns your CardputerZero keyboard into a pocket instrument. Choose a chord with one hand and pick or strum its notes with the other.\n\nPlay solo or add backing layers. Nine editable presets give you different sounds and rhythms to start with.\n\nTry it\n1. Press 8 for C major.\n2. Pick notes with Z, X, C, V, B, N or M. Press K or L to strum.\n\nUser guide (https://github.com/momo20261121/ZeroChord/blob/main/docs/USER_GUIDE.md)",
+      "description": "Inspired by minichord and the Suzuki Omnichord, ZeroChord turns your CardputerZero keyboard into a pocket instrument. Choose a chord with one hand and pick or strum its notes with the other.\n\nPlay solo or add backing layers. Seven editable presets give you different sounds and rhythms to start with.\n\nTry it\n1. Press 8 for C major.\n2. Pick notes with Z, X, C, V, B, N or M. Press K or L to strum.\n\nUser guide (https://github.com/momo20261121/ZeroChord/blob/main/docs/USER_GUIDE.md)",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -11364,9 +11364,9 @@
         "display_name": "ZeroChord",
         "github": "momo20261121"
       },
-      "version": "1.2.1",
+      "version": "1.4.0",
       "published_at": "2026-11-22T04:36:49+00:00",
-      "updated_at": "2026-11-24T08:17:31+00:00",
+      "updated_at": "2026-11-26T09:35:11+00:00",
       "review": {
         "status": "approved"
       },
@@ -11375,10 +11375,10 @@
       "download": {
         "type": "deb",
         "package": "zerochord",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerochord_1.2.1_arm64.deb",
-        "md5": "00fa8c14626c2ac8bbd29fdc385e7a11",
-        "sha256": "8039e7d201876cacb0d7726e70c8f9b0c3221f14ed1fed4ec97a570ef8a8ec8e",
-        "size": 689292
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerochord_1.4.0_arm64.deb",
+        "md5": "2a109496d26030940b11e1369d9644de",
+        "sha256": "c3c26957467d58dc5fb27501a955ab2d63058c663d85dbc45ab6201845ebca74",
+        "size": 749856
       },
       "depends": "libc6 (>= 2.36), libpulse0, pulseaudio-utils, timgm6mb-soundfont",
       "permissions": {
