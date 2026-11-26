@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T21:05:02+08:00",
+  "generated_at": "2026-11-26T21:09:51+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2848,17 +2848,17 @@
         "Education"
       ],
       "author": {
-        "display_name": "Zhifeng Dou",
+        "display_name": "Haoran Liu",
         "github": "LilMonsterOvO"
       },
       "version": "0.2.0-1",
       "published_at": "2026-11-25T05:31:16+00:00",
-      "updated_at": "2026-11-25T05:31:16+00:00",
+      "updated_at": "2026-11-26T13:07:04+00:00",
       "review": {
         "status": "approved"
       },
       "license": "MIT",
-      "source_repo": "",
+      "source_repo": "https://github.com/LilMonsterOvO/CardputerZero-PocketSpice",
       "download": {
         "type": "deb",
         "package": "cp0-ngspice",
