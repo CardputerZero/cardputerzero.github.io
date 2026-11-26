@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T18:23:31+08:00",
+  "generated_at": "2026-11-26T18:28:32+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2513,6 +2513,64 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/coinflip/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/coinflip/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/coinflip/screenshots/screenshot-2.png"
+      ]
+    },
+    {
+      "uuid": "bbc8fd3a-f850-5e4e-8be0-7b8152bd8ba4",
+      "share_code": "COLI",
+      "title": "Colibri",
+      "summary": "支持中文输入、离线语音、MCP 与技能的 Cardputer Zero 口袋 AI 助手。",
+      "description": "Colibri 是面向 Cardputer Zero 的口袋 AI 助手。\r\n\r\n支持中文整句拼音、英文输入和本机离线中英语音转写，识别结果可编辑后发送。支持 OpenAI 兼容模型服务、图片理解和搜索 API，以及标准 MCP 和本地技能。\r\n\r\n支持长期记忆、历史恢复、自动上下文压缩、/compact 和 /clear，配有小屏幕 Markdown、消息卡片和状态动效，并沿用系统自动熄屏。提供终端 REPL、可选后台网关及微信通道。\r\n\r\n首次使用请配置自己的模型服务。语音在掌机本地转写，对话和搜索使用你配置的网络服务。应用具有当前 Linux 用户的文件读写和命令执行能力，危险操作由 Agent 请求确认。\r\n\r\n存储占用说明：安装包及安装后的存储占用主要来自随包提供的离线语音识别模型，用于在掌机本地完成语音转写，不依赖在线语音服务。",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Development",
+        "AI"
+      ],
+      "author": {
+        "display_name": "卧东",
+        "github": "yunbudong11114"
+      },
+      "version": "0.2.1-m5stack1",
+      "published_at": "2026-11-25T07:23:27+00:00",
+      "updated_at": "2026-11-25T07:23:27+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/yunbudong11114/colibri",
+      "download": {
+        "type": "deb",
+        "package": "colibri",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/colibri_0.2.1-m5stack1_arm64.deb",
+        "md5": "c884dd11f090dd77ab8983a8297bab37",
+        "sha256": "7410b4f7cad29a17db827c95bb978d12323641e4873394de5d88f02548e52635",
+        "size": 53169206
+      },
+      "depends": "libc6, libgcc-s1, libfreetype6, libstdc++6, libgomp1, fonts-noto-cjk, alsa-utils, pulseaudio-utils",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": true,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": true,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/colibri/colibri_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/colibri/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/colibri/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/colibri/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/colibri/colibri_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/colibri/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/colibri/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/colibri/screenshots/screenshot-2.png"
       ]
     },
     {
