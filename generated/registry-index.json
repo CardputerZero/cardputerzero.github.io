@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T01:01:53+08:00",
+  "generated_at": "2026-11-27T01:22:55+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -12877,7 +12877,7 @@
       "share_code": "ZFIN",
       "title": "ZeroFin",
       "summary": "Browse and play video from your Jellyfin server on the Cardputer Zero.",
-      "description": "ZeroFin is a non-official Jellyfin client made for the 320x170 screen.\r\n\r\nSign in with Quick Connect or with your user and passwords. Browse movies, series and collections with posters. Continue what you started and see the next episode. Search your libraries. Play video with hardware decode, choose audio and subtitle tracks, and jump to the next episode.\r\n\r\nZeroFin needs a Jellyfin server on your network. It does not store or share your media. Jellyfin is a trademark of its owners. ZeroFin is not made or endorsed by the Jellyfin project.",
+      "description": "ZeroFin is a non-official Jellyfin client made for the 320x170 screen.\r\n\r\nSign in with Quick Connect or with your user and password. Browse movies, series and collections with posters. Continue what you started and see the next episode. Search your libraries. Play video with hardware decode, choose audio and subtitle tracks, and jump to the next episode.\r\n\r\nZeroFin needs a Jellyfin server on your network. It does not store or share your media. Jellyfin is a trademark of its owners. ZeroFin is not made or endorsed by the Jellyfin project.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -12887,9 +12887,9 @@
         "display_name": "serginator",
         "github": "serginator"
       },
-      "version": "0.2.0",
+      "version": "0.3.0",
       "published_at": "2026-11-25T20:09:23+00:00",
-      "updated_at": "2026-11-25T20:09:23+00:00",
+      "updated_at": "2026-11-26T17:20:40+00:00",
       "review": {
         "status": "approved"
       },
@@ -12898,10 +12898,10 @@
       "download": {
         "type": "deb",
         "package": "zerofin",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerofin_0.2.0_arm64.deb",
-        "md5": "19a7e9e979edcc51d4fd7cbb46430287",
-        "sha256": "37ddd318f17584c6f78b5c227a431695b25c49c9e6c03b2b70bc3bc178a0ed21",
-        "size": 1607292
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerofin_0.3.0_arm64.deb",
+        "md5": "e5b43711161185afa7dc20ec3dbe378b",
+        "sha256": "f49ca29bd3ddba0afefd83f283b1ba1101b38813100f296d614d0d1ba59b3729",
+        "size": 1615866
       },
       "depends": "curl, libc6 (>= 2.38), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.0), libmpv2 (>= 0.29), libstdc++6 (>= 12)",
       "permissions": {
@@ -12921,7 +12921,8 @@
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofin/screenshots/screenshot-1.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofin/screenshots/screenshot-2.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofin/screenshots/screenshot-3.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofin/screenshots/screenshot-4.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofin/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofin/screenshots/screenshot-5.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofin/zerofin_icon.png",
@@ -12930,7 +12931,8 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofin/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofin/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofin/screenshots/screenshot-3.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofin/screenshots/screenshot-4.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofin/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofin/screenshots/screenshot-5.png"
       ]
     },
     {
