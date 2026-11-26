@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T17:02:16+08:00",
+  "generated_at": "2026-11-26T17:25:28+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -11972,6 +11972,71 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/memories.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/sdr-cal.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroradio/screenshots/adsb.png"
+      ]
+    },
+    {
+      "uuid": "86582f46-9062-525c-848a-dec25dc23897",
+      "share_code": "ZRMT",
+      "title": "ZeroRemote",
+      "summary": "Use the Cardputer from your phone: live screen, keys and files (needs Tailscale)",
+      "description": "REQUIRES TAILSCALE. ZeroRemote only works through Tailscale: install Tailscale on the Cardputer Zero and on your phone (or computer) and sign both into the same tailnet. Without Tailscale it does nothing: the service only listens on the device's Tailscale address, so it is not reachable on your Wi-Fi or from the internet, and the Remote app just shows \"Waiting for Tailscale\".\n\nUse the Cardputer Zero from your phone: see its screen live in the browser, type on it and share files.\n\n- Remote screen: the 320x170 screen, sharp and live (only the rows that change are sent, up to 20 fps), with buttons for Esc, Tab, Enter, arrows, delete and space, your phone's keyboard for typing, and the battery level.\n- Touch the picture: it wakes the screen and unlocks the launcher; on the launcher, the sides move between apps and the centre opens one. Inside apps a touch sends nothing.\n- File sharing: Music, Pictures, Videos, Downloads, Documents and GPS tracks. Upload from the phone (never overwrites), download, open photos, audio, video and text in the browser, create folders and delete. Nothing outside those folders.\n- The Remote app shows two switches (remote screen, file sharing; file sharing starts off) and a QR code with the address: scan it with the phone camera. The same switches are on the web page.\n\nOnly devices in your own tailnet can connect (anything outside 100.64.0.0/10 is refused), so nobody on the same Wi-Fi can see it. While nobody is connected it does nothing. The web page is in Spanish. The service runs as the device user (not root), in Python with only the standard library.",
+      "locales": {
+        "es": {
+          "title": "ZeroRemote",
+          "summary": "El Cardputer desde el móvil: pantalla, teclas y archivos (necesita Tailscale)"
+        }
+      },
+      "i18n": {
+        "es": {
+          "title": "ZeroRemote",
+          "summary": "El Cardputer desde el móvil: pantalla, teclas y archivos (necesita Tailscale)"
+        }
+      },
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "github": "baltamir1978",
+        "display_name": "baltamir1978"
+      },
+      "version": "0.4.3-rev1",
+      "published_at": "2026-11-24T07:43:18+00:00",
+      "updated_at": "2026-11-24T07:43:18+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/baltamir1978/ZeroRemote",
+      "download": {
+        "type": "deb",
+        "package": "zeroremote",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zeroremote_0.4.3-rev1_arm64.deb",
+        "md5": "5c3baba96bbec74522666de0bdd11860",
+        "sha256": "1bd5a9eb866225d0f5eb4e3c0b8ad2e32b9e7fdaca29b18e9dfc04c1ebecf4a4",
+        "size": 1112306
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, python3 (>= 3.11)",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": true,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroremote/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroremote/screenshots/remote.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroremote/screenshots/launcher.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroremote/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroremote/screenshots/remote.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroremote/screenshots/launcher.png"
       ]
     },
     {
