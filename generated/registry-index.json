@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T21:23:15+08:00",
+  "generated_at": "2026-11-26T21:26:06+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2348,26 +2348,26 @@
       "uuid": "2101fe89-4fcd-5834-9f92-f52b997d12ca",
       "share_code": "TERM",
       "title": "cardterm",
-      "summary": "CardputerZero 全屏终端模拟器：xterm 兼容、TUI 友好、主题与背景图可定制、极低内存",
-      "description": "cardterm 是 M5Stack CardputerZero（320×170）上的全屏终端模拟器：直驱 /dev/fb0，运行 bash/ssh 等任意程序，是设备上的命令行工作台。\n\n功能亮点：\n· 自定义终端主题颜色：16 色 ANSI 调色板逐色可配、光标色、真彩 (SGR 38;2)；\n· 自定义背景图：PNG/JPG 拉伸铺满，透明背景语义（默认背景透出背景图）；\n· TUI 兼容性：crush / opencode / codex / vim / htop / nano / nmtui 等实测渲染与交互正常，备用屏、滚动域、重绘节拍良好；\n· 复杂协议支持：kitty 键盘协议 (KKP)、DA1/DA2/DECXCPR/DSR/DECRQM、DECSCUSR、DECSTR/RIS、OSC 4/10/11/12/52/110-112；\n· USB/蓝牙外接键盘接管：板载 + 最多 4 个外接并行、标准 US 键位、热插拔；\n· 极低内存占用：稳态约 6MB，12 窗口多开会话可控；\n· 12 窗口（Ctrl+Alt+F1~F12）、回滚/翻页、三档字号（80×24 / 53×17 / 40×12）、toast 事件通知、长按 Esc 两段式退出、帮助页与开屏文本可自定义。",
+      "summary": "功能丰富的全屏终端模拟器：高性能和低内存占用、多窗口、后台会话、xterm/TUI 兼容、自定义外观和背景图",
+      "description": "cardterm 是 M5Stack CardputerZero（320×170）上的全屏终端模拟器：运行 bash/ssh/codex 等任意程序，是设备上的命令行工作台。\n\n功能亮点：\n· 极高性能和极低内存占用：稳态约 6MB，12 窗口多开会话可控，直驱 /dev/fb0，秒启动，字符渲染更快速；\n· 自定义终端主题颜色和 PNG/JPG 背景图；\n· TUI 兼容性：codex / opencode / crush / vim / htop / nano 等 TUI 实测渲染与交互正常，备用屏、滚动域、重绘节拍良好；\n· 复杂协议支持：kitty 键盘协议 (KKP)、DA1/DA2/DECXCPR/DSR/DECRQM、DECSCUSR、DECSTR/RIS、OSC 4/10/11/12/52/110-112；\n· USB/蓝牙外接键盘接管：板载 + 最多 4 个外接并行、标准 US 键位、热插拔；\n· 多窗口（Ctrl+Alt+F1~F12）、回滚/翻页、三档终端大小（80×24 / 53×17 / 40×12）、toast 事件通知；\n· 支持将会话和程序挂载至后台运行，退出 cardterm 后可恢复。\n· 单 config.ini 配置文件，可用于配置主题配色方案、初始命令和工作目录、回滚行数、窗口数、启动横幅文本等多个配置项。",
       "locales": {
         "zh-CN": {
           "title": "cardterm",
-          "summary": "CardputerZero 全屏终端模拟器：xterm 兼容、TUI 友好、主题与背景图可定制、极低内存"
+          "summary": "功能丰富的全屏终端模拟器：高性能和低内存占用、多窗口、后台会话、xterm/TUI 兼容、自定义外观和背景图"
         },
         "en": {
           "title": "cardterm",
-          "summary": "Fullscreen terminal emulator: xterm-compatible, TUI-ready, customizable theme & wallpaper, tiny footprint"
+          "summary": "Feature-rich fullscreen terminal emulator: high performance and low memory, multi-window, background sessions, xterm/TUI compatible, customizable theme and wallpaper"
         }
       },
       "i18n": {
         "zh-CN": {
           "title": "cardterm",
-          "summary": "CardputerZero 全屏终端模拟器：xterm 兼容、TUI 友好、主题与背景图可定制、极低内存"
+          "summary": "功能丰富的全屏终端模拟器：高性能和低内存占用、多窗口、后台会话、xterm/TUI 兼容、自定义外观和背景图"
         },
         "en": {
           "title": "cardterm",
-          "summary": "Fullscreen terminal emulator: xterm-compatible, TUI-ready, customizable theme & wallpaper, tiny footprint"
+          "summary": "Feature-rich fullscreen terminal emulator: high performance and low memory, multi-window, background sessions, xterm/TUI compatible, customizable theme and wallpaper"
         }
       },
       "categories": [
@@ -2378,9 +2378,9 @@
         "github": "fsender",
         "display_name": "fsender"
       },
-      "version": "1.0.0",
+      "version": "1.2.0",
       "published_at": "2026-11-24T15:13:30+00:00",
-      "updated_at": "2026-11-24T15:13:30+00:00",
+      "updated_at": "2026-11-26T13:23:36+00:00",
       "review": {
         "status": "approved"
       },
@@ -2389,19 +2389,19 @@
       "download": {
         "type": "deb",
         "package": "cardterm",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardterm_1.0.0_arm64.deb",
-        "md5": "0cfbe765994ae01d52193cb41150276e",
-        "sha256": "974cdd96ea02ecf822b66cb6bcbad43d036ef1fb923170374e3a533283662aca",
-        "size": 1846354
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardterm_1.2.0_arm64.deb",
+        "md5": "b0bf853d4088698459a522d725a3ffb1",
+        "sha256": "19041ee39ec4623fdf443bf86e7317eb2867c667cebdef7250f3c16ff6eecc17",
+        "size": 1866408
       },
-      "depends": "",
+      "depends": "tmux",
       "permissions": {
         "camera": false,
         "microphone": false,
         "imu": false,
         "network": false,
         "additional_hardware": false,
-        "background_service": false,
+        "background_service": true,
         "external_display": false
       },
       "risk_flags": [],
