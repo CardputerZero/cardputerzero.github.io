@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T09:55:40+08:00",
+  "generated_at": "2026-11-26T10:37:43+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -6557,9 +6557,9 @@
         "github": "oumike",
         "display_name": "oumike"
       },
-      "version": "3.1.1",
+      "version": "3.1.2",
       "published_at": "2026-11-17T18:06:13+00:00",
-      "updated_at": "2026-11-24T16:40:50+00:00",
+      "updated_at": "2026-11-26T02:35:21+00:00",
       "review": {
         "status": "approved"
       },
@@ -6568,10 +6568,10 @@
       "download": {
         "type": "deb",
         "package": "monster-cyberspace",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/monster-cyberspace_3.1.1_arm64.deb",
-        "md5": "1a2f04c26ff0a622f1424677de9ec78a",
-        "sha256": "71a4ebac711eec4dd032db1483141dced6ffa80769167c4034943ef18ea6c589",
-        "size": 2022970
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/monster-cyberspace_3.1.2_arm64.deb",
+        "md5": "e40cf6f04b0831d3b68abcef8ed09d62",
+        "sha256": "76b855f21dd30d8519c412c775389d357aaccecb653c451c7144b53b062524de",
+        "size": 2023558
       },
       "depends": "libcurl4t64 | libcurl4, libasound2t64 | libasound2, libsdl2-2.0-0 (>= 2.26)",
       "permissions": {
