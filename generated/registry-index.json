@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T20:16:08+08:00",
+  "generated_at": "2026-11-26T20:19:58+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8088,6 +8088,59 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/musictagger/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/musictagger/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/musictagger/screenshots/screenshot-2.png"
+      ]
+    },
+    {
+      "uuid": "bd43cd35-4ef5-548e-abdc-235b77134838",
+      "share_code": "NTST",
+      "title": "NetTest",
+      "summary": "Network tester: link status, switch & port via LLDP/CDP, ping and DNS checks",
+      "description": "NetTest turns the CardputerZero into a pocket network tester. The Ethernet page shows link state, speed and duplex, IPv4/IPv6 address, gateway, DNS and MAC, plus the switch name, port, VLAN and management IP the switch advertises over LLDP or CDP, so you can find out where a wall jack goes. The Wi-Fi page shows SSID, signal strength and addresses. The Tests page pings the gateway and 1.1.1.1, queries every configured DNS server directly, and checks internet access over TCP 443, with a one-line verdict. Use the 4/5/6 keys for the Ethernet, Wi-Fi and Tests pages, Up/Down to switch interfaces, 7 to re-run the checks and 8 for light/dark mode. Vibecoded with Claude Code.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "display_name": "maximvd",
+        "github": "maximvd"
+      },
+      "version": "0.1.0-rev1",
+      "published_at": "2026-11-25T17:11:16+00:00",
+      "updated_at": "2026-11-25T17:11:16+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/maximvd/NetTest",
+      "download": {
+        "type": "deb",
+        "package": "nettest",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/nettest_0.1.0-rev1_arm64.deb",
+        "md5": "e8dbcc587c2564bb4afdbb31cba1fd6e",
+        "sha256": "f679e94f991aacbf25cd0ef8307288669094f397b40720608ae2c741d58f0f45",
+        "size": 1986646
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, libcap2-bin",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/nettest/nettest_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/nettest/screenshots/screenshot-0.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/nettest/nettest_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/nettest/screenshots/screenshot-0.png"
       ]
     },
     {
