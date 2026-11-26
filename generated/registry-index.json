@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T17:38:48+08:00",
+  "generated_at": "2026-11-26T17:43:41+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -11353,7 +11353,7 @@
       "share_code": "CHRD",
       "title": "ZeroChord",
       "summary": "Play chords and strum on your CardputerZero.",
-      "description": "Inspired by minichord and the Suzuki Omnichord, ZeroChord turns your CardputerZero keyboard into a pocket instrument. Choose a chord with one hand and pick or strum its notes with the other.\n\nPlay solo or add backing layers. Seven editable presets give you different sounds and rhythms to start with.\n\nTry it\n1. Press 8 for C major.\n2. Pick notes with Z, X, C, V, B, N or M. Press K or L to strum.\n\nUser guide (https://github.com/momo20261121/ZeroChord/blob/main/docs/USER_GUIDE.md)",
+      "description": "Inspired by minichord and the Suzuki Omnichord, ZeroChord turns your CardputerZero keyboard into a pocket instrument. Choose a chord with one hand and pick or strum its notes with the other.\n\nPlay solo or bring in a backing band: Chord, Arp, Pad, Bass and Drums layers follow your chords, with optional swing. Seven editable presets, from Dream to Dance, give you different sounds and rhythms to start with.\n\nTry it\n1. Press 8 for C major.\n2. Pick notes with Z, X, C, V, B, N or M. Press K or L to strum.\n3. Press O to mute or mix the backing layers.\n\nUser guide (https://github.com/momo20261121/ZeroChord/blob/main/docs/USER_GUIDE.md)",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -11366,7 +11366,7 @@
       },
       "version": "1.4.0",
       "published_at": "2026-11-22T04:36:49+00:00",
-      "updated_at": "2026-11-26T09:35:11+00:00",
+      "updated_at": "2026-11-26T09:41:09+00:00",
       "review": {
         "status": "approved"
       },
