@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T18:31:00+08:00",
+  "generated_at": "2026-11-26T18:34:59+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3173,6 +3173,80 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-battery-saver/screenshots/main.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-battery-saver/screenshots/info.png"
+      ]
+    },
+    {
+      "uuid": "ca745d30-d46c-547f-8a4a-e327c51e2815",
+      "share_code": "BITS",
+      "title": "BitPuter",
+      "summary": "Programmer's calculator: HEX/DEC/BIN, bit grid, floats, Unix time, CRCs",
+      "description": "BitPuter is a keyboard-first programmer's calculator for the CardputerZero.\n\n- 8/16/32/64-bit words, unsigned or signed; every operation wraps like a register\n- One value in HEX, DEC, OCT and an editable bit grid (flip, set, invert bits), popcount and MSB\n- C operators | ^ & << >> >>> ~ ** with C precedence; input in DEC, HEX, BIN or OCT\n- Literals 0xFF 0b101 'RIFF' 4K f32(1.5); variables, ans and history\n- popcnt clz ctz bswap rev rol ror mask field set/clr/tgl sext align isqrt log2 and more\n- The same bits as ASCII, IEEE-754 float/double or Unix time\n- Byte orders side by side: ABCD / DCBA / BADC / CDAB with decimal and float (Modbus word swap)\n- CRC page: CRC-16/MODBUS, CRC-32, CRC-32C, CCITT, XMODEM, KERMIT, ARC, CRC-8, 1-Wire, Sensirion, NMEA XOR, SUM8 with wire byte order\n\nTab switches BITS / CRC, F1 shows help.",
+      "locales": {
+        "uk": {
+          "title": "BitPuter",
+          "summary": "Калькулятор програміста: системи числення, біти, float, Unix-час, CRC"
+        }
+      },
+      "i18n": {
+        "uk": {
+          "title": "BitPuter",
+          "summary": "Калькулятор програміста: системи числення, біти, float, Unix-час, CRC"
+        }
+      },
+      "categories": [
+        "System Tools",
+        "Education"
+      ],
+      "author": {
+        "github": "heartpolik",
+        "display_name": "heartpolik"
+      },
+      "version": "0.1.0-1",
+      "published_at": "2026-11-25T07:33:21+00:00",
+      "updated_at": "2026-11-25T07:33:21+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/heartpolik/cardputer-zero-tools",
+      "download": {
+        "type": "deb",
+        "package": "cz-bitputer",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cz-bitputer_0.1.0-1_arm64.deb",
+        "md5": "f904be03ec60eb9ed099d1a86dba9872",
+        "sha256": "504e26832dbab35ecab93fda57b6fd9bfbd630e725b5fc67c9062ed1fe778e1d",
+        "size": 1212618
+      },
+      "depends": "libc6 (>= 2.38), libfmt10 (>= 10.1.1+ds1), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 4.2), libpng16-16t64 (>= 1.6.46), libstdc++6 (>= 9)",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-bitputer/store-icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-bitputer/screenshots/bits.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-bitputer/screenshots/grid.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-bitputer/screenshots/float.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-bitputer/screenshots/signed.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-bitputer/screenshots/orders.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-bitputer/screenshots/crc.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-bitputer/store-icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-bitputer/screenshots/bits.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-bitputer/screenshots/grid.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-bitputer/screenshots/float.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-bitputer/screenshots/signed.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-bitputer/screenshots/orders.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cz-bitputer/screenshots/crc.png"
       ]
     },
     {
