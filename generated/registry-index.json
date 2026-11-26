@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T15:26:48+08:00",
+  "generated_at": "2026-11-26T15:39:21+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -6277,9 +6277,9 @@
         "github": "jpmartineau",
         "display_name": "Jean-Pierre Martineau"
       },
-      "version": "1.0.0-1",
+      "version": "1.0.1-1",
       "published_at": "2026-10-12T14:52:44+00:00",
-      "updated_at": "2026-11-23T06:46:55+00:00",
+      "updated_at": "2026-11-26T07:36:51+00:00",
       "review": {
         "status": "approved"
       },
@@ -6288,10 +6288,10 @@
       "download": {
         "type": "deb",
         "package": "meshterm",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/meshterm_1.0.0-1_arm64.deb",
-        "md5": "83692f4c2bafaaaeed7992110908a6aa",
-        "sha256": "d175f33fdf5e9d024e2463db23ddb5f890153f537ac7c3390d89e6e4d9a5b716",
-        "size": 15836204
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/meshterm_1.0.1-1_arm64.deb",
+        "md5": "41d93d0ae5e6e35d466cf830e1f8a823",
+        "sha256": "e858a327104dab0ce07f80e60f252735142294e8bd96dea0e804f88e6f4640f1",
+        "size": 15840280
       },
       "depends": "python3 (>= 3.13), python3 (<< 3.14)",
       "permissions": {
