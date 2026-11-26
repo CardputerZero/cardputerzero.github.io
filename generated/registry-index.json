@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T19:29:31+08:00",
+  "generated_at": "2026-11-26T19:56:12+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3065,7 +3065,7 @@
       "depends": "python3, python3-pil, python3-evdev, python3-numpy, alsa-utils, ffmpeg",
       "permissions": {
         "additional_hardware": false,
-        "background_service": true,
+        "background_service": false,
         "camera": true,
         "external_display": false,
         "imu": false,
