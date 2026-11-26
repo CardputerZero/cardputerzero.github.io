@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T18:20:02+08:00",
+  "generated_at": "2026-11-26T18:23:31+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -6351,6 +6351,66 @@
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loki/screenshots/01-scene.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loki/screenshots/02-menu.png"
+      ]
+    },
+    {
+      "uuid": "76b9b061-1c50-50ed-a858-d4a02a28e2c7",
+      "share_code": "LCTL",
+      "title": "LokiCTL",
+      "summary": "Network multitool: live status, hotspot, VPN, device finder and network checks",
+      "description": "LokiCTL shows what your network is doing and gives you the usual tools to look into it. It works with the CardputerZero's built-in Wi-Fi and Ethernet port.\n\nModes: turn the Cardputer into a small router, run a hotspot next to your Wi-Fi, or send its traffic through a WireGuard VPN. With a hotspot and the VPN together it becomes a VPN gateway with a kill switch, and a leak test checks that nothing goes around the tunnel. You can see which devices are on the hotspot, what names they look up, and block one.\n\nTools: ping, DNS lookup, traceroute, a Wi-Fi scan, a port scan, and speed tests to the internet and to other devices on your own network (iperf3). The port scan says what runs on each open port and points out known security holes and old versions. A sign-in helper deals with hotel and cafe Wi-Fi that wants you to log in on a web page.\n\nYour network: Discover finds the devices on it, and the map shows how it is built, down to the switch port you are plugged into and the route to the internet. The health check looks for common weak spots in one go. Watch listens quietly and tells you about new devices, a fake router, a second DHCP server or a port scan against the Cardputer. The trap (a honeypot) shows who pokes at fake services. Reports put what LokiCTL found into one page you can open on a PC.\n\nWith an optional USB Wi-Fi stick, a Wi-Fi survey listens for kick-off attacks, look-alike networks and busy channels.\n\nOn a phone or computer: switch on Remote view and open the dashboard in a browser on the same network. It shows the same things on a bigger screen, with plain explanations and steps to fix what it finds, and you can switch modes, run the tools, add a VPN file and see the Cardputer's screen from there. Laptop link lets a laptop plug straight into the Cardputer's cable port.\n\nThree looks (Instrument, Constellation and Terminal), and a command bar if you would rather type. Only scan and probe networks you own or are allowed to test.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Security",
+        "System Tools"
+      ],
+      "author": {
+        "github": "weeknds",
+        "display_name": "weeknds"
+      },
+      "version": "0.1.3-1",
+      "published_at": "2026-11-25T07:05:05+00:00",
+      "updated_at": "2026-11-25T07:05:05+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/weeknds/lokictl",
+      "download": {
+        "type": "deb",
+        "package": "lokictl",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/lokictl_0.1.3-1_arm64.deb",
+        "md5": "bf2813bc26fa40518d108fe11738ebf9",
+        "sha256": "d33a828817ec8a1acc9093945e0c394b1692b85cdcc729b3d02e9fa171dc2bf1",
+        "size": 3694778
+      },
+      "depends": "dnsmasq-base, nftables, libcap2-bin, iw, libcurl4t64, ca-certificates, iperf3 (>= 3.17), libc6 (>= 2.38), libfmt10 (>= 10.1.1+ds1), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.0), libglib2.0-0t64 (>= 2.32.0), libnm0 (>= 1.22.0), libpng16-16t64 (>= 1.6.46), libstdc++6 (>= 14)",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lokictl/lokictl.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lokictl/screenshots/1-home.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lokictl/screenshots/2-modes.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lokictl/screenshots/3-map.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lokictl/screenshots/4-speed.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lokictl/lokictl.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lokictl/screenshots/1-home.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lokictl/screenshots/2-modes.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lokictl/screenshots/3-map.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/lokictl/screenshots/4-speed.png"
       ]
     },
     {
