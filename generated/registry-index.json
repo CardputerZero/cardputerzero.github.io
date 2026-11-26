@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T20:57:27+08:00",
+  "generated_at": "2026-11-26T21:05:02+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9416,6 +9416,65 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/r86/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "6fe65765-4618-594f-a2e8-c2b7639f3d60",
+      "share_code": "RFK0",
+      "title": "Radio Field Kit Zero",
+      "summary": "Antenna cuts, Maidenhead paths and HF conditions for Cardputer Zero.",
+      "description": "Radio Field Kit Zero puts a few useful amateur radio tools in your pocket. Get starting dimensions for dipoles, inverted-Vs, end-fed half-waves, loops, verticals, linked dipoles, J-poles and Slim Jims. Switch between metres and feet. Treat the results as starting cuts, then trim and check the antenna before use.\r\n\r\nEnter two Maidenhead grids to see the short-path distance and initial true bearing. Enter your starting grid by hand or use a compatible GNSS cap to fill it on request. The app doesn’t transmit over LoRa or send your coordinates anywhere.\r\n\r\nCheck UTC and estimated daylight at your starting grid. With internet access, refresh NOAA solar flux and estimated Kp. The last readings stay available offline with their source times shown. Antenna and grid calculations work without internet or a cap.\r\n\r\nDeveloped for Tartanleaf.com by Greg Weir VA1GW.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "Greg Weir VA1GW",
+        "github": "gregweir"
+      },
+      "version": "0.1.0-1",
+      "published_at": "2026-11-25T20:50:49+00:00",
+      "updated_at": "2026-11-25T20:50:49+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/gregweir/RadioFieldKitZero",
+      "download": {
+        "type": "deb",
+        "package": "radiofieldkitzero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/radiofieldkitzero_0.1.0-1_arm64.deb",
+        "md5": "22c6f8fd98b3115ff145cc2605007414",
+        "sha256": "cab2c3cdafb473620aca41318915c906038d0b2d12ad183f62993f815ad51c84",
+        "size": 475026
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, curl, ca-certificates",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/radiofieldkitzero/radiofieldkitzero_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/radiofieldkitzero/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/radiofieldkitzero/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/radiofieldkitzero/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/radiofieldkitzero/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/radiofieldkitzero/radiofieldkitzero_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/radiofieldkitzero/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/radiofieldkitzero/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/radiofieldkitzero/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/radiofieldkitzero/screenshots/screenshot-3.png"
       ]
     },
     {
