@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T18:37:38+08:00",
+  "generated_at": "2026-11-26T18:41:25+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -12627,6 +12627,63 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/download.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/tracks.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/home.png"
+      ]
+    },
+    {
+      "uuid": "cfaf1bcc-870e-5bae-922a-c043d371441c",
+      "share_code": "0LED",
+      "title": "ZeroLED",
+      "summary": "Discover and control WLED lights on your network",
+      "description": "ZeroLED finds every WLED controller on your network automatically (mDNS, WLED node broadcasts and peer lists) and lets you control them from the keyboard: power, brightness, colour, effect, speed and intensity, plus UDP sync send/receive. An info page shows firmware version, LED count, current draw, Wi-Fi signal, uptime and more. Devices on networks that block multicast can be added by IP.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Creative & Office"
+      ],
+      "author": {
+        "display_name": "matqua",
+        "github": "matqua"
+      },
+      "version": "0.1.0-1",
+      "published_at": "2026-11-25T11:36:03+00:00",
+      "updated_at": "2026-11-25T11:36:03+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/matqua/zeroled",
+      "download": {
+        "type": "deb",
+        "package": "zeroled",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zeroled_0.1.0-1_arm64.deb",
+        "md5": "e93c26c65c9713d19c940175c41ff8cc",
+        "sha256": "45ffd08a9380a69e0d072538d9bcf09980ed99fefdee7c62cdc7d71723508e14",
+        "size": 2173084
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroled/zeroled_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroled/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroled/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroled/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroled/zeroled_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroled/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroled/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroled/screenshots/screenshot-2.png"
       ]
     },
     {
