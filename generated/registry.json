@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T16:52:18+08:00",
+  "generated_at": "2026-11-26T17:02:16+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1331,6 +1331,70 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardmesh/screenshots/screenshot-4.png"
+      ]
+    },
+    {
+      "uuid": "b2e4c2fa-7bf9-55f1-bd5b-17a25e070428",
+      "share_code": "PY01",
+      "title": "Pinyin Input",
+      "summary": "Offline pinyin input with a compact top candidate strip.",
+      "description": "Offline Simplified Chinese pinyin input. Starts in English; Ctrl+Space toggles pinyin. A top candidate strip supports arrow navigation, Space/Enter confirmation and numbered selection. Tested with APPLaunch 0.6.111 and its bundled ZClaw and CLI/ST terminal; other app or firmware builds require a matching adapter. Restart APPLaunch after installation. The optional typing-practice field does not accept Sym symbols; Sym input works in the tested terminal.",
+      "locales": {
+        "zh-CN": {
+          "summary": "Ctrl+Space 切换中英文，顶部候选栏，完全离线拼音输入。",
+          "description": "默认英文，Ctrl+Space 切换拼音；顶部候选栏支持方向键选词、空格或 Enter 确认、数字直选。已在 APPLaunch 0.6.111 及其内置的 ZClaw、CLI/ST 终端验证，其他应用或固件版本需单独适配。安装后重启启动器。试输入页暂不支持 Sym 符号，已测试的终端可正常输入符号。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "summary": "Ctrl+Space 切换中英文，顶部候选栏，完全离线拼音输入。",
+          "description": "默认英文，Ctrl+Space 切换拼音；顶部候选栏支持方向键选词、空格或 Enter 确认、数字直选。已在 APPLaunch 0.6.111 及其内置的 ZClaw、CLI/ST 终端验证，其他应用或固件版本需单独适配。安装后重启启动器。试输入页暂不支持 Sym 符号，已测试的终端可正常输入符号。"
+        }
+      },
+      "categories": [
+        "System Tools",
+        "Creative & Office"
+      ],
+      "author": {
+        "display_name": "Wang Zhen",
+        "github": "Lililiuliu"
+      },
+      "version": "0.1.1",
+      "published_at": "2026-11-24T04:04:53+00:00",
+      "updated_at": "2026-11-24T04:12:26+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "cardputer-pinyin",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputer-pinyin_0.1.1_arm64.deb",
+        "md5": "e351e0dd5ae0b9a04871c717d337ce7a",
+        "sha256": "b6caacaae17d8ea1ea153d789fc5326f5b44a470068e2040091dac1f3d25083a",
+        "size": 544218
+      },
+      "depends": "applaunch, libc6, libstdc++6, libgcc-s1, librime1t64, librime-data, rime-data-luna-pinyin, libfreetype6, fonts-noto-cjk, python3",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": false,
+        "additional_hardware": false,
+        "background_service": true,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-pinyin/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-pinyin/screenshots/typing.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-pinyin/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-pinyin/screenshots/typing.png"
       ]
     },
     {
