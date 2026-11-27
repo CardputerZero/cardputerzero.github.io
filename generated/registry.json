@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T20:23:00+08:00",
+  "generated_at": "2026-11-27T20:25:49+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9074,8 +9074,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T20:23:00+08:00",
-      "updated_at": "2026-11-27T20:23:00+08:00",
+      "published_at": "2026-11-27T20:25:49+08:00",
+      "updated_at": "2026-11-27T20:25:49+08:00",
       "review": {
         "status": "approved"
       },
@@ -15311,6 +15311,93 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/detail.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/emulation.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotag/screenshots/settings-fr.png"
+      ]
+    },
+    {
+      "uuid": "ba4e17a9-c3bf-5f73-be77-a28bb0689fa8",
+      "share_code": "ZTCP",
+      "title": "ZeroTier",
+      "summary": "Manage your ZeroTier networks from the CardputerZero keyboard",
+      "description": "ZeroTier for the CardputerZero shows the node and its networks (status and managed IP) and lets you join a network by its 16-digit ID, connect, disconnect (the network stays joined) or leave it, all from the keyboard.\n\nThe app is a front end for the zerotier-one service. At the first start it offers to set everything up: it adds the official ZeroTier apt repository (download.zerotier.com), installs zerotier-one, starts it and copies the service token to your home folder (mode 600). You type your sudo password on the device keyboard; it is never stored or logged. No sudoers rule and no zerotier-cli process: the app talks to the local service API (127.0.0.1:9993).\n\nThe list refreshes every 5 seconds. Interface in French, English, Japanese and Simplified Chinese (F2). Statically linked Rust build.",
+      "locales": {
+        "fr": {
+          "title": "ZeroTier",
+          "summary": "Gérez vos réseaux ZeroTier depuis le clavier du CardputerZero"
+        },
+        "ja": {
+          "title": "ZeroTier",
+          "summary": "CardputerZeroのキーボードでZeroTierネットワークを管理"
+        },
+        "zh-CN": {
+          "title": "ZeroTier",
+          "summary": "用 CardputerZero 键盘管理 ZeroTier 网络"
+        }
+      },
+      "i18n": {
+        "fr": {
+          "title": "ZeroTier",
+          "summary": "Gérez vos réseaux ZeroTier depuis le clavier du CardputerZero"
+        },
+        "ja": {
+          "title": "ZeroTier",
+          "summary": "CardputerZeroのキーボードでZeroTierネットワークを管理"
+        },
+        "zh-CN": {
+          "title": "ZeroTier",
+          "summary": "用 CardputerZero 键盘管理 ZeroTier 网络"
+        }
+      },
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "github": "sukoshi1507",
+        "display_name": "sukoshi1507"
+      },
+      "version": "1.0.1-rev1",
+      "published_at": "2026-11-26T15:28:30+00:00",
+      "updated_at": "2026-11-26T15:28:30+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/sukoshi1507/zerotier",
+      "download": {
+        "type": "deb",
+        "package": "zerotier-cardputer",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerotier-cardputer_1.0.1-rev1_arm64.deb",
+        "md5": "a7f385685d70d9cd0f80a7b70d4381e1",
+        "sha256": "62455bd264fd4a5a37c85bb573b61518f0a8ef8b0cc58617a42ac66ff6528b27",
+        "size": 605540
+      },
+      "depends": "fonts-noto-cjk",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotier-cardputer/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotier-cardputer/screenshots/list-en.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotier-cardputer/screenshots/list-fr.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotier-cardputer/screenshots/list-ja.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotier-cardputer/screenshots/list-zh.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotier-cardputer/screenshots/setup-fr.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotier-cardputer/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotier-cardputer/screenshots/list-en.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotier-cardputer/screenshots/list-fr.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotier-cardputer/screenshots/list-ja.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotier-cardputer/screenshots/list-zh.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotier-cardputer/screenshots/setup-fr.png"
       ]
     },
     {
