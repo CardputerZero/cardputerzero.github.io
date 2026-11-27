@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T15:44:01+08:00",
+  "generated_at": "2026-11-27T15:56:15+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -10215,6 +10215,69 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/03_graph_skewt.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/03_graph_flight.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sondechase/screenshots/07_burst.png"
+      ]
+    },
+    {
+      "uuid": "49673969-33c6-5124-bbcc-f359f2d602de",
+      "share_code": "SONR",
+      "title": "Sonic R Port",
+      "summary": "Native 30 FPS racing on Cardputer Zero using your PC copy of Sonic R.",
+      "description": "Play the PC edition of Sonic R on the Cardputer Zero with native 320×170 VC4 graphics, keyboard controls, and local saves. First-launch setup imports your installed 1998 PC game from internal storage, SD, or USB. Supply the original SONICR.EXE and game folders. The app prepares the native runtime on the Zero.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games"
+      ],
+      "author": {
+        "github": "RetroBreeze",
+        "display_name": "RetroBreeze"
+      },
+      "version": "1.0.0-6",
+      "published_at": "2026-11-25T21:20:46+00:00",
+      "updated_at": "2026-11-25T21:20:46+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "LicenseRef-Sonic-R-Engine",
+      "source_repo": "https://github.com/RetroBreeze/sonic-r-cardputer-zero",
+      "download": {
+        "type": "deb",
+        "package": "sonic-r-zero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/sonic-r-zero_1.0.0-6_arm64.deb",
+        "md5": "288415eb0413cc4dd0b64b5c6bf7fa1a",
+        "sha256": "b2a245549b0f6edd99d4d8a5e0e8e1b94d659408e4dc2dfee09900940fa0a52c",
+        "size": 393256
+      },
+      "depends": "libc6 (>= 2.38), libegl1, libgbm1, libgl1, libsdl2-2.0-0, libsdl2-mixer-2.0-0, python3 (>= 3.11), python3-pil, fonts-dejavu-core, wireplumber, procps, util-linux",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sonic-r-zero/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sonic-r-zero/screenshots/01-resort-island.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sonic-r-zero/screenshots/02-radical-city.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sonic-r-zero/screenshots/03-regal-ruin.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sonic-r-zero/screenshots/04-reactive-factory.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sonic-r-zero/screenshots/05-course-select.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sonic-r-zero/screenshots/06-character-select.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sonic-r-zero/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sonic-r-zero/screenshots/01-resort-island.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sonic-r-zero/screenshots/02-radical-city.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sonic-r-zero/screenshots/03-regal-ruin.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sonic-r-zero/screenshots/04-reactive-factory.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sonic-r-zero/screenshots/05-course-select.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/sonic-r-zero/screenshots/06-character-select.png"
       ]
     },
     {
