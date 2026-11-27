@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T23:42:55+08:00",
+  "generated_at": "2026-11-27T23:54:08+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9291,8 +9291,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T23:42:55+08:00",
-      "updated_at": "2026-11-27T23:42:55+08:00",
+      "published_at": "2026-11-27T23:54:08+08:00",
+      "updated_at": "2026-11-27T23:54:08+08:00",
       "review": {
         "status": "approved"
       },
@@ -11583,6 +11583,71 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/strawberry-video-player/screenshots/4-test-pattern.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/strawberry-video-player/screenshots/5-no-videos.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/strawberry-video-player/screenshots/6-help.png"
+      ]
+    },
+    {
+      "uuid": "29cd529f-dfe1-5143-9125-fb1bfcd6a162",
+      "share_code": "STRP",
+      "title": "StreamPlayer",
+      "summary": "Emby/Jellyfin music and LCD video player for CardputerZero.",
+      "description": "Browse Emby and Jellyfin media libraries, search titles, play music and watch server-transcoded 320x170 video on the CardputerZero LCD. Supports English, Simplified Chinese and Japanese, local speaker/headphone audio and optional already-configured Bluetooth audio. This reduced store edition runs as the launcher user and includes no root services, sudo configuration, boot/CMA or Wi-Fi changes, or PackageKit/LightDM control. HDMI video/photo output and automatic hardware-decoder setup are unavailable. LCD video uses software H.264 decoding; a server capable of transcoding to the LCD profile is required. Performance depends on the server, network and available RAM. Enter opens or plays, Space pauses, Z/C seek, short Esc returns and holding Esc exits. Configure your own Emby/Jellyfin server and account inside the app.\n\nSource of the store edition: https://github.com/zhuzhe1983/cp0-StreamPlayer/tree/store-compliant-20261125.",
+      "locales": {
+        "zh-CN": {
+          "title": "StreamPlayer",
+          "summary": "面向 CardputerZero 的 Emby/Jellyfin 音乐与小屏视频播放器。",
+          "description": "浏览、搜索自己的 Emby/Jellyfin 媒体库，播放音乐及由服务器转码为 320×170 的视频，提供中、英、日界面。本商店精简版以前台普通用户运行；不安装 root 服务和 sudo 配置，不修改启动内存或 Wi-Fi，不控制 PackageKit 和 LightDM。移除了 HDMI 视频、图片输出和自动硬解配置，小屏视频使用 H.264 软件解码，需要媒体服务器支持相应转码。Enter 打开或播放，空格暂停，Z/C 快进退，短按 Esc 返回，长按 Esc 退出。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "StreamPlayer",
+          "summary": "面向 CardputerZero 的 Emby/Jellyfin 音乐与小屏视频播放器。",
+          "description": "浏览、搜索自己的 Emby/Jellyfin 媒体库，播放音乐及由服务器转码为 320×170 的视频，提供中、英、日界面。本商店精简版以前台普通用户运行；不安装 root 服务和 sudo 配置，不修改启动内存或 Wi-Fi，不控制 PackageKit 和 LightDM。移除了 HDMI 视频、图片输出和自动硬解配置，小屏视频使用 H.264 软件解码，需要媒体服务器支持相应转码。Enter 打开或播放，空格暂停，Z/C 快进退，短按 Esc 返回，长按 Esc 退出。"
+        }
+      },
+      "categories": [
+        "Media"
+      ],
+      "author": {
+        "display_name": "Zhu Zhe",
+        "github": "zhuzhe1983"
+      },
+      "version": "0.1.0-m5stack17",
+      "published_at": "2026-11-25T15:39:44+00:00",
+      "updated_at": "2026-11-25T16:06:41+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/zhuzhe1983/cp0-StreamPlayer",
+      "download": {
+        "type": "deb",
+        "package": "streamplayer",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/streamplayer_0.1.0-m5stack17_arm64.deb",
+        "md5": "a1d2bbdd9b700653155ad125f9fc590f",
+        "sha256": "7ddcf0513aa64414dd026410aa461a7c6ca1748145b7513d5b93d991671d3c68",
+        "size": 5565292
+      },
+      "depends": "libc6 (>= 2.38), libgcc-s1, libstdc++6, libinput10, libxkbcommon0, libudev1, ca-certificates, curl, alsa-utils, fonts-dejavu-core, ffmpeg, mpv, fonts-noto-cjk",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/stream-player.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/setup.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/stream-player.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/setup.png"
       ]
     },
     {
