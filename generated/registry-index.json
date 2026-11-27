@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T18:03:12+08:00",
+  "generated_at": "2026-11-27T18:16:40+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8917,6 +8917,70 @@
       ]
     },
     {
+      "uuid": "4fcb7ff3-8878-5d88-860a-f0d08b694153",
+      "share_code": "NTFY",
+      "title": "ntfyzero",
+      "summary": "Unofficial ntfy client: push notifications with per-topic alerts",
+      "description": "ntfyzero is an unofficial, keyboard-driven client for ntfy, on ntfy.sh or your own server. Subscribe to topics on several servers, then read messages with their priority, tags, links (shown as text and a QR code) and image attachments, run HTTP actions, and publish messages. Alerts play a tone, show a banner and can repeat until you press a key, with global and per-topic settings for sound, volume, minimum priority, mute and quiet hours. Messages and alerts arrive while the app is open; when you open it again, it catches up from the server's message cache.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Hardware & IoT"
+      ],
+      "author": {
+        "display_name": "matqua",
+        "github": "matqua"
+      },
+      "version": "0.1.0-rev1",
+      "published_at": "2026-11-27T04:49:54+00:00",
+      "updated_at": "2026-11-27T04:49:54+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/matqua/ntfyzero",
+      "download": {
+        "type": "deb",
+        "package": "ntfyzero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/ntfyzero_0.1.0-rev1_arm64.deb",
+        "md5": "41c19688e7351ee9d3792f3ce011275b",
+        "sha256": "608cf81e4156265352d9d1ee7f264c4458176b3155b5b70f6dceab8c2cc27548",
+        "size": 1879718
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16t64, libjpeg62-turbo, zlib1g, libcurl4t64, libasound2t64",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ntfyzero/ntfyzero_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ntfyzero/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ntfyzero/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ntfyzero/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ntfyzero/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ntfyzero/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ntfyzero/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ntfyzero/ntfyzero_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ntfyzero/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ntfyzero/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ntfyzero/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ntfyzero/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ntfyzero/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/ntfyzero/screenshots/screenshot-5.png"
+      ]
+    },
+    {
       "uuid": "61cece49-d94f-5a81-a1de-f93c36eccf23",
       "share_code": "OCTE",
       "title": "Octet Desktop",
@@ -9008,8 +9072,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T18:03:12+08:00",
-      "updated_at": "2026-11-27T18:03:12+08:00",
+      "published_at": "2026-11-27T18:16:40+08:00",
+      "updated_at": "2026-11-27T18:16:40+08:00",
       "review": {
         "status": "approved"
       },
