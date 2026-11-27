@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T17:22:12+08:00",
+  "generated_at": "2026-11-27T17:24:43+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8847,8 +8847,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T17:22:12+08:00",
-      "updated_at": "2026-11-27T17:22:12+08:00",
+      "published_at": "2026-11-27T17:24:43+08:00",
+      "updated_at": "2026-11-27T17:24:43+08:00",
       "review": {
         "status": "approved"
       },
@@ -13681,6 +13681,63 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/04-terminal.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/05-hardware.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/06-status.png"
+      ]
+    },
+    {
+      "uuid": "451fb63e-19a1-560b-ad51-62b57960612c",
+      "share_code": "ZF24",
+      "title": "ZeroFeed24",
+      "summary": "Flightradar24 feeder for Cardputer Zero.",
+      "description": "The main purpose of this app is to be a on-the-go fr24 feeder. The app uses the LoRa cap for gps fix, and external RTS-SDR for receive signals from aircrafts, then send them to the website flightradar24.com using fr24feeder official repo. You can insert your fr24 sharing key or submit a request for a new one directly in the app. This app is not affiliated or sponsored by Flightradar24.com.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "Wirpool",
+        "github": "wirpool"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-11-26T22:50:44+00:00",
+      "updated_at": "2026-11-26T22:50:44+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/wirpool/zerofeed24",
+      "download": {
+        "type": "deb",
+        "package": "zerofeed24",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerofeed24_1.0.0_arm64.deb",
+        "md5": "64d2a69bd4befb8ecbe6597508b90996",
+        "sha256": "adc2ceffa3ca78e75b66aa5b719bbae2843a5bf60420b39acbe46d005dd821b1",
+        "size": 3398706
+      },
+      "depends": "rtl-sdr, curl, gpgv, ca-certificates, libc6 (>= 2.38), libfmt10 (>= 10.1.1+ds1), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.0), libncurses6 (>= 6), libpng16-16t64 (>= 1.6.46), librtlsdr0, libstdc++6 (>= 12), libtinfo6 (>= 6), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.6)",
+      "permissions": {
+        "additional_hardware": true,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofeed24/zerofeed24_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofeed24/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofeed24/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofeed24/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofeed24/zerofeed24_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofeed24/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofeed24/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerofeed24/screenshots/screenshot-2.png"
       ]
     },
     {
