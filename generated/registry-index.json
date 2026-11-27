@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T15:11:04+08:00",
+  "generated_at": "2026-11-27T15:44:01+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -13206,6 +13206,63 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/download.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/tracks.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerogps/screenshots/home.png"
+      ]
+    },
+    {
+      "uuid": "42e276f8-64bd-5b4c-978d-06b25d910c03",
+      "share_code": "0HRO",
+      "title": "0Hero",
+      "summary": "Update every installed store app in one tap",
+      "description": "0Hero checks every app you installed from the CardputerZero App Store against the official registry and installs all available updates in one tap. It uses the Store's own verified prepare, install and finalize steps, so the Store's records stay correct. Apps you install later show up automatically. Enter updates everything, R checks again, Esc exits (locked while an install runs). If one app fails, the rest still update. Also includes a zerohero command for SSH: zerohero lists updates, zerohero --apply installs them. Needs Wi-Fi and the default passwordless sudo.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "github": "Irak4t0n",
+        "display_name": "Irak4t0n"
+      },
+      "version": "1.0.0",
+      "published_at": "2026-11-25T20:58:07+00:00",
+      "updated_at": "2026-11-25T20:58:07+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/Irak4t0n/zerohero",
+      "download": {
+        "type": "deb",
+        "package": "zerohero",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerohero_1.0.0_all.deb",
+        "md5": "26b6be372648a90130ae623c0aaeee0e",
+        "sha256": "b24367b108ceda1d54c07d8a30383fd0c770dab68b772710035102aeb19526f9",
+        "size": 26500
+      },
+      "depends": "python3, python3-pil, fonts-dejavu-core, sudo, curl",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerohero/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerohero/screenshots/list.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerohero/screenshots/running.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerohero/screenshots/done.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerohero/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerohero/screenshots/list.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerohero/screenshots/running.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerohero/screenshots/done.png"
       ]
     },
     {
