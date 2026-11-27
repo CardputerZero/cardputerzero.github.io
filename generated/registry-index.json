@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T17:56:16+08:00",
+  "generated_at": "2026-11-27T18:03:12+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -628,6 +628,63 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aria2-remote/screenshots/aria2-remote_20261114_150509_358.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aria2-remote/screenshots/aria2-remote_20261114_150518_189.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/aria2-remote/screenshots/aria2-remote_20261114_150539_539.png"
+      ]
+    },
+    {
+      "uuid": "f2479235-606e-57f3-9014-42537145afb4",
+      "share_code": "ASCI",
+      "title": "AsciiCam",
+      "summary": "Live camera feed as ASCII art in the terminal, with colour and edge modes",
+      "description": "AsciiCam renders the camera feed as live ASCII art. On the device it draws straight to the LCD framebuffer for full-speed colour; over SSH it renders in any terminal, following the terminal size. Cycle through four character ramps, toggle colour, edge detection, flipping and inversion, and tune gamma. Snapshot a moment with s (plain text, coloured ANSI, a rendered PNG of the art, and the raw photo as JPEG, saved to ~/Pictures/asciicam) or record ASCII video with v as an asciinema .cast, renderable to MP4 on-device with --render. Works with the built-in CSI camera via picamera2, any V4L2/USB webcam via OpenCV, or a synthetic test pattern (--source test).",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Media"
+      ],
+      "author": {
+        "display_name": "ErnestG4",
+        "github": "ErnestG4"
+      },
+      "version": "0.4.0",
+      "published_at": "2026-11-27T01:25:40+00:00",
+      "updated_at": "2026-11-27T01:25:40+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/ErnestG4/asciicam",
+      "download": {
+        "type": "deb",
+        "package": "asciicam",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/asciicam_0.4.0_all.deb",
+        "md5": "816342892e924b0f8109eff3ac807563",
+        "sha256": "d9251fe86ef28e1f57ec81a41fb7b664b5c0e8aa95ec00c61364986e87b9c73e",
+        "size": 25996
+      },
+      "depends": "python3, python3-numpy, python3-picamera2, python3-pil, fonts-dejavu-core",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": true,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/asciicam/asciicam_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/asciicam/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/asciicam/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/asciicam/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/asciicam/asciicam_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/asciicam/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/asciicam/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/asciicam/screenshots/screenshot-2.png"
       ]
     },
     {
@@ -8951,8 +9008,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T17:56:16+08:00",
-      "updated_at": "2026-11-27T17:56:16+08:00",
+      "published_at": "2026-11-27T18:03:12+08:00",
+      "updated_at": "2026-11-27T18:03:12+08:00",
       "review": {
         "status": "approved"
       },
