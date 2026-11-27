@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T18:51:40+08:00",
+  "generated_at": "2026-11-27T19:01:09+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2860,7 +2860,7 @@
       "share_code": "COLI",
       "title": "Colibri",
       "summary": "支持中文输入、离线语音、MCP 与技能的 Cardputer Zero 口袋 AI 助手。",
-      "description": "Colibri 是面向 Cardputer Zero 的口袋 AI 助手。\r\n\r\n支持中文整句拼音、英文输入和本机离线中英语音转写，识别结果可编辑后发送。支持 OpenAI 兼容模型服务、图片理解和搜索 API，以及标准 MCP 和本地技能。\r\n\r\n支持长期记忆、历史恢复、自动上下文压缩、/compact 和 /clear，配有小屏幕 Markdown、消息卡片和状态动效，并沿用系统自动熄屏。提供终端 REPL、可选后台网关及微信通道。\r\n\r\n首次使用请配置自己的模型服务。语音在掌机本地转写，对话和搜索使用你配置的网络服务。应用具有当前 Linux 用户的文件读写和命令执行能力，危险操作由 Agent 请求确认。\r\n\r\n存储占用说明：安装包及安装后的存储占用主要来自随包提供的离线语音识别模型，用于在掌机本地完成语音转写，不依赖在线语音服务。",
+      "description": "Colibri 是面向 Cardputer Zero 的口袋 AI 助手，支持中文拼音、离线中英语音转写、小屏 Markdown、长期记忆、上下文压缩、MCP、技能与终端 REPL。对话使用你配置的模型服务。安装包的存储占用主要来自离线语音识别模型。\r\n\r\n微信通道使用方法\r\n1. 在 Colibri 的「设置 → 配置 → 模型」保存模型连接。\r\n2. 打开掌机自带的 CLI，运行 colibri auth weixin，用手机微信扫码并确认。\r\n3. 运行 colibri gateway start 启动网关，再用 colibri gateway status 查看连接状态。网关已启动时，扫码后运行 colibri gateway restart。\r\n4. 在微信里给已连接的机器人发消息。掌机联网且网关运行时，关闭 Colibri 图形界面也能收发消息。",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -2868,12 +2868,12 @@
         "AI"
       ],
       "author": {
-        "display_name": "卧东",
+        "display_name": "云不冻",
         "github": "yunbudong11114"
       },
-      "version": "0.2.1-m5stack1",
+      "version": "1.0.0-m5stack1",
       "published_at": "2026-11-25T07:23:27+00:00",
-      "updated_at": "2026-11-25T07:23:27+00:00",
+      "updated_at": "2026-11-27T10:53:37+00:00",
       "review": {
         "status": "approved"
       },
@@ -2882,10 +2882,10 @@
       "download": {
         "type": "deb",
         "package": "colibri",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/colibri_0.2.1-m5stack1_arm64.deb",
-        "md5": "c884dd11f090dd77ab8983a8297bab37",
-        "sha256": "7410b4f7cad29a17db827c95bb978d12323641e4873394de5d88f02548e52635",
-        "size": 53169206
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/colibri_1.0.0-m5stack1_arm64.deb",
+        "md5": "a22cedb4bccad0acb356e62d1d38303f",
+        "sha256": "12c2c71e7dc2a6fa364fb7d4cc9f82986c9539c07866e7665d8afdb2db182edd",
+        "size": 53340312
       },
       "depends": "libc6, libgcc-s1, libfreetype6, libstdc++6, libgomp1, fonts-noto-cjk, alsa-utils, pulseaudio-utils",
       "permissions": {
@@ -7575,52 +7575,52 @@
       "uuid": "a1163339-fe16-598e-bb8d-d43729392687",
       "share_code": "LRDC",
       "title": "LoRa Decoder",
-      "summary": "Scan LoRa bands and decode Meshtastic and LoRaWAN packets with an SX1262 module",
-      "description": "Receive-only LoRa toolkit for an SX1262 radio wired to the CardputerZero SPI bus. Spectrum: RSSI sweep of the selected band with peak hold or a scrolling waterfall, plus a tuning cursor. Hunt: hops LoRaWAN channels and Meshtastic preset slots, uses Channel Activity Detection on every spreading factor and decodes whatever it catches. Listen: continuous receive with full control of frequency, SF, bandwidth, coding rate, sync word and IQ. Decoding: Meshtastic header plus AES-CTR decryption with the default key or your own channel PSKs (text, position, node info, telemetry, traceroute, routing, waypoints, neighbor info, map reports, range test, paxcounter), LoRaWAN MAC header (join requests, DevAddr, FCnt, FPort, NetID) and raw hex/ASCII for anything else. Packet capture to PCAP (LoRaTAP, opens in Wireshark). Band plans: EU868, US915, AU915, AS923, KR920, IN865, EU433. The radio never transmits.",
+      "summary": "Scan LoRa bands, decode Meshtastic, MeshCore and LoRaWAN packets (Cap LoRa-1262)",
+      "description": "Receive-only LoRa toolkit for an SX1262 radio wired to the CardputerZero SPI bus. Spectrum: RSSI sweep of the selected band with peak hold or a scrolling waterfall, plus a tuning cursor. Hunt: hops LoRaWAN channels and Meshtastic preset slots, uses Channel Activity Detection on every spreading factor and decodes whatever it catches. Listen: continuous receive with full control of frequency, SF, bandwidth, coding rate, sync word and IQ. Decoding: Meshtastic header plus AES-CTR decryption with the default key or your own channel PSKs (text, position, node info, telemetry, traceroute, routing, waypoints, neighbor info, map reports, range test, paxcounter), LoRaWAN MAC header (join requests, DevAddr, FCnt, FPort, NetID) and raw hex/ASCII for anything else. Packet capture to PCAP (LoRaTAP, opens in Wireshark). MeshCore: adverts (node type, name, position), path/hops and Public or custom channel messages decrypted (EU Narrow 869.618 MHz preset used in Sardinia and Europe). Band plans: EU868, US915, AU915, AS923, KR920, IN865, EU433. The radio never transmits.",
       "locales": {
         "it": {
           "title": "LoRa Decoder",
-          "summary": "Scansiona le bande LoRa e decodifica pacchetti Meshtastic e LoRaWAN con il Cap LoRa-1262",
-          "description": "Strumento LoRa di sola ricezione per il Cap LoRa-1262 (SX1262) sul CardputerZero. Spettro: sweep RSSI della banda con picco o waterfall e cursore di sintonia. Hunt: scorre i canali LoRaWAN e i preset Meshtastic, usa il Channel Activity Detection su ogni spreading factor e decodifica ciò che riceve. Ascolto: ricezione continua con frequenza, SF, banda, coding rate, sync word e IQ regolabili. Decodifica Meshtastic con decifratura AES-CTR (chiave di default o PSK personali): testo, posizione, info nodo, telemetria, traceroute, waypoint, vicini, map report. LoRaWAN: tipo messaggio, DevAddr/NetID, FCnt, FPort, join request. Cattura PCAP (LoRaTAP, si apre in Wireshark). Piani: EU868, US915, AU915, AS923, KR920, IN865, EU433. La radio non trasmette mai."
+          "summary": "Scansiona le bande LoRa e decodifica Meshtastic, MeshCore e LoRaWAN",
+          "description": "Strumento LoRa di sola ricezione per il Cap LoRa-1262 (SX1262) sul CardputerZero. Spettro: sweep RSSI della banda con picco o waterfall e cursore di sintonia. Hunt: scorre i canali LoRaWAN e i preset Meshtastic, usa il Channel Activity Detection su ogni spreading factor e decodifica ciò che riceve. Ascolto: ricezione continua con frequenza, SF, banda, coding rate, sync word e IQ regolabili. Decodifica Meshtastic con decifratura AES-CTR (chiave di default o PSK personali): testo, posizione, info nodo, telemetria, traceroute, waypoint, vicini, map report. LoRaWAN: tipo messaggio, DevAddr/NetID, FCnt, FPort, join request. MeshCore: advert (tipo nodo, nome, posizione), percorso tra i repeater e messaggi del canale Public o di canali tuoi decifrati (preset EU Narrow 869.618 MHz usato in Sardegna). Cattura PCAP (LoRaTAP, si apre in Wireshark). Piani: EU868, US915, AU915, AS923, KR920, IN865, EU433. La radio non trasmette mai."
         },
         "zh-CN": {
           "title": "LoRa 解码器",
-          "summary": "使用 Cap LoRa-1262 扫描 LoRa 频段并解码 Meshtastic 与 LoRaWAN 数据包（仅接收）"
+          "summary": "使用 Cap LoRa-1262 扫描 LoRa 频段并解码 Meshtastic、MeshCore 与 LoRaWAN 数据包（仅接收）"
         },
         "ja": {
           "title": "LoRa デコーダー",
-          "summary": "Cap LoRa-1262 で LoRa 帯域をスキャンし、Meshtastic と LoRaWAN のパケットを解析（受信専用）"
+          "summary": "Cap LoRa-1262 で LoRa 帯域をスキャンし、Meshtastic・MeshCore・LoRaWAN のパケットを解析（受信専用）"
         },
         "es": {
           "title": "LoRa Decoder",
-          "summary": "Escanea bandas LoRa y decodifica paquetes Meshtastic y LoRaWAN con el Cap LoRa-1262 (solo recepción)"
+          "summary": "Escanea bandas LoRa y decodifica Meshtastic, MeshCore y LoRaWAN"
         },
         "de": {
           "title": "LoRa Decoder",
-          "summary": "LoRa-Bänder scannen und Meshtastic- und LoRaWAN-Pakete mit dem Cap LoRa-1262 dekodieren (nur Empfang)"
+          "summary": "LoRa-Bänder scannen, Meshtastic-, MeshCore- und LoRaWAN-Pakete dekodieren"
         }
       },
       "i18n": {
         "it": {
           "title": "LoRa Decoder",
-          "summary": "Scansiona le bande LoRa e decodifica pacchetti Meshtastic e LoRaWAN con il Cap LoRa-1262",
-          "description": "Strumento LoRa di sola ricezione per il Cap LoRa-1262 (SX1262) sul CardputerZero. Spettro: sweep RSSI della banda con picco o waterfall e cursore di sintonia. Hunt: scorre i canali LoRaWAN e i preset Meshtastic, usa il Channel Activity Detection su ogni spreading factor e decodifica ciò che riceve. Ascolto: ricezione continua con frequenza, SF, banda, coding rate, sync word e IQ regolabili. Decodifica Meshtastic con decifratura AES-CTR (chiave di default o PSK personali): testo, posizione, info nodo, telemetria, traceroute, waypoint, vicini, map report. LoRaWAN: tipo messaggio, DevAddr/NetID, FCnt, FPort, join request. Cattura PCAP (LoRaTAP, si apre in Wireshark). Piani: EU868, US915, AU915, AS923, KR920, IN865, EU433. La radio non trasmette mai."
+          "summary": "Scansiona le bande LoRa e decodifica Meshtastic, MeshCore e LoRaWAN",
+          "description": "Strumento LoRa di sola ricezione per il Cap LoRa-1262 (SX1262) sul CardputerZero. Spettro: sweep RSSI della banda con picco o waterfall e cursore di sintonia. Hunt: scorre i canali LoRaWAN e i preset Meshtastic, usa il Channel Activity Detection su ogni spreading factor e decodifica ciò che riceve. Ascolto: ricezione continua con frequenza, SF, banda, coding rate, sync word e IQ regolabili. Decodifica Meshtastic con decifratura AES-CTR (chiave di default o PSK personali): testo, posizione, info nodo, telemetria, traceroute, waypoint, vicini, map report. LoRaWAN: tipo messaggio, DevAddr/NetID, FCnt, FPort, join request. MeshCore: advert (tipo nodo, nome, posizione), percorso tra i repeater e messaggi del canale Public o di canali tuoi decifrati (preset EU Narrow 869.618 MHz usato in Sardegna). Cattura PCAP (LoRaTAP, si apre in Wireshark). Piani: EU868, US915, AU915, AS923, KR920, IN865, EU433. La radio non trasmette mai."
         },
         "zh-CN": {
           "title": "LoRa 解码器",
-          "summary": "使用 Cap LoRa-1262 扫描 LoRa 频段并解码 Meshtastic 与 LoRaWAN 数据包（仅接收）"
+          "summary": "使用 Cap LoRa-1262 扫描 LoRa 频段并解码 Meshtastic、MeshCore 与 LoRaWAN 数据包（仅接收）"
         },
         "ja": {
           "title": "LoRa デコーダー",
-          "summary": "Cap LoRa-1262 で LoRa 帯域をスキャンし、Meshtastic と LoRaWAN のパケットを解析（受信専用）"
+          "summary": "Cap LoRa-1262 で LoRa 帯域をスキャンし、Meshtastic・MeshCore・LoRaWAN のパケットを解析（受信専用）"
         },
         "es": {
           "title": "LoRa Decoder",
-          "summary": "Escanea bandas LoRa y decodifica paquetes Meshtastic y LoRaWAN con el Cap LoRa-1262 (solo recepción)"
+          "summary": "Escanea bandas LoRa y decodifica Meshtastic, MeshCore y LoRaWAN"
         },
         "de": {
           "title": "LoRa Decoder",
-          "summary": "LoRa-Bänder scannen und Meshtastic- und LoRaWAN-Pakete mit dem Cap LoRa-1262 dekodieren (nur Empfang)"
+          "summary": "LoRa-Bänder scannen, Meshtastic-, MeshCore- und LoRaWAN-Pakete dekodieren"
         }
       },
       "categories": [
@@ -7631,9 +7631,9 @@
         "github": "marcs7",
         "display_name": "MarcS7 - IS0LTD"
       },
-      "version": "0.1.0-rev1",
+      "version": "0.2.0",
       "published_at": "2026-11-26T23:54:29+00:00",
-      "updated_at": "2026-11-26T23:54:29+00:00",
+      "updated_at": "2026-11-27T10:54:47+00:00",
       "review": {
         "status": "approved"
       },
@@ -7642,10 +7642,10 @@
       "download": {
         "type": "deb",
         "package": "loradecoder",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/loradecoder_0.1.0-rev1_arm64.deb",
-        "md5": "b565594703c4591525cec73a4662634a",
-        "sha256": "4a4f6299506e3f18096fde937d628069b1ee32b19db265376594b3013d6713a2",
-        "size": 2109094
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/loradecoder_0.2.0_arm64.deb",
+        "md5": "eef9fb970ea3e669ee43258d6fbcfb29",
+        "sha256": "c5d71b46948bf86165387a8b60dacb4ff8431845029ae57adb302121bffe5136",
+        "size": 2138466
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g",
       "permissions": {
@@ -7662,6 +7662,7 @@
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loradecoder/store_icon.png",
         "screenshots": [
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loradecoder/screenshots/hunt.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loradecoder/screenshots/meshcore.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loradecoder/screenshots/spectrum.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loradecoder/screenshots/waterfall.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loradecoder/screenshots/packet-detail.png"
@@ -7670,6 +7671,7 @@
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loradecoder/store_icon.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loradecoder/screenshots/hunt.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loradecoder/screenshots/meshcore.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loradecoder/screenshots/spectrum.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loradecoder/screenshots/waterfall.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/loradecoder/screenshots/packet-detail.png"
@@ -9072,8 +9074,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T18:51:40+08:00",
-      "updated_at": "2026-11-27T18:51:40+08:00",
+      "published_at": "2026-11-27T19:01:09+08:00",
+      "updated_at": "2026-11-27T19:01:09+08:00",
       "review": {
         "status": "approved"
       },
