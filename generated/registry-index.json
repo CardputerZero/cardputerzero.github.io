@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T23:54:08+08:00",
+  "generated_at": "2026-11-28T00:09:38+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9291,8 +9291,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T23:54:08+08:00",
-      "updated_at": "2026-11-27T23:54:08+08:00",
+      "published_at": "2026-11-28T00:09:38+08:00",
+      "updated_at": "2026-11-28T00:09:38+08:00",
       "review": {
         "status": "approved"
       },
@@ -11467,7 +11467,7 @@
       "share_code": "STK0",
       "title": "StickZero",
       "summary": "Tinywhoop drone simulator.",
-      "description": "I ported the Lua drone simulator StickTime to Rust for the CardputerZero which runs surprisingly well! I figured I should share the experience if anyone else is wanting to practice their flying with their CardputerZero. \r\nMainly built around using a BetaFPV Air75 II & Meteor75 Pro II with Lava II 580mAh/680mAh batteries and a RadioMaster Pocket or EdgeTX radio controller over USB/Bluetooth. It has some realism built in like prop wash, battery sag, etc. that is all customizable to some degree. \r\nI also added sounds, an analog video filter, HDMI support and graphics settings.\r\nFeel free to let me know if any issues, do a pull request or fork it on GitHub unless I might have already updated it!",
+      "description": "I ported the Lua drone simulator StickTime to Rust for the CardputerZero which runs surprisingly well! I figured I should share the experience if anyone else is wanting to practice their flying with their CardputerZero. It should also work with goggles although I haven't tried yet. \r\nMainly built around using a BetaFPV Air75 II & Meteor75 Pro II with Lava II 580mAh/680mAh batteries and a RadioMaster Pocket or EdgeTX radio controller over USB/Bluetooth. It has some realism built in like prop wash, battery sag, etc. that is all customizable to some degree. \r\nI also added sounds, an analog video filter, IMU sensor support, HDMI support and graphics settings.\r\nFeel free to let me know if any issues, do a pull request or fork it on GitHub unless I might have already updated it!",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -11479,7 +11479,7 @@
       },
       "version": "0.1.15",
       "published_at": "2026-11-23T11:17:58+00:00",
-      "updated_at": "2026-11-26T11:20:48+00:00",
+      "updated_at": "2026-11-27T16:07:52+00:00",
       "review": {
         "status": "approved"
       },
@@ -11498,8 +11498,8 @@
         "additional_hardware": false,
         "background_service": false,
         "camera": false,
-        "external_display": false,
-        "imu": false,
+        "external_display": true,
+        "imu": true,
         "microphone": false,
         "network": false
       },
