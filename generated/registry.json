@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T07:56:22+08:00",
+  "generated_at": "2026-11-28T07:58:58+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2590,9 +2590,9 @@
         "display_name": "TheBeardedHamm",
         "github": "hammwl55-creator"
       },
-      "version": "0.1.6",
+      "version": "0.1.7",
       "published_at": "2026-11-26T04:35:24+00:00",
-      "updated_at": "2026-11-26T04:35:24+00:00",
+      "updated_at": "2026-11-27T23:56:19+00:00",
       "review": {
         "status": "approved"
       },
@@ -2601,10 +2601,10 @@
       "download": {
         "type": "deb",
         "package": "cardstar",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardstar_0.1.6_all.deb",
-        "md5": "d81c6b14ddb03d4f45b8ca3a1b01d816",
-        "sha256": "e4c8612ac910670bca5e9f97fbcf431c3d664020efa1c4535d84290a5d00a626",
-        "size": 91136
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardstar_0.1.7_all.deb",
+        "md5": "c097f60064346048e44405eed982579b",
+        "sha256": "e842d10a4bd6654f7a35a04b0a730ad94a972604aa15649f319a33f8a229cbd6",
+        "size": 93172
       },
       "depends": "python3 (>= 3.11), pulseaudio-utils, alsa-utils",
       "permissions": {
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T07:56:22+08:00",
-      "updated_at": "2026-11-28T07:56:22+08:00",
+      "published_at": "2026-11-28T07:58:58+08:00",
+      "updated_at": "2026-11-28T07:58:58+08:00",
       "review": {
         "status": "approved"
       },
