@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T16:57:13+08:00",
+  "generated_at": "2026-11-27T16:59:37+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -11623,6 +11623,63 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/updoit-for-cardputer-zero/screenshots/updoit-confirm.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/updoit-for-cardputer-zero/screenshots/updoit-download.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/updoit-for-cardputer-zero/screenshots/updoit-done.png"
+      ]
+    },
+    {
+      "uuid": "2b9167e1-aa50-5323-8935-69cccfb21ebf",
+      "share_code": "URCC",
+      "title": "URC",
+      "summary": "Chat rooms and private messages on the URC relay server",
+      "description": "URC (Universal Relay Chat) is a chat client made for the 320x170 screen and the 46-key keyboard of the CardputerZero. Join public rooms, send private messages, see unread counts for every room, and get a sound and LED alert when a new message arrives. A built-in settings menu lets you change the notification sound, screen dimming, LED, timestamps and language (English or Português), and shows keyboard shortcuts and chat commands. Menus can be navigated without holding Fn. The screen dims when idle to save battery, and the battery level is always visible. It talks to the same relay server as the URC clients for the original Cardputer, Cardputer ADV, PicoCalc and T-Deck. Requires Wi-Fi.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "rwR0n1n",
+        "github": "rwr0N1N"
+      },
+      "version": "2.4.0",
+      "published_at": "2026-11-26T18:05:18+00:00",
+      "updated_at": "2026-11-26T18:05:18+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/rwr0N1N/urc-cpz",
+      "download": {
+        "type": "deb",
+        "package": "urc",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/urc_2.4.0_arm64.deb",
+        "md5": "56863d87f181cd57c39d5b032614f12f",
+        "sha256": "27c86947d6555e872487eb77d6a858bf89feac0ec83983f5555465f5b5b4d982",
+        "size": 31048
+      },
+      "depends": "python3",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/urc/urc_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/urc/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/urc/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/urc/screenshots/screenshot-2.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/urc/urc_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/urc/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/urc/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/urc/screenshots/screenshot-2.png"
       ]
     },
     {
