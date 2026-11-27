@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T11:13:19+08:00",
+  "generated_at": "2026-11-27T11:45:41+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -796,20 +796,38 @@
       "share_code": "BEAM",
       "title": "Beamhound",
       "summary": "Sniffs out your IR remote from one button press and becomes it.",
-      "description": "Point a remote at the Cardputer and press Power.\r\nBeamhound decodes the signal and finds every remote in the Flipper-IRDB database with that power code.\r\nRemotes with identical codes count as one answer, so it only asks questions that actually separate the remaining code sets. Each turn it picks the cheapest useful question: press another button on your remote, pick the device type, pick the brand, or did your device react to this test signal?\r\nOnce matched, the profile is saved and you get a remote-control screen.",
-      "locales": {},
-      "i18n": {},
+      "description": "Point any infrared remote at the Cardputer Zero and press Power. Beamhound decodes the signal (NEC, Samsung, RC5/RC6, Sony SIRC, Panasonic/Kaseikyo, RCA, Pioneer and more), finds every matching remote in the community Flipper-IRDB database, then asks only the questions that matter - press another button, pick the brand or device type, or watch whether your TV reacts to a test signal - until it knows your device. Usually one or two questions, often none.\n\nLost the remote? Search for the brand instead: Beamhound fires that brand's power codes one at a time, most common first, while you press Space; press Enter when the device switches off, and a few quick test signals pin down the exact model.\n\nThen it becomes the remote: power, volume, channels, input, menu, arrows, OK, playback and number keys are mapped to the keyboard (F/Z/X/C arrows, Fn media keys work too), and every other button the remote has is one list away. Matches are saved so your remotes are always on the home screen.\n\nTVs, projectors, AV receivers, soundbars, cable and streaming boxes, disc players, fans and lights are supported (air conditioners are not yet). On first run the app downloads the Flipper-IRDB database (about 17 MB) over Wi-Fi and indexes it on the device.",
+      "locales": {
+        "zh-CN": {
+          "title": "Beamhound",
+          "summary": "按一下遥控器，就能识别它并把 Cardputer 变成同款遥控器。"
+        },
+        "ja": {
+          "title": "Beamhound",
+          "summary": "リモコンのボタンを一度押すだけで識別し、Cardputer をそのリモコンにします。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "Beamhound",
+          "summary": "按一下遥控器，就能识别它并把 Cardputer 变成同款遥控器。"
+        },
+        "ja": {
+          "title": "Beamhound",
+          "summary": "リモコンのボタンを一度押すだけで識別し、Cardputer をそのリモコンにします。"
+        }
+      },
       "categories": [
-        "System Tools",
-        "Hardware & IoT"
+        "Hardware & IoT",
+        "System Tools"
       ],
       "author": {
-        "display_name": "bfeller",
+        "display_name": "Bryan Feller",
         "github": "bfeller"
       },
-      "version": "0.2.0",
+      "version": "0.2.1",
       "published_at": "2026-11-23T01:36:08+00:00",
-      "updated_at": "2026-11-27T03:11:15+00:00",
+      "updated_at": "2026-11-27T03:42:29+00:00",
       "review": {
         "status": "approved"
       },
@@ -818,37 +836,39 @@
       "download": {
         "type": "deb",
         "package": "beamhound",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/beamhound_0.2.0_arm64.deb",
-        "md5": "245dc115b7684ab508b4745ac599a141",
-        "sha256": "d5bccfec8e20edfe5ca454200d364806e51f15cea82394103c415816f9931f16",
-        "size": 666588
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/beamhound_0.2.1_arm64.deb",
+        "md5": "b954a44af9e79dc81c549829ce59fcdd",
+        "sha256": "8da2c500a9624ce766beb003651dd482f41560667d4e08b30bd754daa58b99e6",
+        "size": 670548
       },
       "depends": "libc6 (>= 2.34), curl, tar",
       "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
         "additional_hardware": false,
         "background_service": false,
-        "camera": false,
-        "external_display": false,
-        "imu": false,
-        "microphone": false,
-        "network": true
+        "external_display": false
       },
       "risk_flags": [],
       "assets": {
-        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/beamhound_icon.png",
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/beamhound_256.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/screenshot-0.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/screenshot-1.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/screenshot-2.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/screenshot-3.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/1-sniff.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/2-questions.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/3-found.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/4-remote.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/5-code-search.png"
         ]
       },
-      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/beamhound_icon.png",
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/beamhound_256.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/screenshot-0.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/screenshot-1.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/screenshot-2.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/screenshot-3.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/1-sniff.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/2-questions.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/3-found.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/4-remote.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/beamhound/screenshots/5-code-search.png"
       ]
     },
     {
