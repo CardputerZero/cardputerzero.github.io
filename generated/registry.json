@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T20:31:28+08:00",
+  "generated_at": "2026-11-27T20:41:39+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4203,6 +4203,69 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czmail/screenshots/screenshot-4.png"
+      ]
+    },
+    {
+      "uuid": "ef80462d-7ed9-5cf0-9032-f7fe33807d6c",
+      "share_code": "PDFV",
+      "title": "PDF Viewer",
+      "summary": "Read PDF files on your Cardputer Zero, with zoom, search and a text mode.",
+      "description": "Pick a PDF from your folders or recent files and read it on the Cardputer.\r\n\r\nWhat it can do:\r\n- Fit to width or show the whole page, zoom in and out, rotate\r\n- Scroll straight from one page into the next\r\n- Text mode: the words of the page wrapped to fit the screen, in any size\r\n- Search the whole document, with matches marked on the page\r\n- Contents list from the PDF's outline, go to any page\r\n- Night colours\r\n- Opens password protected files\r\n- Remembers the page you were on in every file\r\n- Uses the whole 2.8in EXT display if you have DisplayMOD, and the built-in screen keeps its own full view\r\n\r\nF X Z C work as the arrows printed on them and L M as Page Up and Down, no Fn needed. Press Fn+H on any screen for the keys.\r\n\r\nCopy PDFs over with Airfiles, SFTP or a USB stick.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Creative & Office"
+      ],
+      "author": {
+        "display_name": "H4W9",
+        "github": "H4W9"
+      },
+      "version": "0.1.2",
+      "published_at": "2026-11-25T19:44:31+00:00",
+      "updated_at": "2026-11-25T19:44:31+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/H4W9/CardputerZero_PDFViewer",
+      "download": {
+        "type": "deb",
+        "package": "czpdf",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/czpdf_0.1.2_all.deb",
+        "md5": "8a1a341ce9969936ca85cbb0b2c77b71",
+        "sha256": "ddff1962673773f26c0b07db89b03052f960551f21270067857ce951d6800a0a",
+        "size": 34466
+      },
+      "depends": "python3 (>= 3.9), python3-pil, fonts-dejavu-core, python3-pymupdf | python3-fitz | poppler-utils",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": true,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czpdf/czpdf_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czpdf/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czpdf/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czpdf/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czpdf/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czpdf/screenshots/screenshot-4.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czpdf/screenshots/screenshot-5.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czpdf/czpdf_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czpdf/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czpdf/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czpdf/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czpdf/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czpdf/screenshots/screenshot-4.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czpdf/screenshots/screenshot-5.png"
       ]
     },
     {
@@ -9074,8 +9137,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T20:31:28+08:00",
-      "updated_at": "2026-11-27T20:31:28+08:00",
+      "published_at": "2026-11-27T20:41:39+08:00",
+      "updated_at": "2026-11-27T20:41:39+08:00",
       "review": {
         "status": "approved"
       },
