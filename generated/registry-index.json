@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T16:50:17+08:00",
+  "generated_at": "2026-11-27T16:57:13+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9390,6 +9390,68 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/04-radio.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/05-calculator.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocket-zero-tools/screenshots/06-small-grid.png"
+      ]
+    },
+    {
+      "uuid": "9c48d35f-a76a-5e08-b1cc-985a5a52d1a8",
+      "share_code": "PA01",
+      "title": "Pocket Alert",
+      "summary": "Read, send and manage Pocket Alert push alerts from your keyboard",
+      "description": "Inbox with filters and search, message actions with QR codes, compose with levels, scheduling and action buttons, applications, devices, webhooks, forms, API keys, usage stats, and a background notifier that beeps on new alerts.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools",
+        "Development"
+      ],
+      "author": {
+        "github": "Akellacom",
+        "display_name": "Pocket Alert"
+      },
+      "version": "1.0.2-1",
+      "published_at": "2026-11-26T14:58:34+00:00",
+      "updated_at": "2026-11-26T14:58:34+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/PocketAlert/CardputerZeroApp",
+      "download": {
+        "type": "deb",
+        "package": "pocketalert-cardputer",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pocketalert-cardputer_1.0.2-1_arm64.deb",
+        "md5": "03a76978604b6040a2d2e7704e2150d2",
+        "sha256": "32eba00d422e85f1c9a6e71b28e4ae49d157a60d18affb3c0b0dcc6d498cb779",
+        "size": 2344624
+      },
+      "depends": "ca-certificates, alsa-utils, libc6 (>= 2.38), libcurl4t64 (>= 7.16.2), libfmt10 (>= 10.1.1+ds1), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.0), libpng16-16t64 (>= 1.6.46), libstdc++6 (>= 14)",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": true,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketalert-cardputer/pocketalert_512.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketalert-cardputer/screenshots/01-inbox.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketalert-cardputer/screenshots/02-message.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketalert-cardputer/screenshots/03-compose.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketalert-cardputer/screenshots/08-account.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketalert-cardputer/screenshots/06-settings.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketalert-cardputer/pocketalert_512.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketalert-cardputer/screenshots/01-inbox.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketalert-cardputer/screenshots/02-message.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketalert-cardputer/screenshots/03-compose.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketalert-cardputer/screenshots/08-account.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketalert-cardputer/screenshots/06-settings.png"
       ]
     },
     {
