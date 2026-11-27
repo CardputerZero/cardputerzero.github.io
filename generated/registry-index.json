@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T17:53:59+08:00",
+  "generated_at": "2026-11-27T17:56:16+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8951,8 +8951,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T17:53:59+08:00",
-      "updated_at": "2026-11-27T17:53:59+08:00",
+      "published_at": "2026-11-27T17:56:16+08:00",
+      "updated_at": "2026-11-27T17:56:16+08:00",
       "review": {
         "status": "approved"
       },
@@ -14001,7 +14001,7 @@
       "share_code": "ZF24",
       "title": "ZeroFeed24",
       "summary": "Flightradar24 feeder for Cardputer Zero.",
-      "description": "The main purpose of this app is to be a on-the-go fr24 feeder. The app uses the LoRa cap for gps fix, and external RTS-SDR for receive signals from aircrafts, then send them to the website flightradar24.com using fr24feeder official repo. You can insert your fr24 sharing key or submit a request for a new one directly in the app. This app is not affiliated or sponsored by Flightradar24.com.",
+      "description": "The main purpose of this app is to be an on-the-go fr24 feeder. The app uses the LoRa cap for gps fix, and external RTS-SDR for receive signals from aircrafts, then send them to the website flightradar24.com using fr24feeder official repo. You can insert your fr24 sharing key or submit a request for a new one directly in the app. This app is not affiliated or sponsored by Flightradar24.com.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -14013,7 +14013,7 @@
       },
       "version": "1.0.0",
       "published_at": "2026-11-26T22:50:44+00:00",
-      "updated_at": "2026-11-26T22:50:44+00:00",
+      "updated_at": "2026-11-27T09:53:07+00:00",
       "review": {
         "status": "approved"
       },
