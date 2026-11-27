@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T17:19:44+08:00",
+  "generated_at": "2026-11-27T17:22:12+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8847,8 +8847,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T17:19:44+08:00",
-      "updated_at": "2026-11-27T17:19:44+08:00",
+      "published_at": "2026-11-27T17:22:12+08:00",
+      "updated_at": "2026-11-27T17:22:12+08:00",
       "review": {
         "status": "approved"
       },
@@ -12588,6 +12588,65 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/xianjian1-zero/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/xianjian1-zero/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/xianjian1-zero/screenshots/screenshot-2.png"
+      ]
+    },
+    {
+      "uuid": "fc89b130-2dbd-5164-b7ab-70a5a367e5cc",
+      "share_code": "0726",
+      "title": "Z-Pet",
+      "summary": "A pocket pixel-art virtual pet RPG built for the M5Stack Cardputer Zero",
+      "description": "A pocket pixel-art virtual pet RPG built for the M5Stack Cardputer Zero (320×170 SPI display) with full PC preview support. Raise one of 5 unique starter companions, customize their coat color and name, train their battle stats, fight wild Z-Pets and Elite Bosses in the Battle Arena, listen to a built-in procedural 8-bit soundtrack, and unlock 35 Baby, Teen, and Adult evolutions shaped by how you care for them.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games"
+      ],
+      "author": {
+        "display_name": "Delos23",
+        "github": "Delos23"
+      },
+      "version": "1.0.0-1",
+      "published_at": "2026-11-26T22:30:48+00:00",
+      "updated_at": "2026-11-26T22:30:48+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/Delos23/Z-Pet",
+      "download": {
+        "type": "deb",
+        "package": "z-pet",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/z-pet_1.0.0-1_arm64.deb",
+        "md5": "ecbda714baa23784175178c2710b4b88",
+        "sha256": "6c62251a73cf8bcae4e9bf34fd621dcc078eb1c6ba979ad971a17285c0164d7a",
+        "size": 308714
+      },
+      "depends": "python3, python3-pygame, libsdl2-mixer-2.0-0, fonts-dejavu-core, wireplumber",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/z-pet/z-pet_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/z-pet/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/z-pet/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/z-pet/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/z-pet/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/z-pet/z-pet_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/z-pet/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/z-pet/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/z-pet/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/z-pet/screenshots/screenshot-3.png"
       ]
     },
     {
