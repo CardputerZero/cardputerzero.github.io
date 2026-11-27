@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T18:19:15+08:00",
+  "generated_at": "2026-11-27T18:22:26+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9072,8 +9072,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T18:19:15+08:00",
-      "updated_at": "2026-11-27T18:19:15+08:00",
+      "published_at": "2026-11-27T18:22:26+08:00",
+      "updated_at": "2026-11-27T18:22:26+08:00",
       "review": {
         "status": "approved"
       },
@@ -13224,6 +13224,69 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-music163/screenshots/screenshot-0.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-music163/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-music163/screenshots/screenshot-2.png"
+      ]
+    },
+    {
+      "uuid": "ab4344e8-56e3-5b11-ba5e-9f48d5efbba2",
+      "share_code": "ZNMN",
+      "title": "Zero Net Mon",
+      "summary": "Network monitor by port: devices, open ports, Wi-Fi security, USB, live traffic.",
+      "description": "Zero Net Mon looks at networks through the CardputerZero's own hardware. The home screen has one tile per port (Ethernet, Wi-Fi 2.4G, USB-A, USB-C) and each opens the tools that port can use.\n\n- NETSCN: address, gateway and its maker, DNS, latency to the gateway and the internet, Wi-Fi channel, signal and encryption, and whether the network sends you to a captive portal.\n- SUBSCN: every device on your subnet, shown on a radar as it answers, with names (DNS, mDNS, NetBIOS), makers and a guess at what each one is.\n- PRTSCN: open TCP ports on a device and what each service says about itself.\n- PRTANL: each open port explained in plain words, with a risk rating and advice.\n- AIRSCN: nearby Wi-Fi networks with channel, signal, authentication and cipher, and a warning for open or WEP networks.\n- LIVE: traffic graph and this device's own connections.\n- USBSCN: what is plugged into a USB port (type, driver, speed, power). A Wi-Fi dongle opens its own network tools by itself.\n- PCLINK / KEYB: with a PC on the device port, the CardputerZero can type into it as a USB keyboard.\n\nOnly private networks you are on are scanned, gently (plain TCP connections, no raw packets, no root). The Wi-Fi list is the normal scan every device makes. Sound effects are off until you press M. Arrows: F X Z C (no Fn needed).",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "System Tools"
+      ],
+      "author": {
+        "github": "zedward856-spec",
+        "display_name": "sl01220"
+      },
+      "version": "0.1.2",
+      "published_at": "2026-11-27T05:12:34+00:00",
+      "updated_at": "2026-11-27T05:12:34+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "zero-net-mon",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-net-mon_0.1.2_arm64.deb",
+        "md5": "e15a2dc90f6f2c4e9315143f5e35e6bb",
+        "sha256": "6ce09d5c148204983e1b36e52377fb82d4c69fcb143655fceb5af91747ff38ff",
+        "size": 841300
+      },
+      "depends": "libc6, libfreetype6, libjpeg62-turbo, libpng16-16t64, zlib1g",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-net-mon/icon-256.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-net-mon/screenshots/1-home.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-net-mon/screenshots/2-subscn-run.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-net-mon/screenshots/3-subscn.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-net-mon/screenshots/4-prtanl.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-net-mon/screenshots/5-port.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-net-mon/screenshots/6-airscn.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-net-mon/icon-256.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-net-mon/screenshots/1-home.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-net-mon/screenshots/2-subscn-run.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-net-mon/screenshots/3-subscn.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-net-mon/screenshots/4-prtanl.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-net-mon/screenshots/5-port.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-net-mon/screenshots/6-airscn.png"
       ]
     },
     {
