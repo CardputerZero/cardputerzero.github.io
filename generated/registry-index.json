@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T11:45:41+08:00",
+  "generated_at": "2026-11-27T11:53:52+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -12449,7 +12449,7 @@
       "share_code": "ZWAT",
       "title": "Zero Watt",
       "summary": "Battery power monitor for Cardputer Zero with a live watt curve and history",
-      "description": "Reads BQ27220 voltage, current, capacity and temperature every second, showing signed charge/discharge watts, net average, a 60-second live curve and a zoomable full-screen history.",
+      "description": "Reads real BQ27220 battery data at configurable 100–60000 ms intervals. Includes live power curves, cursor-centered history zoom, A/B range energy analysis, independent measurement sessions, and page-specific keyboard help.",
       "locales": {
         "zh-CN": {
           "summary": "适用于 Cardputer Zero 的电池功率监视器，带实时功率曲线和全屏历史页",
@@ -12469,9 +12469,9 @@
         "github": "hhzzzyy",
         "display_name": "hhzzzyy"
       },
-      "version": "0.1.0-rev1",
+      "version": "0.2.0-rev1",
       "published_at": "2026-11-17T12:00:16+00:00",
-      "updated_at": "2026-11-17T12:00:16+00:00",
+      "updated_at": "2026-11-27T03:51:40+00:00",
       "review": {
         "status": "approved"
       },
@@ -12480,37 +12480,39 @@
       "download": {
         "type": "deb",
         "package": "zero-watt",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-watt_0.1.0-rev1_arm64.deb",
-        "md5": "6d8639880fe5ae643318e99e31a17867",
-        "sha256": "dee8d52bf67c2f29e44caa6ec97fa14ded44976b78b20e9b66916c5ec8051a40",
-        "size": 529814
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-watt_0.2.0-rev1_arm64.deb",
+        "md5": "ca0ccf64c7c83ffb184bac4985725ab4",
+        "sha256": "5a5060e7efa8cf2f74205e099bbe6166bc6710bddeaa6118b7f2c8758b5f5751",
+        "size": 562150
       },
       "depends": "libc6, libstdc++6, libgcc-s1",
       "permissions": {
-        "camera": false,
-        "microphone": false,
-        "imu": false,
-        "network": false,
         "additional_hardware": false,
         "background_service": true,
-        "external_display": false
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": false
       },
       "risk_flags": [],
       "assets": {
-        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/zero-watt.png",
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/zero-watt_icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-compact-home.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-h-help.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-history.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-settings.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/screenshot-3.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/screenshot-4.png"
         ]
       },
-      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/zero-watt.png",
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/zero-watt_icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-compact-home.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-h-help.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-history.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/device-settings.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/screenshot-3.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-watt/screenshots/screenshot-4.png"
       ]
     },
     {
