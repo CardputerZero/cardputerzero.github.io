@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T07:34:50+08:00",
+  "generated_at": "2026-11-28T07:37:15+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -7244,8 +7244,26 @@
       "title": "LAN Devil",
       "summary": "Plug into a switch port: see switch, port, VLAN and mgmt IP",
       "description": "LAN Devil turns the CardputerZero's Ethernet port into a pocket network ID tool. Plug into any switch port and the home screen shows link speed and flaps, your DHCP lease and the switch's name, port, VLAN, voice VLAN, PoE class/wattage and management IP from LLDP/CDP, with alerts for speed/duplex mismatch and 802.1X ports that want a login. Tabs: DHCP probe that flags rogue servers; trunk VLAN discovery with one-key join (DHCP on the VLAN, then every tool runs there); ping with a live latency graph; a NET check (DNS on this port's servers, internet or captive portal, traceroute); ARP sweep with MAC vendors; a TCP port grid; and a CSV log of every port you plug into, with notes. Ctrl+S saves a screenshot. DHCP probe, NET check, ARP sweep and port scan send traffic; use them only on networks you are authorized to test.",
-      "locales": {},
-      "i18n": {},
+      "locales": {
+        "zh-CN": {
+          "title": "LAN Devil",
+          "summary": "插上交换机端口，即可查看交换机、端口、VLAN 和管理 IP"
+        },
+        "ja": {
+          "title": "LAN Devil",
+          "summary": "スイッチのポートに挿すだけで、スイッチ名・ポート・VLAN・管理IPを表示"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "LAN Devil",
+          "summary": "插上交换机端口，即可查看交换机、端口、VLAN 和管理 IP"
+        },
+        "ja": {
+          "title": "LAN Devil",
+          "summary": "スイッチのポートに挿すだけで、スイッチ名・ポート・VLAN・管理IPを表示"
+        }
+      },
       "categories": [
         "System Tools",
         "Security"
@@ -7256,7 +7274,7 @@
       },
       "version": "0.3.2",
       "published_at": "2026-11-23T19:56:50+00:00",
-      "updated_at": "2026-11-27T23:31:56+00:00",
+      "updated_at": "2026-11-27T23:33:49+00:00",
       "review": {
         "status": "approved"
       },
@@ -9291,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-28T07:34:50+08:00",
-      "updated_at": "2026-11-28T07:34:50+08:00",
+      "published_at": "2026-11-28T07:37:15+08:00",
+      "updated_at": "2026-11-28T07:37:15+08:00",
       "review": {
         "status": "approved"
       },
