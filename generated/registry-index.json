@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T05:56:15+08:00",
+  "generated_at": "2026-11-28T06:55:07+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9291,8 +9291,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-28T05:56:15+08:00",
-      "updated_at": "2026-11-28T05:56:15+08:00",
+      "published_at": "2026-11-28T06:55:07+08:00",
+      "updated_at": "2026-11-28T06:55:07+08:00",
       "review": {
         "status": "approved"
       },
@@ -10339,9 +10339,9 @@
         "github": "valleytechsolutions",
         "display_name": "Valleytech Solutions"
       },
-      "version": "1.2.5-1",
+      "version": "1.2.12",
       "published_at": "2026-11-22T15:32:35+00:00",
-      "updated_at": "2026-11-27T15:15:37+00:00",
+      "updated_at": "2026-11-27T22:52:16+00:00",
       "review": {
         "status": "approved"
       },
@@ -10350,10 +10350,10 @@
       "download": {
         "type": "deb",
         "package": "quartermaster",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/quartermaster_1.2.5-1_all.deb",
-        "md5": "76e0e9cf1e0078c440a52eb7fe831d8c",
-        "sha256": "3174acf379d7bb871206e1bac2723a27b3fb52c2f757b6f0b68e82c1685f3dba",
-        "size": 1470832
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/quartermaster_1.2.12_all.deb",
+        "md5": "f6d6cfb71d4881a6c7f19e2d956d43cd",
+        "sha256": "5e042cc40d170019a37fee296df363bb29c919b883d5b8b70d8b8f5cd29ccd68",
+        "size": 1523164
       },
       "depends": "python3 (>= 3.9), python3-pil, python3-numpy, python3-serial, python3-dbus, iw, iproute2, ca-certificates, network-manager, bluez, alsa-utils, rtl-sdr, python3-spidev, python3-smbus | python3-smbus2, python3-libgpiod, python3-cryptography, usb-modeswitch, firmware-realtek | gh0st-wifi, firmware-mediatek | gh0st-wifi, firmware-atheros | gh0st-wifi",
       "permissions": {
