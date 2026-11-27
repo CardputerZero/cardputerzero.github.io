@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T19:18:44+08:00",
+  "generated_at": "2026-11-27T19:48:43+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2871,9 +2871,9 @@
         "display_name": "云不冻",
         "github": "yunbudong11114"
       },
-      "version": "1.0.0-m5stack1",
+      "version": "1.0.1-m5stack1",
       "published_at": "2026-11-25T07:23:27+00:00",
-      "updated_at": "2026-11-27T10:53:37+00:00",
+      "updated_at": "2026-11-27T11:46:32+00:00",
       "review": {
         "status": "approved"
       },
@@ -2882,10 +2882,10 @@
       "download": {
         "type": "deb",
         "package": "colibri",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/colibri_1.0.0-m5stack1_arm64.deb",
-        "md5": "a22cedb4bccad0acb356e62d1d38303f",
-        "sha256": "12c2c71e7dc2a6fa364fb7d4cc9f82986c9539c07866e7665d8afdb2db182edd",
-        "size": 53340312
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/colibri_1.0.1-m5stack1_arm64.deb",
+        "md5": "f04d7bd4c88b5955890525315df19b39",
+        "sha256": "51a730e91cee799422716086b7448aab3c23a1cb549747fc7b0ce3b9679ef257",
+        "size": 53326460
       },
       "depends": "libc6, libgcc-s1, libfreetype6, libstdc++6, libgomp1, fonts-noto-cjk, alsa-utils, pulseaudio-utils",
       "permissions": {
@@ -9074,8 +9074,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T19:18:44+08:00",
-      "updated_at": "2026-11-27T19:18:44+08:00",
+      "published_at": "2026-11-27T19:48:43+08:00",
+      "updated_at": "2026-11-27T19:48:43+08:00",
       "review": {
         "status": "approved"
       },
