@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T23:18:18+08:00",
+  "generated_at": "2026-11-27T23:34:15+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1110,6 +1110,78 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/03-wifi-scan.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/04-terminal.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/brucecardputerzero/screenshots/05-theme.png"
+      ]
+    },
+    {
+      "uuid": "ff2ee91e-c334-5a5d-8b91-725c59c08294",
+      "share_code": "CALE",
+      "title": "Calendar",
+      "summary": "Compact calendar with ICS sync, lunar dates, regional holidays, and almanac.",
+      "description": "Calendar for CardputerZero with a compact month view, online ICS subscriptions, lunar dates, regional holidays, almanac and weather feeds. Manage optional subscriptions and choose English, Simplified Chinese or Japanese. Use F/Z/X/C to move through dates, Enter to open management and Esc to return; hold Esc to exit. Network access is used only for enabled online calendar feeds; cached data remains available offline.",
+      "locales": {
+        "zh-CN": {
+          "title": "日历",
+          "summary": "支持 ICS 订阅、农历、各地节假日、黄历和天气的便携日历。",
+          "description": "在 CardputerZero 上查看月历、农历和订阅日程；节假日、黄历和天气可按需启用。提供中、英、日界面，支持离线缓存。使用 F/Z/X/C 移动日期，Enter 打开管理，短按 Esc 返回，长按 Esc 退出。联网仅用于已启用的在线订阅。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "日历",
+          "summary": "支持 ICS 订阅、农历、各地节假日、黄历和天气的便携日历。",
+          "description": "在 CardputerZero 上查看月历、农历和订阅日程；节假日、黄历和天气可按需启用。提供中、英、日界面，支持离线缓存。使用 F/Z/X/C 移动日期，Enter 打开管理，短按 Esc 返回，长按 Esc 退出。联网仅用于已启用的在线订阅。"
+        }
+      },
+      "categories": [
+        "System Tools",
+        "Lifestyle"
+      ],
+      "author": {
+        "display_name": "Zhu Zhe",
+        "github": "zhuzhe1983"
+      },
+      "version": "0.1.5-m5stack1",
+      "published_at": "2026-05-14T23:16:38+08:00",
+      "updated_at": "2026-11-25T15:03:35+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/CardputerZero/Calendar",
+      "download": {
+        "type": "deb",
+        "package": "calendar",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/calendar_0.1.5-m5stack1_arm64.deb",
+        "md5": "7a3cd3cb197340a380d43f098e61657b",
+        "sha256": "f41f053a16903408d234f7cb8508a73b1d1feb7acf8a068de050e5431d46998a",
+        "size": 721336
+      },
+      "depends": "libc6 (>= 2.38), libstdc++6, libgcc-s1, libinput10, libxkbcommon0, libudev1, curl, ca-certificates, fonts-dejavu-core",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/calendar/calendar.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/calendar/screenshots/calendar-status-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/calendar/screenshots/calendar-subscriptions-zh-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/calendar/screenshots/calendar-source-edit-zh-320x170.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/calendar/screenshots/calendar-status-20260825-055239-320x170.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/calendar/calendar.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/calendar/screenshots/calendar-status-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/calendar/screenshots/calendar-subscriptions-zh-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/calendar/screenshots/calendar-source-edit-zh-320x170.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/calendar/screenshots/calendar-status-20260825-055239-320x170.png"
       ]
     },
     {
@@ -9137,8 +9209,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T23:18:18+08:00",
-      "updated_at": "2026-11-27T23:18:18+08:00",
+      "published_at": "2026-11-27T23:34:15+08:00",
+      "updated_at": "2026-11-27T23:34:15+08:00",
       "review": {
         "status": "approved"
       },
