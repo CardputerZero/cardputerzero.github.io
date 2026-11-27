@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T16:59:37+08:00",
+  "generated_at": "2026-11-27T17:02:56+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2914,6 +2914,82 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/controller/screenshots/screenshot-1.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/controller/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/controller/screenshots/screenshot-3.png"
+      ]
+    },
+    {
+      "uuid": "916f6c8b-5314-5a1a-9176-e13e4e369028",
+      "share_code": "AMAD",
+      "title": "Amadeus Zero",
+      "summary": "Steins;Gate 0 Amadeus AI companion with voice, 4-bucket memory & bilingual UI",
+      "description": "Handheld port of kirina77/Amadeus-mobile for CardputerZero. Features a 320x170 Steins;Gate 0 call stage with blink and lip-sync, SQLite WAL+FTS5 4-bucket memory with 12h emotional continuity, single-key Alibaba Cloud DashScope (qwen-plus + qwen3-asr-flash + qwen3-tts-flash / qwen3-tts-vc voice cloning), DeepSeek SSE, Push-to-Talk STT, built-in Pinyin IME, LAN phone Web input, and instant zh/en UI switching (press L).",
+      "locales": {
+        "zh-CN": {
+          "title": "Amadeus Zero",
+          "summary": "命运石之门0 Amadeus 掌上AI伙伴（千问/DeepSeek语音对话 + 四桶记忆 + 中英双语）",
+          "description": "基于开源项目 kirina77/Amadeus-mobile 移植重构的 CardputerZero 掌上 AI 伙伴。支持 320×170 通话舞台、口型情绪差分、SQLite 四桶记忆与 12 小时情绪连续性、阿里云百炼单 Key（对话+识别+声音复刻）与 DeepSeek 流式对话、按住说话 PTT、离线拼音候选条、局域网手机辅助输入，按 L 键实时切换简体中文与 English 界面。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "Amadeus Zero",
+          "summary": "命运石之门0 Amadeus 掌上AI伙伴（千问/DeepSeek语音对话 + 四桶记忆 + 中英双语）",
+          "description": "基于开源项目 kirina77/Amadeus-mobile 移植重构的 CardputerZero 掌上 AI 伙伴。支持 320×170 通话舞台、口型情绪差分、SQLite 四桶记忆与 12 小时情绪连续性、阿里云百炼单 Key（对话+识别+声音复刻）与 DeepSeek 流式对话、按住说话 PTT、离线拼音候选条、局域网手机辅助输入，按 L 键实时切换简体中文与 English 界面。"
+        }
+      },
+      "categories": [
+        "AI",
+        "Lifestyle"
+      ],
+      "author": {
+        "github": "LilMonsterOvO",
+        "display_name": "Haoran Liu"
+      },
+      "version": "0.2.0-1",
+      "published_at": "2026-11-26T19:58:24+00:00",
+      "updated_at": "2026-11-26T19:58:24+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "AGPL-3.0",
+      "source_repo": "https://github.com/LilMonsterOvO/CardputerZero-Amadeus",
+      "download": {
+        "type": "deb",
+        "package": "cp0-amadeus",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cp0-amadeus_0.2.0-1_arm64.deb",
+        "md5": "71ab4252209d4af391fca563264f1a19",
+        "sha256": "f49e64194545193c69e9f5f8b7679977d927de9948e1c70a2d98397f3b835f41",
+        "size": 260216
+      },
+      "depends": "python3 (>= 3.10), python3-pygame, python3-numpy, python3-psutil, alsa-utils",
+      "permissions": {
+        "camera": false,
+        "microphone": true,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-amadeus/icon_256.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-amadeus/screenshots/01_call.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-amadeus/screenshots/01_call_en.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-amadeus/screenshots/02_chat.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-amadeus/screenshots/03_mem.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-amadeus/screenshots/04_sleep.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-amadeus/screenshots/05_sys_en.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-amadeus/icon_256.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-amadeus/screenshots/01_call.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-amadeus/screenshots/01_call_en.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-amadeus/screenshots/02_chat.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-amadeus/screenshots/03_mem.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-amadeus/screenshots/04_sleep.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cp0-amadeus/screenshots/05_sys_en.png"
       ]
     },
     {
