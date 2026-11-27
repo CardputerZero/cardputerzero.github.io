@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T15:59:34+08:00",
+  "generated_at": "2026-11-27T16:05:35+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2592,6 +2592,96 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/screenshots/editor.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/screenshots/simulator.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/chainled/screenshots/settings.png"
+      ]
+    },
+    {
+      "uuid": "7dd6ee55-2cdf-5ebb-b5a6-e7ac2272cd44",
+      "share_code": "CLAW",
+      "title": "Clawputer",
+      "summary": "Claude Code in your pocket: a chat app made for the Cardputer (unofficial)",
+      "description": "Clawputer is a pocket chat app for Anthropic's Claude Code, built for the CardputerZero's 320x170 screen and keyboard.\n\n- Clean chat view: tool calls squashed to one line, command output and code in tidy boxes\n- Permission prompts (y / n / always) and Claude's multiple-choice questions\n- Help (F1), settings (F2): model, effort, permissions, font size and more; chat history (F3)\n- Drafts autosave, messages queue while Claude is busy\n- Easy first-run setup: installs Claude Code with Anthropic's official installer, then sign in by scanning a QR code with your phone, no typing long codes\n- Remote mode: run Claude on your PC over SSH (works with Tailscale) and use the Cardputer as the screen, fast and with no RAM limits. Set up with one short command on the PC\n- Optional RAM boost: pauses background services while Claude runs on the Cardputer\n- Terminal mode for the full Claude Code interface\n\nNeeds a Claude subscription (Pro/Max) or an Anthropic Console account. Not affiliated with or endorsed by Anthropic. Claude and Claude Code are trademarks of Anthropic.",
+      "locales": {
+        "en": {
+          "title": "Clawputer",
+          "summary": "Claude Code in your pocket: a chat app made for the Cardputer (unofficial)"
+        },
+        "zh-CN": {
+          "title": "Clawputer",
+          "summary": "口袋里的 Claude Code：专为 Cardputer 打造的聊天应用（非官方）"
+        },
+        "ja": {
+          "title": "Clawputer",
+          "summary": "ポケットの中の Claude Code：Cardputer 向けチャットアプリ（非公式）"
+        }
+      },
+      "i18n": {
+        "en": {
+          "title": "Clawputer",
+          "summary": "Claude Code in your pocket: a chat app made for the Cardputer (unofficial)"
+        },
+        "zh-CN": {
+          "title": "Clawputer",
+          "summary": "口袋里的 Claude Code：专为 Cardputer 打造的聊天应用（非官方）"
+        },
+        "ja": {
+          "title": "Clawputer",
+          "summary": "ポケットの中の Claude Code：Cardputer 向けチャットアプリ（非公式）"
+        }
+      },
+      "categories": [
+        "AI",
+        "Development"
+      ],
+      "author": {
+        "github": "RubberDingyRapids",
+        "display_name": "RubberDingyRapids"
+      },
+      "version": "0.2.1",
+      "published_at": "2026-11-25T21:50:29+00:00",
+      "updated_at": "2026-11-25T21:50:29+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/RubberDingyRapids/clawputer",
+      "download": {
+        "type": "deb",
+        "package": "clawputer",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/clawputer_0.2.1_all.deb",
+        "md5": "30666b8014de3bf7e3a8d993d87096bc",
+        "sha256": "5bfef77f813a5c3b2d1914500fcfee16c4229163d34ebab280dda40bb4303818",
+        "size": 37936
+      },
+      "depends": "python3, python3-pil, python3-numpy, python3-qrcode, curl, openssh-client, fonts-dejavu-core",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/1-chat.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/2-permission.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/3-question.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/4-start.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/5-history.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/6-signin.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/1-chat.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/2-permission.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/3-question.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/4-start.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/5-history.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/6-signin.png"
       ]
     },
     {
