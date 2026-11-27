@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T00:34:29+08:00",
+  "generated_at": "2026-11-28T01:09:06+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9291,8 +9291,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-28T00:34:29+08:00",
-      "updated_at": "2026-11-28T00:34:29+08:00",
+      "published_at": "2026-11-28T01:09:06+08:00",
+      "updated_at": "2026-11-28T01:09:06+08:00",
       "review": {
         "status": "approved"
       },
@@ -12956,7 +12956,7 @@
       "share_code": "WDGC",
       "title": "WatchDogsGo (beta)",
       "summary": "Watch Dogs-style hacking game with real WiFi/BLE/LoRa/SDR tooling",
-      "description": "An open-world hacking RPG that overlays real WiFi/BLE/LoRa/SDR security tooling on a retro pyxel HUD. Wardrive with the device's own WiFi/BLE radio or an ESP32, track GPS position on a live map, run LoRa/MeshCore mesh networking off a Cap LoRa module, and pick up ADS-B/433 MHz traffic with an RTL-SDR dongle — all wrapped in a Watch Dogs-style world map, XP, and badge progression. Ported from the ClockworkPi uConsole original (github.com/LOCOSP/WatchDogsGo) to run as an installed app on the CardputerZero's own launcher. Still in beta: see the project README for current status and known limitations (e.g. ADS-B needs one manual extra step, since Debian doesn't package a working dump1090).",
+      "description": "An open-world hacking RPG that overlays real WiFi/BLE/LoRa/SDR security tooling on a retro pyxel HUD. Wardrive with the device's own WiFi/BLE radio or an ESP32, track GPS position on a live map, run LoRa/MeshCore mesh networking off a Cap LoRa module, and pick up ADS-B/433 MHz traffic with an RTL-SDR dongle — all wrapped in a Watch Dogs-style world map, XP, and badge progression. Ported from the ClockworkPi uConsole original (github.com/LOCOSP/WatchDogsGo) to run as an installed app on the CardputerZero's own launcher. Still in beta: see the project README for current status.",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -12967,9 +12967,9 @@
         "github": "codemonkeybr",
         "display_name": "Tesso Codemonkey"
       },
-      "version": "0.1.0-1",
+      "version": "0.1.1-1",
       "published_at": "2026-11-26T20:37:46+00:00",
-      "updated_at": "2026-11-26T20:37:46+00:00",
+      "updated_at": "2026-11-27T17:05:54+00:00",
       "review": {
         "status": "approved"
       },
@@ -12978,10 +12978,10 @@
       "download": {
         "type": "deb",
         "package": "watchdogsgo-cardputerzero",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/watchdogsgo-cardputerzero_0.1.0-1_arm64.deb",
-        "md5": "77ed2078c2de43d36e2b6727320b51c0",
-        "sha256": "3a58a95c4039e972d1032b46b77e7c83d7c703bbbfdf9959543b6b3a113fffe9",
-        "size": 10723666
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/watchdogsgo-cardputerzero_0.1.1-1_arm64.deb",
+        "md5": "c08202102e284ed7da3098ba730070eb",
+        "sha256": "98861010d39e8447f6951bd9e7f72eeb286d1ab99014c3b552a6cace05037ee3",
+        "size": 10963810
       },
       "depends": "python3, python3-serial, python3-pil, python3-cryptography, python3-scapy, python3-bleak, python3-nacl, python3-netifaces, python3-dbus, python3-gi, python3-rpi-lgpio, python3-lgpio, python3-libgpiod, python3-spidev, python3-smbus2, network-manager, iw",
       "permissions": {
