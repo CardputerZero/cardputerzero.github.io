@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T16:17:39+08:00",
+  "generated_at": "2026-11-27T16:22:17+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2362,6 +2362,63 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardshot/screenshots/02-gallery.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardshot/screenshots/03-preview.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardshot/screenshots/04-settings.png"
+      ]
+    },
+    {
+      "uuid": "32eb6d76-570d-56dc-bf0e-5bdc8601509f",
+      "share_code": "CSTR",
+      "title": "CardStar",
+      "summary": "Unofficial AllStar (IAX2) client: push-to-talk and DTMF for your node",
+      "description": "Connect to your own AllStar node over IAX2. Needs an IAX2 login on a server you are allowed to use. The secret is stored as plain text in a private file. Stop transmitting and quit with q: holding Esc/Home force-quits and can leave the node transmitting until the server times out. A valid amateur radio license is required to transmit. Not affiliated with AllStarLink.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Radio & Comms"
+      ],
+      "author": {
+        "display_name": "TheBeardedHamm",
+        "github": "hammwl55-creator"
+      },
+      "version": "0.1.6",
+      "published_at": "2026-11-26T04:35:24+00:00",
+      "updated_at": "2026-11-26T04:35:24+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-2.0-only",
+      "source_repo": "https://github.com/hammwl55-creator/cardstar",
+      "download": {
+        "type": "deb",
+        "package": "cardstar",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardstar_0.1.6_all.deb",
+        "md5": "d81c6b14ddb03d4f45b8ca3a1b01d816",
+        "sha256": "e4c8612ac910670bca5e9f97fbcf431c3d664020efa1c4535d84290a5d00a626",
+        "size": 91136
+      },
+      "depends": "python3 (>= 3.11), pulseaudio-utils, alsa-utils",
+      "permissions": {
+        "camera": false,
+        "microphone": true,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardstar/icon_256.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardstar/screenshots/launcher.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardstar/screenshots/setup.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardstar/screenshots/connection-failed.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardstar/icon_256.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardstar/screenshots/launcher.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardstar/screenshots/setup.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardstar/screenshots/connection-failed.png"
       ]
     },
     {
