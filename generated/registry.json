@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T16:25:37+08:00",
+  "generated_at": "2026-11-27T16:44:47+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -14467,6 +14467,65 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/screenshots/08-osc-columns.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/screenshots/14-library.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotracker/screenshots/01-home.png"
+      ]
+    },
+    {
+      "uuid": "ffd1e0fb-4788-5ffc-9016-fb3074607613",
+      "share_code": "ZTUB",
+      "title": "ZeroTube",
+      "summary": "A small, fast YouTube player: search, your feeds, one key to watch",
+      "description": "An unofficial YouTube client sized for the 320x170 screen. Three tabs (For you, Subs, Account), search, compact lists with tiny thumbnails, and one key to start watching. Plays 240p H.264 with sound in software via FFmpeg, seeks with the arrow keys. Search and playback work signed out; to see your own feeds, send a cookies.txt from a phone or computer to the QR-code page on the Account tab. Uses yt-dlp, which the app installs into its own folder on first launch (about 60 MB, needs internet) and can update with U. Not made by or affiliated with Google or YouTube.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Media"
+      ],
+      "author": {
+        "github": "shrimpapplepro",
+        "display_name": "shrimpapplepro"
+      },
+      "version": "0.1.2-m5stack1",
+      "published_at": "2026-11-26T14:01:41+00:00",
+      "updated_at": "2026-11-26T14:01:41+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/shrimpapplepro/zerotube",
+      "download": {
+        "type": "deb",
+        "package": "zerotube",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerotube_0.1.2-m5stack1_arm64.deb",
+        "md5": "57b1b7665f95c9d24970472b7ede9c2b",
+        "sha256": "6db1d64988530dbbded1c645d79893af29b11e6a744f259991645da0b5156e7d",
+        "size": 2750082
+      },
+      "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, python3, python3-venv, python3-pip, ca-certificates, libavformat61, libavcodec61, libavutil59, libswscale8, libswresample5, libpulse0",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotube/zerotube.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotube/screenshots/results.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotube/screenshots/search.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotube/screenshots/player.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotube/screenshots/account.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotube/zerotube.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotube/screenshots/results.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotube/screenshots/search.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotube/screenshots/player.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerotube/screenshots/account.png"
       ]
     },
     {
