@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T17:39:47+08:00",
+  "generated_at": "2026-11-27T17:42:18+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8847,8 +8847,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T17:39:47+08:00",
-      "updated_at": "2026-11-27T17:39:47+08:00",
+      "published_at": "2026-11-27T17:42:18+08:00",
+      "updated_at": "2026-11-27T17:42:18+08:00",
       "review": {
         "status": "approved"
       },
@@ -13705,9 +13705,9 @@
         "display_name": "Software Amusements",
         "github": "FuzzyDweeb"
       },
-      "version": "1.2.18-1",
+      "version": "1.2.19-1",
       "published_at": "2026-11-14T13:23:30+00:00",
-      "updated_at": "2026-11-27T09:15:22+00:00",
+      "updated_at": "2026-11-27T09:40:07+00:00",
       "review": {
         "status": "approved"
       },
@@ -13716,10 +13716,10 @@
       "download": {
         "type": "deb",
         "package": "zerodaw",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerodaw_1.2.18-1_arm64.deb",
-        "md5": "697fea23fe584dd3a7cccf13f19f4e42",
-        "sha256": "4411da60d7716fd4d7db31fd41d7e94c234f31000d1a1457635c75ac34df2817",
-        "size": 130036
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerodaw_1.2.19-1_arm64.deb",
+        "md5": "61fe9fd27b23e05f71c35e1333ab0155",
+        "sha256": "c451ed67b9881873358681acd0907c285f7ae1a76af737ade0cfb99d5cb11eae",
+        "size": 130196
       },
       "depends": "libc6 (>= 2.31), libasound2",
       "permissions": {
