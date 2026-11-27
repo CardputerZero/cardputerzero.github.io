@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T21:34:02+08:00",
+  "generated_at": "2026-11-27T21:45:30+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9137,8 +9137,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T21:34:02+08:00",
-      "updated_at": "2026-11-27T21:34:02+08:00",
+      "published_at": "2026-11-27T21:45:30+08:00",
+      "updated_at": "2026-11-27T21:45:30+08:00",
       "review": {
         "status": "approved"
       },
@@ -14772,9 +14772,9 @@
         "github": "baltamir1978",
         "display_name": "baltamir1978"
       },
-      "version": "0.1.5-rev1",
+      "version": "0.1.6-rev1",
       "published_at": "2026-11-22T19:16:36+00:00",
-      "updated_at": "2026-11-26T07:24:07+00:00",
+      "updated_at": "2026-11-27T13:42:53+00:00",
       "review": {
         "status": "approved"
       },
@@ -14783,10 +14783,10 @@
       "download": {
         "type": "deb",
         "package": "zeropower",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zeropower_0.1.5-rev1_arm64.deb",
-        "md5": "e7c326eaf9ebd729d2d630b9b1ec9ade",
-        "sha256": "e429eb1aa31f23d703b52d46db685a97e184ab79d44f6187f24c777132ae94b7",
-        "size": 1075314
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zeropower_0.1.6-rev1_arm64.deb",
+        "md5": "49bd71a31bee170c9039a3f46f31232a",
+        "sha256": "0e206b12d6cd8984018a1cb6743d4f831b4841c9bab838d1988db512e734e87d",
+        "size": 1079444
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, sudo, pulseaudio-utils",
       "permissions": {
