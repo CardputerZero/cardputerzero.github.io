@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T23:34:15+08:00",
+  "generated_at": "2026-11-27T23:42:55+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2004,6 +2004,88 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-4.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputer-zero-radio/screenshots/screenshot-5.png"
+      ]
+    },
+    {
+      "uuid": "fdd78760-563e-5401-92e0-961fd5c1bc07",
+      "share_code": "CADV",
+      "title": "CardputerAdv",
+      "summary": "Experimental Cardputer-Adv emulator; slow and noticeably laggy.",
+      "description": "Experimental app: currently slow and noticeably laggy, including FAST mode. Expect delays in firmware startup, screen updates and keyboard response. This release is for experimentation and compatibility testing, not smooth real-time use.\n\nAn experimental native Cardputer-Adv firmware emulator for the CardputerZero LCD. Includes the official M5Stack UserDemo, Wordle and UIFlow2 images with their license notices, persistent local flash, firmware cache and APPLaunch shortcuts. Optional network access browses and downloads the official firmware library. Use F/X to select, Enter to run, short Esc to pause or go back, and hold Esc to exit. Accurate mode is substantially slower than the real device. FAST is an explicit timing approximation for menus and games; it disables live microphone input and physical HAT I/O. Hardware support is partial: selected I2C/SPI/GPIO bridges and local audio are implemented, IMU is modeled, and UART, microSD, IR and radio bridges are unavailable. Firmware compatibility and audio/microphone behavior vary; this release does not promise real-time execution or full hardware compatibility.",
+      "locales": {
+        "zh-CN": {
+          "title": "CardputerAdv",
+          "summary": "实验性 Cardputer-Adv 模拟器，目前运行明显卡顿。",
+          "description": "实验性应用：目前运行明显卡顿，包括 FAST 模式。固件启动、画面更新和按键响应可能有明显延迟；当前版本用于体验与兼容性验证，不保证流畅运行或达到真实硬件速度。\n\n实验性的原生 Cardputer-Adv 模拟器，内置官方 UserDemo、Wordle 和 UIFlow2 固件及许可说明，支持本地存档、固件缓存和启动器快捷项，可选联网访问官方固件库。F/X 选择，Enter 运行，短按 Esc 暂停或返回，长按 Esc 退出。准确模式明显慢于真机；FAST 是面向菜单和游戏的近似计时模式，会禁用实时麦克风和外接 HAT 读写。硬件与固件兼容范围有限，不保证实时速度或完整硬件兼容。"
+        },
+        "ja": {
+          "title": "CardputerAdv",
+          "summary": "実験的な Cardputer-Adv エミュレーター。動作は重く、カクつきます。",
+          "description": "実験的なアプリです。FAST モードを含め、動作が重く、カクつきます。ファームウェアの起動、画面更新、キー入力に遅延があります。体験と互換性検証のためのアプリであり、滑らかなリアルタイム動作や実機と同等の速度を保証しません。"
+        }
+      },
+      "i18n": {
+        "zh-CN": {
+          "title": "CardputerAdv",
+          "summary": "实验性 Cardputer-Adv 模拟器，目前运行明显卡顿。",
+          "description": "实验性应用：目前运行明显卡顿，包括 FAST 模式。固件启动、画面更新和按键响应可能有明显延迟；当前版本用于体验与兼容性验证，不保证流畅运行或达到真实硬件速度。\n\n实验性的原生 Cardputer-Adv 模拟器，内置官方 UserDemo、Wordle 和 UIFlow2 固件及许可说明，支持本地存档、固件缓存和启动器快捷项，可选联网访问官方固件库。F/X 选择，Enter 运行，短按 Esc 暂停或返回，长按 Esc 退出。准确模式明显慢于真机；FAST 是面向菜单和游戏的近似计时模式，会禁用实时麦克风和外接 HAT 读写。硬件与固件兼容范围有限，不保证实时速度或完整硬件兼容。"
+        },
+        "ja": {
+          "title": "CardputerAdv",
+          "summary": "実験的な Cardputer-Adv エミュレーター。動作は重く、カクつきます。",
+          "description": "実験的なアプリです。FAST モードを含め、動作が重く、カクつきます。ファームウェアの起動、画面更新、キー入力に遅延があります。体験と互換性検証のためのアプリであり、滑らかなリアルタイム動作や実機と同等の速度を保証しません。"
+        }
+      },
+      "categories": [
+        "Emulators",
+        "Development"
+      ],
+      "author": {
+        "display_name": "Zhu Zhe",
+        "github": "zhuzhe1983"
+      },
+      "version": "0.1.5-m5stack2",
+      "published_at": "2026-11-25T15:06:14+00:00",
+      "updated_at": "2026-11-26T03:18:13+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "cardputeradv",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardputeradv_0.1.5-m5stack2_arm64.deb",
+        "md5": "32d1e572e0cf52489a7e8a5ae5443d08",
+        "sha256": "ccdf23accd24b687ce5f80c2fbd9b55cdaa3cf80a6f78d2d4ce64f6222efeede",
+        "size": 45240700
+      },
+      "depends": "libc6 (>= 2.28), libstdc++6 (>= 8.3), libgcc-s1 | libgcc1",
+      "permissions": {
+        "camera": false,
+        "microphone": true,
+        "imu": false,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputeradv/cardputeradv.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputeradv/screenshots/library.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputeradv/screenshots/wordle.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputeradv/screenshots/cache.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputeradv/screenshots/settings.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputeradv/cardputeradv.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputeradv/screenshots/library.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputeradv/screenshots/wordle.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputeradv/screenshots/cache.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardputeradv/screenshots/settings.png"
       ]
     },
     {
@@ -9209,8 +9291,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T23:34:15+08:00",
-      "updated_at": "2026-11-27T23:34:15+08:00",
+      "published_at": "2026-11-27T23:42:55+08:00",
+      "updated_at": "2026-11-27T23:42:55+08:00",
       "review": {
         "status": "approved"
       },
