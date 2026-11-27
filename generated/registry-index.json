@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T17:24:43+08:00",
+  "generated_at": "2026-11-27T17:29:41+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8847,8 +8847,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T17:24:43+08:00",
-      "updated_at": "2026-11-27T17:24:43+08:00",
+      "published_at": "2026-11-27T17:29:41+08:00",
+      "updated_at": "2026-11-27T17:29:41+08:00",
       "review": {
         "status": "approved"
       },
@@ -12763,6 +12763,66 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-cellular/screenshots/screenshot-2.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-cellular/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-cellular/screenshots/screenshot-4.png"
+      ]
+    },
+    {
+      "uuid": "4ca3d02e-d4de-5afe-9236-56d8f13abcdd",
+      "share_code": "ZIMX",
+      "title": "Zero IMX",
+      "summary": "Photo network for CardputerZero: shoot, edit, post, follow and message.",
+      "description": "Zero IMX is a photo-sharing app made only for the CardputerZero. Every photo on it was taken with the device's own IMX219 camera.\n\n- Camera: a fast viewfinder with a timer, then an editor with brightness, contrast, colour, warmth and ready-made looks (cyberpunk, landscape, portrait, night, mono, vintage, vivid).\n- Feed: flip through photos with left and right, open the details, like, comment, zoom.\n- People: search, follow, and see only the people you follow if you want.\n- Messages: private messages with people who follow you. Block and report are built in.\n- Codes: show your own QR code to add a friend, or scan one. Scan the code on the website to sign in there without typing a key.\n- Badges and name colours, including badges for Kickstarter units.\n\nThere is also a website for looking at the feed from a phone or PC. Posting is only possible from a CardputerZero.\n\nZero IMX is run by one person as a hobby project. Photos are checked against the rules in the app, and anything reported is reviewed. The app needs a network connection and uses curl.",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Media",
+        "Lifestyle"
+      ],
+      "author": {
+        "github": "zedward856-spec",
+        "display_name": "sl01220"
+      },
+      "version": "0.10.2",
+      "published_at": "2026-11-26T23:01:33+00:00",
+      "updated_at": "2026-11-26T23:01:33+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "",
+      "download": {
+        "type": "deb",
+        "package": "zero-imx",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-imx_0.10.2_arm64.deb",
+        "md5": "e1b3c8b9001bf8838e18e379410a24d4",
+        "sha256": "0f93c2ffacbd8948689eb8da6d8314d0d8de842a7a16631ea39ac2b739ee3def",
+        "size": 1249516
+      },
+      "depends": "libc6, libfreetype6, libjpeg62-turbo, libpng16-16t64, zlib1g, curl",
+      "permissions": {
+        "camera": true,
+        "microphone": false,
+        "imu": true,
+        "network": true,
+        "additional_hardware": false,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-imx/icon-256.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-imx/screenshots/1-feed.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-imx/screenshots/2-profile.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-imx/screenshots/3-chat.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-imx/screenshots/4-badges.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-imx/icon-256.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-imx/screenshots/1-feed.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-imx/screenshots/2-profile.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-imx/screenshots/3-chat.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zero-imx/screenshots/4-badges.png"
       ]
     },
     {
