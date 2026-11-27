@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T11:53:52+08:00",
+  "generated_at": "2026-11-27T12:02:16+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -825,9 +825,9 @@
         "display_name": "Bryan Feller",
         "github": "bfeller"
       },
-      "version": "0.2.1",
+      "version": "0.2.2",
       "published_at": "2026-11-23T01:36:08+00:00",
-      "updated_at": "2026-11-27T03:42:29+00:00",
+      "updated_at": "2026-11-27T03:59:46+00:00",
       "review": {
         "status": "approved"
       },
@@ -836,10 +836,10 @@
       "download": {
         "type": "deb",
         "package": "beamhound",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/beamhound_0.2.1_arm64.deb",
-        "md5": "b954a44af9e79dc81c549829ce59fcdd",
-        "sha256": "8da2c500a9624ce766beb003651dd482f41560667d4e08b30bd754daa58b99e6",
-        "size": 670548
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/beamhound_0.2.2_arm64.deb",
+        "md5": "943850867aadb01013124adce87edd35",
+        "sha256": "51a81765fc0d1f12fe9aa972a75dadc9b99de36f05be407bbebde6ecb54d4824",
+        "size": 671720
       },
       "depends": "libc6 (>= 2.34), curl, tar",
       "permissions": {
