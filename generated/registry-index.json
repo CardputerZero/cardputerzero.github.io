@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T17:36:41+08:00",
+  "generated_at": "2026-11-27T17:39:47+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -8847,8 +8847,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T17:36:41+08:00",
-      "updated_at": "2026-11-27T17:36:41+08:00",
+      "published_at": "2026-11-27T17:39:47+08:00",
+      "updated_at": "2026-11-27T17:39:47+08:00",
       "review": {
         "status": "approved"
       },
@@ -13475,6 +13475,96 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroamp/screenshots/screenshot-3.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroamp/screenshots/screenshot-4.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zeroamp/screenshots/screenshot-5.png"
+      ]
+    },
+    {
+      "uuid": "1d7a227d-58a8-5d11-a0fd-1e8c799fbf15",
+      "share_code": "ZCRT",
+      "title": "ZeroCart",
+      "summary": "Read and flash Game Boy, GBA and Mega Drive cartridges from the CardputerZero",
+      "description": "ZeroCart turns the CardputerZero into an all-in-one cartridge reader and flasher.\n\n- Systems: Game Boy, Game Boy Color, Game Boy Advance and Mega Drive. The first screen sets the mode and the voltage.\n- Readers, found automatically over USB (one at a time):\n  - GBFlash / GBxCart RW: Game Boy, Game Boy Color and Game Boy Advance (ROM and save read, ROM flash, save write). Sets 5 V / 3.3 V itself.\n  - Chisflash (original firmware): Game Boy, Game Boy Color and Game Boy Advance. It cannot cut the power, so its saves are marked \"not verified\". Flashing a GBA ROM is slow on some chips (about 40 minutes for 2 MiB).\n  - MD Flasher (Krikzz FlashKit MD): Mega Drive.\n- Read ROMs (checked against the FlashGBX database or the header checksum) and saves; a Game Boy read that comes back wrong is put right on its own.\n- Flash a ROM on rewritable cartridges (Game Boy MBC5, GBA, Mega Drive) and write saves. Everything that changes a cartridge asks for a file and a confirmation, backs up what it overwrites from two agreeing reads, and reads the result back. Files received with ZeroSend land in ~/zerocart, where the flash screens look.\n- Built-in ZeroSend: LocalSend file sharing to send dumps and saves to a phone or a computer, or receive files, with an accept/decline on screen.\n- Famicom-style interface in French, English, Japanese and Simplified Chinese.\n\nYou need one of the readers above plugged into the USB port. The Game Boy and GBA protocol and chip databases come from FlashGBX by Lesserkuma.",
+      "locales": {
+        "fr": {
+          "title": "ZeroCart",
+          "summary": "Lecteur et flasher de cartouches Game Boy, GBA et Mega Drive pour le CardputerZero"
+        },
+        "ja": {
+          "title": "ZeroCart",
+          "summary": "CardputerZero用 ゲームボーイ/GBA/メガドライブ カートリッジのリーダー＆フラッシャー"
+        },
+        "zh-CN": {
+          "title": "ZeroCart",
+          "summary": "CardputerZero 的 Game Boy / GBA / Mega Drive 卡带读取与烧录工具"
+        }
+      },
+      "i18n": {
+        "fr": {
+          "title": "ZeroCart",
+          "summary": "Lecteur et flasher de cartouches Game Boy, GBA et Mega Drive pour le CardputerZero"
+        },
+        "ja": {
+          "title": "ZeroCart",
+          "summary": "CardputerZero用 ゲームボーイ/GBA/メガドライブ カートリッジのリーダー＆フラッシャー"
+        },
+        "zh-CN": {
+          "title": "ZeroCart",
+          "summary": "CardputerZero 的 Game Boy / GBA / Mega Drive 卡带读取与烧录工具"
+        }
+      },
+      "categories": [
+        "System Tools",
+        "Hardware & IoT"
+      ],
+      "author": {
+        "github": "sukoshi1507",
+        "display_name": "sukoshi1507"
+      },
+      "version": "1.0.5-rev1",
+      "published_at": "2026-11-26T23:08:29+00:00",
+      "updated_at": "2026-11-26T23:08:29+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "GPL-3.0-or-later",
+      "source_repo": "https://github.com/sukoshi1507/zerocart",
+      "download": {
+        "type": "deb",
+        "package": "zerocart",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerocart_1.0.5-rev1_arm64.deb",
+        "md5": "8bfb9263ca878186f2063a1a713bae05",
+        "sha256": "a88c82935fc9a5f43ceb030e12044a87cdeeb4e6c24911ceb794f62517114583",
+        "size": 3047268
+      },
+      "depends": "fonts-noto-cjk",
+      "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
+        "additional_hardware": true,
+        "background_service": false,
+        "external_display": false
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerocart/zerocart_store.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerocart/screenshots/11-systeme-gb.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerocart/screenshots/14-lecteurs.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerocart/screenshots/2-actions.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerocart/screenshots/3-progression.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerocart/screenshots/6-outils.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerocart/screenshots/7-english-actions.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerocart/zerocart_store.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerocart/screenshots/11-systeme-gb.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerocart/screenshots/14-lecteurs.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerocart/screenshots/2-actions.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerocart/screenshots/3-progression.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerocart/screenshots/6-outils.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerocart/screenshots/7-english-actions.png"
       ]
     },
     {
