@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T02:35:12+08:00",
+  "generated_at": "2026-11-28T02:50:43+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9291,8 +9291,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-28T02:35:12+08:00",
-      "updated_at": "2026-11-28T02:35:12+08:00",
+      "published_at": "2026-11-28T02:50:43+08:00",
+      "updated_at": "2026-11-28T02:50:43+08:00",
       "review": {
         "status": "approved"
       },
@@ -12967,9 +12967,9 @@
         "github": "codemonkeybr",
         "display_name": "Tesso Codemonkey"
       },
-      "version": "0.1.1-1",
+      "version": "0.1.1-2",
       "published_at": "2026-11-26T20:37:46+00:00",
-      "updated_at": "2026-11-27T17:05:54+00:00",
+      "updated_at": "2026-11-27T18:47:55+00:00",
       "review": {
         "status": "approved"
       },
@@ -12978,10 +12978,10 @@
       "download": {
         "type": "deb",
         "package": "watchdogsgo-cardputerzero",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/watchdogsgo-cardputerzero_0.1.1-1_arm64.deb",
-        "md5": "c08202102e284ed7da3098ba730070eb",
-        "sha256": "98861010d39e8447f6951bd9e7f72eeb286d1ab99014c3b552a6cace05037ee3",
-        "size": 10963810
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/watchdogsgo-cardputerzero_0.1.1-2_arm64.deb",
+        "md5": "dcfdeccc23c6a1814d54a553462cc8ee",
+        "sha256": "4f664d8d83079f2cb0b53c77b753afceb87a3f20ea3fca88fb2d0fddedca3362",
+        "size": 10963328
       },
       "depends": "python3, python3-serial, python3-pil, python3-cryptography, python3-scapy, python3-bleak, python3-nacl, python3-netifaces, python3-dbus, python3-gi, python3-rpi-lgpio, python3-lgpio, python3-libgpiod, python3-spidev, python3-smbus2, network-manager, iw",
       "permissions": {
