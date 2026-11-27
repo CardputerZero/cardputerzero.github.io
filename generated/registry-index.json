@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T21:28:36+08:00",
+  "generated_at": "2026-11-27T21:31:29+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9137,8 +9137,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T21:28:36+08:00",
-      "updated_at": "2026-11-27T21:28:36+08:00",
+      "published_at": "2026-11-27T21:31:29+08:00",
+      "updated_at": "2026-11-27T21:31:29+08:00",
       "review": {
         "status": "approved"
       },
@@ -11734,9 +11734,9 @@
         "display_name": "Software Amusements",
         "github": "FuzzyDweeb"
       },
-      "version": "1.5",
+      "version": "1.5.1",
       "published_at": "2026-11-27T08:55:30+00:00",
-      "updated_at": "2026-11-27T10:49:31+00:00",
+      "updated_at": "2026-11-27T13:29:04+00:00",
       "review": {
         "status": "approved"
       },
@@ -11745,10 +11745,10 @@
       "download": {
         "type": "deb",
         "package": "teevee",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/teevee_1.5_arm64.deb",
-        "md5": "8f45a467ff7176b69ea500597a165514",
-        "sha256": "12d0095283f62330475fca9adf8e4acf582f7466e212858980501e054b7b7c88",
-        "size": 2378654
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/teevee_1.5.1_arm64.deb",
+        "md5": "3a54463e12041b4de06d1d58e35de396",
+        "sha256": "41946fc5e76a7ec5a3cf3d2cc34c8869228f85351a8c39a3276d0007a4a7f45a",
+        "size": 2379574
       },
       "depends": "libc6 (>= 2.29)",
       "permissions": {
