@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T02:50:43+08:00",
+  "generated_at": "2026-11-28T05:56:15+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2867,7 +2867,7 @@
       "share_code": "CLAW",
       "title": "Clawputer",
       "summary": "Claude Code in your pocket: a chat app made for the Cardputer (unofficial)",
-      "description": "Clawputer is a pocket chat app for Anthropic's Claude Code, built for the CardputerZero's 320x170 screen and keyboard.\n\n- Clean chat view: tool calls squashed to one line, command output and code in tidy boxes\n- Permission prompts (y / n / always) and Claude's multiple-choice questions\n- Help (F1), settings (F2): model, effort, permissions, font size and more; chat history (F3)\n- Drafts autosave, messages queue while Claude is busy\n- Easy first-run setup: installs Claude Code with Anthropic's official installer, then sign in by scanning a QR code with your phone, no typing long codes\n- Remote mode: run Claude on your PC over SSH (works with Tailscale) and use the Cardputer as the screen, fast and with no RAM limits. Set up with one short command on the PC\n- Optional RAM boost: pauses background services while Claude runs on the Cardputer\n- Terminal mode for the full Claude Code interface\n\nNeeds a Claude subscription (Pro/Max) or an Anthropic Console account. Not affiliated with or endorsed by Anthropic. Claude and Claude Code are trademarks of Anthropic.",
+      "description": "Clawputer is a pocket chat app for Anthropic's Claude Code, built for the CardputerZero's 320x170 screen and keyboard.\n\n- Clean chat view: tool calls squashed to one line, command output and code in tidy boxes\n- Permission prompts (y / n / always) and Claude's multiple-choice questions\n- Help (F1), settings (F2): model, effort, permissions, font size and more; chat history (F3)\n- Drafts autosave, messages queue while Claude is busy\n- Easy first-run setup: installs Claude Code with Anthropic's official installer, then sign in by scanning a QR code with your phone, no typing long codes\n- Remote mode: run Claude on your PC over SSH (works with Tailscale) and use the Cardputer as the screen, fast and with no RAM limits. Set up with one short command on the PC\n- Optional RAM boost: pauses background services while Claude runs on the Cardputer\n- Minimise with Ctrl+H: Claude keeps working and chimes when it's done or needs you\n- Status bar with a context meter, model, network (wifi / phone tethering / offline) and battery\n- Optional bubbles chat style with proper markdown (bold, headings, bullets)\n- Live 'thinking 12s · 340 tokens' progress, sudo password popups, and an optional web UI to use the chat from your phone\n\nNeeds a Claude subscription (Pro/Max) or an Anthropic Console account. Not affiliated with or endorsed by Anthropic. Claude and Claude Code are trademarks of Anthropic.",
       "locales": {
         "en": {
           "title": "Clawputer",
@@ -2904,9 +2904,9 @@
         "github": "RubberDingyRapids",
         "display_name": "RubberDingyRapids"
       },
-      "version": "0.2.1",
+      "version": "0.6.0",
       "published_at": "2026-11-25T21:50:29+00:00",
-      "updated_at": "2026-11-25T21:50:29+00:00",
+      "updated_at": "2026-11-27T21:52:35+00:00",
       "review": {
         "status": "approved"
       },
@@ -2915,10 +2915,10 @@
       "download": {
         "type": "deb",
         "package": "clawputer",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/clawputer_0.2.1_all.deb",
-        "md5": "30666b8014de3bf7e3a8d993d87096bc",
-        "sha256": "5bfef77f813a5c3b2d1914500fcfee16c4229163d34ebab280dda40bb4303818",
-        "size": 37936
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/clawputer_0.6.0_all.deb",
+        "md5": "dc3be1dd58bd8f446deb037ef3ed4d4d",
+        "sha256": "670777d01faa62c52c0860822bb86fcc2b7ce624b11e971b4eef4059b42e757e",
+        "size": 60084
       },
       "depends": "python3, python3-pil, python3-numpy, python3-qrcode, curl, openssh-client, fonts-dejavu-core",
       "permissions": {
@@ -9291,8 +9291,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-28T02:50:43+08:00",
-      "updated_at": "2026-11-28T02:50:43+08:00",
+      "published_at": "2026-11-28T05:56:15+08:00",
+      "updated_at": "2026-11-28T05:56:15+08:00",
       "review": {
         "status": "approved"
       },
