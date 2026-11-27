@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T22:25:53+08:00",
+  "generated_at": "2026-11-27T23:11:37+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -6836,9 +6836,9 @@
         "display_name": "mengxiyou",
         "email": "gzp16@163.com"
       },
-      "version": "1.0.1-1",
+      "version": "1.0.2-1",
       "published_at": "2026-11-08T02:34:43+00:00",
-      "updated_at": "2026-11-14T07:49:03+00:00",
+      "updated_at": "2026-11-27T15:08:37+00:00",
       "review": {
         "status": "approved"
       },
@@ -6847,12 +6847,12 @@
       "download": {
         "type": "deb",
         "package": "kimi-remote",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/kimi-remote_1.0.1-1_arm64.deb",
-        "md5": "ec7822f894155541b9e9e5b7a5c41ecb",
-        "sha256": "f740095ea5f4e532ff0fff7295400f47c61aa7d21ca4cab1f60a07f5c86c187c",
-        "size": 63092
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/kimi-remote_1.0.2-1_arm64.deb",
+        "md5": "4ae6b5efecdf190178a955421d44de9e",
+        "sha256": "a3a18a47c45a740982710d61aec5a1be8f5e37778bec3be23600da81ba2adb3c",
+        "size": 91844
       },
-      "depends": "python3 (>= 3.11), python3-gi, python3-gi-cairo, gir1.2-gtk-3.0, python3-aiohttp, python3-qrcode, fonts-noto-cjk, libpinyin15 (>= 2.8), labwc, udev, libc6 (>= 2.34)",
+      "depends": "python3 (>= 3.11), python3-gi, python3-gi-cairo, gir1.2-gtk-3.0, python3-aiohttp, python3-qrcode, fonts-noto-cjk, libpinyin15 (>= 2.8), labwc, swaybg, udev, libc6 (>= 2.34)",
       "permissions": {
         "camera": false,
         "microphone": false,
@@ -9137,8 +9137,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T22:25:53+08:00",
-      "updated_at": "2026-11-27T22:25:53+08:00",
+      "published_at": "2026-11-27T23:11:37+08:00",
+      "updated_at": "2026-11-27T23:11:37+08:00",
       "review": {
         "status": "approved"
       },
