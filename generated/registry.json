@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T13:12:38+08:00",
+  "generated_at": "2026-11-27T13:25:10+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -12854,7 +12854,7 @@
       },
       "version": "0.4.1-1",
       "published_at": "2026-11-23T17:04:40+00:00",
-      "updated_at": "2026-11-27T05:09:09+00:00",
+      "updated_at": "2026-11-27T05:21:38+00:00",
       "review": {
         "status": "approved"
       },
@@ -12885,7 +12885,7 @@
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/01-desktop.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/02-appstore.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/03-phone.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/04-install.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/04-terminal.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/05-hardware.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/06-status.png"
         ]
@@ -12895,7 +12895,7 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/01-desktop.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/02-appstore.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/03-phone.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/04-install.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/04-terminal.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/05-hardware.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerodesk-cp0/screenshots/06-status.png"
       ]
