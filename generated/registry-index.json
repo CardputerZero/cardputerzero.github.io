@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T00:09:38+08:00",
+  "generated_at": "2026-11-28T00:34:29+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4563,9 +4563,9 @@
         "github": "toyoshim",
         "display_name": "Takashi Toyoshima"
       },
-      "version": "0.9.1",
+      "version": "0.9.2",
       "published_at": "2026-11-25T16:40:00+00:00",
-      "updated_at": "2026-11-26T13:35:48+00:00",
+      "updated_at": "2026-11-27T16:31:25+00:00",
       "review": {
         "status": "approved"
       },
@@ -4574,35 +4574,35 @@
       "download": {
         "type": "deb",
         "package": "czx",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/czx_0.9.1_arm64.deb",
-        "md5": "496c62b61af1820beb59ccacb0d4b57c",
-        "sha256": "8e69d2ec24e4dfd143b9eb094f4cd5828920ada7879bff02fada7b9b5c268441",
-        "size": 7449240
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/czx_0.9.2_arm64.deb",
+        "md5": "00c264acde06371002eaacfa91ba882c",
+        "sha256": "a43af1c5b37379779717e22c9907b2b8dce6539c4f31c6ac20098b0fd8d6e3eb",
+        "size": 7521072
       },
       "depends": "libc6",
       "permissions": {
         "camera": false,
         "microphone": false,
         "imu": false,
-        "network": false,
+        "network": true,
         "additional_hardware": false,
         "background_service": false,
         "external_display": true
       },
       "risk_flags": [],
       "assets": {
-        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czx/czx_icon.png",
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czx/icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czx/screenshots/screenshot-0.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czx/screenshots/screenshot-1.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czx/screenshots/screenshot-2.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czx/screenshots/01-launcher.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czx/screenshots/02-g800-hud.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czx/screenshots/03-menu.png"
         ]
       },
-      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czx/czx_icon.png",
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czx/icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czx/screenshots/screenshot-0.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czx/screenshots/screenshot-1.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czx/screenshots/screenshot-2.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czx/screenshots/01-launcher.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czx/screenshots/02-g800-hud.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/czx/screenshots/03-menu.png"
       ]
     },
     {
@@ -9291,8 +9291,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-28T00:09:38+08:00",
-      "updated_at": "2026-11-28T00:09:38+08:00",
+      "published_at": "2026-11-28T00:34:29+08:00",
+      "updated_at": "2026-11-28T00:34:29+08:00",
       "review": {
         "status": "approved"
       },
