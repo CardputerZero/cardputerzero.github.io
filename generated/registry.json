@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T07:32:22+08:00",
+  "generated_at": "2026-11-28T07:34:50+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -7254,9 +7254,9 @@
         "github": "x22j",
         "display_name": "LAN Devil"
       },
-      "version": "0.3.0",
+      "version": "0.3.2",
       "published_at": "2026-11-23T19:56:50+00:00",
-      "updated_at": "2026-11-25T17:16:27+00:00",
+      "updated_at": "2026-11-27T23:31:56+00:00",
       "review": {
         "status": "approved"
       },
@@ -7265,10 +7265,10 @@
       "download": {
         "type": "deb",
         "package": "landevil",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/landevil_0.3.0_all.deb",
-        "md5": "184df4a282b87d218f9e4edace217c58",
-        "sha256": "c6a83230e05e916a02bd08618306bf148fb57065c5633df57a93e02b26d404f9",
-        "size": 74068
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/landevil_0.3.2_all.deb",
+        "md5": "1938fb8d46ee2a786741bd573d95102a",
+        "sha256": "335d339a170fe7fa685e14be0884c088f411b30723965f13c50db3e5827935d4",
+        "size": 77132
       },
       "depends": "python3 (>= 3.9), python3-pil, python3-numpy, fonts-dejavu-core, iputils-ping, iproute2",
       "permissions": {
@@ -9291,8 +9291,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-28T07:32:22+08:00",
-      "updated_at": "2026-11-28T07:32:22+08:00",
+      "published_at": "2026-11-28T07:34:50+08:00",
+      "updated_at": "2026-11-28T07:34:50+08:00",
       "review": {
         "status": "approved"
       },
