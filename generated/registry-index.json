@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T19:48:43+08:00",
+  "generated_at": "2026-11-27T19:59:48+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9074,8 +9074,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T19:48:43+08:00",
-      "updated_at": "2026-11-27T19:48:43+08:00",
+      "published_at": "2026-11-27T19:59:48+08:00",
+      "updated_at": "2026-11-27T19:59:48+08:00",
       "review": {
         "status": "approved"
       },
@@ -14314,7 +14314,7 @@
       "share_code": "ZGAL",
       "title": "ZeroGallery",
       "summary": "Browse folders and view photos and videos with the arrow keys",
-      "description": "Pick a folder and flip through its photos and videos full screen with the arrow keys (F/X/Z/C work with or without Fn). JPEG photos open natively with EXIF rotation; every other image format, animated GIFs and all videos are decoded by the system ffmpeg, with sound through PipeWire. In a video the arrows skip 10 or 30 seconds back and forth. Turn the device and the photo or video turns with it. Press V to send what you are viewing to a smart TV over DLNA (LG, Samsung, Sony, Hisense…) or to a Chromecast, Google TV or Nest Hub over Google Cast (the TV plays the original file at full quality), or to a screen plugged into the HDMI port (with its sound, or press A to choose speaker, headphones or HDMI), and the arrows, pause and next / previous keep working on the TV. ESC goes back, hold ESC to exit.",
+      "description": "Pick a folder and flip through its photos and videos full screen with the arrow keys (F/X/Z/C work with or without Fn). JPEG photos open natively with EXIF rotation; every other image format, animated GIFs and all videos are decoded by the system ffmpeg, with sound through PipeWire. In a video the arrows skip 10 or 30 seconds back and forth. Turn the device and the photo or video turns with it. Press V to send what you are viewing to a smart TV over DLNA (LG, Samsung, Sony, Hisense…) or to a Chromecast, Google TV or Nest Hub over Google Cast (the TV plays the original file at full quality), or to a screen plugged into the HDMI port (with its sound; press A to choose speaker, headphones, HDMI or a USB or Bluetooth audio device by name), and the arrows, pause and next / previous keep working on the TV. ESC goes back, hold ESC to exit.",
       "locales": {
         "es": {
           "title": "ZeroGallery",
@@ -14350,9 +14350,9 @@
         "github": "baltamir1978",
         "display_name": "baltamir1978"
       },
-      "version": "0.7.1-rev1",
+      "version": "0.8.0-rev1",
       "published_at": "2026-11-16T22:16:28+00:00",
-      "updated_at": "2026-11-26T08:48:19+00:00",
+      "updated_at": "2026-11-27T11:57:10+00:00",
       "review": {
         "status": "approved"
       },
@@ -14361,10 +14361,10 @@
       "download": {
         "type": "deb",
         "package": "zerogallery",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerogallery_0.7.1-rev1_arm64.deb",
-        "md5": "0991380ef883bc029de3200cc3387c11",
-        "sha256": "6187cea47b2332c66ddb2d42b9b40b5693fa3e815063e0d27e8260f3cc153e52",
-        "size": 1175340
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerogallery_0.8.0-rev1_arm64.deb",
+        "md5": "eef9a32e6fc93a5516f6fd1d2c106ac4",
+        "sha256": "e589a4ec7b79e8f37b8892df9ec2ba8c9d664843d5a74a61d052a6799bcd203a",
+        "size": 1188780
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libjpeg62-turbo, zlib1g, ffmpeg",
       "permissions": {
