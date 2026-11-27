@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T20:41:39+08:00",
+  "generated_at": "2026-11-27T21:22:17+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9137,8 +9137,8 @@
         "display_name": "Okou"
       },
       "version": "0.2.33",
-      "published_at": "2026-11-27T20:41:39+08:00",
-      "updated_at": "2026-11-27T20:41:39+08:00",
+      "published_at": "2026-11-27T21:22:17+08:00",
+      "updated_at": "2026-11-27T21:22:17+08:00",
       "review": {
         "status": "approved"
       },
@@ -15004,9 +15004,9 @@
         "display_name": "Weiming Feng",
         "github": "nullbeing"
       },
-      "version": "0.5.6",
+      "version": "0.5.8",
       "published_at": "2026-11-10T02:37:56+00:00",
-      "updated_at": "2026-11-27T04:29:19+00:00",
+      "updated_at": "2026-11-27T13:19:55+00:00",
       "review": {
         "status": "approved"
       },
@@ -15015,10 +15015,10 @@
       "download": {
         "type": "deb",
         "package": "zerosdr",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosdr_0.5.6_arm64.deb",
-        "md5": "2de8af4a52f641776d1e568e8e8739f8",
-        "sha256": "dbe98cd8bbaa92c8a6ef46543e978a2b05f8b815cd0231fb3e74dd3f13b3d92e",
-        "size": 843564
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosdr_0.5.8_arm64.deb",
+        "md5": "c03cf61b90f60aedef6f77b1c3ab1595",
+        "sha256": "3b1705451b0dc16eba99a85f312f51c99b231a09299276bb97e9686853aacbfb",
+        "size": 843764
       },
       "depends": "libasound2 (>= 1.0.18), libc6 (>= 2.35), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 4.0), libncurses6 (>= 6), libpulse0 (>= 0.99.1), librtlsdr0 (>= 0.6.0), libstdc++6 (>= 12), libtinfo6 (>= 6), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.2.6), libasound2-plugins, curl",
       "permissions": {
