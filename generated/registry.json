@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T13:37:11+08:00",
+  "generated_at": "2026-11-27T15:11:04+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -7486,9 +7486,9 @@
         "display_name": "Ramchand",
         "github": "kakashi2018"
       },
-      "version": "1",
+      "version": "1.6",
       "published_at": "2026-11-20T13:15:42+00:00",
-      "updated_at": "2026-11-20T13:15:42+00:00",
+      "updated_at": "2026-11-27T07:09:01+00:00",
       "review": {
         "status": "approved"
       },
@@ -7497,10 +7497,10 @@
       "download": {
         "type": "deb",
         "package": "meshtandem",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/meshtandem_1_arm64.deb",
-        "md5": "53732f752ec60f822cf8c07733444bc2",
-        "sha256": "08e2459244e7559c8b286c4457322bc894b5bed2495d9a1e303cce0e7db7533a",
-        "size": 2737652
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/meshtandem_1.6_arm64.deb",
+        "md5": "52148131948c9ebcf7399ed45417ec05",
+        "sha256": "c72e3015bd317afccf94ee020e0462d3681413a762c1d8e77b8d6414c9cec764",
+        "size": 2739644
       },
       "depends": "libc6 (>= 2.38), libstdc++6 (>= 11), libgcc-s1, libgpiod3 (>= 2.1), libi2c0 (>= 4.0), libinput10, liborcania2.3, libsdl2-2.0-0, libssl3t64, libulfius2.7t64, libusb-1.0-0, libuv1t64, libx11-6, libxkbcommon0, libyaml-cpp0.8, python3 (>= 3.11), python3-bleak, bluez",
       "permissions": {
