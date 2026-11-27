@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T16:05:35+08:00",
+  "generated_at": "2026-11-27T16:17:39+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9333,6 +9333,66 @@
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/4-customize.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/5-all-fishes.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/pocketfish/screenshots/7-background-music.png"
+      ]
+    },
+    {
+      "uuid": "ac01b1ca-cb19-5616-b4eb-101908c61500",
+      "share_code": "QIGA",
+      "title": "起卦",
+      "summary": "CardputerZero 上的时空梅花易数小应用",
+      "description": "CardputerZero 上的时空梅花易数小应用：一打开就是一只校过时的数字钟， 下面挂着农历与干支四柱；按 6 键（屏幕【起卦】按钮正下方对应的键位） 就以当下这一刻起卦，并给出卦象与解释。",
+      "locales": {},
+      "i18n": {},
+      "categories": [
+        "Games",
+        "Other"
+      ],
+      "author": {
+        "display_name": "Brathon",
+        "github": "BrathonBai"
+      },
+      "version": "0.7.0",
+      "published_at": "2026-11-25T23:04:08+00:00",
+      "updated_at": "2026-11-25T23:04:08+00:00",
+      "review": {
+        "status": "approved"
+      },
+      "license": "MIT",
+      "source_repo": "https://github.com/BrathonBai/qigua",
+      "download": {
+        "type": "deb",
+        "package": "qigua",
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/qigua_0.7.0_all.deb",
+        "md5": "16b1bf0963c155222ffb3de3f324984b",
+        "sha256": "4f38d904ebf9a688a38a22a1df5c5db79c147a73bf794d12eeb5ef69d748b2b3",
+        "size": 48682
+      },
+      "depends": "python3, python3-pil",
+      "permissions": {
+        "additional_hardware": false,
+        "background_service": false,
+        "camera": false,
+        "external_display": false,
+        "imu": false,
+        "microphone": false,
+        "network": true
+      },
+      "risk_flags": [],
+      "assets": {
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/qigua/qigua_icon.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/qigua/screenshots/screenshot-0.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/qigua/screenshots/screenshot-1.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/qigua/screenshots/screenshot-2.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/qigua/screenshots/screenshot-3.png"
+        ]
+      },
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/qigua/qigua_icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/qigua/screenshots/screenshot-0.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/qigua/screenshots/screenshot-1.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/qigua/screenshots/screenshot-2.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/qigua/screenshots/screenshot-3.png"
       ]
     },
     {
