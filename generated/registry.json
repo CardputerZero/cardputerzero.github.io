@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T12:31:14+08:00",
+  "generated_at": "2026-11-27T12:34:22+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -12852,9 +12852,9 @@
         "display_name": "richardhxwang",
         "github": "richardhxwang"
       },
-      "version": "0.3.2-2",
+      "version": "0.4.0-1",
       "published_at": "2026-11-23T17:04:40+00:00",
-      "updated_at": "2026-11-26T04:53:08+00:00",
+      "updated_at": "2026-11-27T04:30:29+00:00",
       "review": {
         "status": "approved"
       },
@@ -12863,10 +12863,10 @@
       "download": {
         "type": "deb",
         "package": "zerodesk-cp0",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerodesk-cp0_0.3.2-2_arm64.deb",
-        "md5": "d77f6cded6de015dea03aafb2ef6d398",
-        "sha256": "ccdb734d4588f946a60f8006e372a32bf0937086a2baa974766ac5ed972df9e8",
-        "size": 5716894
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerodesk-cp0_0.4.0-1_arm64.deb",
+        "md5": "73bde790d706b8fe47afe2f13a605cfc",
+        "sha256": "d6c149c8bb87fcb7c0cf893ddf7ff8334f5927abd98052055bae871183e750ac",
+        "size": 5848262
       },
       "depends": "libcap2-bin",
       "permissions": {
