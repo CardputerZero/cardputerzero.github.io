@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T12:08:01+08:00",
+  "generated_at": "2026-11-27T12:31:14+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -13527,7 +13527,7 @@
       "share_code": "0SDR",
       "title": "ZeroSDR",
       "summary": "ZeroSDR turns the Cardputer Zero into a pocket SDR receiver.",
-      "description": "Features\r\n- FM / NFM / AM / USB / LSB audio with squelch, AGC and de-emphasis\r\n- Wideband swept spectrum analyzer (custom range, pan/zoom, max hold)\r\n- RFI survey: compare HF noise with equipment on/off (10m–80m)\r\n- ADSB: nearest-first list, PFD detail view and map radar\r\n- AIS: list, map with CPA guard ring, porthole ship dossier, NMEA UDP output\r\n- ACARS: aircraft message list and wrapped detail view\r\n- Runs as a normal user; no root, no background service\r\n\r\nRequirements\r\n\r\n- RTL-SDR USB dongle\r\n- VHF/UHF antenna for SDR and AIS; 1090 MHz antenna for ADSB",
+      "description": "Features\r\n- FM / NFM / AM / USB / LSB audio with squelch, AGC and de-emphasis\r\n- Wideband swept spectrum analyzer (custom range, pan/zoom, max hold)\r\n- RFI survey: compare HF noise with equipment on/off (10m–80m)\r\n- ADSB: nearest-first list, PFD detail view and map radar\r\n- AIS: list, map with CPA guard ring, porthole ship dossier, NMEA UDP output\r\n- ACARS: aircraft message list and wrapped detail view\r\n- APRS: an amateur radio system for tracking locations and sending messages.\r\n\r\nRequirements\r\n\r\n- RTL-SDR USB dongle\r\n- VHF/UHF antenna for SDR and AIS; 1090 MHz antenna for ADSB",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -13538,9 +13538,9 @@
         "display_name": "Weiming Feng",
         "github": "nullbeing"
       },
-      "version": "0.5.2",
+      "version": "0.5.6",
       "published_at": "2026-11-10T02:37:56+00:00",
-      "updated_at": "2026-11-26T01:53:47+00:00",
+      "updated_at": "2026-11-27T04:29:19+00:00",
       "review": {
         "status": "approved"
       },
@@ -13549,10 +13549,10 @@
       "download": {
         "type": "deb",
         "package": "zerosdr",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosdr_0.5.2_arm64.deb",
-        "md5": "6164a231cfda7a4a3765d5212d1326bb",
-        "sha256": "f79ebd1419246bb156d62b37ea93672906e451d6586dc4b6ff64f902fdcc965c",
-        "size": 682316
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerosdr_0.5.6_arm64.deb",
+        "md5": "2de8af4a52f641776d1e568e8e8739f8",
+        "sha256": "dbe98cd8bbaa92c8a6ef46543e978a2b05f8b815cd0231fb3e74dd3f13b3d92e",
+        "size": 843564
       },
       "depends": "libasound2 (>= 1.0.18), libc6 (>= 2.35), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 4.0), libncurses6 (>= 6), libpulse0 (>= 0.99.1), librtlsdr0 (>= 0.6.0), libstdc++6 (>= 12), libtinfo6 (>= 6), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.2.6), libasound2-plugins, curl",
       "permissions": {
