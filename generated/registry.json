@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T07:06:35+08:00",
+  "generated_at": "2026-11-27T11:03:45+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -6749,9 +6749,9 @@
         "github": "bmorcelli",
         "display_name": "bmorcelli"
       },
-      "version": "0.0.6-m5stack1",
+      "version": "1.0.0-m5stack1",
       "published_at": "2026-11-04T16:42:42+00:00",
-      "updated_at": "2026-11-04T16:42:42+00:00",
+      "updated_at": "2026-11-27T03:00:51+00:00",
       "review": {
         "status": "approved"
       },
@@ -6760,10 +6760,10 @@
       "download": {
         "type": "deb",
         "package": "launcherespflasher",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/launcherespflasher_0.0.6-m5stack1_arm64.deb",
-        "md5": "e9dee2e0186e71d086588dabbeca9adc",
-        "sha256": "f08c9fc986651d0da7c74d2c5b6c0222cb4e7837547e144bb08ec44f5469fb37",
-        "size": 1196394
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/launcherespflasher_1.0.0-m5stack1_arm64.deb",
+        "md5": "2054121b74d5a4581aaa2537ccb84544",
+        "sha256": "28b4ef6358bdb4082a088172ae5cc4f87e7db248b46f759758fdd56ad96ade88",
+        "size": 1202084
       },
       "depends": "python3, python3-pip, python3-pil, python3-numpy, python3-evdev, python3-requests, python3-qrcode, fonts-dejavu-core",
       "permissions": {
