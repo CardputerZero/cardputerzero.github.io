@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T13:33:49+08:00",
+  "generated_at": "2026-11-28T15:36:30+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -761,40 +761,40 @@
       "uuid": "edb13d30-4f93-527a-8a8b-e5626cc9be97",
       "share_code": "BSHP",
       "title": "Battleship",
-      "summary": "Classic naval combat: 1P vs AI or 2P over BLE/WiFi.",
-      "description": "A classic naval combat puzzle game built for CardputerZero. Play solo against a local probability-density AI (three difficulty levels) with live battle commentary. Play two-player over built-in Bluetooth (BLE, the default, no access point needed) or WiFi LAN against another CardputerZero. The UI switches between English, Japanese, and Simplified Chinese instantly from Settings.",
+      "summary": "Classic naval combat: 1P vs AI or 2P over Bluetooth/LoRa.",
+      "description": "A classic naval combat puzzle game built for CardputerZero. Play solo against a local probability-density AI (three difficulty levels) with live battle commentary. Play two-player over built-in Bluetooth (BLE, the default, no access point needed; works best with Wi-Fi turned off) against another CardputerZero. Optional: with a Cap LoRa-1262 attached you can also play over LoRa (920 MHz, Japan rules) beyond Bluetooth range. The UI switches between English, Japanese, and Simplified Chinese instantly from Settings.",
       "locales": {
         "zh-CN": {
           "title": "海战棋",
-          "summary": "经典海战游戏：单人对战 AI，或通过 BLE/WiFi 双人对战。",
-          "description": "经典的海战益智游戏，专为 CardputerZero 打造。单人模式下与本地概率密度 AI 对战（三档难度），并有解说员实时点评战况。双人模式下可通过内置蓝牙（BLE，默认，无需路由器）或 WiFi 局域网与另一台 CardputerZero 对战。界面支持简体中文/日语/英语三语切换，随时可在设置中更改并即时生效。"
+          "summary": "经典海战游戏：单人对战 AI，或通过蓝牙/LoRa 双人对战。",
+          "description": "经典的海战益智游戏，专为 CardputerZero 打造。单人模式下与本地概率密度 AI 对战（三档难度），并有解说员实时点评战况。双人模式下可通过内置蓝牙（BLE，默认，无需路由器，关闭 Wi-Fi 时效果最佳）与另一台 CardputerZero 对战。可选：安装 Cap LoRa-1262 后，可在蓝牙范围之外通过 LoRa（920MHz）对战。界面支持简体中文/日语/英语三语切换，随时可在设置中更改并即时生效。"
         },
         "en": {
           "title": "Battleship",
-          "summary": "Classic naval combat: 1P vs AI or 2P over BLE/WiFi.",
-          "description": "A classic naval combat puzzle game built for CardputerZero. Play solo against a local probability-density AI (three difficulty levels) with live battle commentary. Play two-player over built-in Bluetooth (BLE, the default, no access point needed) or WiFi LAN against another CardputerZero. The UI switches between English, Japanese, and Simplified Chinese instantly from Settings."
+          "summary": "Classic naval combat: 1P vs AI or 2P over Bluetooth/LoRa.",
+          "description": "A classic naval combat puzzle game built for CardputerZero. Play solo against a local probability-density AI (three difficulty levels) with live battle commentary. Play two-player over built-in Bluetooth (BLE, the default, no access point needed; works best with Wi-Fi turned off) against another CardputerZero. Optional: with a Cap LoRa-1262 attached you can also play over LoRa (920 MHz, Japan rules) beyond Bluetooth range. The UI switches between English, Japanese, and Simplified Chinese instantly from Settings."
         },
         "ja": {
           "title": "バトルシップ",
-          "summary": "王道の海戦ゲーム。1人用はAI対戦、2人用はBLE/WiFi通信対戦。",
-          "description": "CardputerZero向けに作られた、古典的な海戦パズルゲームです。1人用モードでは、ローカルの確率密度AI（難易度3段階）と対戦でき、戦況をリアルタイムで実況する解説機能もあります。2人用モードでは、内蔵Bluetooth（BLE、デフォルト、アクセスポイント不要）またはWiFi LAN経由で、もう1台のCardputerZeroと対戦できます。UIは英語・日本語・簡体字中国語を設定画面から即座に切り替え可能です。"
+          "summary": "王道の海戦ゲーム。1人用はAI対戦、2人用はBluetooth/LoRa通信対戦。",
+          "description": "CardputerZero向けに作られた、古典的な海戦パズルゲームです。1人用モードでは、ローカルの確率密度AI（難易度3段階）と対戦でき、戦況をリアルタイムで実況する解説機能もあります。2人用モードでは、内蔵Bluetooth（BLE、デフォルト、アクセスポイント不要、Wi-Fiをオフにすると最も安定）で、もう1台のCardputerZeroと対戦できます。Cap LoRa-1262 を装着すれば、Bluetooth の届かない距離でも LoRa（920MHz）で対戦できます（任意）。UIは英語・日本語・簡体字中国語を設定画面から即座に切り替え可能です。"
         }
       },
       "i18n": {
         "zh-CN": {
           "title": "海战棋",
-          "summary": "经典海战游戏：单人对战 AI，或通过 BLE/WiFi 双人对战。",
-          "description": "经典的海战益智游戏，专为 CardputerZero 打造。单人模式下与本地概率密度 AI 对战（三档难度），并有解说员实时点评战况。双人模式下可通过内置蓝牙（BLE，默认，无需路由器）或 WiFi 局域网与另一台 CardputerZero 对战。界面支持简体中文/日语/英语三语切换，随时可在设置中更改并即时生效。"
+          "summary": "经典海战游戏：单人对战 AI，或通过蓝牙/LoRa 双人对战。",
+          "description": "经典的海战益智游戏，专为 CardputerZero 打造。单人模式下与本地概率密度 AI 对战（三档难度），并有解说员实时点评战况。双人模式下可通过内置蓝牙（BLE，默认，无需路由器，关闭 Wi-Fi 时效果最佳）与另一台 CardputerZero 对战。可选：安装 Cap LoRa-1262 后，可在蓝牙范围之外通过 LoRa（920MHz）对战。界面支持简体中文/日语/英语三语切换，随时可在设置中更改并即时生效。"
         },
         "en": {
           "title": "Battleship",
-          "summary": "Classic naval combat: 1P vs AI or 2P over BLE/WiFi.",
-          "description": "A classic naval combat puzzle game built for CardputerZero. Play solo against a local probability-density AI (three difficulty levels) with live battle commentary. Play two-player over built-in Bluetooth (BLE, the default, no access point needed) or WiFi LAN against another CardputerZero. The UI switches between English, Japanese, and Simplified Chinese instantly from Settings."
+          "summary": "Classic naval combat: 1P vs AI or 2P over Bluetooth/LoRa.",
+          "description": "A classic naval combat puzzle game built for CardputerZero. Play solo against a local probability-density AI (three difficulty levels) with live battle commentary. Play two-player over built-in Bluetooth (BLE, the default, no access point needed; works best with Wi-Fi turned off) against another CardputerZero. Optional: with a Cap LoRa-1262 attached you can also play over LoRa (920 MHz, Japan rules) beyond Bluetooth range. The UI switches between English, Japanese, and Simplified Chinese instantly from Settings."
         },
         "ja": {
           "title": "バトルシップ",
-          "summary": "王道の海戦ゲーム。1人用はAI対戦、2人用はBLE/WiFi通信対戦。",
-          "description": "CardputerZero向けに作られた、古典的な海戦パズルゲームです。1人用モードでは、ローカルの確率密度AI（難易度3段階）と対戦でき、戦況をリアルタイムで実況する解説機能もあります。2人用モードでは、内蔵Bluetooth（BLE、デフォルト、アクセスポイント不要）またはWiFi LAN経由で、もう1台のCardputerZeroと対戦できます。UIは英語・日本語・簡体字中国語を設定画面から即座に切り替え可能です。"
+          "summary": "王道の海戦ゲーム。1人用はAI対戦、2人用はBluetooth/LoRa通信対戦。",
+          "description": "CardputerZero向けに作られた、古典的な海戦パズルゲームです。1人用モードでは、ローカルの確率密度AI（難易度3段階）と対戦でき、戦況をリアルタイムで実況する解説機能もあります。2人用モードでは、内蔵Bluetooth（BLE、デフォルト、アクセスポイント不要、Wi-Fiをオフにすると最も安定）で、もう1台のCardputerZeroと対戦できます。Cap LoRa-1262 を装着すれば、Bluetooth の届かない距離でも LoRa（920MHz）で対戦できます（任意）。UIは英語・日本語・簡体字中国語を設定画面から即座に切り替え可能です。"
         }
       },
       "categories": [
@@ -804,9 +804,9 @@
         "display_name": "yutacar",
         "github": "yutacar"
       },
-      "version": "1.0.0-2",
+      "version": "1.1.0-1",
       "published_at": "2026-11-20T02:27:18+00:00",
-      "updated_at": "2026-11-20T02:27:18+00:00",
+      "updated_at": "2026-11-28T07:33:47+00:00",
       "review": {
         "status": "approved"
       },
@@ -815,18 +815,18 @@
       "download": {
         "type": "deb",
         "package": "battleship",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/battleship_1.0.0-2_arm64.deb",
-        "md5": "1ac046ec707994102c1a75623abe90f5",
-        "sha256": "8cdfdb3a3676ddbc28e88524857e7fe53da8a8b77c1c745d392247f745a36fdf",
-        "size": 969402
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/battleship_1.1.0-1_arm64.deb",
+        "md5": "d7d31afd049bf8d7cba50c29eeace254",
+        "sha256": "8ffbfd7f3a0dea7f55d48b0bcea4ec89d9f328bd0c74c2814193532207c938f2",
+        "size": 1011028
       },
       "depends": "libc6, libstdc++6, libgcc-s1, libfreetype6, libpng16-16, libsystemd0",
       "permissions": {
         "camera": false,
         "microphone": false,
         "imu": false,
-        "network": true,
-        "additional_hardware": false,
+        "network": false,
+        "additional_hardware": true,
         "background_service": false,
         "external_display": false
       },
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T13:33:49+08:00",
-      "updated_at": "2026-11-28T13:33:49+08:00",
+      "published_at": "2026-11-28T15:36:30+08:00",
+      "updated_at": "2026-11-28T15:36:30+08:00",
       "review": {
         "status": "approved"
       },
