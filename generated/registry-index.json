@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-29T01:45:48+08:00",
+  "generated_at": "2026-11-29T03:18:16+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1270,9 +1270,9 @@
         "display_name": "Moeyuuko",
         "github": "Moeyuuko"
       },
-      "version": "0.0.3",
+      "version": "0.0.4",
       "published_at": "2026-11-20T07:59:59+00:00",
-      "updated_at": "2026-11-23T14:51:36+00:00",
+      "updated_at": "2026-11-28T19:15:59+00:00",
       "review": {
         "status": "approved"
       },
@@ -1281,10 +1281,10 @@
       "download": {
         "type": "deb",
         "package": "card-hy2",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/card-hy2_0.0.3_arm64.deb",
-        "md5": "a41b8fd69195fe011dd84fc1dc41a434",
-        "sha256": "0980a70f93330ead8071b6762300759a86898573ad197e816f0eb4b821a1185a",
-        "size": 8369096
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/card-hy2_0.0.4_arm64.deb",
+        "md5": "7c2e500eab83406b4a3c7a4e0d2f8ae7",
+        "sha256": "5a3844b131866e66fb038e712670ef7eb49c9b3851d3317dc2fa9662cd9aee28",
+        "size": 8371908
       },
       "depends": "python3 (>= 3.11), python3-yaml, python3-pil, python3-qrcode, fonts-noto-cjk, ca-certificates, curl, iproute2, systemd, adduser, acl",
       "permissions": {
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-29T01:45:48+08:00",
-      "updated_at": "2026-11-29T01:45:48+08:00",
+      "published_at": "2026-11-29T03:18:16+08:00",
+      "updated_at": "2026-11-29T03:18:16+08:00",
       "review": {
         "status": "approved"
       },
