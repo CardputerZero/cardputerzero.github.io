@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T23:31:47+08:00",
+  "generated_at": "2026-11-29T01:42:35+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T23:31:47+08:00",
-      "updated_at": "2026-11-28T23:31:47+08:00",
+      "published_at": "2026-11-29T01:42:35+08:00",
+      "updated_at": "2026-11-29T01:42:35+08:00",
       "review": {
         "status": "approved"
       },
@@ -14323,9 +14323,9 @@
         "display_name": "ZeroChord",
         "github": "momo20261121"
       },
-      "version": "2.0.0",
+      "version": "2.0.1",
       "published_at": "2026-11-22T04:36:49+00:00",
-      "updated_at": "2026-11-28T03:27:36+00:00",
+      "updated_at": "2026-11-28T17:39:50+00:00",
       "review": {
         "status": "approved"
       },
@@ -14334,10 +14334,10 @@
       "download": {
         "type": "deb",
         "package": "zerochord",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerochord_2.0.0_arm64.deb",
-        "md5": "12826171483086d660013da922a4e1ad",
-        "sha256": "45d000d26b452696a8e62cfd292123e72e4815c270fd151a3129713b33f60b2c",
-        "size": 828912
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerochord_2.0.1_arm64.deb",
+        "md5": "4a56a8d5eca28b0be8a0464dac6d67e1",
+        "sha256": "1e32074ae5e49d27ccb75b694f0a1d40fe13855cec9a8f2a34ff2685fe1a3498",
+        "size": 829272
       },
       "depends": "libc6 (>= 2.36), libpulse0, pulseaudio-utils, timgm6mb-soundfont",
       "permissions": {
