@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T10:27:06+08:00",
+  "generated_at": "2026-11-28T10:34:22+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T10:27:06+08:00",
-      "updated_at": "2026-11-28T10:27:06+08:00",
+      "published_at": "2026-11-28T10:34:22+08:00",
+      "updated_at": "2026-11-28T10:34:22+08:00",
       "review": {
         "status": "approved"
       },
@@ -11607,20 +11607,20 @@
       "uuid": "29cd529f-dfe1-5143-9125-fb1bfcd6a162",
       "share_code": "STRP",
       "title": "StreamPlayer",
-      "summary": "Emby/Jellyfin music and LCD video player for CardputerZero.",
-      "description": "Browse Emby and Jellyfin media libraries, search titles, play music and watch server-transcoded 320x170 video on the CardputerZero LCD. Supports English, Simplified Chinese and Japanese, local speaker/headphone audio and optional already-configured Bluetooth audio. This reduced store edition runs as the launcher user and includes no root services, sudo configuration, boot/CMA or Wi-Fi changes, or PackageKit/LightDM control. HDMI video/photo output and automatic hardware-decoder setup are unavailable. LCD video uses software H.264 decoding; a server capable of transcoding to the LCD profile is required. Performance depends on the server, network and available RAM. Enter opens or plays, Space pauses, Z/C seek, short Esc returns and holding Esc exits. Configure your own Emby/Jellyfin server and account inside the app.\n\nSource of the store edition: https://github.com/zhuzhe1983/cp0-StreamPlayer/tree/store-compliant-20261125.",
+      "summary": "Emby/Jellyfin music and LCD/HDMI video player for CardputerZero.",
+      "description": "Browse and search Emby/Jellyfin media libraries. Play music and video on the built-in LCD or a connected HDMI desktop. With HDMI connected, video starts on the external screen and the small screen keeps the controls; Tab switches output, Space pauses, short Esc returns and holding Esc exits. HDMI requests H.264/AAC up to 720p24 / 8 Mbps video with ordinary-user DMA-BUF on the supported Raspberry Pi image, and retains the current display mode. LCD video uses the 320x170 server-transcoded profile. An existing Wayland desktop and mpv are required for HDMI; video performance depends on the server, network and device. Runs as the launcher user, with no root services, sudo configuration, boot/CMA or Wi-Fi changes, or PackageKit/LightDM control. Includes the refreshed-image keyboard symbol fix. Photo playback is not enabled. Configure your own server and account in the app.\n\nSource: https://github.com/zhuzhe1983/cp0-StreamPlayer/tree/store-compliant-20261125.",
       "locales": {
         "zh-CN": {
           "title": "StreamPlayer",
-          "summary": "面向 CardputerZero 的 Emby/Jellyfin 音乐与小屏视频播放器。",
-          "description": "浏览、搜索自己的 Emby/Jellyfin 媒体库，播放音乐及由服务器转码为 320×170 的视频，提供中、英、日界面。本商店精简版以前台普通用户运行；不安装 root 服务和 sudo 配置，不修改启动内存或 Wi-Fi，不控制 PackageKit 和 LightDM。移除了 HDMI 视频、图片输出和自动硬解配置，小屏视频使用 H.264 软件解码，需要媒体服务器支持相应转码。Enter 打开或播放，空格暂停，Z/C 快进退，短按 Esc 返回，长按 Esc 退出。"
+          "summary": "面向 CardputerZero 的 Emby/Jellyfin 音乐、小屏及 HDMI 外屏播放器。",
+          "description": "浏览、搜索自己的 Emby/Jellyfin 媒体库，播放音乐、小屏视频及 HDMI 外屏视频。连接外屏时优先外屏播放，小屏保留控制；Tab 切屏，空格暂停，短按 Esc 返回，长按 Esc 退出。外屏请求最高 720p24、8 Mbps 视频的 H.264/AAC 转码，在支持的树莓派镜像上自动使用普通用户 DMA-BUF，保持现有显示模式；小屏使用 320×170 转码。外屏需要现有 Wayland 桌面和 mpv，实际播放效果取决于服务器、网络和设备。以前台普通用户运行，不安装 root 服务或 sudo 配置，不修改启动内存、Wi-Fi，不控制 PackageKit 或 LightDM。保留新镜像的键盘符号修复，暂不启用图片播放。"
         }
       },
       "i18n": {
         "zh-CN": {
           "title": "StreamPlayer",
-          "summary": "面向 CardputerZero 的 Emby/Jellyfin 音乐与小屏视频播放器。",
-          "description": "浏览、搜索自己的 Emby/Jellyfin 媒体库，播放音乐及由服务器转码为 320×170 的视频，提供中、英、日界面。本商店精简版以前台普通用户运行；不安装 root 服务和 sudo 配置，不修改启动内存或 Wi-Fi，不控制 PackageKit 和 LightDM。移除了 HDMI 视频、图片输出和自动硬解配置，小屏视频使用 H.264 软件解码，需要媒体服务器支持相应转码。Enter 打开或播放，空格暂停，Z/C 快进退，短按 Esc 返回，长按 Esc 退出。"
+          "summary": "面向 CardputerZero 的 Emby/Jellyfin 音乐、小屏及 HDMI 外屏播放器。",
+          "description": "浏览、搜索自己的 Emby/Jellyfin 媒体库，播放音乐、小屏视频及 HDMI 外屏视频。连接外屏时优先外屏播放，小屏保留控制；Tab 切屏，空格暂停，短按 Esc 返回，长按 Esc 退出。外屏请求最高 720p24、8 Mbps 视频的 H.264/AAC 转码，在支持的树莓派镜像上自动使用普通用户 DMA-BUF，保持现有显示模式；小屏使用 320×170 转码。外屏需要现有 Wayland 桌面和 mpv，实际播放效果取决于服务器、网络和设备。以前台普通用户运行，不安装 root 服务或 sudo 配置，不修改启动内存、Wi-Fi，不控制 PackageKit 或 LightDM。保留新镜像的键盘符号修复，暂不启用图片播放。"
         }
       },
       "categories": [
@@ -11630,9 +11630,9 @@
         "display_name": "Zhu Zhe",
         "github": "zhuzhe1983"
       },
-      "version": "0.1.0-m5stack17",
+      "version": "0.1.0-m5stack21",
       "published_at": "2026-11-25T15:39:44+00:00",
-      "updated_at": "2026-11-25T16:06:41+00:00",
+      "updated_at": "2026-11-28T02:25:27+00:00",
       "review": {
         "status": "approved"
       },
@@ -11641,10 +11641,10 @@
       "download": {
         "type": "deb",
         "package": "streamplayer",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/streamplayer_0.1.0-m5stack17_arm64.deb",
-        "md5": "a1d2bbdd9b700653155ad125f9fc590f",
-        "sha256": "7ddcf0513aa64414dd026410aa461a7c6ca1748145b7513d5b93d991671d3c68",
-        "size": 5565292
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/streamplayer_0.1.0-m5stack21_arm64.deb",
+        "md5": "11216826fcfa111190c9ab4fbf2481b4",
+        "sha256": "8817f8bfc7b8ecaef28eb6adfcda507eac6b0df83d313a4872df0f64a8dcf2be",
+        "size": 5578340
       },
       "depends": "libc6 (>= 2.38), libgcc-s1, libstdc++6, libinput10, libxkbcommon0, libudev1, ca-certificates, curl, alsa-utils, fonts-dejavu-core, ffmpeg, mpv, fonts-noto-cjk",
       "permissions": {
@@ -11654,18 +11654,20 @@
         "network": true,
         "additional_hardware": false,
         "background_service": false,
-        "external_display": false
+        "external_display": true
       },
       "risk_flags": [],
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/stream-player.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/setup.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/setup.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/hdmi-controls.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/stream-player.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/setup.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/setup.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/hdmi-controls.png"
       ]
     },
     {
