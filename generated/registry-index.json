@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-29T03:42:27+08:00",
+  "generated_at": "2026-11-29T04:25:50+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2660,9 +2660,9 @@
         "github": "fsender",
         "display_name": "fsender"
       },
-      "version": "1.3.3",
+      "version": "1.3.4",
       "published_at": "2026-11-24T15:13:30+00:00",
-      "updated_at": "2026-11-28T19:39:26+00:00",
+      "updated_at": "2026-11-28T20:23:07+00:00",
       "review": {
         "status": "approved"
       },
@@ -2671,10 +2671,10 @@
       "download": {
         "type": "deb",
         "package": "cardterm",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardterm_1.3.3_arm64.deb",
-        "md5": "245b3b2b11497414e3ce2aa96c08094e",
-        "sha256": "e9a8f301e4bf6177be3785c258f0e39816587db100fbfe599a8740598cafdee6",
-        "size": 1908906
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardterm_1.3.4_arm64.deb",
+        "md5": "81ad0f952220b62780e36b1ac04dfabc",
+        "sha256": "551292222f8a86f54856d33733e7f07601e23fda67b92fee385d80cd6c22b03b",
+        "size": 1909110
       },
       "depends": "tmux",
       "permissions": {
@@ -2690,16 +2690,20 @@
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/cardterm_256.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/1-initial-bash.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/2-fastfetch-4x7.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/3-cmatrix-8x14.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/screenshot-20261129-041505.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/screenshot-20261129-040235.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/screenshot-20261129-035533.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/screenshot-20261129-040149.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/screenshot-20261129-035009.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/cardterm_256.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/1-initial-bash.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/2-fastfetch-4x7.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/3-cmatrix-8x14.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/screenshot-20261129-041505.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/screenshot-20261129-040235.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/screenshot-20261129-035533.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/screenshot-20261129-040149.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/screenshot-20261129-035009.png"
       ]
     },
     {
@@ -9307,8 +9311,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-29T03:42:27+08:00",
-      "updated_at": "2026-11-29T03:42:27+08:00",
+      "published_at": "2026-11-29T04:25:50+08:00",
+      "updated_at": "2026-11-29T04:25:50+08:00",
       "review": {
         "status": "approved"
       },
