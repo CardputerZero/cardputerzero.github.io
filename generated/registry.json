@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T11:28:00+08:00",
+  "generated_at": "2026-11-28T11:30:44+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T11:28:00+08:00",
-      "updated_at": "2026-11-28T11:28:00+08:00",
+      "published_at": "2026-11-28T11:30:44+08:00",
+      "updated_at": "2026-11-28T11:30:44+08:00",
       "review": {
         "status": "approved"
       },
@@ -14311,8 +14311,8 @@
       "uuid": "0f51fca6-fb16-5f61-b3fc-5f396455a48f",
       "share_code": "CHRD",
       "title": "ZeroChord",
-      "summary": "Play chords and strum on your CardputerZero.",
-      "description": "Inspired by minichord and the Suzuki Omnichord, ZeroChord turns your CardputerZero keyboard into a pocket instrument. Choose a chord with one hand and pick or strum its notes with the other.\n\nPlay solo or bring in a backing band: Chord, Arp, Pad, Bass and Drums layers follow your chords, with optional swing. Seven editable presets, from Dream to Dance, give you different sounds and rhythms to start with.\n\nTry it\n1. Press 8 for C major.\n2. Pick notes with Z, X, C, V, B, N or M. Press K or L to strum.\n3. Press O to mute or mix the backing layers.\n\nUser guide (https://github.com/momo20261121/ZeroChord/blob/main/docs/USER_GUIDE.md)",
+      "summary": "Pocket chords, a backing band, and a looper to catch ideas.",
+      "description": "A pocket jam partner, inspired by minichord and the Suzuki Omnichord. Pick a chord with one hand and play its notes with the other while a backing band follows.\n\nCatch ideas as they come: press Enter, play, and press Enter again. ZeroChord loops it in time, with your sounds. Jam over the loop on every key or a USB MIDI keyboard. Loops are saved for later.\n\nTry it: press 8 for C major and play Z to M. Then press Enter, play 8, 5, T and 4, and press Enter twice.\n\nUser guide (https://github.com/momo20261121/ZeroChord/blob/main/docs/USER_GUIDE.md)",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -14323,9 +14323,9 @@
         "display_name": "ZeroChord",
         "github": "momo20261121"
       },
-      "version": "1.4.0",
+      "version": "2.0.0",
       "published_at": "2026-11-22T04:36:49+00:00",
-      "updated_at": "2026-11-26T09:41:09+00:00",
+      "updated_at": "2026-11-28T03:27:36+00:00",
       "review": {
         "status": "approved"
       },
@@ -14334,10 +14334,10 @@
       "download": {
         "type": "deb",
         "package": "zerochord",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerochord_1.4.0_arm64.deb",
-        "md5": "2a109496d26030940b11e1369d9644de",
-        "sha256": "c3c26957467d58dc5fb27501a955ab2d63058c663d85dbc45ab6201845ebca74",
-        "size": 749856
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerochord_2.0.0_arm64.deb",
+        "md5": "12826171483086d660013da922a4e1ad",
+        "sha256": "45d000d26b452696a8e62cfd292123e72e4815c270fd151a3129713b33f60b2c",
+        "size": 828912
       },
       "depends": "libc6 (>= 2.36), libpulse0, pulseaudio-utils, timgm6mb-soundfont",
       "permissions": {
@@ -14353,20 +14353,20 @@
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/zerochord_icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/performance.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/style.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/volume-effects.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/sounds.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/chord-config.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/1-loop.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/2-all-front.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/3-backing-layers.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/4-sounds.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/5-loop-settings.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/zerochord_icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/performance.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/style.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/volume-effects.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/sounds.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/chord-config.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/1-loop.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/2-all-front.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/3-backing-layers.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/4-sounds.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/zerochord/screenshots/5-loop-settings.png"
       ]
     },
     {
