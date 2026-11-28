@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T22:19:34+08:00",
+  "generated_at": "2026-11-28T22:36:55+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -3010,7 +3010,7 @@
       "share_code": "COLI",
       "title": "Colibri",
       "summary": "支持中文输入、离线语音、MCP 与技能的 Cardputer Zero 口袋 AI 助手。",
-      "description": "Colibri 是面向 Cardputer Zero 的口袋 AI 助手，支持中文拼音、离线中英语音转写、小屏 Markdown、长期记忆、上下文压缩、MCP、技能与终端 REPL。对话使用你配置的模型服务。安装包的存储占用主要来自离线语音识别模型，排除离线模型实际大小5～6MB。\r\n\r\n微信通道使用方法\r\n1. 在 Colibri 的「设置 → 配置 → 模型」保存模型连接。\r\n2. 打开掌机自带的 CLI，运行 colibri auth weixin，用手机微信扫码并确认。\r\n3. 运行 colibri gateway start 启动网关，再用 colibri gateway status 查看连接状态。网关已启动时，扫码后运行 colibri gateway restart。\r\n4. 在微信里给已连接的机器人发消息。掌机联网且网关运行时，关闭 Colibri 图形界面也能收发消息。",
+      "description": "Colibri 是面向 Cardputer Zero 的口袋 AI 助手，支持中文拼音、离线中英语音转写（可选项）、小屏 Markdown、长期记忆、上下文压缩、MCP、技能与终端 REPL。对话使用你配置的模型服务。安装包的存储占用主要来自离线语音识别模型，排除离线模型实际大小5～6MB。\r\n\r\n微信通道使用方法\r\n1. 在 Colibri 的「设置 → 配置 → 模型」保存模型连接。\r\n2. 打开掌机自带的 CLI，运行 colibri auth weixin，用手机微信扫码并确认。\r\n3. 运行 colibri gateway start 启动网关，再用 colibri gateway status 查看连接状态。网关已启动时，扫码后运行 colibri gateway restart。\r\n4. 在微信里给已连接的机器人发消息。掌机联网且网关运行时，关闭 Colibri 图形界面也能收发消息。",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -3021,9 +3021,9 @@
         "display_name": "云不冻",
         "github": "yunbudong11114"
       },
-      "version": "1.1.0-m5stack1",
+      "version": "1.1.11-m5stack1",
       "published_at": "2026-11-25T07:23:27+00:00",
-      "updated_at": "2026-11-28T04:18:41+00:00",
+      "updated_at": "2026-11-28T14:34:49+00:00",
       "review": {
         "status": "approved"
       },
@@ -3032,10 +3032,10 @@
       "download": {
         "type": "deb",
         "package": "colibri",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/colibri_1.1.0-m5stack1_arm64.deb",
-        "md5": "59688c2357ffd4eaf2b99e5546fa1534",
-        "sha256": "4ab7e087fe97cbeb62af2d3813cef17e9cc8d3921b40344cbf7e436e54db2b2c",
-        "size": 53341214
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/colibri_1.1.11-m5stack1_arm64.deb",
+        "md5": "9475f7b92be8dbe0f1ff38c09426c46b",
+        "sha256": "858b7129b8b632790619b130489fc279d0106356e14021f9834d12375e2e3282",
+        "size": 6569198
       },
       "depends": "libc6, libgcc-s1, libfreetype6, libstdc++6, libgomp1, fonts-noto-cjk, alsa-utils, pulseaudio-utils",
       "permissions": {
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T22:19:34+08:00",
-      "updated_at": "2026-11-28T22:19:34+08:00",
+      "published_at": "2026-11-28T22:36:55+08:00",
+      "updated_at": "2026-11-28T22:36:55+08:00",
       "review": {
         "status": "approved"
       },
