@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-29T01:42:35+08:00",
+  "generated_at": "2026-11-29T01:45:48+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-29T01:42:35+08:00",
-      "updated_at": "2026-11-29T01:42:35+08:00",
+      "published_at": "2026-11-29T01:45:48+08:00",
+      "updated_at": "2026-11-29T01:45:48+08:00",
       "review": {
         "status": "approved"
       },
@@ -10138,9 +10138,9 @@
         "github": "momo20261121",
         "display_name": "PocketFish"
       },
-      "version": "0.6.0",
+      "version": "0.6.1",
       "published_at": "2026-11-23T11:52:29+00:00",
-      "updated_at": "2026-11-28T12:30:27+00:00",
+      "updated_at": "2026-11-28T17:43:17+00:00",
       "review": {
         "status": "approved"
       },
@@ -10149,10 +10149,10 @@
       "download": {
         "type": "deb",
         "package": "pocketfish",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pocketfish_0.6.0_arm64.deb",
-        "md5": "30f4a8f1509c597917557a074826b74f",
-        "sha256": "8fc178a2383f370697b57b4a8705c2e7e6b58a6c9508932086c2a0aa57b84c83",
-        "size": 635156
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/pocketfish_0.6.1_arm64.deb",
+        "md5": "9e690e36857e90f2b1b5911c39bba112",
+        "sha256": "5e2259aaeef8979586d35ba49c59067c513b5f9eaad9dc03cc49e52a6680ebf5",
+        "size": 635040
       },
       "depends": "libc6 (>= 2.36), libsqlite3-0 (>= 3.40), libpulse0, pulseaudio-utils, ca-certificates",
       "permissions": {
