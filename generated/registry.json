@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T09:51:50+08:00",
+  "generated_at": "2026-11-28T10:24:33+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T09:51:50+08:00",
-      "updated_at": "2026-11-28T09:51:50+08:00",
+      "published_at": "2026-11-28T10:24:33+08:00",
+      "updated_at": "2026-11-28T10:24:33+08:00",
       "review": {
         "status": "approved"
       },
@@ -13627,9 +13627,9 @@
         "github": "zedward856-spec",
         "display_name": "sl01220"
       },
-      "version": "0.1.2",
+      "version": "0.1.12",
       "published_at": "2026-11-27T05:12:34+00:00",
-      "updated_at": "2026-11-27T05:12:34+00:00",
+      "updated_at": "2026-11-28T02:21:36+00:00",
       "review": {
         "status": "approved"
       },
@@ -13638,10 +13638,10 @@
       "download": {
         "type": "deb",
         "package": "zero-net-mon",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-net-mon_0.1.2_arm64.deb",
-        "md5": "e15a2dc90f6f2c4e9315143f5e35e6bb",
-        "sha256": "6ce09d5c148204983e1b36e52377fb82d4c69fcb143655fceb5af91747ff38ff",
-        "size": 841300
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zero-net-mon_0.1.12_arm64.deb",
+        "md5": "e0bb95b3cc463c6537f186a723dfbfa8",
+        "sha256": "f51487de4dc057bbeecd114a60ae7b49f5f53c9abb2cb5fa0855024a088140c0",
+        "size": 924088
       },
       "depends": "libc6, libfreetype6, libjpeg62-turbo, libpng16-16t64, zlib1g",
       "permissions": {
