@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T10:58:29+08:00",
+  "generated_at": "2026-11-28T11:07:28+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1460,7 +1460,7 @@
       "share_code": "CZA0",
       "title": "Cardenza Synth Zero",
       "summary": "鸣片移植版，四轨 Groovebox 合成器：808 鼓机、JUNO/DX7 合成器、采样器、步进音序与磁带编曲。",
-      "description": "鸣片（Cardenza Synth）是一台便携式四轨合成器工作站，内置四种音源引擎（808 鼓机、Juno 模拟合成器、DX7 FM 合成器、采样器），支持分轨音序器、歌曲编排、混音、轨道与总线效果器，以及 SD 卡工程存储。\r\n\r\n本版为 CardenzaSynth 上游项目的 CardputerZero 移植版：忠实还原原作的四种音源引擎、分轨音序与歌曲编排，并针对 CP0 的 320×170 屏幕与 46 键键盘重新适配界面与操作，支持USB MIDI键盘。鼓机与合成器为内置；采样器播放你自己的采样，可以通过麦克风采样，或者把 16-bit/44.1kHz 单声道 WAV 放进 ~/.local/share/cardenza/sdcard/CardenzaSynth/Samples/ 即可（配置存于 ~/.config/Cardenza/）。\r\n键位映射图：https://raw.githubusercontent.com/jszsj/CardenzaSynth/cp0/docs/cp0-keymap-vs-original.jpg\r\n（PS: 1区按键长按时，可直接按3区的按键而不需要按sym）",
+      "description": "感谢 203 Systems 团队精心设计了这款精致的小设备，并开源了固件。\r\n\r\n鸣片（Cardenza Synth）是一台便携式四轨合成器工作站，内置四种音源引擎（808 鼓机、Juno 模拟合成器、DX7 FM 合成器、采样器），支持分轨音序器、歌曲编排、混音、轨道与总线效果器，以及 SD 卡工程存储。\r\n\r\n本版为 CardenzaSynth 上游项目的 CardputerZero 移植版：忠实还原原作的四种音源引擎、分轨音序与歌曲编排，并针对 CP0 的 320×170 屏幕与 46 键键盘重新适配界面与操作，支持USB MIDI键盘。鼓机与合成器为内置；采样器播放你自己的采样，可以通过麦克风采样，或者把 16-bit/44.1kHz 单声道 WAV 放进 ~/.local/share/cardenza/sdcard/CardenzaSynth/Samples/ 即可（配置存于 ~/.config/Cardenza/）。\r\n键位映射图：https://raw.githubusercontent.com/jszsj/CardenzaSynth/cp0/docs/cp0-keymap-vs-original.jpg\r\n（PS: 1区按键长按时，可直接按3区的按键而不需要按sym）",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -1472,7 +1472,7 @@
       },
       "version": "0.2.3",
       "published_at": "2026-11-24T15:23:23+00:00",
-      "updated_at": "2026-11-24T15:23:23+00:00",
+      "updated_at": "2026-11-28T03:05:47+00:00",
       "review": {
         "status": "approved"
       },
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T10:58:29+08:00",
-      "updated_at": "2026-11-28T10:58:29+08:00",
+      "published_at": "2026-11-28T11:07:28+08:00",
+      "updated_at": "2026-11-28T11:07:28+08:00",
       "review": {
         "status": "approved"
       },
