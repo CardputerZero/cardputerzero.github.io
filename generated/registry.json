@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T20:37:05+08:00",
+  "generated_at": "2026-11-28T21:33:55+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T20:37:05+08:00",
-      "updated_at": "2026-11-28T20:37:05+08:00",
+      "published_at": "2026-11-28T21:33:55+08:00",
+      "updated_at": "2026-11-28T21:33:55+08:00",
       "review": {
         "status": "approved"
       },
@@ -14162,7 +14162,7 @@
       "share_code": "ZCRT",
       "title": "ZeroCart",
       "summary": "Read and flash Game Boy, GBA and Mega Drive cartridges from the CardputerZero",
-      "description": "ZeroCart turns the CardputerZero into an all-in-one cartridge reader and flasher.\n\n- Systems: Game Boy, Game Boy Color, Game Boy Advance and Mega Drive. The first screen sets the mode and the voltage.\n- Readers, found automatically over USB (one at a time):\n  - GBFlash / GBxCart RW: Game Boy, Game Boy Color and Game Boy Advance (ROM and save read, ROM flash, save write). Sets 5 V / 3.3 V itself.\n  - Chisflash (original firmware): Game Boy, Game Boy Color and Game Boy Advance. It cannot cut the power, so its saves are marked \"not verified\". Flashing a GBA ROM is slow on some chips (about 40 minutes for 2 MiB).\n  - MD Flasher (Krikzz FlashKit MD): Mega Drive.\n- Read ROMs (checked against the FlashGBX database or the header checksum) and saves; a Game Boy read that comes back wrong is put right on its own.\n- Flash a ROM on rewritable cartridges (Game Boy MBC5, GBA, Mega Drive) and write saves. Everything that changes a cartridge asks for a file and a confirmation, backs up what it overwrites from two agreeing reads, and reads the result back. Files received with ZeroSend land in ~/zerocart, where the flash screens look.\n- Serial flash mode: flash the same ROM on cartridge after cartridge. Chiptune jingles say \"insert a cartridge\", \"flashing\" and \"done, eject\", and the next one starts as soon as it is plugged in (no backup: at your own risk). Cracktro-style screen.\n- Built-in ZeroSend: LocalSend file sharing to send dumps and saves to a phone or a computer, or receive files, with an accept/decline on screen.\n- Famicom-style interface in French, English, Japanese and Simplified Chinese.\n\nYou need one of the readers above plugged into the USB port. The Game Boy and GBA protocol and chip databases come from FlashGBX by Lesserkuma.",
+      "description": "ZeroCart turns the CardputerZero into an all-in-one cartridge reader and flasher.\n\n- Systems: Game Boy, Game Boy Color, Game Boy Advance and Mega Drive. The first screen sets the mode and the voltage.\n- Readers, found automatically over USB (one at a time):\n  - GBFlash / GBxCart RW: Game Boy, Game Boy Color and Game Boy Advance (ROM and save read, ROM flash, save write). Sets 5 V / 3.3 V itself.\n  - Chisflash (original firmware): Game Boy, Game Boy Color and Game Boy Advance. It cannot cut the power, so its saves are marked \"not verified\". Flashing a GBA ROM is slow on some chips (about 40 minutes for 2 MiB).\n  - MD Flasher (Krikzz FlashKit MD): Mega Drive.\n- Read ROMs (checked against the FlashGBX database or the header checksum) and saves; a Game Boy read that comes back wrong is put right on its own.\n- Flash a ROM on rewritable cartridges (Game Boy MBC5, GBA, Mega Drive) and write saves. Everything that changes a cartridge asks for a file and a confirmation, backs up what it overwrites from two agreeing reads, and reads the result back. Files received with ZeroSend land in ~/zerocart, where the flash screens look.\n- Serial flash mode: flash the same ROM on cartridge after cartridge: put one in, press Enter, get a verdict (with the reason when it fails), Enter for the next one. Chiptune jingles, cracktro-style screen (no backup: at your own risk).\n- Built-in ZeroSend: LocalSend file sharing to send dumps and saves to a phone or a computer, or receive files, with an accept/decline on screen.\n- Famicom-style interface in French, English, Japanese and Simplified Chinese.\n\nYou need one of the readers above plugged into the USB port. The Game Boy and GBA protocol and chip databases come from FlashGBX by Lesserkuma.",
       "locales": {
         "fr": {
           "title": "ZeroCart",
@@ -14199,9 +14199,9 @@
         "github": "sukoshi1507",
         "display_name": "sukoshi1507"
       },
-      "version": "1.1.1-rev1",
+      "version": "1.2.3-rev1",
       "published_at": "2026-11-26T23:08:29+00:00",
-      "updated_at": "2026-11-28T12:18:07+00:00",
+      "updated_at": "2026-11-28T13:30:50+00:00",
       "review": {
         "status": "approved"
       },
@@ -14210,10 +14210,10 @@
       "download": {
         "type": "deb",
         "package": "zerocart",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerocart_1.1.1-rev1_arm64.deb",
-        "md5": "da862f33dbd4b2f911143c196ee53896",
-        "sha256": "3d4f4d4cda82fefa8d4c77880d3a6a86a36f15b9ba76839608da36a5990a9bfa",
-        "size": 3061336
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/zerocart_1.2.3-rev1_arm64.deb",
+        "md5": "8367bf321263b423c08bd5a1b020a175",
+        "sha256": "01637ff23f84561d2780dde0ae070311025db41b5878569daba14ccadf59aac3",
+        "size": 3060280
       },
       "depends": "fonts-noto-cjk, alsa-utils",
       "permissions": {
