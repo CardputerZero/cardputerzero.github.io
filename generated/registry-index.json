@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T10:34:22+08:00",
+  "generated_at": "2026-11-28T10:51:55+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T10:34:22+08:00",
-      "updated_at": "2026-11-28T10:34:22+08:00",
+      "published_at": "2026-11-28T10:51:55+08:00",
+      "updated_at": "2026-11-28T10:51:55+08:00",
       "review": {
         "status": "approved"
       },
@@ -11632,7 +11632,7 @@
       },
       "version": "0.1.0-m5stack21",
       "published_at": "2026-11-25T15:39:44+00:00",
-      "updated_at": "2026-11-28T02:25:27+00:00",
+      "updated_at": "2026-11-28T02:49:25+00:00",
       "review": {
         "status": "approved"
       },
@@ -11660,14 +11660,18 @@
       "assets": {
         "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/stream-player.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/setup.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/hdmi-controls.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/library.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/lcd-movie.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/hdmi-controls.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/setup.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/stream-player.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/setup.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/hdmi-controls.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/library.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/lcd-movie.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/hdmi-controls.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/streamplayer/screenshots/setup.png"
       ]
     },
     {
