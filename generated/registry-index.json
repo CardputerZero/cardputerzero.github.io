@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T08:15:36+08:00",
+  "generated_at": "2026-11-28T08:22:55+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -4987,9 +4987,9 @@
         "display_name": "Ricardo (RIAL0)",
         "github": "RIAL0"
       },
-      "version": "1.4.1",
+      "version": "1.4.2",
       "published_at": "2026-11-23T18:04:31+00:00",
-      "updated_at": "2026-11-23T18:04:31+00:00",
+      "updated_at": "2026-11-28T00:20:38+00:00",
       "review": {
         "status": "approved"
       },
@@ -4998,10 +4998,10 @@
       "download": {
         "type": "deb",
         "package": "dualradio",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/dualradio_1.4.1_arm64.deb",
-        "md5": "63f957c50a5367bb6b3db7eb7f0e68a4",
-        "sha256": "6a42d34d7177667e168418d17071d66d685795be5430768a5813faf23060219a",
-        "size": 261860
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/dualradio_1.4.2_arm64.deb",
+        "md5": "3561260ce8371293079ebefb40d8abce",
+        "sha256": "3033cd9116c7dacc1710fdc503cc5044bc22a85f54a50f0dad6433ea7694bc48",
+        "size": 262826
       },
       "depends": "python3, python3-pil, python3-numpy, python3-dbus, python3-gi, bluez, iw, network-manager, iproute2, iputils-ping, fonts-dejavu-core",
       "permissions": {
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T08:15:36+08:00",
-      "updated_at": "2026-11-28T08:15:36+08:00",
+      "published_at": "2026-11-28T08:22:55+08:00",
+      "updated_at": "2026-11-28T08:22:55+08:00",
       "review": {
         "status": "approved"
       },
