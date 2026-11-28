@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T22:36:55+08:00",
+  "generated_at": "2026-11-28T23:31:47+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -7917,7 +7917,7 @@
       "share_code": "MPKT",
       "title": "M-Pocket",
       "summary": "A Mastodon client for Cardputer Zero.",
-      "description": "M-Pocket brings Mastodon to the M5Stack Cardputer Zero. Browse your home timeline and interact with posts in an interface designed for the Cardputer’s compact 320 × 170 screen and keyboard.\r\n\r\nChoose a Mastodon server and sign in by scanning a QR code with your phone or by entering an access token. Save your login on the device to return to your account without signing in again.\r\n\r\nRead and scroll through posts, like them, boost them, or write replies. Content warnings keep sensitive posts hidden until you choose to reveal them. Search for posts on servers that support Mastodon search. Choose a light or dark theme and adjust the text size in settings.\r\n\r\nM-Pocket is open source and available through the Cardputer app store. It requires a network connection and a Mastodon account.",
+      "description": "M-Pocket brings Mastodon to the Cardputer Zero. Browse your home timeline and interact with posts in an interface designed for the Cardputer’s compact 320 × 170 screen and keyboard.\r\n\r\nChoose a Mastodon server and sign in by scanning a QR code with your phone or by entering an access token. Save your login on the device to return to your account without signing in again.\r\n\r\nRead and scroll through posts, like them, boost them, or write replies. Content warnings keep sensitive postshidden until you choose to reveal them. Search for posts on servers that support Mastodon search. Choose a light or dark theme and adjust the text size in settings.\r\n\r\nM-Pocket is open source and available through the Cardputer app store. It requires a network connection and a Mastodon account.\r\n\r\nImage credits: https://joinmastodon.org\r\n\r\nNot affiliated with Mastodon, Inc. or Mastodon GmbH :)\r\n\r\nMade by: DavisW9 (@dw9 or @dw9x)",
       "locales": {},
       "i18n": {},
       "categories": [
@@ -7928,9 +7928,9 @@
         "display_name": "DavisW9",
         "github": "DavisW9"
       },
-      "version": "0.2.2~symbeta1",
+      "version": "0.3.0~beta1",
       "published_at": "2026-11-18T21:05:31+00:00",
-      "updated_at": "2026-11-25T17:01:57+00:00",
+      "updated_at": "2026-11-28T15:29:31+00:00",
       "review": {
         "status": "approved"
       },
@@ -7939,12 +7939,12 @@
       "download": {
         "type": "deb",
         "package": "m-pocket",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/m-pocket_0.2.2.symbeta1_arm64.deb",
-        "md5": "bdc4a3d3627cbbb8224e3f4597423862",
-        "sha256": "43be16fe75307335282f0d8c919b543c7a66584b8c73ee89db8ab12c229571e6",
-        "size": 624722
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/m-pocket_0.3.0.beta1_arm64.deb",
+        "md5": "23f9b8a3d716a1e1fa2d34770e6bffa2",
+        "sha256": "fa2cfd0cbba6fb97378685d59f8e1e1aa1dfc41e9a00ec7e598c48c5f7fb39b5",
+        "size": 830606
       },
-      "depends": "libc6 (>= 2.38), libstdc++6 (>= 11), libgcc-s1, python3 (>= 3.9), ca-certificates",
+      "depends": "libc6 (>= 2.38), libstdc++6 (>= 11), libgcc-s1, python3 (>= 3.9), python3-pil, ca-certificates",
       "permissions": {
         "additional_hardware": false,
         "background_service": false,
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T22:36:55+08:00",
-      "updated_at": "2026-11-28T22:36:55+08:00",
+      "published_at": "2026-11-28T23:31:47+08:00",
+      "updated_at": "2026-11-28T23:31:47+08:00",
       "review": {
         "status": "approved"
       },
