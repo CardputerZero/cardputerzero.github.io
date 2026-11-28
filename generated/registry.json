@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T07:58:58+08:00",
+  "generated_at": "2026-11-28T08:01:22+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2867,7 +2867,7 @@
       "share_code": "CLAW",
       "title": "Clawputer",
       "summary": "Claude Code in your pocket: a chat app made for the Cardputer (unofficial)",
-      "description": "Clawputer is a pocket chat app for Anthropic's Claude Code, built for the CardputerZero's 320x170 screen and keyboard.\r\n\r\n- Clean chat view: tool calls squashed to one line, command output and code in tidy boxes\r\n- Permission prompts (y / n / always) and Claude's multiple-choice questions\r\n- Help (F1), settings (F2): model, effort, permissions, font size and more; chat history (F3)\r\n- Drafts autosave, messages queue while Claude is busy\r\n- Easy first-run setup: installs Claude Code with Anthropic's official installer, then sign in by scanning a QR code with your phone, no typing long codes\r\n- Remote mode: run Claude on your PC over SSH (works with Tailscale) and use the Cardputer as the screen, fast and with no RAM limits. Set up with one short command on the PC\r\n- Optional RAM boost: pauses background services while Claude runs on the Cardputer\r\n- Minimise with Ctrl+H: Claude keeps working and chimes when it's done or needs you\r\n- Status bar with a context meter, model, network (wifi / phone tethering / offline) and battery\r\n- Optional bubbles chat style with proper markdown (bold, headings, bullets)\r\n- Live 'thinking 12s · 340 tokens' progress, sudo password popups, and an optional web UI to use the chat from your phone\r\n\r\nNeeds a Claude subscription (Pro/Max) or an Anthropic Console account. Not affiliated with or endorsed by Anthropic. Claude and Claude Code are trademarks of Anthropic.\r\n\r\nRelease notes\r\n- 0.7: edits shown as a red/green diff before you allow them, Claude's to-do list as a checklist, picture previews, tables as a grid, colour emoji, instant start, dims when idle, sound on prompts, max RAM boost can stay on across reboots\r\n- 0.6: setting descriptions, switch between your PC and the Cardputer from inside the chat, \"new\" marker when replies arrive while scrolled up, queued message count, faster long chats\r\n- 0.5: fixes from a full review: typing can't answer a permission prompt by accident, sudo password forgotten as soon as it's used, safer web UI, RAM boost fixes\r\n- 0.4: chime when Claude finishes while minimised, context meter that understands /compact, status bar icons (network, battery, model), optional bubbles chat style, web UI that matches the Cardputer\r\n- 0.3: now a proper app instead of a terminal: no more \"press any key\", minimise with Ctrl+H while Claude keeps working, shows \"offline\" when there's no internet\r\n- 0.2: first release: chat GUI, permission prompts and questions, QR sign-in, remote PC mode, RAM boost, live thinking progress, sudo popups, web UI",
+      "description": "Clawputer is a pocket chat app for Anthropic's Claude Code, built for the CardputerZero's 320x170 screen and keyboard.\n\n- Clean chat view: tool calls squashed to one line, command output and code in tidy boxes\n- Permission prompts (y / n / always) and Claude's multiple-choice questions\n- Help (F1), settings (F2): model, effort, permissions, font size and more; chat history (F3)\n- Drafts autosave, messages queue while Claude is busy\n- Easy first-run setup: installs Claude Code with Anthropic's official installer, then sign in by scanning a QR code with your phone, no typing long codes\n- Remote mode: run Claude on your PC over SSH (works with Tailscale) and use the Cardputer as the screen, fast and with no RAM limits. Set up with one short command on the PC\n- Optional RAM boost: pauses background services while Claude runs on the Cardputer\n- Minimise with Ctrl+H: Claude keeps working and chimes when it's done or needs you\n- Status bar with a context meter, model, network (wifi / phone tethering / offline) and battery\n- Optional bubbles chat style with proper markdown (bold, headings, bullets)\n- Live 'thinking 12s · 340 tokens' progress, sudo password popups, and an optional web UI to use the chat from your phone\n\nRelease notes\n- 0.7: edits shown as a red/green diff before you allow them, Claude's to-do list as a checklist, picture previews, tables as a grid, colour emoji, instant start, dims when idle, sound on prompts, max RAM boost can stay on across reboots\n- 0.6: setting descriptions, switch between your PC and the Cardputer from inside the chat, \"new\" marker when replies arrive while scrolled up, queued message count, faster long chats\n- 0.5: fixes from a full review: typing can't answer a permission prompt by accident, sudo password forgotten as soon as it's used, safer web UI, RAM boost fixes\n- 0.4: chime when Claude finishes while minimised, context meter that understands /compact, status bar icons (network, battery, model), optional bubbles chat style, web UI that matches the Cardputer\n- 0.3: now a proper app instead of a terminal: no more \"press any key\", minimise with Ctrl+H while Claude keeps working, shows \"offline\" when there's no internet\n- 0.2: first release: chat GUI, permission prompts and questions, QR sign-in, remote PC mode, RAM boost, live thinking progress, sudo popups, web UI\n\nNeeds a Claude subscription (Pro/Max) or an Anthropic Console account. Not affiliated with or endorsed by Anthropic. Claude and Claude Code are trademarks of Anthropic.",
       "locales": {
         "en": {
           "title": "Clawputer",
@@ -2897,8 +2897,8 @@
         }
       },
       "categories": [
-        "Development",
-        "AI"
+        "AI",
+        "Development"
       ],
       "author": {
         "github": "RubberDingyRapids",
@@ -2906,7 +2906,7 @@
       },
       "version": "0.7.0",
       "published_at": "2026-11-25T21:50:29+00:00",
-      "updated_at": "2026-11-27T23:41:58+00:00",
+      "updated_at": "2026-11-27T23:57:07+00:00",
       "review": {
         "status": "approved"
       },
@@ -2922,34 +2922,34 @@
       },
       "depends": "python3, python3-pil, python3-numpy, python3-qrcode, curl, openssh-client, fonts-dejavu-core, fonts-noto-color-emoji",
       "permissions": {
+        "camera": false,
+        "microphone": false,
+        "imu": false,
+        "network": true,
         "additional_hardware": false,
         "background_service": false,
-        "camera": false,
-        "external_display": false,
-        "imu": false,
-        "microphone": false,
-        "network": true
+        "external_display": false
       },
       "risk_flags": [],
       "assets": {
-        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/clawputer_icon.png",
+        "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/icon.png",
         "screenshots": [
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/screenshot-0.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/screenshot-1.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/screenshot-2.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/screenshot-3.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/screenshot-4.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/screenshot-5.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/1-chat.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/2-permission.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/3-question.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/4-start.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/5-history.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/6-signin.png"
         ]
       },
-      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/clawputer_icon.png",
+      "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/screenshot-0.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/screenshot-1.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/screenshot-2.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/screenshot-3.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/screenshot-4.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/screenshot-5.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/1-chat.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/2-permission.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/3-question.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/4-start.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/5-history.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/clawputer/screenshots/6-signin.png"
       ]
     },
     {
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T07:58:58+08:00",
-      "updated_at": "2026-11-28T07:58:58+08:00",
+      "published_at": "2026-11-28T08:01:22+08:00",
+      "updated_at": "2026-11-28T08:01:22+08:00",
       "review": {
         "status": "approved"
       },
