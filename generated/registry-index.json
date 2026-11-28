@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T13:02:23+08:00",
+  "generated_at": "2026-11-28T13:33:49+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2636,26 +2636,20 @@
       "uuid": "2101fe89-4fcd-5834-9f92-f52b997d12ca",
       "share_code": "TERM",
       "title": "cardterm",
-      "summary": "更好的CLI终端模拟器，高性能和低内存占用、多窗口、后台会话、xterm/TUI 兼容、自定义主题和背景图",
-      "description": "cardterm 是 M5Stack CardputerZero（320×170）上的全屏终端模拟器：运行 bash/ssh/codex 等任意程序，是设备上的命令行工作台。\n\n比 APPLaunch 的 CLI 更强性能、更低内存和更多功能。对于依赖 CLI 和终端会话的用户，请尝试 cardterm 终端模拟器，而不是 APPLaunch 的 CLI。\nStronger performance, lower memory and more features than the stock APPLaunch CLI. If your work depends on the CLI and terminal sessions, try the cardterm terminal emulator instead of the APPLaunch CLI.\n\n功能亮点：\n· 极高性能和极低内存占用：稳态约 6MB，12 窗口多开会话可控，直驱 /dev/fb0，秒启动，字符渲染更快速；\n· 自定义终端主题颜色和 PNG/JPG 背景图；\n· TUI 兼容性：codex / opencode / crush / vim / htop / nano 等 TUI 实测渲染与交互正常，备用屏、滚动域、重绘节拍良好；\n· 复杂协议支持：kitty 键盘协议 (KKP)、DA1/DA2/DECXCPR/DSR/DECRQM、DECSCUSR、DECSTR/RIS、OSC 4/10/11/12/52/110-112；\n· USB/蓝牙外接键盘接管：板载 + 最多 4 个外接并行、标准 US 键位、热插拔；\n· 多窗口（Ctrl+Alt+F1~F12）、回滚/翻页、三档终端大小（80×24 / 53×17 / 40×12）、toast 事件通知；\n· 支持将会话和程序挂载至后台运行，退出 cardterm 后可恢复。\n· 单 config.ini 配置文件，可用于配置主题配色方案、初始命令和工作目录、回滚行数、窗口数、启动横幅文本等多个配置项。",
+      "summary": "A better terminal emulator: multi-window, background sessions.",
+      "description": "Cardterm is a high-performance CLI terminal emulator for CardputerZero: it can run any command-line program such as bash, ssh, codex, etc.\n\nCompared with APPLaunch CLI, it offers more features at lower resident memory usage. Performance varies by workload but is generally better than APPLaunch CLI. If you rely on the command line and terminal sessions, give cardterm a try.\n\nFeature highlights:\n\n- High performance, low memory footprint: steady state of about 6MB (measured baseline on real hardware: 5.4–6.4MB; enabling Chinese input adds ~16MB for the rime engine); multi-window and concurrent sessions remain manageable; written in C++, driving /dev/fb0 directly via FrameBuffer; starts up in seconds with faster character rendering.\n- Multiple windows (Ctrl+Alt+F1–F12), scrollback/paging, three terminal sizes (80×24 / 53×17 / 40×12), and toast event notifications.\n- Detachable sessions: sessions and programs can be detached to keep running in the background; you can exit cardterm and reattach later (re-attached text is limited to 4MB).\n- Rime-based Chinese Pinyin input method support — not a hard dependency, enabled on demand; requires manually installing the IME dependencies with: sudo apt install librime1t64 rime-data-luna-pinyin rime-prelude.\n- Custom terminal theme colors and PNG/JPG background images; optional transparent message toast box and Chinese candidate-word box.\n- TUI compatibility: codex / opencode / crush / vim / htop / nano and other TUIs have been verified to render and interact correctly in practice.\n- Complex protocol support: kitty keyboard protocol (KKP), DA1/DA2/DECXCPR/DSR/DECRQM, DECSCUSR, DECSTR/RIS, OSC 4/10/11/12/52/110–112 (OSC 110/111/112 reset the default foreground/background/cursor colors, respectively).\n- USB/Bluetooth external keyboard takeover: onboard keyboard plus up to 4 external keyboards in parallel, standard US layout, hot-plug supported.\n- Single config.ini for configuring theme color schemes, initial command and working directory, scrollback line count, number of windows, startup banner text, and more.",
       "locales": {
         "zh-CN": {
           "title": "cardterm",
-          "summary": "更好的CLI终端模拟器，高性能和低内存占用、多窗口、后台会话、xterm/TUI 兼容、自定义主题和背景图"
-        },
-        "en": {
-          "title": "cardterm",
-          "summary": "A better CLI terminal emulator: high performance and low memory, multi-window, background sessions, xterm/TUI compatible, customizable theme and wallpaper"
+          "summary": "更好的CLI终端模拟器，高性能和低内存占用、多窗口、后台会话、中文输入。",
+          "description": "cardterm 是 CardputerZero 上的高性能CLI终端模拟器：可运行 bash/ssh/codex 等任意命令行程序。\n\n比 APPLaunch 的 CLI 更多功能、更低常驳内存；性能视工作负载而定，通常比 APPLaunch 的 CLI 更好。对于依赖命令行和终端会话的用户，请尝试 cardterm 终端模拟器。\n\n功能亮点：\n· 高性能和低内存占用：稳态约 6MB（真机实测基线 5.4–6.4MB，启用中文输入时 rime 引擎约 +16MB），多窗口多开会话可控，使用 C++ 语言编写， FrameBuffer 直驱 /dev/fb0，秒启动，字符渲染更快速；\n· 多窗口（Ctrl+Alt+F1~F12）、回滚/翻页、三档终端大小（80×24 / 53×17 / 40×12）、toast 事件通知；\n· 支持将会话和程序剥离至后台运行，退出 cardterm 后可恢复（回贴文本上限 4MB）。\n· 基于 Rime 的中文输入法支持，非强制依赖，按需启用，需手动运行 sudo apt install librime1t64 rime-data-luna-pinyin rime-prelude 安装输入法依赖；\n· 自定义终端主题颜色和 PNG/JPG 背景图；可选的透明消息提示框和中文输入候选框；\n· TUI 兼容性：codex / opencode / crush / vim / htop / nano 等 TUI 实测渲染与交互正常；\n· 复杂协议支持：kitty 键盘协议 (KKP)、DA1/DA2/DECXCPR/DSR/DECRQM、DECSCUSR、DECSTR/RIS、OSC 4/10/11/12/52/110-112（110/111/112 依次复位默认前景/背景/光标色）；\n· USB/蓝牙外接键盘接管：板载 + 最多 4 个外接并行、标准 US 键位、热插拔；\n· 单 config.ini 配置文件，可用于配置主题配色方案、初始命令和工作目录、回滚行数、窗口数、启动横幅文本等多个配置项。"
         }
       },
       "i18n": {
         "zh-CN": {
           "title": "cardterm",
-          "summary": "更好的CLI终端模拟器，高性能和低内存占用、多窗口、后台会话、xterm/TUI 兼容、自定义主题和背景图"
-        },
-        "en": {
-          "title": "cardterm",
-          "summary": "A better CLI terminal emulator: high performance and low memory, multi-window, background sessions, xterm/TUI compatible, customizable theme and wallpaper"
+          "summary": "更好的CLI终端模拟器，高性能和低内存占用、多窗口、后台会话、中文输入。",
+          "description": "cardterm 是 CardputerZero 上的高性能CLI终端模拟器：可运行 bash/ssh/codex 等任意命令行程序。\n\n比 APPLaunch 的 CLI 更多功能、更低常驳内存；性能视工作负载而定，通常比 APPLaunch 的 CLI 更好。对于依赖命令行和终端会话的用户，请尝试 cardterm 终端模拟器。\n\n功能亮点：\n· 高性能和低内存占用：稳态约 6MB（真机实测基线 5.4–6.4MB，启用中文输入时 rime 引擎约 +16MB），多窗口多开会话可控，使用 C++ 语言编写， FrameBuffer 直驱 /dev/fb0，秒启动，字符渲染更快速；\n· 多窗口（Ctrl+Alt+F1~F12）、回滚/翻页、三档终端大小（80×24 / 53×17 / 40×12）、toast 事件通知；\n· 支持将会话和程序剥离至后台运行，退出 cardterm 后可恢复（回贴文本上限 4MB）。\n· 基于 Rime 的中文输入法支持，非强制依赖，按需启用，需手动运行 sudo apt install librime1t64 rime-data-luna-pinyin rime-prelude 安装输入法依赖；\n· 自定义终端主题颜色和 PNG/JPG 背景图；可选的透明消息提示框和中文输入候选框；\n· TUI 兼容性：codex / opencode / crush / vim / htop / nano 等 TUI 实测渲染与交互正常；\n· 复杂协议支持：kitty 键盘协议 (KKP)、DA1/DA2/DECXCPR/DSR/DECRQM、DECSCUSR、DECSTR/RIS、OSC 4/10/11/12/52/110-112（110/111/112 依次复位默认前景/背景/光标色）；\n· USB/蓝牙外接键盘接管：板载 + 最多 4 个外接并行、标准 US 键位、热插拔；\n· 单 config.ini 配置文件，可用于配置主题配色方案、初始命令和工作目录、回滚行数、窗口数、启动横幅文本等多个配置项。"
         }
       },
       "categories": [
@@ -2666,9 +2660,9 @@
         "github": "fsender",
         "display_name": "fsender"
       },
-      "version": "1.2.1",
+      "version": "1.3.1",
       "published_at": "2026-11-24T15:13:30+00:00",
-      "updated_at": "2026-11-26T14:52:34+00:00",
+      "updated_at": "2026-11-28T05:30:50+00:00",
       "review": {
         "status": "approved"
       },
@@ -2677,10 +2671,10 @@
       "download": {
         "type": "deb",
         "package": "cardterm",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardterm_1.2.1_arm64.deb",
-        "md5": "d4c0f69be6ba7d19b3cd8dbca0bae51e",
-        "sha256": "d8a27af2e6482c6ceccb2684c3c7e4d165ec68a279b41d49f67a8cbe9dd9e9ca",
-        "size": 1867022
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/cardterm_1.3.1_arm64.deb",
+        "md5": "8e203b7dbcc23ca0b6b9d9520b3f4c1e",
+        "sha256": "168aa703febe450c8678c26cb1349d793e42358546970b9225389cd4843eba85",
+        "size": 1903488
       },
       "depends": "tmux",
       "permissions": {
@@ -2698,14 +2692,16 @@
         "screenshots": [
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/1-initial-bash.png",
           "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/2-fastfetch-4x7.png",
-          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/3-cmatrix-8x14.png"
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/3-cmatrix-8x14.png",
+          "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/4-symbol-picker.png"
         ]
       },
       "icon": "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/cardterm_256.png",
       "screenshots": [
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/1-initial-bash.png",
         "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/2-fastfetch-4x7.png",
-        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/3-cmatrix-8x14.png"
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/3-cmatrix-8x14.png",
+        "https://raw.githubusercontent.com/CardputerZero/packages/main/pool/main/cardterm/screenshots/4-symbol-picker.png"
       ]
     },
     {
@@ -9313,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T13:02:23+08:00",
-      "updated_at": "2026-11-28T13:02:23+08:00",
+      "published_at": "2026-11-28T13:33:49+08:00",
+      "updated_at": "2026-11-28T13:33:49+08:00",
       "review": {
         "status": "approved"
       },
