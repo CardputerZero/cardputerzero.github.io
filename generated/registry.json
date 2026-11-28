@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T08:01:22+08:00",
+  "generated_at": "2026-11-28T08:15:36+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -2867,7 +2867,7 @@
       "share_code": "CLAW",
       "title": "Clawputer",
       "summary": "Claude Code in your pocket: a chat app made for the Cardputer (unofficial)",
-      "description": "Clawputer is a pocket chat app for Anthropic's Claude Code, built for the CardputerZero's 320x170 screen and keyboard.\n\n- Clean chat view: tool calls squashed to one line, command output and code in tidy boxes\n- Permission prompts (y / n / always) and Claude's multiple-choice questions\n- Help (F1), settings (F2): model, effort, permissions, font size and more; chat history (F3)\n- Drafts autosave, messages queue while Claude is busy\n- Easy first-run setup: installs Claude Code with Anthropic's official installer, then sign in by scanning a QR code with your phone, no typing long codes\n- Remote mode: run Claude on your PC over SSH (works with Tailscale) and use the Cardputer as the screen, fast and with no RAM limits. Set up with one short command on the PC\n- Optional RAM boost: pauses background services while Claude runs on the Cardputer\n- Minimise with Ctrl+H: Claude keeps working and chimes when it's done or needs you\n- Status bar with a context meter, model, network (wifi / phone tethering / offline) and battery\n- Optional bubbles chat style with proper markdown (bold, headings, bullets)\n- Live 'thinking 12s · 340 tokens' progress, sudo password popups, and an optional web UI to use the chat from your phone\n\nRelease notes\n- 0.7: edits shown as a red/green diff before you allow them, Claude's to-do list as a checklist, picture previews, tables as a grid, colour emoji, instant start, dims when idle, sound on prompts, max RAM boost can stay on across reboots\n- 0.6: setting descriptions, switch between your PC and the Cardputer from inside the chat, \"new\" marker when replies arrive while scrolled up, queued message count, faster long chats\n- 0.5: fixes from a full review: typing can't answer a permission prompt by accident, sudo password forgotten as soon as it's used, safer web UI, RAM boost fixes\n- 0.4: chime when Claude finishes while minimised, context meter that understands /compact, status bar icons (network, battery, model), optional bubbles chat style, web UI that matches the Cardputer\n- 0.3: now a proper app instead of a terminal: no more \"press any key\", minimise with Ctrl+H while Claude keeps working, shows \"offline\" when there's no internet\n- 0.2: first release: chat GUI, permission prompts and questions, QR sign-in, remote PC mode, RAM boost, live thinking progress, sudo popups, web UI\n\nNeeds a Claude subscription (Pro/Max) or an Anthropic Console account. Not affiliated with or endorsed by Anthropic. Claude and Claude Code are trademarks of Anthropic.",
+      "description": "Clawputer is a pocket chat app for Anthropic's Claude Code, built for the CardputerZero's 320x170 screen and keyboard.\n\n- Clean chat view: tool calls squashed to one line, command output and code in tidy boxes\n- Permission prompts (y / n / always) and Claude's multiple-choice questions\n- Help (F1), settings (F2): model, effort, permissions, font size and more; chat history (F3)\n- Drafts autosave, messages queue while Claude is busy\n- Easy first-run setup: installs Claude Code with Anthropic's official installer, then sign in by scanning a QR code with your phone, no typing long codes\n- Remote mode: run Claude on your PC over SSH (works with Tailscale) and use the Cardputer as the screen, fast and with no RAM limits. Set up with one short command on the PC\n- Optional RAM boost: pauses background services while Claude runs on the Cardputer\n- Minimise with Ctrl+H: Claude keeps working and chimes when it's done or needs you\n- Use it from your phone: the web UI lets you chat from any phone or PC browser while Claude runs on the Cardputer. Scan the QR code on screen, no app to install (key-protected, works on your Wi-Fi or over Tailscale)\n- Shows what a terminal can't: edits as a red/green diff before you allow them, Claude's to-do list as a checklist, picture previews, markdown tables and colour emoji\n- Switch between running Claude on your PC or the Cardputer from inside the chat, no restart\n- Status bar with a context meter, model, network (wifi / phone tethering / offline) and battery\n- Optional bubbles chat style with proper markdown (bold, headings, bullets)\n- Live 'thinking 12s · 340 tokens' progress and sudo password popups\n\nRelease notes\n- 0.7: edits shown as a red/green diff before you allow them, Claude's to-do list as a checklist, picture previews, tables as a grid, colour emoji, instant start, dims when idle, sound on prompts, max RAM boost can stay on across reboots\n- 0.6: setting descriptions, switch between your PC and the Cardputer from inside the chat, \"new\" marker when replies arrive while scrolled up, queued message count, faster long chats\n- 0.5: fixes from a full review: typing can't answer a permission prompt by accident, sudo password forgotten as soon as it's used, safer web UI, RAM boost fixes\n- 0.4: chime when Claude finishes while minimised, context meter that understands /compact, status bar icons (network, battery, model), optional bubbles chat style, web UI that matches the Cardputer\n- 0.3: now a proper app instead of a terminal: no more \"press any key\", minimise with Ctrl+H while Claude keeps working, shows \"offline\" when there's no internet\n- 0.2: first release: chat GUI, permission prompts and questions, QR sign-in, remote PC mode, RAM boost, live thinking progress, sudo popups, web UI\n\nNeeds a Claude subscription (Pro/Max) or an Anthropic Console account. Not affiliated with or endorsed by Anthropic. Claude and Claude Code are trademarks of Anthropic.",
       "locales": {
         "en": {
           "title": "Clawputer",
@@ -2906,7 +2906,7 @@
       },
       "version": "0.7.0",
       "published_at": "2026-11-25T21:50:29+00:00",
-      "updated_at": "2026-11-27T23:57:07+00:00",
+      "updated_at": "2026-11-28T00:13:06+00:00",
       "review": {
         "status": "approved"
       },
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T08:01:22+08:00",
-      "updated_at": "2026-11-28T08:01:22+08:00",
+      "published_at": "2026-11-28T08:15:36+08:00",
+      "updated_at": "2026-11-28T08:15:36+08:00",
       "review": {
         "status": "approved"
       },
