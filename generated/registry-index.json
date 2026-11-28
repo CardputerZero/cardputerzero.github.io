@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T08:22:55+08:00",
+  "generated_at": "2026-11-28T08:55:51+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -1217,9 +1217,9 @@
         "github": "oumike",
         "display_name": "oumike"
       },
-      "version": "6.11.0",
+      "version": "6.12.0",
       "published_at": "2026-11-18T02:09:02+00:00",
-      "updated_at": "2026-11-27T04:35:33+00:00",
+      "updated_at": "2026-11-28T00:51:59+00:00",
       "review": {
         "status": "approved"
       },
@@ -1228,10 +1228,10 @@
       "download": {
         "type": "deb",
         "package": "camillia",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/camillia_6.11.0_arm64.deb",
-        "md5": "6441e7d11266ffc95c08925522a8c2ae",
-        "sha256": "0c3444e5394e00f9b7427f03c0daa1eb7bc0f69bde37425071a4db248f8699d6",
-        "size": 76618416
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/camillia_6.12.0_arm64.deb",
+        "md5": "238092bb3520e61119b685d9b774f084",
+        "sha256": "740511e5e5a5c2d43c39b2517325249b36840d426775dfabf94be77356a184f6",
+        "size": 76623404
       },
       "depends": "libc6 (>= 2.38), libgcc-s1 (>= 3.0), libsdl2-2.0-0 (>= 2.0.12), libstdc++6 (>= 12)",
       "permissions": {
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T08:22:55+08:00",
-      "updated_at": "2026-11-28T08:22:55+08:00",
+      "published_at": "2026-11-28T08:55:51+08:00",
+      "updated_at": "2026-11-28T08:55:51+08:00",
       "review": {
         "status": "approved"
       },
