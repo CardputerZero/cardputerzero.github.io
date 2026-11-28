@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T12:20:54+08:00",
+  "generated_at": "2026-11-28T13:02:23+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9313,8 +9313,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T12:20:54+08:00",
-      "updated_at": "2026-11-28T12:20:54+08:00",
+      "published_at": "2026-11-28T13:02:23+08:00",
+      "updated_at": "2026-11-28T13:02:23+08:00",
       "review": {
         "status": "approved"
       },
@@ -14530,7 +14530,7 @@
       },
       "version": "0.4.2-1",
       "published_at": "2026-11-23T17:04:40+00:00",
-      "updated_at": "2026-11-27T10:26:22+00:00",
+      "updated_at": "2026-11-28T04:58:21+00:00",
       "review": {
         "status": "approved"
       },
