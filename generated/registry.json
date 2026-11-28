@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T11:20:11+08:00",
+  "generated_at": "2026-11-28T11:28:00+08:00",
   "registry_id": "cardputerzero-appstore",
   "device_targets": [
     "CardputerZero"
@@ -9309,8 +9309,8 @@
         "display_name": "Okou"
       },
       "version": "0.3.0",
-      "published_at": "2026-11-28T11:20:11+08:00",
-      "updated_at": "2026-11-28T11:20:11+08:00",
+      "published_at": "2026-11-28T11:28:00+08:00",
+      "updated_at": "2026-11-28T11:28:00+08:00",
       "review": {
         "status": "approved"
       },
@@ -10251,7 +10251,7 @@
       "share_code": "QSOZ",
       "title": "QSO-Zero",
       "summary": "FT8, FT4, JS8 and WSPR for QRP radios, with rig control and GPS time",
-      "description": "A weak-signal digital-mode station in your pocket. FT8 and FT4 with automatic QSO sequencing, a CQ-only filter and ADIF logging; a native JS8 implementation that interoperates with JS8Call (all speeds, directed messages, free text, optional auto-replies); WSPR beacon and receive with wsprnet upload when online. Controls QRP Labs QMX/QMX+, Xiegu G90/X6100/X6200 and Yaesu FT-891 through Hamlib (USB or Digirig), takes UTC and your grid from the LoRa/GPS Cap, and switches to a large layout on an HDMI monitor. Retro-synth look, keyboard driven. Requires an amateur radio licence to transmit. Hold ESC to exit.",
+      "description": "A weak-signal digital-mode station in your pocket. FT8 and FT4 with automatic QSO sequencing, a CQ-only filter and ADIF logging, with optional uploads to QRZ Logbook and Wavelog; a native JS8 implementation that interoperates with JS8Call (all speeds, directed messages, free text, optional auto-replies); WSPR beacon and receive with wsprnet upload when online. Controls QRP Labs QMX/QMX+, Xiegu G90/X6100/X6200, Yaesu FT-891 and Icom IC-705 through Hamlib (USB, Digirig or Digirig DR-891), takes UTC and your grid from the LoRa/GPS Cap, and switches to a large layout on an HDMI monitor. Retro-synth look, keyboard driven. Requires an amateur radio licence to transmit. Hold ESC to exit.",
       "locales": {
         "zh-CN": {
           "title": "QSO-Zero",
@@ -10279,9 +10279,9 @@
         "display_name": "CzarD0mn",
         "github": "CzarD0mn"
       },
-      "version": "0.2.8",
+      "version": "0.2.9",
       "published_at": "2026-11-23T02:54:22+00:00",
-      "updated_at": "2026-11-27T14:22:59+00:00",
+      "updated_at": "2026-11-28T03:25:28+00:00",
       "review": {
         "status": "approved"
       },
@@ -10290,10 +10290,10 @@
       "download": {
         "type": "deb",
         "package": "qso-zero",
-        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/qso-zero_0.2.8_arm64.deb",
-        "md5": "01c07f5c4dc4b6ccf8b64c55d9ce971d",
-        "sha256": "0018dd3056ea5b39d51531023aa654f698cffdc038cd0c159f19afa3e1561dd8",
-        "size": 1866524
+        "url": "https://github.com/CardputerZero/packages/releases/download/apt-pool/qso-zero_0.2.9_arm64.deb",
+        "md5": "7addd1332f939ab020bb2702541f3fda",
+        "sha256": "7558e4320fdb105ee3c795cd5c72844f3818a22dc793289c7013c5a0d5c60808",
+        "size": 1878604
       },
       "depends": "libc6 (>= 2.34), libhamlib-utils",
       "permissions": {
